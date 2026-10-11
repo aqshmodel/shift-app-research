@@ -1,0 +1,879 @@
+{
+  "verified_at": "2026-10-11T11:13:17.893533+00:00",
+  "record": {
+    "zone": "aqsh.co.jp",
+    "host": "shift",
+    "type": "CNAME",
+    "target": "aqsh-shift.pages.dev",
+    "ttl": 3600
+  },
+  "nameservers_changed": false,
+  "ui": {
+    "provider": "Muumuu Domain",
+    "saved_record_verified": true,
+    "custom_records_before": 21,
+    "custom_records_after": 22,
+    "existing_custom_records_unchanged": true
+  },
+  "dns": [
+    {
+      "server": "dns01.muumuu-domain.com",
+      "answer": "shift.aqsh.co.jp.\t3600\tIN\tCNAME\taqsh-shift.pages.dev."
+    },
+    {
+      "server": "dns02.muumuu-domain.com",
+      "answer": "shift.aqsh.co.jp.\t3600\tIN\tCNAME\taqsh-shift.pages.dev."
+    },
+    {
+      "server": "1.1.1.1",
+      "answer": "shift.aqsh.co.jp.\t3600\tIN\tCNAME\taqsh-shift.pages.dev."
+    },
+    {
+      "server": "8.8.8.8",
+      "answer": "shift.aqsh.co.jp.\t3600\tIN\tCNAME\taqsh-shift.pages.dev."
+    }
+  ],
+  "cloudflare_ui": {
+    "domain_status": "Active",
+    "ssl": "Enabled"
+  },
+  "connection": "Normal system DNS, no IP override, certificate validation enabled",
+  "tls": {
+    "verified": true,
+    "protocol": "TLSv1.3",
+    "subject": [
+      [
+        [
+          "commonName",
+          "shift.aqsh.co.jp"
+        ]
+      ]
+    ],
+    "issuer": [
+      [
+        [
+          "countryName",
+          "US"
+        ]
+      ],
+      [
+        [
+          "organizationName",
+          "Google Trust Services"
+        ]
+      ],
+      [
+        [
+          "commonName",
+          "WE1"
+        ]
+      ]
+    ],
+    "subject_alt_names": [
+      [
+        "DNS",
+        "shift.aqsh.co.jp"
+      ]
+    ],
+    "not_before": "Oct 11 10:02:52 2026 GMT",
+    "not_after": "Jan  9 11:02:46 2027 GMT"
+  },
+  "http_checks": [
+    {
+      "url": "https://shift.aqsh.co.jp/",
+      "status": 200,
+      "headers": {
+        "content-type": "text/html",
+        "cache-control": "public, max-age=60, s-maxage=300",
+        "strict-transport-security": "max-age=31536000",
+        "content-security-policy": "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' https: data:; connect-src 'self'; font-src 'self'; object-src 'none'; base-uri 'self'; frame-ancestors 'none'; form-action 'self'",
+        "permissions-policy": "tools=(self), camera=(), microphone=(), geolocation=()",
+        "server-timing": "db;dur=24.0, db_calls;desc=\"1\", db_queries;desc=\"1\""
+      }
+    },
+    {
+      "url": "https://shift.aqsh.co.jp/products/",
+      "status": 200,
+      "headers": {
+        "content-type": "text/html",
+        "cache-control": "public, max-age=60, s-maxage=300",
+        "strict-transport-security": "max-age=31536000",
+        "content-security-policy": "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' https: data:; connect-src 'self'; font-src 'self'; object-src 'none'; base-uri 'self'; frame-ancestors 'none'; form-action 'self'",
+        "permissions-policy": "tools=(self), camera=(), microphone=(), geolocation=()",
+        "server-timing": "db;dur=70.0, db_calls;desc=\"1\", db_queries;desc=\"2\""
+      }
+    },
+    {
+      "url": "https://shift.aqsh.co.jp/products/jp04/",
+      "status": 200,
+      "headers": {
+        "content-type": "text/html",
+        "cache-control": "public, max-age=60, s-maxage=300",
+        "strict-transport-security": "max-age=31536000",
+        "content-security-policy": "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' https: data:; connect-src 'self'; font-src 'self'; object-src 'none'; base-uri 'self'; frame-ancestors 'none'; form-action 'self'",
+        "permissions-policy": "tools=(self), camera=(), microphone=(), geolocation=()",
+        "server-timing": "db;dur=46.0, db_calls;desc=\"2\", db_queries;desc=\"3\""
+      }
+    },
+    {
+      "url": "https://shift.aqsh.co.jp/categories/medical/",
+      "status": 200,
+      "headers": {
+        "content-type": "text/html",
+        "cache-control": "public, max-age=60, s-maxage=300",
+        "strict-transport-security": "max-age=31536000",
+        "content-security-policy": "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' https: data:; connect-src 'self'; font-src 'self'; object-src 'none'; base-uri 'self'; frame-ancestors 'none'; form-action 'self'",
+        "permissions-policy": "tools=(self), camera=(), microphone=(), geolocation=()",
+        "server-timing": "db;dur=24.0, db_calls;desc=\"1\", db_queries;desc=\"2\""
+      }
+    },
+    {
+      "url": "https://shift.aqsh.co.jp/webmcp/",
+      "status": 200,
+      "headers": {
+        "content-type": "text/html",
+        "cache-control": "public, max-age=60, s-maxage=300",
+        "strict-transport-security": "max-age=31536000",
+        "content-security-policy": "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' https: data:; connect-src 'self'; font-src 'self'; object-src 'none'; base-uri 'self'; frame-ancestors 'none'; form-action 'self'",
+        "permissions-policy": "tools=(self), camera=(), microphone=(), geolocation=()",
+        "server-timing": "db;dur=0.0, db_calls;desc=\"0\", db_queries;desc=\"0\""
+      }
+    },
+    {
+      "url": "https://shift.aqsh.co.jp/about/",
+      "status": 200,
+      "headers": {
+        "content-type": "text/html",
+        "cache-control": "public, max-age=60, s-maxage=300",
+        "strict-transport-security": "max-age=31536000",
+        "content-security-policy": "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' https: data:; connect-src 'self'; font-src 'self'; object-src 'none'; base-uri 'self'; frame-ancestors 'none'; form-action 'self'",
+        "permissions-policy": "tools=(self), camera=(), microphone=(), geolocation=()",
+        "server-timing": "db;dur=0.0, db_calls;desc=\"0\", db_queries;desc=\"0\""
+      }
+    },
+    {
+      "url": "https://shift.aqsh.co.jp/privacy/",
+      "status": 200,
+      "headers": {
+        "content-type": "text/html",
+        "cache-control": "public, max-age=60, s-maxage=300",
+        "strict-transport-security": "max-age=31536000",
+        "content-security-policy": "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' https: data:; connect-src 'self'; font-src 'self'; object-src 'none'; base-uri 'self'; frame-ancestors 'none'; form-action 'self'",
+        "permissions-policy": "tools=(self), camera=(), microphone=(), geolocation=()",
+        "server-timing": "db;dur=0.0, db_calls;desc=\"0\", db_queries;desc=\"0\""
+      }
+    },
+    {
+      "url": "https://shift.aqsh.co.jp/terms/",
+      "status": 200,
+      "headers": {
+        "content-type": "text/html",
+        "cache-control": "public, max-age=60, s-maxage=300",
+        "strict-transport-security": "max-age=31536000",
+        "content-security-policy": "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' https: data:; connect-src 'self'; font-src 'self'; object-src 'none'; base-uri 'self'; frame-ancestors 'none'; form-action 'self'",
+        "permissions-policy": "tools=(self), camera=(), microphone=(), geolocation=()",
+        "server-timing": "db;dur=0.0, db_calls;desc=\"0\", db_queries;desc=\"0\""
+      }
+    },
+    {
+      "url": "https://shift.aqsh.co.jp/robots.txt",
+      "status": 200,
+      "headers": {
+        "content-type": "text/plain; charset=utf-8",
+        "cache-control": "public, max-age=60, s-maxage=300",
+        "strict-transport-security": "max-age=31536000",
+        "content-security-policy": "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' https: data:; connect-src 'self'; font-src 'self'; object-src 'none'; base-uri 'self'; frame-ancestors 'none'; form-action 'self'",
+        "permissions-policy": "tools=(self), camera=(), microphone=(), geolocation=()",
+        "server-timing": "db;dur=0.0, db_calls;desc=\"0\", db_queries;desc=\"0\""
+      }
+    },
+    {
+      "url": "https://shift.aqsh.co.jp/sitemap.xml",
+      "status": 200,
+      "headers": {
+        "content-type": "application/xml; charset=utf-8",
+        "cache-control": "public, max-age=60, s-maxage=300",
+        "strict-transport-security": "max-age=31536000",
+        "content-security-policy": "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' https: data:; connect-src 'self'; font-src 'self'; object-src 'none'; base-uri 'self'; frame-ancestors 'none'; form-action 'self'",
+        "permissions-policy": "tools=(self), camera=(), microphone=(), geolocation=()",
+        "server-timing": "db;dur=30.0, db_calls;desc=\"1\", db_queries;desc=\"2\""
+      }
+    },
+    {
+      "url": "https://shift.aqsh.co.jp/api/scope/",
+      "status": 200,
+      "headers": {
+        "content-type": "application/json; charset=utf-8",
+        "cache-control": "no-store",
+        "strict-transport-security": "max-age=31536000",
+        "content-security-policy": "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' https: data:; connect-src 'self'; font-src 'self'; object-src 'none'; base-uri 'self'; frame-ancestors 'none'; form-action 'self'",
+        "permissions-policy": "tools=(self), camera=(), microphone=(), geolocation=()",
+        "server-timing": "db;dur=13.0, db_calls;desc=\"1\", db_queries;desc=\"1\""
+      }
+    },
+    {
+      "url": "https://shift.aqsh.co.jp/products/?q=Shiftmation",
+      "status": 200,
+      "headers": {
+        "content-type": "text/html",
+        "cache-control": "no-store",
+        "strict-transport-security": "max-age=31536000",
+        "content-security-policy": "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' https: data:; connect-src 'self'; font-src 'self'; object-src 'none'; base-uri 'self'; frame-ancestors 'none'; form-action 'self'",
+        "permissions-policy": "tools=(self), camera=(), microphone=(), geolocation=()",
+        "server-timing": "db;dur=30.0, db_calls;desc=\"1\", db_queries;desc=\"2\""
+      }
+    },
+    {
+      "url": "https://shift.aqsh.co.jp/compare/?products=OF-JP01,OF-US01",
+      "status": 200,
+      "headers": {
+        "content-type": "text/html",
+        "cache-control": "no-store",
+        "strict-transport-security": "max-age=31536000",
+        "content-security-policy": "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' https: data:; connect-src 'self'; font-src 'self'; object-src 'none'; base-uri 'self'; frame-ancestors 'none'; form-action 'self'",
+        "permissions-policy": "tools=(self), camera=(), microphone=(), geolocation=()",
+        "server-timing": "db;dur=39.0, db_calls;desc=\"2\", db_queries;desc=\"3\""
+      }
+    },
+    {
+      "url": "https://shift.aqsh.co.jp/llms.txt",
+      "status": 200,
+      "headers": {
+        "content-type": "text/plain",
+        "cache-control": "public, max-age=0, must-revalidate"
+      }
+    },
+    {
+      "url": "https://shift.aqsh.co.jp/_astro/Base.zvNYppPJ.css",
+      "status": 200,
+      "headers": {
+        "content-type": "text/css",
+        "cache-control": "public, max-age=31536000, immutable"
+      }
+    },
+    {
+      "url": "https://shift.aqsh.co.jp/fonts/manrope-latin-variable.woff2",
+      "status": 200,
+      "headers": {
+        "content-type": "font/woff2",
+        "cache-control": "public, max-age=0, must-revalidate"
+      }
+    },
+    {
+      "url": "http://shift.aqsh.co.jp/",
+      "status": 301,
+      "headers": {
+        "content-type": "text/html; charset=UTF-8",
+        "location": "https://shift.aqsh.co.jp/"
+      }
+    },
+    {
+      "url": "https://aqsh-shift-research.aqsh-reprom.workers.dev/products/?q=Shiftmation",
+      "status": 301,
+      "headers": {
+        "location": "https://shift.aqsh.co.jp/products/?q=Shiftmation"
+      }
+    },
+    {
+      "url": "https://aqsh-shift.pages.dev/",
+      "status": 200,
+      "headers": {
+        "content-type": "text/html",
+        "cache-control": "no-store",
+        "strict-transport-security": "max-age=31536000",
+        "content-security-policy": "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' https: data:; connect-src 'self'; font-src 'self'; object-src 'none'; base-uri 'self'; frame-ancestors 'none'; form-action 'self'",
+        "permissions-policy": "tools=(self), camera=(), microphone=(), geolocation=()",
+        "server-timing": "db;dur=12.0, db_calls;desc=\"1\", db_queries;desc=\"1\"",
+        "x-robots-tag": "noindex, nofollow"
+      }
+    },
+    {
+      "url": "https://aqsh-shift.pages.dev/robots.txt",
+      "status": 200,
+      "headers": {
+        "content-type": "text/plain",
+        "x-robots-tag": "noindex, nofollow"
+      }
+    }
+  ],
+  "robots": "User-agent: *\nAllow: /\nDisallow: /api/\nSitemap: https://shift.aqsh.co.jp/sitemap.xml\n",
+  "sitemap_urls": [
+    "https://shift.aqsh.co.jp/",
+    "https://shift.aqsh.co.jp/products/",
+    "https://shift.aqsh.co.jp/methodology/",
+    "https://shift.aqsh.co.jp/references/form-9/",
+    "https://shift.aqsh.co.jp/webmcp/",
+    "https://shift.aqsh.co.jp/about/",
+    "https://shift.aqsh.co.jp/privacy/",
+    "https://shift.aqsh.co.jp/terms/",
+    "https://shift.aqsh.co.jp/categories/medical/",
+    "https://shift.aqsh.co.jp/categories/care/",
+    "https://shift.aqsh.co.jp/categories/general/",
+    "https://shift.aqsh.co.jp/categories/api/",
+    "https://shift.aqsh.co.jp/products/jp27/",
+    "https://shift.aqsh.co.jp/products/us11/",
+    "https://shift.aqsh.co.jp/products/us15/",
+    "https://shift.aqsh.co.jp/products/us09/",
+    "https://shift.aqsh.co.jp/products/us07/",
+    "https://shift.aqsh.co.jp/products/jp03/",
+    "https://shift.aqsh.co.jp/products/us17/",
+    "https://shift.aqsh.co.jp/products/us13/",
+    "https://shift.aqsh.co.jp/products/jp07/",
+    "https://shift.aqsh.co.jp/products/jp04/",
+    "https://shift.aqsh.co.jp/products/jp14/",
+    "https://shift.aqsh.co.jp/products/us08/",
+    "https://shift.aqsh.co.jp/products/jp18/",
+    "https://shift.aqsh.co.jp/products/jp02/",
+    "https://shift.aqsh.co.jp/products/jp16/",
+    "https://shift.aqsh.co.jp/products/us14/",
+    "https://shift.aqsh.co.jp/products/us16/",
+    "https://shift.aqsh.co.jp/products/jp10/",
+    "https://shift.aqsh.co.jp/products/us20/",
+    "https://shift.aqsh.co.jp/products/us02/",
+    "https://shift.aqsh.co.jp/products/us18/",
+    "https://shift.aqsh.co.jp/products/jp21/",
+    "https://shift.aqsh.co.jp/products/us21/",
+    "https://shift.aqsh.co.jp/products/us01/",
+    "https://shift.aqsh.co.jp/products/us05/",
+    "https://shift.aqsh.co.jp/products/jp17/",
+    "https://shift.aqsh.co.jp/products/jp01/",
+    "https://shift.aqsh.co.jp/products/us12/",
+    "https://shift.aqsh.co.jp/products/us03/",
+    "https://shift.aqsh.co.jp/products/us04/",
+    "https://shift.aqsh.co.jp/products/us22/",
+    "https://shift.aqsh.co.jp/products/us10/",
+    "https://shift.aqsh.co.jp/products/us06/",
+    "https://shift.aqsh.co.jp/products/us19/",
+    "https://shift.aqsh.co.jp/products/jp25/",
+    "https://shift.aqsh.co.jp/products/jp20/",
+    "https://shift.aqsh.co.jp/products/jp23/",
+    "https://shift.aqsh.co.jp/products/jp12/",
+    "https://shift.aqsh.co.jp/products/jp24/",
+    "https://shift.aqsh.co.jp/products/jp28/",
+    "https://shift.aqsh.co.jp/products/jp08/",
+    "https://shift.aqsh.co.jp/products/jp22/",
+    "https://shift.aqsh.co.jp/products/jp11/",
+    "https://shift.aqsh.co.jp/products/jp13/",
+    "https://shift.aqsh.co.jp/products/jp26/",
+    "https://shift.aqsh.co.jp/products/jp15/",
+    "https://shift.aqsh.co.jp/products/jp09/",
+    "https://shift.aqsh.co.jp/products/jp05/",
+    "https://shift.aqsh.co.jp/products/jp06/",
+    "https://shift.aqsh.co.jp/products/jp19/"
+  ],
+  "research_scope": {
+    "as_of_date": "2026-10-11",
+    "benchmark_runs": 0,
+    "content_sha256": "74a40b58cb45ed8264a9f8da9d779b0807686a7a169ccb2d251ee86f2e10a4ce",
+    "criteria": [
+      {
+        "criterion_id": "A01",
+        "label_ja": "正式製品名・別名"
+      },
+      {
+        "criterion_id": "A02",
+        "label_ja": "提供法人"
+      },
+      {
+        "criterion_id": "A03",
+        "label_ja": "提供・販売状態"
+      },
+      {
+        "criterion_id": "A04",
+        "label_ja": "対象業態"
+      },
+      {
+        "criterion_id": "A06",
+        "label_ja": "対象規模"
+      },
+      {
+        "criterion_id": "A07",
+        "label_ja": "提供形態"
+      },
+      {
+        "criterion_id": "B01",
+        "label_ja": "勤務表の自動割当"
+      },
+      {
+        "criterion_id": "B06",
+        "label_ja": "複数部署・施設の一括計画"
+      },
+      {
+        "criterion_id": "B07",
+        "label_ja": "プラン・追加機能の境界"
+      },
+      {
+        "criterion_id": "C01",
+        "label_ja": "二交代・三交代・混在勤務"
+      },
+      {
+        "criterion_id": "C02",
+        "label_ja": "日跨ぎ夜勤と明け"
+      },
+      {
+        "criterion_id": "C05",
+        "label_ja": "勤務間の休息時間"
+      },
+      {
+        "criterion_id": "D01",
+        "label_ja": "資格・職種別の必要人数"
+      },
+      {
+        "criterion_id": "D03",
+        "label_ja": "熟練度・スキルミックス"
+      },
+      {
+        "criterion_id": "E01",
+        "label_ja": "希望と確定休暇の区別"
+      },
+      {
+        "criterion_id": "E03",
+        "label_ja": "契約勤務量を考慮した公平性"
+      },
+      {
+        "criterion_id": "F01",
+        "label_ja": "必須条件と希望条件"
+      },
+      {
+        "criterion_id": "F04",
+        "label_ja": "自然言語からの条件入力"
+      },
+      {
+        "criterion_id": "F05",
+        "label_ja": "解釈内容の事前確認"
+      },
+      {
+        "criterion_id": "G02",
+        "label_ja": "可解・解なし・未判定の区別"
+      },
+      {
+        "criterion_id": "G04",
+        "label_ja": "矛盾原因の根拠提示"
+      },
+      {
+        "criterion_id": "G06",
+        "label_ja": "別ロジックによる検証"
+      },
+      {
+        "criterion_id": "H01",
+        "label_ja": "固定した割当の保持"
+      },
+      {
+        "criterion_id": "H02",
+        "label_ja": "変更最小化の目的設定"
+      },
+      {
+        "criterion_id": "I06",
+        "label_ja": "採用・応援の条件比較"
+      },
+      {
+        "criterion_id": "J04",
+        "label_ja": "様式9の出力"
+      },
+      {
+        "criterion_id": "J06",
+        "label_ja": "介護・福祉の配置基準"
+      },
+      {
+        "criterion_id": "K01",
+        "label_ja": "既存Excel勤務表の取込"
+      },
+      {
+        "criterion_id": "K03",
+        "label_ja": "初期設定の主体"
+      },
+      {
+        "criterion_id": "L01",
+        "label_ja": "スマホでの希望提出"
+      },
+      {
+        "criterion_id": "M08",
+        "label_ja": "解約時の全量出力"
+      },
+      {
+        "criterion_id": "N01",
+        "label_ja": "テナント分離・アクセス権限"
+      },
+      {
+        "criterion_id": "N05",
+        "label_ja": "生成AIへの送信・学習利用"
+      },
+      {
+        "criterion_id": "O04",
+        "label_ja": "サポート窓口・時間"
+      },
+      {
+        "criterion_id": "P01",
+        "label_ja": "料金方式・公開範囲"
+      },
+      {
+        "criterion_id": "P02",
+        "label_ja": "課金対象・単位"
+      },
+      {
+        "criterion_id": "P03",
+        "label_ja": "請求周期・最低契約"
+      },
+      {
+        "criterion_id": "P04",
+        "label_ja": "導入初期費用"
+      },
+      {
+        "criterion_id": "Q01",
+        "label_ja": "決裁者・予算の出所"
+      },
+      {
+        "criterion_id": "Q04",
+        "label_ja": "導入事例の条件"
+      }
+    ],
+    "document_observations": 1664,
+    "independent_tests_performed": false,
+    "limitations": [
+      "公開資料の確認で、実動作・性能・個別契約の保証ではありません。",
+      "記載未確認は非対応を意味しません。",
+      "医療制度の参照と各製品の実装確認は別です。"
+    ],
+    "logos": 51,
+    "offerings": 50,
+    "price_components": 88,
+    "priority_open": 30,
+    "products": 50,
+    "reference_regulations": 17,
+    "regulations": [
+      {
+        "applicability_json": "{\"eligibility\":{\"administrative_duty_fraction\":0.5,\"operator\":\">=\"},\"formula\":\"F/(days*8)\",\"limit_formula\":\"(A/200)*3\",\"limitations\":\"資料の参照情報。正式通知・届出区分と施設条件の照合が必要。計算エンジン／制度適合の認定ではない。\",\"locator\":\"p.2 §3⑩／p.3 ※3\",\"metric\":\"administrative_nursing_assistants\",\"rounding\":\"この様式では明記なし\",\"schema_version\":1,\"summary_ja\":\"事務業務が延べ時間の5割以上の職員を区分。実績F/(日数×8)、上限(A/200)×3。\",\"vendor_implementation_verified\":false,\"verification_stage\":\"documented\"}",
+        "regulation_id": "REG-JP-R8-ADMIN-ASSISTANT",
+        "retrieval_url": "https://kouseikyoku.mhlw.go.jp/kinki/r8-k09.pdf",
+        "retrieved_on": "2026-10-11",
+        "title": "事務的看護補助者の数と上限",
+        "version_label": "令和8年度"
+      },
+      {
+        "applicability_json": "{\"formula\":\"A/staffing_ratio\",\"limitations\":\"資料の参照情報。正式通知・届出区分と施設条件の照合が必要。計算エンジン／制度適合の認定ではない。\",\"locator\":\"p.2 §3⑨参考\",\"metric\":\"required_night_assistants\",\"rounding_reference_id\":\"REG-JP-R8-ROUND-REQUIRED\",\"schema_version\":1,\"summary_ja\":\"夜間の必要数はA／配置区分の数。\",\"vendor_implementation_verified\":false,\"verification_stage\":\"documented\"}",
+        "regulation_id": "REG-JP-R8-ASSISTANT-NIGHT",
+        "retrieval_url": "https://kouseikyoku.mhlw.go.jp/kinki/r8-k09.pdf",
+        "retrieved_on": "2026-10-11",
+        "title": "夜間看護補助者の必要数",
+        "version_label": "令和8年度"
+      },
+      {
+        "applicability_json": "{\"conditions\":\"対象入院料・加算ごとに様式9の2等を確認\",\"limitations\":\"資料の参照情報。正式通知・届出区分と施設条件の照合が必要。計算エンジン／制度適合の認定ではない。\",\"locator\":\"p.4 届出上の注意1・2・5\",\"metric\":\"filing_attachments\",\"schema_version\":1,\"summary_ja\":\"直前1か月の実績と勤務体制・申し送りを添付。対象夜間加算は日別患者数・配置を示す資料も必要。\",\"vendor_implementation_verified\":false,\"verification_stage\":\"documented\"}",
+        "regulation_id": "REG-JP-R8-ATTACHMENTS",
+        "retrieval_url": "https://kouseikyoku.mhlw.go.jp/kinki/r8-k09.pdf",
+        "retrieved_on": "2026-10-11",
+        "title": "様式9に添付する実績と夜間配置",
+        "version_label": "令和8年度"
+      },
+      {
+        "applicability_json": "{\"conditions\":[\"院内緊急対応等・日常診療の延長・短時間\",\"当該病棟入院患者への一時的な病棟外看護\",\"状態変化への短時間対応は30分程度と例示\"],\"limitations\":\"資料の参照情報。正式通知・届出区分と施設条件の照合が必要。計算エンジン／制度適合の認定ではない。\",\"locator\":\"p.15 施設基準キ・ク／別紙5抜粋\",\"metric\":\"exceptional_off_ward_hours_inclusion\",\"schema_version\":1,\"summary_ja\":\"院内緊急時の他患者対応、入院患者の病棟外付き添い、状態変化への短時間対応を条件付きで算入可能。\",\"vendor_implementation_verified\":false,\"verification_stage\":\"documented\"}",
+        "regulation_id": "REG-JP-R8-EMERGENCY",
+        "retrieval_url": "https://www.mhlw.go.jp/content/12400000/001703849.pdf",
+        "retrieved_on": "2026-10-11",
+        "title": "例外的な短時間対応の算入",
+        "version_label": "令和8年度"
+      },
+      {
+        "applicability_json": "{\"formula\":\"(A/50)*3\",\"limitations\":\"資料の参照情報。正式通知・届出区分と施設条件の照合が必要。計算エンジン／制度適合の認定ではない。\",\"locator\":\"p.2 §3⑦参考\",\"metric\":\"required_extra_nurses\",\"rounding\":\"この様式では明記なし\",\"schema_version\":1,\"summary_ja\":\"追加の必要配置数はA／50×3。\",\"vendor_implementation_verified\":false,\"verification_stage\":\"documented\"}",
+        "regulation_id": "REG-JP-R8-EXTRA-REQUIRED",
+        "retrieval_url": "https://kouseikyoku.mhlw.go.jp/kinki/r8-k09.pdf",
+        "retrieved_on": "2026-10-11",
+        "title": "最小必要数以上の看護職員必要数",
+        "version_label": "令和8年度"
+      },
+      {
+        "applicability_json": "{\"allowed_night_periods\":[\"calendar_month\",\"28_contiguous_days\"],\"authority_note\":\"専門団体手引き。行政通知による最終照合は別途必要。\",\"limitations\":\"資料の参照情報。正式通知・届出区分と施設条件の照合が必要。計算エンジン／制度適合の認定ではない。\",\"locator\":\"p.7\",\"metric\":\"night_average_period_choice\",\"schema_version\":1,\"staffing_period\":\"calendar_month\",\"summary_ja\":\"4週間を用いるのは月平均夜勤時間のみ。配置数は暦月で、両実績表と空白のない連続期間を要する。\",\"vendor_implementation_verified\":false,\"verification_stage\":\"documented\"}",
+        "regulation_id": "REG-JP-R8-FOUR-WEEK",
+        "retrieval_url": "https://youshiki9.doc-net.or.jp/manual/youshiki9_tebiki260527.pdf",
+        "retrieved_on": "2026-10-11",
+        "title": "手引き：4週間と暦月の区別",
+        "version_label": "2026診療報酬改定対応版"
+      },
+      {
+        "applicability_json": "{\"formulas\":{\"general\":\"((A/10)+(A/25))*3\",\"psychiatric\":\"(A/staffing_ratio)*3\"},\"limitations\":\"資料の参照情報。正式通知・届出区分と施設条件の照合が必要。計算エンジン／制度適合の認定ではない。\",\"locator\":\"p.2 §3⑪-⑫\",\"metric\":\"required_multi_professional_staffing\",\"rounding\":\"この様式では明記なし\",\"schema_version\":1,\"summary_ja\":\"精神科対象は(A/配置区分)×3、一般対象は{A/10+A/25}×3。職種・対象加算を分ける。\",\"vendor_implementation_verified\":false,\"verification_stage\":\"documented\"}",
+        "regulation_id": "REG-JP-R8-MULTI-PROFESSIONAL",
+        "retrieval_url": "https://kouseikyoku.mhlw.go.jp/kinki/r8-k09.pdf",
+        "retrieved_on": "2026-10-11",
+        "title": "多職種協働の必要配置数",
+        "version_label": "令和8年度"
+      },
+      {
+        "applicability_json": "{\"formula\":\"ward_night_hours / total_night_hours\",\"limitations\":\"資料の参照情報。正式通知・届出区分と施設条件の照合が必要。計算エンジン／制度適合の認定ではない。\",\"locator\":\"p.3 ※4-5\",\"metric\":\"eligible_night_staff_count\",\"schema_version\":1,\"summary_ja\":\"対象の交代制勤務者は通常1。病棟外兼務は当該病棟の夜勤時間／総夜勤時間で計上する。\",\"total_night_hours_includes\":\"病棟と病棟以外\",\"vendor_implementation_verified\":false,\"verification_stage\":\"documented\",\"zero_division_policy\":\"未確認\"}",
+        "regulation_id": "REG-JP-R8-NIGHT-COUNT",
+        "retrieval_url": "https://kouseikyoku.mhlw.go.jp/kinki/r8-k09.pdf",
+        "retrieved_on": "2026-10-11",
+        "title": "夜勤従事者数の兼務按分",
+        "version_label": "令和8年度"
+      },
+      {
+        "applicability_json": "{\"boundary\":\"閾値ちょうどは時間未満の除外に該当しない\",\"conditions\":[{\"employment\":\"短時間正職員以外\",\"operator\":\"<\",\"threshold_hours\":16,\"ward_scope\":\"急性期病院一般・急性期一般・7対1・10対1\"},{\"employment\":\"短時間正職員\",\"operator\":\"<\",\"threshold_hours\":12,\"ward_scope\":\"同上\"},{\"operator\":\"<\",\"threshold_hours\":8,\"ward_scope\":\"それ以外\"}],\"limitations\":\"資料の参照情報。正式通知・届出区分と施設条件の照合が必要。計算エンジン／制度適合の認定ではない。\",\"locator\":\"pp.3-4 ※4・7\",\"metric\":\"night_average_exclusions\",\"night_exclusive_staff\":\"excluded\",\"schema_version\":1,\"summary_ja\":\"夜勤専従者、所定時間未満の者をBと夜勤時間の平均から除外する。\",\"vendor_implementation_verified\":false,\"verification_stage\":\"documented\"}",
+        "regulation_id": "REG-JP-R8-NIGHT-EXCLUSION",
+        "retrieval_url": "https://kouseikyoku.mhlw.go.jp/kinki/r8-k09.pdf",
+        "retrieved_on": "2026-10-11",
+        "title": "夜勤平均の除外条件と境界",
+        "version_label": "令和8年度"
+      },
+      {
+        "applicability_json": "{\"formula\":\"(D-E)/B\",\"inputs\":{\"B\":\"対象夜勤従事職員数（兼務按分後）\",\"D\":\"当該病棟の月延べ夜勤時間\",\"E\":\"算定から除外する職員の夜勤時間\"},\"limitations\":\"資料の参照情報。正式通知・届出区分と施設条件の照合が必要。計算エンジン／制度適合の認定ではない。\",\"locator\":\"p.2 §3⑥\",\"metric\":\"monthly_mean_night_hours\",\"rounding\":\"この様式では明記なし\",\"schema_version\":1,\"summary_ja\":\"月平均夜勤時間は(D-E)/B。\",\"vendor_implementation_verified\":false,\"verification_stage\":\"documented\",\"zero_division_policy\":\"未確認\"}",
+        "regulation_id": "REG-JP-R8-NIGHT-MEAN",
+        "retrieval_url": "https://kouseikyoku.mhlw.go.jp/kinki/r8-k09.pdf",
+        "retrieved_on": "2026-10-11",
+        "title": "様式9 月平均夜勤時間",
+        "version_label": "令和8年度"
+      },
+      {
+        "applicability_json": "{\"example\":{\"input\":\"12.34\",\"output\":\"12.4\"},\"limitations\":\"資料の参照情報。正式通知・届出区分と施設条件の照合が必要。計算エンジン／制度適合の認定ではない。\",\"locator\":\"p.15 改定後\",\"metric\":\"daily_mean_patients_rounding\",\"rounding\":{\"decimal_places\":1,\"mode\":\"ceiling\"},\"schema_version\":1,\"summary_ja\":\"Aは小数第1位まで切り上げ。12.34→12.4。\",\"vendor_implementation_verified\":false,\"verification_stage\":\"documented\"}",
+        "regulation_id": "REG-JP-R8-ROUND-PATIENT",
+        "retrieval_url": "https://www.mhlw.go.jp/content/12400000/001703849.pdf",
+        "retrieved_on": "2026-10-11",
+        "title": "令和8年度 患者数の端数処理",
+        "version_label": "令和8年度"
+      },
+      {
+        "applicability_json": "{\"applies_to\":[\"required_daily_nurse_staffing\",\"required_night_assistants\"],\"limitations\":\"資料の参照情報。正式通知・届出区分と施設条件の照合が必要。計算エンジン／制度適合の認定ではない。\",\"locator\":\"p.15 改定後\",\"metric\":\"required_staffing_rounding\",\"rounding\":{\"decimal_places\":1,\"mode\":\"ceiling\"},\"schema_version\":1,\"summary_ja\":\"1日看護職員必要数・夜間看護補助者必要数を小数第1位まで切り上げ。\",\"vendor_implementation_verified\":false,\"verification_stage\":\"documented\"}",
+        "regulation_id": "REG-JP-R8-ROUND-REQUIRED",
+        "retrieval_url": "https://www.mhlw.go.jp/content/12400000/001703849.pdf",
+        "retrieved_on": "2026-10-11",
+        "title": "令和8年度 必要数の端数処理",
+        "version_label": "令和8年度"
+      },
+      {
+        "applicability_json": "{\"limitations\":\"資料の参照情報。正式通知・届出区分と施設条件の照合が必要。計算エンジン／制度適合の認定ではない。\",\"locator\":\"p.15 改定後\",\"metric\":\"daily_mean_nurse_staffing_rounding\",\"rounding\":{\"decimal_places\":1,\"mode\":\"truncate\"},\"schema_version\":1,\"summary_ja\":\"月平均配置数は小数第2位以下切捨て。\",\"vendor_implementation_verified\":false,\"verification_stage\":\"documented\"}",
+        "regulation_id": "REG-JP-R8-ROUND-STAFF",
+        "retrieval_url": "https://www.mhlw.go.jp/content/12400000/001703849.pdf",
+        "retrieved_on": "2026-10-11",
+        "title": "令和8年度 実績配置数の端数処理",
+        "version_label": "令和8年度"
+      },
+      {
+        "applicability_json": "{\"formula\":\"C=sum(ward_day_hours+ward_night_hours); D=sum(ward_night_hours)\",\"limitations\":\"資料の参照情報。正式通知・届出区分と施設条件の照合が必要。計算エンジン／制度適合の認定ではない。\",\"locator\":\"pp.3-4 ※6\",\"metric\":\"working_hours_grid\",\"row_roles\":[\"ward_day_hours\",\"ward_night_hours\",\"total_night_hours\"],\"schema_version\":1,\"summary_ja\":\"上段は病棟日勤、中段は病棟夜勤、下段は病棟外を含む総夜勤。Cは上段＋中段、Dは中段。\",\"vendor_implementation_verified\":false,\"verification_stage\":\"documented\"}",
+        "regulation_id": "REG-JP-R8-SHIFT-GRID",
+        "retrieval_url": "https://kouseikyoku.mhlw.go.jp/kinki/r8-k09.pdf",
+        "retrieved_on": "2026-10-11",
+        "title": "勤務実績の三段と集計値",
+        "version_label": "令和8年度"
+      },
+      {
+        "applicability_json": "{\"formula\":\"C/(days*8)\",\"limitations\":\"資料の参照情報。正式通知・届出区分と施設条件の照合が必要。計算エンジン／制度適合の認定ではない。\",\"locator\":\"p.2 §3②\",\"metric\":\"daily_mean_nurse_staffing\",\"rounding_reference_id\":\"REG-JP-R8-ROUND-STAFF\",\"schema_version\":1,\"summary_ja\":\"月延べ勤務時間Cを日数×8で除す。\",\"vendor_implementation_verified\":false,\"verification_stage\":\"documented\"}",
+        "regulation_id": "REG-JP-R8-STAFF-ACTUAL",
+        "retrieval_url": "https://kouseikyoku.mhlw.go.jp/kinki/r8-k09.pdf",
+        "retrieved_on": "2026-10-11",
+        "title": "月平均1日看護職員配置数",
+        "version_label": "令和8年度"
+      },
+      {
+        "applicability_json": "{\"formula\":\"(A/staffing_ratio)*3\",\"inputs\":{\"A\":\"1日平均入院患者数\",\"staffing_ratio\":\"届出区分の配置比の数\"},\"limitations\":\"資料の参照情報。正式通知・届出区分と施設条件の照合が必要。計算エンジン／制度適合の認定ではない。\",\"locator\":\"p.2 §3②参考\",\"metric\":\"required_daily_nurse_staffing\",\"rounding_reference_id\":\"REG-JP-R8-ROUND-REQUIRED\",\"schema_version\":1,\"summary_ja\":\"必要配置数は患者数A／配置区分の数×3。\",\"vendor_implementation_verified\":false,\"verification_stage\":\"documented\"}",
+        "regulation_id": "REG-JP-R8-STAFF-REQUIRED",
+        "retrieval_url": "https://kouseikyoku.mhlw.go.jp/kinki/r8-k09.pdf",
+        "retrieved_on": "2026-10-11",
+        "title": "1日看護職員の必要配置数",
+        "version_label": "令和8年度"
+      },
+      {
+        "applicability_json": "{\"conditions\":[\"施設が業務の質向上のため受講を指示\",\"保険医療機関内\",\"当該病棟のオンライン／病棟外の集合研修を含む\"],\"limitations\":\"資料の参照情報。正式通知・届出区分と施設条件の照合が必要。計算エンジン／制度適合の認定ではない。\",\"locator\":\"p.15 別紙5抜粋\",\"metric\":\"training_hours_inclusion\",\"monthly_cap_hours_per_staff\":1,\"schema_version\":1,\"summary_ja\":\"施設が指示した院内研修は、主に当該病棟に従事する職員1名につき月1時間まで算入可能。\",\"vendor_implementation_verified\":false,\"verification_stage\":\"documented\"}",
+        "regulation_id": "REG-JP-R8-TRAINING",
+        "retrieval_url": "https://www.mhlw.go.jp/content/12400000/001703849.pdf",
+        "retrieved_on": "2026-10-11",
+        "title": "病棟勤務に算入できる院内研修",
+        "version_label": "令和8年度"
+      }
+    ],
+    "research_documents": 188,
+    "research_sha256": "2ddb59f682a829e7ee796950232bccbe36bceee2787eeafd4efac504776fc094",
+    "snapshot_id": "B07-20261011-pub2"
+  },
+  "source": {
+    "worker_commit": "15f82b6e3f5fe12525e650e83d95ea660644ec1e",
+    "proxy_commit": "6c9898742698309a3e77a258d203e5da747e4eb7",
+    "worker_version": "3819b736-ea47-424e-883d-92be4a90b883",
+    "pages_deployment": "https://6e301253.aqsh-shift.pages.dev/"
+  },
+  "browser": {
+    "passed": 14,
+    "failed_after_recheck": 0,
+    "initial_run": {
+      "passed": 10,
+      "failed": 4,
+      "duration_seconds": 25.4,
+      "failure": "getaddrinfo ENOTFOUND while local DNS was propagating"
+    },
+    "affected_recheck": {
+      "passed": 4,
+      "failed": 0,
+      "duration_seconds": 7.6
+    },
+    "tests": [
+      {
+        "name": "tests/browser/catalog.spec.mjs:21:1 › normal UI search, filters, compare selection and mobile overflow",
+        "status": "passed",
+        "duration_ms": 2400.0
+      },
+      {
+        "name": "tests/browser/catalog.spec.mjs:27:1 › search and comparison work without JavaScript",
+        "status": "passed",
+        "duration_ms": 950.0
+      },
+      {
+        "name": "tests/browser/quality.spec.mjs:4:1 › new branding, lining numerals, polite copy and reduced-motion rendering",
+        "status": "passed",
+        "duration_ms": 1100.0
+      },
+      {
+        "name": "tests/browser/quality.spec.mjs:13:1 › WCAG AA automated checks cover home, catalog, detail and comparison",
+        "status": "passed",
+        "duration_ms": 7900.0
+      },
+      {
+        "name": "tests/browser/quality.spec.mjs:20:1 › 320, 390, 768 and 1440 pixel layouts keep controls and pages in view",
+        "status": "passed",
+        "duration_ms": 3200.0
+      },
+      {
+        "name": "tests/browser/quality.spec.mjs:29:1 › native search navigation restores its usable button and decorative markup after back",
+        "status": "passed",
+        "duration_ms": 956.0
+      },
+      {
+        "name": "tests/browser/quality.spec.mjs:40:1 › deployed D1 request batching exposes the intended round-trip counts",
+        "status": "passed",
+        "duration_ms": 646.0
+      },
+      {
+        "name": "tests/browser/webmcp.spec.mjs:3:1 › five native tools return source-backed data and update visible UI",
+        "status": "passed",
+        "duration_ms": 1200.0
+      },
+      {
+        "name": "tests/browser/webmcp.spec.mjs:12:1 › native cancellation prevents delayed results and page lifecycle removes tools",
+        "status": "passed",
+        "duration_ms": 798.0
+      },
+      {
+        "name": "tests/browser/webmcp.spec.mjs:19:1 › unsupported WebMCP leaves the normal UI operational",
+        "status": "passed",
+        "duration_ms": 653.0
+      },
+      {
+        "name": "tests/browser/catalog.spec.mjs:2:1 › all 50 products are searchable, server rendered and have distinct detail metadata",
+        "status": "passed",
+        "duration_ms": 5400.0
+      },
+      {
+        "name": "tests/browser/catalog.spec.mjs:7:1 › API input boundaries, nonmutation, evidence pagination and complete price conditions",
+        "status": "passed",
+        "duration_ms": 735.0
+      },
+      {
+        "name": "tests/browser/catalog.spec.mjs:14:1 › SEO routes, no fabricated reviews, operator phone omission, and real 404s",
+        "status": "passed",
+        "duration_ms": 494.0
+      },
+      {
+        "name": "tests/browser/catalog.spec.mjs:30:1 › planned care calculation and task assignment preserve capability scope",
+        "status": "passed",
+        "duration_ms": 304.0
+      }
+    ]
+  },
+  "lighthouse": {
+    "version": "13.5.0",
+    "fetch_time": "2026-10-11T11:06:31.737Z",
+    "url": "https://shift.aqsh.co.jp/",
+    "form_factor": "mobile",
+    "scores": {
+      "performance": 100,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "metrics": {
+      "first-contentful-paint": {
+        "value": 935.0575,
+        "unit": "millisecond",
+        "display": "0.9 s"
+      },
+      "largest-contentful-paint": {
+        "value": 1085.0575,
+        "unit": "millisecond",
+        "display": "1.1 s"
+      },
+      "total-blocking-time": {
+        "value": 0,
+        "unit": "millisecond",
+        "display": "0 ms"
+      },
+      "cumulative-layout-shift": {
+        "value": 0,
+        "unit": "unitless",
+        "display": "0"
+      },
+      "speed-index": {
+        "value": 935.0575,
+        "unit": "millisecond",
+        "display": "0.9 s"
+      }
+    },
+    "limitations": [
+      "Single simulated-mobile lab run, not field Core Web Vitals",
+      "SEO score does not confirm Google indexing or search ranking"
+    ]
+  },
+  "log_proof": [
+    {
+      "name": "shift-custom-domain-browser.log",
+      "sha256": "34b70cc0c9e94264e3175717e8930fb5aca8959d6af83e18ac33523f014c9f80"
+    },
+    {
+      "name": "shift-custom-domain-browser-dns-recheck.log",
+      "sha256": "0fb29b3fe0dcdca9fc248c443bb9166edc7de5349da2f8ed99d03e82de762c2a"
+    }
+  ],
+  "screenshots": [
+    {
+      "path": "docs/screenshots/custom-domain-20261011.png",
+      "width": 65536,
+      "height": 4292542531,
+      "bytes": 80615,
+      "sha256": "9cc8719d44b6811f1a32128e0dca981d51bee5455b7a89b5bb6d2ad196e14512"
+    },
+    {
+      "path": "docs/screenshots/google-index-request-20261011.png",
+      "width": 65536,
+      "height": 4292542531,
+      "bytes": 75857,
+      "sha256": "cbf4364217a50414d92c5961a996def7ffd4a1854a394d8b4401cc4498d95b09"
+    }
+  ],
+  "search_console": {
+    "property": "sc-domain:shift.aqsh.co.jp",
+    "ownership": "Existing property accessible in signed-in account",
+    "sitemap_url": "https://shift.aqsh.co.jp/sitemap.xml",
+    "submission": "Submitted, confirmation dialog observed",
+    "initial_fetch_status": "Could not fetch",
+    "initial_discovered_pages": 0,
+    "live_url_test": {
+      "url": "https://shift.aqsh.co.jp/",
+      "tested_at_jst": "2026-10-11 20:10",
+      "status": "URL is available to Google",
+      "indexing_allowed": true
+    },
+    "index_request": "Requested; confirmation observed; added to priority crawl queue",
+    "index_status": "Not indexed at inspection time",
+    "sitemap_resubmission": "Submitted, confirmation dialog observed",
+    "last_sitemap_fetch_status": "Could not fetch",
+    "last_sitemap_discovered_pages": 0,
+    "last_checked_at": "2026-10-11T11:13:56.299763+00:00"
+  },
+  "unverified": [
+    "Google indexing and search ranking",
+    "Award judging",
+    "Independent AI natural-language tool selection E2E",
+    "Real-device Safari and Firefox",
+    "30 priority research questions"
+  ],
+  "googlebot_user_agent_probe": {
+    "status": 200,
+    "sitemap_urls": 62,
+    "limitation": "Local User-Agent probe, not a verified Google crawler"
+  }
+}

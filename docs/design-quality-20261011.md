@@ -83,4 +83,6 @@ ManropeのLatin可変フォントは24,836バイト、SIL Open Font License 1.1�
 
 [機械可読の検証記録](design-quality-verification-20261011.json)にテスト名、Lighthouse、全HTTPサンプル、キャッシュヘッダー、画像ハッシュを保存しています。[PC](screenshots/redesign-desktop-20261011.png)、[トップ全体](screenshots/redesign-home-full-20261011.png)、[スマートフォン](screenshots/redesign-mobile-20261011.png)、[比較画面](screenshots/redesign-comparison-20261011.png)を目視確認して保存しました。
 
-`shift.aqsh.co.jp`はCNAME設定待ちです。確認用Pages URLと検証Workerは意図的にnoindexで、PagesのrobotsもDisallowです。LighthouseのSEO69はこの検索対象外の設定を含むため、独自ドメインの公開確認とは分けます。確認用HTMLのno-storeによるbfcache制限も残します。独自ドメイン接続後は公開側のrobots・canonical・HTTPSとGoogle登録を確認する必要があります。Googleインデックスや検索順位、受賞、実機Safari・Firefoxは今回の検証では確認していません。
+この改修時点では`shift.aqsh.co.jp`がCNAME設定待ちでした。その後、ムームードメインのDNS設定とCloudflareのSSL有効化を完了し、指定ドメインで公開しています。[独自ドメインの公開接続記録](custom-domain-20261011.md)に、14項目のブラウザ検証、20件のHTTP確認、公開ドメインでのLighthouse全4項目100、Google Search Consoleの取得状況を保存しました。
+
+確認用Pages URLと検証Workerは引き続き意図的にnoindexで、PagesのrobotsもDisallowです。本記録のSEO69は当時の確認用URLの計測値です。確認用HTMLのno-storeによるbfcache制限も残します。Googleインデックスや検索順位、受賞、実機Safari・Firefoxは確認していません。

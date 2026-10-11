@@ -4,8 +4,10 @@
   "production_alias": "https://aqsh-shift.pages.dev/",
   "custom_domain": {
     "url": "https://shift.aqsh.co.jp/",
-    "status": "DNS CNAME pending",
-    "required_record": "shift CNAME aqsh-shift.pages.dev"
+    "status": "Active, SSL enabled",
+    "record": "shift CNAME aqsh-shift.pages.dev",
+    "verification_file": "custom-domain-verification-20261011.json",
+    "original_status_at_design_measurement": "DNS CNAME pending"
   },
   "source": {
     "worker_commit": "15f82b6e3f5fe12525e650e83d95ea660644ec1e",
