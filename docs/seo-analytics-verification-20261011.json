@@ -1,0 +1,256 @@
+{
+  "checked_at": "2026-10-11T11:56:13.262034+00:00",
+  "public_url": "https://shift.aqsh.co.jp/",
+  "implementation_commit": "9b3839c511dbbb9929e76e94d764cc2e77eeb94b",
+  "deployment": {
+    "worker": "aqsh-shift-research",
+    "production_version": "9edb63e1-72d7-4521-9566-01b33e376582",
+    "production_d1": "82a6fd5d-f656-4eb4-bf78-347cf154420c",
+    "staging_version": "834d2c7f-d781-4fdd-8ca1-5cf65883a849",
+    "staging_d1": "31ed6b7f-a59e-4967-a27e-38684f221fd4",
+    "data_reimported": false
+  },
+  "google_search_console": {
+    "property": "sc-domain:shift.aqsh.co.jp",
+    "sitemap": {
+      "url": "https://shift.aqsh.co.jp/sitemap.xml",
+      "status": "success",
+      "detected_pages": 62,
+      "last_read_date": "2026-10-11"
+    },
+    "home": {
+      "indexed": true,
+      "crawl_time_jst": "2026-10-11 20:11:47",
+      "crawler": "smartphone Googlebot",
+      "fetch": "success",
+      "canonical": "https://shift.aqsh.co.jp/"
+    },
+    "other_inspected_urls": [
+      {
+        "url": "https://shift.aqsh.co.jp/products/",
+        "state": "discovered_not_indexed",
+        "request_accepted": true
+      },
+      {
+        "url": "https://shift.aqsh.co.jp/products/jp04/",
+        "state": "discovered_not_indexed",
+        "request_accepted": true
+      }
+    ],
+    "aggregate_indexed_count": null,
+    "aggregate_report_state": "processing; check after one day",
+    "initial_sitemap_failure_cause": "unconfirmed"
+  },
+  "ga4": {
+    "property_id": "558435898",
+    "stream_id": "16105930586",
+    "measurement_id": "G-E205Y93JB7",
+    "property_name": "Aqsh シフトづくりサービス比較",
+    "timezone": "Asia/Tokyo",
+    "currency": "JPY",
+    "enhanced_measurement": false,
+    "consent_mode": "basic; no Google tag before opt-in",
+    "allowed_host": "shift.aqsh.co.jp",
+    "cookie_max_age_days": 180,
+    "consent_max_age_days": 180,
+    "event_retention_months": 2,
+    "user_retention_months": 2,
+    "reset_retention_on_activity": false,
+    "google_signals": false,
+    "user_provided_data": false,
+    "ad_personalization_allowed_regions": 0,
+    "ad_personalization_total_regions": 307,
+    "redact_email": true,
+    "redact_query_keys": [
+      "q",
+      "query",
+      "search",
+      "search_term",
+      "email",
+      "name"
+    ],
+    "custom_dimension": {
+      "name": "製品ID",
+      "scope": "event",
+      "parameter": "product_id",
+      "verified_saved": true
+    },
+    "realtime_ui_receipt": {
+      "active_users": 1,
+      "page_view": 3,
+      "compare_select": 2,
+      "compare_view": 1,
+      "first_visit": 1,
+      "session_start": 1,
+      "user_engagement": 2
+    },
+    "other_events": "catalog_search, compare_submit, vendor_click verified with mocked browser events; not separately confirmed in GA4 UI",
+    "validation_visit_included_in_production_data": true
+  },
+  "verification": {
+    "seo_audit": "seo-pages-verification-20261011.json",
+    "public_sitemap_urls": 62,
+    "seo_issue_count": 0,
+    "node_tests_passed": 14,
+    "astro_files_checked": 43,
+    "astro_errors": 0,
+    "astro_warnings": 0,
+    "astro_hints": 0,
+    "production_build": "passed",
+    "staging_browser": {
+      "startTime": "2026-10-11T11:39:02.334Z",
+      "duration": 38595.322,
+      "expected": 14,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    },
+    "production_browser": {
+      "passed_first_run": [
+        {
+          "name": "tests/browser/analytics.spec.mjs:18:1 › opt-in loads one tag, sanitized events omit raw query, and withdrawal stops future collection",
+          "result": "passed"
+        },
+        {
+          "name": "tests/browser/analytics.spec.mjs:39:1 › refusal survives navigation and preview hosts cannot load a Google tag",
+          "result": "passed"
+        },
+        {
+          "name": "tests/browser/analytics.spec.mjs:49:1 › a page restored from history respects consent withdrawn on another page",
+          "result": "passed"
+        },
+        {
+          "name": "tests/browser/catalog.spec.mjs:2:1 › all 50 products are searchable, server rendered and have distinct detail metadata",
+          "result": "passed"
+        },
+        {
+          "name": "tests/browser/catalog.spec.mjs:7:1 › API input boundaries, nonmutation, evidence pagination and complete price conditions",
+          "result": "passed"
+        },
+        {
+          "name": "tests/browser/catalog.spec.mjs:14:1 › SEO routes, no fabricated reviews, operator phone omission, and real 404s",
+          "result": "passed"
+        },
+        {
+          "name": "tests/browser/catalog.spec.mjs:21:1 › normal UI search, filters, compare selection and mobile overflow",
+          "result": "passed"
+        },
+        {
+          "name": "tests/browser/catalog.spec.mjs:27:1 › search and comparison work without JavaScript",
+          "result": "passed"
+        },
+        {
+          "name": "tests/browser/catalog.spec.mjs:30:1 › planned care calculation and task assignment preserve capability scope",
+          "result": "passed"
+        },
+        {
+          "name": "tests/browser/quality.spec.mjs:4:1 › new branding, lining numerals, polite copy and reduced-motion rendering",
+          "result": "passed"
+        },
+        {
+          "name": "tests/browser/quality.spec.mjs:13:1 › WCAG AA automated checks cover home, catalog, detail and comparison",
+          "result": "passed"
+        },
+        {
+          "name": "tests/browser/quality.spec.mjs:20:1 › 320, 390, 768 and 1440 pixel layouts keep controls and pages in view",
+          "result": "passed"
+        },
+        {
+          "name": "tests/browser/quality.spec.mjs:29:1 › native search navigation restores its usable button and decorative markup after back",
+          "result": "passed"
+        },
+        {
+          "name": "tests/browser/quality.spec.mjs:40:1 › deployed D1 request batching exposes the intended round-trip counts",
+          "result": "passed"
+        },
+        {
+          "name": "tests/browser/webmcp.spec.mjs:3:1 › five native tools return source-backed data and update visible UI",
+          "result": "passed"
+        },
+        {
+          "name": "tests/browser/webmcp.spec.mjs:12:1 › native cancellation prevents delayed results and page lifecycle removes tools",
+          "result": "passed"
+        },
+        {
+          "name": "tests/browser/webmcp.spec.mjs:19:1 › unsupported WebMCP leaves the normal UI operational",
+          "result": "passed"
+        }
+      ],
+      "first_run_test_error": "responsive test attempted a deliberately hidden bulk-clear control on mobile; fixed test to use visible individual removal buttons",
+      "affected_retest": {
+        "startTime": "2026-10-11T11:49:48.497Z",
+        "duration": 4155.4349999999995,
+        "expected": 1,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      },
+      "total_unique_tests_passed_after_fix": 18,
+      "app_changed_for_test_repair": false
+    }
+  },
+  "lighthouse": {
+    "fetch_time": "2026-10-11T11:51:25.944Z",
+    "version": "13.5.0",
+    "url": "https://shift.aqsh.co.jp/",
+    "scores": {
+      "performance": 100,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "metrics": {
+      "first-contentful-paint": {
+        "numeric_value": 1360.57,
+        "unit": "millisecond",
+        "display": "1.4 s"
+      },
+      "largest-contentful-paint": {
+        "numeric_value": 1674.57,
+        "unit": "millisecond",
+        "display": "1.7 s"
+      },
+      "total-blocking-time": {
+        "numeric_value": 0,
+        "unit": "millisecond",
+        "display": "0 ms"
+      },
+      "cumulative-layout-shift": {
+        "numeric_value": 0,
+        "unit": "unitless",
+        "display": "0"
+      },
+      "speed-index": {
+        "numeric_value": 1360.57,
+        "unit": "millisecond",
+        "display": "1.4 s"
+      }
+    },
+    "runtime_error": null,
+    "field_core_web_vitals": false,
+    "consent_state": "unselected; no Google tag loaded",
+    "remaining_opportunities": [
+      "image-delivery-insight",
+      "render-blocking-insight"
+    ]
+  },
+  "limitations": [
+    "62 detected pages is not 62 indexed pages",
+    "No search ranking guarantee or full indexed-count confirmation",
+    "SoftwareApplication markup is not eligible for Google rich result without verified required price and review facts",
+    "Normal GA4 reports may not yet show the new data; receipt was confirmed in Realtime",
+    "Counts include only consenting visitors",
+    "Research snapshot remains 2026-10-11, with 30 priority open questions and no independent service performance tests"
+  ],
+  "screenshots": [
+    "ga4-stream-20261011.png",
+    "google-products-request-20261011.png",
+    "ga4-no-ads-20261011.png",
+    "google-indexed-20261011.png",
+    "ga4-realtime-20261011.png",
+    "google-detail-request-20261011.png",
+    "ga4-product-dimension-20261011.png",
+    "sitemap-success-20261011.png",
+    "ga4-retention-20261011.png"
+  ]
+}

@@ -4,7 +4,7 @@
 
 調査データとツールは [Aqsh_Shift_Research_v2_Batch02_DB_20261011](Aqsh_Shift_Research_v2_Batch02_DB_20261011/) にあります。
 
-無料・会員登録不要の **[Aqsh シフトづくりサービス比較](https://shift.aqsh.co.jp/)** をCloudflareへ公開しました。ムームードメインのCNAME接続、HTTPS証明書、公開ドメインでの検索・比較・50詳細ページ・Web MCPを確認しています。Lighthouseの性能・アクセシビリティ・ベストプラクティス・SEOは100でした。公開状況とGoogle側の取得状況は [独自ドメインの公開接続記録](docs/custom-domain-20261011.md) を参照してください。
+無料・会員登録不要の **[Aqsh シフトづくりサービス比較](https://shift.aqsh.co.jp/)** をCloudflareへ公開しました。ムームードメインのCNAME接続、HTTPS証明書、公開ドメインでの検索・比較・50詳細ページ・Web MCPを確認しています。GA4同意画面の追加後も、モバイルLighthouseの性能・アクセシビリティ・ベストプラクティス・SEOは100でした。Googleはサイトマップの62ページを検出し、トップページはインデックス登録済みです。全ページの登録・検索順位を保証する数値ではありません。GA4の実受信と最新のGoogle側の状態は [SEO・アクセス解析の対応記録](docs/seo-analytics-20261011.md) を参照してください。
 
 | ファイル | 用途 |
 |---|---|
@@ -16,6 +16,7 @@
 | [最新の調査報告](Aqsh_Shift_Research_v2_Batch02_DB_20261011/reports/Batch07_research_report.md) | 様式9算式、管理者MFA、解約時の出力、分類訂正と残課題 |
 | [デザイン・性能の改修記録](docs/design-quality-20261011.md) | 新名称、数字、画面品質、D1取得回数、公開側の検証と計測 |
 | [独自ドメインの公開接続記録](docs/custom-domain-20261011.md) | DNS・SSL・公開ドメインの動作・SEO・Google Search Console |
+| [SEO・アクセス解析の対応記録](docs/seo-analytics-20261011.md) | サイトマップ成功、Google登録、62ページのタグ検査、同意に基づくGA4の実受信 |
 | [制度の参照データ](Aqsh_Shift_Research_v2_Batch02_DB_20261011/reports/regulation_index.csv) | 様式9の式・除外・丸め・集計期間。製品の実装証拠とは別に保存 |
 
 ## ローカルで確認する

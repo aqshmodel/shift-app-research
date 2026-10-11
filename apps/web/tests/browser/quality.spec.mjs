@@ -60,7 +60,10 @@ test('consent controls and the comparison bar remain usable at each viewport wit
   });
   expect(geometry.overflow).toBe(false);expect(geometry.overlap).toBe(false);expect(geometry.barTop).toBeGreaterThan(0);
   await expect(page.locator('#analytics-allow')).toBeInViewport();await expect(page.locator('#analytics-deny')).toBeInViewport();
-  await page.locator('#compare-clear').click();
+  // Mobile exposes individual removal controls while hiding the bulk clear button.
+  await page.locator('#compare-selected button').first().click();
+  await page.locator('#compare-selected button').first().click();
+  await expect(page.locator('#compare-bar')).toBeHidden();
  }
  expect(google).toEqual([]);
 });
