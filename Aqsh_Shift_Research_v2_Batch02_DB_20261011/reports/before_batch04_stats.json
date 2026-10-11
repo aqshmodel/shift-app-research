@@ -1,0 +1,243 @@
+{
+  "tables": {
+    "assessment_resolutions": 1813,
+    "asset_evidence": 6,
+    "audit_issues": 32,
+    "batch_product_membership": 50,
+    "benchmark_runs": 0,
+    "benchmark_scenario_criteria": 45,
+    "benchmark_scenarios": 14,
+    "cost_requirements": 36,
+    "cost_scenarios": 8,
+    "criteria": 164,
+    "current_assessments": 1694,
+    "domains": 20,
+    "legacy_feature_map": 86,
+    "metric_catalog": 20,
+    "observation_evidence": 974,
+    "observations": 1858,
+    "offerings": 50,
+    "plans": 46,
+    "price_components": 65,
+    "product_aliases": 57,
+    "products": 50,
+    "regulation_support": 0,
+    "regulations": 0,
+    "research_assets": 6,
+    "research_batches": 3,
+    "research_task_updates": 15,
+    "research_tasks": 925,
+    "resolution_evidence": 1977,
+    "retrieval_checks": 7,
+    "run_metrics": 0,
+    "schema_info": 17,
+    "source_documents": 114,
+    "source_method_attributes": 72,
+    "source_revisions": 132,
+    "sources": 116,
+    "vendors": 11
+  },
+  "products": 50,
+  "offerings": 50,
+  "document_observations": 940,
+  "document_states": {
+    "disputed": 7,
+    "inaccessible": 6,
+    "known": 904,
+    "not_found": 22,
+    "not_researched": 1
+  },
+  "common_slots": 2000,
+  "documented_common_scopes": 432,
+  "research_documents": 105,
+  "benchmark_runs": 0,
+  "batch03": {
+    "observations": 236,
+    "states": {
+      "disputed": 3,
+      "known": 227,
+      "not_found": 6
+    },
+    "products": 24,
+    "source_revisions": 33,
+    "new_canonical_documents": 19,
+    "net_new_common_scopes": 37,
+    "new_prices": 3,
+    "by_product": [
+      {
+        "product_id": "JP01",
+        "canonical_name": "Shiftmation",
+        "observation_count": 9
+      },
+      {
+        "product_id": "JP03",
+        "canonical_name": "FIKAIGO",
+        "observation_count": 11
+      },
+      {
+        "product_id": "JP04",
+        "canonical_name": "Nafty",
+        "observation_count": 25
+      },
+      {
+        "product_id": "JP05",
+        "canonical_name": "勤務シフト作成お助けマン Day",
+        "observation_count": 11
+      },
+      {
+        "product_id": "JP06",
+        "canonical_name": "勤務シフト作成お助けマン Time",
+        "observation_count": 9
+      },
+      {
+        "product_id": "JP10",
+        "canonical_name": "Pitat-Shift",
+        "observation_count": 10
+      },
+      {
+        "product_id": "JP18",
+        "canonical_name": "oplus",
+        "observation_count": 16
+      },
+      {
+        "product_id": "JP26",
+        "canonical_name": "らくしふ",
+        "observation_count": 10
+      },
+      {
+        "product_id": "JP27",
+        "canonical_name": "Airシフト",
+        "observation_count": 7
+      },
+      {
+        "product_id": "JP28",
+        "canonical_name": "シフト屋さん Public API / MCP",
+        "observation_count": 15
+      },
+      {
+        "product_id": "US01",
+        "canonical_name": "RosterLab AI",
+        "observation_count": 6
+      },
+      {
+        "product_id": "US02",
+        "canonical_name": "QGenda Nurse & Staff Scheduling",
+        "observation_count": 8
+      },
+      {
+        "product_id": "US04",
+        "canonical_name": "Smartlinx Scheduling",
+        "observation_count": 6
+      },
+      {
+        "product_id": "US07",
+        "canonical_name": "Deputy Core",
+        "observation_count": 7
+      },
+      {
+        "product_id": "US09",
+        "canonical_name": "Connecteam Operations Hub Expert",
+        "observation_count": 7
+      },
+      {
+        "product_id": "US10",
+        "canonical_name": "Timefold Employee Shift Scheduling API",
+        "observation_count": 9
+      },
+      {
+        "product_id": "US12",
+        "canonical_name": "ShiftWizard",
+        "observation_count": 7
+      },
+      {
+        "product_id": "US14",
+        "canonical_name": "Patchwork Rota",
+        "observation_count": 9
+      },
+      {
+        "product_id": "US15",
+        "canonical_name": "Clairvia",
+        "observation_count": 3
+      },
+      {
+        "product_id": "US16",
+        "canonical_name": "PerfectServe Lightning Bolt",
+        "observation_count": 6
+      },
+      {
+        "product_id": "US17",
+        "canonical_name": "Humanity Schedule",
+        "observation_count": 16
+      },
+      {
+        "product_id": "US19",
+        "canonical_name": "When I Work",
+        "observation_count": 8
+      },
+      {
+        "product_id": "US20",
+        "canonical_name": "Planday",
+        "observation_count": 13
+      },
+      {
+        "product_id": "US22",
+        "canonical_name": "Sona",
+        "observation_count": 8
+      }
+    ]
+  },
+  "baseline": {
+    "tables": {
+      "assessment_resolutions": 1579,
+      "asset_evidence": 6,
+      "audit_issues": 32,
+      "batch_product_membership": 26,
+      "benchmark_runs": 0,
+      "benchmark_scenario_criteria": 45,
+      "benchmark_scenarios": 14,
+      "cost_requirements": 36,
+      "cost_scenarios": 8,
+      "criteria": 164,
+      "current_assessments": 1567,
+      "domains": 20,
+      "legacy_feature_map": 86,
+      "metric_catalog": 20,
+      "observation_evidence": 738,
+      "observations": 1622,
+      "offerings": 50,
+      "plans": 43,
+      "price_components": 62,
+      "product_aliases": 57,
+      "products": 50,
+      "regulation_support": 0,
+      "regulations": 0,
+      "research_assets": 6,
+      "research_batches": 2,
+      "research_task_updates": 8,
+      "research_tasks": 916,
+      "resolution_evidence": 1626,
+      "retrieval_checks": 4,
+      "run_metrics": 0,
+      "schema_info": 17,
+      "source_documents": 95,
+      "source_method_attributes": 39,
+      "source_revisions": 99,
+      "sources": 97,
+      "vendors": 11
+    },
+    "products": 50,
+    "offerings": 50,
+    "document_observations": 704,
+    "document_states": {
+      "disputed": 4,
+      "inaccessible": 6,
+      "known": 677,
+      "not_found": 16,
+      "not_researched": 1
+    },
+    "common_slots": 2000,
+    "documented_common_scopes": 395,
+    "research_documents": 85,
+    "benchmark_runs": 0
+  }
+}

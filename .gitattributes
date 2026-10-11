@@ -1,0 +1,7 @@
+* text=auto eol=lf
+# Preserve generated CSV bytes so manifest SHA-256 stays valid after cloning.
+*.csv -text
+*.sqlite3 binary
+*.zip binary
+*.pdf binary
+*.png binary

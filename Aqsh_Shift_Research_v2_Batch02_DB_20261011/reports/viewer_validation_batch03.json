@@ -1,0 +1,16 @@
+{
+  "browser": "Google Chrome via Playwright",
+  "cards": 50,
+  "enriched": 24,
+  "domestic": 28,
+  "overseas": 22,
+  "comparisonRows": 40,
+  "comparisonColumns": 5,
+  "uniqueDocumentObservations": 940,
+  "pageErrors": [],
+  "viewports": [
+    1440,
+    390
+  ],
+  "status": "passed"
+}

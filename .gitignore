@@ -1,0 +1,48 @@
+# OS and editor files
+.DS_Store
+._*
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Python runtimes and caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+env/
+
+# Node dependencies and local Cloudflare state
+node_modules/
+.wrangler/
+.dev.vars
+.dev.vars.*
+!.dev.vars.example
+
+# Local credentials and personal tool settings
+.env
+.env.*
+!.env.example
+.aws/
+.codex/
+
+# Temporary files and database sidecars
+tmp/
+temp/
+*.tmp
+*.log
+*.sqlite3-wal
+*.sqlite3-shm
+*.sqlite3-journal
+*.sqlite-wal
+*.sqlite-shm
+*.sqlite-journal
+*.db-wal
+*.db-shm
+*.db-journal
+
+# research.sqlite3, source ZIP/PDF, D1 SQL and validation reports are tracked.

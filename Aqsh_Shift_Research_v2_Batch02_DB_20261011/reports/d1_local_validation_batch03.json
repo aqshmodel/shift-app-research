@@ -1,0 +1,16 @@
+{
+  "wrangler_version": "4.149.0",
+  "runtime": "local D1 / Miniflare",
+  "remote_executed": false,
+  "import_commands": 8861,
+  "status": "passed",
+  "all_36_application_tables_equal": true,
+  "current40_equal": true,
+  "integrity_check": "ok",
+  "foreign_key_errors": 0,
+  "sql_sha256": "d5360560c1890c74e53f687e964fd014fc02ec751fbefc1bfd9866d5e5151b58",
+  "observations": 1858,
+  "document_observations": 940,
+  "common_slots": 2000,
+  "documented_common_scopes": 432
+}

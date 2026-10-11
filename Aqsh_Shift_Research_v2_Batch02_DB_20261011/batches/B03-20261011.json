@@ -1,0 +1,2844 @@
+{
+  "batch_id": "B03-20261011",
+  "method": "公開一次資料の本文確認。見積取得・ログイン後の操作・競合ソルバーの実行は未実施。",
+  "sources": [
+    {
+      "key": "naftyterms",
+      "url": "https://nafty.app/terms/",
+      "title": "Nafty 利用規約",
+      "publisher": "株式会社KakuKaku",
+      "reference": "turn4view0",
+      "published_on": "2026-07-30",
+      "retrieved_on": "2026-10-11",
+      "method": "public_web_body",
+      "full_text_archived": false
+    },
+    {
+      "key": "shiftyapi",
+      "url": "https://platform.shiftyasan.com/",
+      "title": "シフト屋さん Public API & MCP",
+      "publisher": "シフト屋さん",
+      "reference": "turn5view0",
+      "published_on": null,
+      "retrieved_on": "2026-10-11",
+      "method": "public_web_body",
+      "full_text_archived": false
+    },
+    {
+      "key": "rakushifu",
+      "url": "https://rakushifu.jp/",
+      "title": "らくしふ 公式機能・規模別案内",
+      "publisher": "クロスビット",
+      "reference": "turn7view0",
+      "published_on": null,
+      "retrieved_on": "2026-10-11",
+      "method": "public_web_body",
+      "full_text_archived": false
+    },
+    {
+      "key": "plandaybeta",
+      "url": "https://help.planday.com/en/articles/760172-how-to-generate-a-schedule-automatically-with-the-new-auto-schedule-beta-plus-pro",
+      "title": "Planday 新Auto-schedule β",
+      "publisher": "Planday",
+      "reference": "turn6view0",
+      "published_on": "2026-08-20",
+      "retrieved_on": "2026-10-11",
+      "method": "public_web_body",
+      "full_text_archived": false
+    },
+    {
+      "key": "whenpricing",
+      "url": "https://wheniwork.com/pricing",
+      "title": "When I Work 料金ページ再確認",
+      "publisher": "When I Work",
+      "reference": "turn10view0",
+      "published_on": null,
+      "retrieved_on": "2026-10-11",
+      "method": "public_web_body",
+      "full_text_archived": false
+    },
+    {
+      "key": "rosterlabpricing",
+      "url": "https://rosterlab.com/us/pricing",
+      "title": "RosterLab 米国料金再確認",
+      "publisher": "RosterLab",
+      "reference": "turn9view0",
+      "published_on": null,
+      "retrieved_on": "2026-10-11",
+      "method": "public_web_body",
+      "full_text_archived": false
+    },
+    {
+      "key": "plandaypricing",
+      "url": "https://www.planday.com/pricing",
+      "title": "Planday 料金・プラン再確認",
+      "publisher": "Planday",
+      "reference": "turn11view0",
+      "published_on": null,
+      "retrieved_on": "2026-10-11",
+      "method": "public_web_body",
+      "full_text_archived": false
+    },
+    {
+      "key": "shiftmation",
+      "url": "https://shiftmation.com/",
+      "title": "勤務シフト自動作成サービス | Shiftmation（シフトメーション）",
+      "publisher": "株式会社シフトメーション",
+      "reference": "turn15view0",
+      "published_on": null,
+      "retrieved_on": "2026-10-11",
+      "method": "public_web_body",
+      "full_text_archived": false
+    },
+    {
+      "key": "shiftlogs",
+      "url": "https://shiftmation.com/release/20260723/",
+      "title": "監査やセキュリティ対応を支援する「監査ログオプション」を提供開始します – 勤務シフト自動作成サービス | Shiftmation（シフトメーション）",
+      "publisher": "株式会社シフトメーション",
+      "reference": "turn16view0",
+      "published_on": "2026-07-23",
+      "retrieved_on": "2026-10-11",
+      "method": "public_web_body",
+      "full_text_archived": false
+    },
+    {
+      "key": "fikaigofeatures",
+      "url": "https://www.fikaigo.com/ja/product",
+      "title": "FIKAIGO｜介護シフト自動作成・管理システムの機能紹介｜support by 住友商事",
+      "publisher": "住友商事",
+      "reference": "turn19view0",
+      "published_on": null,
+      "retrieved_on": "2026-10-11",
+      "method": "public_web_body",
+      "full_text_archived": false
+    },
+    {
+      "key": "oplusauto",
+      "url": "https://opluswork.com/aishift",
+      "title": "oplus (オプラス) | クラウド型無料シフト管理サービス・アプリ",
+      "publisher": "Oplus株式会社",
+      "reference": "turn18view0",
+      "published_on": null,
+      "retrieved_on": "2026-10-11",
+      "method": "public_web_body",
+      "full_text_archived": false
+    },
+    {
+      "key": "oplussecurity",
+      "url": "https://opluswork.com/securitychecklist",
+      "title": "oplus (オプラス) | 会社概要",
+      "publisher": "Oplus株式会社",
+      "reference": "turn17view0",
+      "published_on": null,
+      "retrieved_on": "2026-10-11",
+      "method": "public_web_body",
+      "full_text_archived": false
+    },
+    {
+      "key": "pitat-real",
+      "url": "https://www.pitat-shift.jp/lp.html",
+      "title": "Pitat-Shift（ピタッとシフト）｜医療・介護向けシフト自動生成SaaS",
+      "publisher": "Pitat-Shift",
+      "reference": "turn23view0",
+      "published_on": null,
+      "retrieved_on": "2026-10-11",
+      "method": "public_web_body",
+      "full_text_archived": false
+    },
+    {
+      "key": "otasukeday",
+      "url": "https://www.otasukeman.jp/day",
+      "title": "勤務シフト作成お助けマンDay サービス紹介 | 勤務シフト作成お助けマン | JRシステム",
+      "publisher": "鉄道情報システム株式会社",
+      "reference": "turn24view0",
+      "published_on": null,
+      "retrieved_on": "2026-10-11",
+      "method": "public_web_body",
+      "full_text_archived": false
+    },
+    {
+      "key": "otasuketime",
+      "url": "https://www.otasukeman.jp/time",
+      "title": "勤務シフト作成お助けマンTime サービス紹介 | 勤務シフト作成お助けマン | JRシステム",
+      "publisher": "鉄道情報システム株式会社",
+      "reference": "turn27view0",
+      "published_on": null,
+      "retrieved_on": "2026-10-11",
+      "method": "public_web_body",
+      "full_text_archived": false
+    },
+    {
+      "key": "deputyfatigue",
+      "url": "https://help.deputy.com/hc/en-au/articles/4658226793999-Set-up-stress-profiles-and-fatigue-management",
+      "title": "Set up stress profiles and fatigue management – Deputy Help Center",
+      "publisher": "Deputy",
+      "reference": "turn26view0",
+      "published_on": null,
+      "retrieved_on": "2026-10-11",
+      "method": "public_web_body",
+      "full_text_archived": false
+    },
+    {
+      "key": "timefoldself",
+      "url": "https://docs.timefold.ai/employee-shift-scheduling/1.34.x/scenarios/self-rostering-and-optimization",
+      "title": "Self-rostering and optimization | Scenarios | Employee Shift Scheduling | Timefold Documentation",
+      "publisher": "Timefold",
+      "reference": "turn25view0",
+      "published_on": null,
+      "retrieved_on": "2026-10-11",
+      "method": "public_web_body",
+      "full_text_archived": false,
+      "version_label": "Employee Shift Scheduling 1.34.x"
+    },
+    {
+      "key": "timefoldpin",
+      "url": "https://docs.timefold.ai/employee-shift-scheduling/1.34.x/manual-intervention",
+      "title": "Manual intervention | Employee Shift Scheduling | Timefold Documentation",
+      "publisher": "Timefold",
+      "reference": "turn31view0",
+      "published_on": null,
+      "retrieved_on": "2026-10-11",
+      "method": "public_web_body",
+      "full_text_archived": false,
+      "version_label": "Employee Shift Scheduling 1.34.x"
+    },
+    {
+      "key": "airwork",
+      "url": "https://airregi.jp/shift/function/workschedule/",
+      "title": "ワークスケジュール | シフト管理システム・アプリ〖Airシフト〗",
+      "publisher": "株式会社リクルート",
+      "reference": "turn30view0",
+      "published_on": null,
+      "retrieved_on": "2026-10-11",
+      "method": "public_web_body",
+      "full_text_archived": false
+    },
+    {
+      "key": "connecteampricing",
+      "url": "https://connecteam.com/pricing/",
+      "title": "Pricing | Connecteam",
+      "publisher": "Connecteam",
+      "reference": "turn28view0",
+      "published_on": null,
+      "retrieved_on": "2026-10-11",
+      "method": "public_web_body",
+      "full_text_archived": false
+    },
+    {
+      "key": "qgenda",
+      "url": "https://www.qgenda.com/for-nurses/",
+      "title": "Who We Serve | By Department - Nurses - QGenda",
+      "publisher": "QGenda",
+      "reference": "turn46view0",
+      "published_on": null,
+      "retrieved_on": "2026-10-11",
+      "method": "public_web_body",
+      "full_text_archived": false
+    },
+    {
+      "key": "shiftwizard",
+      "url": "https://www.healthstream.com/solution/scheduling/nurse-and-staff-scheduling/shiftwizard",
+      "title": "ShiftWizard Healthcare Scheduling | HealthStream",
+      "publisher": "HealthStream",
+      "reference": "turn45view0",
+      "published_on": null,
+      "retrieved_on": "2026-10-11",
+      "method": "public_web_body",
+      "full_text_archived": false
+    },
+    {
+      "key": "smartlinx",
+      "url": "https://www.smartlinx.com/why-smartlinx/scheduler/",
+      "title": "Senior Care Staff Scheduler | Smartlinx",
+      "publisher": "Smartlinx",
+      "reference": "turn42view0",
+      "published_on": null,
+      "retrieved_on": "2026-10-11",
+      "method": "public_web_body",
+      "full_text_archived": false
+    },
+    {
+      "key": "lightning",
+      "url": "https://www.perfectserve.com/solutions/physician-scheduling-software?lb-redirect=1",
+      "title": "Clinical Team Scheduling: AI-built physician schedules",
+      "publisher": "PerfectServe",
+      "reference": "turn41view0",
+      "published_on": null,
+      "retrieved_on": "2026-10-11",
+      "method": "public_web_body",
+      "full_text_archived": false
+    },
+    {
+      "key": "patchrota",
+      "url": "https://patchwork.health/rota",
+      "title": "Rota – Patchwork Health",
+      "publisher": "Patchwork Health",
+      "reference": "turn50view0",
+      "published_on": null,
+      "retrieved_on": "2026-10-11",
+      "method": "public_web_body",
+      "full_text_archived": false
+    },
+    {
+      "key": "humanity",
+      "url": "https://tcpsoftware.com/products/humanity/",
+      "title": "The Best Employee Scheduling Software | Humanity Schedule",
+      "publisher": "TCP Software",
+      "reference": "turn48view0",
+      "published_on": null,
+      "retrieved_on": "2026-10-11",
+      "method": "public_web_body",
+      "full_text_archived": false
+    },
+    {
+      "key": "humanitycompliance",
+      "url": "https://tcpsoftware.com/products/humanity/compliance/",
+      "title": "Compliance & Conflict Management | Humanity Schedule",
+      "publisher": "TCP Software",
+      "reference": "turn52view0",
+      "published_on": null,
+      "retrieved_on": "2026-10-11",
+      "method": "public_web_body",
+      "full_text_archived": false
+    },
+    {
+      "key": "humanitypricing",
+      "url": "https://tcpsoftware.com/pricing/",
+      "title": "Plans & Pricing | Get Started Today | Humanity Schedule | TCP",
+      "publisher": "TCP Software",
+      "reference": "turn53view0",
+      "published_on": null,
+      "retrieved_on": "2026-10-11",
+      "method": "public_web_body",
+      "full_text_archived": false
+    },
+    {
+      "key": "sonascheduling",
+      "url": "https://www.sona.ai/products/scheduling",
+      "title": "Scheduling | Sona",
+      "publisher": "Sona",
+      "reference": "turn51view0",
+      "published_on": null,
+      "retrieved_on": "2026-10-11",
+      "method": "public_web_body",
+      "full_text_archived": false
+    },
+    {
+      "key": "clairvia",
+      "url": "https://docs.oracle.com/cd/G48964_01/hcm92pbr54/eng/hcm/hhaf/UnderstandingIntegrationwithClairvia-49765f.html?pli=ul_d400e544_hhaf",
+      "title": "Understanding Integration with Clairvia",
+      "publisher": "Oracle",
+      "reference": "turn47view0",
+      "published_on": null,
+      "retrieved_on": "2026-10-11",
+      "method": "public_web_body",
+      "full_text_archived": false
+    },
+    {
+      "key": "naftyhome",
+      "url": "https://nafty.app/",
+      "title": "Nafty（ナフティ）｜医療・介護のAIシフト作成",
+      "publisher": "株式会社KakuKaku",
+      "reference": "turn60view0",
+      "published_on": null,
+      "retrieved_on": "2026-10-11",
+      "method": "public_web_body",
+      "full_text_archived": false
+    },
+    {
+      "key": "naftycare",
+      "url": "https://nafty.app/care/",
+      "title": "介護施設のシフト作成｜特養・老健・グループホーム｜Nafty",
+      "publisher": "株式会社KakuKaku",
+      "reference": "turn63view0",
+      "published_on": null,
+      "retrieved_on": "2026-10-11",
+      "method": "public_web_body",
+      "full_text_archived": false
+    },
+    {
+      "key": "nafty9",
+      "url": "https://nafty.app/youshiki9/",
+      "title": "様式9の自動作成｜夜勤72時間と看護配置の点検｜Nafty",
+      "publisher": "株式会社KakuKaku",
+      "reference": "turn62view0",
+      "published_on": null,
+      "retrieved_on": "2026-10-11",
+      "method": "public_web_body",
+      "full_text_archived": false
+    }
+  ],
+  "findings": [
+    {
+      "source": "naftyterms",
+      "product": "JP04",
+      "criterion": "A02",
+      "summary": "提供主体は株式会社KakuKaku。",
+      "locator": "前文・第1条",
+      "support": "limited",
+      "limitations": "公開資料に記載された範囲の確認。設問全体の仕様確定や実動作の検証は未実施。"
+    },
+    {
+      "source": "naftyterms",
+      "product": "JP04",
+      "criterion": "N01",
+      "summary": "施設管理者・リーダーが業務上必要な範囲で所属メンバーの勤務を閲覧し、範囲は施設設定に依存する。",
+      "locator": "第2条・第5条",
+      "support": "limited",
+      "limitations": "公開資料に記載された範囲の確認。設問全体の仕様確定や実動作の検証は未実施。"
+    },
+    {
+      "source": "naftyterms",
+      "product": "JP04",
+      "criterion": "L07",
+      "summary": "ゲスト利用では施設アカウントなしで個人の勤務・私用予定を記録できる。施設運用とは別形態。",
+      "locator": "第2条・第4条",
+      "support": "limited",
+      "limitations": "公開資料に記載された範囲の確認。設問全体の仕様確定や実動作の検証は未実施。"
+    },
+    {
+      "source": "naftyterms",
+      "product": "JP04",
+      "criterion": "N06",
+      "summary": "ゲストの記録は端末だけに保存され、サーバー保存・バックアップは行わない。端末変更・アプリ削除では復元できない。",
+      "locator": "第4条",
+      "support": "limited",
+      "limitations": "公開資料に記載された範囲の確認。設問全体の仕様確定や実動作の検証は未実施。"
+    },
+    {
+      "source": "naftyterms",
+      "product": "JP04",
+      "criterion": "O03",
+      "summary": "施設アカウントへログインしても、既存のゲスト記録がクラウドへ保存されるわけではない。",
+      "locator": "第4条",
+      "support": "limited",
+      "limitations": "公開資料に記載された範囲の確認。設問全体の仕様確定や実動作の検証は未実施。"
+    },
+    {
+      "source": "naftyterms",
+      "product": "JP04",
+      "criterion": "G06",
+      "summary": "規約は計算結果の法令適合・配置充足を保証せず、最終確認の責任を施設に置いている。独立検査機能の有無は未確定。",
+      "locator": "第8条",
+      "support": "limited",
+      "limitations": "公開資料に記載された範囲の確認。設問全体の仕様確定や実動作の検証は未実施。"
+    },
+    {
+      "source": "naftyterms",
+      "product": "JP04",
+      "criterion": "O01",
+      "summary": "保守・障害等では予告なく中断し得る。終了時は合理的期間で事前通知するが、数値SLAは本文にない。",
+      "locator": "第9条",
+      "support": "limited",
+      "limitations": "公開資料に記載された範囲の確認。設問全体の仕様確定や実動作の検証は未実施。"
+    },
+    {
+      "source": "naftyterms",
+      "product": "JP04",
+      "criterion": "R03",
+      "summary": "許諾なしの複製・改変・頒布、およびソース解析は禁止事項として掲げる。",
+      "locator": "第6条・第7条",
+      "support": "limited",
+      "limitations": "公開資料に記載された範囲の確認。設問全体の仕様確定や実動作の検証は未実施。"
+    },
+    {
+      "source": "shiftyapi",
+      "product": "JP28",
+      "criterion": "D03",
+      "summary": "業務別スキルレベルが0の職員は、その業務へ配置できないハード条件。",
+      "locator": "対応制約・skill_levels",
+      "support": "limited",
+      "limitations": "公開資料に記載された範囲の確認。設問全体の仕様確定や実動作の検証は未実施。"
+    },
+    {
+      "source": "shiftyapi",
+      "product": "JP28",
+      "criterion": "D04",
+      "summary": "初心者に熟練者を同席させるスキルサポートを必須または希望条件として指定できる。",
+      "locator": "対応制約・skill_support",
+      "support": "limited",
+      "limitations": "公開資料に記載された範囲の確認。設問全体の仕様確定や実動作の検証は未実施。"
+    },
+    {
+      "source": "shiftyapi",
+      "product": "JP28",
+      "criterion": "D05",
+      "summary": "シフト・日ごとの責任者人数を指定でき、下限は必須、上限は希望条件。",
+      "locator": "対応制約・manager_demand",
+      "support": "limited",
+      "limitations": "公開資料に記載された範囲の確認。設問全体の仕様確定や実動作の検証は未実施。"
+    },
+    {
+      "source": "shiftyapi",
+      "product": "JP28",
+      "criterion": "D06",
+      "summary": "職員ペアの同時配置禁止をハード条件にできる。",
+      "locator": "対応制約・employee_pairings",
+      "support": "limited",
+      "limitations": "公開資料に記載された範囲の確認。設問全体の仕様確定や実動作の検証は未実施。"
+    },
+    {
+      "source": "shiftyapi",
+      "product": "JP28",
+      "criterion": "D02",
+      "summary": "複数シフトを横断する合計人数条件を指定できる。休憩中の人数保証とは別確認。",
+      "locator": "対応制約・cross_shift_demands",
+      "support": "limited",
+      "limitations": "公開資料に記載された範囲の確認。設問全体の仕様確定や実動作の検証は未実施。"
+    },
+    {
+      "source": "shiftyapi",
+      "product": "JP28",
+      "criterion": "E04",
+      "summary": "最大4つの負担配分グループを独立に指定でき、均等化の重みを調整できる。",
+      "locator": "対応制約・fairness_groups",
+      "support": "limited",
+      "limitations": "公開資料に記載された範囲の確認。設問全体の仕様確定や実動作の検証は未実施。"
+    },
+    {
+      "source": "shiftyapi",
+      "product": "JP28",
+      "criterion": "E02",
+      "summary": "曜日別勤務可否と担当可能シフトを必須条件にできる。日跨ぎは勤務開始日の曜日で判定する。",
+      "locator": "対応制約・available_weekdays",
+      "support": "limited",
+      "limitations": "公開資料に記載された範囲の確認。設問全体の仕様確定や実動作の検証は未実施。"
+    },
+    {
+      "source": "shiftyapi",
+      "product": "JP28",
+      "criterion": "C07",
+      "summary": "シフト時刻から算出する週間勤務時間上限を必須または希望条件にできる。",
+      "locator": "対応制約・weekly_working_hours_limit",
+      "support": "limited",
+      "limitations": "公開資料に記載された範囲の確認。設問全体の仕様確定や実動作の検証は未実施。"
+    },
+    {
+      "source": "shiftyapi",
+      "product": "JP28",
+      "criterion": "H01",
+      "summary": "日別の固定割当は必須条件として指定できる。",
+      "locator": "対応制約・fixed_assignments",
+      "support": "limited",
+      "limitations": "公開資料に記載された範囲の確認。設問全体の仕様確定や実動作の検証は未実施。"
+    },
+    {
+      "source": "shiftyapi",
+      "product": "JP28",
+      "criterion": "F01",
+      "summary": "配置下限、固定割当、担当可否等と、希望・上限等の強制力を入力フィールド別に区別する。",
+      "locator": "対応制約一覧",
+      "support": "limited",
+      "limitations": "公開資料に記載された範囲の確認。設問全体の仕様確定や実動作の検証は未実施。"
+    },
+    {
+      "source": "shiftyapi",
+      "product": "JP28",
+      "criterion": "G08",
+      "summary": "概ね25人を超える問題では非同期の202・job_idを返し、後続の取得APIで結果を確認する仕様。計算時間は提供者説明で実測していない。",
+      "locator": "HTTP API直接・非同期",
+      "support": "limited",
+      "limitations": "公開資料に記載された範囲の確認。設問全体の仕様確定や実動作の検証は未実施。"
+    },
+    {
+      "source": "shiftyapi",
+      "product": "JP28",
+      "criterion": "M04",
+      "summary": "入力検証、計算要求、ジョブ結果取得、利用枠取得を公開APIで扱い、OpenAPI 3.1スキーマを公開する。",
+      "locator": "HTTP API直接・APIスキーマ",
+      "support": "limited",
+      "limitations": "公開資料に記載された範囲の確認。設問全体の仕様確定や実動作の検証は未実施。"
+    },
+    {
+      "source": "shiftyapi",
+      "product": "JP28",
+      "criterion": "N02",
+      "summary": "APIキーによる接続とOAuthによるリモートMCP接続を説明し、接続アプリは管理画面で解除可能。SSO/MFA全般の保証ではない。",
+      "locator": "クイックスタート・接続解除",
+      "support": "limited",
+      "limitations": "公開資料に記載された範囲の確認。設問全体の仕様確定や実動作の検証は未実施。"
+    },
+    {
+      "source": "shiftyapi",
+      "product": "JP28",
+      "criterion": "P06",
+      "summary": "βは無料だがキーごとに利用枠があり、計算で消費する。追加枠は依頼制で正式版料金は未発表。",
+      "locator": "料金",
+      "support": "limited",
+      "limitations": "公開資料に記載された範囲の確認。設問全体の仕様確定や実動作の検証は未実施。"
+    },
+    {
+      "source": "shiftyapi",
+      "product": "JP28",
+      "criterion": "O06",
+      "summary": "β期間の仕様は事前通知なしで変更され得る。変更はGitHubで告知すると説明する。",
+      "locator": "末尾・β仕様変更",
+      "support": "limited",
+      "limitations": "公開資料に記載された範囲の確認。設問全体の仕様確定や実動作の検証は未実施。"
+    },
+    {
+      "source": "rakushifu",
+      "product": "JP26",
+      "criterion": "B01",
+      "summary": "大規模向けの案内に勤務表の自動作成を掲載。希望回収・転記だけとは区別できるが、具体的な最適化条件は未公開。",
+      "locator": "100店舗以上向け・自動作成",
+      "support": "limited",
+      "limitations": "公開資料に記載された範囲の確認。設問全体の仕様確定や実動作の検証は未実施。"
+    },
+    {
+      "source": "rakushifu",
+      "product": "JP26",
+      "criterion": "B07",
+      "summary": "100店舗未満向けと100店舗以上向けを分け、後者に自動作成・専用アプリ・専任支援を説明する。利用可否は契約確認が必要。",
+      "locator": "規模別案内",
+      "support": "limited",
+      "limitations": "公開資料に記載された範囲の確認。設問全体の仕様確定や実動作の検証は未実施。"
+    },
+    {
+      "source": "rakushifu",
+      "product": "JP26",
+      "criterion": "C06",
+      "summary": "連勤と夜勤明けの自動検知を掲載。勤務間休息を実時刻で保証するかは別確認。",
+      "locator": "8つの特徴・労務リスク",
+      "support": "limited",
+      "limitations": "公開資料に記載された範囲の確認。設問全体の仕様確定や実動作の検証は未実施。"
+    },
+    {
+      "source": "rakushifu",
+      "product": "JP26",
+      "criterion": "C07",
+      "summary": "法定超過と長時間労働等の警告を掲載。自動割当時の必須条件保証は未確定。",
+      "locator": "労務リスク・労務違反",
+      "support": "limited",
+      "limitations": "公開資料に記載された範囲の確認。設問全体の仕様確定や実動作の検証は未実施。"
+    },
+    {
+      "source": "rakushifu",
+      "product": "JP26",
+      "criterion": "N01",
+      "summary": "確定勤務の閲覧範囲制限、管理者権限、組織管理を掲載。",
+      "locator": "共有・管理",
+      "support": "limited",
+      "limitations": "公開資料に記載された範囲の確認。設問全体の仕様確定や実動作の検証は未実施。"
+    },
+    {
+      "source": "rakushifu",
+      "product": "JP26",
+      "criterion": "B06",
+      "summary": "複数拠点の集約と店舗間応援を掲載。同時最適化や兼務の重複防止は未確定。",
+      "locator": "複数拠点管理",
+      "support": "limited",
+      "limitations": "公開資料に記載された範囲の確認。設問全体の仕様確定や実動作の検証は未実施。"
+    },
+    {
+      "source": "rakushifu",
+      "product": "JP26",
+      "criterion": "K03",
+      "summary": "大規模向けに専任担当が設定・運用を提案する導入支援を説明する。",
+      "locator": "カスタマーサクセス",
+      "support": "limited",
+      "limitations": "公開資料に記載された範囲の確認。設問全体の仕様確定や実動作の検証は未実施。"
+    },
+    {
+      "source": "rakushifu",
+      "product": "JP26",
+      "criterion": "O04",
+      "summary": "管理者・従業員向けに無料の有人チャットを365日、毎日22時まで提供すると掲載。",
+      "locator": "365日チャットサポート",
+      "support": "limited",
+      "limitations": "公開資料に記載された範囲の確認。設問全体の仕様確定や実動作の検証は未実施。"
+    },
+    {
+      "source": "rakushifu",
+      "product": "JP26",
+      "criterion": "M04",
+      "summary": "外部システム向けAPI連携を掲載。具体的エンドポイント・利用権・追加費用は未確定。",
+      "locator": "外部連携",
+      "support": "limited",
+      "limitations": "公開資料に記載された範囲の確認。設問全体の仕様確定や実動作の検証は未実施。"
+    },
+    {
+      "source": "rakushifu",
+      "product": "JP26",
+      "criterion": "M02",
+      "summary": "CSV連携を掲載。項目仕様と解約時に搬出できる範囲は未確定。",
+      "locator": "外部連携",
+      "support": "limited",
+      "limitations": "公開資料に記載された範囲の確認。設問全体の仕様確定や実動作の検証は未実施。"
+    },
+    {
+      "source": "plandaybeta",
+      "product": "US20",
+      "criterion": "B01",
+      "summary": "過去の勤務パターン・契約時間・勤務可否・勤務時間ルールから勤務枠を含む草案を生成する。",
+      "locator": "What is Auto-schedule",
+      "support": "limited",
+      "limitations": "公開資料に記載された範囲の確認。設問全体の仕様確定や実動作の検証は未実施。"
+    },
+    {
+      "source": "plandaybeta",
+      "product": "US20",
+      "criterion": "B07",
+      "summary": "新βはPlus・Proの一部顧客・地域へ段階提供。従来Pro専用ツールと併存する。全Plus利用者で使えるとは限らない。",
+      "locator": "Access level・Subscription plan・beta",
+      "support": "limited",
+      "limitations": "公開資料に記載された範囲の確認。設問全体の仕様確定や実動作の検証は未実施。"
+    },
+    {
+      "source": "plandaybeta",
+      "product": "US20",
+      "criterion": "A06",
+      "summary": "対象部署に最低2週間の勤務履歴が必要。生成期間は既定1週、最大11週。人数上限は未確認。",
+      "locator": "How learns・How to generate",
+      "support": "limited",
+      "limitations": "公開資料に記載された範囲の確認。設問全体の仕様確定や実動作の検証は未実施。"
+    },
+    {
+      "source": "plandaybeta",
+      "product": "US20",
+      "criterion": "B03",
+      "summary": "配置だけでなく勤務枠も履歴から生成する。変則週では精度が下がり得ると説明する。",
+      "locator": "What is Auto-schedule・How learns",
+      "support": "limited",
+      "limitations": "公開資料に記載された範囲の確認。設問全体の仕様確定や実動作の検証は未実施。"
+    },
+    {
+      "source": "plandaybeta",
+      "product": "US20",
+      "criterion": "H07",
+      "summary": "結果は草案となり、管理者が公開するまで職員に表示されない。",
+      "locator": "生成後の草案・Good to know",
+      "support": "limited",
+      "limitations": "公開資料に記載された範囲の確認。設問全体の仕様確定や実動作の検証は未実施。"
+    },
+    {
+      "source": "plandaybeta",
+      "product": "US20",
+      "criterion": "H08",
+      "summary": "解析は中断可能で、反映後も表示された期限内に全生成を取り消せる。",
+      "locator": "How to generate・Undo",
+      "support": "limited",
+      "limitations": "公開資料に記載された範囲の確認。設問全体の仕様確定や実動作の検証は未実施。"
+    },
+    {
+      "source": "plandaybeta",
+      "product": "US20",
+      "criterion": "N05",
+      "summary": "生成に利用するデータはPlanday内部に留まり、外部へ共有しないと提供者が説明する。学習保持期間等は未確定。",
+      "locator": "How learns・data",
+      "support": "limited",
+      "limitations": "公開資料に記載された範囲の確認。設問全体の仕様確定や実動作の検証は未実施。"
+    },
+    {
+      "source": "plandaybeta",
+      "product": "US20",
+      "criterion": "K08",
+      "summary": "新βはWebのみで、UK・Irelandから他地域へ順次展開する限定提供。",
+      "locator": "Good to know",
+      "support": "limited",
+      "limitations": "公開資料に記載された範囲の確認。設問全体の仕様確定や実動作の検証は未実施。"
+    },
+    {
+      "source": "whenpricing",
+      "product": "US19",
+      "criterion": "B07",
+      "summary": "料金カードはEssentialsの複数拠点対応と勤怠追加スイッチを示す一方、FAQは単拠点/複数拠点の別料金と全プラン勤怠含有を説明し、本文内の不一致が続く。",
+      "locator": "Essentials・FAQ How much",
+      "support": "limited",
+      "limitations": "公開資料に記載された範囲の確認。設問全体の仕様確定や実動作の検証は未実施。",
+      "state": "disputed"
+    },
+    {
+      "source": "whenpricing",
+      "product": "US19",
+      "criterion": "N02",
+      "summary": "Premiumの追加機能にSAML/SSOを掲載。下位プランやMFA範囲は未確定。",
+      "locator": "Premium",
+      "support": "limited",
+      "limitations": "公開資料に記載された範囲の確認。設問全体の仕様確定や実動作の検証は未実施。"
+    },
+    {
+      "source": "whenpricing",
+      "product": "US19",
+      "criterion": "M04",
+      "summary": "APIキー利用はPremium追加機能として掲載。操作範囲は別途仕様確認が必要。",
+      "locator": "Premium",
+      "support": "limited",
+      "limitations": "公開資料に記載された範囲の確認。設問全体の仕様確定や実動作の検証は未実施。"
+    },
+    {
+      "source": "whenpricing",
+      "product": "US19",
+      "criterion": "M05",
+      "summary": "WebhookはPremium追加機能として掲載。通知イベントの種類は未確定。",
+      "locator": "Premium",
+      "support": "limited",
+      "limitations": "公開資料に記載された範囲の確認。設問全体の仕様確定や実動作の検証は未実施。"
+    },
+    {
+      "source": "whenpricing",
+      "product": "US19",
+      "criterion": "N01",
+      "summary": "Pro追加機能に役割別権限を掲載。施設間の分離実装は未検証。",
+      "locator": "Pro",
+      "support": "limited",
+      "limitations": "公開資料に記載された範囲の確認。設問全体の仕様確定や実動作の検証は未実施。"
+    },
+    {
+      "source": "whenpricing",
+      "product": "US19",
+      "criterion": "K08",
+      "summary": "14日間、全機能を試用でき、クレジットカード不要とFAQに記載。",
+      "locator": "free trial",
+      "support": "limited",
+      "limitations": "公開資料に記載された範囲の確認。設問全体の仕様確定や実動作の検証は未実施。"
+    },
+    {
+      "source": "whenpricing",
+      "product": "US19",
+      "criterion": "P03",
+      "summary": "月払・年払を説明し、FAQは随時解約可能・固定契約なしと記載する。正式契約は未確認。",
+      "locator": "FAQ cancel・payment",
+      "support": "limited",
+      "limitations": "公開資料に記載された範囲の確認。設問全体の仕様確定や実動作の検証は未実施。"
+    },
+    {
+      "source": "whenpricing",
+      "product": "US19",
+      "criterion": "Q08",
+      "summary": "料金ページの削減額は初月20%、以降50%の時間削減を仮定した計算例で、独立測定の成果ではない。",
+      "locator": "Savings calculator",
+      "support": "limited",
+      "limitations": "公開資料に記載された範囲の確認。設問全体の仕様確定や実動作の検証は未実施。"
+    },
+    {
+      "source": "rosterlabpricing",
+      "product": "US01",
+      "criterion": "P01",
+      "summary": "AIプラン見出しはUSD15/人月、比較表はUSD20/人と表示し、金額差は引き続き未解消。",
+      "locator": "AI Optimized・Complete Feature Comparison",
+      "support": "limited",
+      "limitations": "公開資料に記載された範囲の確認。設問全体の仕様確定や実動作の検証は未実施。",
+      "state": "disputed"
+    },
+    {
+      "source": "rosterlabpricing",
+      "product": "US01",
+      "criterion": "P02",
+      "summary": "課金対象はAIで生成する勤務表に含む職員。表に入らない管理者は無料とFAQに記載する。",
+      "locator": "How pricing calculated・admin users",
+      "support": "limited",
+      "limitations": "公開資料に記載された範囲の確認。設問全体の仕様確定や実動作の検証は未実施。"
+    },
+    {
+      "source": "rosterlabpricing",
+      "product": "US01",
+      "criterion": "B07",
+      "summary": "無料Digitalは手作業の勤務表と簡単なルール検査。有料AIでは自動割当、Enterpriseは個別ルール・連携・SSO等を説明する。",
+      "locator": "Digital・AI・Enterprise",
+      "support": "limited",
+      "limitations": "公開資料に記載された範囲の確認。設問全体の仕様確定や実動作の検証は未実施。"
+    },
+    {
+      "source": "rosterlabpricing",
+      "product": "US01",
+      "criterion": "N02",
+      "summary": "EnterpriseにSSOを掲載。具体的方式・費用は未確定。",
+      "locator": "Enterprise",
+      "support": "limited",
+      "limitations": "公開資料に記載された範囲の確認。設問全体の仕様確定や実動作の検証は未実施。"
+    },
+    {
+      "source": "rosterlabpricing",
+      "product": "US01",
+      "criterion": "M04",
+      "summary": "EnterpriseのAPI利用と連携を掲載。別途相談対象で公開仕様は未確認。",
+      "locator": "Enterprise",
+      "support": "limited",
+      "limitations": "公開資料に記載された範囲の確認。設問全体の仕様確定や実動作の検証は未実施。"
+    },
+    {
+      "source": "rosterlabpricing",
+      "product": "US01",
+      "criterion": "O04",
+      "summary": "全プランのメール・ナレッジベース、有料の優先対応、Enterpriseの電話・担当者支援をFAQで区別する。",
+      "locator": "What support included",
+      "support": "limited",
+      "limitations": "公開資料に記載された範囲の確認。設問全体の仕様確定や実動作の検証は未実施。"
+    },
+    {
+      "source": "plandaypricing",
+      "product": "US20",
+      "criterion": "P03",
+      "summary": "Starterは最低5ユーザー。30日試用、カード不要、随時解約を掲載。Proの最低人数はここから推定しない。",
+      "locator": "Starter・trial",
+      "support": "limited",
+      "limitations": "公開資料に記載された範囲の確認。設問全体の仕様確定や実動作の検証は未実施。"
+    },
+    {
+      "source": "plandaypricing",
+      "product": "US20",
+      "criterion": "P01",
+      "summary": "Proは個別見積。取得本文ではStarter/Plusの金額が表示されず、数値を確定できない。",
+      "locator": "Starter・Plus・Pro",
+      "support": "limited",
+      "limitations": "公開資料に記載された範囲の確認。設問全体の仕様確定や実動作の検証は未実施。"
+    },
+    {
+      "source": "plandaypricing",
+      "product": "US20",
+      "criterion": "N01",
+      "summary": "Proに独自の権限・役割設定を掲載。",
+      "locator": "Pro",
+      "support": "limited",
+      "limitations": "公開資料に記載された範囲の確認。設問全体の仕様確定や実動作の検証は未実施。"
+    },
+    {
+      "source": "plandaypricing",
+      "product": "US20",
+      "criterion": "K03",
+      "summary": "Proに個別アカウント設定支援を掲載。費用は未確定。",
+      "locator": "Pro",
+      "support": "limited",
+      "limitations": "公開資料に記載された範囲の確認。設問全体の仕様確定や実動作の検証は未実施。"
+    },
+    {
+      "source": "plandaypricing",
+      "product": "US20",
+      "criterion": "O04",
+      "summary": "Starterはヘルプ・チャット、Proは専用電話の折返し支援を掲載。",
+      "locator": "Starter・Pro",
+      "support": "limited",
+      "limitations": "公開資料に記載された範囲の確認。設問全体の仕様確定や実動作の検証は未実施。"
+    },
+    {
+      "source": "shiftmation",
+      "product": "JP01",
+      "criterion": "G03",
+      "summary": "自動作成後の人員過不足とアラートを表示し、手修正に合わせて表示を更新する。",
+      "locator": "充実のシフト作成機能",
+      "support": "limited",
+      "limitations": "公開資料の該当記述を確認。設問の全要件・実動作・契約適用は未検証。"
+    },
+    {
+      "source": "shiftmation",
+      "product": "JP01",
+      "criterion": "B04",
+      "summary": "月間勤務表を基に、日々の当番業務を自動配置する。",
+      "locator": "タスク・休憩を自動割当",
+      "support": "limited",
+      "limitations": "公開資料の該当記述を確認。設問の全要件・実動作・契約適用は未検証。"
+    },
+    {
+      "source": "shiftmation",
+      "product": "JP01",
+      "criterion": "C04",
+      "summary": "休憩の自動配置を掲載。休憩中の資格別実効人数保証は未確定。",
+      "locator": "タスク・休憩を自動割当",
+      "support": "limited",
+      "limitations": "公開資料の該当記述を確認。設問の全要件・実動作・契約適用は未検証。"
+    },
+    {
+      "source": "shiftmation",
+      "product": "JP01",
+      "criterion": "H07",
+      "summary": "確定勤務を職員のスマホへ配信し、個人/事業所全体の表示を切り替えられる。",
+      "locator": "スマホで確認",
+      "support": "limited",
+      "limitations": "公開資料の該当記述を確認。設問の全要件・実動作・契約適用は未検証。"
+    },
+    {
+      "source": "shiftmation",
+      "product": "JP01",
+      "criterion": "P02",
+      "summary": "月額は自動作成対象のユーザー数で変動する見積制。登録総人数と同一とは断定しない。",
+      "locator": "利用料金",
+      "support": "limited",
+      "limitations": "公開資料の該当記述を確認。設問の全要件・実動作・契約適用は未検証。"
+    },
+    {
+      "source": "shiftmation",
+      "product": "JP01",
+      "criterion": "C02",
+      "summary": "複数日にまたがる夜勤への対応をFAQで説明する。明け・休日の時刻モデルは未確定。",
+      "locator": "FAQ 複雑なシフト",
+      "support": "limited",
+      "limitations": "公開資料の該当記述を確認。設問の全要件・実動作・契約適用は未検証。"
+    },
+    {
+      "source": "shiftlogs",
+      "product": "JP01",
+      "criterion": "N03",
+      "summary": "2026年7月開始の有料監査ログオプションで、作成/更新/削除の操作と認証イベントを期間指定CSVで取得できる。",
+      "locator": "オプション概要",
+      "support": "limited",
+      "limitations": "公開資料の該当記述を確認。設問の全要件・実動作・契約適用は未検証。"
+    },
+    {
+      "source": "shiftlogs",
+      "product": "JP01",
+      "criterion": "B07",
+      "summary": "監査ログの取得は標準の無料機能ではなく有償オプション。",
+      "locator": "提供開始告知",
+      "support": "limited",
+      "limitations": "公開資料の該当記述を確認。設問の全要件・実動作・契約適用は未検証。"
+    },
+    {
+      "source": "shiftlogs",
+      "product": "JP01",
+      "criterion": "N01",
+      "summary": "監査ログのCSV取得窓口は法人管理画面と説明する。担当権限の詳細は未確定。",
+      "locator": "概要・法人管理者",
+      "support": "limited",
+      "limitations": "公開資料の該当記述を確認。設問の全要件・実動作・契約適用は未検証。"
+    },
+    {
+      "source": "fikaigofeatures",
+      "product": "JP03",
+      "criterion": "E04",
+      "summary": "夜勤の担当回数の偏りを抑える配慮と職員別回数の表示を掲載。契約時間での補正算式は未確定。",
+      "locator": "勤務の偏り",
+      "support": "limited",
+      "limitations": "公開資料の該当記述を確認。設問の全要件・実動作・契約適用は未検証。"
+    },
+    {
+      "source": "fikaigofeatures",
+      "product": "JP03",
+      "criterion": "E02",
+      "summary": "職員個別の勤務条件、施設イベント、委員会の設定を掲載。",
+      "locator": "柔軟な条件",
+      "support": "limited",
+      "limitations": "公開資料の該当記述を確認。設問の全要件・実動作・契約適用は未検証。"
+    },
+    {
+      "source": "fikaigofeatures",
+      "product": "JP03",
+      "criterion": "J06",
+      "summary": "作成時に配置基準・必要職種の充足を判定する。対象サービス種別や版の全確認は未実施。",
+      "locator": "基準自動チェック",
+      "support": "limited",
+      "limitations": "公開資料の該当記述を確認。設問の全要件・実動作・契約適用は未検証。"
+    },
+    {
+      "source": "fikaigofeatures",
+      "product": "JP03",
+      "criterion": "J07",
+      "summary": "サービス提供体制強化加算等の達成状況を可視化する。算式・制度版は未確定。",
+      "locator": "加算取得状況",
+      "support": "limited",
+      "limitations": "公開資料の該当記述を確認。設問の全要件・実動作・契約適用は未検証。"
+    },
+    {
+      "source": "fikaigofeatures",
+      "product": "JP03",
+      "criterion": "B06",
+      "summary": "複数施設の配置過不足を一覧で確認できる。同時最適化や兼務重複防止の証拠とはしない。",
+      "locator": "複数施設の俯瞰",
+      "support": "limited",
+      "limitations": "公開資料の該当記述を確認。設問の全要件・実動作・契約適用は未検証。"
+    },
+    {
+      "source": "fikaigofeatures",
+      "product": "JP03",
+      "criterion": "L01",
+      "summary": "スマホで希望休を提出できる。アプリ/ブラウザの別は本文だけでは確定しない。",
+      "locator": "チャット・希望休",
+      "support": "limited",
+      "limitations": "公開資料の該当記述を確認。設問の全要件・実動作・契約適用は未検証。"
+    },
+    {
+      "source": "fikaigofeatures",
+      "product": "JP03",
+      "criterion": "L03",
+      "summary": "職員はスマホで自分の勤務表を確認できる。",
+      "locator": "勤務表",
+      "support": "limited",
+      "limitations": "公開資料の該当記述を確認。設問の全要件・実動作・契約適用は未検証。"
+    },
+    {
+      "source": "fikaigofeatures",
+      "product": "JP03",
+      "criterion": "M06",
+      "summary": "勤務予定の連携対応先にKING OF TIMEを明記する。接続方式の詳細は未確定。",
+      "locator": "勤怠連携",
+      "support": "limited",
+      "limitations": "公開資料の該当記述を確認。設問の全要件・実動作・契約適用は未検証。"
+    },
+    {
+      "source": "fikaigofeatures",
+      "product": "JP03",
+      "criterion": "J08",
+      "summary": "勤務実績を取り込み、実績による配置基準・加算を確認し行政書類を生成する。",
+      "locator": "勤務実績取り込み",
+      "support": "limited",
+      "limitations": "公開資料の該当記述を確認。設問の全要件・実動作・契約適用は未検証。"
+    },
+    {
+      "source": "fikaigofeatures",
+      "product": "JP03",
+      "criterion": "M03",
+      "summary": "勤務形態一覧表・参考計算書を予定確定時と実績取込後に生成する。様式9の確認とは分ける。",
+      "locator": "行政書類",
+      "support": "limited",
+      "limitations": "公開資料の該当記述を確認。設問の全要件・実動作・契約適用は未検証。"
+    },
+    {
+      "source": "fikaigofeatures",
+      "product": "JP03",
+      "criterion": "R06",
+      "summary": "同ページに特許取得の説明があるが、トップ画像の出願表示との関係、公報・国・請求項は未照合。",
+      "locator": "管理基盤",
+      "support": "limited",
+      "limitations": "公開資料の該当記述を確認。設問の全要件・実動作・契約適用は未検証。",
+      "state": "not_found"
+    },
+    {
+      "source": "oplusauto",
+      "product": "JP18",
+      "criterion": "C05",
+      "summary": "前勤務の終了から次の始業まで最低X時間を空ける出勤インターバルを設定できる。",
+      "locator": "出勤インターバル",
+      "support": "limited",
+      "limitations": "公開資料の該当記述を確認。設問の全要件・実動作・契約適用は未検証。"
+    },
+    {
+      "source": "oplusauto",
+      "product": "JP18",
+      "criterion": "C06",
+      "summary": "指定日数を超える連勤へのアラートを掲載。警告の強制力は未確定。",
+      "locator": "出勤日数均等化",
+      "support": "limited",
+      "limitations": "公開資料の該当記述を確認。設問の全要件・実動作・契約適用は未検証。"
+    },
+    {
+      "source": "oplusauto",
+      "product": "JP18",
+      "criterion": "C02",
+      "summary": "日跨ぎ夜勤に対応する機能を掲載。明けと休日の所属日は未確定。",
+      "locator": "料金プランの機能",
+      "support": "limited",
+      "limitations": "公開資料の該当記述を確認。設問の全要件・実動作・契約適用は未検証。"
+    },
+    {
+      "source": "oplusauto",
+      "product": "JP18",
+      "criterion": "G03",
+      "summary": "自動配置後に業務別の人員過不足を表示する。不足のない解だけを返すとは説明していない。",
+      "locator": "過不足可視化",
+      "support": "limited",
+      "limitations": "公開資料の該当記述を確認。設問の全要件・実動作・契約適用は未検証。"
+    },
+    {
+      "source": "oplusauto",
+      "product": "JP18",
+      "criterion": "B02",
+      "summary": "業務別・曜日別の必要人数を設定し、特定日の人数で上書き可能。",
+      "locator": "必要人数",
+      "support": "limited",
+      "limitations": "公開資料の該当記述を確認。設問の全要件・実動作・契約適用は未検証。"
+    },
+    {
+      "source": "oplusauto",
+      "product": "JP18",
+      "criterion": "E02",
+      "summary": "業務を担当可能な職員を選択できる。資格証明や期限管理とは別確認。",
+      "locator": "割当スタッフ",
+      "support": "limited",
+      "limitations": "公開資料の該当記述を確認。設問の全要件・実動作・契約適用は未検証。"
+    },
+    {
+      "source": "oplusauto",
+      "product": "JP18",
+      "criterion": "F02",
+      "summary": "新人を最後に、特定エリアを先に配置する段階的割当を説明する。最適性の保証ではない。",
+      "locator": "段階的割当",
+      "support": "limited",
+      "limitations": "公開資料の該当記述を確認。設問の全要件・実動作・契約適用は未検証。"
+    },
+    {
+      "source": "oplusauto",
+      "product": "JP18",
+      "criterion": "K06",
+      "summary": "自動生成後の修正と再割当を説明する。修正後の検査範囲は未確定。",
+      "locator": "ボタンを押す",
+      "support": "limited",
+      "limitations": "公開資料の該当記述を確認。設問の全要件・実動作・契約適用は未検証。"
+    },
+    {
+      "source": "oplussecurity",
+      "product": "JP18",
+      "criterion": "N04",
+      "summary": "Google Cloud App Engineの東京リージョン、日本国内保管と自己申告する。",
+      "locator": "サービス基盤・データ保存先",
+      "support": "limited",
+      "limitations": "公開資料の該当記述を確認。設問の全要件・実動作・契約適用は未検証。"
+    },
+    {
+      "source": "oplussecurity",
+      "product": "JP18",
+      "criterion": "N07",
+      "summary": "ISMSとプライバシーマークの取得を回答。第三者脆弱性診断は検討中、ISMAPは未登録と区別する。",
+      "locator": "第三者評価・アプリ運用",
+      "support": "limited",
+      "limitations": "公開資料の該当記述を確認。設問の全要件・実動作・契約適用は未検証。"
+    },
+    {
+      "source": "oplussecurity",
+      "product": "JP18",
+      "criterion": "O01",
+      "summary": "チェックシートに稼働率99.999%/月、障害連絡10分以内・復旧1時間以内等を掲載。計測実績や契約上の保証/返金条件は未確認。",
+      "locator": "SLA",
+      "support": "limited",
+      "limitations": "公開資料の該当記述を確認。設問の全要件・実動作・契約適用は未検証。"
+    },
+    {
+      "source": "oplussecurity",
+      "product": "JP18",
+      "criterion": "N06",
+      "summary": "毎日バックアップし6か月保管。終了時は契約満了まで利用者が消去し、残存データは提供者が消去できると説明する。",
+      "locator": "バックアップ・終了時データ",
+      "support": "limited",
+      "limitations": "公開資料の該当記述を確認。設問の全要件・実動作・契約適用は未検証。"
+    },
+    {
+      "source": "oplussecurity",
+      "product": "JP18",
+      "criterion": "P08",
+      "summary": "解約希望月の1か月前までの通知、年/半年契約の未利用分返金なしを説明する。",
+      "locator": "解約条件",
+      "support": "limited",
+      "limitations": "公開資料の該当記述を確認。設問の全要件・実動作・契約適用は未検証。"
+    },
+    {
+      "source": "oplussecurity",
+      "product": "JP18",
+      "criterion": "N02",
+      "summary": "マジックリンク認証と失効/再発行の仕組みを説明する。MFAやSAML対応の証拠ではない。",
+      "locator": "ID管理・認証",
+      "support": "limited",
+      "limitations": "公開資料の該当記述を確認。設問の全要件・実動作・契約適用は未検証。"
+    },
+    {
+      "source": "oplussecurity",
+      "product": "JP18",
+      "criterion": "N03",
+      "summary": "操作・認証・通信ログを12か月以上保存。利用者は勤務作成ログを閲覧でき、その他の取得は依頼・都度有償。",
+      "locator": "ログ管理",
+      "support": "limited",
+      "limitations": "公開資料の該当記述を確認。設問の全要件・実動作・契約適用は未検証。"
+    },
+    {
+      "source": "oplussecurity",
+      "product": "JP18",
+      "criterion": "O07",
+      "summary": "事故は確認後ユーザーへメールで報告し、調査用ログ提供に協力すると説明する。",
+      "locator": "事故報告・調査協力",
+      "support": "limited",
+      "limitations": "公開資料の該当記述を確認。設問の全要件・実動作・契約適用は未検証。"
+    },
+    {
+      "source": "pitat-real",
+      "product": "JP10",
+      "criterion": "B06",
+      "summary": "全プラン1アカウント1シフト/拠点。複数病棟・施設にはアカウント追加が必要と明記する。",
+      "locator": "導入単位・料金",
+      "support": "limited",
+      "limitations": "公開資料の該当記述を確認。設問の全要件・実動作・契約適用は未検証。"
+    },
+    {
+      "source": "pitat-real",
+      "product": "JP10",
+      "criterion": "D06",
+      "summary": "職員ペアの同時夜勤禁止等を条件として登録できる。",
+      "locator": "FAQ 複雑な勤務",
+      "support": "limited",
+      "limitations": "公開資料の該当記述を確認。設問の全要件・実動作・契約適用は未検証。"
+    },
+    {
+      "source": "pitat-real",
+      "product": "JP10",
+      "criterion": "F01",
+      "summary": "制約はLevel0の絶対禁止からLevel3の考慮まで4段階。実行時に守られるかは未検証。",
+      "locator": "FAQ 複雑な勤務",
+      "support": "limited",
+      "limitations": "公開資料の該当記述を確認。設問の全要件・実動作・契約適用は未検証。"
+    },
+    {
+      "source": "pitat-real",
+      "product": "JP10",
+      "criterion": "M03",
+      "summary": "生成結果をExcelで出力し、管理者が手修正する運用を想定する。",
+      "locator": "生成結果の修正",
+      "support": "limited",
+      "limitations": "公開資料の該当記述を確認。設問の全要件・実動作・契約適用は未検証。"
+    },
+    {
+      "source": "pitat-real",
+      "product": "JP10",
+      "criterion": "K03",
+      "summary": "任意Setup支援は入力・UUID整合性・初回生成を支援し、Premium支援は暗黙ルールの聞取りと条件整理を行う。",
+      "locator": "導入支援",
+      "support": "limited",
+      "limitations": "公開資料の該当記述を確認。設問の全要件・実動作・契約適用は未検証。"
+    },
+    {
+      "source": "pitat-real",
+      "product": "JP10",
+      "criterion": "P04",
+      "summary": "Setup33万円、Premium55万円（税込）は任意。月額利用だけでも契約できる。",
+      "locator": "導入支援・必須性",
+      "support": "limited",
+      "limitations": "公開資料の該当記述を確認。設問の全要件・実動作・契約適用は未検証。"
+    },
+    {
+      "source": "pitat-real",
+      "product": "JP10",
+      "criterion": "P08",
+      "summary": "月額プランは随時解約でき、翌月以降の課金停止と説明する。年額の返金条件は未確定。",
+      "locator": "FAQ 解約",
+      "support": "limited",
+      "limitations": "公開資料の該当記述を確認。設問の全要件・実動作・契約適用は未検証。"
+    },
+    {
+      "source": "pitat-real",
+      "product": "JP10",
+      "criterion": "N04",
+      "summary": "Google Cloudで日本国内保管と説明する。独立監査の確認はしていない。",
+      "locator": "セキュリティ",
+      "support": "limited",
+      "limitations": "公開資料の該当記述を確認。設問の全要件・実動作・契約適用は未検証。"
+    },
+    {
+      "source": "pitat-real",
+      "product": "JP10",
+      "criterion": "G06",
+      "summary": "Excel上の手修正後に別ロジックで再検査する仕組みは、このLPでは確認できない。",
+      "locator": "生成結果の手修正",
+      "support": "limited",
+      "limitations": "公開資料の該当記述を確認。設問の全要件・実動作・契約適用は未検証。",
+      "state": "not_found"
+    },
+    {
+      "source": "pitat-real",
+      "product": "JP10",
+      "criterion": "F04",
+      "summary": "仕様書AIアシスタントへのリンクはあるが、自然言語をソルバー条件に直接変換する機能の証拠にはしない。",
+      "locator": "ナビゲーション AIアシスタント",
+      "support": "limited",
+      "limitations": "公開資料の該当記述を確認。設問の全要件・実動作・契約適用は未検証。",
+      "state": "not_found"
+    },
+    {
+      "source": "otasukeday",
+      "product": "JP05",
+      "criterion": "D03",
+      "summary": "役職・スキル別グループに必要人数を設定できる。",
+      "locator": "必要スタッフ数・スタッフグループ",
+      "state": "known",
+      "support": "limited",
+      "limitations": "公開資料に記載された機能・条件の確認。提供プラン・契約への適用や実動作、性能は未検証。"
+    },
+    {
+      "source": "otasukeday",
+      "product": "JP05",
+      "criterion": "D04",
+      "summary": "新人とベテランの同時配置を設定できる。",
+      "locator": "スタッフの組み合わせ",
+      "state": "known",
+      "support": "limited",
+      "limitations": "公開資料に記載された機能・条件の確認。提供プラン・契約への適用や実動作、性能は未検証。"
+    },
+    {
+      "source": "otasukeday",
+      "product": "JP05",
+      "criterion": "D06",
+      "summary": "同時勤務を避ける職員の組を設定できる。",
+      "locator": "スタッフの組み合わせ",
+      "state": "known",
+      "support": "limited",
+      "limitations": "公開資料に記載された機能・条件の確認。提供プラン・契約への適用や実動作、性能は未検証。"
+    },
+    {
+      "source": "otasukeday",
+      "product": "JP05",
+      "criterion": "D02",
+      "summary": "研修などを除いた勤務者合計を人数条件に使える。休憩時間帯の保証は未確認。",
+      "locator": "必要スタッフ数",
+      "state": "known",
+      "support": "limited",
+      "limitations": "公開資料に記載された機能・条件の確認。提供プラン・契約への適用や実動作、性能は未検証。"
+    },
+    {
+      "source": "otasukeday",
+      "product": "JP05",
+      "criterion": "E04",
+      "summary": "特定の相手との夜勤回数を抑える例を掲載。長期の公平性は未確認。",
+      "locator": "スタッフの組み合わせ",
+      "state": "known",
+      "support": "limited",
+      "limitations": "公開資料に記載された機能・条件の確認。提供プラン・契約への適用や実動作、性能は未検証。"
+    },
+    {
+      "source": "otasukeday",
+      "product": "JP05",
+      "criterion": "C05",
+      "summary": "遅番の翌日に早番を割り当てない設定例。実時間での最小休息計算は未確認。",
+      "locator": "勤務並び",
+      "state": "known",
+      "support": "limited",
+      "limitations": "公開資料に記載された機能・条件の確認。提供プラン・契約への適用や実動作、性能は未検証。"
+    },
+    {
+      "source": "otasukeday",
+      "product": "JP05",
+      "criterion": "C07",
+      "summary": "月・週の労働時間条件を設定できる。",
+      "locator": "労働時間",
+      "state": "known",
+      "support": "limited",
+      "limitations": "公開資料に記載された機能・条件の確認。提供プラン・契約への適用や実動作、性能は未検証。"
+    },
+    {
+      "source": "otasukeday",
+      "product": "JP05",
+      "criterion": "C06",
+      "summary": "全員共通と個人別の連続勤務上限を設定できる。",
+      "locator": "連続勤務日数",
+      "state": "known",
+      "support": "limited",
+      "limitations": "公開資料に記載された機能・条件の確認。提供プラン・契約への適用や実動作、性能は未検証。"
+    },
+    {
+      "source": "otasukeday",
+      "product": "JP05",
+      "criterion": "H01",
+      "summary": "研修・出張などを勤務指定として固定できる。",
+      "locator": "勤務指定",
+      "state": "known",
+      "support": "limited",
+      "limitations": "公開資料に記載された機能・条件の確認。提供プラン・契約への適用や実動作、性能は未検証。"
+    },
+    {
+      "source": "otasukeday",
+      "product": "JP05",
+      "criterion": "L01",
+      "summary": "スマートフォンでの希望提出はオプション。",
+      "locator": "スマホオプション",
+      "state": "known",
+      "support": "limited",
+      "limitations": "公開資料に記載された機能・条件の確認。提供プラン・契約への適用や実動作、性能は未検証。"
+    },
+    {
+      "source": "otasukeday",
+      "product": "JP05",
+      "criterion": "H07",
+      "summary": "公開した勤務表のスマートフォン閲覧と変更メール通知を案内。承認工程は未確認。",
+      "locator": "シフト表の公開",
+      "state": "known",
+      "support": "limited",
+      "limitations": "公開資料に記載された機能・条件の確認。提供プラン・契約への適用や実動作、性能は未検証。"
+    },
+    {
+      "source": "otasuketime",
+      "product": "JP06",
+      "criterion": "B03",
+      "summary": "働ける時間を入力し、勤務時間を自動で組み立てる。",
+      "locator": "特徴・勤務希望",
+      "state": "known",
+      "support": "limited",
+      "limitations": "公開資料に記載された機能・条件の確認。提供プラン・契約への適用や実動作、性能は未検証。"
+    },
+    {
+      "source": "otasuketime",
+      "product": "JP06",
+      "criterion": "B02",
+      "summary": "時間帯別および業務別の必要人数を設定できる。",
+      "locator": "必要スタッフ数",
+      "state": "known",
+      "support": "limited",
+      "limitations": "公開資料に記載された機能・条件の確認。提供プラン・契約への適用や実動作、性能は未検証。"
+    },
+    {
+      "source": "otasuketime",
+      "product": "JP06",
+      "criterion": "C04",
+      "summary": "労働時間等に応じた休憩の自動割当を案内。休憩中の資格人数保証は未確認。",
+      "locator": "休憩時間",
+      "state": "known",
+      "support": "limited",
+      "limitations": "公開資料に記載された機能・条件の確認。提供プラン・契約への適用や実動作、性能は未検証。"
+    },
+    {
+      "source": "otasuketime",
+      "product": "JP06",
+      "criterion": "C05",
+      "summary": "前勤務の終了から次勤務の開始までの最小間隔を時間数で設定できる。",
+      "locator": "勤務間インターバル",
+      "state": "known",
+      "support": "limited",
+      "limitations": "公開資料に記載された機能・条件の確認。提供プラン・契約への適用や実動作、性能は未検証。"
+    },
+    {
+      "source": "otasuketime",
+      "product": "JP06",
+      "criterion": "C06",
+      "summary": "連続勤務日数の上限を設定できる。",
+      "locator": "連続勤務日数",
+      "state": "known",
+      "support": "limited",
+      "limitations": "公開資料に記載された機能・条件の確認。提供プラン・契約への適用や実動作、性能は未検証。"
+    },
+    {
+      "source": "otasuketime",
+      "product": "JP06",
+      "criterion": "C07",
+      "summary": "日・週・計画期間の労働時間条件を設定できる。",
+      "locator": "労働時間",
+      "state": "known",
+      "support": "limited",
+      "limitations": "公開資料に記載された機能・条件の確認。提供プラン・契約への適用や実動作、性能は未検証。"
+    },
+    {
+      "source": "otasuketime",
+      "product": "JP06",
+      "criterion": "E02",
+      "summary": "曜日固定勤務や勤務できない時間帯を登録できる。",
+      "locator": "曜日別固定シフト・勤務不可時間",
+      "state": "known",
+      "support": "limited",
+      "limitations": "公開資料に記載された機能・条件の確認。提供プラン・契約への適用や実動作、性能は未検証。"
+    },
+    {
+      "source": "otasuketime",
+      "product": "JP06",
+      "criterion": "I01",
+      "summary": "売上などの予測に応じた人数パターンを案内。予測モデルの精度は未確認。",
+      "locator": "売上予測",
+      "state": "known",
+      "support": "limited",
+      "limitations": "公開資料に記載された機能・条件の確認。提供プラン・契約への適用や実動作、性能は未検証。"
+    },
+    {
+      "source": "otasuketime",
+      "product": "JP06",
+      "criterion": "H07",
+      "summary": "公開勤務表の閲覧とメール・LINEでの通知を案内。",
+      "locator": "シフト表の公開",
+      "state": "known",
+      "support": "limited",
+      "limitations": "公開資料に記載された機能・条件の確認。提供プラン・契約への適用や実動作、性能は未検証。"
+    },
+    {
+      "source": "deputyfatigue",
+      "product": "US07",
+      "criterion": "C05",
+      "summary": "夜間の最小間隔警告は前勤務が19時以降終了、次が翌日9時以前開始の場合に適用。一般の間隔は別のカスタムルール。",
+      "locator": "Minimum Hours between Shifts / Custom Rules",
+      "state": "known",
+      "support": "limited",
+      "limitations": "公開資料に記載された機能・条件の確認。提供プラン・契約への適用や実動作、性能は未検証。"
+    },
+    {
+      "source": "deputyfatigue",
+      "product": "US07",
+      "criterion": "G09",
+      "summary": "シフト間隔の既定値は0時間。カスタムルールで追加間隔を設定する。",
+      "locator": "Custom Rules",
+      "state": "known",
+      "support": "limited",
+      "limitations": "公開資料に記載された機能・条件の確認。提供プラン・契約への適用や実動作、性能は未検証。"
+    },
+    {
+      "source": "deputyfatigue",
+      "product": "US07",
+      "criterion": "F01",
+      "summary": "警告後にも管理者が配置を続行できる例を掲載。警告を禁止条件とは扱えない。",
+      "locator": "Clopening / Schedule anyway",
+      "state": "known",
+      "support": "limited",
+      "limitations": "公開資料に記載された機能・条件の確認。提供プラン・契約への適用や実動作、性能は未検証。"
+    },
+    {
+      "source": "deputyfatigue",
+      "product": "US07",
+      "criterion": "C03",
+      "summary": "日最大時間を暦日とする説明と、連続24時間とする説明が同じ記事内にある。",
+      "locator": "What are stress profiles / Creating an advanced stress profile",
+      "state": "disputed",
+      "support": "unknown",
+      "limitations": "公開資料に記載された機能・条件の確認。提供プラン・契約への適用や実動作、性能は未検証。"
+    },
+    {
+      "source": "deputyfatigue",
+      "product": "US07",
+      "criterion": "E02",
+      "summary": "疲労プロファイルを職員単位または一括で適用できる。",
+      "locator": "Managing stress profiles",
+      "state": "known",
+      "support": "limited",
+      "limitations": "公開資料に記載された機能・条件の確認。提供プラン・契約への適用や実動作、性能は未検証。"
+    },
+    {
+      "source": "deputyfatigue",
+      "product": "US07",
+      "criterion": "N01",
+      "summary": "既存プロファイルの削除にはSystem Administrator権限が必要。",
+      "locator": "Removing a stress profile",
+      "state": "known",
+      "support": "limited",
+      "limitations": "公開資料に記載された機能・条件の確認。提供プラン・契約への適用や実動作、性能は未検証。"
+    },
+    {
+      "source": "deputyfatigue",
+      "product": "US07",
+      "criterion": "P02",
+      "summary": "退職等でアーカイブした職員を一時復帰させて設定変更する方法は課金が発生する。",
+      "locator": "Removing / archived team members",
+      "state": "known",
+      "support": "limited",
+      "limitations": "公開資料に記載された機能・条件の確認。提供プラン・契約への適用や実動作、性能は未検証。"
+    },
+    {
+      "source": "timefoldself",
+      "product": "US10",
+      "criterion": "B05",
+      "summary": "自己希望の取り込みに固定割当とソフト希望の二方式を案内。",
+      "locator": "Self-rostering",
+      "state": "known",
+      "support": "limited",
+      "limitations": "公開資料に記載された機能・条件の確認。提供プラン・契約への適用や実動作、性能は未検証。"
+    },
+    {
+      "source": "timefoldself",
+      "product": "US10",
+      "criterion": "H01",
+      "summary": "pinnedで固定した割当は変更しない。希望扱いの割当は変更され得る。",
+      "locator": "Pinning / soft preferences",
+      "state": "known",
+      "support": "limited",
+      "limitations": "公開資料に記載された機能・条件の確認。提供プラン・契約への適用や実動作、性能は未検証。"
+    },
+    {
+      "source": "timefoldself",
+      "product": "US10",
+      "criterion": "H03",
+      "summary": "契約別disruptionWeightで既存割当変更を抑える。変更ゼロの保証ではない。",
+      "locator": "Disruption constraints",
+      "state": "known",
+      "support": "limited",
+      "limitations": "公開資料に記載された機能・条件の確認。提供プラン・契約への適用や実動作、性能は未検証。"
+    },
+    {
+      "source": "timefoldself",
+      "product": "US10",
+      "criterion": "F02",
+      "summary": "任意シフトの充足と変更抑制はソフト条件で競合する。必須シフトは変更抑制より優先する。",
+      "locator": "Disruption constraints",
+      "state": "known",
+      "support": "limited",
+      "limitations": "公開資料に記載された機能・条件の確認。提供プラン・契約への適用や実動作、性能は未検証。"
+    },
+    {
+      "source": "timefoldself",
+      "product": "US10",
+      "criterion": "G02",
+      "summary": "手作成勤務表を同じエンジンで評価し、違反のスコアを確認できる。",
+      "locator": "Score analysis",
+      "state": "known",
+      "support": "limited",
+      "limitations": "公開資料に記載された機能・条件の確認。提供プラン・契約への適用や実動作、性能は未検証。"
+    },
+    {
+      "source": "timefoldself",
+      "product": "US10",
+      "criterion": "G06",
+      "summary": "勤務表の評価機能は同一エンジンによるもので、独立した検算器の根拠にはしない。",
+      "locator": "Score analysis",
+      "state": "not_found",
+      "support": "unknown",
+      "limitations": "公開資料に記載された機能・条件の確認。提供プラン・契約への適用や実動作、性能は未検証。"
+    },
+    {
+      "source": "timefoldpin",
+      "product": "US10",
+      "criterion": "H04",
+      "summary": "勤務の固定を使ったリアルタイム再計画を案内。欠勤時の実測は未実施。",
+      "locator": "Real-time planning",
+      "state": "known",
+      "support": "limited",
+      "limitations": "公開資料に記載された機能・条件の確認。提供プラン・契約への適用や実動作、性能は未検証。"
+    },
+    {
+      "source": "timefoldpin",
+      "product": "US10",
+      "criterion": "G03",
+      "summary": "出力メトリクスに割当済み・未割当等の数を含める。",
+      "locator": "Comparing the schedules",
+      "state": "known",
+      "support": "limited",
+      "limitations": "公開資料に記載された機能・条件の確認。提供プラン・契約への適用や実動作、性能は未検証。"
+    },
+    {
+      "source": "timefoldpin",
+      "product": "US10",
+      "criterion": "F05",
+      "summary": "比較時には同じ入力・同じ条件を使用し、既存勤務を固定して採点する方法を説明。",
+      "locator": "Comparing solutions",
+      "state": "known",
+      "support": "limited",
+      "limitations": "公開資料に記載された機能・条件の確認。提供プラン・契約への適用や実動作、性能は未検証。"
+    },
+    {
+      "source": "airwork",
+      "product": "JP27",
+      "criterion": "B04",
+      "summary": "既存のシフト時間・必要人数・スキルに応じて業務を自動割当する。月間勤務表の自動作成とは別の機能。",
+      "locator": "最適な割り当てを自動で作成",
+      "state": "known",
+      "support": "limited",
+      "limitations": "公開資料に記載された機能・条件の確認。提供プラン・契約への適用や実動作、性能は未検証。"
+    },
+    {
+      "source": "airwork",
+      "product": "JP27",
+      "criterion": "D03",
+      "summary": "業務別スキルを使い、未経験者への割当を検知する。",
+      "locator": "スキル管理・エラー検知",
+      "state": "known",
+      "support": "limited",
+      "limitations": "公開資料に記載された機能・条件の確認。提供プラン・契約への適用や実動作、性能は未検証。"
+    },
+    {
+      "source": "airwork",
+      "product": "JP27",
+      "criterion": "M06",
+      "summary": "Airシフトのシフトをワークスケジュールに1日1回反映。常時同期ではない。",
+      "locator": "シフトの自動連携",
+      "state": "known",
+      "support": "limited",
+      "limitations": "公開資料に記載された機能・条件の確認。提供プラン・契約への適用や実動作、性能は未検証。"
+    },
+    {
+      "source": "airwork",
+      "product": "JP27",
+      "criterion": "K07",
+      "summary": "曜日・イベント別の業務割当をテンプレート保存できる。",
+      "locator": "テンプレート保存",
+      "state": "known",
+      "support": "limited",
+      "limitations": "公開資料に記載された機能・条件の確認。提供プラン・契約への適用や実動作、性能は未検証。"
+    },
+    {
+      "source": "airwork",
+      "product": "JP27",
+      "criterion": "M03",
+      "summary": "日単位の業務割当をPDF出力できる。",
+      "locator": "PDF出力",
+      "state": "known",
+      "support": "limited",
+      "limitations": "公開資料に記載された機能・条件の確認。提供プラン・契約への適用や実動作、性能は未検証。"
+    },
+    {
+      "source": "airwork",
+      "product": "JP27",
+      "criterion": "O06",
+      "summary": "ワークスケジュールはPC・iPad対応。スマートフォンのWeb利用は推奨されていない。",
+      "locator": "よくあるご質問",
+      "state": "known",
+      "support": "limited",
+      "limitations": "公開資料に記載された機能・条件の確認。提供プラン・契約への適用や実動作、性能は未検証。"
+    },
+    {
+      "source": "airwork",
+      "product": "JP27",
+      "criterion": "P05",
+      "summary": "ワークスケジュールはAirシフト料金に含まれ、追加料金不要と案内。",
+      "locator": "利用料金",
+      "state": "known",
+      "support": "limited",
+      "limitations": "公開資料に記載された機能・条件の確認。提供プラン・契約への適用や実動作、性能は未検証。"
+    },
+    {
+      "source": "connecteampricing",
+      "product": "US09",
+      "criterion": "B07",
+      "summary": "Operations Expertに自動割当・最大12スケジュール・API・Webhookを掲載。Enterpriseは上限拡大。",
+      "locator": "Operations / Expert / Enterprise",
+      "state": "known",
+      "support": "limited",
+      "limitations": "公開資料に記載された機能・条件の確認。提供プラン・契約への適用や実動作、性能は未検証。"
+    },
+    {
+      "source": "connecteampricing",
+      "product": "US09",
+      "criterion": "M04",
+      "summary": "Operations ExpertにAPI、EnterpriseにAPIレート上限拡大を掲載。",
+      "locator": "Operations / Expert / Enterprise",
+      "state": "known",
+      "support": "limited",
+      "limitations": "公開資料に記載された機能・条件の確認。提供プラン・契約への適用や実動作、性能は未検証。"
+    },
+    {
+      "source": "connecteampricing",
+      "product": "US09",
+      "criterion": "M05",
+      "summary": "Operations ExpertにWebhook管理を掲載。",
+      "locator": "Operations / Expert",
+      "state": "known",
+      "support": "limited",
+      "limitations": "公開資料に記載された機能・条件の確認。提供プラン・契約への適用や実動作、性能は未検証。"
+    },
+    {
+      "source": "connecteampricing",
+      "product": "US09",
+      "criterion": "N02",
+      "summary": "SSOと2FAはOperations Enterprise欄に掲載。Expert標準と断定しない。",
+      "locator": "Operations / Enterprise",
+      "state": "known",
+      "support": "limited",
+      "limitations": "公開資料に記載された機能・条件の確認。提供プラン・契約への適用や実動作、性能は未検証。"
+    },
+    {
+      "source": "connecteampricing",
+      "product": "US09",
+      "criterion": "P02",
+      "summary": "Operations Expertは30人までの基本料と31人目以降の追加単価。年契約と月契約を別表示。",
+      "locator": "Operations / Expert",
+      "state": "known",
+      "support": "limited",
+      "limitations": "公開資料に記載された機能・条件の確認。提供プラン・契約への適用や実動作、性能は未検証。"
+    },
+    {
+      "source": "connecteampricing",
+      "product": "US09",
+      "criterion": "P05",
+      "summary": "Operations・Communications・HRは別Hub。チャット等をOperationsだけの標準範囲としない。",
+      "locator": "Compare plans for each hub",
+      "state": "known",
+      "support": "limited",
+      "limitations": "公開資料に記載された機能・条件の確認。提供プラン・契約への適用や実動作、性能は未検証。"
+    },
+    {
+      "source": "connecteampricing",
+      "product": "US09",
+      "criterion": "K08",
+      "summary": "14日間、カード不要の試用を案内。",
+      "locator": "Free trial",
+      "state": "known",
+      "support": "limited",
+      "limitations": "公開資料に記載された機能・条件の確認。提供プラン・契約への適用や実動作、性能は未検証。"
+    },
+    {
+      "source": "qgenda",
+      "product": "US02",
+      "criterion": "B05",
+      "summary": "職員の自己配置、シフト分割、交代を案内。",
+      "locator": "Enhance nurse and staff satisfaction",
+      "state": "known",
+      "support": "limited",
+      "limitations": "公開製品資料の記載。設問全体の仕様・契約適用・実動作・定量的効果は未検証。"
+    },
+    {
+      "source": "qgenda",
+      "product": "US02",
+      "criterion": "H04",
+      "summary": "不足部署と勤務可能な応援職員を把握し、モバイル通知で空き勤務を補う。",
+      "locator": "Control labor costs",
+      "state": "known",
+      "support": "limited",
+      "limitations": "公開製品資料の記載。設問全体の仕様・契約適用・実動作・定量的効果は未検証。"
+    },
+    {
+      "source": "qgenda",
+      "product": "US02",
+      "criterion": "H06",
+      "summary": "資格・希望・累計時間などを見ながら内部職員を部署間で活用する。共同最適化の範囲は未確認。",
+      "locator": "Control labor costs",
+      "state": "known",
+      "support": "limited",
+      "limitations": "公開製品資料の記載。設問全体の仕様・契約適用・実動作・定量的効果は未検証。"
+    },
+    {
+      "source": "qgenda",
+      "product": "US02",
+      "criterion": "L01",
+      "summary": "アプリから休暇申請、希望変更、勤務取得・交代を行う。",
+      "locator": "Enhance nurse and staff satisfaction",
+      "state": "known",
+      "support": "limited",
+      "limitations": "公開製品資料の記載。設問全体の仕様・契約適用・実動作・定量的効果は未検証。"
+    },
+    {
+      "source": "qgenda",
+      "product": "US02",
+      "criterion": "N02",
+      "summary": "勤務表と勤怠でのSSOを案内。適用プランとMFAは未確認。",
+      "locator": "Enhance nurse and staff satisfaction",
+      "state": "known",
+      "support": "limited",
+      "limitations": "公開製品資料の記載。設問全体の仕様・契約適用・実動作・定量的効果は未検証。"
+    },
+    {
+      "source": "qgenda",
+      "product": "US02",
+      "criterion": "N03",
+      "summary": "勤怠の監査ログを案内。勤務表変更ログの範囲・保存期間は未確認。",
+      "locator": "Maintain compliance",
+      "state": "known",
+      "support": "limited",
+      "limitations": "公開製品資料の記載。設問全体の仕様・契約適用・実動作・定量的効果は未検証。"
+    },
+    {
+      "source": "qgenda",
+      "product": "US02",
+      "criterion": "J08",
+      "summary": "予定と実労働の差などを分析できる。",
+      "locator": "Workforce analytics",
+      "state": "known",
+      "support": "limited",
+      "limitations": "公開製品資料の記載。設問全体の仕様・契約適用・実動作・定量的効果は未検証。"
+    },
+    {
+      "source": "qgenda",
+      "product": "US02",
+      "criterion": "M06",
+      "summary": "勤怠と勤務表を同一基盤で同期し、給与処理システムとの連携を案内。個別接続条件は未確認。",
+      "locator": "Ensure accurate nurse and staff pay",
+      "state": "known",
+      "support": "limited",
+      "limitations": "公開製品資料の記載。設問全体の仕様・契約適用・実動作・定量的効果は未検証。"
+    },
+    {
+      "source": "shiftwizard",
+      "product": "US12",
+      "criterion": "A02",
+      "summary": "現在の製品ページはHealthStream提供のShiftWizardと記載。旧モバイルページは新製品ページへ転送される。",
+      "locator": "ページ表題・冒頭",
+      "state": "known",
+      "support": "limited",
+      "limitations": "公開製品資料の記載。設問全体の仕様・契約適用・実動作・定量的効果は未検証。"
+    },
+    {
+      "source": "shiftwizard",
+      "product": "US12",
+      "criterion": "B05",
+      "summary": "自己配置とモバイル交代を現行製品ページに掲載。",
+      "locator": "Self-Scheduling & Mobile Shift Swaps",
+      "state": "known",
+      "support": "limited",
+      "limitations": "公開製品資料の記載。設問全体の仕様・契約適用・実動作・定量的効果は未検証。"
+    },
+    {
+      "source": "shiftwizard",
+      "product": "US12",
+      "criterion": "L01",
+      "summary": "職員が勤務可能時間・希望をスマートフォンで管理する。",
+      "locator": "Self-Scheduling & Mobile Shift Swaps",
+      "state": "known",
+      "support": "limited",
+      "limitations": "公開製品資料の記載。設問全体の仕様・契約適用・実動作・定量的効果は未検証。"
+    },
+    {
+      "source": "shiftwizard",
+      "product": "US12",
+      "criterion": "B06",
+      "summary": "複数施設・部署の勤務配置を一画面で閲覧できる。拠点間の共同最適化は未確認。",
+      "locator": "Multi-Facility, Multi-Department View",
+      "state": "known",
+      "support": "limited",
+      "limitations": "公開製品資料の記載。設問全体の仕様・契約適用・実動作・定量的効果は未検証。"
+    },
+    {
+      "source": "shiftwizard",
+      "product": "US12",
+      "criterion": "I01",
+      "summary": "需要予測とリアルタイムの人員情報を使う計画機能を案内。予測精度は未測定。",
+      "locator": "Predictive Scheduling Tools",
+      "state": "known",
+      "support": "limited",
+      "limitations": "公開製品資料の記載。設問全体の仕様・契約適用・実動作・定量的効果は未検証。"
+    },
+    {
+      "source": "shiftwizard",
+      "product": "US12",
+      "criterion": "M06",
+      "summary": "Workday認定連携を掲載。EMR・ERP・人事システムとの連携も案内。",
+      "locator": "Workday Certified / Convenient Integrations",
+      "state": "known",
+      "support": "limited",
+      "limitations": "公開製品資料の記載。設問全体の仕様・契約適用・実動作・定量的効果は未検証。"
+    },
+    {
+      "source": "shiftwizard",
+      "product": "US12",
+      "criterion": "N02",
+      "summary": "旧ページ検索抜粋には2FAの記載があるが、現行転送先本文で現在の条件は確認できなかった。",
+      "locator": "転送先ページの本文",
+      "state": "not_found",
+      "support": "unknown",
+      "limitations": "公開製品資料の記載。設問全体の仕様・契約適用・実動作・定量的効果は未検証。"
+    },
+    {
+      "source": "smartlinx",
+      "product": "US04",
+      "criterion": "D03",
+      "summary": "技能・資格と入居者数・ケアの重さを使った配置を案内。",
+      "locator": "Schedule the Right Staff",
+      "state": "known",
+      "support": "limited",
+      "limitations": "公開製品資料の記載。設問全体の仕様・契約適用・実動作・定量的効果は未検証。"
+    },
+    {
+      "source": "smartlinx",
+      "product": "US04",
+      "criterion": "D07",
+      "summary": "免許・資格・必要研修を追跡する。失効日の禁止処理の詳細は未確認。",
+      "locator": "Stay Compliant",
+      "state": "known",
+      "support": "limited",
+      "limitations": "公開製品資料の記載。設問全体の仕様・契約適用・実動作・定量的効果は未検証。"
+    },
+    {
+      "source": "smartlinx",
+      "product": "US04",
+      "criterion": "G03",
+      "summary": "過不足・残業・規則上の問題をリアルタイムで警告する。",
+      "locator": "Get Ahead of Problems",
+      "state": "known",
+      "support": "limited",
+      "limitations": "公開製品資料の記載。設問全体の仕様・契約適用・実動作・定量的効果は未検証。"
+    },
+    {
+      "source": "smartlinx",
+      "product": "US04",
+      "criterion": "H04",
+      "summary": "勤務可能時間・資格・費用に応じて空き勤務の候補者を提示する。",
+      "locator": "Fill Open Shifts",
+      "state": "known",
+      "support": "limited",
+      "limitations": "公開製品資料の記載。設問全体の仕様・契約適用・実動作・定量的効果は未検証。"
+    },
+    {
+      "source": "smartlinx",
+      "product": "US04",
+      "criterion": "L06",
+      "summary": "Smartlinx Goから空き勤務への申請・勤務確認・交代ができる。",
+      "locator": "Mobile Self-Service",
+      "state": "known",
+      "support": "limited",
+      "limitations": "公開製品資料の記載。設問全体の仕様・契約適用・実動作・定量的効果は未検証。"
+    },
+    {
+      "source": "smartlinx",
+      "product": "US04",
+      "criterion": "I02",
+      "summary": "入居者数とケアの重さに結び付けた予測情報を案内。計算式は未確認。",
+      "locator": "Get Ahead of Problems",
+      "state": "known",
+      "support": "limited",
+      "limitations": "公開製品資料の記載。設問全体の仕様・契約適用・実動作・定量的効果は未検証。"
+    },
+    {
+      "source": "lightning",
+      "product": "US16",
+      "criterion": "B01",
+      "summary": "勤務需要・希望・休暇に合わせた勤務表の自動生成を案内。",
+      "locator": "Built around coverage needs",
+      "state": "known",
+      "support": "limited",
+      "limitations": "公開製品資料の記載。設問全体の仕様・契約適用・実動作・定量的効果は未検証。"
+    },
+    {
+      "source": "lightning",
+      "product": "US16",
+      "criterion": "F03",
+      "summary": "診療科ごとの条件を同一基盤で保持する。具体的な独自条件の設定方法は未確認。",
+      "locator": "Specialty-specific rules",
+      "state": "known",
+      "support": "limited",
+      "limitations": "公開製品資料の記載。設問全体の仕様・契約適用・実動作・定量的効果は未検証。"
+    },
+    {
+      "source": "lightning",
+      "product": "US16",
+      "criterion": "B06",
+      "summary": "拠点・診療科を横断して配置を閲覧できる。共同最適化の仕様は未確認。",
+      "locator": "Visibility across sites",
+      "state": "known",
+      "support": "limited",
+      "limitations": "公開製品資料の記載。設問全体の仕様・契約適用・実動作・定量的効果は未検証。"
+    },
+    {
+      "source": "lightning",
+      "product": "US16",
+      "criterion": "E01",
+      "summary": "医療職員や診療科間での公平な負担配分を案内。指標・契約時間補正は未確認。",
+      "locator": "Scheduling fairness and equity",
+      "state": "known",
+      "support": "limited",
+      "limitations": "公開製品資料の記載。設問全体の仕様・契約適用・実動作・定量的効果は未検証。"
+    },
+    {
+      "source": "lightning",
+      "product": "US16",
+      "criterion": "M06",
+      "summary": "EHR連携を案内。対応システムと費用は別途確認が必要。",
+      "locator": "EHR integration",
+      "state": "known",
+      "support": "limited",
+      "limitations": "公開製品資料の記載。設問全体の仕様・契約適用・実動作・定量的効果は未検証。"
+    },
+    {
+      "source": "lightning",
+      "product": "US16",
+      "criterion": "L03",
+      "summary": "モバイルアプリで勤務表の閲覧・更新を案内。",
+      "locator": "After standardization",
+      "state": "known",
+      "support": "limited",
+      "limitations": "公開製品資料の記載。設問全体の仕様・契約適用・実動作・定量的効果は未検証。"
+    },
+    {
+      "source": "patchrota",
+      "product": "US14",
+      "criterion": "B01",
+      "summary": "希望を使ったAI自動勤務表作成を掲載。",
+      "locator": "Preference-based rostering",
+      "state": "known",
+      "support": "limited",
+      "limitations": "公開製品資料の記載。設問全体の仕様・契約適用・実動作・定量的効果は未検証。"
+    },
+    {
+      "source": "patchrota",
+      "product": "US14",
+      "criterion": "L01",
+      "summary": "Web・モバイルから希望と避けたい勤務を受付する期間を設ける。",
+      "locator": "Preference windows",
+      "state": "known",
+      "support": "limited",
+      "limitations": "公開製品資料の記載。設問全体の仕様・契約適用・実動作・定量的効果は未検証。"
+    },
+    {
+      "source": "patchrota",
+      "product": "US14",
+      "criterion": "E03",
+      "summary": "勤務表ごとに希望が満たされた数を表示する。公平性の全指標とは同一視しない。",
+      "locator": "Transparent outcomes",
+      "state": "known",
+      "support": "limited",
+      "limitations": "公開製品資料の記載。設問全体の仕様・契約適用・実動作・定量的効果は未検証。"
+    },
+    {
+      "source": "patchrota",
+      "product": "US14",
+      "criterion": "G03",
+      "summary": "日内の不足箇所を表示し、空き勤務をBankへ回す。",
+      "locator": "Daily Staffing View / Patchwork Bank",
+      "state": "known",
+      "support": "limited",
+      "limitations": "公開製品資料の記載。設問全体の仕様・契約適用・実動作・定量的効果は未検証。"
+    },
+    {
+      "source": "patchrota",
+      "product": "US14",
+      "criterion": "H07",
+      "summary": "段階的な公開と途中延長・修正、下書きへの戻しを案内。",
+      "locator": "Modern rota interface",
+      "state": "known",
+      "support": "limited",
+      "limitations": "公開製品資料の記載。設問全体の仕様・契約適用・実動作・定量的効果は未検証。"
+    },
+    {
+      "source": "patchrota",
+      "product": "US14",
+      "criterion": "H08",
+      "summary": "公開状態を下書きへ戻せる。履歴全体の復旧・任意版への復元は未確認。",
+      "locator": "Rolling, flexible rosters",
+      "state": "known",
+      "support": "limited",
+      "limitations": "公開製品資料の記載。設問全体の仕様・契約適用・実動作・定量的効果は未検証。"
+    },
+    {
+      "source": "patchrota",
+      "product": "US14",
+      "criterion": "M06",
+      "summary": "ESRとの職員・休暇・給与の双方向同期を掲載。",
+      "locator": "Integrations / ESR",
+      "state": "known",
+      "support": "limited",
+      "limitations": "公開製品資料の記載。設問全体の仕様・契約適用・実動作・定量的効果は未検証。"
+    },
+    {
+      "source": "patchrota",
+      "product": "US14",
+      "criterion": "P05",
+      "summary": "Patchwork Insightsの集計表示を標準として掲載。Bank等の契約範囲は未確認。",
+      "locator": "Integrations / Patchwork Insights",
+      "state": "known",
+      "support": "limited",
+      "limitations": "公開製品資料の記載。設問全体の仕様・契約適用・実動作・定量的効果は未検証。"
+    },
+    {
+      "source": "patchrota",
+      "product": "US14",
+      "criterion": "K03",
+      "summary": "導入時の担当者が企画から開始まで支援する。設定項目の責任分担は未確認。",
+      "locator": "Implementation",
+      "state": "known",
+      "support": "limited",
+      "limitations": "公開製品資料の記載。設問全体の仕様・契約適用・実動作・定量的効果は未検証。"
+    },
+    {
+      "source": "humanity",
+      "product": "US17",
+      "criterion": "B01",
+      "summary": "需要予測と勤務表の自動作成・充足を現行製品ページで案内。プラン条件は料金資料を併用。",
+      "locator": "AI-powered shift planning",
+      "state": "known",
+      "support": "limited",
+      "limitations": "公開製品資料の記載。設問全体の仕様・契約適用・実動作・定量的効果は未検証。"
+    },
+    {
+      "source": "humanity",
+      "product": "US17",
+      "criterion": "L06",
+      "summary": "管理者が空き勤務を掲載し、職員の申請を承認できる。",
+      "locator": "Mobile",
+      "state": "known",
+      "support": "limited",
+      "limitations": "公開製品資料の記載。設問全体の仕様・契約適用・実動作・定量的効果は未検証。"
+    },
+    {
+      "source": "humanity",
+      "product": "US17",
+      "criterion": "L03",
+      "summary": "iOS・Androidに加えApple Watchの勤務表閲覧を案内。",
+      "locator": "Mobile",
+      "state": "known",
+      "support": "limited",
+      "limitations": "公開製品資料の記載。設問全体の仕様・契約適用・実動作・定量的効果は未検証。"
+    },
+    {
+      "source": "humanity",
+      "product": "US17",
+      "criterion": "M06",
+      "summary": "ADP・Oracle・Workday・BambooHRとの接続を案内。接続費用は未確認。",
+      "locator": "Connect your existing systems",
+      "state": "known",
+      "support": "limited",
+      "limitations": "公開製品資料の記載。設問全体の仕様・契約適用・実動作・定量的効果は未検証。"
+    },
+    {
+      "source": "humanitycompliance",
+      "product": "US17",
+      "criterion": "D03",
+      "summary": "技能・免許・資格条件を登録し、配置時の衝突を検知する。",
+      "locator": "Custom scheduling rules",
+      "state": "known",
+      "support": "limited",
+      "limitations": "公開製品資料の記載。設問全体の仕様・契約適用・実動作・定量的効果は未検証。"
+    },
+    {
+      "source": "humanitycompliance",
+      "product": "US17",
+      "criterion": "C01",
+      "summary": "勤務時間が重なる割当を検知する。強制禁止の範囲は未確認。",
+      "locator": "Custom scheduling rules",
+      "state": "known",
+      "support": "limited",
+      "limitations": "公開製品資料の記載。設問全体の仕様・契約適用・実動作・定量的効果は未検証。"
+    },
+    {
+      "source": "humanitycompliance",
+      "product": "US17",
+      "criterion": "C07",
+      "summary": "労働時間の最小・最大や残業閾値を設定する。日本の法令対応の保証ではない。",
+      "locator": "Custom scheduling rules",
+      "state": "known",
+      "support": "limited",
+      "limitations": "公開製品資料の記載。設問全体の仕様・契約適用・実動作・定量的効果は未検証。"
+    },
+    {
+      "source": "humanitycompliance",
+      "product": "US17",
+      "criterion": "N03",
+      "summary": "勤務表の編集・更新・申請をイベントログに残す。保存期間・出力条件は未確認。",
+      "locator": "Stay audit ready",
+      "state": "known",
+      "support": "limited",
+      "limitations": "公開製品資料の記載。設問全体の仕様・契約適用・実動作・定量的効果は未検証。"
+    },
+    {
+      "source": "humanitypricing",
+      "product": "US17",
+      "criterion": "B07",
+      "summary": "Auto-fillとDemand-based schedulingはProfessional欄。Essentialsの基本編集と分ける。",
+      "locator": "Professional",
+      "state": "known",
+      "support": "limited",
+      "limitations": "公開製品資料の記載。設問全体の仕様・契約適用・実動作・定量的効果は未検証。"
+    },
+    {
+      "source": "humanitypricing",
+      "product": "US17",
+      "criterion": "N02",
+      "summary": "SSO/SAMLはProfessional欄。MFAの条件は未確認。",
+      "locator": "Professional",
+      "state": "known",
+      "support": "limited",
+      "limitations": "公開製品資料の記載。設問全体の仕様・契約適用・実動作・定量的効果は未検証。"
+    },
+    {
+      "source": "humanitypricing",
+      "product": "US17",
+      "criterion": "M04",
+      "summary": "Open APIはProfessional・Enterpriseとも追加オプション欄。標準とは扱わない。",
+      "locator": "Available add-ons",
+      "state": "known",
+      "support": "limited",
+      "limitations": "公開製品資料の記載。設問全体の仕様・契約適用・実動作・定量的効果は未検証。"
+    },
+    {
+      "source": "humanitypricing",
+      "product": "US17",
+      "criterion": "P05",
+      "summary": "Shift TasksとLabor OptimizerはProfessionalで追加、Enterpriseで内包と掲載。",
+      "locator": "Professional / Enterprise",
+      "state": "known",
+      "support": "limited",
+      "limitations": "公開製品資料の記載。設問全体の仕様・契約適用・実動作・定量的効果は未検証。"
+    },
+    {
+      "source": "humanitypricing",
+      "product": "US17",
+      "criterion": "P01",
+      "summary": "年契約表示はEssentialsが1人月$2.75、Professionalは$3.75から。Enterpriseは見積。月契約・税・地域・最低請求は別確認。",
+      "locator": "Pricing plan cards",
+      "state": "known",
+      "support": "limited",
+      "limitations": "公開製品資料の記載。設問全体の仕様・契約適用・実動作・定量的効果は未検証。"
+    },
+    {
+      "source": "humanitypricing",
+      "product": "US17",
+      "criterion": "A06",
+      "summary": "Essentialsは250人まで。Professional・Enterpriseの上限は公開カードで確定できない。",
+      "locator": "Essentials / Up to 250 employees",
+      "state": "known",
+      "support": "limited",
+      "limitations": "公開製品資料の記載。設問全体の仕様・契約適用・実動作・定量的効果は未検証。"
+    },
+    {
+      "source": "humanitypricing",
+      "product": "US17",
+      "criterion": "K08",
+      "summary": "Essentialsのカード不要の無料試用を案内。期間・Professionalの試用範囲は未確認。",
+      "locator": "Essentials",
+      "state": "known",
+      "support": "limited",
+      "limitations": "公開製品資料の記載。設問全体の仕様・契約適用・実動作・定量的効果は未検証。"
+    },
+    {
+      "source": "sonascheduling",
+      "product": "US22",
+      "criterion": "B01",
+      "summary": "技能・希望・規則・予算を考慮した自動勤務表作成を案内。最適性は未実証。",
+      "locator": "Auto-scheduling",
+      "state": "known",
+      "support": "limited",
+      "limitations": "公開製品資料の記載。設問全体の仕様・契約適用・実動作・定量的効果は未検証。"
+    },
+    {
+      "source": "sonascheduling",
+      "product": "US22",
+      "criterion": "D03",
+      "summary": "自動配置でスキルを照合する。資格の更新期限や複数資格の扱いは未確認。",
+      "locator": "Auto-scheduling",
+      "state": "known",
+      "support": "limited",
+      "limitations": "公開製品資料の記載。設問全体の仕様・契約適用・実動作・定量的効果は未検証。"
+    },
+    {
+      "source": "sonascheduling",
+      "product": "US22",
+      "criterion": "I06",
+      "summary": "労務予算の設定と配置判断前の費用表示を案内。",
+      "locator": "Budget controls",
+      "state": "known",
+      "support": "limited",
+      "limitations": "公開製品資料の記載。設問全体の仕様・契約適用・実動作・定量的効果は未検証。"
+    },
+    {
+      "source": "sonascheduling",
+      "product": "US22",
+      "criterion": "B06",
+      "summary": "複数拠点の勤務配置と職員共有を一画面で管理できる。",
+      "locator": "Cross-location shift management",
+      "state": "known",
+      "support": "limited",
+      "limitations": "公開製品資料の記載。設問全体の仕様・契約適用・実動作・定量的効果は未検証。"
+    },
+    {
+      "source": "sonascheduling",
+      "product": "US22",
+      "criterion": "C05",
+      "summary": "勤務間休息の規則を公開前に確認する。閾値や強制禁止範囲は未確認。",
+      "locator": "Built-in compliance",
+      "state": "known",
+      "support": "limited",
+      "limitations": "公開製品資料の記載。設問全体の仕様・契約適用・実動作・定量的効果は未検証。"
+    },
+    {
+      "source": "sonascheduling",
+      "product": "US22",
+      "criterion": "C04",
+      "summary": "休憩の規則を公開前に確認する。休憩中の資格人数保証は未確認。",
+      "locator": "Built-in compliance",
+      "state": "known",
+      "support": "limited",
+      "limitations": "公開製品資料の記載。設問全体の仕様・契約適用・実動作・定量的効果は未検証。"
+    },
+    {
+      "source": "sonascheduling",
+      "product": "US22",
+      "criterion": "H07",
+      "summary": "公開前に規則照合する。多段階の承認工程は未確認。",
+      "locator": "Built-in compliance",
+      "state": "known",
+      "support": "limited",
+      "limitations": "公開製品資料の記載。設問全体の仕様・契約適用・実動作・定量的効果は未検証。"
+    },
+    {
+      "source": "sonascheduling",
+      "product": "US22",
+      "criterion": "B07",
+      "summary": "製品が地域によって異なると明記。Web表示だけでは地域別の全提供条件を確定できない。",
+      "locator": "Products vary by region",
+      "state": "known",
+      "support": "limited",
+      "limitations": "公開製品資料の記載。設問全体の仕様・契約適用・実動作・定量的効果は未検証。"
+    },
+    {
+      "source": "clairvia",
+      "product": "US15",
+      "criterion": "M06",
+      "summary": "PeopleSoft Integration Brokerとの連携をOracleのHCM 9.2資料に掲載。非同期で勤怠・休暇残高・勤務予定を交換する。",
+      "locator": "Understanding Integration with Clairvia",
+      "state": "known",
+      "support": "limited",
+      "limitations": "確認対象はPeopleSoft HCM 9.2の連携仕様。Clairviaの現行販売版・契約提供範囲の証拠にはしない。"
+    },
+    {
+      "source": "clairvia",
+      "product": "US15",
+      "criterion": "M07",
+      "summary": "新規採用・職務・資格等の人事変更をClairviaへ送信する。",
+      "locator": "Human Resources messages",
+      "state": "known",
+      "support": "limited",
+      "limitations": "確認対象はPeopleSoft HCM 9.2の連携仕様。Clairviaの現行販売版・契約提供範囲の証拠にはしない。"
+    },
+    {
+      "source": "clairvia",
+      "product": "US15",
+      "criterion": "A03",
+      "summary": "PeopleSoft側の連携資料は確認できたが、Clairvia自体の現行販売版・新規契約条件は確定できない。",
+      "locator": "連携資料の適用範囲",
+      "state": "not_found",
+      "support": "unknown",
+      "limitations": "確認対象はPeopleSoft HCM 9.2の連携仕様。Clairviaの現行販売版・契約提供範囲の証拠にはしない。"
+    },
+    {
+      "source": "naftyhome",
+      "product": "JP04",
+      "criterion": "F04",
+      "summary": "チャットで伝えた条件の変更は承認後に反映すると案内。自然言語解釈の誤り検証は未実施。",
+      "locator": "AIシフト作成",
+      "state": "known",
+      "support": "limited",
+      "delivery": "unknown",
+      "limitations": "提供元の機能案内の確認。計算結果・届出の適合・契約適用・実動作は未検証。"
+    },
+    {
+      "source": "naftyhome",
+      "product": "JP04",
+      "criterion": "H03",
+      "summary": "前回の形を保つ計算と一部のみの再計算を指定できる。",
+      "locator": "条件を入れて計算",
+      "state": "known",
+      "support": "limited",
+      "delivery": "unknown",
+      "limitations": "提供元の機能案内の確認。計算結果・届出の適合・契約適用・実動作は未検証。"
+    },
+    {
+      "source": "naftyhome",
+      "product": "JP04",
+      "criterion": "B04",
+      "summary": "月間勤務とは別に当直・注射・窓口等の係表を作成する。手入力当番は自動計算でも保持。",
+      "locator": "係表",
+      "state": "known",
+      "support": "limited",
+      "delivery": "unknown",
+      "limitations": "提供元の機能案内の確認。計算結果・届出の適合・契約適用・実動作は未検証。"
+    },
+    {
+      "source": "naftyhome",
+      "product": "JP04",
+      "criterion": "K01",
+      "summary": "Excel・PDF・写真からスタッフ・勤務区分・人数条件・前月実績をAIで取り込む。",
+      "locator": "初期設定",
+      "state": "known",
+      "support": "limited",
+      "delivery": "unknown",
+      "limitations": "提供元の機能案内の確認。計算結果・届出の適合・契約適用・実動作は未検証。"
+    },
+    {
+      "source": "naftyhome",
+      "product": "JP04",
+      "criterion": "M08",
+      "summary": "勤務表はExcel・CSV・PDF出力。ただし全設定・監査履歴の一括搬出は確認できない。",
+      "locator": "引き継ぎ・出力",
+      "state": "known",
+      "support": "limited",
+      "delivery": "unknown",
+      "limitations": "提供元の機能案内の確認。計算結果・届出の適合・契約適用・実動作は未検証。"
+    },
+    {
+      "source": "naftyhome",
+      "product": "JP04",
+      "criterion": "J08",
+      "summary": "実績CSVまたはjinjer連携で予定と実働の差を確認する。",
+      "locator": "確かめる",
+      "state": "known",
+      "support": "limited",
+      "delivery": "unknown",
+      "limitations": "提供元の機能案内の確認。計算結果・届出の適合・契約適用・実動作は未検証。"
+    },
+    {
+      "source": "naftyhome",
+      "product": "JP04",
+      "criterion": "H07",
+      "summary": "公開後の変更はアプリで通知し変更日を色表示する。閲覧済み追跡は未確認。",
+      "locator": "確定シフト",
+      "state": "known",
+      "support": "limited",
+      "delivery": "unknown",
+      "limitations": "提供元の機能案内の確認。計算結果・届出の適合・契約適用・実動作は未検証。"
+    },
+    {
+      "source": "naftyhome",
+      "product": "JP04",
+      "criterion": "N01",
+      "summary": "施設ごとのデータ分離を案内。隔離の技術方式は未確認。",
+      "locator": "セキュリティFAQ",
+      "state": "known",
+      "support": "limited",
+      "delivery": "unknown",
+      "limitations": "提供元の機能案内の確認。計算結果・届出の適合・契約適用・実動作は未検証。"
+    },
+    {
+      "source": "naftyhome",
+      "product": "JP04",
+      "criterion": "O02",
+      "summary": "電波が弱い状況の希望入力は接続後に送信されると案内。勤務表全体のオフライン操作は未確認。",
+      "locator": "希望提出",
+      "state": "known",
+      "support": "limited",
+      "delivery": "unknown",
+      "limitations": "提供元の機能案内の確認。計算結果・届出の適合・契約適用・実動作は未検証。"
+    },
+    {
+      "source": "naftycare",
+      "product": "JP04",
+      "criterion": "B06",
+      "summary": "同じ職員を複数グループに所属させ、同一計算内で兼務を組むと案内。グループ構成は導入前に相談。",
+      "locator": "兼務・FAQ",
+      "state": "known",
+      "support": "limited",
+      "delivery": "unknown",
+      "limitations": "提供元の機能案内の確認。計算結果・届出の適合・契約適用・実動作は未検証。"
+    },
+    {
+      "source": "naftycare",
+      "product": "JP04",
+      "criterion": "J06",
+      "summary": "特養・老健の常勤換算と配置基準点検はリリース前と明記。現行機能として扱わない。",
+      "locator": "基本機能リリース前",
+      "state": "known",
+      "support": "planned",
+      "delivery": "unknown",
+      "limitations": "提供元の機能案内の確認。計算結果・届出の適合・契約適用・実動作は未検証。"
+    },
+    {
+      "source": "naftycare",
+      "product": "JP04",
+      "criterion": "L07",
+      "summary": "アプリを使わない職員には勤務表を紙で配布できる。",
+      "locator": "希望を集める・配布",
+      "state": "known",
+      "support": "limited",
+      "delivery": "unknown",
+      "limitations": "提供元の機能案内の確認。計算結果・届出の適合・契約適用・実動作は未検証。"
+    },
+    {
+      "source": "nafty9",
+      "product": "JP04",
+      "criterion": "J05",
+      "summary": "令和8年版様式9を、数式を保持した4シートのExcelで出力すると案内。実ファイルと行政算式の照合は未実施。",
+      "locator": "対応範囲 / 帳票",
+      "state": "known",
+      "support": "limited",
+      "delivery": "addon",
+      "limitations": "提供元の機能案内の確認。計算結果・届出の適合・契約適用・実動作は未検証。"
+    },
+    {
+      "source": "nafty9",
+      "product": "JP04",
+      "criterion": "J04",
+      "summary": "日平均患者数・平均在院日数・雇用区分を使い、夜勤平均等を点検する。算式・適合性は別途照合が必要。",
+      "locator": "6つのステップ・対応範囲",
+      "state": "known",
+      "support": "limited",
+      "delivery": "addon",
+      "limitations": "提供元の機能案内の確認。計算結果・届出の適合・契約適用・実動作は未検証。"
+    },
+    {
+      "source": "nafty9",
+      "product": "JP04",
+      "criterion": "M01",
+      "summary": "患者数のCSVや実打刻を取り込み、実打刻があれば予定より優先して集計する。",
+      "locator": "取り込みと集計",
+      "state": "known",
+      "support": "limited",
+      "delivery": "addon",
+      "limitations": "提供元の機能案内の確認。計算結果・届出の適合・契約適用・実動作は未検証。"
+    },
+    {
+      "source": "nafty9",
+      "product": "JP04",
+      "criterion": "N03",
+      "summary": "施設管理者がリーダー代行で編集した操作を記録すると案内。",
+      "locator": "施設全体で見る",
+      "state": "known",
+      "support": "limited",
+      "delivery": "addon",
+      "limitations": "提供元の機能案内の確認。計算結果・届出の適合・契約適用・実動作は未検証。"
+    },
+    {
+      "source": "nafty9",
+      "product": "JP04",
+      "criterion": "P05",
+      "summary": "様式9はStandard/Premiumの追加機能で1施設月20,000円。介護の未公開常勤換算機能とは提供範囲が異なる。",
+      "locator": "料金",
+      "state": "known",
+      "support": "limited",
+      "delivery": "addon",
+      "limitations": "提供元の機能案内の確認。計算結果・届出の適合・契約適用・実動作は未検証。"
+    },
+    {
+      "source": "humanitypricing",
+      "product": "US17",
+      "criterion": "P03",
+      "summary": "Self-serveは月・年契約で、契約期末の変更・解約を案内。Web表示と支払はUSD。請求下限は未確認。",
+      "locator": "FAQ / self-serve plans / currencies / cancellations",
+      "support": "limited",
+      "limitations": "公開FAQの記載。個別営業契約と税・最低請求は未確認。"
+    }
+  ],
+  "followups": [
+    {
+      "product": "US07",
+      "criterion": "C03",
+      "question": "Deputyの日最大労働時間の窓が暦日か連続24時間か、通常版とEnterpriseの範囲を確認する。",
+      "method": "vendor_document",
+      "priority": 1
+    },
+    {
+      "product": "US20",
+      "criterion": "B07",
+      "question": "Planday Plus/Proの新自動作成βについて、地域・顧客の対象条件と本提供時期を確認する。",
+      "method": "vendor_document",
+      "priority": 1
+    },
+    {
+      "product": "US01",
+      "criterion": "P01",
+      "question": "RosterLab米国料金ページの15ドルと比較表20ドルの不一致、地域・請求周期を照合する。",
+      "method": "vendor_quote",
+      "priority": 1
+    },
+    {
+      "product": "US09",
+      "criterion": "N02",
+      "question": "Connecteam Operations Expertの認証方式とEnterpriseのSSO/2FAの契約範囲を確認する。",
+      "method": "vendor_document",
+      "priority": 2
+    },
+    {
+      "product": "JP04",
+      "criterion": "J06",
+      "question": "Nafty介護常勤換算の公開日と、様式9アドオンとの提供範囲の違いを確認する。",
+      "method": "public_document",
+      "priority": 1
+    },
+    {
+      "product": "US12",
+      "criterion": "N02",
+      "question": "ShiftWizardの現行認証仕様をHealthStream資料で確認する。旧モバイルFAQの2020年予告・2FA記載を現行仕様に使わない。",
+      "method": "vendor_document",
+      "priority": 2
+    },
+    {
+      "product": "US18",
+      "criterion": "F01",
+      "question": "Quinyx Auto Assignのルールの強制・緩和・警告を公式ヘルプ本文で確認する。今回本文取得不可。",
+      "method": "public_document",
+      "priority": 1
+    },
+    {
+      "product": "JP10",
+      "criterion": "G06",
+      "question": "Pitat-Shiftの制約違反照合が最適化器と独立しているか、生成ファイルと検算仕様を確認する。",
+      "method": "synthetic_test",
+      "priority": 1
+    },
+    {
+      "product": "JP03",
+      "criterion": "R06",
+      "question": "FIKAIGOサイトの特許取得・出願表記を公開特許番号・法的状態で照合する。",
+      "method": "public_document",
+      "priority": 2
+    }
+  ],
+  "retrieval_checks": [
+    {
+      "product": "US18",
+      "url": "https://help.quinyx.com/help-centre/docs/how-to-work-with-schedule-compliance-rules-for-auto-assign",
+      "result": "tool_inaccessible",
+      "notes": "公式検索抜粋は見つかったが本文取得は失敗。アクセス方式による可能性があり、製品の非対応・サイト消失とは扱わない。"
+    },
+    {
+      "product": "US10",
+      "url": "https://docs.timefold.ai/employee-shift-scheduling/1.34.x/lessons/lesson-1",
+      "result": "tool_inaccessible",
+      "notes": "本文取得失敗。参照可能な自己配置・手動介入の文書のみ観測を追加。"
+    },
+    {
+      "product": "JP08",
+      "url": "https://synchroseries.jp/",
+      "result": "empty_body",
+      "notes": "タイトルは取得できたが本文0行。検索抜粋を本文確認として昇格させず、認証・再公開の詳細確認は継続。"
+    }
+  ],
+  "prices": [
+    {
+      "key": "humanity-essentials-annual",
+      "product": "US17",
+      "source": "humanitypricing",
+      "plan": "Essentials 年契約",
+      "amount": "2.75",
+      "currency": "USD",
+      "charge_type": "recurring",
+      "billable_unit": "employee_month_equivalent",
+      "recurrence_months": 1,
+      "commitment_months": 12,
+      "billing_period_months": 12,
+      "prepayment": "unknown",
+      "requirement": "required",
+      "tax_status": "unknown",
+      "conditions": {
+        "display": "1人月USD 2.75、年契約表示",
+        "plan_employee_cap": 250,
+        "minimum_billable_users": "未確認",
+        "other_costs": "未確認",
+        "notes": "月契約額・税・初期費用は未確認。年契約の月額相当であり、月払い価格ではない。"
+      },
+      "criterion": "P01"
+    },
+    {
+      "key": "humanity-professional-annual",
+      "product": "US17",
+      "source": "humanitypricing",
+      "plan": "Professional 年契約",
+      "amount": "3.75",
+      "currency": "USD",
+      "charge_type": "recurring",
+      "billable_unit": "employee_month_equivalent",
+      "recurrence_months": 1,
+      "commitment_months": 12,
+      "billing_period_months": 12,
+      "prepayment": "unknown",
+      "requirement": "required",
+      "tax_status": "unknown",
+      "conditions": {
+        "display": "1人月USD 3.75から、年契約表示",
+        "starting_at": true,
+        "volume_discounts": true,
+        "minimum_billable_users": "未確認",
+        "other_costs": "未確認",
+        "notes": "開始価格。総額・値引・月契約・税・初期費用は未確認。"
+      },
+      "criterion": "P01"
+    },
+    {
+      "key": "humanity-enterprise-annual",
+      "product": "US17",
+      "source": "humanitypricing",
+      "plan": "Enterprise 年契約",
+      "amount": null,
+      "amount_status": "quote_required",
+      "currency": "USD",
+      "charge_type": "recurring",
+      "billable_unit": "employee_month_equivalent",
+      "recurrence_months": 1,
+      "commitment_months": 12,
+      "billing_period_months": 12,
+      "prepayment": "unknown",
+      "requirement": "required",
+      "tax_status": "unknown",
+      "conditions": {
+        "display": "個別見積",
+        "notes": "未知金額はnull。API追加料金も別途確認。"
+      },
+      "criterion": "P01"
+    }
+  ],
+  "task_updates": [
+    {
+      "task_id": "TASK-B02-002",
+      "method": "vendor_document",
+      "note": "公開APIは無料β・正式価格準備中と再確認。商用再提供権とβ終了時のデータ・契約条項は未確定。"
+    },
+    {
+      "task_id": "TASK-B02-005",
+      "method": "vendor_document",
+      "note": "When I Workの現行料金カードとFAQの複数拠点・勤怠範囲の不一致を再確認。正式プランの照合待ち。"
+    },
+    {
+      "task_id": "TASK-B02-006",
+      "method": "vendor_quote",
+      "note": "Planday Proは見積、最低料金未確定。新β自動作成はPlus/Pro一部地域・顧客にも提供され、旧Pro専用機能と区別が必要。"
+    },
+    {
+      "task_id": "TASK-B02-009",
+      "method": "vendor_document",
+      "note": "Naftyの勤務表Excel/CSV/PDF出力は確認。全設定・操作履歴の搬出、施設解約時削除権限・期限は未確定。"
+    },
+    {
+      "task_id": "TASK-B02-012",
+      "method": "vendor_document",
+      "note": "Oracle PeopleSoft HCM 9.2のClairvia連携資料を確認。Clairvia側の現行販売版・新規契約提供者の証拠とはならない。"
+    },
+    {
+      "task_id": "TASK-B02-014",
+      "method": "vendor_document",
+      "note": "らくしふの大規模向け案内には『自動作成』がある。小規模版の適用、対象条件・アルゴリズム・実動作は未確定。"
+    },
+    {
+      "task_id": "TASK-B02-015",
+      "method": "vendor_document",
+      "note": "Airシフトのワークスケジュールは業務自動割当。これを月間の勤務自動作成と同一視せず、勤務表側の自動化範囲は追加確認。"
+    }
+  ],
+  "as_of_date": "2026-10-11"
+}

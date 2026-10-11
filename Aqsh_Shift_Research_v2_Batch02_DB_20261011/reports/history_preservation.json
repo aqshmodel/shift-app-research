@@ -1,0 +1,13 @@
+{
+  "prior_batch": "B03-20261011",
+  "original_rows_unchanged": {
+    "observations": true,
+    "observation_evidence": true,
+    "source_revisions": true,
+    "assessment_resolutions": true,
+    "resolution_evidence": true,
+    "price_components": true,
+    "sources": true
+  },
+  "status": "passed"
+}
