@@ -1,15 +1,16 @@
 {
-  "batch": "B05-20261011",
+  "batch": "B06-20261011",
   "wrangler_version": "4.149.0",
   "environment": "local_only",
   "app_tables_compared": 39,
-  "data_sha256": "76ee51179019158ae8ad752c20466cdb2b156d89bd105bb64ec415301b5ba9c8",
+  "data_sha256": "6444e7734e6e744eacb584f1de3d9b4806b5b3db7d5aa21a25acdc595fbb07f6",
   "all_table_data_equal": true,
   "common40_equal": true,
   "preferred_logos_equal": true,
+  "reference_regulations": 17,
   "foreign_key_errors": 0,
   "integrity_check": "ok",
-  "import_commands": 11844,
-  "insert_statements": 11767,
+  "import_commands": 12568,
+  "insert_statements": 12491,
   "status": "passed"
 }

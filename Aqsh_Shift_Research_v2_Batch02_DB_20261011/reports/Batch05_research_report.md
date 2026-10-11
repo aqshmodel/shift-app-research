@@ -82,6 +82,6 @@ Airシフトは打刻CSVから不正打刻・未打刻を除外します。確�
 - 比較画面の50対象、今回追加9対象への絞り込み、検索、最大4対象比較、未確定表示、分類履歴、サービス優先ロゴ、ロゴ取得失敗時の名前表示、PC／モバイルを確認。
 - Wrangler 4.149.0のローカルD1に11,844文を適用し、39テーブルの全行、共通40項目ビュー、優先ロゴビューが正本と一致。遠隔D1への登録・Web公開は未実施。
 
-[DB検証](db_validation.json)、[回帰検証](unit_validation.json)、[履歴保持](batch05_history_preservation.json)、[画面検証](viewer_validation.json)、[ローカルD1検証](d1_local_validation.json)。以前の検証記録はbatch03／batch04のファイルで残しています。今回のDBデータSHA-256：`76ee51179019158ae8ad752c20466cdb2b156d89bd105bb64ec415301b5ba9c8`。
+[DB検証](db_validation_batch05.json)、[回帰検証](unit_validation_batch05.json)、[履歴保持](batch05_history_preservation.json)、[画面検証](viewer_validation_batch05.json)、[ローカルD1検証](d1_local_validation_batch05.json)。以前の検証記録はbatch03／batch04のファイルで残しています。今回のDBデータSHA-256：`76ee51179019158ae8ad752c20466cdb2b156d89bd105bb64ec415301b5ba9c8`。
 
 正本と[比較画面](../comparison.html)、[D1初回登録SQL](../d1/import.sql)、再作成用の[B05入力JSON](../batches/B05-20261011.json)を更新しました。追加研究の入力、出典、分類訂正、課題履歴まで同じDBへ登録しています。

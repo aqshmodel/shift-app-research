@@ -52,3 +52,22 @@ FROM classification_corrections x
 JOIN observations o ON o.observation_id=x.original_observation_id
 JOIN observations n ON n.observation_id=x.corrected_observation_id
 ORDER BY x.recorded_on,x.correction_id;
+
+-- Reference formulas and conditions have independent provenance.
+-- Their presence never establishes vendor implementation. Dates may be NULL.
+SELECT g.regulation_id,g.title,g.authority_type,g.version_label,
+ g.effective_from,g.effective_to,
+ json_extract(g.applicability_json,'$.summary_ja') AS summary_ja,
+ json_extract(g.applicability_json,'$.formula') AS formula,
+ json_extract(g.applicability_json,'$.rounding') AS rounding,
+ json_extract(g.applicability_json,'$.locator') AS locator,
+ g.applicability_json,r.retrieval_url,r.retrieved_on
+FROM regulations g JOIN source_revisions r USING(revision_id)
+WHERE g.jurisdiction=?1 ORDER BY g.regulation_id;
+
+-- Deep research for formulas, MFA and full exit exports is outside the common
+-- 40-item comparison; retain contradictions and missing documentation.
+SELECT * FROM v_observations_with_sources
+WHERE offering_id=?1 AND criterion_id IN ('J05','N02','M08','N06','P08')
+ AND record_category='document_observation'
+ORDER BY criterion_id,batch_id DESC,observation_id,evidence_id;

@@ -1,0 +1,2112 @@
+{
+  "batch_id": "B06-20261011",
+  "as_of_date": "2026-10-11",
+  "prior_batch": "B05-20261011",
+  "description": "様式9算式・管理者MFA・解約データ出口を中心とする追加調査",
+  "method": "公開一次資料本文をWeb取得、取得不可の本文はブラウザで補完。既存記録と照合し新しい詳細を追加。ログイン、営業連絡、性能試験は未実施。",
+  "sources": [
+    {
+      "key": "gov9",
+      "url": "https://kouseikyoku.mhlw.go.jp/kinki/r8-k09.pdf",
+      "title": "令和8年度 様式9 入院基本料等の施設基準に係る届出書添付書類",
+      "publisher": "厚生労働省 近畿厚生局",
+      "reference": "turn126view2",
+      "retrieved_on": "2026-10-11",
+      "version_label": "令和8年度",
+      "page_count": 4
+    },
+    {
+      "key": "gov8",
+      "url": "https://www.mhlw.go.jp/content/12400000/001703849.pdf",
+      "title": "令和8年度診療報酬改定の概要 6 入院（共通事項）",
+      "publisher": "厚生労働省",
+      "reference": "turn130view3",
+      "retrieved_on": "2026-10-11",
+      "version_label": "令和8年度",
+      "page_count": 43
+    },
+    {
+      "key": "nafty9",
+      "url": "https://nafty.app/youshiki9/",
+      "title": "様式9の自動作成・夜勤72時間と看護配置の点検",
+      "publisher": "KakuKaku",
+      "reference": "turn127view2",
+      "retrieved_on": "2026-10-11"
+    },
+    {
+      "key": "naftyt",
+      "url": "https://nafty.app/terms/",
+      "title": "Nafty利用規約",
+      "publisher": "KakuKaku",
+      "reference": "turn130view0",
+      "retrieved_on": "2026-10-11",
+      "published_on": "2026-07-30"
+    },
+    {
+      "key": "syncpc",
+      "url": "https://support.synchroshift.jp/portal/ja/kb/articles/1008",
+      "title": "PCでログインする手順",
+      "publisher": "シンクロシフト",
+      "reference": "turn130view2",
+      "retrieved_on": "2026-10-11"
+    },
+    {
+      "key": "syncapp",
+      "url": "https://support.synchroshift.jp/portal/ja/kb/articles/1009",
+      "title": "アプリでログインする手順",
+      "publisher": "シンクロシフト",
+      "reference": "turn126view0",
+      "retrieved_on": "2026-10-11",
+      "updated_on": "2026-07-28"
+    },
+    {
+      "key": "ct2fa",
+      "url": "https://help.connecteam.com/en/articles/3112479-two-factor-authentication-2fa",
+      "title": "Two-Factor Authentication (2FA)",
+      "publisher": "Connecteam",
+      "reference": "turn155view1",
+      "retrieved_on": "2026-10-11",
+      "updated_on": "2026-08-13"
+    },
+    {
+      "key": "ctent",
+      "url": "https://help.connecteam.com/en/articles/6141378-the-enterprise-plan",
+      "title": "The Enterprise Plan",
+      "publisher": "Connecteam",
+      "reference": "turn155view0",
+      "retrieved_on": "2026-10-11",
+      "updated_on": "2025-04-27"
+    },
+    {
+      "key": "ctss",
+      "url": "https://help.connecteam.com/en/articles/6502702-microsoft-azure-active-directory-single-sign-on-sso-integration",
+      "title": "Microsoft Azure Active Directory SSO Integration",
+      "publisher": "Connecteam",
+      "reference": "turn127view1",
+      "retrieved_on": "2026-10-11",
+      "updated_on": "2025-07-21"
+    },
+    {
+      "key": "depsso",
+      "url": "https://help.deputy.com/hc/en-au/articles/4755748784271-Single-Sign-On-SSO-FAQs",
+      "title": "Single Sign-On FAQs",
+      "publisher": "Deputy",
+      "reference": "turn130view1",
+      "retrieved_on": "2026-10-11"
+    },
+    {
+      "key": "remfa",
+      "url": "https://www.rosterelf.com/support/knowledge-base/security/enabling-or-disabling-multi-factor-authentication",
+      "title": "Enable multi-factor authentication",
+      "publisher": "RosterElf",
+      "reference": "turn132view0",
+      "retrieved_on": "2026-10-11",
+      "updated_on": "2026-09-09"
+    },
+    {
+      "key": "relogin",
+      "url": "https://www.rosterelf.com/support/knowledge-base/security/using-multi-factor-authentication",
+      "title": "Use multi-factor authentication",
+      "publisher": "RosterElf",
+      "reference": "turn132view1",
+      "retrieved_on": "2026-10-11",
+      "updated_on": "2026-09-09"
+    },
+    {
+      "key": "wiwmfa",
+      "url": "https://help.wheniwork.com/articles/two-step-verification-technical-reference/",
+      "title": "Two-Step Verification Technical Reference",
+      "publisher": "When I Work",
+      "reference": "turn132view2",
+      "retrieved_on": "2026-10-11",
+      "updated_on": "2024-05-22"
+    },
+    {
+      "key": "patchgc",
+      "url": "https://www.applytosupply.digitalmarketplace.service.gov.uk/g-cloud/services/174091422548808",
+      "title": "Patchwork Rota — G-Cloud 14 supplier declaration",
+      "publisher": "Patchwork Health / UK Digital Marketplace",
+      "reference": "turn135view3",
+      "retrieved_on": "2026-10-11",
+      "version_label": "G-Cloud 14",
+      "scope_note": "英国調達枠組み向け申告。現行の個別契約や動作試験ではない。"
+    },
+    {
+      "key": "optimagc",
+      "url": "https://www.applytosupply.digitalmarketplace.service.gov.uk/g-cloud/services/889593993251086",
+      "title": "Allocate Optima — G-Cloud 14 supplier declaration",
+      "publisher": "RLDatix / UK Digital Marketplace",
+      "reference": "turn136view1",
+      "retrieved_on": "2026-10-11",
+      "version_label": "G-Cloud 14",
+      "scope_note": "英国向け調達申告。データ返却の実行と再インポートは未検証。"
+    },
+    {
+      "key": "sonagc",
+      "url": "https://www.applytosupply.digitalmarketplace.service.gov.uk/g-cloud/services/196631126822513",
+      "title": "Sona Workforce Management — G-Cloud 14 supplier declaration",
+      "publisher": "Sona / UK Digital Marketplace",
+      "reference": "turn135view0",
+      "retrieved_on": "2026-10-11",
+      "version_label": "G-Cloud 14",
+      "scope_note": "英国G-Cloud 14申告。現行個別契約を代替しない。"
+    },
+    {
+      "key": "sonat",
+      "url": "https://assets.applytosupply.digitalmarketplace.service.gov.uk/g-cloud-14/documents/721491/196631126822513-terms-and-conditions-2024-05-07-1059.pdf",
+      "title": "Sona Terms and Conditions (February 2024)",
+      "publisher": "Sona",
+      "reference": "turn137view3",
+      "retrieved_on": "2026-10-11",
+      "version_label": "February 2024 / G-Cloud 14",
+      "page_count": 12
+    },
+    {
+      "key": "lantumgc",
+      "url": "https://www.applytosupply.digitalmarketplace.service.gov.uk/g-cloud/services/896571031166769",
+      "title": "Lantum for Secondary Care — G-Cloud 14 supplier declaration",
+      "publisher": "Lantum / UK Digital Marketplace",
+      "reference": "turn138view0",
+      "retrieved_on": "2026-10-11",
+      "version_label": "G-Cloud 14"
+    },
+    {
+      "key": "miramed",
+      "url": "https://www.konicaminolta.com/jp-ja/miramos/function/medical-care.html",
+      "title": "miramos 医療施設向け機能",
+      "publisher": "コニカミノルタ",
+      "reference": "turn139view1",
+      "retrieved_on": "2026-10-11"
+    },
+    {
+      "key": "neomed",
+      "url": "https://products.ndis.jp/shift-neo/medical/",
+      "title": "医療機関向け勤務管理システム NEO",
+      "publisher": "NTTデータ関西",
+      "reference": "turn139view2",
+      "retrieved_on": "2026-10-11"
+    },
+    {
+      "key": "vx",
+      "url": "https://ideanexsys.com/看護介護の勤務表概要/",
+      "title": "看護・介護の勤務表概要 KinmuVX",
+      "publisher": "イデアネクシス",
+      "reference": "turn139view3",
+      "retrieved_on": "2026-10-11"
+    },
+    {
+      "key": "epfaq",
+      "url": "https://epigno.jp/epitalhr/faq/",
+      "title": "エピタルHR よくある質問",
+      "publisher": "エピグノ",
+      "reference": "turn139view0",
+      "retrieved_on": "2026-10-11"
+    },
+    {
+      "key": "ept",
+      "url": "https://epigno.jp/terms/",
+      "title": "エピグノ利用規約",
+      "publisher": "エピグノ",
+      "reference": "turn143view1",
+      "retrieved_on": "2026-10-11"
+    },
+    {
+      "key": "depcancel",
+      "url": "https://help.deputy.com/hc/en-au/articles/4755583313295-How-to-cancel-your-Deputy-subscription",
+      "title": "How to cancel your Deputy subscription",
+      "publisher": "Deputy",
+      "reference": "turn142view2",
+      "retrieved_on": "2026-10-11"
+    },
+    {
+      "key": "depexport",
+      "url": "https://help.deputy.com/hc/en-au/articles/4755408081167-How-to-export-or-download-your-data",
+      "title": "How to export or download your data",
+      "publisher": "Deputy",
+      "reference": "turn145view2",
+      "retrieved_on": "2026-10-11",
+      "updated_on": "2026-07-16"
+    },
+    {
+      "key": "ctcancel",
+      "url": "https://help.connecteam.com/en/articles/5828460-subscriptions-cancellations-refunds-and-plan-changes",
+      "title": "Subscriptions, cancellations, refunds and plan changes",
+      "publisher": "Connecteam",
+      "reference": "turn140view1",
+      "retrieved_on": "2026-10-11",
+      "updated_on": "2026-01-27"
+    },
+    {
+      "key": "wiwt",
+      "url": "https://wheniwork.com/terms",
+      "title": "When I Work Workplace Terms of Service",
+      "publisher": "When I Work",
+      "reference": "turn146view2",
+      "retrieved_on": "2026-10-11",
+      "updated_on": "2025-08-01",
+      "scope_note": "Workplace条項と個人User条項を区別。"
+    },
+    {
+      "key": "pldata",
+      "url": "https://help.planday.com/en/articles/30428-how-to-access-and-export-your-data",
+      "title": "How to access and export your data",
+      "publisher": "Planday",
+      "reference": "turn142view3",
+      "retrieved_on": "2026-10-11",
+      "updated_on": "2025-05-23"
+    },
+    {
+      "key": "qmfa",
+      "url": "https://help.quinyx.com/help-centre/docs/multifactor-authentication",
+      "title": "Multifactor authentication",
+      "publisher": "Quinyx",
+      "reference": "cua:b06:quinyx-mfa:2026-10-11",
+      "retrieved_on": "2026-10-11",
+      "published_on": "2026-07-29",
+      "method": "browser_rendered_body_review",
+      "scope_note": "Web本文取得失敗をブラウザ本文で補完。"
+    },
+    {
+      "key": "naftydl",
+      "url": "https://nafty.app/youshiki9/download/",
+      "title": "医科様式9のExcelフォーム 無料ダウンロード",
+      "publisher": "KakuKaku",
+      "reference": "cua:b06:nafty-download:2026-10-11",
+      "retrieved_on": "2026-10-11",
+      "updated_on": "2026-08-27",
+      "method": "browser_rendered_body_review",
+      "method_note": "Web取得は受付停止表示、実ブラウザは入力フォーム表示。実ブラウザの最新表示を記録し、情報送信・取得はしていない。"
+    },
+    {
+      "key": "jointnews",
+      "url": "https://youshiki9.doc-net.or.jp/",
+      "title": "様式9ドットコム 公開停止・更新案内",
+      "publisher": "全国保険医団体連合会 / NTTデータセキスイシステムズ",
+      "reference": "turn151view2",
+      "retrieved_on": "2026-10-11",
+      "updated_on": "2026-10-06"
+    },
+    {
+      "key": "jointmanual",
+      "url": "https://youshiki9.doc-net.or.jp/manual/youshiki9_tebiki260527.pdf",
+      "title": "様式9自動計算機能付Excel表ご利用の手引き（2026改定対応版）",
+      "publisher": "全国保険医団体連合会 / NTTデータセキスイシステムズ",
+      "reference": "turn147view0",
+      "retrieved_on": "2026-10-11",
+      "updated_on": "2026-05-27",
+      "version_label": "2026診療報酬改定対応版",
+      "page_count": 39,
+      "scope_note": "専門団体の手引きで行政通知とは区別。PDFメタデータに2024と残るが本文は2026対応。全文・Excelの再配布はしない。"
+    },
+    {
+      "key": "plmfa",
+      "url": "https://help.planday.com/en/articles/92280-how-to-enable-multi-factor-authentication-mfa-in-planday",
+      "title": "How to enable MFA in Planday",
+      "publisher": "Planday",
+      "reference": "turn151view0",
+      "retrieved_on": "2026-10-11",
+      "updated_on": "2026-02-06"
+    },
+    {
+      "key": "plcancel",
+      "url": "https://help.planday.com/en/articles/30211-how-to-cancel-your-planday-subscription",
+      "title": "How to cancel your Planday subscription",
+      "publisher": "Planday",
+      "reference": "turn151view1",
+      "retrieved_on": "2026-10-11",
+      "updated_on": "2026-05-08"
+    },
+    {
+      "key": "qpass",
+      "url": "https://help.quinyx.com/help-centre/docs/advanced-password-management",
+      "title": "Advanced password management",
+      "publisher": "Quinyx",
+      "reference": "cua:b06:quinyx-advanced-password:2026-10-11",
+      "retrieved_on": "2026-10-11",
+      "published_on": "2026-07-29",
+      "method": "browser_rendered_body_review"
+    },
+    {
+      "key": "rgsettings",
+      "url": "https://support.rotageek.com/en/articles/14601074-company-settings",
+      "title": "Company Settings",
+      "publisher": "Rotageek",
+      "reference": "turn153view0",
+      "retrieved_on": "2026-10-11",
+      "updated_on": "2026-07-15"
+    },
+    {
+      "key": "rgmfa",
+      "url": "https://support.rotageek.com/en/articles/6682375-multi-factor-authentication",
+      "title": "Multi-Factor Authentication",
+      "publisher": "Rotageek",
+      "reference": "turn154view0",
+      "retrieved_on": "2026-10-11",
+      "updated_on": "2024-05-20"
+    },
+    {
+      "key": "rgsetup",
+      "url": "https://support.rotageek.com/en/articles/7182704-setting-up-multi-factor-authentication-for-rotageek",
+      "title": "Setting up Multi Factor Authentication for Rotageek",
+      "publisher": "Rotageek",
+      "reference": "turn154view1",
+      "retrieved_on": "2026-10-11",
+      "updated_on": "2023-05-16"
+    },
+    {
+      "key": "rgsso",
+      "url": "https://support.rotageek.com/en/articles/8694855-single-sign-on-sso",
+      "title": "Single Sign On",
+      "publisher": "Rotageek",
+      "reference": "turn154view2",
+      "retrieved_on": "2026-10-11",
+      "updated_on": "2023-12-12"
+    },
+    {
+      "key": "humanlogin",
+      "url": "https://helpcenter.humanity.com/app/",
+      "title": "Humanity Login public page text",
+      "publisher": "TCP Software / Humanity",
+      "reference": "turn153view2",
+      "retrieved_on": "2026-10-11",
+      "scope_note": "未ログインページのWeb本文。条件付きのフォーム文言を含む可能性があり、ログイン成功・プラン包含を確認していない。"
+    }
+  ],
+  "findings": [
+    {
+      "product": "JP04",
+      "source": "nafty9",
+      "criterion": "J05",
+      "summary": "夜勤除外を「月16時間以下」と説明。行政様式の16時間未満・短時間正職員12時間未満・その他病棟8時間未満との照合が必要。",
+      "locator": "夜勤72時間ルール／対応範囲",
+      "limitations": "ベンダー説明と行政資料の文書比較のみ。サービスの計算結果・Excel数式は取得／検算していない。説明の差を実装不具合と断定しない。",
+      "scope": "Nafty様式9アドオン・公開説明",
+      "state": "disputed",
+      "assertion": "inference"
+    },
+    {
+      "product": "JP04",
+      "source": "nafty9",
+      "criterion": "J05",
+      "summary": "2病棟兼務は勤務割合で計上と説明するが、分子・分母、丸め、ゼロ除算の詳細は未開示。",
+      "locator": "夜勤72時間ルール",
+      "limitations": "ベンダー説明と行政資料の文書比較のみ。サービスの計算結果・Excel数式は取得／検算していない。説明の差を実装不具合と断定しない。",
+      "scope": "Nafty様式9アドオン・公開説明"
+    },
+    {
+      "product": "JP04",
+      "source": "nafty9",
+      "criterion": "J05",
+      "summary": "日勤・夜勤を施設の夜勤時間帯で分け、打刻を優先して遅刻早退・会議等を控除する。例外的に算入できる研修等への対応は不明。",
+      "locator": "勤務実績／取り込みと集計",
+      "limitations": "ベンダー説明と行政資料の文書比較のみ。サービスの計算結果・Excel数式は取得／検算していない。説明の差を実装不具合と断定しない。",
+      "scope": "Nafty様式9アドオン・公開説明"
+    },
+    {
+      "product": "JP04",
+      "source": "nafty9",
+      "criterion": "J03",
+      "summary": "改定にアップデートで追従と案内。算式の版固定・適用日・過去帳票再計算の扱いは不明。",
+      "locator": "FAQ 最新の様式",
+      "limitations": "ベンダー説明と行政資料の文書比較のみ。サービスの計算結果・Excel数式は取得／検算していない。説明の差を実装不具合と断定しない。",
+      "scope": "Nafty様式9アドオン・公開説明"
+    },
+    {
+      "product": "JP04",
+      "source": "nafty9",
+      "criterion": "J08",
+      "summary": "提出後のシフト変更で数値が変わった場合に警告すると案内。",
+      "locator": "施設全体で見る",
+      "limitations": "ベンダー説明と行政資料の文書比較のみ。サービスの計算結果・Excel数式は取得／検算していない。説明の差を実装不具合と断定しない。",
+      "scope": "Nafty様式9アドオン・公開説明"
+    },
+    {
+      "product": "JP04",
+      "source": "nafty9",
+      "criterion": "N03",
+      "summary": "施設管理者の代行編集を記録すると案内。記録の全量搬出形式は不明。",
+      "locator": "施設全体で見る",
+      "limitations": "ベンダー説明と行政資料の文書比較のみ。サービスの計算結果・Excel数式は取得／検算していない。説明の差を実装不具合と断定しない。",
+      "scope": "Nafty様式9アドオン・公開説明"
+    },
+    {
+      "product": "JP04",
+      "source": "naftydl",
+      "criterion": "J04",
+      "summary": "無料Excelは施設名・担当者名・メール入力と同意を求める取得方式。実ファイルは未取得、数式は未検算。",
+      "locator": "ダウンロード入力フォーム",
+      "limitations": "実ブラウザの公開フォームを確認。個人情報送信とダウンロードは未実施。Web抽出では停止表示があり表示差を取得記録に残した。",
+      "scope": "Nafty様式9アドオン・公開説明",
+      "state": "known"
+    },
+    {
+      "product": "JP04",
+      "source": "gov9",
+      "criterion": "J05",
+      "summary": "行政様式は月平均夜勤時間=(D-E)/B。Bは夜勤専従・所定の時間未満者を除き、病棟外兼務では夜勤割合で数える。",
+      "locator": "PDF pp.2-4",
+      "limitations": "行政ルールの参照でありNaftyの実装証明ではない。Nafty説明の16時間以下と行政の16時間未満に差がある。",
+      "scope": "行政算式との比較",
+      "state": "disputed",
+      "assertion": "inference"
+    },
+    {
+      "product": "JP04",
+      "source": "naftyt",
+      "criterion": "M08",
+      "summary": "規約第3-14条には施設解約時の全設定・履歴・監査ログの一括提供、形式、期限、費用の明記を確認できなかった。",
+      "locator": "第3-14条",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "施設契約とゲスト利用を区別",
+      "state": "not_found"
+    },
+    {
+      "product": "JP04",
+      "source": "naftyt",
+      "criterion": "N06",
+      "summary": "ゲストの個人予定は端末内のみ保存し、サーバー保存・バックアップを行わない。削除・初期化・機種変更時は復元できない。",
+      "locator": "第4条",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "施設契約とゲスト利用を区別"
+    },
+    {
+      "product": "JP04",
+      "source": "naftyt",
+      "criterion": "J01",
+      "summary": "シフトの制度適合・人員充足の最終判断は施設責任とし、自動算出の要件適合を保証しない。",
+      "locator": "第8条",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "施設契約とゲスト利用を区別"
+    },
+    {
+      "product": "JP04",
+      "source": "naftyt",
+      "criterion": "N01",
+      "summary": "情報訂正・削除は原則所属施設へ申し出ると規定。",
+      "locator": "第5条",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "施設契約とゲスト利用を区別"
+    },
+    {
+      "product": "JP08",
+      "source": "syncpc",
+      "criterion": "N02",
+      "summary": "PC版はシステム管理者のメール二要素認証が必須で無効化できないと明記。マネージャー・シフト管理者・スタッフは無効化可能。",
+      "locator": "二要素認証の無効化",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "システム管理者・その他権限の差"
+    },
+    {
+      "product": "JP08",
+      "source": "syncpc",
+      "criterion": "N02",
+      "summary": "マネージャー・シフト管理者はアカウント単位で任意設定し、登録メールへのコードで認証する。",
+      "locator": "マネージャー・シフト管理者",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "システム管理者・その他権限の差"
+    },
+    {
+      "product": "JP08",
+      "source": "syncpc",
+      "criterion": "N02",
+      "summary": "認証メール再送・迷惑メール確認を案内。管理者ロックアウトからの復旧手続きは本文で確認できない。",
+      "locator": "システム管理者",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "システム管理者・その他権限の差",
+      "state": "not_found"
+    },
+    {
+      "product": "JP08",
+      "source": "syncapp",
+      "criterion": "N02",
+      "summary": "アプリ記事は管理者必須化と、権限を限定しないメール削除／無効化手順を併記。PC記事の管理者無効化不可と整合する条件は未確定。",
+      "locator": "更新情報／注意事項／無効化",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "アプリ説明の権限留保",
+      "state": "disputed",
+      "assertion": "inference"
+    },
+    {
+      "product": "JP08",
+      "source": "syncapp",
+      "criterion": "N02",
+      "summary": "二要素認証メールアドレスはユーザー間で重複登録できないと案内。",
+      "locator": "注意事項",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "アプリ説明の権限留保"
+    },
+    {
+      "product": "US09",
+      "source": "ct2fa",
+      "criterion": "N02",
+      "summary": "Security設定で全管理者のダッシュボードアクセスに2FAを要求。ユーザー名・パスワードに加えSMSの一時PINを入力する。",
+      "locator": "How to Enable／How 2FA Works",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "Operations Expert含むアカウント設定"
+    },
+    {
+      "product": "US09",
+      "source": "ct2fa",
+      "criterion": "N02",
+      "summary": "2026-08-13ヘルプは2FAをBasicから利用可能と明記。Enterprise限定を示す旧ヘルプ・料金表と契約範囲の照合が必要。",
+      "locator": "Basic Plan脚注",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "Operations Expert含むアカウント設定",
+      "state": "disputed",
+      "assertion": "inference"
+    },
+    {
+      "product": "US09",
+      "source": "ctent",
+      "criterion": "N02",
+      "summary": "2025-04-27のEnterprise説明では管理者2FAを追加セキュリティ機能とし4桁SMSを説明。新しいBasic脚注との差は未解消。",
+      "locator": "Security",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "旧Enterpriseプラン説明",
+      "state": "disputed",
+      "assertion": "inference"
+    },
+    {
+      "product": "US09",
+      "source": "ctss",
+      "criterion": "N02",
+      "summary": "Azure AD SSOはEnterpriseが前提、設定できるのはownerのみ。",
+      "locator": "Prerequisites／Tip",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "Enterprise限定SSO・2FAとは別条件"
+    },
+    {
+      "product": "US09",
+      "source": "ctss",
+      "criterion": "N02",
+      "summary": "全ユーザー・モバイルアプリへのSSO適用を選択可能。選択肢が表示されない場合はsupport対応を案内。",
+      "locator": "Adding SSO for Mobile",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "Enterprise限定SSO・2FAとは別条件"
+    },
+    {
+      "product": "US09",
+      "source": "ctss",
+      "criterion": "N02",
+      "summary": "管理者は電話番号入力後にAzureへ転送。Azure側MFAの強制条件・ロックアウト復旧は未記載。",
+      "locator": "Login Process",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "Enterprise限定SSO・2FAとは別条件"
+    },
+    {
+      "product": "US07",
+      "source": "depsso",
+      "criterion": "N02",
+      "summary": "SP開始SAML2.0対応IdPが前提。Okta・Azure・PingIdentity・Oracleを例示し、OIDCは限定的ソーシャルSSOのみ。",
+      "locator": "Which identity providers",
+      "limitations": "一般Deputyヘルプの記載。Core契約でのSSO包含・費用は未確認。SSOの存在だけでMFA必須とは判断しない。",
+      "scope": "Deputy SSO一般仕様・Core包含は要照合"
+    },
+    {
+      "product": "US07",
+      "source": "depsso",
+      "criterion": "N02",
+      "summary": "SSO enabledはパスワード・ソーシャル併用可、SSO requiredはそれらをログイン画面から除去する。",
+      "locator": "enabled and required",
+      "limitations": "一般Deputyヘルプの記載。Core契約でのSSO包含・費用は未確認。SSOの存在だけでMFA必須とは判断しない。",
+      "scope": "Deputy SSO一般仕様・Core包含は要照合"
+    },
+    {
+      "product": "US07",
+      "source": "depsso",
+      "criterion": "N02",
+      "summary": "SSO経由ではDeputy内2FAを利用できずIdP側で設定する。Deputyのユーザー名・パスワード認証では2FAが継続する。",
+      "locator": "If I have 2FA",
+      "limitations": "一般Deputyヘルプの記載。Core契約でのSSO包含・費用は未確認。SSOの存在だけでMFA必須とは判断しない。",
+      "scope": "Deputy SSO一般仕様・Core包含は要照合"
+    },
+    {
+      "product": "US07",
+      "source": "depsso",
+      "criterion": "N02",
+      "summary": "SSO requiredへの変更では既存セッションを直ちに再認証せず、ログアウト／有効期限まで継続する。",
+      "locator": "Will employees need to re-login",
+      "limitations": "一般Deputyヘルプの記載。Core契約でのSSO包含・費用は未確認。SSOの存在だけでMFA必須とは判断しない。",
+      "scope": "Deputy SSO一般仕様・Core包含は要照合"
+    },
+    {
+      "product": "US07",
+      "source": "depsso",
+      "criterion": "N02",
+      "summary": "同一インスタンス内でグループごとのSSO／非SSO分離は非対応と記載。",
+      "locator": "identity providers",
+      "limitations": "一般Deputyヘルプの記載。Core契約でのSSO包含・費用は未確認。SSOの存在だけでMFA必須とは判断しない。",
+      "scope": "Deputy SSO一般仕様・Core包含は要照合",
+      "support": "unsupported"
+    },
+    {
+      "product": "US07",
+      "source": "depsso",
+      "criterion": "N02",
+      "summary": "ロックアウト時はSystem Adminにパスワード再設定またはsupport連絡、その他職員には管理者連絡を案内。",
+      "locator": "issues logging in",
+      "limitations": "一般Deputyヘルプの記載。Core契約でのSSO包含・費用は未確認。SSOの存在だけでMFA必須とは判断しない。",
+      "scope": "Deputy SSO一般仕様・Core包含は要照合"
+    },
+    {
+      "product": "US21",
+      "source": "remfa",
+      "criterion": "N02",
+      "summary": "管理者等の高権限ユーザーにはMFAを推奨し、個人プロフィールで有効化する。全管理者の一括強制設定は確認できない。",
+      "locator": "Enabling MFA",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "RosterElf個人設定と会計連携条件"
+    },
+    {
+      "product": "US21",
+      "source": "remfa",
+      "criterion": "N02",
+      "summary": "XeroまたはMYOB連携中はMFA必須で無効化不可。解除するには先に連携を切断する必要がある。",
+      "locator": "Disabling MFA",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "RosterElf個人設定と会計連携条件"
+    },
+    {
+      "product": "US21",
+      "source": "remfa",
+      "criterion": "N02",
+      "summary": "非連携時は個人プロフィールからMFA解除を案内。端末喪失時はsupportへ連絡し別方法の本人確認が必要な場合がある。",
+      "locator": "FAQ4-5",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "RosterElf個人設定と会計連携条件"
+    },
+    {
+      "product": "US21",
+      "source": "relogin",
+      "criterion": "N02",
+      "summary": "MFAコードは登録メールへ送信、同じコードをアプリpushへ同時送信。届かない場合はカウントダウン後にSMSを利用する。",
+      "locator": "Verify your identity",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "2026-09-09公開ログイン手順"
+    },
+    {
+      "product": "US21",
+      "source": "relogin",
+      "criterion": "N02",
+      "summary": "Google Authenticator設定への案内も残る。メール／pushの現行主方式とTOTPの併用可否は実アカウントで未確認。",
+      "locator": "Setting up MFA",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "2026-09-09公開ログイン手順"
+    },
+    {
+      "product": "US21",
+      "source": "relogin",
+      "criterion": "N02",
+      "summary": "ログイン不能時の連絡先はmanager／admin。電話番号更新を支援すると説明。",
+      "locator": "Updating your mobile number",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "2026-09-09公開ログイン手順"
+    },
+    {
+      "product": "US19",
+      "source": "wiwmfa",
+      "criterion": "N02",
+      "summary": "全権限のユーザーが個別に二段階認証を有効化でき、有効化後は毎回ログインにコードが必要。",
+      "locator": "About two-step verification",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "全権限の任意二段階認証"
+    },
+    {
+      "product": "US19",
+      "source": "wiwmfa",
+      "criterion": "N02",
+      "summary": "認証アプリまたはSMSを利用し、全端末のログインでパスワード後にコードを確認する。",
+      "locator": "Methods／Login workflow",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "全権限の任意二段階認証"
+    },
+    {
+      "product": "US19",
+      "source": "wiwmfa",
+      "criterion": "N02",
+      "summary": "メールアドレス変更とPayrollの機密情報閲覧では再認証が必要。管理者全員への強制設定は本文にない。",
+      "locator": "Re-authentication requirements",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "全権限の任意二段階認証"
+    },
+    {
+      "product": "US14",
+      "source": "patchgc",
+      "criterion": "M08",
+      "summary": "契約中はレポート機能で全量抽出可能と申告し、supportが移行・抽出を支援する。対象テーブル・添付・監査ログの詳細は未提示。",
+      "locator": "End-of-contract data extraction",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "英国G-Cloud 14申告"
+    },
+    {
+      "product": "US14",
+      "source": "patchgc",
+      "criterion": "M08",
+      "summary": "終了時の追加料金はなく、アカウントは直ちに無効化されると記載。終了後の閲覧猶予は確認できない。",
+      "locator": "End-of-contract process",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "英国G-Cloud 14申告"
+    },
+    {
+      "product": "US14",
+      "source": "patchgc",
+      "criterion": "M02",
+      "summary": "Employer HubからCSV・Excelへ出力できると申告。通常出力と契約出口の全量対象は同一とは限らない。",
+      "locator": "Data export formats／approach",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "英国G-Cloud 14申告"
+    },
+    {
+      "product": "US14",
+      "source": "patchgc",
+      "criterion": "N02",
+      "summary": "ユーザーと管理インターフェースの認証欄はユーザー名・パスワードを列挙。管理者MFAの記載は確認できない。",
+      "locator": "User authentication／management interfaces",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "英国G-Cloud 14申告",
+      "state": "not_found"
+    },
+    {
+      "product": "US14",
+      "source": "patchgc",
+      "criterion": "N03",
+      "summary": "利用者・supplier監査はリアルタイム提供、各12か月以上保持。システムログも12か月以上と申告。",
+      "locator": "Audit information",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "英国G-Cloud 14申告"
+    },
+    {
+      "product": "US14",
+      "source": "patchgc",
+      "criterion": "N04",
+      "summary": "ホスティングは英国。顧客による保管場所の選択はできないと申告。",
+      "locator": "Data storage and processing locations",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "英国G-Cloud 14申告"
+    },
+    {
+      "product": "US14",
+      "source": "patchgc",
+      "criterion": "M04",
+      "summary": "Swagger・sandboxを持つAPIでESR、job planning、bank、VMS連携を案内。専任integrationチームが実装を支援。",
+      "locator": "API／API documentation",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "英国G-Cloud 14申告"
+    },
+    {
+      "product": "US11",
+      "source": "optimagc",
+      "criterion": "M08",
+      "summary": "システム内の全データを顧客所有とし、要請に応じSQL等の標準形式で返却すると申告。全テーブル・添付・監査の具体的範囲は未開示。",
+      "locator": "End-of-contract data extraction",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "英国G-Cloud 14申告"
+    },
+    {
+      "product": "US11",
+      "source": "optimagc",
+      "criterion": "M08",
+      "summary": "顧客が契約終了前／終了時に用意されたツールで抽出する責任を持ち、抽出しなかった損失には責任を負わないと記載。",
+      "locator": "End-of-contract process",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "英国G-Cloud 14申告"
+    },
+    {
+      "product": "US11",
+      "source": "optimagc",
+      "criterion": "N06",
+      "summary": "終了後1か月以内に返却を求めない場合は顧客データを削除すると記載。バックアップ残存期限・消去証明は不明。",
+      "locator": "End-of-contract process",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "英国G-Cloud 14申告"
+    },
+    {
+      "product": "US11",
+      "source": "optimagc",
+      "criterion": "N02",
+      "summary": "管理インターフェースへのアクセスに二要素認証を列挙し、ADFSとの連携も案内。強制・解除・復旧条件の詳細は未記載。",
+      "locator": "Access restrictions in management interfaces／User authentication",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "英国G-Cloud 14申告"
+    },
+    {
+      "product": "US11",
+      "source": "optimagc",
+      "criterion": "N03",
+      "summary": "利用者監査とシステムログの保持は顧客定義、supplier監査は定期報告で12か月以上と申告。",
+      "locator": "Audit information",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "英国G-Cloud 14申告"
+    },
+    {
+      "product": "US11",
+      "source": "optimagc",
+      "criterion": "M04",
+      "summary": "AISはODataの外向き公開とInbound Data Packsの定期投入を説明。フィールド対応・ページング・bundle単位の仕様がある。",
+      "locator": "API",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "英国G-Cloud 14申告"
+    },
+    {
+      "product": "US22",
+      "source": "sonagc",
+      "criterion": "M08",
+      "summary": "終了時は画面・レポートへのアクセスとデータ抽出協力を案内。全設定・履歴・添付の一括提供、期限、費用は確認できない。",
+      "locator": "End-of-contract data extraction／process",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "英国G-Cloud 14申告"
+    },
+    {
+      "product": "US22",
+      "source": "sonagc",
+      "criterion": "M02",
+      "summary": "出力形式欄はCSV・Excel・JSONを列挙するが、出力方法欄はSonaへの取込を説明している。実際の出口仕様は照合が必要。",
+      "locator": "Data export formats／approach",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "英国G-Cloud 14申告",
+      "state": "disputed",
+      "assertion": "inference"
+    },
+    {
+      "product": "US22",
+      "source": "sonagc",
+      "criterion": "N02",
+      "summary": "利用者・管理画面の認証欄は二要素認証を列挙。管理者全員への強制、方式、解除・復旧手順は未開示。",
+      "locator": "User authentication／management interfaces",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "英国G-Cloud 14申告"
+    },
+    {
+      "product": "US22",
+      "source": "sonagc",
+      "criterion": "N03",
+      "summary": "利用者監査はリアルタイム、supplier監査は要請で提供し各12か月以上。システムログ保持は顧客定義と申告。",
+      "locator": "Audit information",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "英国G-Cloud 14申告"
+    },
+    {
+      "product": "US22",
+      "source": "sonagc",
+      "criterion": "N04",
+      "summary": "データ処理・保管は英国で顧客が場所を選べると申告。現行契約の具体リージョンは要確認。",
+      "locator": "Data storage and processing locations",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "英国G-Cloud 14申告"
+    },
+    {
+      "product": "US22",
+      "source": "sonagc",
+      "criterion": "N07",
+      "summary": "保存時暗号化AES256を申告。G-Cloud 14ではISO27001取得準備中と記載し、現在の取得状況は本文だけでは確定できない。",
+      "locator": "Protecting data at rest／ISO/IEC 27001 certification",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "英国G-Cloud 14申告"
+    },
+    {
+      "product": "US22",
+      "source": "sonat",
+      "criterion": "M08",
+      "summary": "終了時は書面指示により個人データと複製を返却／削除する。ただし法令上必要な保持を除外し、全DBの形式・納期は明記しない。",
+      "locator": "6.3.7, pp.7-8",
+      "limitations": "2024-02版G-Cloud 14資料の条文確認。現在の個別契約の適用条件と返却実行は未確認。",
+      "scope": "2024-02版英国契約資料"
+    },
+    {
+      "product": "US22",
+      "source": "sonat",
+      "criterion": "N06",
+      "summary": "削除の定義はデータを使用不能にすることを含む。物理的な全媒体消去や即時バックアップ消去の保証とは区別が必要。",
+      "locator": "6.3.7",
+      "limitations": "2024-02版G-Cloud 14資料の条文確認。現在の個別契約の適用条件と返却実行は未確認。",
+      "scope": "2024-02版英国契約資料"
+    },
+    {
+      "product": "US22",
+      "source": "sonat",
+      "criterion": "M08",
+      "summary": "終了後の合理的期間内に秘密情報の返却／破棄を要請できるが、未払料金がある場合は非個人データの返却義務を免れる。",
+      "locator": "15.4.4, p.10",
+      "limitations": "2024-02版G-Cloud 14資料の条文確認。現在の個別契約の適用条件と返却実行は未確認。",
+      "scope": "2024-02版英国契約資料"
+    },
+    {
+      "product": "US22",
+      "source": "sonat",
+      "criterion": "P08",
+      "summary": "初期／更新期間末の終了には6か月前の通知を規定。終了時はライセンスが直ちに消滅する。",
+      "locator": "15.1／15.4",
+      "limitations": "2024-02版G-Cloud 14資料の条文確認。現在の個別契約の適用条件と返却実行は未確認。",
+      "scope": "2024-02版英国契約資料"
+    },
+    {
+      "product": "US22",
+      "source": "sonat",
+      "criterion": "N05",
+      "summary": "匿名集計データを内部分析・サービス改善に使う条項がある。外部AIへの送信・学習条件は明記しない。",
+      "locator": "6.5",
+      "limitations": "2024-02版G-Cloud 14資料の条文確認。現在の個別契約の適用条件と返却実行は未確認。",
+      "scope": "2024-02版英国契約資料",
+      "state": "not_found"
+    },
+    {
+      "product": "US13",
+      "source": "lantumgc",
+      "criterion": "M08",
+      "summary": "終了時は要請に応じ合意形式で抽出すると申告。全履歴・設定・添付の範囲、費用、納期は未提示。",
+      "locator": "End-of-contract data extraction",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "Secondary Care / InGeniusを含む英国申告"
+    },
+    {
+      "product": "US13",
+      "source": "lantumgc",
+      "criterion": "P08",
+      "summary": "契約終了2か月前に更新条件を提示し、期間末にアクセスを解除すると記載。",
+      "locator": "End-of-contract process",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "Secondary Care / InGeniusを含む英国申告"
+    },
+    {
+      "product": "US13",
+      "source": "lantumgc",
+      "criterion": "M02",
+      "summary": "CSV出力はservice teamへの依頼で対応。オンライン閲覧・印刷も案内する。",
+      "locator": "Data export formats／approach",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "Secondary Care / InGeniusを含む英国申告"
+    },
+    {
+      "product": "US13",
+      "source": "lantumgc",
+      "criterion": "N02",
+      "summary": "ユーザーと管理画面の認証で二要素認証を列挙。管理者の強制・解除・復旧条件は未記載。",
+      "locator": "User authentication／management interfaces",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "Secondary Care / InGeniusを含む英国申告"
+    },
+    {
+      "product": "US13",
+      "source": "lantumgc",
+      "criterion": "N03",
+      "summary": "利用者・supplier監査はsupport依頼で提供し12か月以上保持。システムログは1〜6か月と申告。",
+      "locator": "Audit information",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "Secondary Care / InGeniusを含む英国申告"
+    },
+    {
+      "product": "US13",
+      "source": "lantumgc",
+      "criterion": "K03",
+      "summary": "InGenius導入は専任担当と受入基準を合意し、技術チームが管理者・臨床職の承認まで反復する支援を説明。自己操作のみの自動生成とは区別する。",
+      "locator": "Getting started",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "Secondary Care / InGeniusを含む英国申告",
+      "delivery": "managed_service"
+    },
+    {
+      "product": "JP07",
+      "source": "miramed",
+      "criterion": "J05",
+      "summary": "様式9出力の案内はあるが、月平均夜勤時間の分母・除外閾値・兼務按分・丸めの算式は本文にない。",
+      "locator": "様式9",
+      "limitations": "この公開ページ内で算式・版の説明が見つからないことのみを記録。実装の不対応を意味しない。",
+      "scope": "医療向け公開機能ページ",
+      "state": "not_found"
+    },
+    {
+      "product": "JP07",
+      "source": "miramed",
+      "criterion": "J03",
+      "summary": "公開機能ページでは対象の令和8年度様式・施行日・版固定を確認できない。",
+      "locator": "様式9",
+      "limitations": "この公開ページ内で算式・版の説明が見つからないことのみを記録。実装の不対応を意味しない。",
+      "scope": "医療向け公開機能ページ",
+      "state": "not_found"
+    },
+    {
+      "product": "JP09",
+      "source": "neomed",
+      "criterion": "J05",
+      "summary": "保団連とNTTデータセキスイの共同作成Excelと同じ帳票を使用と説明するが、製品の除外閾値・按分・丸めの処理は未開示。",
+      "locator": "様式9完全対応",
+      "limitations": "共同Excelへの参照は算式の実装・検算の証明ではない。共同提供元のファイル不整合を製品不具合とは断定しない。",
+      "scope": "NEO医療版公開ページ",
+      "state": "not_found"
+    },
+    {
+      "product": "JP09",
+      "source": "neomed",
+      "criterion": "J03",
+      "summary": "公開ページでは製品が使用する共同Excelの版・改定適用日を確認できない。",
+      "locator": "様式9完全対応",
+      "limitations": "共同Excelへの参照は算式の実装・検算の証明ではない。共同提供元のファイル不整合を製品不具合とは断定しない。",
+      "scope": "NEO医療版公開ページ",
+      "state": "not_found"
+    },
+    {
+      "product": "JP09",
+      "source": "neomed",
+      "criterion": "M03",
+      "summary": "予定表・マスタ等のほとんどの画面をExcelへコピーできると案内。一括の全設定・履歴搬出ではない。",
+      "locator": "Excel連携",
+      "limitations": "共同Excelへの参照は算式の実装・検算の証明ではない。共同提供元のファイル不整合を製品不具合とは断定しない。",
+      "scope": "NEO医療版公開ページ"
+    },
+    {
+      "product": "JP19",
+      "source": "vx",
+      "criterion": "J04",
+      "summary": "勤務表は4週／月単位を選び、複数月から任意の1か月以内を切り出せると説明。申請対象期間との整合は別途確認が必要。",
+      "locator": "勤務表／様式9",
+      "limitations": "公開概要の機能説明のみ。4週集計の任意期間が届出条件を満たすか、実数式の検算は未実施。",
+      "scope": "KinmuVX公開概要"
+    },
+    {
+      "product": "JP19",
+      "source": "vx",
+      "criterion": "J03",
+      "summary": "自作Excel様式にセル位置を指定して出力できると案内。帳票レイアウト変更と制度算式の更新保証を区別する。",
+      "locator": "様式9",
+      "limitations": "公開概要の機能説明のみ。4週集計の任意期間が届出条件を満たすか、実数式の検算は未実施。",
+      "scope": "KinmuVX公開概要"
+    },
+    {
+      "product": "JP19",
+      "source": "vx",
+      "criterion": "J05",
+      "summary": "概要では夜勤除外閾値・兼務の分母・端数処理の式を確認できない。",
+      "locator": "様式9",
+      "limitations": "公開概要の機能説明のみ。4週集計の任意期間が届出条件を満たすか、実数式の検算は未実施。",
+      "scope": "KinmuVX公開概要",
+      "state": "not_found"
+    },
+    {
+      "product": "JP20",
+      "source": "epfaq",
+      "criterion": "J03",
+      "summary": "診療報酬改定に迅速に対応すると案内。対象版・更新日・旧帳票再計算の扱いは示されていない。",
+      "locator": "法改正への対応",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "エピタルHR FAQ"
+    },
+    {
+      "product": "JP20",
+      "source": "epfaq",
+      "criterion": "J05",
+      "summary": "FAQでは令和8年度の除外閾値・兼務按分・丸めの詳細算式を確認できない。",
+      "locator": "FAQ本文",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "エピタルHR FAQ",
+      "state": "not_found"
+    },
+    {
+      "product": "JP20",
+      "source": "ept",
+      "criterion": "M08",
+      "summary": "要請時に秘密情報の資料を返還し蓄積情報を消去する規定はあるが、設定・全履歴・監査ログの一括提供形式と費用は未明記。",
+      "locator": "第37条7項／第38条2項",
+      "limitations": "公開の一般規約の記載確認。個別契約の適用、データの実際の返却・完全消去は未確認。",
+      "scope": "公開規約・個別契約優先条件は別途照合"
+    },
+    {
+      "product": "JP20",
+      "source": "ept",
+      "criterion": "N06",
+      "summary": "相手方の要請で秘密情報を完全消去する条項を個人情報にも準用。秘密保持は終了後1年、個人情報条項は終了後も存続。",
+      "locator": "第37条7-8項／第38条",
+      "limitations": "公開の一般規約の記載確認。個別契約の適用、データの実際の返却・完全消去は未確認。",
+      "scope": "公開規約・個別契約優先条件は別途照合"
+    },
+    {
+      "product": "JP20",
+      "source": "ept",
+      "criterion": "J01",
+      "summary": "適用法令・業界規則への適合を利用者の責任で調査し、サービスの法令適合を保証しないと規定。",
+      "locator": "第40条7項",
+      "limitations": "公開の一般規約の記載確認。個別契約の適用、データの実際の返却・完全消去は未確認。",
+      "scope": "公開規約・個別契約優先条件は別途照合"
+    },
+    {
+      "product": "US07",
+      "source": "depcancel",
+      "criterion": "M08",
+      "summary": "解約前に履歴をData Exporterで出力し、News・Training等のアップロードファイルは別に保存するよう案内。",
+      "locator": "Before cancelling",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "一般Deputy契約・Enterpriseを除く"
+    },
+    {
+      "product": "US07",
+      "source": "depcancel",
+      "criterion": "P08",
+      "summary": "月払い／年払いとも解約後すぐアクセスを失う。年払いの未使用期間は返金しないと説明し、HR・Analyticsは別に解約する。",
+      "locator": "Subscription billing",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "一般Deputy契約・Enterpriseを除く"
+    },
+    {
+      "product": "US07",
+      "source": "depcancel",
+      "criterion": "N06",
+      "summary": "business削除は解約済みかtrialで可能と説明。削除すると全履歴が永久に失われ、復元できない。",
+      "locator": "Delete your business",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "一般Deputy契約・Enterpriseを除く"
+    },
+    {
+      "product": "US07",
+      "source": "depexport",
+      "criterion": "M08",
+      "summary": "System Administratorがデータ種別を選んでCSV抽出。従業員・契約履歴・勤務・休暇ルール・給与ルール・SMSログ等を列挙する。",
+      "locator": "Data source／System Administrator",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "退去用Data Exporter・System Administrator権限"
+    },
+    {
+      "product": "US07",
+      "source": "depexport",
+      "criterion": "M08",
+      "summary": "期間、全／特定職員、全／特定拠点、version付き履歴の有無を選べ、対象件数を表示し管理者へダウンロード通知する。",
+      "locator": "Step 2-4",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "退去用Data Exporter・System Administrator権限"
+    },
+    {
+      "product": "US07",
+      "source": "depexport",
+      "criterion": "M08",
+      "summary": "退去用CSVは一括更新・再取込用の形式と一致しないと注意。全設定・添付・監査ログの欠落なく再構成できるかは未検証。",
+      "locator": "IMPORTANT",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "退去用Data Exporter・System Administrator権限"
+    },
+    {
+      "product": "US07",
+      "source": "depexport",
+      "criterion": "M04",
+      "summary": "複雑な抽出要件にはAPIとIT担当による出力を案内。Exporterの全種別を一括処理する保証とは別。",
+      "locator": "Deputy APIs",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "退去用Data Exporter・System Administrator権限"
+    },
+    {
+      "product": "US09",
+      "source": "ctcancel",
+      "criterion": "M08",
+      "summary": "全額返金の場合はアカウントをブロックするため、必要な情報を事前にExcel／PDFで出力するよう案内。全設定・監査の一括形式は未提示。",
+      "locator": "Refunds",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "Connecteam公開解約ヘルプ"
+    },
+    {
+      "product": "US09",
+      "source": "ctcancel",
+      "criterion": "P08",
+      "summary": "年払いBasic／Advanced／Expertの最初30日内は残月の按分返金条件を説明。月払いは期間末まで利用でき、返金なしとする。",
+      "locator": "Annual／Monthly subscriptions",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "Connecteam公開解約ヘルプ"
+    },
+    {
+      "product": "US19",
+      "source": "wiwt",
+      "criterion": "M08",
+      "summary": "解約後は顧客データへアクセスできず、勤務表・timesheet等を解約前に出力するよう規定。全設定・履歴の返却義務は確認できない。",
+      "locator": "12.1／12.3",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "Workplace規約・最終修正2025-08-01"
+    },
+    {
+      "product": "US19",
+      "source": "wiwt",
+      "criterion": "N06",
+      "summary": "12.1は削除要請まで保持し得るとし、12.3は終了後の合理的期間内に難読化・削除・除去を規定。法令等の保持例外と共有済みデータの留保がある。",
+      "locator": "12.1／12.3",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "Workplace規約・最終修正2025-08-01"
+    },
+    {
+      "product": "US19",
+      "source": "wiwt",
+      "criterion": "P08",
+      "summary": "Account & Billingから解約し、電話・メールだけでは成立しない。解約は即時有効で返金しないと規定。",
+      "locator": "12.1",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "Workplace規約・最終修正2025-08-01"
+    },
+    {
+      "product": "US19",
+      "source": "wiwt",
+      "criterion": "N08",
+      "summary": "業務規約は健康・医療情報やHIPAA対象情報の入力を禁止し、必要最小限の情報のみ提供するよう規定。",
+      "locator": "4.2",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "Workplace規約・最終修正2025-08-01"
+    },
+    {
+      "product": "US19",
+      "source": "wiwt",
+      "criterion": "N05",
+      "summary": "顧客データの匿名集計を分析・研究開発に利用する条項がある。外部AI学習への送信の具体条件は記載しない。",
+      "locator": "4.1",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "Workplace規約・最終修正2025-08-01",
+      "state": "not_found"
+    },
+    {
+      "product": "US20",
+      "source": "pldata",
+      "criterion": "M08",
+      "summary": "解約時に備え、従業員、勤務、勤怠、休暇、TOIL等を各画面で保存する手順を案内。設定・全監査をまとめた単一dumpは示さない。",
+      "locator": "Introduction／sections1-9",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "解約前データ保存ガイド・admin権限"
+    },
+    {
+      "product": "US20",
+      "source": "pldata",
+      "criterion": "M08",
+      "summary": "署名済み契約書は1件ずつdownload。documents overviewは一覧のみで、元ファイルの一括取得ではない。",
+      "locator": "Contracts／Documents overview",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "解約前データ保存ガイド・admin権限"
+    },
+    {
+      "product": "US20",
+      "source": "pldata",
+      "criterion": "N03",
+      "summary": "従業員変更レポートは誰がいつ変更したかを出力。shift historyは画面参照を案内し、全履歴の一括出力は明示しない。",
+      "locator": "Employee changes／Shift history",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "解約前データ保存ガイド・admin権限"
+    },
+    {
+      "product": "US20",
+      "source": "pldata",
+      "criterion": "M08",
+      "summary": "休暇・移送時間等のレポートは期間・状態・所属等で絞るため、全量保存には条件と各画面の漏れ確認が必要。",
+      "locator": "Leave accounts／Leave requests／Transferred hours",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "解約前データ保存ガイド・admin権限",
+      "assertion": "inference"
+    },
+    {
+      "product": "US18",
+      "source": "qmfa",
+      "criterion": "N02",
+      "summary": "MFAは任意の追加機能で、署名済み契約と請求書により有効化し、設定変更はQuinyxのみが行う。顧客の自己設定ではない。",
+      "locator": "Activation／configuration",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "2026-07-29公開MFA有償オプション",
+      "delivery": "addon"
+    },
+    {
+      "product": "US18",
+      "source": "qmfa",
+      "criterion": "N02",
+      "summary": "SMSの6桁コードに有効期限を設け、5回失敗するとアカウントをロックする。",
+      "locator": "SMS／wrong code",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "2026-07-29公開MFA有償オプション"
+    },
+    {
+      "product": "US18",
+      "source": "qmfa",
+      "criterion": "N02",
+      "summary": "認証頻度は毎回または7・30・60日ごとを選ぶと説明。全管理者のみの強制範囲・免除・復旧手順は本文にない。",
+      "locator": "How often",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "2026-07-29公開MFA有償オプション"
+    },
+    {
+      "product": "US18",
+      "source": "qmfa",
+      "criterion": "P05",
+      "summary": "月額利用料とSMS配信の追加従量費を記載するが金額は未開示。",
+      "locator": "Cost",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "2026-07-29公開MFA有償オプション"
+    },
+    {
+      "product": "US18",
+      "source": "qmfa",
+      "criterion": "N02",
+      "summary": "SMS用電話番号は国際形式E.164、最大15桁を要求する。",
+      "locator": "Phone number",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "2026-07-29公開MFA有償オプション"
+    },
+    {
+      "product": "JP04",
+      "source": "naftydl",
+      "criterion": "J03",
+      "summary": "公開更新履歴は2026-08-23に令和8年度版を公開、08-27に入力セル保護と人数枠更新。製品内の算式版とは同一と断定しない。",
+      "locator": "更新履歴",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "無料配布Excel・製品アドオンとは別の枠"
+    },
+    {
+      "product": "JP04",
+      "source": "naftydl",
+      "criterion": "J04",
+      "summary": "配布版は5シート、看護職員100名・看護補助者20名・その他20名。予実シートは参考のみで編集・計算に使用しない。",
+      "locator": "人数枠／Excelの中身",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "無料配布Excel・製品アドオンとは別の枠"
+    },
+    {
+      "product": "JP09",
+      "source": "jointnews",
+      "criterion": "J03",
+      "summary": "共同提供元は2026-10-06に26_9chiiki_ryoyo_hojokasan.xlsを整合性確認のため公開停止。NEO製品内の採用版・影響は未確認。",
+      "locator": "2026年10月6日",
+      "limitations": "共同Excel提供元の注意であり、NEO製品の不具合・非対応を示す資料ではない。製品内の使用版と結果は未検証。",
+      "scope": "製品が参照する共同Excel提供元の状況",
+      "state": "known",
+      "assertion": "source_statement"
+    },
+    {
+      "product": "JP09",
+      "source": "jointnews",
+      "criterion": "J04",
+      "summary": "2026-05-27案内は未届出項目の一部#VALUE!／#DIV/0!を要件に影響しない表示として注意追記。対象項目と版を切り分ける必要がある。",
+      "locator": "2026年5月27日",
+      "limitations": "共同Excel提供元の注意であり、NEO製品の不具合・非対応を示す資料ではない。製品内の使用版と結果は未検証。",
+      "scope": "製品が参照する共同Excel提供元の状況",
+      "assertion": "inference"
+    },
+    {
+      "product": "JP19",
+      "source": "jointmanual",
+      "criterion": "J05",
+      "summary": "2026手引きは4週を選べるのは月平均夜勤時間だけとし、配置数は暦月の実績が必要。4週と暦月の両帳票、空白のない周期を要求する。",
+      "locator": "p.7",
+      "limitations": "専門団体の参考手引きと製品説明の比較。KinmuVXが法定集計を誤るという実装証拠ではない。",
+      "scope": "KinmuVXの4週選択と参考手引きの条件照合",
+      "assertion": "inference"
+    },
+    {
+      "product": "US20",
+      "source": "plmfa",
+      "criterion": "N02",
+      "summary": "MFAは既定で無効。有効化するとワークスペース全員に適用し個人除外は不可、Xero連携時は必須と明記。",
+      "locator": "Important information",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "全プラン・ワークスペース単位MFA"
+    },
+    {
+      "product": "US20",
+      "source": "plmfa",
+      "criterion": "N02",
+      "summary": "認証アプリ／SMSを許可・無効化でき、方式解除は設定済み全職員へ適用。残る方式があれば次回ログインで再設定する。",
+      "locator": "Enable or disable",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "全プラン・ワークスペース単位MFA"
+    },
+    {
+      "product": "US20",
+      "source": "plmfa",
+      "criterion": "N02",
+      "summary": "SMS認証に追加料金はなく、プロフィールと異なる番号も登録可。認証アプリはQR／設定コードを利用。",
+      "locator": "Login process",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "全プラン・ワークスペース単位MFA"
+    },
+    {
+      "product": "US20",
+      "source": "plmfa",
+      "criterion": "N02",
+      "summary": "30日間の認証省略は複数端末でも適用。未選択では次回ログインにもMFAを要求する。",
+      "locator": "Remember me",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "全プラン・ワークスペース単位MFA"
+    },
+    {
+      "product": "US20",
+      "source": "plmfa",
+      "criterion": "N02",
+      "summary": "Admin・HR managerが職員MFAをリセットし、次回ログインで再設定。管理者全員が入れない場合の復旧は未記載。",
+      "locator": "How to reset MFA",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "全プラン・ワークスペース単位MFA"
+    },
+    {
+      "product": "US20",
+      "source": "plcancel",
+      "criterion": "P03",
+      "summary": "Starterは1か月、Plus・Proは12か月のcommitmentと説明。一般条件は更新1か月前までの解約申出を要求する。",
+      "locator": "Cancellation period",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "一般解約ヘルプ・実契約の開始日と条件に依存"
+    },
+    {
+      "product": "US20",
+      "source": "plcancel",
+      "criterion": "P08",
+      "summary": "通常は中途解約不可、解約後も請求期間／契約期末まで有効。四半期請求では当該四半期末の扱いを示す。",
+      "locator": "How to cancel",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "一般解約ヘルプ・実契約の開始日と条件に依存"
+    },
+    {
+      "product": "US20",
+      "source": "plcancel",
+      "criterion": "N06",
+      "summary": "解約後120日以内にworkspaceデータを削除し、それ以前の契約再開の連絡を例外として案内。起算日の個別契約との照合は未実施。",
+      "locator": "After cancellation",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "一般解約ヘルプ・実契約の開始日と条件に依存"
+    },
+    {
+      "product": "US20",
+      "source": "plcancel",
+      "criterion": "P08",
+      "summary": "画面で解約できるのはAccount adminまたは登録者。supportへの申出は管理者等から行い、送受信日を解約申出日にする。",
+      "locator": "How to cancel／How to contact",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "一般解約ヘルプ・実契約の開始日と条件に依存"
+    },
+    {
+      "product": "US18",
+      "source": "qpass",
+      "criterion": "N07",
+      "summary": "職員と管理者で異なるパスワードentropy最低値を設定し、基準未達の保存を拒否する。高度設定有効化後は旧方式へ戻せない。",
+      "locator": "Entropy／Configuration",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "Advanced password module・MFA復旧とは別機能"
+    },
+    {
+      "product": "US18",
+      "source": "qpass",
+      "criterion": "N01",
+      "summary": "managerはPeopleで職員に一時パスワードを設定でき、次回ログインで変更させる。MFAロック解除の手順とは区別する。",
+      "locator": "As a manager",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "Advanced password module・MFA復旧とは別機能"
+    },
+    {
+      "product": "US18",
+      "source": "qpass",
+      "criterion": "N07",
+      "summary": "OWASP ASVS level2への準拠は目標と表現。独立した適合認証の取得と解釈しない。",
+      "locator": "Introduction",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "Advanced password module・MFA復旧とは別機能"
+    },
+    {
+      "product": "US05",
+      "source": "rgsettings",
+      "criterion": "N02",
+      "summary": "管理者・manager等のユーザー区分ごとにMFA対象を選び、認証アプリまたはメールコードを要求する。",
+      "locator": "Multi-factor Authentication",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "Admin ConsoleとCompany Settings権限が前提"
+    },
+    {
+      "product": "US05",
+      "source": "rgsettings",
+      "criterion": "N02",
+      "summary": "Company SettingsでMFAを一時的に無効化できると説明。管理者強制を解除不能とは扱えない。",
+      "locator": "Operational tips",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "Admin ConsoleとCompany Settings権限が前提"
+    },
+    {
+      "product": "US05",
+      "source": "rgsettings",
+      "criterion": "N02",
+      "summary": "設定途中で進んでロックアウトした利用者には管理者によるMFA情報リセットが必要となる場合がある。内部詳細手順は未公開。",
+      "locator": "Operational tips",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "Admin ConsoleとCompany Settings権限が前提"
+    },
+    {
+      "product": "US05",
+      "source": "rgsettings",
+      "criterion": "N01",
+      "summary": "端末承認権限を持つ管理者等が端末と拠点を関連付け、web打刻を承認端末に限定できる。",
+      "locator": "Authorised Devices",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "Admin ConsoleとCompany Settings権限が前提"
+    },
+    {
+      "product": "US05",
+      "source": "rgmfa",
+      "criterion": "N02",
+      "summary": "認証アプリを利用できない場合は社内管理者への連絡を案内。全管理者が入れない場合の復旧条件は未記載。",
+      "locator": "I don’t have access to my device",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "公開MFA FAQ"
+    },
+    {
+      "product": "US05",
+      "source": "rgsetup",
+      "criterion": "N02",
+      "summary": "初期登録でメール方式を選べる。認証アプリのQR登録前にNextを押すとQR再生成されずロックアウトすると注意する。",
+      "locator": "Step 1-3",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "公開MFA設定手順"
+    },
+    {
+      "product": "US05",
+      "source": "rgsso",
+      "criterion": "N02",
+      "summary": "SSOログイン資格情報の再設定は顧客IdP／社内ITの担当。Rotageek supportはSSOパスワードを再設定できない。",
+      "locator": "Forgetting Single Sign On Details",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "顧客IdPによるSSO"
+    },
+    {
+      "product": "US17",
+      "source": "humanlogin",
+      "criterion": "N02",
+      "summary": "認証アプリと1回限りのbackup codeの案内文言がある。使用後は2FA再設定、できなければ管理者連絡を示す。",
+      "locator": "Two Factor Authentication／Recovery Code Used",
+      "limitations": "公開ページの案内文言のみ確認。非表示の条件付きフォームを含む可能性があり、認証成功、プラン包含、管理者の強制は未検証。",
+      "scope": "公開ログインページの案内文言・契約範囲未確認"
+    },
+    {
+      "product": "US17",
+      "source": "humanlogin",
+      "criterion": "N02",
+      "summary": "公開ログインページ本文だけでは管理者MFAの一括必須化・プラン制限・SSOとの併用条件を確認できない。",
+      "locator": "公開ログイン本文",
+      "limitations": "公開ページの案内文言のみ確認。非表示の条件付きフォームを含む可能性があり、認証成功、プラン包含、管理者の強制は未検証。",
+      "scope": "公開ログインページの案内文言・契約範囲未確認",
+      "state": "not_found"
+    }
+  ],
+  "prices": [],
+  "followups": [
+    {
+      "product": "JP04",
+      "criterion": "J05",
+      "priority": 1,
+      "method": "synthetic_test",
+      "question": "令和8年度の実Excel／製品結果で8・12・16時間の未満／ちょうど、夜専、兼務、研修1時間、丸めを行政式と照合する。非暦月集計の届出用途も区別する。"
+    },
+    {
+      "product": "US09",
+      "criterion": "N02",
+      "priority": 1,
+      "method": "vendor_document",
+      "question": "全管理者2FAの現行Basic利用条件を2026-08ヘルプ・旧Enterprise説明・料金表と照合し、Expert契約の可否を確定する。"
+    },
+    {
+      "product": "US18",
+      "criterion": "N02",
+      "priority": 1,
+      "method": "vendor_document",
+      "question": "Quinyxの管理者MFA対象・免除・5回失敗ロック解除・全管理者ロック時の復旧とSMS追加費を契約資料で確認する。"
+    },
+    {
+      "product": "US20",
+      "criterion": "M08",
+      "priority": 1,
+      "method": "vendor_document",
+      "question": "Planday解約出口に全設定・shift history・全添付・給与履歴を含む機械可読dumpがあるか、120日削除の起算日と費用も確認する。"
+    },
+    {
+      "product": "US11",
+      "criterion": "M08",
+      "priority": 1,
+      "method": "synthetic_test",
+      "question": "OptimaのSQL返却対象にルール・希望・添付・監査履歴が含まれるか、識別子と時刻を保持して別DBへ再構成できるか確認する。"
+    },
+    {
+      "product": "US07",
+      "criterion": "M08",
+      "priority": 1,
+      "method": "synthetic_test",
+      "question": "Deputy Data Exporter全種別・version履歴と別保存添付を合わせ、欠落・期間フィルタ漏れ・件数整合・再取込形式差を確認する。"
+    },
+    {
+      "product": "US22",
+      "criterion": "M08",
+      "priority": 1,
+      "method": "vendor_document",
+      "question": "Sonaの出力欄で取込を説明する不一致を解消し、現行契約の全量形式・未払時の返却制限・削除証明を確認する。"
+    },
+    {
+      "product": "JP09",
+      "criterion": "J03",
+      "priority": 1,
+      "method": "vendor_document",
+      "question": "NEO医療版の現行算式版と共同Excelの2026-10-06公開停止ファイルの採用有無・修正反映を確認する。"
+    },
+    {
+      "product": "US05",
+      "criterion": "N02",
+      "priority": 2,
+      "method": "vendor_document",
+      "question": "Rotageekの管理者MFA解除権限、解除監査、全管理者のロックアウト時の復旧・SSO時のMFA適用を確認する。"
+    },
+    {
+      "product": "US17",
+      "criterion": "N02",
+      "priority": 2,
+      "method": "vendor_document",
+      "question": "Humanity公開ページの2FA／backup codeの現行プラン包含と管理者の一括強制・SSO併用・全管理者復旧を確認する。"
+    }
+  ],
+  "task_updates": [
+    {
+      "task_id": "TASK-B02-007",
+      "method": "demo",
+      "priority": 1,
+      "state": "in_progress",
+      "note": "PC記事はシステム管理者の無効化不可を明記。アプリの一般的なメール削除・無効化案内と権限整合が未確定、全経路の実動作確認は継続。"
+    },
+    {
+      "task_id": "TASK-B02-009",
+      "method": "vendor_document",
+      "priority": 1,
+      "state": "in_progress",
+      "note": "Naftyの規約・通常出力・職員退会後保持を確認。後者はM08からN06/M02へ分類訂正。施設解約の全設定・監査履歴搬出はなお未開示。"
+    },
+    {
+      "task_id": "TASK-B02-011",
+      "method": "vendor_document",
+      "priority": 1,
+      "state": "in_progress",
+      "note": "エピタルHR FAQの改定追従説明と規約を再確認。令和8年度の除外・按分・端数の実算式は未公開。"
+    },
+    {
+      "task_id": "B03-20261011-TASK004",
+      "method": "vendor_document",
+      "priority": 1,
+      "state": "in_progress",
+      "note": "Connecteamの新しいBasic可ヘルプと旧Enterprise説明が不一致。全管理者へのSMS要求を確認したがExpertの契約適用を確定できない。"
+    }
+  ],
+  "retrieval_checks": [
+    {
+      "product": "US18",
+      "url": "https://help.quinyx.com/help-centre/docs/multifactor-authentication",
+      "result": "browser_body_verified",
+      "notes": "Web本文はCache miss。隠しIABタブで公開記事全文を確認し、検索抜粋だけで採用していない。"
+    },
+    {
+      "product": "JP04",
+      "url": "https://nafty.app/youshiki9/download/",
+      "result": "browser_form_verified_file_not_obtained",
+      "notes": "Web抽出の受付停止とIABの受付フォーム表示に差がある。実ブラウザは施設名・担当者名・メール・同意を要求。送信せず実ファイル未取得。"
+    },
+    {
+      "product": "US18",
+      "url": "https://help.quinyx.com/help-centre/docs/advanced-password-management",
+      "result": "browser_body_verified",
+      "notes": "Web抽出失敗。実ブラウザで公開記事の管理者・職員パスワード設定本文を確認。"
+    }
+  ],
+  "reclassifications": [
+    {
+      "observation_id": "B02-O00015",
+      "criterion": "N06",
+      "rationale": "職員退会後の施設データ保持であり、施設解約の全量搬出ではない。"
+    },
+    {
+      "observation_id": "B03-20261011-OBS0223",
+      "criterion": "M02",
+      "rationale": "通常の勤務表出力であり、設定・履歴を含む解約全量出力の確認ではない。"
+    },
+    {
+      "observation_id": "B03-20261011-OBS0021",
+      "criterion": "M04",
+      "rationale": "APIキー・MCP接続OAuthの仕様はAPI認証。管理者のSSO/MFAとは別の設問に移す。"
+    }
+  ],
+  "regulations": [
+    {
+      "regulation_id": "REG-JP-R8-NIGHT-MEAN",
+      "title": "様式9 月平均夜勤時間",
+      "authority_type": "reimbursement_rule",
+      "jurisdiction": "JP",
+      "source": "gov9",
+      "version_label": "令和8年度",
+      "applicability": {
+        "schema_version": 1,
+        "summary_ja": "月平均夜勤時間は(D-E)/B。",
+        "locator": "p.2 §3⑥",
+        "verification_stage": "documented",
+        "vendor_implementation_verified": false,
+        "limitations": "資料の参照情報。正式通知・届出区分と施設条件の照合が必要。計算エンジン／制度適合の認定ではない。",
+        "metric": "monthly_mean_night_hours",
+        "formula": "(D-E)/B",
+        "inputs": {
+          "D": "当該病棟の月延べ夜勤時間",
+          "E": "算定から除外する職員の夜勤時間",
+          "B": "対象夜勤従事職員数（兼務按分後）"
+        },
+        "rounding": "この様式では明記なし",
+        "zero_division_policy": "未確認"
+      }
+    },
+    {
+      "regulation_id": "REG-JP-R8-NIGHT-EXCLUSION",
+      "title": "夜勤平均の除外条件と境界",
+      "authority_type": "reimbursement_rule",
+      "jurisdiction": "JP",
+      "source": "gov9",
+      "version_label": "令和8年度",
+      "applicability": {
+        "schema_version": 1,
+        "summary_ja": "夜勤専従者、所定時間未満の者をBと夜勤時間の平均から除外する。",
+        "locator": "pp.3-4 ※4・7",
+        "verification_stage": "documented",
+        "vendor_implementation_verified": false,
+        "limitations": "資料の参照情報。正式通知・届出区分と施設条件の照合が必要。計算エンジン／制度適合の認定ではない。",
+        "metric": "night_average_exclusions",
+        "conditions": [
+          {
+            "ward_scope": "急性期病院一般・急性期一般・7対1・10対1",
+            "employment": "短時間正職員以外",
+            "threshold_hours": 16,
+            "operator": "<"
+          },
+          {
+            "ward_scope": "同上",
+            "employment": "短時間正職員",
+            "threshold_hours": 12,
+            "operator": "<"
+          },
+          {
+            "ward_scope": "それ以外",
+            "threshold_hours": 8,
+            "operator": "<"
+          }
+        ],
+        "night_exclusive_staff": "excluded",
+        "boundary": "閾値ちょうどは時間未満の除外に該当しない"
+      }
+    },
+    {
+      "regulation_id": "REG-JP-R8-NIGHT-COUNT",
+      "title": "夜勤従事者数の兼務按分",
+      "authority_type": "reimbursement_rule",
+      "jurisdiction": "JP",
+      "source": "gov9",
+      "version_label": "令和8年度",
+      "applicability": {
+        "schema_version": 1,
+        "summary_ja": "対象の交代制勤務者は通常1。病棟外兼務は当該病棟の夜勤時間／総夜勤時間で計上する。",
+        "locator": "p.3 ※4-5",
+        "verification_stage": "documented",
+        "vendor_implementation_verified": false,
+        "limitations": "資料の参照情報。正式通知・届出区分と施設条件の照合が必要。計算エンジン／制度適合の認定ではない。",
+        "metric": "eligible_night_staff_count",
+        "formula": "ward_night_hours / total_night_hours",
+        "total_night_hours_includes": "病棟と病棟以外",
+        "zero_division_policy": "未確認"
+      }
+    },
+    {
+      "regulation_id": "REG-JP-R8-SHIFT-GRID",
+      "title": "勤務実績の三段と集計値",
+      "authority_type": "reimbursement_rule",
+      "jurisdiction": "JP",
+      "source": "gov9",
+      "version_label": "令和8年度",
+      "applicability": {
+        "schema_version": 1,
+        "summary_ja": "上段は病棟日勤、中段は病棟夜勤、下段は病棟外を含む総夜勤。Cは上段＋中段、Dは中段。",
+        "locator": "pp.3-4 ※6",
+        "verification_stage": "documented",
+        "vendor_implementation_verified": false,
+        "limitations": "資料の参照情報。正式通知・届出区分と施設条件の照合が必要。計算エンジン／制度適合の認定ではない。",
+        "metric": "working_hours_grid",
+        "row_roles": [
+          "ward_day_hours",
+          "ward_night_hours",
+          "total_night_hours"
+        ],
+        "formula": "C=sum(ward_day_hours+ward_night_hours); D=sum(ward_night_hours)"
+      }
+    },
+    {
+      "regulation_id": "REG-JP-R8-STAFF-ACTUAL",
+      "title": "月平均1日看護職員配置数",
+      "authority_type": "reimbursement_rule",
+      "jurisdiction": "JP",
+      "source": "gov9",
+      "version_label": "令和8年度",
+      "applicability": {
+        "schema_version": 1,
+        "summary_ja": "月延べ勤務時間Cを日数×8で除す。",
+        "locator": "p.2 §3②",
+        "verification_stage": "documented",
+        "vendor_implementation_verified": false,
+        "limitations": "資料の参照情報。正式通知・届出区分と施設条件の照合が必要。計算エンジン／制度適合の認定ではない。",
+        "metric": "daily_mean_nurse_staffing",
+        "formula": "C/(days*8)",
+        "rounding_reference_id": "REG-JP-R8-ROUND-STAFF"
+      }
+    },
+    {
+      "regulation_id": "REG-JP-R8-STAFF-REQUIRED",
+      "title": "1日看護職員の必要配置数",
+      "authority_type": "reimbursement_rule",
+      "jurisdiction": "JP",
+      "source": "gov9",
+      "version_label": "令和8年度",
+      "applicability": {
+        "schema_version": 1,
+        "summary_ja": "必要配置数は患者数A／配置区分の数×3。",
+        "locator": "p.2 §3②参考",
+        "verification_stage": "documented",
+        "vendor_implementation_verified": false,
+        "limitations": "資料の参照情報。正式通知・届出区分と施設条件の照合が必要。計算エンジン／制度適合の認定ではない。",
+        "metric": "required_daily_nurse_staffing",
+        "formula": "(A/staffing_ratio)*3",
+        "inputs": {
+          "A": "1日平均入院患者数",
+          "staffing_ratio": "届出区分の配置比の数"
+        },
+        "rounding_reference_id": "REG-JP-R8-ROUND-REQUIRED"
+      }
+    },
+    {
+      "regulation_id": "REG-JP-R8-EXTRA-REQUIRED",
+      "title": "最小必要数以上の看護職員必要数",
+      "authority_type": "reimbursement_rule",
+      "jurisdiction": "JP",
+      "source": "gov9",
+      "version_label": "令和8年度",
+      "applicability": {
+        "schema_version": 1,
+        "summary_ja": "追加の必要配置数はA／50×3。",
+        "locator": "p.2 §3⑦参考",
+        "verification_stage": "documented",
+        "vendor_implementation_verified": false,
+        "limitations": "資料の参照情報。正式通知・届出区分と施設条件の照合が必要。計算エンジン／制度適合の認定ではない。",
+        "metric": "required_extra_nurses",
+        "formula": "(A/50)*3",
+        "rounding": "この様式では明記なし"
+      }
+    },
+    {
+      "regulation_id": "REG-JP-R8-ASSISTANT-NIGHT",
+      "title": "夜間看護補助者の必要数",
+      "authority_type": "reimbursement_rule",
+      "jurisdiction": "JP",
+      "source": "gov9",
+      "version_label": "令和8年度",
+      "applicability": {
+        "schema_version": 1,
+        "summary_ja": "夜間の必要数はA／配置区分の数。",
+        "locator": "p.2 §3⑨参考",
+        "verification_stage": "documented",
+        "vendor_implementation_verified": false,
+        "limitations": "資料の参照情報。正式通知・届出区分と施設条件の照合が必要。計算エンジン／制度適合の認定ではない。",
+        "metric": "required_night_assistants",
+        "formula": "A/staffing_ratio",
+        "rounding_reference_id": "REG-JP-R8-ROUND-REQUIRED"
+      }
+    },
+    {
+      "regulation_id": "REG-JP-R8-ADMIN-ASSISTANT",
+      "title": "事務的看護補助者の数と上限",
+      "authority_type": "reimbursement_rule",
+      "jurisdiction": "JP",
+      "source": "gov9",
+      "version_label": "令和8年度",
+      "applicability": {
+        "schema_version": 1,
+        "summary_ja": "事務業務が延べ時間の5割以上の職員を区分。実績F/(日数×8)、上限(A/200)×3。",
+        "locator": "p.2 §3⑩／p.3 ※3",
+        "verification_stage": "documented",
+        "vendor_implementation_verified": false,
+        "limitations": "資料の参照情報。正式通知・届出区分と施設条件の照合が必要。計算エンジン／制度適合の認定ではない。",
+        "metric": "administrative_nursing_assistants",
+        "formula": "F/(days*8)",
+        "limit_formula": "(A/200)*3",
+        "eligibility": {
+          "administrative_duty_fraction": 0.5,
+          "operator": ">="
+        },
+        "rounding": "この様式では明記なし"
+      }
+    },
+    {
+      "regulation_id": "REG-JP-R8-MULTI-PROFESSIONAL",
+      "title": "多職種協働の必要配置数",
+      "authority_type": "reimbursement_rule",
+      "jurisdiction": "JP",
+      "source": "gov9",
+      "version_label": "令和8年度",
+      "applicability": {
+        "schema_version": 1,
+        "summary_ja": "精神科対象は(A/配置区分)×3、一般対象は{A/10+A/25}×3。職種・対象加算を分ける。",
+        "locator": "p.2 §3⑪-⑫",
+        "verification_stage": "documented",
+        "vendor_implementation_verified": false,
+        "limitations": "資料の参照情報。正式通知・届出区分と施設条件の照合が必要。計算エンジン／制度適合の認定ではない。",
+        "metric": "required_multi_professional_staffing",
+        "formulas": {
+          "psychiatric": "(A/staffing_ratio)*3",
+          "general": "((A/10)+(A/25))*3"
+        },
+        "rounding": "この様式では明記なし"
+      }
+    },
+    {
+      "regulation_id": "REG-JP-R8-ATTACHMENTS",
+      "title": "様式9に添付する実績と夜間配置",
+      "authority_type": "reimbursement_rule",
+      "jurisdiction": "JP",
+      "source": "gov9",
+      "version_label": "令和8年度",
+      "applicability": {
+        "schema_version": 1,
+        "summary_ja": "直前1か月の実績と勤務体制・申し送りを添付。対象夜間加算は日別患者数・配置を示す資料も必要。",
+        "locator": "p.4 届出上の注意1・2・5",
+        "verification_stage": "documented",
+        "vendor_implementation_verified": false,
+        "limitations": "資料の参照情報。正式通知・届出区分と施設条件の照合が必要。計算エンジン／制度適合の認定ではない。",
+        "metric": "filing_attachments",
+        "conditions": "対象入院料・加算ごとに様式9の2等を確認"
+      }
+    },
+    {
+      "regulation_id": "REG-JP-R8-ROUND-PATIENT",
+      "title": "令和8年度 患者数の端数処理",
+      "authority_type": "reimbursement_rule",
+      "jurisdiction": "JP",
+      "source": "gov8",
+      "version_label": "令和8年度",
+      "applicability": {
+        "schema_version": 1,
+        "summary_ja": "Aは小数第1位まで切り上げ。12.34→12.4。",
+        "locator": "p.15 改定後",
+        "verification_stage": "documented",
+        "vendor_implementation_verified": false,
+        "limitations": "資料の参照情報。正式通知・届出区分と施設条件の照合が必要。計算エンジン／制度適合の認定ではない。",
+        "metric": "daily_mean_patients_rounding",
+        "rounding": {
+          "mode": "ceiling",
+          "decimal_places": 1
+        },
+        "example": {
+          "input": "12.34",
+          "output": "12.4"
+        }
+      }
+    },
+    {
+      "regulation_id": "REG-JP-R8-ROUND-STAFF",
+      "title": "令和8年度 実績配置数の端数処理",
+      "authority_type": "reimbursement_rule",
+      "jurisdiction": "JP",
+      "source": "gov8",
+      "version_label": "令和8年度",
+      "applicability": {
+        "schema_version": 1,
+        "summary_ja": "月平均配置数は小数第2位以下切捨て。",
+        "locator": "p.15 改定後",
+        "verification_stage": "documented",
+        "vendor_implementation_verified": false,
+        "limitations": "資料の参照情報。正式通知・届出区分と施設条件の照合が必要。計算エンジン／制度適合の認定ではない。",
+        "metric": "daily_mean_nurse_staffing_rounding",
+        "rounding": {
+          "mode": "truncate",
+          "decimal_places": 1
+        }
+      }
+    },
+    {
+      "regulation_id": "REG-JP-R8-ROUND-REQUIRED",
+      "title": "令和8年度 必要数の端数処理",
+      "authority_type": "reimbursement_rule",
+      "jurisdiction": "JP",
+      "source": "gov8",
+      "version_label": "令和8年度",
+      "applicability": {
+        "schema_version": 1,
+        "summary_ja": "1日看護職員必要数・夜間看護補助者必要数を小数第1位まで切り上げ。",
+        "locator": "p.15 改定後",
+        "verification_stage": "documented",
+        "vendor_implementation_verified": false,
+        "limitations": "資料の参照情報。正式通知・届出区分と施設条件の照合が必要。計算エンジン／制度適合の認定ではない。",
+        "metric": "required_staffing_rounding",
+        "rounding": {
+          "mode": "ceiling",
+          "decimal_places": 1
+        },
+        "applies_to": [
+          "required_daily_nurse_staffing",
+          "required_night_assistants"
+        ]
+      }
+    },
+    {
+      "regulation_id": "REG-JP-R8-TRAINING",
+      "title": "病棟勤務に算入できる院内研修",
+      "authority_type": "reimbursement_rule",
+      "jurisdiction": "JP",
+      "source": "gov8",
+      "version_label": "令和8年度",
+      "applicability": {
+        "schema_version": 1,
+        "summary_ja": "施設が指示した院内研修は、主に当該病棟に従事する職員1名につき月1時間まで算入可能。",
+        "locator": "p.15 別紙5抜粋",
+        "verification_stage": "documented",
+        "vendor_implementation_verified": false,
+        "limitations": "資料の参照情報。正式通知・届出区分と施設条件の照合が必要。計算エンジン／制度適合の認定ではない。",
+        "metric": "training_hours_inclusion",
+        "monthly_cap_hours_per_staff": 1,
+        "conditions": [
+          "施設が業務の質向上のため受講を指示",
+          "保険医療機関内",
+          "当該病棟のオンライン／病棟外の集合研修を含む"
+        ]
+      }
+    },
+    {
+      "regulation_id": "REG-JP-R8-EMERGENCY",
+      "title": "例外的な短時間対応の算入",
+      "authority_type": "reimbursement_rule",
+      "jurisdiction": "JP",
+      "source": "gov8",
+      "version_label": "令和8年度",
+      "applicability": {
+        "schema_version": 1,
+        "summary_ja": "院内緊急時の他患者対応、入院患者の病棟外付き添い、状態変化への短時間対応を条件付きで算入可能。",
+        "locator": "p.15 施設基準キ・ク／別紙5抜粋",
+        "verification_stage": "documented",
+        "vendor_implementation_verified": false,
+        "limitations": "資料の参照情報。正式通知・届出区分と施設条件の照合が必要。計算エンジン／制度適合の認定ではない。",
+        "metric": "exceptional_off_ward_hours_inclusion",
+        "conditions": [
+          "院内緊急対応等・日常診療の延長・短時間",
+          "当該病棟入院患者への一時的な病棟外看護",
+          "状態変化への短時間対応は30分程度と例示"
+        ]
+      }
+    },
+    {
+      "regulation_id": "REG-JP-R8-FOUR-WEEK",
+      "title": "手引き：4週間と暦月の区別",
+      "authority_type": "professional_guideline",
+      "jurisdiction": "JP",
+      "source": "jointmanual",
+      "version_label": "2026診療報酬改定対応版",
+      "applicability": {
+        "schema_version": 1,
+        "summary_ja": "4週間を用いるのは月平均夜勤時間のみ。配置数は暦月で、両実績表と空白のない連続期間を要する。",
+        "locator": "p.7",
+        "verification_stage": "documented",
+        "vendor_implementation_verified": false,
+        "limitations": "資料の参照情報。正式通知・届出区分と施設条件の照合が必要。計算エンジン／制度適合の認定ではない。",
+        "metric": "night_average_period_choice",
+        "allowed_night_periods": [
+          "calendar_month",
+          "28_contiguous_days"
+        ],
+        "staffing_period": "calendar_month",
+        "authority_note": "専門団体手引き。行政通知による最終照合は別途必要。"
+      }
+    }
+  ],
+  "resolution_policy_version": 2
+}

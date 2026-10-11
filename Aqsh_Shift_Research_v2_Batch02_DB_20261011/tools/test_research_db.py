@@ -133,5 +133,38 @@ class ResearchDBTests(unittest.TestCase):
             with self.assertRaises(sqlite3.IntegrityError): ingest(self.c,path)
         self.assertEqual(fingerprint(self.c),before)
 
+    def regulation_fixture(self):
+        p=json.loads((ROOT/'batches/B06-20261011.json').read_text())
+        rule=dict(p['regulations'][0],regulation_id='TEST-REGULATION')
+        return dict(batch_id='TEST-RULE-BATCH',as_of_date='2026-10-11',
+            sources=[next(s for s in p['sources'] if s['key']==rule['source'])],
+            findings=[],regulations=[rule])
+
+    def test_reference_rule_has_provenance_without_vendor_support(self):
+        comparison_sql='SELECT offering_id,criterion_id,finding,decision,documented_scope,resolution_id FROM v_current40 ORDER BY offering_id,criterion_id'
+        before=[tuple(r) for r in self.c.execute(comparison_sql)]
+        support_count=self.c.execute('SELECT COUNT(*) FROM regulation_support').fetchone()[0]
+        with tempfile.TemporaryDirectory() as tmp:
+            path=Path(tmp)/'rule.json'
+            path.write_text(json.dumps(self.regulation_fixture()))
+            result=ingest(self.c,path)
+        self.assertEqual(result['reference_regulations'],1)
+        rule=self.c.execute("SELECT * FROM regulations WHERE regulation_id='TEST-REGULATION'").fetchone()
+        self.assertEqual(rule['revision_id'],'TEST-RULE-BATCH-REV001')
+        self.assertEqual(json.loads(rule['applicability_json'])['formula'],'(D-E)/B')
+        self.assertFalse(json.loads(rule['applicability_json'])['vendor_implementation_verified'])
+        self.assertEqual(self.c.execute('SELECT COUNT(*) FROM regulation_support').fetchone()[0],support_count)
+        self.assertEqual([tuple(r) for r in self.c.execute(comparison_sql)],before)
+
+    def test_invalid_regulation_source_rolls_back_batch(self):
+        before=fingerprint(self.c)
+        p=self.regulation_fixture()
+        p['regulations'][0]['source']='missing-source'
+        with tempfile.TemporaryDirectory() as tmp:
+            path=Path(tmp)/'invalid-rule.json'
+            path.write_text(json.dumps(p))
+            with self.assertRaises(KeyError): ingest(self.c,path)
+        self.assertEqual(fingerprint(self.c),before)
+
 
 if __name__=='__main__': unittest.main()

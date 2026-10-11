@@ -1,76 +1,78 @@
 {
   "tables": {
-    "assessment_resolutions": 2294,
+    "assessment_resolutions": 2375,
     "asset_evidence": 6,
     "audit_issues": 32,
-    "batch_product_membership": 88,
+    "batch_product_membership": 107,
     "benchmark_runs": 0,
     "benchmark_scenario_criteria": 45,
     "benchmark_scenarios": 14,
     "brand_assets": 50,
-    "classification_corrections": 8,
+    "classification_corrections": 11,
     "cost_requirements": 36,
     "cost_scenarios": 8,
     "criteria": 164,
-    "current_assessments": 1938,
+    "current_assessments": 1988,
     "domains": 20,
     "legacy_feature_map": 86,
     "metric_catalog": 20,
-    "observation_evidence": 1528,
-    "observations": 2412,
+    "observation_evidence": 1661,
+    "observations": 2545,
     "offerings": 50,
     "plans": 69,
     "price_components": 88,
     "product_aliases": 57,
     "products": 50,
     "regulation_support": 0,
-    "regulations": 0,
+    "regulations": 17,
     "research_assets": 6,
-    "research_batches": 5,
-    "research_task_updates": 26,
-    "research_tasks": 943,
-    "resolution_evidence": 2783,
-    "retrieval_checks": 66,
+    "research_batches": 6,
+    "research_task_updates": 30,
+    "research_tasks": 953,
+    "resolution_evidence": 2963,
+    "retrieval_checks": 69,
     "run_metrics": 0,
     "schema_info": 17,
     "source_archives": 1,
-    "source_documents": 163,
-    "source_method_attributes": 198,
-    "source_revisions": 258,
-    "sources": 165,
+    "source_documents": 193,
+    "source_method_attributes": 238,
+    "source_revisions": 298,
+    "sources": 195,
     "vendors": 11
   },
   "products": 50,
   "offerings": 50,
-  "document_observations": 1494,
+  "document_observations": 1627,
   "document_states": {
-    "disputed": 10,
+    "disputed": 16,
     "inaccessible": 6,
-    "known": 1454,
-    "not_found": 23,
+    "known": 1569,
+    "not_found": 35,
     "not_researched": 1
   },
   "common_slots": 2000,
-  "documented_common_scopes": 508,
-  "research_documents": 151,
+  "documented_common_scopes": 517,
+  "research_documents": 180,
   "benchmark_runs": 0,
   "preferred_logos": {
     "company": 10,
     "service": 40
   },
-  "latest_batch": "B05-20261011",
+  "latest_batch": "B06-20261011",
   "latest_batch_details": {
-    "batch_id": "B05-20261011",
-    "new_document_findings": 198,
-    "editorial_corrections": 1,
-    "new_price_components": 5,
-    "source_retrievals": 38,
-    "functional_research_sources": 38,
-    "functional_research_products": 9,
-    "products_including_classification_corrections": 9,
+    "batch_id": "B06-20261011",
+    "new_document_findings": 130,
+    "editorial_corrections": 3,
+    "new_price_components": 0,
+    "reference_regulations": 17,
+    "source_retrievals": 40,
+    "functional_research_sources": 40,
+    "functional_research_products": 18,
+    "products_including_classification_corrections": 19,
     "finding_states": {
-      "known": 196,
-      "disputed": 2
+      "disputed": 6,
+      "known": 112,
+      "not_found": 12
     }
   },
   "schema_objects": {
@@ -80,54 +82,104 @@
   "research_task_states": {
     "blocked": 78,
     "done": 1,
-    "in_progress": 82,
-    "not_started": 782
+    "in_progress": 95,
+    "not_started": 779
   },
   "by_product": [
     {
-      "product_id": "JP01",
-      "canonical_name": "Shiftmation",
-      "document_records": 6
+      "product_id": "JP04",
+      "canonical_name": "Nafty",
+      "document_records": 16
     },
     {
-      "product_id": "JP25",
-      "canonical_name": "アールシフト",
-      "document_records": 10
+      "product_id": "JP07",
+      "canonical_name": "miramos",
+      "document_records": 2
     },
     {
-      "product_id": "JP27",
-      "canonical_name": "Airシフト",
-      "document_records": 11
-    },
-    {
-      "product_id": "US02",
-      "canonical_name": "QGenda Nurse & Staff Scheduling",
+      "product_id": "JP08",
+      "canonical_name": "シンクロシフト",
       "document_records": 5
+    },
+    {
+      "product_id": "JP09",
+      "canonical_name": "快決！シフト君NEO メディカル",
+      "document_records": 5
+    },
+    {
+      "product_id": "JP19",
+      "canonical_name": "勤夢表VX（V5/VX）",
+      "document_records": 4
+    },
+    {
+      "product_id": "JP20",
+      "canonical_name": "エピタルHR",
+      "document_records": 5
+    },
+    {
+      "product_id": "JP28",
+      "canonical_name": "シフト屋さん Public API / MCP",
+      "document_records": 1
     },
     {
       "product_id": "US05",
       "canonical_name": "Rotageek",
-      "document_records": 15
+      "document_records": 7
+    },
+    {
+      "product_id": "US07",
+      "canonical_name": "Deputy Core",
+      "document_records": 13
     },
     {
       "product_id": "US09",
       "canonical_name": "Connecteam Operations Hub Expert",
-      "document_records": 33
+      "document_records": 8
+    },
+    {
+      "product_id": "US11",
+      "canonical_name": "Allocate Optima",
+      "document_records": 6
+    },
+    {
+      "product_id": "US13",
+      "canonical_name": "Lantum In-Genius Rota",
+      "document_records": 6
+    },
+    {
+      "product_id": "US14",
+      "canonical_name": "Patchwork Rota",
+      "document_records": 7
+    },
+    {
+      "product_id": "US17",
+      "canonical_name": "Humanity Schedule",
+      "document_records": 2
     },
     {
       "product_id": "US18",
       "canonical_name": "Quinyx",
-      "document_records": 49
+      "document_records": 8
     },
     {
       "product_id": "US19",
       "canonical_name": "When I Work",
-      "document_records": 40
+      "document_records": 8
     },
     {
       "product_id": "US20",
       "canonical_name": "Planday",
-      "document_records": 30
+      "document_records": 13
+    },
+    {
+      "product_id": "US21",
+      "canonical_name": "RosterElf",
+      "document_records": 6
+    },
+    {
+      "product_id": "US22",
+      "canonical_name": "Sona",
+      "document_records": 11
     }
   ]
 }

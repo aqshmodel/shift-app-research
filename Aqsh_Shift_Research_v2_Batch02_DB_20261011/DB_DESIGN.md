@@ -30,6 +30,8 @@
 
 classification_correctionsは元観測と訂正先観測、理由、バッチ、日付を結び付ける。元の観測・本文取得日は書き換えず、訂正先へ同じ取得履歴を引き継ぐ。supersedes_observation_idも保持する。元設問の最新判断で誤分類をrejectedにし、他に採用可能な根拠がなければ未確定へ戻す。元資料の再取得を行っていない訂正を新しいWeb確認とは扱わない。
 
+新しい調査バッチは`resolution_policy_version: 2`を指定し、元設問の以前のrejectedを後続判断でも保持する。旧バッチの未指定は従来方式として再作成し、過去の判断履歴を変更しない。既知の根拠を追加しても、誤分類した根拠がcontextへ戻らない。
+
 ## ロゴ
 
 brand_assetsはproduct_idに対する履歴付きロゴ。サービス／会社、ブランド名、画像URL、公式掲載元、出典の取得履歴、確認状態、日付、優先順位、画像形式、権利確認状態を保存する。ロゴを持つことと転載権の確認は別で、権利未確認をpermittedにしない。
@@ -50,6 +52,10 @@ min_billable_units、min_quantity/max_quantity、quantity_definitionに課金人
 
 ## Webアプリでの読み方
 
+`regulations`には行政資料と専門団体の手引きを独立して登録する。`authority_type`、版、取得履歴への`revision_id`と、`applicability_json`の式・入力・除外・丸め・対象条件・ページ位置を保持する。適用日を資料から確定できない場合はNULLにする。参考式は実行コードではなく、計算エンジンへの入力前に正式通知と届出区分の確認が必要な参照データである。
+
+第6バッチは様式9の17件を追加した。JSONには`metric`、`formula`、`rounding`等と`verification_stage: documented`、`vendor_implementation_verified: false`を保存する。複数式は`formulas`、丸めの別資料は`rounding_reference_id`で参照する。`regulation_support`への製品関連付けは0件。制度資料の存在から製品対応を自動判定しない。CSV索引と比較画面にも出典・留保を表示する。
+
 - 一覧：`v_product_catalog`。最大50件、`offering_id`をカーソルにして安定したページ送り。
 - 比較：`v_current40`を2〜4提供単位で絞り込み。採用枠数は資料の充足であり品質点数ではない。
 - 詳細：`v_observations_with_sources`。観測IDでまとめ、複数の根拠リンクを保持。
@@ -57,6 +63,7 @@ min_billable_units、min_quantity/max_quantity、quantity_definitionに課金人
 - 料金：`v_price_details`。期間、地域、追加機能、未知金額、根拠の役割を表示。
 - ロゴ：`v_preferred_brand_assets`をproductsへLEFT JOIN。サービス優先、会社を代替に使う。
 - 調査待ち：`v_open_questions`。優先度・必要な確認方法で絞り込む。
+- 制度参照：`regulations`と`source_revisions`をJOIN。原則の式と製品に対する観測を別に返す。
 
 代表クエリは[d1/queries.sql](d1/queries.sql)。Workers側ではプリペアドステートメントへ値をbindし、任意SQL・任意の列名や並び順を公開APIに渡さない。閲覧アプリは読み取りを基本にし、調査編集・取り込みは別の管理経路に置く。
 

@@ -14,6 +14,7 @@ with connect() as c:
     p=json.loads((ROOT/'batches'/(batch+'.json')).read_text())
     s['latest_batch_details']={'batch_id':batch,'new_document_findings':len(p['findings']),
       'editorial_corrections':len(p.get('reclassifications',[])),'new_price_components':len(p.get('prices',[])),
+      'reference_regulations':len(p.get('regulations',[])),
       'source_retrievals':len(p['sources']),'functional_research_sources':len([x for x in p['sources'] if not x['key'].startswith('logo-')]),
       'functional_research_products':len({f['product'] for f in p['findings']}),
       'products_including_classification_corrections':c.execute('SELECT COUNT(*) FROM batch_product_membership WHERE batch_id=?',(batch,)).fetchone()[0],
@@ -26,4 +27,5 @@ with connect() as c:
     write_csv('source_index.csv',[dict(r) for r in c.execute('SELECT r.revision_id,s.document_id,s.publisher,r.title_at_retrieval AS title,r.retrieval_url,r.retrieved_on,r.published_on,r.updated_on,a.origin_kind,a.full_text_archived,ar.relative_path,ar.sha256 FROM source_revisions r JOIN sources s USING(source_id) LEFT JOIN source_method_attributes a USING(revision_id) LEFT JOIN source_archives ar USING(revision_id) WHERE r.revision_id LIKE ? ORDER BY r.revision_id',(batch+'%',))])
     write_csv('logo_index.csv',[dict(r) for r in c.execute('SELECT product_id,logo_kind,brand_name,asset_url,source_page_url,verified_on,media_type,http_status,rights_status,notes FROM v_preferred_brand_assets ORDER BY product_id')])
     write_csv('classification_corrections.csv',[dict(r) for r in c.execute('SELECT x.correction_id,x.original_observation_id,o.criterion_id AS original_criterion,x.corrected_observation_id,n.criterion_id AS corrected_criterion,x.rationale,x.recorded_on FROM classification_corrections x JOIN observations o ON o.observation_id=x.original_observation_id JOIN observations n ON n.observation_id=x.corrected_observation_id ORDER BY x.correction_id')])
+    write_csv('regulation_index.csv',[dict(r) for r in c.execute('SELECT g.regulation_id,g.title,g.authority_type,g.jurisdiction,g.version_label,g.effective_from,g.effective_to,json_extract(g.applicability_json,\'$.summary_ja\') AS summary_ja,json_extract(g.applicability_json,\'$.formula\') AS formula,json_extract(g.applicability_json,\'$.locator\') AS locator,g.applicability_json,r.retrieval_url,r.retrieved_on FROM regulations g JOIN source_revisions r USING(revision_id) ORDER BY g.regulation_id')])
     print(json.dumps(s['latest_batch_details'],ensure_ascii=False))

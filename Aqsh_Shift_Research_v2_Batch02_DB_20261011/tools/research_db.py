@@ -229,6 +229,9 @@ def ingest(c, path):
     p = json.loads(raw)
     batch = p['batch_id']
     checksum = hashlib.sha256(raw).hexdigest()
+    policy_version=p.get('resolution_policy_version',1)
+    if policy_version not in (1,2):
+        raise ValueError('unsupported resolution policy version')
     existing = c.execute('SELECT ingest_sha256 FROM research_batches WHERE batch_id=?', (batch,)).fetchone()
     if existing:
         if existing[0] != checksum:
@@ -240,6 +243,15 @@ def ingest(c, path):
             description=p.get('description', '公開一次資料追加調査'), prior_batch=p.get('prior_batch', latest[0] if latest else None),
             ingest_sha256=checksum, method_note=p.get('method', 'public primary-source documents; no independent test')))
         revisions = {s['key']: source_revision(c, s, batch, i) for i, s in enumerate(p['sources'], 1)}
+        # Reference rules have their own provenance; they do not prove vendor support.
+        for rule in p.get('regulations', []):
+            if not isinstance(rule['applicability'], dict):
+                raise ValueError('regulation applicability must be an object')
+            insert(c, 'regulations', dict(regulation_id=rule['regulation_id'], title=rule['title'],
+                authority_type=rule['authority_type'], jurisdiction=rule['jurisdiction'],
+                applicability_json=dumps(rule['applicability']), version_label=rule.get('version_label'),
+                effective_from=rule.get('effective_from'), effective_to=rule.get('effective_to'),
+                revision_id=revisions[rule['source']]))
         grouped = defaultdict(list)
         rejected = defaultdict(set)
         correction_notes = defaultdict(list)
@@ -293,6 +305,10 @@ def ingest(c, path):
         for i, ((offering, criterion), obs) in enumerate(sorted(grouped.items()), 1):
             prior = c.execute('SELECT * FROM v_latest_resolutions WHERE offering_id=? AND criterion_id=?', (offering, criterion)).fetchone()
             prior_evidence = c.execute('SELECT observation_id,role FROM resolution_evidence WHERE resolution_id=?', (prior['resolution_id'],)).fetchall() if prior else []
+            # v1 remains replayable for immutable historical batches. New batches
+            # use v2 so a classification exclusion survives later observations.
+            if policy_version==2:
+                rejected[(offering,criterion)].update(e['observation_id'] for e in prior_evidence if e['role']=='rejected')
             has_known = any(state == 'known' for _, state in obs)
             disputed = any(state == 'disputed' for _, state in obs)
             retain = not has_known and not disputed and prior and prior['decision'] == 'accepted' and (
@@ -365,7 +381,8 @@ def ingest(c, path):
     return {'batch_id':batch,'status':'applied','new_document_findings':len(p['findings']),
         'classification_corrections':len(p.get('reclassifications',[])),
         'observations':len(p['findings'])+len(p.get('reclassifications',[])),
-        'logos':len(p.get('logos',[])),'source_revisions':len(p['sources']),'resolutions':len(grouped)}
+        'logos':len(p.get('logos',[])),'source_revisions':len(p['sources']),'resolutions':len(grouped),
+        'reference_regulations':len(p.get('regulations',[]))}
 
 
 def literal(value):
@@ -430,6 +447,7 @@ def viewer(c):
         'observations':"SELECT * FROM v_observations_with_sources WHERE record_category='document_observation' ORDER BY product_id,criterion_id,batch_id DESC,observation_id,evidence_id",
         'prices':'SELECT * FROM v_price_details ORDER BY product_id,plan_id,component_id',
         'common':'SELECT * FROM v_current40 ORDER BY offering_id,criterion_id',
+        'regulations':'SELECT g.*,r.retrieval_url,r.retrieved_on,r.title_at_retrieval FROM regulations g JOIN source_revisions r USING(revision_id) ORDER BY g.regulation_id',
         'criteria':"SELECT * FROM criteria WHERE research_stage='L1_common' ORDER BY criterion_id"}.items()}
     data['counts']=stats(c)
     grouped={}
