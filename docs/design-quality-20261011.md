@@ -49,11 +49,38 @@ ManropeのLatin可変フォントは24,836バイト、SIL Open Font License 1.1�
 - トップ・一覧・詳細・比較・Web MCP案内のWCAG AA自動検査で違反0件でした。自動検査だけで完全なアクセシビリティを認定するものではありません。
 - 320・390・768・1440pxでページ全体の横はみ出しがないことを確認しました。PC・小型スマートフォン・タブレットでは目視も行いました。
 - 50製品のSSRと固有メタデータ、検索・比較、無JavaScript、API境界、5つのネイティブWeb MCPツールとキャンセルが成功しました。自然言語AIによるツール選択の独立E2Eは未実施です。
-- 初回のモバイルLighthouseは性能98、アクセシビリティ100、ベストプラクティス100でした。LCP1.5秒、TBT0ms、CLS0でした。最終版の数値は公開確認後に追記します。
+- 初回のモバイルLighthouseは性能98、アクセシビリティ100、ベストプラクティス100でした。LCP1.5秒、TBT0ms、CLS0でした。公開側の最終値は次節に記録しています。
 - 本番依存のnpm auditは既知の脆弱性0件でした。
 
 最終のLighthouseで、確認用Pages入口が静的ファイルにもno-storeを設定していることを確認しました。確認用URLでも`/_astro/`のハッシュ付きCSS・JavaScriptはimmutable、フォント・ブランド素材は条件付き再検証の配信方針を維持するように修正しました。確認用HTMLとAPIはno-store、全リソースのnoindexを保持しています。独自ドメイン側は従来からWorkerの配信方針を保持しています。入口の3回帰テストでHTML・API・素材・エラー・304応答を確認し、公開側のヘッダーも照合しました。
 
 ## 公開と最終計測
 
-公開版の確認結果・バージョン・スクリーンショット・HTTP計測を、この節とdesign-quality-verification-20261011.jsonへ保存します。確認用Pages URLと検証Workerは意図的にnoindexです。LighthouseのSEO点にはこの検索対象外の設定が反映されるため、独自ドメインの公開確認とは分けます。Googleインデックスや検索順位、受賞、実機Safari・Firefoxはこの検証の対象外です。
+本番Workerの改良版を公開し、Pagesの入口も更新しました。
+
+- 確認URL：[Aqsh シフトづくりサービス比較](https://aqsh-shift.pages.dev/)
+- Worker実装コミット：`15f82b6e3f5fe12525e650e83d95ea660644ec1e`
+- 配信入口コミット：`6c9898742698309a3e77a258d203e5da747e4eb7`
+- 本番Worker版：`3819b736-ea47-424e-883d-92be4a90b883`
+- Pages入口：[6e301253.aqsh-shift.pages.dev](https://6e301253.aqsh-shift.pages.dev/)
+- [Worker改修のCI](https://github.com/aqshmodel/shift-app-research/actions/runs/38132241654)、[配信入口改修のCI](https://github.com/aqshmodel/shift-app-research/actions/runs/38132752434)とも成功しました。後者は原本、公開投影、Nodeの12テスト、型検査、ビルドを含みます。
+
+本番Pagesの14ブラウザ検証は27.4秒ですべて成功しました。入口の更新後、影響範囲の5項目を13.9秒で再確認して成功しています。収録件数は50製品、1,664調査記録、188参照文書、未確認優先課題30件のままです。
+
+入口更新後のモバイルLighthouse 13.5.0では、性能100、アクセシビリティ100、ベストプラクティス100、SEO69でした。FCP1.2秒、LCP1.5秒、TBT0ms、CLS0、Speed Index1.2秒です。更新前の公開側計測も前三項目は100でした。いずれもトップページの模擬モバイルによるラボ計測で、実ユーザーのCore Web Vitalsではありません。
+
+同じ確認URL・同じローカルクライアントから各3回、圧縮対応のcurlで測定したTTFB中央値は次のとおりです。数値の変動にはネットワーク、D1の経路、初回起動なども含まれます。少数サンプルの観測値で、因果効果や全利用者の速度保証ではありません。
+
+| ページ | 改修前 | 改修後 |
+|---|---:|---:|
+| トップ | 89.4ms | 81.3ms |
+| 一覧 | 128.5ms | 104.7ms |
+| Nafty詳細 | 248.7ms | 121.9ms |
+| 2件比較 | 168.5ms | 170.9ms |
+| 検索API（50件） | 125.4ms | 108.6ms |
+
+2件比較の応答はほぼ同じでした。DB呼出回数の削減が、そのまま同率の応答速度改善になるとは評価していません。原本ビューの読み取りも含め、公開側のServer-Timingで詳細・比較2回、検索API1回を確認しています。
+
+[機械可読の検証記録](design-quality-verification-20261011.json)にテスト名、Lighthouse、全HTTPサンプル、キャッシュヘッダー、画像ハッシュを保存しています。[PC](screenshots/redesign-desktop-20261011.png)、[トップ全体](screenshots/redesign-home-full-20261011.png)、[スマートフォン](screenshots/redesign-mobile-20261011.png)、[比較画面](screenshots/redesign-comparison-20261011.png)を目視確認して保存しました。
+
+`shift.aqsh.co.jp`はCNAME設定待ちです。確認用Pages URLと検証Workerは意図的にnoindexで、PagesのrobotsもDisallowです。LighthouseのSEO69はこの検索対象外の設定を含むため、独自ドメインの公開確認とは分けます。確認用HTMLのno-storeによるbfcache制限も残します。独自ドメイン接続後は公開側のrobots・canonical・HTTPSとGoogle登録を確認する必要があります。Googleインデックスや検索順位、受賞、実機Safari・Firefoxは今回の検証では確認していません。

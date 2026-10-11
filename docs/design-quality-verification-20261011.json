@@ -1,0 +1,662 @@
+{
+  "verified_at": "2026-10-11T10:41:04.971734+00:00",
+  "site_name": "Aqsh シフトづくりサービス比較",
+  "production_alias": "https://aqsh-shift.pages.dev/",
+  "custom_domain": {
+    "url": "https://shift.aqsh.co.jp/",
+    "status": "DNS CNAME pending",
+    "required_record": "shift CNAME aqsh-shift.pages.dev"
+  },
+  "source": {
+    "worker_commit": "15f82b6e3f5fe12525e650e83d95ea660644ec1e",
+    "proxy_commit": "6c9898742698309a3e77a258d203e5da747e4eb7",
+    "worker_version": "3819b736-ea47-424e-883d-92be4a90b883",
+    "pages_deployment": "https://6e301253.aqsh-shift.pages.dev/"
+  },
+  "published_scope": {
+    "snapshot_id": "B07-20261011-pub2",
+    "products": 50,
+    "document_observations": 1664,
+    "research_documents": 188,
+    "priority_open": 30
+  },
+  "production_browser": {
+    "passed": 14,
+    "failed": 0,
+    "duration_seconds": 27.4,
+    "tests": [
+      {
+        "name": "tests/browser/catalog.spec.mjs:2:1 › all 50 products are searchable, server rendered and have distinct detail metadata",
+        "status": "passed",
+        "duration_ms": 4400.0
+      },
+      {
+        "name": "tests/browser/catalog.spec.mjs:7:1 › API input boundaries, nonmutation, evidence pagination and complete price conditions",
+        "status": "passed",
+        "duration_ms": 921.0
+      },
+      {
+        "name": "tests/browser/catalog.spec.mjs:14:1 › SEO routes, no fabricated reviews, operator phone omission, and real 404s",
+        "status": "passed",
+        "duration_ms": 381.0
+      },
+      {
+        "name": "tests/browser/catalog.spec.mjs:21:1 › normal UI search, filters, compare selection and mobile overflow",
+        "status": "passed",
+        "duration_ms": 2900.0
+      },
+      {
+        "name": "tests/browser/catalog.spec.mjs:27:1 › search and comparison work without JavaScript",
+        "status": "passed",
+        "duration_ms": 851.0
+      },
+      {
+        "name": "tests/browser/catalog.spec.mjs:30:1 › planned care calculation and task assignment preserve capability scope",
+        "status": "passed",
+        "duration_ms": 281.0
+      },
+      {
+        "name": "tests/browser/quality.spec.mjs:4:1 › new branding, lining numerals, polite copy and reduced-motion rendering",
+        "status": "passed",
+        "duration_ms": 634.0
+      },
+      {
+        "name": "tests/browser/quality.spec.mjs:13:1 › WCAG AA automated checks cover home, catalog, detail and comparison",
+        "status": "passed",
+        "duration_ms": 7400.0
+      },
+      {
+        "name": "tests/browser/quality.spec.mjs:20:1 › 320, 390, 768 and 1440 pixel layouts keep controls and pages in view",
+        "status": "passed",
+        "duration_ms": 4300.0
+      },
+      {
+        "name": "tests/browser/quality.spec.mjs:29:1 › native search navigation restores its usable button and decorative markup after back",
+        "status": "passed",
+        "duration_ms": 980.0
+      },
+      {
+        "name": "tests/browser/quality.spec.mjs:40:1 › deployed D1 request batching exposes the intended round-trip counts",
+        "status": "passed",
+        "duration_ms": 478.0
+      },
+      {
+        "name": "tests/browser/webmcp.spec.mjs:3:1 › five native tools return source-backed data and update visible UI",
+        "status": "passed",
+        "duration_ms": 979.0
+      },
+      {
+        "name": "tests/browser/webmcp.spec.mjs:12:1 › native cancellation prevents delayed results and page lifecycle removes tools",
+        "status": "passed",
+        "duration_ms": 531.0
+      },
+      {
+        "name": "tests/browser/webmcp.spec.mjs:19:1 › unsupported WebMCP leaves the normal UI operational",
+        "status": "passed",
+        "duration_ms": 660.0
+      }
+    ]
+  },
+  "after_entry_update_quality": {
+    "passed": 5,
+    "failed": 0,
+    "duration_seconds": 13.9,
+    "tests": [
+      {
+        "name": "tests/browser/quality.spec.mjs:4:1 › new branding, lining numerals, polite copy and reduced-motion rendering",
+        "status": "passed",
+        "duration_ms": 759.0
+      },
+      {
+        "name": "tests/browser/quality.spec.mjs:13:1 › WCAG AA automated checks cover home, catalog, detail and comparison",
+        "status": "passed",
+        "duration_ms": 7300.0
+      },
+      {
+        "name": "tests/browser/quality.spec.mjs:20:1 › 320, 390, 768 and 1440 pixel layouts keep controls and pages in view",
+        "status": "passed",
+        "duration_ms": 3300.0
+      },
+      {
+        "name": "tests/browser/quality.spec.mjs:29:1 › native search navigation restores its usable button and decorative markup after back",
+        "status": "passed",
+        "duration_ms": 849.0
+      },
+      {
+        "name": "tests/browser/quality.spec.mjs:40:1 › deployed D1 request batching exposes the intended round-trip counts",
+        "status": "passed",
+        "duration_ms": 342.0
+      }
+    ]
+  },
+  "axe": {
+    "violations": 0,
+    "tags": [
+      "wcag2a",
+      "wcag2aa",
+      "wcag21aa",
+      "wcag22aa"
+    ],
+    "routes": [
+      "/",
+      "/products/",
+      "/products/jp04/",
+      "/compare/?products=OF-JP01,OF-US01",
+      "/webmcp/"
+    ]
+  },
+  "responsive_widths": [
+    320,
+    390,
+    768,
+    1440
+  ],
+  "lighthouse": {
+    "version": "13.5.0",
+    "fetch_time": "2026-10-11T10:39:35.295Z",
+    "url": "https://aqsh-shift.pages.dev/",
+    "form_factor": "mobile",
+    "throttling_method": "simulate",
+    "scores": {
+      "performance": 100,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 69
+    },
+    "metrics": {
+      "first-contentful-paint": {
+        "value": 1225.615,
+        "unit": "millisecond",
+        "display": "1.2 s"
+      },
+      "largest-contentful-paint": {
+        "value": 1525.615,
+        "unit": "millisecond",
+        "display": "1.5 s"
+      },
+      "total-blocking-time": {
+        "value": 0,
+        "unit": "millisecond",
+        "display": "0 ms"
+      },
+      "cumulative-layout-shift": {
+        "value": 0,
+        "unit": "unitless",
+        "display": "0"
+      },
+      "speed-index": {
+        "value": 1225.615,
+        "unit": "millisecond",
+        "display": "1.2 s"
+      }
+    },
+    "limitations": [
+      "Single simulated-mobile lab run, not field Core Web Vitals",
+      "SEO score includes intentional noindex and robots Disallow on preview alias",
+      "Preview HTML is deliberately no-store, so bfcache may be unavailable"
+    ]
+  },
+  "http_benchmark": {
+    "url": "https://aqsh-shift.pages.dev/",
+    "sample_count_per_path": 3,
+    "method": "curl compressed, same local client before and after Worker update; HTML and API cache policy unchanged",
+    "limitations": [
+      "Small sample; network, D1 routing and cold starts vary",
+      "Not a causal or statistical performance guarantee",
+      "Two-product comparison TTFB was approximately unchanged despite fewer D1 calls"
+    ],
+    "before": [
+      {
+        "path": "/",
+        "samples": [
+          {
+            "status": 200,
+            "ttfb_ms": 237.6,
+            "total_ms": 238.1,
+            "transferred_bytes": 3195,
+            "html_bytes": 8429
+          },
+          {
+            "status": 200,
+            "ttfb_ms": 89.4,
+            "total_ms": 89.9,
+            "transferred_bytes": 3195,
+            "html_bytes": 8429
+          },
+          {
+            "status": 200,
+            "ttfb_ms": 84.5,
+            "total_ms": 84.9,
+            "transferred_bytes": 3195,
+            "html_bytes": 8429
+          }
+        ]
+      },
+      {
+        "path": "/products/",
+        "samples": [
+          {
+            "status": 200,
+            "ttfb_ms": 116.4,
+            "total_ms": 122.3,
+            "transferred_bytes": 18785,
+            "html_bytes": 76436
+          },
+          {
+            "status": 200,
+            "ttfb_ms": 128.5,
+            "total_ms": 130.8,
+            "transferred_bytes": 18785,
+            "html_bytes": 76436
+          },
+          {
+            "status": 200,
+            "ttfb_ms": 185.0,
+            "total_ms": 186.2,
+            "transferred_bytes": 18785,
+            "html_bytes": 76436
+          }
+        ]
+      },
+      {
+        "path": "/products/jp04/",
+        "samples": [
+          {
+            "status": 200,
+            "ttfb_ms": 353.8,
+            "total_ms": 355.0,
+            "transferred_bytes": 12317,
+            "html_bytes": 85141
+          },
+          {
+            "status": 200,
+            "ttfb_ms": 171.7,
+            "total_ms": 174.8,
+            "transferred_bytes": 12317,
+            "html_bytes": 85141
+          },
+          {
+            "status": 200,
+            "ttfb_ms": 248.7,
+            "total_ms": 250.4,
+            "transferred_bytes": 12317,
+            "html_bytes": 85141
+          }
+        ]
+      },
+      {
+        "path": "/compare/?products=OF-JP01,OF-US01",
+        "samples": [
+          {
+            "status": 200,
+            "ttfb_ms": 249.1,
+            "total_ms": 252.0,
+            "transferred_bytes": 7403,
+            "html_bytes": 50210
+          },
+          {
+            "status": 200,
+            "ttfb_ms": 168.5,
+            "total_ms": 169.2,
+            "transferred_bytes": 7397,
+            "html_bytes": 50210
+          },
+          {
+            "status": 200,
+            "ttfb_ms": 139.4,
+            "total_ms": 140.0,
+            "transferred_bytes": 7397,
+            "html_bytes": 50210
+          }
+        ]
+      },
+      {
+        "path": "/api/search/?limit=50",
+        "samples": [
+          {
+            "status": 200,
+            "ttfb_ms": 139.7,
+            "total_ms": 141.2,
+            "transferred_bytes": 17320,
+            "html_bytes": 62379
+          },
+          {
+            "status": 200,
+            "ttfb_ms": 117.0,
+            "total_ms": 118.3,
+            "transferred_bytes": 17320,
+            "html_bytes": 62379
+          },
+          {
+            "status": 200,
+            "ttfb_ms": 125.4,
+            "total_ms": 131.6,
+            "transferred_bytes": 17320,
+            "html_bytes": 62379
+          }
+        ]
+      }
+    ],
+    "after": [
+      {
+        "path": "/",
+        "samples": [
+          {
+            "status": 200,
+            "ttfb_ms": 289.9,
+            "total_ms": 290.9,
+            "transferred_bytes": 4444,
+            "html_bytes": 14440,
+            "server_timing": "db;dur=44.0, db_calls;desc=\"1\", db_queries;desc=\"1\""
+          },
+          {
+            "status": 200,
+            "ttfb_ms": 80.5,
+            "total_ms": 81.8,
+            "transferred_bytes": 4444,
+            "html_bytes": 14440,
+            "server_timing": "db;dur=12.0, db_calls;desc=\"1\", db_queries;desc=\"1\""
+          },
+          {
+            "status": 200,
+            "ttfb_ms": 81.3,
+            "total_ms": 82.2,
+            "transferred_bytes": 4444,
+            "html_bytes": 14440,
+            "server_timing": "db;dur=12.0, db_calls;desc=\"1\", db_queries;desc=\"1\""
+          }
+        ]
+      },
+      {
+        "path": "/products/",
+        "samples": [
+          {
+            "status": 200,
+            "ttfb_ms": 145.1,
+            "total_ms": 146.6,
+            "transferred_bytes": 18975,
+            "html_bytes": 78743,
+            "server_timing": "db;dur=68.0, db_calls;desc=\"1\", db_queries;desc=\"2\""
+          },
+          {
+            "status": 200,
+            "ttfb_ms": 104.7,
+            "total_ms": 109.2,
+            "transferred_bytes": 18975,
+            "html_bytes": 78743,
+            "server_timing": "db;dur=27.0, db_calls;desc=\"1\", db_queries;desc=\"2\""
+          },
+          {
+            "status": 200,
+            "ttfb_ms": 97.9,
+            "total_ms": 100.7,
+            "transferred_bytes": 18975,
+            "html_bytes": 78743,
+            "server_timing": "db;dur=24.0, db_calls;desc=\"1\", db_queries;desc=\"2\""
+          }
+        ]
+      },
+      {
+        "path": "/products/jp04/",
+        "samples": [
+          {
+            "status": 200,
+            "ttfb_ms": 121.9,
+            "total_ms": 124.9,
+            "transferred_bytes": 12527,
+            "html_bytes": 87961,
+            "server_timing": "db;dur=46.0, db_calls;desc=\"2\", db_queries;desc=\"3\""
+          },
+          {
+            "status": 200,
+            "ttfb_ms": 120.7,
+            "total_ms": 122.3,
+            "transferred_bytes": 12527,
+            "html_bytes": 87961,
+            "server_timing": "db;dur=34.0, db_calls;desc=\"2\", db_queries;desc=\"3\""
+          },
+          {
+            "status": 200,
+            "ttfb_ms": 155.7,
+            "total_ms": 157.1,
+            "transferred_bytes": 12527,
+            "html_bytes": 87961,
+            "server_timing": "db;dur=33.0, db_calls;desc=\"2\", db_queries;desc=\"3\""
+          }
+        ]
+      },
+      {
+        "path": "/compare/?products=OF-JP01,OF-US01",
+        "samples": [
+          {
+            "status": 200,
+            "ttfb_ms": 139.6,
+            "total_ms": 140.7,
+            "transferred_bytes": 7566,
+            "html_bytes": 50693,
+            "server_timing": "db;dur=49.0, db_calls;desc=\"2\", db_queries;desc=\"3\""
+          },
+          {
+            "status": 200,
+            "ttfb_ms": 174.3,
+            "total_ms": 226.4,
+            "transferred_bytes": 7572,
+            "html_bytes": 50693,
+            "server_timing": "db;dur=50.0, db_calls;desc=\"2\", db_queries;desc=\"3\""
+          },
+          {
+            "status": 200,
+            "ttfb_ms": 170.9,
+            "total_ms": 172.4,
+            "transferred_bytes": 7566,
+            "html_bytes": 50693,
+            "server_timing": "db;dur=49.0, db_calls;desc=\"2\", db_queries;desc=\"3\""
+          }
+        ]
+      },
+      {
+        "path": "/api/search/?limit=50",
+        "samples": [
+          {
+            "status": 200,
+            "ttfb_ms": 108.6,
+            "total_ms": 110.1,
+            "transferred_bytes": 17320,
+            "html_bytes": 62379,
+            "server_timing": "db;dur=29.0, db_calls;desc=\"1\", db_queries;desc=\"2\""
+          },
+          {
+            "status": 200,
+            "ttfb_ms": 97.8,
+            "total_ms": 101.9,
+            "transferred_bytes": 17320,
+            "html_bytes": 62379,
+            "server_timing": "db;dur=23.0, db_calls;desc=\"1\", db_queries;desc=\"2\""
+          },
+          {
+            "status": 200,
+            "ttfb_ms": 185.8,
+            "total_ms": 188.4,
+            "transferred_bytes": 17320,
+            "html_bytes": 62379,
+            "server_timing": "db;dur=89.0, db_calls;desc=\"1\", db_queries;desc=\"2\""
+          }
+        ]
+      }
+    ],
+    "median_ttfb_ms": [
+      {
+        "path": "/",
+        "before": 89.4,
+        "after": 81.3
+      },
+      {
+        "path": "/products/",
+        "before": 128.5,
+        "after": 104.7
+      },
+      {
+        "path": "/products/jp04/",
+        "before": 248.7,
+        "after": 121.9
+      },
+      {
+        "path": "/compare/?products=OF-JP01,OF-US01",
+        "before": 168.5,
+        "after": 170.9
+      },
+      {
+        "path": "/api/search/?limit=50",
+        "before": 125.4,
+        "after": 108.6
+      }
+    ]
+  },
+  "cache_header_proof": [
+    {
+      "path": "/",
+      "status": 200,
+      "cache_control": "no-store",
+      "x_robots_tag": "noindex, nofollow"
+    },
+    {
+      "path": "/api/scope/",
+      "status": 200,
+      "cache_control": "no-store",
+      "x_robots_tag": "noindex, nofollow"
+    },
+    {
+      "path": "/fonts/manrope-latin-variable.woff2",
+      "status": 200,
+      "cache_control": "public, max-age=0, must-revalidate",
+      "x_robots_tag": "noindex, nofollow"
+    },
+    {
+      "path": "/brand/aqsh-logo-240.webp",
+      "status": 200,
+      "cache_control": "public, max-age=0, must-revalidate",
+      "x_robots_tag": "noindex, nofollow"
+    },
+    {
+      "path": "/_astro/Base.zvNYppPJ.css",
+      "status": 200,
+      "cache_control": "public, max-age=31536000, immutable",
+      "x_robots_tag": "noindex, nofollow"
+    },
+    {
+      "path": "/_astro/Base.astro_astro_type_script_index_0_lang.B3N77JAZ.js",
+      "status": 200,
+      "cache_control": "public, max-age=31536000, immutable",
+      "x_robots_tag": "noindex, nofollow"
+    }
+  ],
+  "ci": {
+    "worker_run": "https://github.com/aqshmodel/shift-app-research/actions/runs/38132241654",
+    "worker_conclusion": "success",
+    "proxy_run": "https://github.com/aqshmodel/shift-app-research/actions/runs/38132752434",
+    "proxy_conclusion": "success",
+    "steps": [
+      {
+        "name": "Set up job",
+        "conclusion": "success"
+      },
+      {
+        "name": "Run actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803",
+        "conclusion": "success"
+      },
+      {
+        "name": "Run actions/setup-node@249970729cb0ef3589644e2896645e5dc5ba9c38",
+        "conclusion": "success"
+      },
+      {
+        "name": "Run actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1",
+        "conclusion": "success"
+      },
+      {
+        "name": "Run python3 -m unittest discover -s Aqsh_Shift_Research_v2_Batch02_DB_20261011/tools -p 'test_*.py'",
+        "conclusion": "success"
+      },
+      {
+        "name": "Run python3 apps/web/scripts/build-publication.py",
+        "conclusion": "success"
+      },
+      {
+        "name": "Run git diff --exit-code -- apps/web/data",
+        "conclusion": "success"
+      },
+      {
+        "name": "Run python3 apps/web/tests/publication_test.py",
+        "conclusion": "success"
+      },
+      {
+        "name": "Run npm ci",
+        "conclusion": "success"
+      },
+      {
+        "name": "Run npm test",
+        "conclusion": "success"
+      },
+      {
+        "name": "Run npm run check",
+        "conclusion": "success"
+      },
+      {
+        "name": "Run npm run build",
+        "conclusion": "success"
+      },
+      {
+        "name": "Post Run actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1",
+        "conclusion": "success"
+      },
+      {
+        "name": "Post Run actions/setup-node@249970729cb0ef3589644e2896645e5dc5ba9c38",
+        "conclusion": "success"
+      },
+      {
+        "name": "Post Run actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803",
+        "conclusion": "success"
+      },
+      {
+        "name": "Complete job",
+        "conclusion": "success"
+      }
+    ]
+  },
+  "screenshots": [
+    {
+      "path": "docs/screenshots/redesign-comparison-20261011.png",
+      "width": 65536,
+      "height": 4292542531,
+      "bytes": 86882,
+      "sha256": "3a1a20ef7af41df31572c8b3172ac6380657e50b9fb473e4c5841d28c40fa437"
+    },
+    {
+      "path": "docs/screenshots/redesign-desktop-20261011.png",
+      "width": 65536,
+      "height": 4292542531,
+      "bytes": 80615,
+      "sha256": "9cc8719d44b6811f1a32128e0dca981d51bee5455b7a89b5bb6d2ad196e14512"
+    },
+    {
+      "path": "docs/screenshots/redesign-home-full-20261011.png",
+      "width": 65536,
+      "height": 4292542531,
+      "bytes": 224469,
+      "sha256": "98b27dcad3c3ce906c578cce42658850c6709537fe4536cadb53d57b1a8dbe7d"
+    },
+    {
+      "path": "docs/screenshots/redesign-mobile-20261011.png",
+      "width": 65536,
+      "height": 4292542531,
+      "bytes": 36482,
+      "sha256": "3dd1ad98c0e90362b10e30ed9a8b124c84aec1d0f7897112b0638f1cb4e91c0b"
+    }
+  ],
+  "unverified": [
+    "Award judging or eligibility",
+    "Independent AI natural-language tool-selection E2E",
+    "Real-device Safari and Firefox",
+    "Google indexing and search ranking",
+    "30 priority research questions"
+  ]
+}
