@@ -11,7 +11,10 @@ export const onRequest=defineMiddleware(async(context,next)=>{
  response.headers.set('Permissions-Policy','tools=(self), camera=(), microphone=(), geolocation=()');
  response.headers.set('Origin-Agent-Cluster','?1');
  response.headers.set('X-Frame-Options','DENY');
- response.headers.set('Content-Security-Policy',"default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' https: data:; connect-src 'self'; font-src 'self'; object-src 'none'; base-uri 'self'; frame-ancestors 'none'; form-action 'self'");
+ const analytics=production && url.hostname==='shift.aqsh.co.jp';
+ const scripts=analytics?"'self' https://www.googletagmanager.com":"'self'";
+ const connections=analytics?"'self' https://www.googletagmanager.com https://*.google-analytics.com":"'self'";
+ response.headers.set('Content-Security-Policy',`default-src 'self'; script-src ${scripts}; style-src 'self' 'unsafe-inline'; img-src 'self' https: data:; connect-src ${connections}; font-src 'self'; object-src 'none'; base-uri 'self'; frame-ancestors 'none'; form-action 'self'`);
  if(!production || url.hostname!=='shift.aqsh.co.jp')response.headers.set('X-Robots-Tag','noindex, nofollow');
  if(url.protocol==='https:')response.headers.set('Strict-Transport-Security','max-age=31536000');
  if(!url.pathname.startsWith('/api/'))response.headers.set('Cache-Control',url.search||response.status!==200?'no-store':'public, max-age=60, s-maxage=300');

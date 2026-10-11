@@ -43,3 +43,24 @@ test('deployed D1 request batching exposes the intended round-trip counts',async
   expect(response.headers()['server-timing']).toContain(`db_calls;desc="${calls}"`);
  }
 });
+
+test('consent controls and the comparison bar remain usable at each viewport without Google requests',async({page})=>{
+ const google=[];page.on('request',r=>{if(/\.(?:googletagmanager|google-analytics)\.com\//.test(r.url()))google.push(r.url());});
+ const production=new URL(test.info().project.use.baseURL).hostname==='shift.aqsh.co.jp';
+ for(const width of [320,390,768,1440]) {
+  await page.setViewportSize({width,height:900});await page.goto('/products/');
+  const panel=page.locator('#analytics-consent');
+  if(!production) { await expect(panel).toBeHidden();continue; }
+  await expect(panel).toBeVisible();
+  const adds=page.locator('.compare-add');await adds.nth(0).click();await adds.nth(1).click();
+  const geometry=await page.evaluate(()=>{
+   const banner=document.querySelector('#analytics-consent').getBoundingClientRect();
+   const bar=document.querySelector('#compare-bar').getBoundingClientRect();
+   return {overflow:document.documentElement.scrollWidth>innerWidth+1,overlap:bar.bottom>banner.top,barTop:bar.top};
+  });
+  expect(geometry.overflow).toBe(false);expect(geometry.overlap).toBe(false);expect(geometry.barTop).toBeGreaterThan(0);
+  await expect(page.locator('#analytics-allow')).toBeInViewport();await expect(page.locator('#analytics-deny')).toBeInViewport();
+  await page.locator('#compare-clear').click();
+ }
+ expect(google).toEqual([]);
+});

@@ -16,7 +16,8 @@
     "enabled": false
   },
   "vars": {
-    "ENVIRONMENT": "production"
+    "ENVIRONMENT": "production",
+    "GA4_MEASUREMENT_ID": "G-E205Y93JB7"
   },
   "ratelimits": [
     {

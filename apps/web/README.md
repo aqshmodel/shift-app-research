@@ -2,6 +2,12 @@
 
 Astro 7 + Cloudflare Workers + D1で50製品をサーバー描画する公開資料サイトです。Web MCPはブラウザネイティブの公開読み取り5ツール。会員、AI推論API、広告タグはありません。
 
+GA4はAqshアカウント内の専用プロパティ `558435898`、Webストリーム `16105930586`、測定ID `G-E205Y93JB7` を使用します。測定IDは公開の設定値です。秘密鍵やMeasurement Protocol secretは作成しません。Googleタグは本番ホスト `shift.aqsh.co.jp` で計測に同意した場合だけ読み込み、検証環境・Pagesプレビューでは起動しません。`env.staging`に測定IDを継承しないのは意図した設定です。
+
+基本同意モードで、拒否時はGoogleへの計測通信を行いません。同意後のCookieと同意選択は180日以内、このホストに範囲を限定します。撤回はフッターの「アクセス解析の設定」から行えます。検索語、クエリ文字列、フラグメント、外部参照元のパスは送らず、イベントは `page_view`、`catalog_search`、`compare_select`、`compare_submit`、`compare_view`、`vendor_click` を手動送信します。公開製品IDを除きフォーム値は収集しません。Google シグナル、ユーザー提供データ、広告パーソナライズと拡張計測は利用せず、ユーザー・イベント保持を2か月に設定します。
+
+SEOはサーバー描画、正規URL、検索条件URLのnoindex、用途ページと製品詳細への内部リンク、ページ固有の説明文、OGP/Twitter、運営者・パンくず・製品・一覧のJSON-LDを使用します。ソフトウェアの料金や評価を捏造してリッチリザルトの要件を埋めません。公開URLの全件検査は `python3 apps/web/scripts/audit-seo.py --output /private/tmp/shift-seo-audit.json`（リポジトリのルートで実行）です。Googleの登録状況とサイト側検査は別に確認します。
+
 ## 開発
 
 Node.js 24とPython 3.11、画面検証にはChromeを使います。認証情報はGitに入れません。

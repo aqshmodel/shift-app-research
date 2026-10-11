@@ -1,0 +1,9 @@
+---
+const { measurementId } = Astro.props;
+---
+<aside id="analytics-consent" class="analytics-consent" data-measurement-id={measurementId} aria-labelledby="analytics-consent-title" hidden>
+  <div class="consent-copy"><strong id="analytics-consent-title">アクセス解析へのご協力</strong><p>サイトの改善のため、同意いただいた場合にGoogle アナリティクスで閲覧や操作を計測します。検索語の本文は送信しません。<a href="/privacy/#analytics">詳しい内容</a></p><p id="analytics-choice" class="small muted" role="status"></p></div>
+  <div class="consent-actions"><button type="button" id="analytics-deny">同意しません</button><button type="button" id="analytics-allow">同意します</button><button type="button" id="analytics-close" hidden>閉じる</button></div>
+</aside>
+<script>import { initializeAnalytics } from '../lib/analytics.mjs'; initializeAnalytics();</script>
+
