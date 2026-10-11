@@ -63,8 +63,9 @@
   ],
   "ai_selection_e2e": "not_run",
   "github_validation": {
-    "run_id": 38129446505,
-    "commit": "ab23d1b6cca3716732b20a63e7ba3579b0e71d93",
+    "run_id": 38129741758,
+    "commit": "2fbbfdf5e3db367dcc0927f4bd36df9df8e60c89",
     "conclusion": "success"
-  }
+  },
+  "pages_configuration_commit": "2fbbfdf5e3db367dcc0927f4bd36df9df8e60c89"
 }

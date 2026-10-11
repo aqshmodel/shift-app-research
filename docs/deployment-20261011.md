@@ -12,7 +12,7 @@
 - D1本番：82a6fd5d-f656-4eb4-bf78-347cf154420c、検証：31ed6b7f-a59e-4967-a27e-38684f221fd4。原本39テーブルと公開4テーブルを保存。
 - 公開版：B07-20261011-pub2。研究SHA-256 `2ddb59f682a829e7ee796950232bccbe36bceee2787eeafd4efac504776fc094`、公開投影SHA-256 `74a40b58cb45ed8264a9f8da9d779b0807686a7a169ccb2d251ee86f2e10a4ce`。
 - 本番Workerバージョン：`b34675a2-0f6f-4d85-8594-b5b9a43e4bfc`。Pagesデプロイ：https://68054e6c.aqsh-shift.pages.dev/ 。
-- アプリ・調査のGitHubコミット：`ab23d1b6cca3716732b20a63e7ba3579b0e71d93`。mainへpush済み。[GitHub Actions](https://github.com/aqshmodel/shift-app-research/actions/runs/38129446505)の全検証が成功。Pagesのaccount_id設定形式だけを公開時に修正し、追加コミットへ含める。
+- アプリ・調査のGitHubコミット：`ab23d1b6cca3716732b20a63e7ba3579b0e71d93`。mainへpush済み。[GitHub Actions](https://github.com/aqshmodel/shift-app-research/actions/runs/38129446505)の全検証が成功。Pagesのaccount_id設定形式の修正と公開記録は `2fbbfdf5e3db367dcc0927f4bd36df9df8e60c89` でpush済み。[追加コミットのGitHub Actions](https://github.com/aqshmodel/shift-app-research/actions/runs/38129741758)も成功。
 
 ## 検証
 
