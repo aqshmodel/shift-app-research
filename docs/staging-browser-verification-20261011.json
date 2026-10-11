@@ -1,0 +1,66 @@
+{
+  "target": "https://aqsh-shift-research-staging.aqsh-reprom.workers.dev",
+  "snapshot": "B07-20261011-pub2",
+  "worker_version": "8c807d8b-a3f4-49fc-b705-764f40827d85",
+  "browser": "Chrome 155.0.8059.39",
+  "native_webmcp_flag": "WebMCPTesting",
+  "tests": [
+    {
+      "title": "all 50 products are searchable, server rendered and have distinct detail metadata",
+      "status": "expected",
+      "duration_ms": 15497
+    },
+    {
+      "title": "API input boundaries, nonmutation, evidence pagination and complete price conditions",
+      "status": "expected",
+      "duration_ms": 1766
+    },
+    {
+      "title": "SEO routes, no fabricated reviews, operator phone omission, and real 404s",
+      "status": "expected",
+      "duration_ms": 899
+    },
+    {
+      "title": "normal UI search, filters, compare selection and mobile overflow",
+      "status": "expected",
+      "duration_ms": 3920
+    },
+    {
+      "title": "search and comparison work without JavaScript",
+      "status": "expected",
+      "duration_ms": 1326
+    },
+    {
+      "title": "planned care calculation and task assignment preserve capability scope",
+      "status": "expected",
+      "duration_ms": 711
+    },
+    {
+      "title": "five native tools return source-backed data and update visible UI",
+      "status": "expected",
+      "duration_ms": 1792
+    },
+    {
+      "title": "native cancellation prevents delayed results and page lifecycle removes tools",
+      "status": "expected",
+      "duration_ms": 568
+    },
+    {
+      "title": "unsupported WebMCP leaves the normal UI operational",
+      "status": "expected",
+      "duration_ms": 1005
+    }
+  ],
+  "typescript": {
+    "files": 34,
+    "errors": 0,
+    "warnings": 0
+  },
+  "dependency_audit": {
+    "vulnerabilities": 0
+  },
+  "research_tests": 14,
+  "publication_tests": 4,
+  "contract_tests": 7,
+  "ai_selection_e2e": "not_run"
+}

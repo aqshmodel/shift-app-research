@@ -1,0 +1,126 @@
+{
+  "checked_on": "2026-10-11",
+  "scope": "Implementation and public-source research; production DNS connection pending.",
+  "proposed_site_name": "Aqsh シフト比較",
+  "production_host": {
+    "hostname": "shift.aqsh.co.jp",
+    "status": "confirmed_by_user",
+    "dns_state": "not_checked"
+  },
+  "research": {
+    "latest_batch": "B07-20261011",
+    "products": 50,
+    "offerings": 50,
+    "document_records": 1664,
+    "research_documents": 188,
+    "price_components": 88,
+    "reference_regulations": 17,
+    "preferred_logos": {
+      "company": 10,
+      "service": 40
+    },
+    "benchmark_scenarios": 14,
+    "benchmark_runs": 0,
+    "open_p1_tasks": 30,
+    "p1_required_methods": {
+      "synthetic_test": 4,
+      "public_document": 1,
+      "vendor_document": 16,
+      "demo": 4,
+      "vendor_quote": 4,
+      "independent_source": 1
+    },
+    "source_stats": "../Aqsh_Shift_Research_v2_Batch02_DB_20261011/reports/research_stats.json"
+  },
+  "catalog_readiness": {
+    "official_https_urls": 50,
+    "logos_with_http_urls": [],
+    "logo_rights_states": {
+      "unknown": 50
+    },
+    "per_product_publication_review": "50 SSR detail pages and official links checked; scoped statuses retained"
+  },
+  "operator": {
+    "name": "Aqsh株式会社",
+    "english_name": "Aqsh Co. Ltd.",
+    "representative": "代表取締役 塚田 崇博",
+    "founded_on": "2021-04-01",
+    "email": "info@aqsh.co.jp",
+    "main_office": "〒028-7111 岩手県八幡平市大更第２５地割 113番地 起業家支援センター2F",
+    "morioka_office": "〒020-0021 岩手県盛岡市中央通１丁目７−３５ コアフィールド モリオカ 1F",
+    "source_url": "https://aqsh.co.jp/company/",
+    "verification": "live browser AX and DOM",
+    "publish_phone": false
+  },
+  "brand_assets": {
+    "verification": "official company page DOM and rendered logo dimensions",
+    "downloaded": true,
+    "source_url": "https://aqsh.co.jp/company/",
+    "logo": {
+      "url": "https://aqsh.co.jp/wp-content/uploads/2024/01/a340bad26f3ec6fe1741a7ff1ad28ba6.png",
+      "width": 1112,
+      "height": 385
+    },
+    "icons": [
+      {
+        "url": "https://aqsh.co.jp/wp-content/uploads/2023/12/cropped-ddc33bb390c2cd276a4cb666abb5e36a-32x32.png",
+        "rel": "icon",
+        "size": 32
+      },
+      {
+        "url": "https://aqsh.co.jp/wp-content/uploads/2023/12/cropped-ddc33bb390c2cd276a4cb666abb5e36a-192x192.png",
+        "rel": "icon",
+        "size": 192
+      },
+      {
+        "url": "https://aqsh.co.jp/wp-content/uploads/2023/12/cropped-ddc33bb390c2cd276a4cb666abb5e36a-180x180.png",
+        "rel": "apple-touch-icon",
+        "size": 180
+      }
+    ]
+  },
+  "cloudflare": {
+    "dashboard_url": "https://dash.cloudflare.com/032177c6a3d3bbf36ce3c60cc4e62404/workers-and-pages",
+    "dashboard_observed_state": "authenticated",
+    "account_plan": "Workers Paid (existing)",
+    "dns_zone_access": "No zone in account; external Muumuu DNS",
+    "existing_resource_usage": "not_verified",
+    "remote_d1_imported": true,
+    "application_deployed": "staging",
+    "dns_changed": false
+  },
+  "webmcp": {
+    "spec_url": "https://webmachinelearning.github.io/webmcp/",
+    "draft_date": "2026-10-09",
+    "chrome_document_url": "https://developer.chrome.com/docs/ai/webmcp",
+    "chrome_document_updated_on": "2026-09-21",
+    "api_entrypoint": "document.modelContext",
+    "draft_methods": [
+      "registerTool",
+      "getTools",
+      "executeTool"
+    ],
+    "registration_cleanup": "AbortSignal",
+    "standard_status": "Draft Community Group Report, not W3C Standard",
+    "origin_trial_required_conditions": "confirm against deployment browser and production origin",
+    "origin_trial_expiry": null,
+    "site_registration_tested": true,
+    "agent_e2e_tested": false,
+    "native_execution_tested": true
+  },
+  "implementation": {
+    "frontend": "Astro + TypeScript",
+    "hosting": "Cloudflare Pages public entrance + Workers SSR service binding",
+    "data": "Cloudflare D1",
+    "assets": "Workers Static Assets",
+    "app_directory": "apps/web",
+    "status": "staging_verified"
+  },
+  "limitations": [
+    "30 open P1 tasks require additional verification.",
+    "No independent product behavior tests performed.",
+    "DNS CNAME connection pending.",
+    "No independent AI tool-selection E2E performed.",
+    "No guarantee of Google indexing or ranking."
+  ]
+}

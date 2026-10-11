@@ -15,7 +15,7 @@ with connect() as c:
     s['latest_batch_details']={'batch_id':batch,'new_document_findings':len(p['findings']),
       'editorial_corrections':len(p.get('reclassifications',[])),'new_price_components':len(p.get('prices',[])),
       'reference_regulations':len(p.get('regulations',[])),
-      'source_retrievals':len(p['sources']),'functional_research_sources':len([x for x in p['sources'] if not x['key'].startswith('logo-')]),
+      'source_retrievals':len(p['sources']),'functional_research_sources':len({f['source'] for f in p['findings']}),
       'functional_research_products':len({f['product'] for f in p['findings']}),
       'products_including_classification_corrections':c.execute('SELECT COUNT(*) FROM batch_product_membership WHERE batch_id=?',(batch,)).fetchone()[0],
       'finding_states':dict(Counter(f.get('state','known') for f in p['findings']))}

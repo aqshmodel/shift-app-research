@@ -1,0 +1,14 @@
+---
+import Base from '../layouts/Base.astro';
+import SearchForm from '../components/SearchForm.astro';
+import {scope} from '../lib/data';
+import {categoryInfo} from '../lib/catalog';
+const data=await scope();
+---
+<Base title="シフト管理・自動作成サービスを、根拠で比較">
+  <section class="hero container"><div class="hero-copy"><p class="eyebrow">SHIFT RESEARCH / 2026.10.11</p><h1>シフト選びに、<br /><span>確かな判断材料を。</span></h1><p class="hero-description">勤務表の自動作成から、様式9、料金、解約時のデータ出力まで。<br class="desktop-break" />公開資料の根拠と、まだ分からないことを並べて比較できます。</p><p class="free-note"><span aria-hidden="true">●</span> 無料・会員登録不要</p></div><div class="research-number"><span>調査対象</span><strong>50<span>製品</span></strong><p>{data.document_observations.toLocaleString()}件の調査記録<br />{data.research_documents}の公開文書を参照</p><a href="/methodology/">調査の範囲を読む ↗</a></div></section>
+  <section class="container search-home" aria-label="製品検索"><SearchForm compact /></section>
+  <section class="container section"><div class="section-head"><div><p class="eyebrow">FIND YOUR CONTEXT</p><h2>現場から探す</h2></div><a href="/products/">すべての製品を見る →</a></div><div class="category-grid">{Object.entries(categoryInfo).map(([id,c],i)=><a class="category-card" href={'/categories/'+id+'/'}><span class="category-number">0{i+1}</span><h3>{c.name}</h3><p>{c.checks[0]}<br />{c.checks[1]}</p><span aria-hidden="true">↗</span></a>)}</div></section>
+  <section class="research-strip"><div class="container"><div><p class="eyebrow">READ THE EVIDENCE</p><h2>「対応」の一言では、<br />分からないことがある。</h2></div><div><p>様式9を出力できることと、最新の算式を検算したこと。MFAが使えることと、すべての管理者に必須にできること。確認した範囲を分けて掲載しています。</p><div class="inline-links"><a href="/references/form-9/">様式9の参照資料 →</a><a href="/methodology/">確認状況の読み方 →</a></div></div></div></section>
+  <section class="container mcp-feature section"><div><p class="eyebrow">FOR PEOPLE & AI</p><h2>AIにも、根拠ごと渡す。</h2><p>Web MCP対応。対応ブラウザのAIから、製品検索・比較・調査記録を取得できます。情報の時点、料金条件、未確認の範囲まで渡します。</p><a href="/webmcp/">Web MCPの利用方法 →</a></div><div class="mcp-diagram"><span>あなたの条件</span><span aria-hidden="true">↓</span><strong>検索・比較・根拠</strong><span aria-hidden="true">↓</span><span>判断材料を、AIへ</span></div></section>
+</Base>

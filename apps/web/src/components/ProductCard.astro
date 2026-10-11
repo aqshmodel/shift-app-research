@@ -1,0 +1,11 @@
+---
+import {categoryInfo,safeImage} from '../lib/catalog';
+const {product:p}=Astro.props;
+---
+<article class="product-card">
+  <div class="card-top"><div class="product-logo">{p.logo?.url && safeImage(p.logo.url)?<img src={p.logo.url} alt={p.logo.brand+' ロゴ'} width="180" height="48" loading="lazy" referrerpolicy="no-referrer" class="vendor-logo" />:<span>{p.name.slice(0,1)}</span>}</div><span class="region">{p.region==='domestic'?'国内の調査対象':'海外の調査対象'}</span></div>
+  <h3><a href={'/products/'+p.slug+'/'}>{p.name}</a></h3><p class="vendor-name">{p.vendor||'提供法人の詳細は調査記録を参照'}</p>
+  <p class="card-summary">{p.summary}</p>
+  <div class="category-list">{p.categories.map((c:string)=><a href={'/categories/'+c+'/'}>{categoryInfo[c].name}</a>)}</div>
+  <div class="card-actions"><a href={'/products/'+p.slug+'/'}>詳細・根拠を見る <span aria-hidden="true">↗</span></a><button class="compare-add" type="button" data-id={p.id} data-label={p.name} aria-pressed="false">比較に追加</button></div>
+</article>

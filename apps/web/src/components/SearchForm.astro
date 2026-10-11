@@ -1,0 +1,14 @@
+---
+import { categoryInfo,criterionLabels,stateLabels } from '../lib/catalog';
+const { filters={},compact=false }=Astro.props;
+---
+<form class:list={['search-form',{compact}]} action="/products/" method="get" id="product-search">
+  <div class="search-line"><label for="q">製品名・会社名・機能で検索</label><div><input id="q" name="q" type="search" value={filters.q||''} maxlength="100" placeholder="例：夜勤、様式9、Shiftmation" /><button type="submit" class="button">検索する <span aria-hidden="true">→</span></button></div></div>
+  {!compact && <div class="filter-line">
+    <label>用途<select name="category"><option value="">すべての用途</option>{Object.entries(categoryInfo).map(([id,c])=><option value={id} selected={filters.category===id}>{c.name}</option>)}</select></label>
+    <label>調査区分<select name="region"><option value="">国内・海外</option><option value="domestic" selected={filters.region==='domestic'}>国内</option><option value="overseas" selected={filters.region==='overseas'}>海外</option></select></label>
+    <label>確認したい項目<select name="feature"><option value="">指定しない</option>{Object.entries(criterionLabels).map(([id,label])=><option value={id} selected={filters.feature===id}>{label}</option>)}</select></label>
+    <label>項目の確認状況<select name="state"><option value="">資料で確認した範囲</option>{['documented','disputed','planned'].map(id=><option value={id} selected={filters.state===id}>{stateLabels[id]}</option>)}</select></label>
+    <a href="/products/" class="reset-link">条件を解除</a>
+  </div>}
+</form>

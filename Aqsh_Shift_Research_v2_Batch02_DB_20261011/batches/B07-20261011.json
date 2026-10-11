@@ -1,0 +1,900 @@
+{
+  "batch_id": "B07-20261011",
+  "prior_batch": "B06-20261011",
+  "as_of_date": "2026-10-11",
+  "resolution_policy_version": 2,
+  "description": "公開前追加調査：提供予定・自動割当の範囲・多言語プラン差・現行料金表と認証ヘルプの照合",
+  "method": "公開一次資料の本文比較。営業連絡、会員登録、デモ利用、実Excel検算、解約再構成試験は未実施。HTTP確認は本文の機能確認と区別。",
+  "sources": [
+    {
+      "key": "naftyfte",
+      "url": "https://nafty.app/fte/",
+      "title": "常勤換算と人員配置基準の点検",
+      "publisher": "株式会社KakuKaku",
+      "reference": "turn173view0",
+      "retrieved_on": "2026-10-11"
+    },
+    {
+      "key": "naftycare",
+      "url": "https://nafty.app/care/",
+      "title": "介護施設のシフト作成",
+      "publisher": "株式会社KakuKaku",
+      "reference": "turn169view4",
+      "retrieved_on": "2026-10-11"
+    },
+    {
+      "key": "plandayda",
+      "url": "https://help.planday.com/da/articles/760172-sadan-opretter-du-en-vagtplan-automatisk-med-den-nye-auto-vagtplan-beta-plus-pro",
+      "title": "新Auto-schedule β デンマーク語ヘルプ",
+      "publisher": "Planday",
+      "reference": "turn173view1",
+      "retrieved_on": "2026-10-11"
+    },
+    {
+      "key": "plandayde",
+      "url": "https://help.planday.com/de/articles/760172-so-erstellen-sie-automatisch-einen-dienstplan-mit-dem-neuen-auto-dienstplaner-beta-plus-pro",
+      "title": "新Auto-schedule β ドイツ語ヘルプ",
+      "publisher": "Planday",
+      "reference": "turn171view1",
+      "retrieved_on": "2026-10-11",
+      "published_on": "2026-08-20"
+    },
+    {
+      "key": "plandaynb",
+      "url": "https://help.planday.com/nb/articles/760172-slik-genererer-du-en-vaktplan-automatisk-med-nye-planlegg-automatisk-beta-plus-pro",
+      "title": "新Auto-schedule β ノルウェー語ヘルプ",
+      "publisher": "Planday",
+      "reference": "turn171view2",
+      "retrieved_on": "2026-10-11",
+      "published_on": "2026-08-20"
+    },
+    {
+      "key": "rakuauto",
+      "url": "https://rakushifu.jp/function/ai-gen/",
+      "title": "自動作成 機能紹介",
+      "publisher": "株式会社クロスビット",
+      "reference": "turn172view1",
+      "retrieved_on": "2026-10-11"
+    },
+    {
+      "key": "rakurelease",
+      "url": "https://rakushifu.jp/news/press-release/20251104/",
+      "title": "らくしふ オートメーション 提供開始",
+      "publisher": "株式会社クロスビット",
+      "reference": "turn173view2",
+      "retrieved_on": "2026-10-11",
+      "published_on": "2025-11-04"
+    },
+    {
+      "key": "airwork",
+      "url": "https://airregi.jp/shift/function/workschedule/",
+      "title": "ワークスケジュール",
+      "publisher": "株式会社リクルート",
+      "reference": "turn172view3",
+      "retrieved_on": "2026-10-11"
+    },
+    {
+      "key": "airfunc",
+      "url": "https://airregi.jp/shift/function/",
+      "title": "Airシフト 機能について",
+      "publisher": "株式会社リクルート",
+      "reference": "turn170view1",
+      "retrieved_on": "2026-10-11"
+    },
+    {
+      "key": "connectprice",
+      "url": "https://connecteam.com/pricing/",
+      "title": "Connecteam Pricing 現行公開表",
+      "publisher": "Connecteam",
+      "reference": "turn169view5",
+      "retrieved_on": "2026-10-11"
+    },
+    {
+      "key": "connect2fa",
+      "url": "https://help.connecteam.com/en/articles/3112479-two-factor-authentication-2fa",
+      "title": "Two-Factor Authentication",
+      "publisher": "Connecteam",
+      "reference": "turn168view2",
+      "retrieved_on": "2026-10-11",
+      "updated_on": "2026-08-13"
+    },
+    {
+      "key": "wiwprice",
+      "url": "https://wheniwork.com/pricing",
+      "title": "When I Work Pricing 現行公開表",
+      "publisher": "When I Work",
+      "reference": "turn167search1",
+      "retrieved_on": "2026-10-11"
+    },
+    {
+      "key": "oracleint",
+      "url": "https://docs.oracle.com/cd/G48964_01/hcm92pbr54/eng/hcm/hhaf/UnderstandingIntegrationwithClairvia-49765f.html",
+      "title": "Understanding Integration with Clairvia",
+      "publisher": "Oracle",
+      "reference": "turn171view3",
+      "retrieved_on": "2026-10-11",
+      "version_label": "PeopleSoft HCM 9.2 PBR54"
+    },
+    {
+      "key": "rosterprice",
+      "url": "https://rosterlab.com/us/pricing",
+      "title": "RosterLab 米国料金ページ 再確認",
+      "publisher": "RosterLab",
+      "reference": "turn172view4",
+      "retrieved_on": "2026-10-11"
+    },
+    {
+      "key": "mysyslogo",
+      "url": "https://my-sys.net/2021/?page_id=223",
+      "title": "勤夢表VX 公式機能・画像参照",
+      "publisher": "マイシス株式会社",
+      "retrieved_on": "2026-10-11",
+      "reference": "HTTPS image GET"
+    }
+  ],
+  "findings": [
+    {
+      "product": "JP04",
+      "source": "naftyfte",
+      "criterion": "A03",
+      "summary": "常勤換算は提供前で、提供日をまだ決めていないと明示。介護紹介ページにも提供前の表示がある。",
+      "locator": "リリース前／介護ページ冒頭",
+      "scope": "Nafty 常勤換算（提供予定）",
+      "state": "known",
+      "delivery": "native",
+      "limitations": "公開文書の確認。機能の実動作・個別契約・性能は未検証。令和6年度介護基準の予定機能の説明で、令和8年度医療様式9の検証ではない。"
+    },
+    {
+      "product": "JP04",
+      "source": "naftyfte",
+      "criterion": "B07",
+      "summary": "常勤換算はStandard/Premiumの基本機能として追加費用なしと説明するが、現時点では未リリース。医療様式9の別アドオンとは別の範囲。",
+      "locator": "追加料金／対象プラン",
+      "scope": "Nafty 常勤換算（提供予定）",
+      "state": "known",
+      "delivery": "native",
+      "limitations": "公開文書の確認。機能の実動作・個別契約・性能は未検証。令和6年度介護基準の予定機能の説明で、令和8年度医療様式9の検証ではない。"
+    },
+    {
+      "product": "JP04",
+      "source": "naftyfte",
+      "criterion": "J06",
+      "summary": "予定機能の集計は施設単位の判定。部署別数値は内訳であり、部署単位の基準充足判定ではない。",
+      "locator": "出せないときは、出しません",
+      "scope": "Nafty 常勤換算（提供予定）",
+      "state": "known",
+      "delivery": "native",
+      "limitations": "公開文書の確認。機能の実動作・個別契約・性能は未検証。令和6年度介護基準の予定機能の説明で、令和8年度医療様式9の検証ではない。"
+    },
+    {
+      "product": "JP04",
+      "source": "naftyfte",
+      "criterion": "J06",
+      "summary": "予定機能は所定時間が未設定なら計算値を出さず、既定値で補完しないと説明。",
+      "locator": "所定労働時間／判定不能",
+      "scope": "Nafty 常勤換算（提供予定）",
+      "state": "known",
+      "delivery": "native",
+      "limitations": "公開文書の確認。機能の実動作・個別契約・性能は未検証。令和6年度介護基準の予定機能の説明で、令和8年度医療様式9の検証ではない。"
+    },
+    {
+      "product": "JP04",
+      "source": "naftyfte",
+      "criterion": "J06",
+      "summary": "予定の常勤換算は職員の寄与を1.0で上限にし、兼務を按分。合計時に一度丸めると説明。",
+      "locator": "兼務／常勤換算の数え方",
+      "scope": "Nafty 常勤換算（提供予定）",
+      "state": "known",
+      "delivery": "native",
+      "limitations": "公開文書の確認。機能の実動作・個別契約・性能は未検証。令和6年度介護基準の予定機能の説明で、令和8年度医療様式9の検証ではない。"
+    },
+    {
+      "product": "JP04",
+      "source": "naftyfte",
+      "criterion": "J06",
+      "summary": "予定機能の分母は週所定時間、32時間未満なら32時間。残業を分子に入れず、対象の短時間措置は週30時間以上なら1.0と説明。",
+      "locator": "常勤換算の数え方",
+      "scope": "Nafty 常勤換算（提供予定）",
+      "state": "known",
+      "delivery": "native",
+      "limitations": "公開文書の確認。機能の実動作・個別契約・性能は未検証。令和6年度介護基準の予定機能の説明で、令和8年度医療様式9の検証ではない。"
+    },
+    {
+      "product": "JP04",
+      "source": "naftyfte",
+      "criterion": "J06",
+      "summary": "画面の予定値は自己点検用で、届出値として使用できない。制度適合や指定権者の判断を代替しない。",
+      "locator": "自己点検値／FAQ",
+      "scope": "Nafty 常勤換算（提供予定）",
+      "state": "known",
+      "delivery": "native",
+      "limitations": "公開文書の確認。機能の実動作・個別契約・性能は未検証。令和6年度介護基準の予定機能の説明で、令和8年度医療様式9の検証ではない。"
+    },
+    {
+      "product": "JP04",
+      "source": "naftycare",
+      "criterion": "A03",
+      "summary": "介護向け公開案内も常勤換算を提供前の基本機能とする。新サービスの2026年表記から常勤換算の提供開始を推測しない。",
+      "locator": "冒頭の提供前表示",
+      "scope": "介護紹介ページ",
+      "state": "known",
+      "delivery": "native",
+      "limitations": "公開文書の確認。機能の実動作・個別契約・性能は未検証。"
+    },
+    {
+      "product": "US20",
+      "source": "plandayda",
+      "criterion": "B07",
+      "summary": "デンマーク語の冒頭は全プランとするが、同記事の展開説明はPlus/Pro限定。ドイツ語はStarter/Plus/Pro、ノルウェー語はPlus/Pro。新βの対象プランには文書差が残る。",
+      "locator": "対象プラン／Good to know",
+      "scope": "新Auto-schedule β・多言語版",
+      "state": "disputed",
+      "delivery": "unknown",
+      "limitations": "公開文書の確認。機能の実動作・個別契約・性能は未検証。国別契約への適用や翻訳更新順序は未確認。"
+    },
+    {
+      "product": "US20",
+      "source": "plandayde",
+      "criterion": "B07",
+      "summary": "ドイツ語版の対象プラン欄はStarter/Plus/Pro。Plus/Proだけとする別言語版との差は未解消。",
+      "locator": "Paket",
+      "scope": "新Auto-schedule β・ドイツ語",
+      "state": "disputed",
+      "delivery": "unknown",
+      "limitations": "公開文書の確認。機能の実動作・個別契約・性能は未検証。"
+    },
+    {
+      "product": "US20",
+      "source": "plandaynb",
+      "criterion": "B07",
+      "summary": "ノルウェー語版はPlus/Proと明記。旧Proのみの自動作成と、新βを分けて説明する。",
+      "locator": "Abonnementsplan／旧ツール案内",
+      "scope": "新Auto-schedule β・ノルウェー語",
+      "state": "known",
+      "delivery": "unknown",
+      "limitations": "公開文書の確認。機能の実動作・個別契約・性能は未検証。"
+    },
+    {
+      "product": "US20",
+      "source": "plandayda",
+      "criterion": "A03",
+      "summary": "新βは選定顧客へ地域ごとに展開。英国・アイルランド、北欧・DACH、その他地域の順と説明。各国での完了日は不明。",
+      "locator": "展開地域",
+      "scope": "新Auto-schedule β・デンマーク語",
+      "state": "known",
+      "delivery": "unknown",
+      "limitations": "公開文書の確認。機能の実動作・個別契約・性能は未検証。"
+    },
+    {
+      "product": "US20",
+      "source": "plandayda",
+      "criterion": "B07",
+      "summary": "新βはWeb限定と説明。モバイル利用まで一律対応と判定しない。",
+      "locator": "Web-only",
+      "scope": "新Auto-schedule β・デンマーク語",
+      "state": "known",
+      "delivery": "unknown",
+      "limitations": "公開文書の確認。機能の実動作・個別契約・性能は未検証。"
+    },
+    {
+      "product": "US20",
+      "source": "plandayda",
+      "criterion": "B08",
+      "summary": "生成対象部署に実際の勤務履歴が最低2週間必要。反復傾向の乏しい臨時週では提案精度が低くなり得ると説明。",
+      "locator": "履歴条件",
+      "scope": "新Auto-schedule β・デンマーク語",
+      "state": "known",
+      "delivery": "unknown",
+      "limitations": "公開文書の確認。機能の実動作・個別契約・性能は未検証。"
+    },
+    {
+      "product": "US20",
+      "source": "plandayda",
+      "criterion": "H07",
+      "summary": "生成結果は下書きで、職員へ届くには管理者による公開が必要。分析の取消と適用直後の取消時間がある。",
+      "locator": "下書き／取消",
+      "scope": "新Auto-schedule β・デンマーク語",
+      "state": "known",
+      "delivery": "unknown",
+      "limitations": "公開文書の確認。機能の実動作・個別契約・性能は未検証。"
+    },
+    {
+      "product": "US20",
+      "source": "plandayda",
+      "criterion": "N06",
+      "summary": "新βで使うデータはPlanday内にとどまり、外部共有されないとの説明。保存期間や処理事業者の契約範囲まで証明しない。",
+      "locator": "データの扱い",
+      "scope": "新Auto-schedule β・デンマーク語",
+      "state": "known",
+      "delivery": "unknown",
+      "limitations": "公開文書の確認。機能の実動作・個別契約・性能は未検証。"
+    },
+    {
+      "product": "JP26",
+      "source": "rakuauto",
+      "criterion": "B01",
+      "summary": "公式機能ページは時間帯別人数・役割・禁止条件と優先順位を設定した勤務表自動作成を説明。希望の回収・転記に限定されない。",
+      "locator": "AI自動作成／条件",
+      "scope": "らくしふ 自動作成の契約タイプ別説明",
+      "state": "known",
+      "delivery": "addon",
+      "limitations": "公開文書の確認。機能の実動作・個別契約・性能は未検証。"
+    },
+    {
+      "product": "JP26",
+      "source": "rakuauto",
+      "criterion": "B07",
+      "summary": "ピーク時間中心と24時間・配置基準中心の2タイプで提供機能と料金が異なる。一般契約の標準機能と一括で扱わない。",
+      "locator": "2タイプ／料金留保",
+      "scope": "らくしふ 自動作成の契約タイプ別説明",
+      "state": "known",
+      "delivery": "addon",
+      "limitations": "公開文書の確認。機能の実動作・個別契約・性能は未検証。"
+    },
+    {
+      "product": "JP26",
+      "source": "rakuauto",
+      "criterion": "D03",
+      "summary": "配置数をポジション・スキル別に設定できると説明。各職種の法定算式・違反防止の実装は未確認。",
+      "locator": "複雑な条件",
+      "scope": "らくしふ 自動作成の契約タイプ別説明",
+      "state": "known",
+      "delivery": "addon",
+      "limitations": "公開文書の確認。機能の実動作・個別契約・性能は未検証。"
+    },
+    {
+      "product": "JP26",
+      "source": "rakuauto",
+      "criterion": "C07",
+      "summary": "24時間型で夜勤明けに配慮した条件を説明。具体的休息時間と日跨ぎ算式は未確認。",
+      "locator": "24時間体制",
+      "scope": "らくしふ 自動作成の契約タイプ別説明",
+      "state": "known",
+      "delivery": "addon",
+      "limitations": "公開文書の確認。機能の実動作・個別契約・性能は未検証。"
+    },
+    {
+      "product": "JP26",
+      "source": "rakurelease",
+      "criterion": "A03",
+      "summary": "医療・介護向け別サービス「らくしふ オートメーション」の正式提供開始日を2025年11月1日と公表。一般のらくしふ契約と区別する。",
+      "locator": "正式提供開始日",
+      "scope": "別サービス らくしふ オートメーション",
+      "state": "known",
+      "delivery": "addon",
+      "limitations": "公開文書の確認。機能の実動作・個別契約・性能は未検証。"
+    },
+    {
+      "product": "JP26",
+      "source": "rakurelease",
+      "criterion": "J05",
+      "summary": "様式9と介護勤務形態一覧表に使えるデータ出力を説明。令和8年度の数式適合や完成届出書の検証ではない。",
+      "locator": "帳票向けデータ出力",
+      "scope": "別サービス らくしふ オートメーション",
+      "state": "known",
+      "delivery": "addon",
+      "limitations": "公開文書の確認。機能の実動作・個別契約・性能は未検証。"
+    },
+    {
+      "product": "JP26",
+      "source": "rakurelease",
+      "criterion": "M02",
+      "summary": "帳票作成用のデータ出力を公表。ファイル形式、列構成、対象期間、全設定の解約返却は未確認。",
+      "locator": "帳票向けデータ出力",
+      "scope": "別サービス らくしふ オートメーション",
+      "state": "known",
+      "delivery": "addon",
+      "limitations": "公開文書の確認。機能の実動作・個別契約・性能は未検証。"
+    },
+    {
+      "product": "JP27",
+      "source": "airwork",
+      "criterion": "B01",
+      "summary": "ワークスケジュールの自動化は既に作成したシフトに対する業務割当。勤務表全体の自動生成と同一ではない。",
+      "locator": "シフト情報をもとに業務割当",
+      "scope": "Airシフト連携 ワークスケジュール",
+      "state": "known",
+      "delivery": "unknown",
+      "limitations": "公開文書の確認。機能の実動作・個別契約・性能は未検証。"
+    },
+    {
+      "product": "JP27",
+      "source": "airwork",
+      "criterion": "B07",
+      "summary": "Airシフト利用者はワークスケジュールを無料で利用できると説明。Airシフトの利用料全体が無料という意味ではない。",
+      "locator": "冒頭／無料利用",
+      "scope": "Airシフト連携 ワークスケジュール",
+      "state": "known",
+      "delivery": "unknown",
+      "limitations": "公開文書の確認。機能の実動作・個別契約・性能は未検証。"
+    },
+    {
+      "product": "JP27",
+      "source": "airwork",
+      "criterion": "M03",
+      "summary": "Airシフトの作成済みシフトを1日1回自動反映して業務割当に利用する。即時同期と判定しない。",
+      "locator": "シフト情報の取り込み",
+      "scope": "Airシフト連携 ワークスケジュール",
+      "state": "known",
+      "delivery": "unknown",
+      "limitations": "公開文書の確認。機能の実動作・個別契約・性能は未検証。"
+    },
+    {
+      "product": "JP27",
+      "source": "airwork",
+      "criterion": "D03",
+      "summary": "業務割当はスキル・シフト時間・必要人数を考慮。未経験者割当のエラー検知を説明。",
+      "locator": "最適な割当／エラー",
+      "scope": "Airシフト連携 ワークスケジュール",
+      "state": "known",
+      "delivery": "unknown",
+      "limitations": "公開文書の確認。機能の実動作・個別契約・性能は未検証。"
+    },
+    {
+      "product": "JP27",
+      "source": "airwork",
+      "criterion": "H01",
+      "summary": "業務割当をドラッグ操作で調整し、曜日・イベント別テンプレートに保存できる。固定勤務保持の最適化保証とは別。",
+      "locator": "調整／テンプレート",
+      "scope": "Airシフト連携 ワークスケジュール",
+      "state": "known",
+      "delivery": "unknown",
+      "limitations": "公開文書の確認。機能の実動作・個別契約・性能は未検証。"
+    },
+    {
+      "product": "JP27",
+      "source": "airfunc",
+      "criterion": "B01",
+      "summary": "希望シフトの自動転記・確定後共有と、業務自動割当を分けて紹介。取得範囲に勤務表全体の最適化生成の明示は確認できない。",
+      "locator": "機能一覧",
+      "scope": "Airシフト／関連ワークスケジュール",
+      "state": "not_found",
+      "delivery": "unknown",
+      "limitations": "公開文書の確認。機能の実動作・個別契約・性能は未検証。"
+    },
+    {
+      "product": "US09",
+      "source": "connectprice",
+      "criterion": "N02",
+      "summary": "現行料金比較表でも管理者2FAはEnterprise列のみ。2026年8月ヘルプのBasic以上と整合せず、Expert提供単位への適用は未確定。",
+      "locator": "Operations比較表／管理者2FA",
+      "scope": "Operations Hub ExpertとEnterprise",
+      "state": "disputed",
+      "delivery": "unknown",
+      "limitations": "公開文書の確認。機能の実動作・個別契約・性能は未検証。"
+    },
+    {
+      "product": "US09",
+      "source": "connect2fa",
+      "criterion": "N02",
+      "summary": "ヘルプはBasic以上で管理者ダッシュボード全員へSMS PINを要求する設定を説明。現行料金表にEnterprise限定の表示があり契約範囲は確定できない。",
+      "locator": "利用プラン／全管理者設定",
+      "scope": "管理者ダッシュボード",
+      "state": "disputed",
+      "delivery": "unknown",
+      "limitations": "公開文書の確認。機能の実動作・個別契約・性能は未検証。"
+    },
+    {
+      "product": "US19",
+      "source": "wiwprice",
+      "criterion": "B07",
+      "summary": "料金カードはEssentialsにも複数拠点を掲載し、勤怠は追加トグル。FAQは2.50ドルを単一拠点、5ドルを複数拠点と説明し勤怠含有とする。現行本文内の条件差は未解消。",
+      "locator": "Essentialsカード／FAQ",
+      "scope": "公開料金カードとFAQ",
+      "state": "disputed",
+      "delivery": "unknown",
+      "limitations": "公開文書の確認。機能の実動作・個別契約・性能は未検証。"
+    },
+    {
+      "product": "US15",
+      "source": "oracleint",
+      "criterion": "M03",
+      "summary": "PeopleSoft HCM 9.2 PBR54との連携はIntegration Brokerによる非同期交換。HRから従業員・職務・プロファイルを送る。",
+      "locator": "連携／HRデータ",
+      "scope": "PeopleSoft HCM 9.2 PBR54との連携資料",
+      "state": "known",
+      "delivery": "unknown",
+      "limitations": "公開文書の確認。機能の実動作・個別契約・性能は未検証。"
+    },
+    {
+      "product": "US15",
+      "source": "oracleint",
+      "criterion": "M03",
+      "summary": "PeopleSoft Time and Laborから打刻・休暇残高・支払対象時間を送り、Clairviaから勤務表・予定休暇を返す。",
+      "locator": "連携データの方向",
+      "scope": "PeopleSoft HCM 9.2 PBR54との連携資料",
+      "state": "known",
+      "delivery": "unknown",
+      "limitations": "公開文書の確認。機能の実動作・個別契約・性能は未検証。"
+    },
+    {
+      "product": "US15",
+      "source": "oracleint",
+      "criterion": "A03",
+      "summary": "Oracle現行公開マニュアルにClairvia連携が掲載される。これだけで販売地域・契約主体・販売版・購入可否を確定しない。",
+      "locator": "PBR54公開マニュアル",
+      "scope": "PeopleSoft HCM 9.2 PBR54との連携資料",
+      "state": "known",
+      "delivery": "unknown",
+      "limitations": "公開文書の確認。機能の実動作・個別契約・性能は未検証。"
+    },
+    {
+      "product": "US01",
+      "source": "rosterprice",
+      "criterion": "P01",
+      "summary": "米国ページのAI Optimizedは1人月15 USDを再確認。最低人数・税・請求契約と、以前の比較表20 USDとの差は未確定。",
+      "locator": "AI Optimizedカード",
+      "scope": "米国公開料金",
+      "state": "known",
+      "delivery": "unknown",
+      "limitations": "公開文書の確認。機能の実動作・個別契約・性能は未検証。新しい正式見積の取得ではない。古い価格証拠を削除しない。"
+    },
+    {
+      "product": "US01",
+      "source": "rosterprice",
+      "criterion": "B07",
+      "summary": "無料Digitalは手動作成。AI Optimizedと、SSO・APIを説明するEnterpriseの提供範囲を分ける。",
+      "locator": "プラン別機能",
+      "scope": "米国公開料金",
+      "state": "known",
+      "delivery": "unknown",
+      "limitations": "公開文書の確認。機能の実動作・個別契約・性能は未検証。"
+    }
+  ],
+  "prices": [],
+  "followups": [],
+  "task_updates": [
+    {
+      "task_id": "B03-20261011-TASK005",
+      "state": "in_progress",
+      "method": "public_document",
+      "priority": 1,
+      "note": "常勤換算の提供前・時期未定、Standard/Premiumの予定基本機能、医療様式9との別範囲を再確認。正式公開日は引き続き未定。"
+    },
+    {
+      "task_id": "TASK-B02-014",
+      "state": "in_progress",
+      "method": "vendor_document",
+      "priority": 1,
+      "note": "一般シフトの自動作成2タイプと別サービスの正式開始日を確認。一般らくしふ契約の内包・具体的価格は未確認。"
+    },
+    {
+      "task_id": "TASK-B02-015",
+      "state": "in_progress",
+      "method": "vendor_document",
+      "priority": 1,
+      "note": "業務の自動割当は確認。勤務表全体の自動生成とは分離し、対象範囲の追加確認を継続。"
+    },
+    {
+      "task_id": "B03-20261011-TASK002",
+      "state": "in_progress",
+      "method": "vendor_document",
+      "priority": 1,
+      "note": "地域展開順序は取得。対象プラン欄は言語別・記事内で差があり、契約適用を継続確認。"
+    },
+    {
+      "task_id": "B06-20261011-TASK002",
+      "state": "in_progress",
+      "method": "vendor_document",
+      "priority": 1,
+      "note": "現行料金表にもEnterprise限定が残存し、Basic以上のヘルプとの差は未解消。"
+    }
+  ],
+  "retrieval_checks": [
+    {
+      "product": "JP01",
+      "url": "https://shiftmation.com/",
+      "result": "http_200",
+      "notes": "GET確認のみ。最終URL=https://shiftmation.com/; content_type=text/html; charset=UTF-8; 読取上限300000bytes。HTTP成功は内容・機能・契約の確認ではない。"
+    },
+    {
+      "product": "JP02",
+      "url": "https://www.optamo.jp/shift/",
+      "result": "http_200",
+      "notes": "GET確認のみ。最終URL=https://www.optamo.jp/shift/; content_type=text/html; charset=UTF-8; 読取上限300000bytes。HTTP成功は内容・機能・契約の確認ではない。"
+    },
+    {
+      "product": "JP03",
+      "url": "https://www.fikaigo.com/",
+      "result": "http_200",
+      "notes": "GET確認のみ。最終URL=https://www.fikaigo.com/; content_type=text/html; charset=UTF-8; 読取上限300000bytes。HTTP成功は内容・機能・契約の確認ではない。"
+    },
+    {
+      "product": "JP04",
+      "url": "https://nafty.app/",
+      "result": "http_200",
+      "notes": "GET確認のみ。最終URL=https://nafty.app/; content_type=text/html; 読取上限300000bytes。HTTP成功は内容・機能・契約の確認ではない。"
+    },
+    {
+      "product": "JP05",
+      "url": "https://www.otasukeman.jp/",
+      "result": "http_200",
+      "notes": "GET確認のみ。最終URL=https://www.otasukeman.jp/; content_type=text/html;charset=utf-8; 読取上限300000bytes。HTTP成功は内容・機能・契約の確認ではない。"
+    },
+    {
+      "product": "JP06",
+      "url": "https://www.otasukeman.jp/",
+      "result": "http_200",
+      "notes": "GET確認のみ。最終URL=https://www.otasukeman.jp/; content_type=text/html;charset=utf-8; 読取上限300000bytes。HTTP成功は内容・機能・契約の確認ではない。"
+    },
+    {
+      "product": "JP07",
+      "url": "https://www.konicaminolta.com/jp-ja/miramos/",
+      "result": "http_200",
+      "notes": "GET確認のみ。最終URL=https://www.konicaminolta.com/jp-ja/miramos/; content_type=text/html; 読取上限300000bytes。HTTP成功は内容・機能・契約の確認ではない。"
+    },
+    {
+      "product": "JP08",
+      "url": "https://synchroseries.jp/",
+      "result": "http_200",
+      "notes": "GET確認のみ。最終URL=https://synchroseries.jp/; content_type=text/html;charset=utf-8; 読取上限300000bytes。HTTP成功は内容・機能・契約の確認ではない。"
+    },
+    {
+      "product": "JP09",
+      "url": "https://products.ndis.jp/shift-neo/medical/",
+      "result": "http_200",
+      "notes": "GET確認のみ。最終URL=https://products.ndis.jp/shift-neo/medical/; content_type=text/html; 読取上限300000bytes。HTTP成功は内容・機能・契約の確認ではない。"
+    },
+    {
+      "product": "JP10",
+      "url": "https://www.pitat-shift.jp/lp.html",
+      "result": "http_200",
+      "notes": "GET確認のみ。最終URL=https://www.pitat-shift.jp/lp.html; content_type=text/html; 読取上限300000bytes。HTTP成功は内容・機能・契約の確認ではない。"
+    },
+    {
+      "product": "JP11",
+      "url": "https://nurse-shift.com/",
+      "result": "http_200",
+      "notes": "GET確認のみ。最終URL=https://nurse-shift.com/; content_type=text/html; charset=utf-8; 読取上限300000bytes。HTTP成功は内容・機能・契約の確認ではない。"
+    },
+    {
+      "product": "JP12",
+      "url": "https://www.aishift.com/",
+      "result": "http_200",
+      "notes": "GET確認のみ。最終URL=https://www.aishift.com/; content_type=text/html; 読取上限300000bytes。HTTP成功は内容・機能・契約の確認ではない。"
+    },
+    {
+      "product": "JP13",
+      "url": "https://hospi.ai/",
+      "result": "http_200",
+      "notes": "GET確認のみ。最終URL=https://hospi.ai/; content_type=text/html;charset=utf-8; 読取上限300000bytes。HTTP成功は内容・機能・契約の確認ではない。"
+    },
+    {
+      "product": "JP14",
+      "url": "https://www.msi.co.jp/solution/scheduling.html",
+      "result": "http_200",
+      "notes": "GET確認のみ。最終URL=https://www.msi.co.jp/solution/scheduling.html; content_type=text/html; 読取上限300000bytes。HTTP成功は内容・機能・契約の確認ではない。"
+    },
+    {
+      "product": "JP15",
+      "url": "https://products.ndis.jp/shift-neo/wellness/",
+      "result": "http_200",
+      "notes": "GET確認のみ。最終URL=https://products.ndis.jp/shift-neo/wellness/; content_type=text/html; 読取上限300000bytes。HTTP成功は内容・機能・契約の確認ではない。"
+    },
+    {
+      "product": "JP16",
+      "url": "https://www.optamo.jp/task/index.html",
+      "result": "http_200",
+      "notes": "GET確認のみ。最終URL=https://www.optamo.jp/task/index.html; content_type=text/html; charset=UTF-8; 読取上限300000bytes。HTTP成功は内容・機能・契約の確認ではない。"
+    },
+    {
+      "product": "JP17",
+      "url": "https://www.shifteeapp.jp/",
+      "result": "http_200",
+      "notes": "GET確認のみ。最終URL=https://www.shifteeapp.jp/; content_type=text/html; charset=UTF-8; 読取上限300000bytes。HTTP成功は内容・機能・契約の確認ではない。"
+    },
+    {
+      "product": "JP18",
+      "url": "https://opluswork.com/",
+      "result": "http_200",
+      "notes": "GET確認のみ。最終URL=https://opluswork.com/; content_type=text/html; charset=utf-8; 読取上限300000bytes。HTTP成功は内容・機能・契約の確認ではない。"
+    },
+    {
+      "product": "JP19",
+      "url": "https://ideanexsys.com/看護介護の勤務表概要/",
+      "result": "http_200",
+      "notes": "日本語パスを正しくURL符号化して再確認。最終URL=https://ideanexsys.com/%E7%9C%8B%E8%AD%B7%E4%BB%8B%E8%AD%B7%E3%81%AE%E5%8B%A4%E5%8B%99%E8%A1%A8%E6%A6%82%E8%A6%81/。機能の検証とは別。"
+    },
+    {
+      "product": "JP20",
+      "url": "https://epigno.jp/epitalhr/",
+      "result": "http_200",
+      "notes": "GET確認のみ。最終URL=https://epigno.jp/epitalhr/; content_type=text/html; charset=UTF-8; 読取上限300000bytes。HTTP成功は内容・機能・契約の確認ではない。"
+    },
+    {
+      "product": "JP21",
+      "url": "https://www.sbn.co.jp/ramanas/",
+      "result": "http_200",
+      "notes": "GET確認のみ。最終URL=https://www.sbn.co.jp/ramanas/; content_type=text/html; charset=UTF-8; 読取上限300000bytes。HTTP成功は内容・機能・契約の確認ではない。"
+    },
+    {
+      "product": "JP22",
+      "url": "https://www.sbn.co.jp/servis/faq/",
+      "result": "http_200",
+      "notes": "GET確認のみ。最終URL=https://www.sbn.co.jp/servis/faq/; content_type=text/html; charset=UTF-8; 読取上限300000bytes。HTTP成功は内容・機能・契約の確認ではない。"
+    },
+    {
+      "product": "JP23",
+      "url": "https://shiftta.com/",
+      "result": "http_200",
+      "notes": "GET確認のみ。最終URL=https://shiftta.com/; content_type=text/html; charset=utf-8; 読取上限300000bytes。HTTP成功は内容・機能・契約の確認ではない。"
+    },
+    {
+      "product": "JP24",
+      "url": "https://shiftyasan.com/",
+      "result": "http_200",
+      "notes": "GET確認のみ。最終URL=https://shiftyasan.com/; content_type=text/html; charset=utf-8; 読取上限300000bytes。HTTP成功は内容・機能・契約の確認ではない。"
+    },
+    {
+      "product": "JP25",
+      "url": "https://www.rshift.jp/product.php",
+      "result": "http_200",
+      "notes": "GET確認のみ。最終URL=https://www.rshift.jp/product.php; content_type=text/html; charset=UTF-8; 読取上限300000bytes。HTTP成功は内容・機能・契約の確認ではない。"
+    },
+    {
+      "product": "JP26",
+      "url": "https://rakushifu.jp/",
+      "result": "http_200",
+      "notes": "GET確認のみ。最終URL=https://rakushifu.jp/; content_type=text/html; charset=UTF-8; 読取上限300000bytes。HTTP成功は内容・機能・契約の確認ではない。"
+    },
+    {
+      "product": "JP27",
+      "url": "https://airregi.jp/shift/function/management/",
+      "result": "http_200",
+      "notes": "GET確認のみ。最終URL=https://airregi.jp/shift/function/management/; content_type=text/html; 読取上限300000bytes。HTTP成功は内容・機能・契約の確認ではない。"
+    },
+    {
+      "product": "US01",
+      "url": "https://rosterlab.com/us/pricing",
+      "result": "http_200",
+      "notes": "GET確認のみ。最終URL=https://rosterlab.com/us/pricing; content_type=text/html; charset=utf-8; 読取上限300000bytes。HTTP成功は内容・機能・契約の確認ではない。"
+    },
+    {
+      "product": "US02",
+      "url": "https://www.qgenda.com/nurse-and-staff-scheduling-software/",
+      "result": "http_200",
+      "notes": "GET確認のみ。最終URL=https://www.qgenda.com/nurse-and-staff-scheduling-software/; content_type=text/html; charset=UTF-8; 読取上限300000bytes。HTTP成功は内容・機能・契約の確認ではない。"
+    },
+    {
+      "product": "US03",
+      "url": "https://www.symplr.com/products/smart-square",
+      "result": "http_403",
+      "notes": "公開URLのGETでHTTPエラー。クローラ制限の可能性を含み、サービス停止とは判定しない。"
+    },
+    {
+      "product": "US04",
+      "url": "https://www.smartlinx.com/solutions/scheduling",
+      "result": "http_200",
+      "notes": "GET確認のみ。最終URL=https://www.smartlinx.com/solutions/scheduling/; content_type=text/html; charset=UTF-8; 読取上限300000bytes。HTTP成功は内容・機能・契約の確認ではない。"
+    },
+    {
+      "product": "US05",
+      "url": "https://www.rotageek.com/industries/healthcare",
+      "result": "http_200",
+      "notes": "GET確認のみ。最終URL=https://www.rotageek.com/industries/healthcare; content_type=text/html; charset=UTF-8; 読取上限300000bytes。HTTP成功は内容・機能・契約の確認ではない。"
+    },
+    {
+      "product": "US06",
+      "url": "https://www.ukg.com/products/ukg-pro-workforce-management",
+      "result": "http_200",
+      "notes": "GET確認のみ。最終URL=https://www.ukg.com/products/ukg-pro-workforce-management; content_type=text/html; charset=utf-8; 読取上限300000bytes。HTTP成功は内容・機能・契約の確認ではない。"
+    },
+    {
+      "product": "US07",
+      "url": "https://www.deputy.com/pricing",
+      "result": "http_200",
+      "notes": "GET確認のみ。最終URL=https://www.deputy.com/pricing; content_type=text/html; charset=utf-8; 読取上限300000bytes。HTTP成功は内容・機能・契約の確認ではない。"
+    },
+    {
+      "product": "US08",
+      "url": "https://nursegrid.com/for-organizations/nursegrid-manager/",
+      "result": "http_200",
+      "notes": "GET確認のみ。最終URL=https://nursegrid.com/for-organizations/nursegrid-manager/; content_type=text/html; charset=UTF-8; 読取上限300000bytes。HTTP成功は内容・機能・契約の確認ではない。"
+    },
+    {
+      "product": "US09",
+      "url": "https://connecteam.com/pricing/",
+      "result": "http_200",
+      "notes": "GET確認のみ。最終URL=https://connecteam.com/pricing/; content_type=text/html; charset=UTF-8; 読取上限300000bytes。HTTP成功は内容・機能・契約の確認ではない。"
+    },
+    {
+      "product": "US10",
+      "url": "https://timefold.ai/products/employee-shift-scheduling",
+      "result": "http_200",
+      "notes": "GET確認のみ。最終URL=https://timefold.ai/products/employee-shift-scheduling; content_type=text/html; charset=utf-8; 読取上限300000bytes。HTTP成功は内容・機能・契約の確認ではない。"
+    },
+    {
+      "product": "US11",
+      "url": "https://www.rldatix.com/en-uki/solution/optima/",
+      "result": "http_200",
+      "notes": "GET確認のみ。最終URL=https://www.rldatix.com/en-uki/solution/optima/; content_type=text/html; charset=UTF-8; 読取上限300000bytes。HTTP成功は内容・機能・契約の確認ではない。"
+    },
+    {
+      "product": "US12",
+      "url": "https://www.healthstream.com/solution/scheduling/nurse-and-staff-scheduling/shiftwizard",
+      "result": "http_200",
+      "notes": "GET確認のみ。最終URL=https://www.healthstream.com/solution/scheduling/nurse-and-staff-scheduling/shiftwizard; content_type=text/html; charset=utf-8; 読取上限300000bytes。HTTP成功は内容・機能・契約の確認ではない。"
+    },
+    {
+      "product": "US13",
+      "url": "https://www.lantum.com/secondary-care",
+      "result": "http_200",
+      "notes": "GET確認のみ。最終URL=https://www.lantum.com/secondary-care; content_type=text/html; charset=utf-8; 読取上限300000bytes。HTTP成功は内容・機能・契約の確認ではない。"
+    },
+    {
+      "product": "US14",
+      "url": "https://patchwork.health/rota",
+      "result": "http_200",
+      "notes": "GET確認のみ。最終URL=https://patchwork.health/rota; content_type=text/html; charset=UTF-8; 読取上限300000bytes。HTTP成功は内容・機能・契約の確認ではない。"
+    },
+    {
+      "product": "US15",
+      "url": "https://hi.northernlighthealth.org/Flyers/Non-Providers/Hospital-Nurse/Clairvia.aspx",
+      "result": "transport_error",
+      "notes": "GET未完了: URLError. 公開URLの廃止・非対応とは判定しない。"
+    },
+    {
+      "product": "US16",
+      "url": "https://www.perfectserve.com/solutions/physician-scheduling-software",
+      "result": "http_200",
+      "notes": "GET確認のみ。最終URL=https://www.perfectserve.com/solutions/physician-scheduling-software; content_type=text/html; charset=utf-8; 読取上限300000bytes。HTTP成功は内容・機能・契約の確認ではない。"
+    },
+    {
+      "product": "US17",
+      "url": "https://tcpsoftware.com/products/humanity/",
+      "result": "http_200",
+      "notes": "GET確認のみ。最終URL=https://tcpsoftware.com/products/humanity/; content_type=text/html; charset=UTF-8; 読取上限300000bytes。HTTP成功は内容・機能・契約の確認ではない。"
+    },
+    {
+      "product": "US18",
+      "url": "https://www.quinyx.com/workforce-management/scheduling",
+      "result": "http_200",
+      "notes": "GET確認のみ。最終URL=https://www.quinyx.com/workforce-management/scheduling; content_type=text/html; charset=UTF-8; 読取上限300000bytes。HTTP成功は内容・機能・契約の確認ではない。"
+    },
+    {
+      "product": "US19",
+      "url": "https://wheniwork.com/pricing",
+      "result": "http_200",
+      "notes": "GET確認のみ。最終URL=https://wheniwork.com/pricing; content_type=text/html; 読取上限300000bytes。HTTP成功は内容・機能・契約の確認ではない。"
+    },
+    {
+      "product": "US20",
+      "url": "https://www.planday.com/pricing",
+      "result": "http_200",
+      "notes": "GET確認のみ。最終URL=https://www.planday.com/pricing; content_type=text/html; charset=utf-8; 読取上限300000bytes。HTTP成功は内容・機能・契約の確認ではない。"
+    },
+    {
+      "product": "US21",
+      "url": "https://www.rosterelf.com/pricing",
+      "result": "http_403",
+      "notes": "公開URLのGETでHTTPエラー。クローラ制限の可能性を含み、サービス停止とは判定しない。"
+    },
+    {
+      "product": "US22",
+      "url": "https://www.sona.ai/",
+      "result": "http_200",
+      "notes": "GET確認のみ。最終URL=https://www.sona.ai/; content_type=text/html; charset=UTF-8; 読取上限300000bytes。HTTP成功は内容・機能・契約の確認ではない。"
+    },
+    {
+      "product": "JP28",
+      "url": "https://platform.shiftyasan.com/",
+      "result": "http_200",
+      "notes": "GET確認のみ。最終URL=https://platform.shiftyasan.com/; content_type=text/html; charset=utf-8; 読取上限300000bytes。HTTP成功は内容・機能・契約の確認ではない。"
+    }
+  ],
+  "logos": [
+    {
+      "product": "JP19",
+      "source": "mysyslogo",
+      "kind": "service",
+      "brand_name": "勤夢表VX",
+      "url": "https://my-sys.net/2021/wp-content/uploads/2018/03/kinmu_vxlogo.jpg",
+      "page": "https://my-sys.net/2021/?page_id=223",
+      "locator": "既存公式画像のHTTPS同一パスをGET確認",
+      "content_type": "image/jpeg",
+      "http_status": 200,
+      "selection_rank": 1,
+      "note": "HTTPS取得を確認。公式画像URL参照の通信修正。転載許諾は未確認。"
+    }
+  ]
+}

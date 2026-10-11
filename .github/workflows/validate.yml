@@ -1,0 +1,41 @@
+name: Validate research and web
+on:
+  push:
+    branches: [main]
+    paths-ignore: ['docs/*.md', 'docs/*-verification-*.json', 'docs/webmcp/report.md', '**/reports/**', '**/manifest.json']
+  pull_request:
+    paths-ignore: ['docs/*.md', 'docs/*-verification-*.json', 'docs/webmcp/report.md', '**/reports/**', '**/manifest.json']
+permissions:
+  contents: read
+concurrency:
+  group: validate-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      ASTRO_TELEMETRY_DISABLED: '1'
+      WRANGLER_SEND_METRICS: 'false'
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+      - uses: actions/setup-node@249970729cb0ef3589644e2896645e5dc5ba9c38 # v6
+        with:
+          node-version: '24'
+          cache: npm
+          cache-dependency-path: apps/web/package-lock.json
+      - uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6
+        with:
+          python-version: '3.11'
+      - run: python3 -m unittest discover -s Aqsh_Shift_Research_v2_Batch02_DB_20261011/tools -p 'test_*.py'
+      - run: python3 apps/web/scripts/build-publication.py
+      - run: git diff --exit-code -- apps/web/data
+      - run: python3 apps/web/tests/publication_test.py
+      - run: npm ci
+        working-directory: apps/web
+      - run: npm test
+        working-directory: apps/web
+      - run: npm run check
+        working-directory: apps/web
+      - run: npm run build
+        working-directory: apps/web

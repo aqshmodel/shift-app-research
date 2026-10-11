@@ -1,0 +1,26 @@
+[
+  {
+    "file": "apps/web/public/brand/aqsh-logo.png",
+    "url": "https://aqsh.co.jp/wp-content/uploads/2024/01/a340bad26f3ec6fe1741a7ff1ad28ba6.png",
+    "retrieved_on": "2026-10-11",
+    "sha256": "38067e4add89d0338fa3f1c793263f1585736c443931c4ce31fa57d079c3347e"
+  },
+  {
+    "file": "apps/web/public/brand/favicon-32.png",
+    "url": "https://aqsh.co.jp/wp-content/uploads/2023/12/cropped-ddc33bb390c2cd276a4cb666abb5e36a-32x32.png",
+    "retrieved_on": "2026-10-11",
+    "sha256": "2e4a3c3989589c5bacc0e2f06bcc823835578063c3c799a1fd560f3034157547"
+  },
+  {
+    "file": "apps/web/public/brand/icon-192.png",
+    "url": "https://aqsh.co.jp/wp-content/uploads/2023/12/cropped-ddc33bb390c2cd276a4cb666abb5e36a-192x192.png",
+    "retrieved_on": "2026-10-11",
+    "sha256": "36bed758f8a4e3c4d6ddcd22288bd91fb2d53be40a9f3431c4c4fdc7fbb13a2e"
+  },
+  {
+    "file": "apps/web/public/brand/apple-touch-icon.png",
+    "url": "https://aqsh.co.jp/wp-content/uploads/2023/12/cropped-ddc33bb390c2cd276a4cb666abb5e36a-180x180.png",
+    "retrieved_on": "2026-10-11",
+    "sha256": "32b5df4f247d39fbbe61f3a03c15155ea39f836de8563e6d90ebd242862caf86"
+  }
+]

@@ -17,7 +17,7 @@ JP15,service,快決！シフト君NEO,https://products.ndis.jp/shift-neo/user/me
 JP16,service,Optamo for Task,https://www.optamo.jp/assets/images/opt_logo.png,https://www.optamo.jp/task/index.html,2026-10-11,image/png,200,unknown,公式掲載画像をURLで参照。転載許諾は未確認。
 JP17,service,SHIFTEE,https://www.shifteeapp.jp/wp-content/uploads/2018/06/android-chrome-512x512.png,https://www.shifteeapp.jp/,2026-10-11,image/png,200,unknown,公式構造化データOrganization.logoにSHIFTEEの画像として指定。 転載許諾は未確認。
 JP18,service,oplus,https://storage.googleapis.com/opluswork.com/hp/img/oplus.logo.svg,https://opluswork.com/,2026-10-11,image/svg+xml,200,unknown,公式掲載画像をURLで参照。転載許諾は未確認。
-JP19,service,勤夢表VX,http://my-sys.net/2021/wp-content/uploads/2018/03/kinmu_vxlogo.jpg,https://ideanexsys.com/%E7%9C%8B%E8%AD%B7%E4%BB%8B%E8%AD%B7%E3%81%AE%E5%8B%A4%E5%8B%99%E8%A1%A8%E6%A6%82%E8%A6%81/,2026-10-11,image/jpeg,200,unknown,公式掲載画像をURLで参照。転載許諾は未確認。 元ページ掲載はHTTP URL。HTTPSアプリでの表示には混在コンテンツ対策またはHTTPS原本の確認が必要。
+JP19,service,勤夢表VX,https://my-sys.net/2021/wp-content/uploads/2018/03/kinmu_vxlogo.jpg,https://my-sys.net/2021/?page_id=223,2026-10-11,image/jpeg,200,unknown,HTTPS取得を確認。公式画像URL参照の通信修正。転載許諾は未確認。
 JP20,service,エピタルHR,https://epigno.jp/wp-content/themes/epigno-jp/images/share/logo_epital.svg,https://epigno.jp/epitalhr/,2026-10-11,image/svg+xml,200,unknown,公式掲載画像をURLで参照。転載許諾は未確認。
 JP21,service,Ramanas,https://www.sbn.co.jp/ramanas/wp-content/themes/ramanasu/img/common/logo.png,https://www.sbn.co.jp/ramanas/,2026-10-11,image/png,200,unknown,公式掲載画像をURLで参照。転載許諾は未確認。
 JP22,service,Servis,https://www.sbn.co.jp/servis/img/cmn/logo.png,https://www.sbn.co.jp/servis/faq/,2026-10-11,image/png,200,unknown,公式掲載画像をURLで参照。転載許諾は未確認。

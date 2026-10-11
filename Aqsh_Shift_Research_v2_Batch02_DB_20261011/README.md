@@ -1,6 +1,6 @@
 # Aqsh シフト競合調査 — 第6バッチ / 様式9・MFA・解約データ出力
 
-2026年10月11日、公開一次資料の追加調査を登録。**50提供単位、1,627文書記録、88料金明細、ロゴ50件、制度参照17件**。今回は18対象へ新規130記録を追加し、既存3件の分類を訂正しました。出典取得履歴40件、具体的な残課題10件も追加しています。共通40項目の資料採用は517/2,000枠です。部分確認・提供予定を含み、実性能の点数ではありません。
+2026年10月11日、公開一次資料の追加調査を登録。**50提供単位、1,664文書記録、188調査文書、88料金明細、ロゴ50製品、制度参照17件**。第7バッチでは8対象へ37記録を追加し、公式URL50件を点検しました。共通40項目の資料採用は524/2,000枠です。部分確認・提供予定を含み、実性能の点数ではありません。
 
 ## 最初に見るファイル
 
@@ -13,6 +13,7 @@
 | [d1/import.sql](d1/import.sql) | **空のD1へ初回登録**する全件SQL |
 | [d1/schema.sql](d1/schema.sql) | スキーマのみ。import.sqlには同じスキーマも含む |
 | [d1/queries.sql](d1/queries.sql) | Webアプリ向けの読み取りクエリ例 |
+| [batches/B07-20261011.json](batches/B07-20261011.json) | 37記録、15出典取得、50公式URL点検、5課題進捗の入力データ |
 | [batches/B06-20261011.json](batches/B06-20261011.json) | 新規130記録、分類訂正3、出典取得40、制度参照17、課題と進捗の入力データ |
 | [reports/regulation_index.csv](reports/regulation_index.csv) | 行政資料・専門団体手引きの算式、除外、丸め、適用条件と出典 |
 | [reports/logo_index.csv](reports/logo_index.csv) | 全50対象のロゴURL、公式掲載ページ、サービス／会社、確認日 |
@@ -61,6 +62,7 @@ python3 tools/research_db.py ingest --db /tmp/aqsh-rebuilt.sqlite3 --batch batch
 python3 tools/research_db.py ingest --db /tmp/aqsh-rebuilt.sqlite3 --batch batches/B04-20261011.json
 python3 tools/research_db.py ingest --db /tmp/aqsh-rebuilt.sqlite3 --batch batches/B05-20261011.json
 python3 tools/research_db.py ingest --db /tmp/aqsh-rebuilt.sqlite3 --batch batches/B06-20261011.json
+python3 tools/research_db.py ingest --db /tmp/aqsh-rebuilt.sqlite3 --batch batches/B07-20261011.json
 python3 tools/research_db.py stats --db /tmp/aqsh-rebuilt.sqlite3
 ```
 
@@ -81,3 +83,5 @@ python3 -m unittest discover -s tools -p 'test_*.py' -v
 verifyはSQL再取り込みによるデータ一致、外部キー、証拠と評価の範囲、最新判断を確認します。回帰検証は14件。全バッチの再作成、分類訂正の継承、制度参照と製品対応の分離、最低課金人数、サービスロゴ優先も含みます。画面検証は`tools/test_viewer.cjs`で、PlaywrightとChromeが必要です。静的な比較画面はDBから再生成するスナップショットです。
 
 検証結果：[DB](reports/db_validation.json)、[ローカルD1](reports/d1_local_validation.json)、[画面](reports/viewer_validation.json)。優先度1の残課題：[priority_followups.csv](reports/priority_followups.csv)。
+
+公開アプリとD1の配信手順は、ルートの [apps/web/README.md](../apps/web/README.md) と公開報告を参照してください。

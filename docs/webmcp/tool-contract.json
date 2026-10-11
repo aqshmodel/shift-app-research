@@ -1,0 +1,21 @@
+{
+  "as_of_date":"2026-10-11",
+  "api":"document.modelContext",
+  "transport":"Native browser WebMCP; public same-origin GET API",
+  "permissions":"tools=(self); no exposedTo origins",
+  "risk":"public read-only information; reversible browser comparison selection",
+  "authentication":"not required; no user records or private data",
+  "tools":[
+    {"name":"search_shift_products","route":"/api/search/","max_results":20,"ui":"search fields and visible result panel"},
+    {"name":"get_shift_product","route":"/api/products/{offering_id}/","scope":"one of 50 fixed IDs","ui":"visible detail result and source links"},
+    {"name":"compare_shift_products","route":"/api/compare/","max_products":4,"min_products":2,"ui":"comparison selection and result panel"},
+    {"name":"get_shift_evidence","route":"/api/evidence/","max_records":10,"ui":"records with classification and source links"},
+    {"name":"get_research_scope","route":"/api/scope/","ui":"snapshot date, counts and limitations"}
+  ],
+  "validation":"closed JSON Schema and repeated server validation; parameterized SQL; no arbitrary URL fetch",
+  "data_limits":"summaries 900 characters, 2 selected findings and 3 source URLs per assessment with explicit truncation counts; evidence pagination retrieves complete source history",
+  "cancellation":"per-execution signal merged with registration lifecycle and 15-second timeout; aborted results do not update UI",
+  "cleanup":"pagehide abort; bfcache pageshow re-register",
+  "no_side_effects":["purchases","contracts","messages","database edits","account creation"],
+  "agent_selection_eval":"requires a separately configured compatible AI; not inferred from native execution tests"
+}

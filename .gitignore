@@ -18,6 +18,11 @@ env/
 
 # Node dependencies and local Cloudflare state
 node_modules/
+.astro/
+apps/web/dist/
+apps/web/test-results/
+apps/web/playwright-report/
+apps/web/worker-configuration.d.ts
 .wrangler/
 .dev.vars
 .dev.vars.*

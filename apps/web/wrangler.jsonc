@@ -1,0 +1,67 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "aqsh-shift-research",
+  "account_id": "032177c6a3d3bbf36ce3c60cc4e62404",
+  "main": "@astrojs/cloudflare/entrypoints/server",
+  "compatibility_date": "2026-10-11",
+  "compatibility_flags": [
+    "nodejs_compat"
+  ],
+  "assets": {
+    "directory": "./dist",
+    "binding": "ASSETS"
+  },
+  "workers_dev": true,
+  "observability": {
+    "enabled": false
+  },
+  "vars": {
+    "ENVIRONMENT": "production"
+  },
+  "ratelimits": [
+    {
+      "name": "PUBLIC_API_LIMITER",
+      "namespace_id": "2026101101",
+      "simple": {
+        "limit": 120,
+        "period": 60
+      }
+    }
+  ],
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "aqsh-shift-research",
+      "database_id": "82a6fd5d-f656-4eb4-bf78-347cf154420c"
+    }
+  ],
+  "env": {
+    "staging": {
+      "name": "aqsh-shift-research-staging",
+      "workers_dev": true,
+      "vars": {
+        "ENVIRONMENT": "staging"
+      },
+      "ratelimits": [
+        {
+          "name": "PUBLIC_API_LIMITER",
+          "namespace_id": "2026101102",
+          "simple": {
+            "limit": 120,
+            "period": 60
+          }
+        }
+      ],
+      "d1_databases": [
+        {
+          "binding": "DB",
+          "database_name": "aqsh-shift-research-staging",
+          "database_id": "31ed6b7f-a59e-4967-a27e-38684f221fd4"
+        }
+      ]
+    }
+  },
+  "limits": {
+    "cpu_ms": 1000
+  }
+}

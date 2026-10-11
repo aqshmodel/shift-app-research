@@ -1,9 +1,14 @@
 {
   "as_of_date": "2026-10-11",
-  "latest_batch": "B06-20261011",
+  "latest_batch": "B07-20261011",
   "schema_version": "3.1",
   "scope": "Canonical evidence DB, repeatable research batches, logo references, independent reference rules, D1 SQL and local validation.",
   "files": [
+    {
+      "path": ".wrangler/cache/cf.json",
+      "bytes": 2026,
+      "sha256": "acfaf2dc01049652cd39a2b306ebec5a44ae65a16cec39755b217c9324d70429"
+    },
     {
       "path": "DB_DESIGN.md",
       "bytes": 11262,
@@ -11,8 +16,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 7768,
-      "sha256": "1291c65800699b600873efae1ab943e2ed6a300e2606afa482efc0ffb23f706e"
+      "bytes": 8094,
+      "sha256": "b748bc081b39798c0b86c33ae62faf196b184a737e6eb8a62d0549538435ca3e"
     },
     {
       "path": "archive/batch02-original.zip",
@@ -40,14 +45,19 @@
       "sha256": "a97769f2cf9dffd1d9a1336eec10410a6cfb9b9824951f1c12839c207cdbbb36"
     },
     {
+      "path": "batches/B07-20261011.json",
+      "bytes": 43420,
+      "sha256": "b5e917c37bea4bbb8cf080c0e5a34f700629ceea7c5993ff3087d65187265fee"
+    },
+    {
       "path": "comparison.html",
-      "bytes": 4016715,
-      "sha256": "f9438a1181fd9a0d8ca969a8a6987038e09cb096509a2f86665c15122189543b"
+      "bytes": 4083745,
+      "sha256": "3f626c6324580e66117107972cdcb1169d81ff1102f3d3e8fea9d1ea96a71cac"
     },
     {
       "path": "d1/import.sql",
-      "bytes": 5577643,
-      "sha256": "1a94373828578eaf2ce90256eb43bdb25c33291a5db04af679c522afef8cc248"
+      "bytes": 5694129,
+      "sha256": "6b4ada13864f5f58d5362cc13d0e74e4c35f3c9898fe1ed14068bd6c288e7145"
     },
     {
       "path": "d1/queries.sql",
@@ -88,6 +98,11 @@
       "path": "reports/Batch06_research_report.md",
       "bytes": 20078,
       "sha256": "3d7eaeba884b4c826e01c65ebc0e94d1ef4d3c8ae98e9988405c2c2a27424cf8"
+    },
+    {
+      "path": "reports/Batch07_research_report.md",
+      "bytes": 3722,
+      "sha256": "b797a45e3c117789f7786fd4e4460f21a36717cdb2b2c81025f475a960830f74"
     },
     {
       "path": "reports/baseline_stats.json",
@@ -206,8 +221,8 @@
     },
     {
       "path": "reports/logo_index.csv",
-      "bytes": 35702,
-      "sha256": "f2c856a92a33ba7a4d1c9a30803bac41564afe49827a6d01d75999538899cfd6"
+      "bytes": 35518,
+      "sha256": "5a7fa983793d2ec12acad7f8524ccbb4d12a2045c1092f0f9776d0b3b732c135"
     },
     {
       "path": "reports/priority_followups.csv",
@@ -221,13 +236,13 @@
     },
     {
       "path": "reports/research_stats.json",
-      "bytes": 4294,
-      "sha256": "fe8f7944f5697c717416e4d0bf20c1d955e2a1593baf7cf66a76250a91f661b4"
+      "bytes": 3018,
+      "sha256": "ca26ebaed97a1c3b5237c74b5da118eb0f6778076ef74f774c95aff3acbe063f"
     },
     {
       "path": "reports/source_index.csv",
-      "bytes": 8910,
-      "sha256": "33f1348ac257766fd3be85b0fe666a2ee4b86eb1e234c18ca939e6328a9d6f0b"
+      "bytes": 3167,
+      "sha256": "b7ba5fc677bc69396e7288e33ba85ceda0864c2ae789ce2310abd9df4457e630"
     },
     {
       "path": "reports/unit_validation.json",
@@ -276,8 +291,8 @@
     },
     {
       "path": "research.sqlite3",
-      "bytes": 5152768,
-      "sha256": "8a41c4607a62616997a91dcadfe8a1c890ad8d8cd94e720723abb211ec16cac6"
+      "bytes": 5242880,
+      "sha256": "aacd172c52d74347bb85547bf097389e88af1cdb1b19316d2797dcbb4a0c49d6"
     },
     {
       "path": "tools/model.sql",
@@ -286,8 +301,8 @@
     },
     {
       "path": "tools/refresh_indexes.py",
-      "bytes": 3812,
-      "sha256": "e5622513d6ea134676c6b61f305d007d69e1b1277dd8caf37b310e33d75f31ec"
+      "bytes": 3787,
+      "sha256": "6fde9c31a43867c1ee1d63b96f8f8a504b95875f746245c52b24137a6b5440be"
     },
     {
       "path": "tools/research_db.py",
