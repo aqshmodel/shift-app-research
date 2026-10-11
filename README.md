@@ -1,6 +1,6 @@
 # Aqsh シフト管理サービス調査
 
-シフト管理・自動作成サービスの公開一次資料を整理した調査DBです。2026年10月11日時点で、**50提供単位、1,295文書記録、83料金明細、ロゴ50件**を収録しています。未確認事項、資料間の矛盾、提供予定、契約・地域・プランの限定を区別して保持しています。
+シフト管理・自動作成サービスの公開一次資料を整理した調査DBです。2026年10月11日時点で、**50提供単位、1,494文書記録、88料金明細、ロゴ50件**を収録しています。未確認事項、資料間の矛盾、提供予定、契約・地域・プランの限定を区別して保持しています。
 
 調査データとツールは [Aqsh_Shift_Research_v2_Batch02_DB_20261011](Aqsh_Shift_Research_v2_Batch02_DB_20261011/) にあります。
 
@@ -11,7 +11,7 @@
 | [正本DB](Aqsh_Shift_Research_v2_Batch02_DB_20261011/research.sqlite3) | 出典と判断履歴を含むSQLite DB |
 | [DB設計書](Aqsh_Shift_Research_v2_Batch02_DB_20261011/DB_DESIGN.md) | Cloudflare D1向けのテーブル・ビュー設計 |
 | [D1初回登録用SQL](Aqsh_Shift_Research_v2_Batch02_DB_20261011/d1/import.sql) | 空のD1にスキーマと全データを登録するSQL |
-| [最新の調査報告](Aqsh_Shift_Research_v2_Batch02_DB_20261011/reports/Batch04_research_report.md) | 追加調査、分類訂正、未確認事項と残課題 |
+| [最新の調査報告](Aqsh_Shift_Research_v2_Batch02_DB_20261011/reports/Batch05_research_report.md) | 追加調査、分類訂正、未確認事項と残課題 |
 
 ## ローカルで確認する
 

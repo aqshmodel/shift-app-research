@@ -1,0 +1,2400 @@
+{
+  "batch_id": "B05-20261011",
+  "as_of_date": "2026-10-11",
+  "prior_batch": "B04-20261011",
+  "description": "公開ヘルプとOpenAPIを深掘り：適用条件・制約・境界・通知・連携・参考料金",
+  "method": "公開一次資料本文をWeb取得、取得不可の本文はブラウザで補完。既存記録と照合し新しい詳細を追加。ログイン、営業連絡、性能試験は未実施。",
+  "sources": [
+    {
+      "key": "qx-compliance",
+      "url": "https://help.quinyx.com/help-centre/docs/schedule-compliance-settings",
+      "title": "Schedule compliance settings",
+      "publisher": "Quinyx",
+      "reference": "turn90view0",
+      "retrieved_on": "2026-10-11",
+      "published_on": "2026-07-28",
+      "updated_on": "2026-09-28"
+    },
+    {
+      "key": "qx-rulesets",
+      "url": "https://help.quinyx.com/help-centre/docs/rule-sets",
+      "title": "Rule sets",
+      "publisher": "Quinyx",
+      "reference": "turn93view1",
+      "retrieved_on": "2026-10-11",
+      "published_on": "2026-07-29",
+      "updated_on": "2026-08-06"
+    },
+    {
+      "key": "qx-assign",
+      "url": "https://help.quinyx.com/help-centre/docs/auto-assign",
+      "title": "Auto Assign",
+      "publisher": "Quinyx",
+      "reference": "turn97view0",
+      "retrieved_on": "2026-10-11",
+      "published_on": "2026-07-29",
+      "updated_on": "2026-09-18"
+    },
+    {
+      "key": "qx-avail",
+      "url": "https://help.quinyx.com/help-centre/docs/availability-within-auto-assign",
+      "title": "Availability within Auto assign",
+      "publisher": "Quinyx",
+      "reference": "browser AX main-content 2026-10-11",
+      "retrieved_on": "2026-10-11",
+      "published_on": "2026-07-29",
+      "updated_on": "2026-09-18",
+      "method": "browser_rendered_body",
+      "method_note": "Web取得Cache missをブラウザで補完し、本文・FAQを確認。全文は保存していない。"
+    },
+    {
+      "key": "qx-minmax",
+      "url": "https://help.quinyx.com/help-centre/docs/minimum-and-maximum-requirements-in-auto-schedule",
+      "title": "Minimum and maximum requirements in Auto Schedule",
+      "publisher": "Quinyx",
+      "reference": "browser main-content 2026-10-11",
+      "retrieved_on": "2026-10-11",
+      "published_on": "2026-07-29",
+      "updated_on": "2026-09-18",
+      "method": "browser_rendered_body",
+      "method_note": "Web取得Cache missをブラウザの表示本文で補完。全文は保存していない。"
+    },
+    {
+      "key": "wiw-assign",
+      "url": "https://help.wheniwork.com/articles/auto-assign-shifts/",
+      "title": "Auto-Assign Shifts",
+      "publisher": "When I Work",
+      "reference": "turn99view0",
+      "retrieved_on": "2026-10-11",
+      "updated_on": "2024-11-12"
+    },
+    {
+      "key": "wiw-ot",
+      "url": "https://help.wheniwork.com/articles/overtime-visibility/",
+      "title": "Overtime Visibility",
+      "publisher": "When I Work",
+      "reference": "turn96view1",
+      "retrieved_on": "2026-10-11",
+      "updated_on": "2025-09-18"
+    },
+    {
+      "key": "pd-api-help",
+      "url": "https://help.planday.com/en/articles/30402-how-to-use-open-api-to-integrate-with-planday",
+      "title": "How to use Open API to integrate with Planday",
+      "publisher": "Planday",
+      "reference": "turn103view1",
+      "retrieved_on": "2026-10-11",
+      "published_on": "2025-05-08"
+    },
+    {
+      "key": "pd-api-overview",
+      "url": "https://developer.planday.com/gettingstarted/overview/",
+      "title": "Getting started / API Overview",
+      "publisher": "Planday",
+      "reference": "turn103view0",
+      "retrieved_on": "2026-10-11"
+    },
+    {
+      "key": "pd-api-auth",
+      "url": "https://developer.planday.com/gettingstarted/authorization-flow/",
+      "title": "Authorization code flow",
+      "publisher": "Planday",
+      "reference": "browser AX authorization-code-flow 2026-10-11",
+      "retrieved_on": "2026-10-11",
+      "method": "browser_rendered_body"
+    },
+    {
+      "key": "pd-api-limit",
+      "url": "https://developer.planday.com/gettingstarted/rate-limiting/",
+      "title": "Rate limits for API",
+      "publisher": "Planday",
+      "reference": "turn105view2",
+      "retrieved_on": "2026-10-11"
+    },
+    {
+      "key": "qx-labor",
+      "url": "https://help.quinyx.com/help-centre/docs/labor-rules-in-auto-assign",
+      "title": "Labor rules in Auto Assign",
+      "publisher": "Quinyx",
+      "reference": "browser AX main-content 2026-10-11",
+      "retrieved_on": "2026-10-11",
+      "published_on": "2026-07-29",
+      "updated_on": "2026-09-18",
+      "method": "browser_rendered_body"
+    },
+    {
+      "key": "qx-warnings",
+      "url": "https://help.quinyx.com/help-centre/docs/auto-schedule-and-auto-assign-warnings",
+      "title": "Auto Schedule and Auto Assign warnings",
+      "publisher": "Quinyx",
+      "reference": "turn110view1",
+      "retrieved_on": "2026-10-11",
+      "published_on": "2026-07-29",
+      "updated_on": "2026-09-18"
+    },
+    {
+      "key": "ct-auto",
+      "url": "https://help.connecteam.com/en/articles/8886939-automatically-assign-shifts-in-connecteam",
+      "title": "Automatically Assign Shifts In Connecteam",
+      "publisher": "Connecteam",
+      "reference": "turn105view0",
+      "retrieved_on": "2026-10-11",
+      "updated_on": "2026-09-08"
+    },
+    {
+      "key": "ct-rules",
+      "url": "https://help.connecteam.com/en/articles/12829136-starting-guide-to-scheduling-rules-and-shift-quotas",
+      "title": "Starting Guide to Scheduling Rules and Shift Quotas",
+      "publisher": "Connecteam",
+      "reference": "turn105view1",
+      "retrieved_on": "2026-10-11",
+      "updated_on": "2026-09-08"
+    },
+    {
+      "key": "ct-hours",
+      "url": "https://help.connecteam.com/en/articles/15013084-how-to-set-regular-working-hours-for-employees",
+      "title": "How to Set Regular Working Hours for Employees",
+      "publisher": "Connecteam",
+      "reference": "turn108view0",
+      "retrieved_on": "2026-10-11"
+    },
+    {
+      "key": "ct-expert",
+      "url": "https://help.connecteam.com/en/articles/5946330-the-operations-hub-expert-plan",
+      "title": "The Operations Hub Expert Plan",
+      "publisher": "Connecteam",
+      "reference": "turn108view1",
+      "retrieved_on": "2026-10-11",
+      "updated_on": "2026-06-25"
+    },
+    {
+      "key": "wiw-rules",
+      "url": "https://help.wheniwork.com/articles/scheduling-rules-reference/",
+      "title": "Scheduling Rules Reference",
+      "publisher": "When I Work",
+      "reference": "turn106view0",
+      "retrieved_on": "2026-10-11",
+      "updated_on": "2025-03-25"
+    },
+    {
+      "key": "wiw-security",
+      "url": "https://wheniwork.com/security",
+      "title": "Security",
+      "publisher": "When I Work",
+      "reference": "turn106view1",
+      "retrieved_on": "2026-10-11"
+    },
+    {
+      "key": "wiw-api",
+      "url": "https://apidocs.wheniwork.com/external/index.html",
+      "title": "When I Work API Documentation 1.0.0",
+      "publisher": "When I Work",
+      "reference": "browser rendered Redoc body 2026-10-11",
+      "retrieved_on": "2026-10-11",
+      "method": "browser_rendered_body",
+      "version_label": "1.0.0"
+    },
+    {
+      "key": "pd-hr",
+      "url": "https://developer.planday.com/guides/hr-guide/",
+      "title": "HR Guide",
+      "publisher": "Planday",
+      "reference": "turn107view1",
+      "retrieved_on": "2026-10-11"
+    },
+    {
+      "key": "pd-partner",
+      "url": "https://openapi.planday.com/gettingstarted/become-an-integration-partner/",
+      "title": "Becoming an Integration Partner",
+      "publisher": "Planday",
+      "reference": "turn107view2",
+      "retrieved_on": "2026-10-11"
+    },
+    {
+      "key": "pd-release",
+      "url": "https://openapi.planday.com/gettingstarted/release_notes/",
+      "title": "OpenAPI Release Notes",
+      "publisher": "Planday",
+      "reference": "turn107view0",
+      "retrieved_on": "2026-10-11",
+      "version_label": "latest entry 2026-10-05"
+    },
+    {
+      "key": "shift-period",
+      "url": "https://shiftmation.com/release/20260730/",
+      "title": "4週8休にも対応する指定期間モードの提供開始",
+      "publisher": "株式会社シフトメーション",
+      "reference": "browser AX main article 2026-10-11",
+      "retrieved_on": "2026-10-11",
+      "method": "browser_rendered_body",
+      "published_on": "2026-07-30"
+    },
+    {
+      "key": "shift-cares",
+      "url": "https://shiftmation.com/release/20260804/",
+      "title": "Cares Connectとのシフト連携に対応",
+      "publisher": "株式会社シフトメーション",
+      "reference": "turn111view2",
+      "retrieved_on": "2026-10-11",
+      "published_on": "2026-08-04"
+    },
+    {
+      "key": "air-clock",
+      "url": "https://faq.airshift.jp/hc/ja/articles/360021664651-%E3%82%BF%E3%82%A4%E3%83%A0%E3%82%AB%E3%83%BC%E3%83%89-%E6%89%93%E5%88%BB-%E3%83%87%E3%83%BC%E3%82%BF%E3%82%92%E3%83%80%E3%82%A6%E3%83%B3%E3%83%AD%E3%83%BC%E3%83%89%E3%81%99%E3%82%8B",
+      "title": "タイムカード（打刻）データをダウンロードする",
+      "publisher": "リクルート",
+      "reference": "turn114view0",
+      "retrieved_on": "2026-10-11"
+    },
+    {
+      "key": "air-share",
+      "url": "https://faq.airshift.jp/hc/ja/articles/42967195119129-%E3%82%B7%E3%83%95%E3%83%88%E8%A1%A8%E3%82%92%E5%85%B1%E6%9C%89-%E5%8D%B0%E5%88%B7%E3%81%99%E3%82%8B",
+      "title": "シフト表を共有・印刷する",
+      "publisher": "リクルート",
+      "reference": "turn117view4",
+      "retrieved_on": "2026-10-11"
+    },
+    {
+      "key": "air-release",
+      "url": "https://faq.airshift.jp/hc/ja/articles/30040831343513-CSV%E3%83%80%E3%82%A6%E3%83%B3%E3%83%AD%E3%83%BC%E3%83%89%E9%A0%85%E7%9B%AE%E3%81%AE%E8%BF%BD%E5%8A%A0%E3%81%AA%E3%81%A9%EF%BC%94%E3%81%A4%E3%81%AE%E6%A9%9F%E8%83%BD%E3%81%8C%E3%83%AA%E3%83%AA%E3%83%BC%E3%82%B9%E3%81%95%E3%82%8C%E3%81%BE%E3%81%97%E3%81%9F-2024%E5%B9%B43%E6%9C%8827%E6%97%A5",
+      "title": "CSVダウンロード項目の追加など4つの機能リリース",
+      "publisher": "リクルート",
+      "reference": "turn117view3",
+      "retrieved_on": "2026-10-11",
+      "published_on": "2024-03-27"
+    },
+    {
+      "key": "air-access",
+      "url": "https://faq.airshift.jp/hc/ja/articles/360027255151-%E4%BA%BA%E4%BB%B6%E8%B2%BB%E3%82%92%E8%A6%8B%E3%82%8C%E3%82%8B%E4%BA%BA%E3%82%92%E9%99%90%E5%AE%9A%E3%81%A7%E3%81%8D%E3%81%BE%E3%81%99%E3%81%8B",
+      "title": "人件費を見れる人を限定できますか",
+      "publisher": "リクルート",
+      "reference": "turn116view2",
+      "retrieved_on": "2026-10-11"
+    },
+    {
+      "key": "air-integrations",
+      "url": "https://airregi.jp/shift/function/integration/",
+      "title": "Air ビジネスツールズとの連携・活用",
+      "publisher": "リクルート",
+      "reference": "turn113view1; turn114view3",
+      "retrieved_on": "2026-10-11"
+    },
+    {
+      "key": "rshift-cost",
+      "url": "https://www.rshift.jp/",
+      "title": "アールシフト公式サイトの費用欄",
+      "publisher": "オーエムネットワーク株式会社",
+      "reference": "turn117view2",
+      "retrieved_on": "2026-10-11",
+      "version_label": "料金欄の参考時点2024年2月",
+      "scope_note": "2026-10-11取得の公式料金欄。月額下限の参考日2024年2月を維持。現行見積未取得。"
+    },
+    {
+      "key": "rshift-trial",
+      "url": "https://www.rshift.jp/trial_rule.php",
+      "title": "アールシフト体験メニューの取り決め事項",
+      "publisher": "オーエムネットワーク株式会社",
+      "reference": "turn114view1",
+      "retrieved_on": "2026-10-11"
+    },
+    {
+      "key": "rshift-isms",
+      "url": "https://www.rshift.jp/news/20260422_002.php",
+      "title": "ISMS認証取得のお知らせ",
+      "publisher": "オーエムネットワーク株式会社",
+      "reference": "turn117view1",
+      "retrieved_on": "2026-10-11",
+      "published_on": "2026-04-22"
+    },
+    {
+      "key": "qg-federal",
+      "url": "https://www.qgenda.com/federal/",
+      "title": "QGenda Federal Healthcare",
+      "publisher": "QGenda, LLC",
+      "reference": "turn116view0",
+      "retrieved_on": "2026-10-11"
+    },
+    {
+      "key": "qg-support",
+      "url": "https://www.qgenda.com/support/",
+      "title": "QGenda Customer Support",
+      "publisher": "QGenda, LLC",
+      "reference": "turn116view1",
+      "retrieved_on": "2026-10-11"
+    },
+    {
+      "key": "rota-sso",
+      "url": "https://support.rotageek.com/en/articles/8694855-single-sign-on-sso",
+      "title": "Single Sign On (SSO)",
+      "publisher": "Rotageek",
+      "reference": "turn119view0",
+      "retrieved_on": "2026-10-11",
+      "updated_on": "2023-12-12"
+    },
+    {
+      "key": "rota-api",
+      "url": "https://publicapi.rotageek.com/swagger/v1/swagger.json",
+      "title": "Rotageek Public API v1 OpenAPI schema",
+      "publisher": "Rotageek",
+      "reference": "public JSON body fetched via urllib 2026-10-11",
+      "retrieved_on": "2026-10-11",
+      "method": "public_web_body",
+      "version_label": "API 1.0 / OpenAPI 3.0.4",
+      "method_note": "公開OpenAPI JSONを直接取得してpaths・parameters・componentsを確認。業務APIは呼び出さず、スキーマ全文は配布ファイルへ保存していない。"
+    },
+    {
+      "key": "rota-hooks",
+      "url": "https://publicapi.rotageek.com/webhooks.html",
+      "title": "Rotageek Webhooks implementation",
+      "publisher": "Rotageek",
+      "reference": "turn121view0",
+      "retrieved_on": "2026-10-11"
+    }
+  ],
+  "findings": [
+    {
+      "product": "US18",
+      "source": "qx-compliance",
+      "criterion": "N01",
+      "summary": "ルール設定・警告の停止にはAccount Settingsの編集権限を使う。",
+      "locator": "New rule configuration page / Removing a warning",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "Schedule Complianceの手動編集・公開時の検査。Auto Assignの最適化条件とは別。"
+    },
+    {
+      "product": "US18",
+      "source": "qx-compliance",
+      "criterion": "F07",
+      "summary": "2025年8月12日以降に新設したルール集合は既定ルールを引き継ぐ。以前の集合には遡及適用しない。",
+      "locator": "Logic from 2025-08-12",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "Schedule Complianceの手動編集・公開時の検査。Auto Assignの最適化条件とは別。"
+    },
+    {
+      "product": "US18",
+      "source": "qx-compliance",
+      "criterion": "F03",
+      "summary": "規則に勤務種類・開始終了時刻の窓・開始曜日・年齢のフィルターを付けられる。",
+      "locator": "Rule filters / Shift time windows / Age filters",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "Schedule Complianceの手動編集・公開時の検査。Auto Assignの最適化条件とは別。"
+    },
+    {
+      "product": "US18",
+      "source": "qx-compliance",
+      "criterion": "F03",
+      "summary": "年齢フィルターは生年月日未登録の職員も対象に含むと説明する。",
+      "locator": "Age filters for age-sensitive compliance",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "Schedule Complianceの手動編集・公開時の検査。Auto Assignの最適化条件とは別。"
+    },
+    {
+      "product": "US18",
+      "source": "qx-compliance",
+      "criterion": "F01",
+      "summary": "同じ週時間規則に異なる閾値を作り、一方を警告、他方を強制停止に設定できる。",
+      "locator": "Set thresholds",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "Schedule Complianceの手動編集・公開時の検査。Auto Assignの最適化条件とは別。"
+    },
+    {
+      "product": "US18",
+      "source": "qx-compliance",
+      "criterion": "G09",
+      "summary": "規則をアーカイブすると検査対象から外れる。既定の集合自体はアーカイブできない。",
+      "locator": "Default setup / Removing a warning",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "Schedule Complianceの手動編集・公開時の検査。Auto Assignの最適化条件とは別。"
+    },
+    {
+      "product": "US18",
+      "source": "qx-rulesets",
+      "criterion": "F01",
+      "summary": "契約テンプレートとユニットの両方の規則を検査し、重複時は強制停止、次に厳しい閾値を優先する。",
+      "locator": "Assignment rules and precedence / conflict resolution",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "Schedule ComplianceのRule sets。最適化重みの順位とは別。"
+    },
+    {
+      "product": "US18",
+      "source": "qx-rulesets",
+      "criterion": "E02",
+      "summary": "個人契約を参照する設定では、テンプレート値と異なる職員固有の契約値を適用する。",
+      "locator": "Per-person agreement overrides",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "Schedule ComplianceのRule sets。最適化重みの順位とは別。"
+    },
+    {
+      "product": "US18",
+      "source": "qx-rulesets",
+      "criterion": "K03",
+      "summary": "ルールを追加・保存してから職員群に割り当てる手順を推奨する。先に割り当てると未検査期間が生じる。",
+      "locator": "Recommended configuration flow / Why wait to assign",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "Schedule ComplianceのRule sets。最適化重みの順位とは別。"
+    },
+    {
+      "product": "US18",
+      "source": "qx-rulesets",
+      "criterion": "G09",
+      "summary": "適用された集合にない規則は検査しない。空の集合を割り当てても自動で全条件を検査するわけではない。",
+      "locator": "Scheduling behavior / FAQ",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "Schedule ComplianceのRule sets。最適化重みの順位とは別。"
+    },
+    {
+      "product": "US18",
+      "source": "qx-rulesets",
+      "criterion": "F07",
+      "summary": "利用者作成の集合をアーカイブすると、紐付く契約テンプレートは既定集合へ戻る。",
+      "locator": "Default rule set / FAQ",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "Schedule ComplianceのRule sets。最適化重みの順位とは別。"
+    },
+    {
+      "product": "US18",
+      "source": "qx-assign",
+      "criterion": "B01",
+      "summary": "手動・Base Schedule・Auto Scheduleで作られた既存の空きシフトを職員へ割り当てる。",
+      "locator": "Auto Assign",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "購入・Quinyxによる初期設定を要するAuto Assignモジュール。"
+    },
+    {
+      "product": "US18",
+      "source": "qx-assign",
+      "criterion": "B07",
+      "summary": "Auto Scheduleの勤務枠生成とAuto Assignの職員割当は別モジュールで、Auto Assignの購入・有効化が必要。",
+      "locator": "Introduction / Prerequisites",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "購入・Quinyxによる初期設定を要するAuto Assignモジュール。"
+    },
+    {
+      "product": "US18",
+      "source": "qx-assign",
+      "criterion": "K03",
+      "summary": "実行パラメータ、計算時間上限、目的の設定は導入時にQuinyxが行う。",
+      "locator": "Parameter Configuration",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "購入・Quinyxによる初期設定を要するAuto Assignモジュール。"
+    },
+    {
+      "product": "US18",
+      "source": "qx-assign",
+      "criterion": "F01",
+      "summary": "各規則を必須か希望に分け、必須規則は割当時に破らず、希望規則は相対的な重みで扱うと説明する。",
+      "locator": "Labor Rules",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "購入・Quinyxによる初期設定を要するAuto Assignモジュール。"
+    },
+    {
+      "product": "US18",
+      "source": "qx-assign",
+      "criterion": "F02",
+      "summary": "希望規則の遵守の重要度を重み付けして、費用等の目的と併せて設定する。",
+      "locator": "Labor Rules / Parameter Configuration",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "購入・Quinyxによる初期設定を要するAuto Assignモジュール。"
+    },
+    {
+      "product": "US18",
+      "source": "qx-assign",
+      "criterion": "E03",
+      "summary": "シフトが不足する場合、契約時間に対する充足率を均す公平性規則を設定できる。",
+      "locator": "Equal relative contract fulfillment",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "購入・Quinyxによる初期設定を要するAuto Assignモジュール。"
+    },
+    {
+      "product": "US18",
+      "source": "qx-assign",
+      "criterion": "E04",
+      "summary": "特定勤務種類の均等配分と、夜勤等の勤務種類のローテーションを設定できる。",
+      "locator": "Fairness rules",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "購入・Quinyxによる初期設定を要するAuto Assignモジュール。"
+    },
+    {
+      "product": "US18",
+      "source": "qx-assign",
+      "criterion": "K03",
+      "summary": "公平性規則の組込みにはQuinyxの支援が必要。掲載だけで全契約に既定で有効とは判断しない。",
+      "locator": "Fairness rules note",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "購入・Quinyxによる初期設定を要するAuto Assignモジュール。"
+    },
+    {
+      "product": "US18",
+      "source": "qx-assign",
+      "criterion": "D03",
+      "summary": "シフトが要求する技能を満たす職員だけを自動配置する。",
+      "locator": "Skills",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "購入・Quinyxによる初期設定を要するAuto Assignモジュール。"
+    },
+    {
+      "product": "US18",
+      "source": "qx-assign",
+      "criterion": "E01",
+      "summary": "欠勤・休暇として登録された日には職員を割り当てない。",
+      "locator": "Absences",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "購入・Quinyxによる初期設定を要するAuto Assignモジュール。"
+    },
+    {
+      "product": "US18",
+      "source": "qx-assign",
+      "criterion": "G08",
+      "summary": "実行状況のポーリング表示上限は90分へ延長された。以前は30分超で結果不明と表示することがあった。",
+      "locator": "Algorithm run tables technical limit",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "購入・Quinyxによる初期設定を要するAuto Assignモジュール。"
+    },
+    {
+      "product": "US18",
+      "source": "qx-assign",
+      "criterion": "G02",
+      "summary": "状況画面のUnknown Resultは計算が終わっていない証明ではなく、取得表示時間の制限で生じ得る。",
+      "locator": "Algorithm run tables technical limit",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "購入・Quinyxによる初期設定を要するAuto Assignモジュール。"
+    },
+    {
+      "product": "US18",
+      "source": "qx-avail",
+      "criterion": "G09",
+      "summary": "勤務可否は有効化後に必須扱いが既定となるが、Quinyxへの有効化依頼がなければアルゴリズムで考慮されない。",
+      "locator": "Availability is considered a hard requirement",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "Auto AssignのAvailability。必須／希望の設定と有効化に依存。"
+    },
+    {
+      "product": "US18",
+      "source": "qx-avail",
+      "criterion": "G03",
+      "summary": "勤務可能時間とシフトが一部でも合わない場合、必須扱いでは未割当のまま残る。",
+      "locator": "Risks of setting availability as a hard constraint",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "Auto AssignのAvailability。必須／希望の設定と有効化に依存。"
+    },
+    {
+      "product": "US18",
+      "source": "qx-avail",
+      "criterion": "F03",
+      "summary": "勤務可否を希望扱いにするには、重要度の見積・設定をQuinyxへ依頼する。",
+      "locator": "Availability is considered a preferential requirement",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "Auto AssignのAvailability。必須／希望の設定と有効化に依存。"
+    },
+    {
+      "product": "US18",
+      "source": "qx-avail",
+      "criterion": "E01",
+      "summary": "同日に勤務可能と欠勤の両方が登録されても欠勤を優先し、自動配置しない。",
+      "locator": "FAQ: availability as well as an absence",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "Auto AssignのAvailability。必須／希望の設定と有効化に依存。"
+    },
+    {
+      "product": "US18",
+      "source": "qx-avail",
+      "criterion": "B06",
+      "summary": "勤務可否はユニット別・セクション別には扱われず、申告先の拠点に限定して割り当てる機能とは異なる。",
+      "locator": "FAQ: works across multiple units / sections",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "Auto AssignのAvailability。必須／希望の設定と有効化に依存。"
+    },
+    {
+      "product": "US18",
+      "source": "qx-avail",
+      "criterion": "F03",
+      "summary": "フルタイムや契約時間の多い職員を先に割り当てる追加規則は、別途見積・設定が必要。",
+      "locator": "FAQ: multiple employees with matching availabilities",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "Auto AssignのAvailability。必須／希望の設定と有効化に依存。"
+    },
+    {
+      "product": "US18",
+      "source": "qx-minmax",
+      "criterion": "B02",
+      "summary": "需要予測に対し、ユニット・人数属性・曜日・時間帯ごとに最低／最大配置人数を追加できる。",
+      "locator": "Minimum / Maximum Requirements",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "購入を要するAuto ScheduleのPythia人数条件。Auto Assignとは別。"
+    },
+    {
+      "product": "US18",
+      "source": "qx-minmax",
+      "criterion": "F01",
+      "summary": "最低配置人数は既定で希望条件。必須にした場合は低需要でも満たすと説明する。",
+      "locator": "Minimum/Maximum Requirements and Auto Schedule",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "購入を要するAuto ScheduleのPythia人数条件。Auto Assignとは別。"
+    },
+    {
+      "product": "US18",
+      "source": "qx-minmax",
+      "criterion": "C02",
+      "summary": "深夜を跨ぐ人数条件は、開始日から24時までと翌日0時以降の2条件に分けて入力する。",
+      "locator": "Multiple requirements pass midnight",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "購入を要するAuto ScheduleのPythia人数条件。Auto Assignとは別。"
+    },
+    {
+      "product": "US18",
+      "source": "qx-minmax",
+      "criterion": "D02",
+      "summary": "開始・終了は午前0時からの分数で設定し、開店時間外の予測がない時間帯にも人数条件を使える。",
+      "locator": "Start / End / outside opening hours",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "購入を要するAuto ScheduleのPythia人数条件。Auto Assignとは別。"
+    },
+    {
+      "product": "US18",
+      "source": "qx-minmax",
+      "criterion": "F07",
+      "summary": "人数条件の変更は次回の自動生成に反映される。既存表の即時修正保証ではない。",
+      "locator": "Editing or Deleting Requirements",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "購入を要するAuto ScheduleのPythia人数条件。Auto Assignとは別。"
+    },
+    {
+      "product": "US18",
+      "source": "qx-minmax",
+      "criterion": "O06",
+      "summary": "Pythiaの人数条件はQuinyx側の規則へ将来移行予定で、当面は両方式が併存すると説明する。",
+      "locator": "Migration note",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "購入を要するAuto ScheduleのPythia人数条件。Auto Assignとは別。"
+    },
+    {
+      "product": "US19",
+      "source": "wiw-assign",
+      "criterion": "B01",
+      "summary": "自動割当は既存の未公開OpenShiftsを職員に配置する方式。勤務枠は先に用意する。",
+      "locator": "Overview / Considerations",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "Webの週表示における未公開OpenShiftsの自動割当。"
+    },
+    {
+      "product": "US19",
+      "source": "wiw-assign",
+      "criterion": "B08",
+      "summary": "自動割当は週表示のみで、公開済み空きシフトは対象にならない。",
+      "locator": "Considerations",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "Webの週表示における未公開OpenShiftsの自動割当。"
+    },
+    {
+      "product": "US19",
+      "source": "wiw-assign",
+      "criterion": "D03",
+      "summary": "職員に割り当てたPositionとTagを配置資格に使う。資格期限の自動確認までは示されていない。",
+      "locator": "How auto-assign shifts works",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "Webの週表示における未公開OpenShiftsの自動割当。"
+    },
+    {
+      "product": "US19",
+      "source": "wiw-assign",
+      "criterion": "G09",
+      "summary": "Position未指定の空きシフトは、Positionを持たない職員だけが対象になる。",
+      "locator": "Considerations",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "Webの週表示における未公開OpenShiftsの自動割当。"
+    },
+    {
+      "product": "US19",
+      "source": "wiw-assign",
+      "criterion": "H01",
+      "summary": "公開済みと未公開の既存勤務を考慮して残りの空き枠を割り当てる。",
+      "locator": "How auto-assign shifts works",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "Webの週表示における未公開OpenShiftsの自動割当。"
+    },
+    {
+      "product": "US19",
+      "source": "wiw-assign",
+      "criterion": "E01",
+      "summary": "承認済みの休暇申請を自動割当の判断材料にする。",
+      "locator": "How auto-assign shifts works",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "Webの週表示における未公開OpenShiftsの自動割当。"
+    },
+    {
+      "product": "US19",
+      "source": "wiw-assign",
+      "criterion": "E02",
+      "summary": "勤務不可・勤務希望を考慮するかを追加オプションで設定する。",
+      "locator": "Auto-assign options b/c",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "Webの週表示における未公開OpenShiftsの自動割当。"
+    },
+    {
+      "product": "US19",
+      "source": "wiw-assign",
+      "criterion": "F03",
+      "summary": "希望に沿うシフトの判定は、勤務時間の70%以上が希望可能時間と重なること。充足率の個人別表示は未確認。",
+      "locator": "Auto-assign options c",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "Webの週表示における未公開OpenShiftsの自動割当。"
+    },
+    {
+      "product": "US19",
+      "source": "wiw-assign",
+      "criterion": "E04",
+      "summary": "週末優先では金曜17時以降から日曜23時59分までを週末とし、無作為化した週末枠を先に埋める。",
+      "locator": "Auto-assign options d",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "Webの週表示における未公開OpenShiftsの自動割当。"
+    },
+    {
+      "product": "US19",
+      "source": "wiw-assign",
+      "criterion": "C07",
+      "summary": "職員プロフィールの最大時間、1日の最大割当時間、1日複数勤務の可否を設定できる。",
+      "locator": "Auto-assign options a/e/f",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "Webの週表示における未公開OpenShiftsの自動割当。"
+    },
+    {
+      "product": "US19",
+      "source": "wiw-assign",
+      "criterion": "N01",
+      "summary": "自動割当の操作対象権限はAdminとManager。",
+      "locator": "Applies to",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "Webの週表示における未公開OpenShiftsの自動割当。"
+    },
+    {
+      "product": "US19",
+      "source": "wiw-assign",
+      "criterion": "H08",
+      "summary": "Revertで自動割当を空きシフト行へ戻せる。保存後は確認・手修正して公開する。",
+      "locator": "Auto-assign shifts steps 7–8",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "Webの週表示における未公開OpenShiftsの自動割当。"
+    },
+    {
+      "product": "US19",
+      "source": "wiw-assign",
+      "criterion": "H07",
+      "summary": "自動配置・保存と職員へのPublish & Notifyは別工程。",
+      "locator": "Auto-assign shifts steps 7–8",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "Webの週表示における未公開OpenShiftsの自動割当。"
+    },
+    {
+      "product": "US19",
+      "source": "wiw-ot",
+      "criterion": "C02",
+      "summary": "日跨ぎ勤務の予定時間は日別に分割される。22時〜翌3時は開始日に2時間、翌日に3時間。",
+      "locator": "Schedule day and week totals",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "勤務表上の残業表示・交代検査。法定制約の自動保証とは別。"
+    },
+    {
+      "product": "US19",
+      "source": "wiw-ot",
+      "criterion": "C03",
+      "summary": "残業の判定は職員個別タイムゾーンでなく、アカウントのタイムゾーンを使う。",
+      "locator": "FAQ: custom timezones",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "勤務表上の残業表示・交代検査。法定制約の自動保証とは別。"
+    },
+    {
+      "product": "US19",
+      "source": "wiw-ot",
+      "criterion": "C07",
+      "summary": "法令による残業閾値と、雇用者が職員ごとに定める週最大時間を区別する。",
+      "locator": "FAQ: max hours and overtime",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "勤務表上の残業表示・交代検査。法定制約の自動保証とは別。"
+    },
+    {
+      "product": "US19",
+      "source": "wiw-ot",
+      "criterion": "H05",
+      "summary": "交換・譲渡・代替配置の候補に週最大時間と残業の影響を表示し、影響がある候補を一括で外せる。",
+      "locator": "Shift Requests",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "勤務表上の残業表示・交代検査。法定制約の自動保証とは別。"
+    },
+    {
+      "product": "US19",
+      "source": "wiw-ot",
+      "criterion": "G09",
+      "summary": "交換時のバッジは新たな残業・最大時間超過が増える場合だけ。既存超過の維持・減少には表示しない。",
+      "locator": "Shift swap requests note",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "勤務表上の残業表示・交代検査。法定制約の自動保証とは別。"
+    },
+    {
+      "product": "US19",
+      "source": "wiw-ot",
+      "criterion": "L06",
+      "summary": "OpenShiftへの応募・引受で残業となる場合の表示と管理者通知を設定できる。",
+      "locator": "OpenShifts / OpenShift requests",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "勤務表上の残業表示・交代検査。法定制約の自動保証とは別。"
+    },
+    {
+      "product": "US19",
+      "source": "wiw-ot",
+      "criterion": "I05",
+      "summary": "複数時給で働く職員の予定賃金は週残業を加味した加重値として表示する。",
+      "locator": "Sales mode",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "勤務表上の残業表示・交代検査。法定制約の自動保証とは別。"
+    },
+    {
+      "product": "US19",
+      "source": "wiw-ot",
+      "criterion": "G03",
+      "summary": "既存シフトの延長時は旧時間を二重計上せず、残業のバッジを更新すると説明する。",
+      "locator": "FAQ: editing an existing shift",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "勤務表上の残業表示・交代検査。法定制約の自動保証とは別。"
+    },
+    {
+      "product": "US20",
+      "source": "pd-api-help",
+      "criterion": "B07",
+      "summary": "Open APIの対象プランはPlus・Pro・Enterpriseとヘルプに明示される。",
+      "locator": "Access level / Subscription plan",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "Plus・Pro・EnterpriseのOpen API。全部署アクセスを持つ管理者が設定。"
+    },
+    {
+      "product": "US20",
+      "source": "pd-api-help",
+      "criterion": "N01",
+      "summary": "アプリごとに利用できる操作のScopeを選び、全部署アクセスの管理者が承認する。",
+      "locator": "Create Open API credentials",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "Plus・Pro・EnterpriseのOpen API。全部署アクセスを持つ管理者が設定。"
+    },
+    {
+      "product": "US20",
+      "source": "pd-api-help",
+      "criterion": "O08",
+      "summary": "APIを承認した管理者を無効化すると連携のアクセスが止まり、別途再承認と新トークンへの更新が必要。",
+      "locator": "Reauthorise an app after deactivating an account",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "Plus・Pro・EnterpriseのOpen API。全部署アクセスを持つ管理者が設定。"
+    },
+    {
+      "product": "US20",
+      "source": "pd-api-overview",
+      "criterion": "M04",
+      "summary": "REST APIはJSONで要求・応答し、HR・Absence等の業務ドメインに分かれる。",
+      "locator": "Learn about our API basics",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "公開REST APIの共通仕様。API利用契約と本番接続は未確認。"
+    },
+    {
+      "product": "US20",
+      "source": "pd-api-overview",
+      "criterion": "B08",
+      "summary": "多くの一覧APIは1ページ最大50件で、offsetによるページングを使う。",
+      "locator": "Learn about our API basics",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "公開REST APIの共通仕様。API利用契約と本番接続は未確認。"
+    },
+    {
+      "product": "US20",
+      "source": "pd-api-overview",
+      "criterion": "N01",
+      "summary": "作成済みAPIアプリにScopeを後から追加できないため、本番用は必要最小限のScopeを再評価する手順。",
+      "locator": "Set up your test app",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "公開REST APIの共通仕様。API利用契約と本番接続は未確認。"
+    },
+    {
+      "product": "US20",
+      "source": "pd-api-overview",
+      "criterion": "K08",
+      "summary": "開発・検証用のデモポータルは申請制。公開資料を読んだだけでは利用可能な試用環境を取得したことにならない。",
+      "locator": "Get started with Planday",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "公開REST APIの共通仕様。API利用契約と本番接続は未確認。"
+    },
+    {
+      "product": "US20",
+      "source": "pd-api-auth",
+      "criterion": "M04",
+      "summary": "OAuth2 Authorization Code方式で認可し、APIのAccess Tokenは1時間で失効、Refresh Tokenで更新する。",
+      "locator": "Requirements and limitations",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "Open APIのOAuth認可。利用者ログインのSSO/MFA対応とは別。"
+    },
+    {
+      "product": "US20",
+      "source": "pd-api-auth",
+      "criterion": "M04",
+      "summary": "接続解除時は認可取消用エンドポイントへRefresh Tokenを送る仕様が公開されている。",
+      "locator": "Revoke token / Disconnect",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "Open APIのOAuth認可。利用者ログインのSSO/MFA対応とは別。"
+    },
+    {
+      "product": "US20",
+      "source": "pd-api-auth",
+      "criterion": "N07",
+      "summary": "Open APIはHTTPSを要求する。Refresh Tokenは期限なしと説明されるが、利用者が権限を取り消すと再認可が必要。",
+      "locator": "Requirements and limitations",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "Open APIのOAuth認可。利用者ログインのSSO/MFA対応とは別。"
+    },
+    {
+      "product": "US20",
+      "source": "pd-api-limit",
+      "criterion": "B08",
+      "summary": "制限表はポータルごと20要求/秒・750/分、Client IDごと100/秒・2000/分とするが、下の例はポータル10/秒と記す。",
+      "locator": "Rate limit table / How to decode example",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "APIの共通レート制限。表と例の不一致を区別。",
+      "state": "disputed"
+    },
+    {
+      "product": "US20",
+      "source": "pd-api-limit",
+      "criterion": "M04",
+      "summary": "制限超過はHTTP429を返し、reset・remaining・limitの応答ヘッダーで再試行時点を確認する。",
+      "locator": "Viewing the status of the rate limit",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "APIの共通レート制限。表と例の不一致を区別。"
+    },
+    {
+      "product": "US20",
+      "source": "pd-api-limit",
+      "criterion": "M04",
+      "summary": "1要求がポータルとClient IDの両方のカウンターを消費する。顧客別とアプリ全体の枠を分けて管理する必要がある。",
+      "locator": "A request will always contain one client id and portal",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "APIの共通レート制限。表と例の不一致を区別。"
+    },
+    {
+      "product": "US18",
+      "source": "qx-labor",
+      "criterion": "G09",
+      "summary": "契約テンプレート内の労働ルールは既定では自動割当に反映されず、導入担当による有効化が必要。選択したルールのみ評価し、以後の設定変更は自動反映する。",
+      "locator": "Labor rules defined in agreement templates",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "Auto Assignの契約テンプレート／Pythia設定。有効化されたルールだけに適用。"
+    },
+    {
+      "product": "US18",
+      "source": "qx-labor",
+      "criterion": "C02",
+      "summary": "日上限は日跨ぎ勤務の時間を両日に分配する一方、週上限・下限はその週に開始した勤務を基準に集計する。",
+      "locator": "Max hours/day; Minimum/Max hours/week",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "Auto Assignの契約テンプレート／Pythia設定。有効化されたルールだけに適用。"
+    },
+    {
+      "product": "US18",
+      "source": "qx-labor",
+      "criterion": "C05",
+      "summary": "日休息はMin Restチェックの有無で、連続日の勤務間休息と日区切りを考慮する連続休息に分かれる。週休息は固定週またはローリング期間を設定できる。",
+      "locator": "Min REST; Minimum rest/week",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "Auto Assignの契約テンプレート／Pythia設定。有効化されたルールだけに適用。"
+    },
+    {
+      "product": "US18",
+      "source": "qx-labor",
+      "criterion": "C06",
+      "summary": "最大連続勤務日数と、その上限まで勤務した後の最低連続休日を契約レベルで設定する。",
+      "locator": "Max days; Free days",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "Auto Assignの契約テンプレート／Pythia設定。有効化されたルールだけに適用。"
+    },
+    {
+      "product": "US18",
+      "source": "qx-labor",
+      "criterion": "C04",
+      "summary": "必要休憩がない勤務、休憩の最小・最大時間を満たさない勤務は割当できない。休憩中の資格別実効人数の検査はこの説明では確認できない。",
+      "locator": "Maximum work hours w/o breaks; Minimum/Maximum break minutes",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "Auto Assignの契約テンプレート／Pythia設定。有効化されたルールだけに適用。"
+    },
+    {
+      "product": "US18",
+      "source": "qx-labor",
+      "criterion": "F03",
+      "summary": "期間別に複数の最低勤務長を設定した場合、自動割当は最小値を計画期間全体の最低長として使う。",
+      "locator": "Minimum shift length",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "Auto Assignの契約テンプレート／Pythia設定。有効化されたルールだけに適用。"
+    },
+    {
+      "product": "US18",
+      "source": "qx-labor",
+      "criterion": "K03",
+      "summary": "追加ルールはPythia内でベンダーが設定・保守する。ユニット、勤務種別、職員、契約、年齢群ごとに適用でき、初期導入後の追加もベンダー対応。",
+      "locator": "Labor rules defined in Pythia",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "Auto Assignの契約テンプレート／Pythia設定。有効化されたルールだけに適用。"
+    },
+    {
+      "product": "US18",
+      "source": "qx-labor",
+      "criterion": "F01",
+      "summary": "各ルールを必須または希望に分け、必須は割当時に違反させず、希望間は重みで優先度を設定する。優先度の要望は顧客、実設定は導入担当が担う。",
+      "locator": "Rule adherence and preferences",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "Auto Assignの契約テンプレート／Pythia設定。有効化されたルールだけに適用。"
+    },
+    {
+      "product": "US18",
+      "source": "qx-warnings",
+      "criterion": "G02",
+      "summary": "実行完了でも条件により不十分な結果になることがあり、対象ユニットの警告を通知と詳細パネルで確認する。完了は全枠充足を意味しない。",
+      "locator": "Introduction; warning details",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "自動作成／自動割当の完了通知と詳細パネルの公開仕様"
+    },
+    {
+      "product": "US18",
+      "source": "qx-warnings",
+      "criterion": "G04",
+      "summary": "必要勤務時間と稼働可能時間の差、配置可能職員がいない勤務、対象勤務がない職員などの原因と対応例を表示する。最小矛盾集合の証明は記載されない。",
+      "locator": "Auto Schedule / Auto Assign warnings",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "自動作成／自動割当の完了通知と詳細パネルの公開仕様"
+    },
+    {
+      "product": "US18",
+      "source": "qx-warnings",
+      "criterion": "G09",
+      "summary": "有効な契約がない場合は勤務を作らず完了する。必要人数条件がない勤務種別も作成対象にならない場合がある。",
+      "locator": "No active agreements; headcount requirements",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "自動作成／自動割当の完了通知と詳細パネルの公開仕様"
+    },
+    {
+      "product": "US18",
+      "source": "qx-warnings",
+      "criterion": "H01",
+      "summary": "不適格な職員に固定勤務が割り当て済みの場合も警告対象として説明する。固定した値の妥当性が自動的に保証されるわけではない。",
+      "locator": "Fixed shifts assigned to ineligible employees",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "自動作成／自動割当の完了通知と詳細パネルの公開仕様"
+    },
+    {
+      "product": "US18",
+      "source": "qx-warnings",
+      "criterion": "K02",
+      "summary": "計画の一部で契約が無効、勤務種別が非アクティブ、対象期間に未割当勤務がない場合を区別して警告する。",
+      "locator": "Auto Assign warning list",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "自動作成／自動割当の完了通知と詳細パネルの公開仕様"
+    },
+    {
+      "product": "US18",
+      "source": "qx-warnings",
+      "criterion": "K03",
+      "summary": "勤務長・休憩ルールの矛盾など、Quinyx画面外で設定される条件の変更はベンダーに連絡する運用としている。",
+      "locator": "Contradictory shift/break rules",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "自動作成／自動割当の完了通知と詳細パネルの公開仕様"
+    },
+    {
+      "product": "US09",
+      "source": "ct-auto",
+      "criterion": "B01",
+      "summary": "手作成、テンプレート、取込で事前に用意した未割当勤務に職員を配置する。勤務時刻・枠そのものの自動生成とは分けて扱う。",
+      "locator": "Before you start; Preparing Your Shifts",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "Operations Job SchedulerのAuto Assign。未割当勤務枠を用意してから実行。"
+    },
+    {
+      "product": "US09",
+      "source": "ct-auto",
+      "criterion": "H07",
+      "summary": "自動割当した勤務は草案になる。公開済み勤務への即時通知を伴うとはこの手順から確認できない。",
+      "locator": "Automatically Assigning Shifts",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "Operations Job SchedulerのAuto Assign。未割当勤務枠を用意してから実行。"
+    },
+    {
+      "product": "US09",
+      "source": "ct-auto",
+      "criterion": "D08",
+      "summary": "同じ職員に時間が重なる勤務を割り当てないと説明する。施設間の移動時間・兼務者の集計算式は未確認。",
+      "locator": "Overlapping shifts",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "Operations Job SchedulerのAuto Assign。未割当勤務枠を用意してから実行。"
+    },
+    {
+      "product": "US09",
+      "source": "ct-auto",
+      "criterion": "E01",
+      "summary": "承認済み休暇と職員の勤務不可を考慮する。ただし勤務不可の考慮は実行前に切替可能。",
+      "locator": "Approved Time Off; Unavailability; toggles",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "Operations Job SchedulerのAuto Assign。未割当勤務枠を用意してから実行。"
+    },
+    {
+      "product": "US09",
+      "source": "ct-auto",
+      "criterion": "D03",
+      "summary": "勤務またはJobに設定された適格性を考慮するが、その考慮を実行前に切り替えられる。医療資格の期限判定やスキル混成の算式は未確認。",
+      "locator": "Shift Qualification; toggles",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "Operations Job SchedulerのAuto Assign。未割当勤務枠を用意してから実行。"
+    },
+    {
+      "product": "US09",
+      "source": "ct-auto",
+      "criterion": "E04",
+      "summary": "公平性は職員間の勤務数を揃えることを目指すと説明する。契約時間比、夜勤負担、複数月の補正は記載されない。",
+      "locator": "Fairness",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "Operations Job SchedulerのAuto Assign。未割当勤務枠を用意してから実行。"
+    },
+    {
+      "product": "US09",
+      "source": "ct-auto",
+      "criterion": "F02",
+      "summary": "勤務希望は可能な場合に反映するが、他のルールより優先しない。目的関数の数式や重み値は非公開。",
+      "locator": "Work preferences",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "Operations Job SchedulerのAuto Assign。未割当勤務枠を用意してから実行。"
+    },
+    {
+      "product": "US09",
+      "source": "ct-auto",
+      "criterion": "F01",
+      "summary": "設定した勤務時間・勤務数・休息ルールを自動割当では破らないと説明する。ルールは事前設定が必要。",
+      "locator": "Schedule Rules; Before you start",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "Operations Job SchedulerのAuto Assign。未割当勤務枠を用意してから実行。"
+    },
+    {
+      "product": "US09",
+      "source": "ct-auto",
+      "criterion": "G03",
+      "summary": "割当できない勤務数を通知し、その勤務は未割当欄に残る。全勤務への配置は目標であり充足保証ではない。",
+      "locator": "FAQ: X shifts weren’t assigned",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "Operations Job SchedulerのAuto Assign。未割当勤務枠を用意してから実行。"
+    },
+    {
+      "product": "US09",
+      "source": "ct-auto",
+      "criterion": "H01",
+      "summary": "一部の勤務を人が先に割り当て、残りを自動割当する運用を案内している。固定ロックの仕様とは区別する。",
+      "locator": "FAQ: schedule part of shifts",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "Operations Job SchedulerのAuto Assign。未割当勤務枠を用意してから実行。"
+    },
+    {
+      "product": "US09",
+      "source": "ct-auto",
+      "criterion": "H08",
+      "summary": "自動割当の解除または再配分を選べる。任意の過去版復元・同時編集の衝突処理は未確認。",
+      "locator": "FAQ: redo distribution",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "Operations Job SchedulerのAuto Assign。未割当勤務枠を用意してから実行。"
+    },
+    {
+      "product": "US09",
+      "source": "ct-auto",
+      "criterion": "H02",
+      "summary": "前回勤務表との類似性と未処理のOpen Shift申請の考慮は次期開発項目として掲載され、提供済みとは扱わない。",
+      "locator": "Next up",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "Operations Job SchedulerのAuto Assign。未割当勤務枠を用意してから実行。",
+      "support": "planned"
+    },
+    {
+      "product": "US09",
+      "source": "ct-rules",
+      "criterion": "N01",
+      "summary": "勤務ルールの設定にはJob Scheduling権限、対象勤務表へのアクセスと利用者詳細の管理権限が必要。",
+      "locator": "Admin permissions",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "グループCompany Policies／個人Custom Rules／勤務表全体Schedule Limitationsは別設定。"
+    },
+    {
+      "product": "US09",
+      "source": "ct-rules",
+      "criterion": "E02",
+      "summary": "グループ方針と個人の例外ルールで、週勤務時間、日勤務数、勤務間休息を設定できる。新規職員への既定方針の自動適用も選べる。",
+      "locator": "Company Policies; Custom Rules",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "グループCompany Policies／個人Custom Rules／勤務表全体Schedule Limitationsは別設定。"
+    },
+    {
+      "product": "US09",
+      "source": "ct-rules",
+      "criterion": "F03",
+      "summary": "ルールは全勤務表または指定勤務表、Job、タグに適用できる。既存方針との重複時は追加または置換を選ぶ。",
+      "locator": "Assign rules; policy conflicts",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "グループCompany Policies／個人Custom Rules／勤務表全体Schedule Limitationsは別設定。"
+    },
+    {
+      "product": "US09",
+      "source": "ct-rules",
+      "criterion": "F01",
+      "summary": "利用者がルール超過となる勤務を応募できない設定を選択できる。管理者承認が必要な募集でも、この応募制限は有効と説明する。",
+      "locator": "Prevent users from exceeding this rule when claiming shifts",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "グループCompany Policies／個人Custom Rules／勤務表全体Schedule Limitationsは別設定。"
+    },
+    {
+      "product": "US09",
+      "source": "ct-rules",
+      "criterion": "G03",
+      "summary": "管理者の手動操作はPCでは草案保存・公開時、モバイルでは配置時に警告する。統計とIssuesでも違反を確認する。自動割当の必須遵守とは別の挙動。",
+      "locator": "Manual scheduling; statistics; Issues",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "グループCompany Policies／個人Custom Rules／勤務表全体Schedule Limitationsは別設定。"
+    },
+    {
+      "product": "US09",
+      "source": "ct-rules",
+      "criterion": "B05",
+      "summary": "Shift Quotasは利用者が応募するOpen Shiftの週最低数を設定する機能。人数不足を全体最適化する機能とは分ける。",
+      "locator": "Shift quotas",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "グループCompany Policies／個人Custom Rules／勤務表全体Schedule Limitationsは別設定。"
+    },
+    {
+      "product": "US09",
+      "source": "ct-rules",
+      "criterion": "L06",
+      "summary": "最低応募数は利用者／グループ、曜日・時間帯で対象を指定し、進捗バーや未達表示から本人へ通知できる。",
+      "locator": "Quota progress; notify users",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "グループCompany Policies／個人Custom Rules／勤務表全体Schedule Limitationsは別設定。"
+    },
+    {
+      "product": "US09",
+      "source": "ct-rules",
+      "criterion": "F07",
+      "summary": "方針の編集、複製、割当変更、一時無効化・再有効化を案内する。旧版の再現性・保存期間は未記載。",
+      "locator": "Manage policies",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "グループCompany Policies／個人Custom Rules／勤務表全体Schedule Limitationsは別設定。"
+    },
+    {
+      "product": "US09",
+      "source": "ct-rules",
+      "criterion": "B08",
+      "summary": "Schedule Limitationsは同じ勤務表全体に適用するため、その設定を同じ表内で職員別に変えられない。個人Custom Rulesとは別機能。",
+      "locator": "FAQ: different schedule limitations per user",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "グループCompany Policies／個人Custom Rules／勤務表全体Schedule Limitationsは別設定。"
+    },
+    {
+      "product": "US09",
+      "source": "ct-rules",
+      "criterion": "B07",
+      "summary": "勤務表全体のSchedule LimitationsはOperations Expertで提供すると説明する。各個人ルールのプラン境界は個別確認が必要。",
+      "locator": "Schedule limitations availability",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "グループCompany Policies／個人Custom Rules／勤務表全体Schedule Limitationsは別設定。"
+    },
+    {
+      "product": "US09",
+      "source": "ct-rules",
+      "criterion": "H03",
+      "summary": "週開始前の指定時間内の作成・変更・公開をShort Notice Alertsとして警告でき、時刻・Job・場所・配置の変更を対象にする。",
+      "locator": "Short Notice Alerts",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "グループCompany Policies／個人Custom Rules／勤務表全体Schedule Limitationsは別設定。"
+    },
+    {
+      "product": "US09",
+      "source": "ct-hours",
+      "criterion": "E02",
+      "summary": "職員プロファイルまたは会社方針で曜日ごとに複数の通常勤務時間帯を設定し、勤務不可を自動生成する。",
+      "locator": "Set Regular Working Hours",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "Regular Working Hoursの公開説明。更新日は相対表示のため日付を推定しない。"
+    },
+    {
+      "product": "US09",
+      "source": "ct-hours",
+      "criterion": "C02",
+      "summary": "日跨ぎの通常勤務時間帯は当日24時までと翌日0時以降に分けて入力する。",
+      "locator": "Overnight working hours",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "Regular Working Hoursの公開説明。更新日は相対表示のため日付を推定しない。"
+    },
+    {
+      "product": "US09",
+      "source": "ct-hours",
+      "criterion": "C03",
+      "summary": "通常勤務時間帯にはタイムゾーンを設定でき、既定ではアカウントのタイムゾーンを使う。",
+      "locator": "Time zone",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "Regular Working Hoursの公開説明。更新日は相対表示のため日付を推定しない。"
+    },
+    {
+      "product": "US09",
+      "source": "ct-hours",
+      "criterion": "F01",
+      "summary": "自動割当は通常勤務時間帯内に配置する。管理者による時間帯外の手動配置は競合表示を伴って可能と説明する。",
+      "locator": "Impact on scheduling; FAQ",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "Regular Working Hoursの公開説明。更新日は相対表示のため日付を推定しない。"
+    },
+    {
+      "product": "US09",
+      "source": "ct-hours",
+      "criterion": "N03",
+      "summary": "会社方針の作成・編集・削除・割当はCompany Activity Log、個人の変更はUser Timelineに記録する。",
+      "locator": "Track changes",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "Regular Working Hoursの公開説明。更新日は相対表示のため日付を推定しない。"
+    },
+    {
+      "product": "US09",
+      "source": "ct-hours",
+      "criterion": "B07",
+      "summary": "Limited Operationsは方針を2件まで、Basic以上は無制限と案内する。Time Clock／Time Offへの通常勤務時間帯の適用は今後の予定として記載する。",
+      "locator": "FAQ: policies limits; Time Clock and Time Off",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "Regular Working Hoursの公開説明。更新日は相対表示のため日付を推定しない。"
+    },
+    {
+      "product": "US09",
+      "source": "ct-expert",
+      "criterion": "B08",
+      "summary": "Time Clockは最大6個、レポートはTime Clockごとに3個までと説明する。勤務表の上限とは別のモジュール上限。",
+      "locator": "Time Clock; reports",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "Operations Expertの追加機能。勤務表12個の上限は既存記録を維持。"
+    },
+    {
+      "product": "US09",
+      "source": "ct-expert",
+      "criterion": "M02",
+      "summary": "勤務時間表のCSVテンプレートを個別に構成できる。勤務表・希望・ルールの全量出力保証とは別に扱う。",
+      "locator": "Custom timesheet export",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "Operations Expertの追加機能。勤務表12個の上限は既存記録を維持。"
+    },
+    {
+      "product": "US09",
+      "source": "ct-expert",
+      "criterion": "D08",
+      "summary": "複数勤務表に所属する職員の重複勤務をCross-schedule issuesで警告する。複数表の同時最適化はこの説明では確認できない。",
+      "locator": "Cross-schedule issues",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "Operations Expertの追加機能。勤務表12個の上限は既存記録を維持。"
+    },
+    {
+      "product": "US09",
+      "source": "ct-expert",
+      "criterion": "B04",
+      "summary": "Shift Layersで勤務内のリソース・追加情報を扱う。リソースの自動最適化としては説明されていない。",
+      "locator": "Shift Layers",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "Operations Expertの追加機能。勤務表12個の上限は既存記録を維持。"
+    },
+    {
+      "product": "US19",
+      "source": "wiw-rules",
+      "criterion": "N01",
+      "summary": "勤務ルールの設定はAdminまたはManagerが行う。",
+      "locator": "Permissions",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "勤務表のScheduling Rulesと勤務応募／手動編集／Auto Assignの異なる適用場面。"
+    },
+    {
+      "product": "US19",
+      "source": "wiw-rules",
+      "criterion": "C03",
+      "summary": "1日はアカウントの業務日開始時刻からの24時間、1週は設定した起点からの7日間。連勤日数・週勤務日数は勤務の開始日で数える。",
+      "locator": "Definition of a day/week",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "勤務表のScheduling Rulesと勤務応募／手動編集／Auto Assignの異なる適用場面。"
+    },
+    {
+      "product": "US19",
+      "source": "wiw-rules",
+      "criterion": "C02",
+      "summary": "月曜に開始して火曜に終わる勤務は、連勤日数や勤務日数の算定では月曜だけに所属する。日別時間外計算の時間分割とは異なる。",
+      "locator": "Overnight shift example",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "勤務表のScheduling Rulesと勤務応募／手動編集／Auto Assignの異なる適用場面。"
+    },
+    {
+      "product": "US19",
+      "source": "wiw-rules",
+      "criterion": "C05",
+      "summary": "同じ業務日内の最低勤務間隔は1〜12時間、異なる業務日間は1〜18時間の範囲で設定する。",
+      "locator": "Minimum time between shifts",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "勤務表のScheduling Rulesと勤務応募／手動編集／Auto Assignの異なる適用場面。"
+    },
+    {
+      "product": "US19",
+      "source": "wiw-rules",
+      "criterion": "C06",
+      "summary": "最大連続勤務日数は1〜7日、週最大勤務日数は1〜6日の設定範囲としている。",
+      "locator": "Maximum consecutive days; Maximum days per week",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "勤務表のScheduling Rulesと勤務応募／手動編集／Auto Assignの異なる適用場面。"
+    },
+    {
+      "product": "US19",
+      "source": "wiw-rules",
+      "criterion": "F01",
+      "summary": "勤務応募では違反につながるOpenShift／交換・譲渡候補を表示せず、違反となる交換相手も選択できない。一方、管理者の手作成では警告のあるテンプレートを選べる。",
+      "locator": "Employee scheduling; manual scheduling",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "勤務表のScheduling Rulesと勤務応募／手動編集／Auto Assignの異なる適用場面。"
+    },
+    {
+      "product": "US19",
+      "source": "wiw-rules",
+      "criterion": "G03",
+      "summary": "手動でのドラッグ変更時に違反アイコンを表示し、公開確認画面にも対象職員と懸念を一覧表示する。",
+      "locator": "Manual scheduling; publishing",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "勤務表のScheduling Rulesと勤務応募／手動編集／Auto Assignの異なる適用場面。"
+    },
+    {
+      "product": "US19",
+      "source": "wiw-rules",
+      "criterion": "G09",
+      "summary": "Auto Assignは有効な勤務ルールを自動考慮するため、設定によって一部勤務が未割当になる場合がある。",
+      "locator": "Auto Assign",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "勤務表のScheduling Rulesと勤務応募／手動編集／Auto Assignの異なる適用場面。"
+    },
+    {
+      "product": "US19",
+      "source": "wiw-security",
+      "criterion": "N04",
+      "summary": "基盤にAWSを利用すると説明する。保管・処理・バックアップの具体的な国やリージョンはこの本文にない。",
+      "locator": "Hosting",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "サービスの公開セキュリティ説明。第三者監査書、契約原文、復元実測は未取得。"
+    },
+    {
+      "product": "US19",
+      "source": "wiw-security",
+      "criterion": "N07",
+      "summary": "Webとモバイルの通信をTLSで暗号化すると説明する。保存時暗号化の鍵管理などは別途確認が必要。",
+      "locator": "Encryption",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "サービスの公開セキュリティ説明。第三者監査書、契約原文、復元実測は未取得。"
+    },
+    {
+      "product": "US19",
+      "source": "wiw-security",
+      "criterion": "N02",
+      "summary": "Mobile Two-Step Verificationを説明する。管理者のWeb認証にも必須化できるか、SSOとの併用条件は未確認。",
+      "locator": "Mobile Two-Step Verification",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "サービスの公開セキュリティ説明。第三者監査書、契約原文、復元実測は未取得。"
+    },
+    {
+      "product": "US19",
+      "source": "wiw-security",
+      "criterion": "O03",
+      "summary": "複数ディスクへの即時保存に加えて日次バックアップと復元テストの手順を説明する。RTO・RPOの数値保証は未確認。",
+      "locator": "Backups",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "サービスの公開セキュリティ説明。第三者監査書、契約原文、復元実測は未取得。"
+    },
+    {
+      "product": "US19",
+      "source": "wiw-security",
+      "criterion": "O01",
+      "summary": "When I WorkとしてSLAは提供しないと明記する。ホスティング先の99.9%保証は同社サービス全体の稼働保証とは扱わない。",
+      "locator": "SLA",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "サービスの公開セキュリティ説明。第三者監査書、契約原文、復元実測は未取得。",
+      "support": "unsupported"
+    },
+    {
+      "product": "US19",
+      "source": "wiw-api",
+      "criterion": "M04",
+      "summary": "勤務の一覧、作成、更新、複数削除を公開し、W-Token認証を指定する。勤務一覧では非公開勤務の取得に監督権限、全拠点OpenShift取得にManager/Admin権限が必要。",
+      "locator": "Shifts / List Shifts / Create Shift",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "公開API仕様の勤務エンドポイント。APIキー未取得、実行なし。Premium提供条件は既存料金資料を参照。"
+    },
+    {
+      "product": "US19",
+      "source": "wiw-api",
+      "criterion": "M05",
+      "summary": "定期同期はWebhook購読を推奨し、大量の頻繁な取得はAPI制限に達する可能性があると説明する。再送・順序保証の数値は未確認。",
+      "locator": "Introduction",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "公開API仕様の勤務エンドポイント。APIキー未取得、実行なし。Premium提供条件は既存料金資料を参照。"
+    },
+    {
+      "product": "US19",
+      "source": "wiw-api",
+      "criterion": "M04",
+      "summary": "勤務取得で期間内に削除された勤務IDの一覧も返す指定がある。職員同期全体の整合性保証とは分ける。",
+      "locator": "List Shifts / deleted",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "公開API仕様の勤務エンドポイント。APIキー未取得、実行なし。Premium提供条件は既存料金資料を参照。"
+    },
+    {
+      "product": "US19",
+      "source": "wiw-api",
+      "criterion": "H07",
+      "summary": "勤務スキーマに公開日時、通知日時、確認済みフラグと確認日時を公開する。確認機能が有効な場合の値で、通知到達率の保証ではない。",
+      "locator": "Create Shift schema",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "公開API仕様の勤務エンドポイント。APIキー未取得、実行なし。Premium提供条件は既存料金資料を参照。"
+    },
+    {
+      "product": "US19",
+      "source": "wiw-api",
+      "criterion": "F01",
+      "summary": "勤務取得にlimit_by_rulesを指定すると、アカウントの勤務ルールで応募可能なOpenShiftのみを返す仕様。すべてのAPI書込に同じ制限があるとは推定しない。",
+      "locator": "List Shifts / limit_by_rules",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "公開API仕様の勤務エンドポイント。APIキー未取得、実行なし。Premium提供条件は既存料金資料を参照。"
+    },
+    {
+      "product": "US19",
+      "source": "wiw-api",
+      "criterion": "C04",
+      "summary": "予定休憩の配列を更新する場合、要求に含めない既存休憩は削除される。休憩中の現場人数を自動検査するという意味ではない。",
+      "locator": "Create Shift / breaks",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "公開API仕様の勤務エンドポイント。APIキー未取得、実行なし。Premium提供条件は既存料金資料を参照。"
+    },
+    {
+      "product": "US20",
+      "source": "pd-hr",
+      "criterion": "M07",
+      "summary": "職員の作成、取得、更新、非アクティブ化をAPIで行う。一覧は基本項目で、ID指定取得ではカスタム項目を含む詳細を返す。",
+      "locator": "Employee management",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "公開OpenAPIによる職員・契約・賃金マスター連携。実機同期は未実施。"
+    },
+    {
+      "product": "US20",
+      "source": "pd-hr",
+      "criterion": "N01",
+      "summary": "SSN・銀行口座・生年月日は別の専用スコープとパラメータが必要。一般職員取得がすべての機微項目を返すとは扱わない。",
+      "locator": "Employee data scopes",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "公開OpenAPIによる職員・契約・賃金マスター連携。実機同期は未実施。"
+    },
+    {
+      "product": "US20",
+      "source": "pd-hr",
+      "criterion": "M04",
+      "summary": "カスタム項目はポータルごとの項目IDで扱い、文字列・数値・真偽・日付・画像をサポートする。別ポータルへのID流用は避ける必要がある。",
+      "locator": "Custom fields",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "公開OpenAPIによる職員・契約・賃金マスター連携。実機同期は未実施。"
+    },
+    {
+      "product": "US20",
+      "source": "pd-hr",
+      "criterion": "M04",
+      "summary": "職員グループに紐づく時給とその履歴、固定給与の配賦設定をPay APIで扱う。",
+      "locator": "Pay rates and salaries",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "公開OpenAPIによる職員・契約・賃金マスター連携。実機同期は未実施。"
+    },
+    {
+      "product": "US20",
+      "source": "pd-hr",
+      "criterion": "C07",
+      "summary": "Contract Rulesを取得して職員へ割り当て、週・月・年の契約時間ルールを連携する。実際の勤務制約の強制力はこのAPI案内だけでは確定しない。",
+      "locator": "Contract rules",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "公開OpenAPIによる職員・契約・賃金マスター連携。実機同期は未実施。"
+    },
+    {
+      "product": "US20",
+      "source": "pd-partner",
+      "criterion": "R08",
+      "summary": "デモ環境での開発後、原則2社の顧客でパイロットを行い、1社でも受け付けるとしている。ベンダーによるデモ上の設定確認を含む。",
+      "locator": "Pilot; certification",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "公開された連携パートナー認証プロセス。提携申込・契約締結はしていない。"
+    },
+    {
+      "product": "US20",
+      "source": "pd-partner",
+      "criterion": "R05",
+      "summary": "公開するサポート資料にデータフロー、認証、設定、FAQ・制限を含め、継続的な更新を求める。",
+      "locator": "Documentation",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "公開された連携パートナー認証プロセス。提携申込・契約締結はしていない。"
+    },
+    {
+      "product": "US20",
+      "source": "pd-partner",
+      "criterion": "R08",
+      "summary": "認証後の連携一覧掲載、対象市場に応じた翻訳、見込み顧客紹介や共同マーケティングの機会を説明する。再販権・報酬額の契約保証は未確認。",
+      "locator": "Listing; marketing",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "公開された連携パートナー認証プロセス。提携申込・契約締結はしていない。"
+    },
+    {
+      "product": "US20",
+      "source": "pd-release",
+      "criterion": "M04",
+      "summary": "2026-09-29に部署内セクションの作成・更新・削除エンドポイントを追加。操作別スコープが必要で、更新時に色を省略すると元の色を保持する。",
+      "locator": "2026-09-29",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "各API追加の公開日を保持。古い追加日を最新公開日と誤認しない。"
+    },
+    {
+      "product": "US20",
+      "source": "pd-release",
+      "criterion": "N01",
+      "summary": "2026-09-28に職員のセキュリティグループ所属取得を追加。全部署／指定部署と主所属部署条件を返し、専用参照スコープが必要。",
+      "locator": "2026-09-28",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "各API追加の公開日を保持。古い追加日を最新公開日と誤認しない。"
+    },
+    {
+      "product": "US20",
+      "source": "pd-release",
+      "criterion": "O06",
+      "summary": "2026-09-18の電話番号表現の不一致への対応は、新たに国番号なし項目を追加し、従来項目は変更しない方式。",
+      "locator": "2026-09-18",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "各API追加の公開日を保持。古い追加日を最新公開日と誤認しない。"
+    },
+    {
+      "product": "US20",
+      "source": "pd-release",
+      "criterion": "B07",
+      "summary": "2026-03-19の部署別給与識別子APIはPro契約が必要と明記。API全体のPlus対応を、この個別機能へ一律適用しない。",
+      "locator": "2026-03-19",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "各API追加の公開日を保持。古い追加日を最新公開日と誤認しない。"
+    },
+    {
+      "product": "US20",
+      "source": "pd-release",
+      "criterion": "M04",
+      "summary": "2026-09-14にData Centerのデータセット取得・更新と数式評価APIの文書を公開。文書公開日を機能の初回提供日とは断定しない。",
+      "locator": "2026-09-14",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "各API追加の公開日を保持。古い追加日を最新公開日と誤認しない。"
+    },
+    {
+      "product": "US20",
+      "source": "pd-release",
+      "criterion": "N03",
+      "summary": "2023-06-26に勤務の変更履歴APIを追加し、変更日時と変更者を取得できる。保存期間・改ざん防止は未記載。",
+      "locator": "2023-06-26 Get history of changes",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "各API追加の公開日を保持。古い追加日を最新公開日と誤認しない。"
+    },
+    {
+      "product": "US20",
+      "source": "pd-release",
+      "criterion": "J08",
+      "summary": "給与向け勤務承認APIは打刻データを考慮しないと明記する。予定勤務を承認する処理で、打刻照合済みの給与結果とは区別する。",
+      "locator": "2023-06-26 Approve a shift for payroll",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "各API追加の公開日を保持。古い追加日を最新公開日と誤認しない。"
+    },
+    {
+      "product": "US20",
+      "source": "pd-release",
+      "criterion": "K03",
+      "summary": "スキルとSupervisor項目は2023年の説明でポータルへの有効化依頼が必要。標準で全アカウントに利用可能とは扱わない。",
+      "locator": "2023-07-28",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "各API追加の公開日を保持。古い追加日を最新公開日と誤認しない。"
+    },
+    {
+      "product": "US20",
+      "source": "pd-release",
+      "criterion": "O06",
+      "summary": "2024-10-01以降X-OpenAPI-Regionヘッダーは無効と案内する。旧資料のEurope/Australia切替説明を現行API仕様として使わない。",
+      "locator": "2024-10-01",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "各API追加の公開日を保持。古い追加日を最新公開日と誤認しない。"
+    },
+    {
+      "product": "JP01",
+      "source": "shift-period",
+      "criterion": "B08",
+      "summary": "暦月のほか1〜4週間の任意期間を指定し、その期間の勤務表をまとめて自動作成する。",
+      "locator": "指定期間モードの概要",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "指定期間モード。公開リリースは提供者説明で制度適合の第三者認定ではない。"
+    },
+    {
+      "product": "JP01",
+      "source": "shift-period",
+      "criterion": "C07",
+      "summary": "勤務時間上限と勤務回数を設定期間の通算で判定する。4週間通算の所定上限を暦月に読み替えず設定できる。",
+      "locator": "指定期間モードの概要",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "指定期間モード。公開リリースは提供者説明で制度適合の第三者認定ではない。"
+    },
+    {
+      "product": "JP01",
+      "source": "shift-period",
+      "criterion": "G03",
+      "summary": "4週間で8日休みがあるかを自動チェックすると説明する。前期間の夜勤・休息の引継ぎや個別労使協定の検証は未確認。",
+      "locator": "導入部",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "指定期間モード。公開リリースは提供者説明で制度適合の第三者認定ではない。"
+    },
+    {
+      "product": "JP01",
+      "source": "shift-period",
+      "criterion": "A03",
+      "summary": "指定期間モードは2026-07-30より提供開始と記載する。対象契約・追加費用は問い合わせが必要。",
+      "locator": "提供開始時期",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "指定期間モード。公開リリースは提供者説明で制度適合の第三者認定ではない。"
+    },
+    {
+      "product": "JP01",
+      "source": "shift-cares",
+      "criterion": "M06",
+      "summary": "作成した勤務表をブライトヴィーのCares Connectへ取り込む連携に対応したと発表する。双方向API同期とは記載されていない。",
+      "locator": "Cares Connectとの連携",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "公式リリースの勤怠連携。2026-08-04時点の対応範囲。"
+    },
+    {
+      "product": "JP01",
+      "source": "shift-cares",
+      "criterion": "M02",
+      "summary": "勤怠向けCSVの列を任意に設定し、標準対応外の形式にも手動設定で対応する案内がある。2026-08-04時点で対応勤怠システム13種類。",
+      "locator": "勤怠システムとの連携",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "公式リリースの勤怠連携。2026-08-04時点の対応範囲。"
+    },
+    {
+      "product": "JP27",
+      "source": "air-clock",
+      "criterion": "M02",
+      "summary": "職員別の打刻日、出退勤時刻、休憩時間をCSVへ出力し、ファイル作成単位、タイトル行、スタッフコード、時間表示形式を選択できる。",
+      "locator": "タイムカードのデータダウンロード方法",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "Airシフトの打刻データCSV出力。勤務表・解約全量出力とは別。"
+    },
+    {
+      "product": "JP27",
+      "source": "air-clock",
+      "criterion": "K02",
+      "summary": "不正打刻と未打刻データはCSVへ出力されない。出退勤が同時刻、休憩と勤務時刻の不整合などを不正例として挙げる。欠損を補完して出す仕様ではない。",
+      "locator": "ダウンロードされないデータ",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "Airシフトの打刻データCSV出力。勤務表・解約全量出力とは別。"
+    },
+    {
+      "product": "JP27",
+      "source": "air-share",
+      "criterion": "H07",
+      "summary": "共有できるのは確定シフトだけで、店舗全体の表も受信者を選択して連携済み職員のシフトボードへ送る。公開版の通知再送・到達確認は未確認。",
+      "locator": "共有できるシフト／スタッフ",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "確定シフトの配布・帳票作成。職員アプリへの共有は事前連携が必要。"
+    },
+    {
+      "product": "JP27",
+      "source": "air-share",
+      "criterion": "M03",
+      "summary": "PDFまたはExcelで日・週・月の3レイアウトを出力する。出力項目の個別追加・削除はできず、週のPDFだけメモを含められる。",
+      "locator": "レイアウト; ファイル形式",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "確定シフトの配布・帳票作成。職員アプリへの共有は事前連携が必要。"
+    },
+    {
+      "product": "JP27",
+      "source": "air-share",
+      "criterion": "L07",
+      "summary": "勤務表を印刷して紙で配る手順がある。個人スマホなしで希望提出まで同等に行えるかは別確認。",
+      "locator": "PDFまたはExcelファイルとして印刷",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "確定シフトの配布・帳票作成。職員アプリへの共有は事前連携が必要。"
+    },
+    {
+      "product": "JP27",
+      "source": "air-release",
+      "criterion": "M02",
+      "summary": "職員CSVに時給、日別交通費、職員コード、メモ、勤務表補足を追加。勤務データは職員別・グループ別の勤務数・時間数・パターン数集計もCSVへ出せる。",
+      "locator": "スタッフデータ／シフトデータのCSV",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "2024-03-27の公式リリース。機能の追加時点を保持。"
+    },
+    {
+      "product": "JP27",
+      "source": "air-release",
+      "criterion": "B06",
+      "summary": "複数グループ所属職員の勤務を他グループの表から編集できる。複数部署の同時最適化とは区別する。",
+      "locator": "他グループのシフトから編集",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "2024-03-27の公式リリース。機能の追加時点を保持。"
+    },
+    {
+      "product": "JP27",
+      "source": "air-access",
+      "criterion": "N01",
+      "summary": "打刻実績管理への移動にパスワード制限を設定でき、さらに一般権限アカウントからのアクセス自体を禁止できる。対象画面に時給・概算給与・手当・交通費も含む。",
+      "locator": "表示・ダウンロード制限の設定",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "打刻実績・時給・概算給与等の表示制限。追加パスワード確認をMFAとは扱わない。"
+    },
+    {
+      "product": "JP27",
+      "source": "air-integrations",
+      "criterion": "M06",
+      "summary": "Airワーク 給与支払用の概算人件費データをCSVダウンロードし、同サービスへアップロードする手順を掲載する。リアルタイムAPI送信とは記載されない。",
+      "locator": "Airワーク 給与支払へのデータ出力",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "個別名と方式を確認。CSV受渡しとシステム間連携を混同しない。"
+    },
+    {
+      "product": "JP27",
+      "source": "air-integrations",
+      "criterion": "M06",
+      "summary": "freee人事労務の給与計算を連携しても、Airシフト側に表示するのは総支給、控除、差引支給と各合計のみ。詳細内訳はfreee側で確認する。人件費最適化機能の証拠ではない。",
+      "locator": "freeeの給与計算で表示される項目",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "個別名と方式を確認。CSV受渡しとシステム間連携を混同しない。"
+    },
+    {
+      "product": "JP27",
+      "source": "air-integrations",
+      "criterion": "M06",
+      "summary": "Airメイトに勤務・勤怠・概算人件費を連携し、Airレジの売上と合わせて分析する。Airレジ未利用でも分析は可能と説明する。",
+      "locator": "Airメイトとの連携",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "個別名と方式を確認。CSV受渡しとシステム間連携を混同しない。"
+    },
+    {
+      "product": "JP25",
+      "source": "rshift-cost",
+      "criterion": "P01",
+      "summary": "月額10万円からと掲載するが、欄内の参考時点は2024年2月。現在の個別契約額とは扱わない。",
+      "locator": "費用 月額費用",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "公開掲載の参考料金。利用機能と登録人数で変わり、税区分・契約期間・最新見積は未確認。"
+    },
+    {
+      "product": "JP25",
+      "source": "rshift-cost",
+      "criterion": "P02",
+      "summary": "利用機能と登録従業員数によって変動。参考例は500人35万円、1500人75万円、300人24万円、700人50万円／月で、人数だけの固定単価には換算しない。",
+      "locator": "業種別月額費用一例",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "公開掲載の参考料金。利用機能と登録人数で変わり、税区分・契約期間・最新見積は未確認。"
+    },
+    {
+      "product": "JP25",
+      "source": "rshift-cost",
+      "criterion": "P04",
+      "summary": "初期費用は別途見積とする。月額掲載額に初期費用が含まれるとは推定しない。",
+      "locator": "初期費用",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "公開掲載の参考料金。利用機能と登録人数で変わり、税区分・契約期間・最新見積は未確認。"
+    },
+    {
+      "product": "JP25",
+      "source": "rshift-trial",
+      "criterion": "K08",
+      "summary": "体験は小売・サービス業の実運営企業向けで最大2店舗、サイト情報送付から最大45日、登録職員数の制限なし。期間・利用機能は申込プランで変わる。",
+      "locator": "第2〜5項",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "有償を含む体験メニューの公開条件。一般契約・無料試用の全条件へ一律適用しない。"
+    },
+    {
+      "product": "JP25",
+      "source": "rshift-trial",
+      "criterion": "P03",
+      "summary": "有償体験分は開始月の翌月初めに請求し、振込手数料は顧客負担とする。一般サブスクリプションの最低期間は未確認。",
+      "locator": "第1項",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "有償を含む体験メニューの公開条件。一般契約・無料試用の全条件へ一律適用しない。"
+    },
+    {
+      "product": "JP25",
+      "source": "rshift-trial",
+      "criterion": "K03",
+      "summary": "体験作業は操作マニュアルに沿って原則顧客が行い、ベンダーの準備・作業支援に実費が発生する場合は事前案内・相談すると記載する。",
+      "locator": "第6〜7項",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "有償を含む体験メニューの公開条件。一般契約・無料試用の全条件へ一律適用しない。"
+    },
+    {
+      "product": "JP25",
+      "source": "rshift-trial",
+      "criterion": "R03",
+      "summary": "体験用ソフト・資料は本人利用に限定し、他社開示、ソフトの改変・解析、譲渡・転貸・販売を禁止する条項がある。公開ページの要約であり正式契約の法的評価ではない。",
+      "locator": "第9・14項",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "有償を含む体験メニューの公開条件。一般契約・無料試用の全条件へ一律適用しない。"
+    },
+    {
+      "product": "JP25",
+      "source": "rshift-trial",
+      "criterion": "O04",
+      "summary": "訪問可能な地域では対面フォロー、それ以外はWeb会議で支援する。応答時間・無償範囲は記載されない。",
+      "locator": "特記事項",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "有償を含む体験メニューの公開条件。一般契約・無料試用の全条件へ一律適用しない。"
+    },
+    {
+      "product": "JP25",
+      "source": "rshift-isms",
+      "criterion": "N07",
+      "summary": "登録番号J0876、登録日2026-03-15、認証機関ASR、JIS Q 27001:2025（ISO/IEC 27001:2022+Amd 1:2024）を公表。範囲は顧客向けクラウド型課題解決システム提供に関するISMS。",
+      "locator": "認証概要",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "ベンダーのISMS認証公表。認証機関の登録簿・証書有効期限は未照合。"
+    },
+    {
+      "product": "US02",
+      "source": "qg-federal",
+      "criterion": "N04",
+      "summary": "米国内のSOC 2認証データセンターに顧客データを保存すると提供者が説明する。特定リージョン、バックアップ・処理地域は未記載。",
+      "locator": "Meet federal security standards",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "連邦医療向けページのProviderCloud共通説明。全エディションの契約への適用は未確認。"
+    },
+    {
+      "product": "US02",
+      "source": "qg-federal",
+      "criterion": "N07",
+      "summary": "SOC 2 attestation、HTTPS通信暗号化、FedRAMP Authorized、VA・IHSのATOを提供者が掲示する。FedRAMP登録簿や監査原本は未照合で、看護勤務表の全構成への認定適用は未確定。",
+      "locator": "Meet federal security standards",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "連邦医療向けページのProviderCloud共通説明。全エディションの契約への適用は未確認。"
+    },
+    {
+      "product": "US02",
+      "source": "qg-federal",
+      "criterion": "N02",
+      "summary": "連邦組織のSSOへSAMLで連携すると記載する。MFA強制、一般契約の料金・対象プランは未記載。",
+      "locator": "Login Authentication",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "連邦医療向けページのProviderCloud共通説明。全エディションの契約への適用は未確認。"
+    },
+    {
+      "product": "US02",
+      "source": "qg-support",
+      "criterion": "O04",
+      "summary": "電話、サポートケース、ヘルプセンターへの導線を掲載し、Shift Adminの支援は別窓口へ案内する。",
+      "locator": "Support Phone; Shift Admin support",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "公開サポート案内。契約時間帯・応答SLAは未取得。"
+    },
+    {
+      "product": "US02",
+      "source": "qg-support",
+      "criterion": "N01",
+      "summary": "安全上、サポート担当は利用者メールアドレスの開示・変更、勤務表や給与の変更を行わないと明記する。全ベンダー操作権限の技術的証明とは別。",
+      "locator": "Security Disclaimer",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "公開サポート案内。契約時間帯・応答SLAは未取得。"
+    },
+    {
+      "product": "US05",
+      "source": "rota-sso",
+      "criterion": "N02",
+      "summary": "ユーザー名入力後に顧客のSSOポータルへ遷移する。認証情報の再設定は顧客のIT部門等が行い、Rotageek支援側ではSSOパスワードを変更できない。",
+      "locator": "Logging in; Forgetting details",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "顧客が選択した社内SSOを使う場合。方式・プラン・MFA必須化は本文未記載。"
+    },
+    {
+      "product": "US05",
+      "source": "rota-api",
+      "criterion": "M04",
+      "summary": "API認証はpasswordまたはrefresh_token grantを扱い、Bearer JWTで接続する。画面のSSOとは別のAPI仕様。",
+      "locator": "paths /api/v1/auth; securitySchemes",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "取得日の公開OpenAPI 3.0.4、API version 1.0。認証情報未取得、業務操作・性能試験なし。"
+    },
+    {
+      "product": "US05",
+      "source": "rota-api",
+      "criterion": "N03",
+      "summary": "エンティティ別監査ログをUTCの期間で抽出し、0起点のページ番号、1〜50件／ページ（既定30）、並べ替えを指定する。保存期間・改ざん耐性は未記載。",
+      "locator": "paths /api/v1/audits/{entityType}/{entityId}",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "取得日の公開OpenAPI 3.0.4、API version 1.0。認証情報未取得、業務操作・性能試験なし。"
+    },
+    {
+      "product": "US05",
+      "source": "rota-api",
+      "criterion": "M07",
+      "summary": "職員の作成・更新、外部IDの更新、所属拠点の追加・解除、スキル・ポジションの付与・解除を公開する。二重更新の整合性は実機未確認。",
+      "locator": "paths users; locations/users; users/skills; users/positions",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "取得日の公開OpenAPI 3.0.4、API version 1.0。認証情報未取得、業務操作・性能試験なし。"
+    },
+    {
+      "product": "US05",
+      "source": "rota-api",
+      "criterion": "M07",
+      "summary": "職員の雇用区分、分類、賃金等は適用日別に取得・更新・削除するAPIを持つ。勤務表の最適化条件の全版再現とは別。",
+      "locator": "paths users/employeetypes; users/classifications; users/payrates",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "取得日の公開OpenAPI 3.0.4、API version 1.0。認証情報未取得、業務操作・性能試験なし。"
+    },
+    {
+      "product": "US05",
+      "source": "rota-api",
+      "criterion": "K02",
+      "summary": "退職日変更前に将来勤務・休暇申請への影響件数と保持される確定勤怠をプレビューするAPIがある。",
+      "locator": "paths users/enddate/{proposedEndDate}/conflicts",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "取得日の公開OpenAPI 3.0.4、API version 1.0。認証情報未取得、業務操作・性能試験なし。"
+    },
+    {
+      "product": "US05",
+      "source": "rota-api",
+      "criterion": "M07",
+      "summary": "退職日の更新では将来勤務を空き枠へ変換するか削除するかを指定でき、退職日をnullにして再有効化するスキーマもある。",
+      "locator": "UpdateEndDateRequestModel; EndDateConflictResolution",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "取得日の公開OpenAPI 3.0.4、API version 1.0。認証情報未取得、業務操作・性能試験なし。"
+    },
+    {
+      "product": "US05",
+      "source": "rota-api",
+      "criterion": "H07",
+      "summary": "勤務削除APIは専用権限、勤務レコードであること、勤怠が未確定であることを検査後、画面削除と同じ業務処理へ委譲する。拠点権限、打刻済み検査、職員通知等も同じと説明する。",
+      "locator": "DELETE schedule/records/{recordId} description",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "取得日の公開OpenAPI 3.0.4、API version 1.0。認証情報未取得、業務操作・性能試験なし。"
+    },
+    {
+      "product": "US05",
+      "source": "rota-api",
+      "criterion": "M04",
+      "summary": "勤務不可の期間指定取得・更新・削除、休暇申請の作成・更新、勤務表の拠点別／職員別参照を公開する。最適化ジョブ開始APIはこの仕様一覧で確認できない。",
+      "locator": "paths availability; leave/requests; schedule",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "取得日の公開OpenAPI 3.0.4、API version 1.0。認証情報未取得、業務操作・性能試験なし。"
+    },
+    {
+      "product": "US05",
+      "source": "rota-api",
+      "criterion": "M04",
+      "summary": "必要量の原データと調整済み値の取得、明示需要の更新、拠点予算の金額／時間更新を公開する。最適化結果の根拠全体を返すとは推定しない。",
+      "locator": "paths demand; budget",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "取得日の公開OpenAPI 3.0.4、API version 1.0。認証情報未取得、業務操作・性能試験なし。"
+    },
+    {
+      "product": "US05",
+      "source": "rota-api",
+      "criterion": "J08",
+      "summary": "全職員の休暇権利データは事前計算済みテーブルの値で、実時間の再計算ではないと明記する。職員コード順にページングする。",
+      "locator": "holidayentitlements/users/dataset1 and dataset2",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "取得日の公開OpenAPI 3.0.4、API version 1.0。認証情報未取得、業務操作・性能試験なし。"
+    },
+    {
+      "product": "US05",
+      "source": "rota-api",
+      "criterion": "M05",
+      "summary": "勤務承認、職員変更、勤怠確定、空き枠変更、給与処理、休暇変更、実績勤務更新、賃金変更の8Webhookイベント名をスキーマに定義する。",
+      "locator": "WebhookEventName enum",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "取得日の公開OpenAPI 3.0.4、API version 1.0。認証情報未取得、業務操作・性能試験なし。"
+    },
+    {
+      "product": "US05",
+      "source": "rota-hooks",
+      "criterion": "M05",
+      "summary": "Webhook登録後に最初の通知まで最大10分かかる場合がある。通知には時刻と一意IDがあり、通知を受けた後に勤務・職員・勤怠等をAPIで取得する方式。",
+      "locator": "Using webhooks; event examples",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "Webhook本文と現行OpenAPIの差を保持。実通知・再送試験なし。"
+    },
+    {
+      "product": "US05",
+      "source": "rota-hooks",
+      "criterion": "N07",
+      "summary": "Webhookはraw bodyと共有秘密でHMAC-SHA256署名を計算し、signatureヘッダーと照合する仕様。秘密はサーバーで暗号化して保持すると説明する。",
+      "locator": "Security",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "Webhook本文と現行OpenAPIの差を保持。実通知・再送試験なし。"
+    },
+    {
+      "product": "US05",
+      "source": "rota-hooks",
+      "criterion": "O06",
+      "summary": "Webhook案内の秘密長は8〜256文字だが、取得した現行OpenAPIのAddWebhookModelは8〜128文字。上限を一方へ決めず、接続時の現行要件を確認する。",
+      "locator": "Security vs OpenAPI AddWebhookModel",
+      "limitations": "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。",
+      "scope": "Webhook本文と現行OpenAPIの差を保持。実通知・再送試験なし。",
+      "state": "disputed"
+    }
+  ],
+  "prices": [
+    {
+      "product": "JP25",
+      "source": "rshift-cost",
+      "criterion": "P01",
+      "plan": "アールシフト 月額参考下限",
+      "amount": "100000",
+      "currency": "JPY",
+      "tax_status": "unknown",
+      "billable_unit": "organization_month",
+      "commitment_months": null,
+      "billing_period_months": 1,
+      "prepayment": "unknown",
+      "charge_type": "subscription",
+      "recurrence_months": 1,
+      "requirement": "required",
+      "conditions": {
+        "notes": "公式掲載の参考値。利用機能・登録従業員数で変動。現行の見積、税込／税別、最低期間は未確認。月額下限欄に2024年2月時点の注記。",
+        "price_qualifier": "from",
+        "reference_date": "2024-02",
+        "example_registered_employees": null,
+        "example_industry": null
+      }
+    },
+    {
+      "product": "JP25",
+      "source": "rshift-cost",
+      "criterion": "P02",
+      "plan": "アールシフト スーパー500名の参考例",
+      "amount": "350000",
+      "currency": "JPY",
+      "tax_status": "unknown",
+      "billable_unit": "organization_month",
+      "commitment_months": null,
+      "billing_period_months": 1,
+      "prepayment": "unknown",
+      "charge_type": "subscription",
+      "recurrence_months": 1,
+      "requirement": "scenario_dependent",
+      "conditions": {
+        "notes": "公式掲載の参考値。利用機能・登録従業員数で変動。現行の見積、税込／税別、最低期間は未確認。月額下限欄に2024年2月時点の注記。",
+        "price_qualifier": "example",
+        "reference_date": "2024-02",
+        "example_registered_employees": 500,
+        "example_industry": "スーパーマーケット"
+      }
+    },
+    {
+      "product": "JP25",
+      "source": "rshift-cost",
+      "criterion": "P02",
+      "plan": "アールシフト フィットネス1500名の参考例",
+      "amount": "750000",
+      "currency": "JPY",
+      "tax_status": "unknown",
+      "billable_unit": "organization_month",
+      "commitment_months": null,
+      "billing_period_months": 1,
+      "prepayment": "unknown",
+      "charge_type": "subscription",
+      "recurrence_months": 1,
+      "requirement": "scenario_dependent",
+      "conditions": {
+        "notes": "公式掲載の参考値。利用機能・登録従業員数で変動。現行の見積、税込／税別、最低期間は未確認。月額下限欄に2024年2月時点の注記。",
+        "price_qualifier": "example",
+        "reference_date": "2024-02",
+        "example_registered_employees": 1500,
+        "example_industry": "フィットネス"
+      }
+    },
+    {
+      "product": "JP25",
+      "source": "rshift-cost",
+      "criterion": "P02",
+      "plan": "アールシフト コールセンター300名の参考例",
+      "amount": "240000",
+      "currency": "JPY",
+      "tax_status": "unknown",
+      "billable_unit": "organization_month",
+      "commitment_months": null,
+      "billing_period_months": 1,
+      "prepayment": "unknown",
+      "charge_type": "subscription",
+      "recurrence_months": 1,
+      "requirement": "scenario_dependent",
+      "conditions": {
+        "notes": "公式掲載の参考値。利用機能・登録従業員数で変動。現行の見積、税込／税別、最低期間は未確認。月額下限欄に2024年2月時点の注記。",
+        "price_qualifier": "example",
+        "reference_date": "2024-02",
+        "example_registered_employees": 300,
+        "example_industry": "コールセンター"
+      }
+    },
+    {
+      "product": "JP25",
+      "source": "rshift-cost",
+      "criterion": "P02",
+      "plan": "アールシフト アミューズメント700名の参考例",
+      "amount": "500000",
+      "currency": "JPY",
+      "tax_status": "unknown",
+      "billable_unit": "organization_month",
+      "commitment_months": null,
+      "billing_period_months": 1,
+      "prepayment": "unknown",
+      "charge_type": "subscription",
+      "recurrence_months": 1,
+      "requirement": "scenario_dependent",
+      "conditions": {
+        "notes": "公式掲載の参考値。利用機能・登録従業員数で変動。現行の見積、税込／税別、最低期間は未確認。月額下限欄に2024年2月時点の注記。",
+        "price_qualifier": "example",
+        "reference_date": "2024-02",
+        "example_registered_employees": 700,
+        "example_industry": "アミューズメント"
+      }
+    }
+  ],
+  "followups": [
+    {
+      "product": "US18",
+      "criterion": "F01",
+      "priority": 2,
+      "method": "synthetic_test",
+      "question": "Auto Assignの有効化前後、必須／希望、固定不適格勤務を同じ合成入力で比較し、未配置・完了警告・公開可否を確認する。"
+    },
+    {
+      "product": "US18",
+      "criterion": "E03",
+      "priority": 2,
+      "method": "synthetic_test",
+      "question": "40時間と20時間の契約者で契約充足率の公平化を確認し、夜勤数・土日負担の均等化と相互作用を測定する。"
+    },
+    {
+      "product": "US09",
+      "criterion": "F01",
+      "priority": 2,
+      "method": "demo",
+      "question": "Auto Assign、手動配置、Open Shift応募の3操作で、適格性・勤務不可・休息・最大時間ルールの切替と違反阻止／警告を確認する。"
+    },
+    {
+      "product": "US19",
+      "criterion": "C03",
+      "priority": 2,
+      "method": "synthetic_test",
+      "question": "業務日開始が午前0時以外の設定で、日跨ぎ時間外集計と開始日ベースの連勤・週勤務日数判定を境界値で比較する。"
+    },
+    {
+      "product": "US20",
+      "criterion": "B08",
+      "priority": 2,
+      "method": "vendor_document",
+      "question": "APIポータル制限の表20要求／秒と例10要求／秒のどちらが現行か、公式の訂正資料または契約仕様で確認する。"
+    },
+    {
+      "product": "US05",
+      "criterion": "O06",
+      "priority": 2,
+      "method": "vendor_document",
+      "question": "Webhook秘密長の案内8〜256文字と現行OpenAPI8〜128文字の差、API版・再送・順序・重複の保証を確認する。"
+    },
+    {
+      "product": "JP25",
+      "criterion": "P01",
+      "priority": 1,
+      "method": "vendor_quote",
+      "question": "公式料金欄は2024年2月参考値。医療・福祉で必要な機能と登録人数、初期費用、税、最低期間を指定した現行見積を取得する。"
+    },
+    {
+      "product": "JP25",
+      "criterion": "M08",
+      "priority": 2,
+      "method": "vendor_document",
+      "question": "通常CSV出力とは別に、解約時の勤務表・希望・ルール・履歴全量の形式、出力費用、期限、削除時点を確認する。"
+    },
+    {
+      "product": "JP01",
+      "criterion": "C03",
+      "priority": 2,
+      "method": "synthetic_test",
+      "question": "指定期間モードで月を跨ぐ28日周期を連続作成し、前周期の夜勤明け・連勤・最低休息を引き継ぐか確認する。"
+    },
+    {
+      "product": "US02",
+      "criterion": "N07",
+      "priority": 2,
+      "method": "vendor_document",
+      "question": "Federal向け認証の対象システム・構成、SOC監査原本の期間、一般看護勤務表契約への適用と保存地域を確認する。"
+    }
+  ],
+  "task_updates": [
+    {
+      "task_id": "B03-20261011-TASK007",
+      "state": "done",
+      "priority": 1,
+      "method": "public_document",
+      "note": "自動割当、労働ルール、勤務可否、警告の公式本文を取得。有効化前は無視、必須／希望の区別、導入担当の設定主体、完了時の警告を確認。資料読解の課題を完了し、強制力の実動作は別の合成試験課題へ残す。"
+    },
+    {
+      "task_id": "TASK-B02-005",
+      "state": "in_progress",
+      "priority": 1,
+      "method": "vendor_document",
+      "note": "2026-10-11に料金ページを再確認。カードとFAQの複数拠点・勤怠含有の不一致が残る。Auto Assign等の詳細仕様が得られても契約プラン矛盾は解消しない。"
+    },
+    {
+      "task_id": "B03-20261011-TASK003",
+      "state": "in_progress",
+      "priority": 1,
+      "method": "vendor_quote",
+      "note": "2026-10-11にRosterLab米国公式価格を再確認。15ドルのカードと20ドルの比較表が併存するため既存のdisputedを維持。重複観測や新料金行は追加せず、正式見積が必要。"
+    }
+  ],
+  "retrieval_checks": [
+    {
+      "product": "US18",
+      "url": "https://help.quinyx.com/help-centre/docs/labor-rules-in-auto-assign",
+      "result": "browser_body_verified",
+      "notes": "Web取得は失敗したがブラウザの公開本文を取得。2026-07-29公開、2026-09-18更新。ログインなし。"
+    },
+    {
+      "product": "US19",
+      "url": "https://apidocs.wheniwork.com/external/index.html",
+      "result": "browser_body_verified",
+      "notes": "Web抽出は0行。Redocの読み込み後、公開された勤務スキーマ本文を確認。API業務操作なし。"
+    },
+    {
+      "product": "JP01",
+      "url": "https://shiftmation.com/release/20260730/",
+      "result": "browser_body_verified",
+      "notes": "Web取得は429。ブラウザで2026-07-30の指定期間モード公開本文を確認。"
+    },
+    {
+      "product": "US05",
+      "url": "https://publicapi.rotageek.com/swagger/v1/swagger.json",
+      "result": "public_json_verified",
+      "notes": "Webツールでは取得不可。標準HTTPSで公開OpenAPI JSONを取得し、paths・parameters・componentsを確認。認証・業務API呼出しなし。"
+    },
+    {
+      "product": "US19",
+      "url": "https://wheniwork.com/pricing",
+      "result": "conflict_persists",
+      "notes": "既存の料金カード／FAQの不一致が残る。重複の観測・料金行を増やさず課題進捗に記録。"
+    },
+    {
+      "product": "US01",
+      "url": "https://rosterlab.com/us/pricing",
+      "result": "conflict_persists",
+      "notes": "既存の米国15／20ドルの不一致が残る。正式見積は未取得。"
+    }
+  ],
+  "reclassifications": [
+    {
+      "observation_id": "B04-20261011-OBS0124",
+      "criterion": "M02",
+      "rationale": "通常の勤務表・設定CSV出力の説明を、解約時の全量持出しM08へ広く分類していた。解約時の希望・履歴・期限・費用は確認できない。",
+      "limitations": "勤務表・設定の通常出力に関する資料記載。解約時の全量出力、希望、履歴、保存期限、費用は未確認。"
+    }
+  ]
+}

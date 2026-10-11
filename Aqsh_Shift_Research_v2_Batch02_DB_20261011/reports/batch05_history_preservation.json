@@ -1,0 +1,15 @@
+{
+  "compared_with": "pre-B05 canonical DB",
+  "old_rows_unchanged": {
+    "observations": 2213,
+    "observation_evidence": 1329,
+    "sources": 128,
+    "source_revisions": 220,
+    "assessment_resolutions": 2155,
+    "resolution_evidence": 2534,
+    "price_components": 83,
+    "brand_assets": 50,
+    "source_archives": 1
+  },
+  "status": "passed"
+}

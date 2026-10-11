@@ -1,0 +1,16 @@
+{
+  "batch": "B04-20261011",
+  "wrangler_version": "4.149.0",
+  "environment": "local_only",
+  "app_tables_compared": 39,
+  "data_sha256": "1e0f8cb4b67a12fee277c3524a1baa817a214d59c2136c5af56dce7ec5534360",
+  "all_table_data_equal": true,
+  "common40_equal": true,
+  "preferred_logos_equal": true,
+  "foreign_key_errors": 0,
+  "integrity_check": "ok",
+  "import_commands": 10868,
+  "status": "passed",
+  "statements_executed": 10868,
+  "insert_statements": 10791
+}

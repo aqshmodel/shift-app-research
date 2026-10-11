@@ -1,6 +1,6 @@
-# Aqsh シフト競合調査 — 第4バッチ / ロゴ・D1準備版
+# Aqsh シフト競合調査 — 第5バッチ / 条件・API・D1準備版
 
-2026年10月11日、公開一次資料の追加調査を登録。**50提供単位、1,295文書記録、83料金明細、ロゴ50件**。今回は24対象へ新規348記録を追加し、分類7件を訂正しました。共通40項目の資料採用は477/2,000枠です。部分確認・提供予定を含み、実性能の点数ではありません。
+2026年10月11日、公開一次資料の追加調査を登録。**50提供単位、1,494文書記録、88料金明細、ロゴ50件**。今回は9対象へ新規198記録、参考料金5件を追加し、分類1件を訂正しました。共通40項目の資料採用は508/2,000枠です。部分確認・提供予定を含み、実性能の点数ではありません。
 
 ## 最初に見るファイル
 
@@ -8,12 +8,12 @@
 |---|---|
 | [comparison.html](comparison.html) | ブラウザで開く比較・検索画面。今回追加調査のみの絞り込み、出典、最大4対象の比較 |
 | [research.sqlite3](research.sqlite3) | 最新の正本DB。39テーブル・12ビュー |
-| [第4バッチ調査報告](reports/Batch04_research_report.md) | 追加内容、矛盾、未確認・残課題 |
+| [第5バッチ調査報告](reports/Batch05_research_report.md) | 追加内容、矛盾、未確認・残課題 |
 | [DB_DESIGN.md](DB_DESIGN.md) | D1向け設計、履歴・出典・料金・最新判断の扱い |
 | [d1/import.sql](d1/import.sql) | **空のD1へ初回登録**する全件SQL |
 | [d1/schema.sql](d1/schema.sql) | スキーマのみ。import.sqlには同じスキーマも含む |
 | [d1/queries.sql](d1/queries.sql) | Webアプリ向けの読み取りクエリ例 |
-| [batches/B04-20261011.json](batches/B04-20261011.json) | 新規348記録、分類訂正7、出典取得88、料金18件、ロゴ50件、課題と進捗の入力データ |
+| [batches/B05-20261011.json](batches/B05-20261011.json) | 新規198記録、分類訂正1、出典取得38、参考料金5件、課題と進捗の入力データ |
 | [reports/logo_index.csv](reports/logo_index.csv) | 全50対象のロゴURL、公式掲載ページ、サービス／会社、確認日 |
 | [reports/research_stats.json](reports/research_stats.json) | 詳細件数と対象別の追加数 |
 | [archive/batch02-original.zip](archive/batch02-original.zip) | 元の88ファイルをそのまま保存した検証済みZIP |
@@ -24,7 +24,7 @@
 
 - known/documentedは資料に記載された範囲の確認。実動作・対象契約・独立性能試験の合格とは異なります。
 - 未調査、記載未確認、取得不可、非公開、矛盾を非対応へ置き換えません。部分確認や提供予定、地域・プランの限定を保持しています。
-- Web全文やスクリーンショットは未保存です。ほすぴタッチの公開SLA PDFは原本を保存し、source_archivesにパス・SHA-256を記録しました。ロゴは公式のURLまたは埋め込みSVGのdata URLで保持します。未保存の本文ハッシュはNULLです。
+- 出典Webページの全文やスクリーンショットは未保存です。比較画面の検証画像はreportsに保存しています。ほすぴタッチの公開SLA PDFは原本を保存し、source_archivesにパス・SHA-256を記録しました。ロゴは公式のURLまたは埋め込みSVGのdata URLで保持します。未保存の本文ハッシュはNULLです。
 - ロゴはサービス優先、会社を代替として選びます。brand_assetsとv_preferred_brand_assetsを使います。共用ブランド・親サービス・権利未確認は注記しています。
 - 料金は通貨・税・プラン・追加機能・人数・契約期間を揃えて解釈してください。未知の金額はNULLで、0円に置換していません。
 - 14件の独立試験シナリオ設計がありますが、実施結果は0件です。見積取得やログイン後のデモ操作も未実施です。
@@ -57,6 +57,7 @@ Python 3の標準ライブラリで動きます。初期化は元ZIPから読み
 python3 tools/research_db.py init --db /tmp/aqsh-rebuilt.sqlite3
 python3 tools/research_db.py ingest --db /tmp/aqsh-rebuilt.sqlite3 --batch batches/B03-20261011.json
 python3 tools/research_db.py ingest --db /tmp/aqsh-rebuilt.sqlite3 --batch batches/B04-20261011.json
+python3 tools/research_db.py ingest --db /tmp/aqsh-rebuilt.sqlite3 --batch batches/B05-20261011.json
 python3 tools/research_db.py stats --db /tmp/aqsh-rebuilt.sqlite3
 ```
 

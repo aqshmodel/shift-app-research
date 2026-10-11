@@ -28,8 +28,8 @@ class ResearchDBTests(unittest.TestCase):
 
     def test_batch_replay_and_changed_content_rejected(self):
         before=fingerprint(self.c)
-        self.assertEqual(ingest(self.c,ROOT/'batches/B03-20261011.json')['status'],'already_applied')
-        self.assertEqual(ingest(self.c,ROOT/'batches/B04-20261011.json')['status'],'already_applied')
+        for batch in sorted((ROOT/'batches').glob('B*.json')):
+            self.assertEqual(ingest(self.c,batch)['status'],'already_applied')
         self.assertEqual(fingerprint(self.c),before)
         with tempfile.TemporaryDirectory() as tmp:
             p=json.loads((ROOT/'batches/B03-20261011.json').read_text())

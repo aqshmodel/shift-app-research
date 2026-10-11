@@ -1,0 +1,233 @@
+{
+  "tables": {
+    "assessment_resolutions": 2155,
+    "asset_evidence": 6,
+    "audit_issues": 32,
+    "batch_product_membership": 79,
+    "benchmark_runs": 0,
+    "benchmark_scenario_criteria": 45,
+    "benchmark_scenarios": 14,
+    "brand_assets": 50,
+    "classification_corrections": 7,
+    "cost_requirements": 36,
+    "cost_scenarios": 8,
+    "criteria": 164,
+    "current_assessments": 1841,
+    "domains": 20,
+    "legacy_feature_map": 86,
+    "metric_catalog": 20,
+    "observation_evidence": 1329,
+    "observations": 2213,
+    "offerings": 50,
+    "plans": 64,
+    "price_components": 83,
+    "product_aliases": 57,
+    "products": 50,
+    "regulation_support": 0,
+    "regulations": 0,
+    "research_assets": 6,
+    "research_batches": 4,
+    "research_task_updates": 23,
+    "research_tasks": 933,
+    "resolution_evidence": 2534,
+    "retrieval_checks": 60,
+    "run_metrics": 0,
+    "schema_info": 17,
+    "source_archives": 1,
+    "source_documents": 126,
+    "source_method_attributes": 160,
+    "source_revisions": 220,
+    "sources": 128,
+    "vendors": 11
+  },
+  "products": 50,
+  "offerings": 50,
+  "document_observations": 1295,
+  "document_states": {
+    "disputed": 8,
+    "inaccessible": 6,
+    "known": 1257,
+    "not_found": 23,
+    "not_researched": 1
+  },
+  "common_slots": 2000,
+  "documented_common_scopes": 477,
+  "research_documents": 114,
+  "benchmark_runs": 0,
+  "preferred_logos": {
+    "company": 10,
+    "service": 40
+  },
+  "latest_batch": "B04-20261011",
+  "latest_batch_details": {
+    "batch_id": "B04-20261011",
+    "new_document_findings": 348,
+    "editorial_corrections": 7,
+    "new_price_components": 18,
+    "source_retrievals": 88,
+    "functional_research_sources": 38,
+    "functional_research_products": 24,
+    "products_including_classification_corrections": 29,
+    "finding_states": {
+      "known": 346,
+      "not_found": 1,
+      "disputed": 1
+    }
+  },
+  "schema_objects": {
+    "table": 39,
+    "view": 12
+  },
+  "research_task_states": {
+    "blocked": 78,
+    "in_progress": 64,
+    "not_started": 791
+  },
+  "by_product": [
+    {
+      "product_id": "JP02",
+      "canonical_name": "Optamo for Shift",
+      "document_records": 8
+    },
+    {
+      "product_id": "JP04",
+      "canonical_name": "Nafty",
+      "document_records": 3
+    },
+    {
+      "product_id": "JP07",
+      "canonical_name": "miramos",
+      "document_records": 11
+    },
+    {
+      "product_id": "JP08",
+      "canonical_name": "シンクロシフト",
+      "document_records": 29
+    },
+    {
+      "product_id": "JP09",
+      "canonical_name": "快決！シフト君NEO メディカル",
+      "document_records": 10
+    },
+    {
+      "product_id": "JP12",
+      "canonical_name": "シフトラ",
+      "document_records": 17
+    },
+    {
+      "product_id": "JP13",
+      "canonical_name": "ほすぴタッチ",
+      "document_records": 40
+    },
+    {
+      "product_id": "JP14",
+      "canonical_name": "NTTデータ数理システム シフトスケジューリング",
+      "document_records": 9
+    },
+    {
+      "product_id": "JP15",
+      "canonical_name": "快決！シフト君NEO ウェルネス",
+      "document_records": 11
+    },
+    {
+      "product_id": "JP16",
+      "canonical_name": "Optamo for Task",
+      "document_records": 10
+    },
+    {
+      "product_id": "JP17",
+      "canonical_name": "SHIFTEE",
+      "document_records": 18
+    },
+    {
+      "product_id": "JP19",
+      "canonical_name": "勤夢表VX（V5/VX）",
+      "document_records": 11
+    },
+    {
+      "product_id": "JP20",
+      "canonical_name": "エピタルHR",
+      "document_records": 21
+    },
+    {
+      "product_id": "JP21",
+      "canonical_name": "Ramanas",
+      "document_records": 13
+    },
+    {
+      "product_id": "JP22",
+      "canonical_name": "セルヴィスEX",
+      "document_records": 11
+    },
+    {
+      "product_id": "JP23",
+      "canonical_name": "シフッタ",
+      "document_records": 10
+    },
+    {
+      "product_id": "JP24",
+      "canonical_name": "シフト屋さん",
+      "document_records": 14
+    },
+    {
+      "product_id": "JP25",
+      "canonical_name": "アールシフト",
+      "document_records": 11
+    },
+    {
+      "product_id": "US03",
+      "canonical_name": "Smart Square（symplr）",
+      "document_records": 11
+    },
+    {
+      "product_id": "US05",
+      "canonical_name": "Rotageek",
+      "document_records": 21
+    },
+    {
+      "product_id": "US06",
+      "canonical_name": "UKG Pro Workforce Management",
+      "document_records": 11
+    },
+    {
+      "product_id": "US08",
+      "canonical_name": "Nursegrid Manager",
+      "document_records": 10
+    },
+    {
+      "product_id": "US10",
+      "canonical_name": "Timefold Employee Shift Scheduling API",
+      "document_records": 1
+    },
+    {
+      "product_id": "US13",
+      "canonical_name": "Lantum In-Genius Rota",
+      "document_records": 16
+    },
+    {
+      "product_id": "US14",
+      "canonical_name": "Patchwork Rota",
+      "document_records": 1
+    },
+    {
+      "product_id": "US17",
+      "canonical_name": "Humanity Schedule",
+      "document_records": 1
+    },
+    {
+      "product_id": "US18",
+      "canonical_name": "Quinyx",
+      "document_records": 8
+    },
+    {
+      "product_id": "US21",
+      "canonical_name": "RosterElf",
+      "document_records": 17
+    },
+    {
+      "product_id": "US22",
+      "canonical_name": "Sona",
+      "document_records": 1
+    }
+  ]
+}
