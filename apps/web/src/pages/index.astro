@@ -8,12 +8,12 @@ const data=await getResearch(Astro.locals).scope();
 const days=['月','火','水','木','金','土','日'];
 const patterns=[[1,1,0,2,2,0,1],[0,2,2,1,0,1,1],[2,0,1,0,1,2,2]];
 ---
-<Base title="シフトづくりサービスを、根拠とともに探せます">
+<Base title="シフトづくりサービスを、機能と料金から探せます">
  <section class="hero container">
   <div class="hero-copy">
    <p class="eyebrow"><span class="eyebrow-line" aria-hidden="true"></span> SHIFT RESEARCH <span class="eyebrow-date">2026.10.11</span></p>
-   <h1>現場に合うサービスを、<br /><span>根拠とともに探せます。</span></h1>
-   <p class="hero-description">勤務表の自動作成から、様式9、料金、解約時のデータ出力まで。公開資料の根拠と未確認事項を、同じ画面で比較できます。</p>
+   <h1>現場に合うサービスを、<br /><span>機能と料金から探せます。</span></h1>
+   <p class="hero-description">勤務表の自動作成から、様式9、料金、解約時のデータ出力まで。公開資料で確認した機能や利用条件を、同じ画面で比較できます。</p>
    <div class="hero-actions"><a class="button" href="/products/">サービスを探す <span aria-hidden="true">↗</span></a><a class="text-link" href="/compare/">比較から始める <span aria-hidden="true">→</span></a></div>
    <p class="free-note"><span class="status-indicator" aria-hidden="true"></span> 無料・会員登録不要でご利用いただけます。</p>
   </div>
@@ -27,7 +27,7 @@ const patterns=[[1,1,0,2,2,0,1],[0,2,2,1,0,1,1],[2,0,1,0,1,2,2]];
  </section>
  <section class="container search-home" aria-label="製品検索">
   <SearchForm compact />
-  <div class="quick-search"><span>確認したいことから</span><a href="/products/?feature=B01">勤務表の自動作成 <span aria-hidden="true">↗</span></a><a href="/products/?feature=J05">様式9の計算根拠 <span aria-hidden="true">↗</span></a><a href="/products/?feature=N02">認証の確認範囲 <span aria-hidden="true">↗</span></a><a href="/products/?feature=M08">解約時のデータ出力 <span aria-hidden="true">↗</span></a></div>
+  <div class="quick-search"><span>確認したいことから</span><a href="/products/?feature=B01">勤務表の自動作成 <span aria-hidden="true">↗</span></a><a href="/products/?feature=J05">様式9の計算方法 <span aria-hidden="true">↗</span></a><a href="/products/?feature=N02">認証の確認範囲 <span aria-hidden="true">↗</span></a><a href="/products/?feature=M08">解約時のデータ出力 <span aria-hidden="true">↗</span></a></div>
  </section>
  <section class="container section contexts">
   <div class="section-head"><div><p class="eyebrow">01 / BY CONTEXT</p><h2>現場から探せます。</h2></div><a class="text-link" href="/products/">すべてのサービスを見る <span aria-hidden="true">↗</span></a></div>
@@ -38,6 +38,6 @@ const patterns=[[1,1,0,2,2,0,1],[0,2,2,1,0,1,1],[2,0,1,0,1,2,2]];
  </section>
  <section class="container mcp-feature section">
   <div><p class="eyebrow">03 / FOR PEOPLE & AI</p><h2>AIと相談しながら探せます。</h2><p>Web MCPに対応しています。対応するブラウザ・AIから、検索・比較・調査記録を取得していただけます。情報の時点、料金条件、未確認事項もAIへ伝わります。</p><a class="text-link" href="/webmcp/">AIと探すための利用方法 <span aria-hidden="true">↗</span></a></div>
-  <div class="mcp-conversation"><div class="conversation-top"><span class="status-indicator" aria-hidden="true"></span><span>人とAIで、同じ資料を確認できます。</span><span class="mcp-badge">Web MCP</span></div><div class="conversation-question"><span class="conversation-label">相談の例</span><p>医療向けのサービスで、様式9の計算根拠と解約時の出力を比較してください。</p></div><div class="conversation-data"><span class="conversation-label">AIが取得できる情報</span><div><span>製品・料金</span><span>確認状況</span><span>出典URL</span><span>調査基準日</span></div></div><p class="small muted">ご利用には、ブラウザとAIのWeb MCP対応が必要です。</p></div>
+  <div class="mcp-conversation"><div class="conversation-top"><span class="status-indicator" aria-hidden="true"></span><span>人とAIで、同じ資料を確認できます。</span><span class="mcp-badge">Web MCP</span></div><div class="conversation-question"><span class="conversation-label">相談の例</span><p>医療向けのサービスで、様式9の計算方法と解約時の出力を比較してください。</p></div><div class="conversation-data"><span class="conversation-label">AIが取得できる情報</span><div><span>製品・料金</span><span>確認状況</span><span>出典URL</span><span>調査基準日</span></div></div><p class="small muted">ご利用には、ブラウザとAIのWeb MCP対応が必要です。</p></div>
  </section>
 </Base>

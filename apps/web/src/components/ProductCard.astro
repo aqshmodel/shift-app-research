@@ -8,5 +8,5 @@ const {product:p}=Astro.props;
   <h3><a href={'/products/'+p.slug+'/'}>{p.name}</a></h3><p class="vendor-name">{p.vendor||'提供法人の詳細は調査記録をご確認ください。'}</p>
   <p class="card-summary">{introduction(p)}</p>
   <div class="category-list">{p.categories.map((c:string)=><a href={'/categories/'+c+'/'}>{categoryInfo[c].name}</a>)}</div>
-  <div class="card-actions"><a href={'/products/'+p.slug+'/'}>詳細・根拠を見る <span aria-hidden="true">↗</span></a><button class="compare-add" type="button" data-id={p.id} data-label={p.name} aria-pressed="false">比較に追加</button></div>
+  <div class="card-actions"><a href={'/products/'+p.slug+'/'}>機能・料金を見る <span aria-hidden="true">↗</span></a><button class="compare-add" type="button" data-id={p.id} data-label={p.name} aria-pressed="false">比較に追加</button></div>
 </article>

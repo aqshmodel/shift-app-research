@@ -13,8 +13,8 @@
     "test": "node --test tests/*.test.mjs",
     "test:browser": "playwright test",
     "preview": "wrangler dev --port 4322",
-    "deploy:staging": "wrangler deploy --env staging",
-    "deploy": "wrangler deploy"
+    "deploy:staging": "node scripts/deploy.mjs staging",
+    "deploy": "node scripts/deploy.mjs production"
   },
   "dependencies": {
     "@astrojs/cloudflare": "14.3.4",

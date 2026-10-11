@@ -58,3 +58,5 @@ select { padding: 11px; background: white; color: var(--ink); border: 1px solid 
  .compare-form { padding: 20px; gap: 14px; }.compare-form select { font-size: 16px; }.comparison-table th:first-child { width: 110px; min-width: 110px; max-width: 110px; }.comparison-table th,.comparison-table td { min-width: 250px; width: 250px; padding: 14px; }.comparison-scroll { max-height: 72vh; }.difference-toggle { font-size: 11px; }
  .compare-bar { bottom: 10px; gap: 12px; padding: 13px; width: calc(100% - 24px); max-width: none; }.compare-bar strong>.small { display: block; margin-left: 0; }.compare-bar #compare-selected { gap: 4px; max-height: 64px; overflow: auto; }.compare-bar #compare-selected button { max-width: 155px; font-size: 10px; }.compare-bar .button { padding: 12px; font-size: 11px; }.compare-bar>button { display: none; }.category-guide { padding: 22px; }.category-guide h2 { font-size: 17px; }
 }
+
+.comparison-table .comparison-empty { position: relative; text-align: center; color: var(--muted); }

@@ -1,0 +1,42 @@
+{
+  "environment": "production",
+  "url": "https://shift.aqsh.co.jp/",
+  "worker_version": "89a489d4-f26f-46b2-99b8-0959548c5b92",
+  "stats": {
+    "startTime": "2026-10-11T14:04:31.230Z",
+    "duration": 13705.641,
+    "expected": 3,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "tests": [
+    {
+      "title": "all products omit unconfirmed feature rows while retaining documented, planned and disputed information",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "feature explanations and notes are readable without opening controls or running JavaScript",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "comparison omits wholly unconfirmed rows and keeps missing information distinct from lack of support",
+      "results": [
+        "passed"
+      ]
+    }
+  ],
+  "verification_stage": "final_wording_polish",
+  "research_snapshot": "B07-20261011-pub2",
+  "database_changed": false,
+  "viewport_visual_checks": [
+    390,
+    768,
+    1792
+  ],
+  "overflow": false
+}

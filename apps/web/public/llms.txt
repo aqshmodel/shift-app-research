@@ -11,4 +11,4 @@
 - [調査範囲 JSON](https://shift.aqsh.co.jp/api/scope/)
 - [公開検索 API](https://shift.aqsh.co.jp/api/search/)
 
-対応ブラウザでページを開くと5つのWeb MCPツールを登録します。独立したリモートMCPサーバーではありません。根拠APIは `/api/evidence/?id=OF-JP01&page=1` の形式で10件ずつ取得できます。
+対応ブラウザでページを開くと5つのWeb MCPツールを登録します。独立したリモートMCPサーバーではありません。調査記録APIは `/api/evidence/?id=OF-JP01&page=1` の形式で10件ずつ取得できます。

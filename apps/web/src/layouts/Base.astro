@@ -3,7 +3,7 @@ import '../styles/global.css';
 import { SITE,SITE_NAME } from '../lib/catalog';
 import AnalyticsConsent from '../components/AnalyticsConsent.astro';
 import { env } from 'cloudflare:workers';
-const { title,description='シフト管理・自動作成サービス50製品を、公開資料の根拠と提供条件で比較。医療・介護・店舗向けの検索、料金、様式9、管理者MFA、解約データ出力を調査。無料・会員登録不要。',noindex=false,breadcrumbs=[],structured=null }=Astro.props;
+const { title,description='シフト管理・自動作成サービス50製品を、公開資料で確認した機能と利用条件を比較。医療・介護・店舗向けの検索、料金、様式9、管理者MFA、解約データ出力を調査。無料・会員登録不要。',noindex=false,breadcrumbs=[],structured=null }=Astro.props;
 const canonical=SITE+Astro.url.pathname;
 const publicEnv=env as unknown as { ENVIRONMENT?:string; GA4_MEASUREMENT_ID?:string };
 const measurementId=publicEnv.ENVIRONMENT==='production'?publicEnv.GA4_MEASUREMENT_ID:undefined;

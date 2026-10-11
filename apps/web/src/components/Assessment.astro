@@ -1,10 +1,11 @@
 ---
 import {stateLabels,safeUrl} from '../lib/catalog';
-const {assessment:a,compact=false}=Astro.props;
+import {displayText} from '../lib/presentation.mjs';
+const {assessment:a,compact=false,showStatus=true}=Astro.props;
 const facts=compact?a.findings.slice(0,2):a.findings;
 ---
 <div class:list={['assessment',{compact}]}>
- <span class:list={['state','state-'+a.status]}>{stateLabels[a.status]||'記載未確認'}</span>
- {facts.length?facts.map((f:any)=><div class="finding"><p>{f.summary}</p><p class="scope-note">{f.scope?.scope}</p><ul class="source-links">{f.sources.map((s:any)=><li><a href={safeUrl(s.url)} rel="noopener noreferrer">{s.title} ↗</a><span>{s.locator} · 取得 {s.retrieved_on}</span></li>)}</ul>{!compact && <details><summary>確認範囲と留保</summary><p>{f.limitations}</p><p>公開文書の記載を確認しています。実動作は未検証です。</p></details>}</div>):<p>この設問を確定できる記載はまだ確認していません。非対応という判断ではありません。</p>}
+ {showStatus && <span class:list={['state','state-'+a.status]}>{stateLabels[a.status]||'記載未確認'}</span>}
+ {facts.length?facts.map((f:any)=><div class="finding"><p>{displayText(f.summary)}</p>{f.scope?.scope&&<p class="scope-note">{displayText(f.scope.scope)}</p>}<ul class="source-links">{f.sources.map((s:any)=><li><a href={safeUrl(s.url)} rel="noopener noreferrer">{s.title} ↗</a><span>{s.locator} · 取得 {s.retrieved_on}</span></li>)}</ul>{!compact && f.limitations && <p class="finding-limitations"><span>確認時の注意点</span>{displayText(f.limitations)}</p>}</div>):<p>詳しい内容は販売元へご確認ください。</p>}
  {a.context_count>0 && !compact && <p class="small muted">過去・補足の記録が{a.context_count}件あります。下の「調査記録」で確認できます。</p>}
 </div>

@@ -20,6 +20,7 @@ Googleはサイトマップの62ページを検出し、今回検査したトッ
 | [独自ドメインの公開接続記録](docs/custom-domain-20261011.md) | DNS・SSL・公開ドメインの動作・SEO・Google Search Console |
 | [SEO・アクセス解析の対応記録](docs/seo-analytics-20261011.md) | サイトマップ成功、Google登録、62ページのタグ検査、同意に基づくGA4の実受信 |
 | [用途別ガイド・SEO対応記録](docs/seo-guides-20261011.md) | 4用途の選び方、公式紹介リンク、7URLの登録確認、Googleタグ案内メールの実通信検査 |
+| [文言・詳細画面の改善記録](docs/readability-20261011.md) | 未確認項目の非表示、機能の常時表示、自然な文言、対象環境を照合するデプロイ手順 |
 | [制度の参照データ](Aqsh_Shift_Research_v2_Batch02_DB_20261011/reports/regulation_index.csv) | 様式9の式・除外・丸め・集計期間。製品の実装証拠とは別に保存 |
 
 ## ローカルで確認する
