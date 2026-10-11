@@ -1,6 +1,5 @@
 {
  "name":"aqsh-shift",
- "account_id":"032177c6a3d3bbf36ce3c60cc4e62404",
  "pages_build_output_dir":"./public",
  "compatibility_date":"2026-10-11",
  "services":[{"binding":"RESEARCH","service":"aqsh-shift-research"}]

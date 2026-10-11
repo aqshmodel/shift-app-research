@@ -1,0 +1,70 @@
+{
+  "checked_on": "2026-10-11",
+  "target": "https://aqsh-shift.pages.dev",
+  "snapshot": "B07-20261011-pub2",
+  "worker_version": "b34675a2-0f6f-4d85-8594-b5b9a43e4bfc",
+  "pages_deployment": "https://68054e6c.aqsh-shift.pages.dev",
+  "source_commit": "ab23d1b6cca3716732b20a63e7ba3579b0e71d93",
+  "pages_config_adjustment": "account_id is unsupported in Pages; account selected by CLOUDFLARE_ACCOUNT_ID. No application code changed.",
+  "browser": "Chrome 155.0.8059.39",
+  "native_webmcp_flag": "WebMCPTesting",
+  "tests": [
+    {
+      "title": "all 50 products are searchable, server rendered and have distinct detail metadata",
+      "status": "expected",
+      "duration_ms": 6757
+    },
+    {
+      "title": "API input boundaries, nonmutation, evidence pagination and complete price conditions",
+      "status": "expected",
+      "duration_ms": 856
+    },
+    {
+      "title": "SEO routes, no fabricated reviews, operator phone omission, and real 404s",
+      "status": "expected",
+      "duration_ms": 571
+    },
+    {
+      "title": "normal UI search, filters, compare selection and mobile overflow",
+      "status": "expected",
+      "duration_ms": 3077
+    },
+    {
+      "title": "search and comparison work without JavaScript",
+      "status": "expected",
+      "duration_ms": 1280
+    },
+    {
+      "title": "planned care calculation and task assignment preserve capability scope",
+      "status": "expected",
+      "duration_ms": 282
+    },
+    {
+      "title": "five native tools return source-backed data and update visible UI",
+      "status": "expected",
+      "duration_ms": 1001
+    },
+    {
+      "title": "native cancellation prevents delayed results and page lifecycle removes tools",
+      "status": "expected",
+      "duration_ms": 729
+    },
+    {
+      "title": "unsupported WebMCP leaves the normal UI operational",
+      "status": "expected",
+      "duration_ms": 827
+    }
+  ],
+  "preview_indexing": "X-Robots-Tag: noindex, nofollow; robots Disallow: /",
+  "production_dns": "CNAME missing; custom domain registered and inactive (DNS setup required)",
+  "visual_review": [
+    "desktop 1792x976",
+    "mobile 390x844"
+  ],
+  "ai_selection_e2e": "not_run",
+  "github_validation": {
+    "run_id": 38129446505,
+    "commit": "ab23d1b6cca3716732b20a63e7ba3579b0e71d93",
+    "conclusion": "success"
+  }
+}

@@ -1,11 +1,11 @@
 {
   "checked_on": "2026-10-11",
-  "scope": "Implementation and public-source research; production DNS connection pending.",
+  "scope": "Production Worker, Pages and D1 deployed and verified; external DNS connection pending.",
   "proposed_site_name": "Aqsh シフト比較",
   "production_host": {
     "hostname": "shift.aqsh.co.jp",
     "status": "confirmed_by_user",
-    "dns_state": "not_checked"
+    "dns_state": "CNAME absent; Cloudflare Pages domain registered; inactive (DNS setup required)"
   },
   "research": {
     "latest_batch": "B07-20261011",
@@ -86,8 +86,11 @@
     "dns_zone_access": "No zone in account; external Muumuu DNS",
     "existing_resource_usage": "not_verified",
     "remote_d1_imported": true,
-    "application_deployed": "staging",
-    "dns_changed": false
+    "application_deployed": "production and staging",
+    "dns_changed": false,
+    "pages_url": "https://aqsh-shift.pages.dev",
+    "worker_version": "b34675a2-0f6f-4d85-8594-b5b9a43e4bfc",
+    "custom_domain_registered": true
   },
   "webmcp": {
     "spec_url": "https://webmachinelearning.github.io/webmcp/",
@@ -102,7 +105,7 @@
     ],
     "registration_cleanup": "AbortSignal",
     "standard_status": "Draft Community Group Report, not W3C Standard",
-    "origin_trial_required_conditions": "confirm against deployment browser and production origin",
+    "origin_trial_required_conditions": "Chrome 155 WebMCPTesting enabled for native execution tests. Default production-browser availability is not verified; feature detection is used.",
     "origin_trial_expiry": null,
     "site_registration_tested": true,
     "agent_e2e_tested": false,
@@ -114,7 +117,7 @@
     "data": "Cloudflare D1",
     "assets": "Workers Static Assets",
     "app_directory": "apps/web",
-    "status": "staging_verified"
+    "status": "production_verified_on_pages_alias"
   },
   "limitations": [
     "30 open P1 tasks require additional verification.",

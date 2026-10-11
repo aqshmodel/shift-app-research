@@ -27,6 +27,14 @@ python3 tests/publication_test.py
 
 ムームードメインのDNSを維持するため、Cloudflare Pagesの `apps/domain-proxy` がサービスバインディング経由でWorkerを配信します。接続するのは `shift.aqsh.co.jp CNAME aqsh-shift.pages.dev` です。Cloudflare側でカスタムドメインを登録してからDNSを設定してください。apexのネームサーバーは変更不要です。
 
+本番Workerを先に公開し、次のコマンドでPages入口を更新します。Pagesの設定ファイルにはaccount_idを置けないため、既存のアカウントIDを環境変数で指定します。
+
+```sh
+cd ../domain-proxy
+CLOUDFLARE_ACCOUNT_ID=032177c6a3d3bbf36ce3c60cc4e62404 \
+  ../web/node_modules/.bin/wrangler pages deploy public --project-name aqsh-shift --branch main
+```
+
 画面・API・ネイティブWeb MCPは `TEST_BASE_URL=https://... npm run test:browser`。Chrome155の実験機能を有効化して検証します。登録・実行テストと、独立したAIの自然言語によるツール選択は別です。後者の150評価ケースは `docs/webmcp/eval-cases.json` に保存しています。
 
 ## 復旧
