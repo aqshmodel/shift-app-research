@@ -22,5 +22,14 @@
     "url": "https://aqsh.co.jp/wp-content/uploads/2023/12/cropped-ddc33bb390c2cd276a4cb666abb5e36a-180x180.png",
     "retrieved_on": "2026-10-11",
     "sha256": "32b5df4f247d39fbbe61f3a03c15155ea39f836de8563e6d90ebd242862caf86"
+  },
+  {
+    "file": "apps/web/public/brand/aqsh-logo-240.webp",
+    "derived_from": "apps/web/public/brand/aqsh-logo.png",
+    "url": "https://aqsh.co.jp/wp-content/uploads/2024/01/a340bad26f3ec6fe1741a7ff1ad28ba6.png",
+    "retrieved_on": "2026-10-11",
+    "transform": "Resize to 240 x 83; WebP quality 90; original aspect ratio preserved",
+    "bytes": 9032,
+    "sha256": "1d2cb325a66523a140342682788b03f80f9cab5545b55598318ac79c1e9594e6"
   }
 ]

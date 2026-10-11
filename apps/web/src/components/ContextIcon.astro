@@ -1,0 +1,9 @@
+---
+const { kind } = Astro.props;
+---
+<svg viewBox="0 0 48 48" width="48" height="48" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+ {kind==='medical' && <><path d="M18 7h12v11h11v12H30v11H18V30H7V18h11z"/><path d="M18 24h12M24 18v12"/></>}
+ {kind==='care' && <><path d="M24 39S7 29 7 17a9 9 0 0 1 17-4 9 9 0 0 1 17 4c0 12-17 22-17 22z"/><path d="M16 24h16M24 16v16"/></>}
+ {kind==='general' && <><path d="M8 18l4-10h24l4 10v7H8zM11 25v15h26V25M20 40V29h9v11M8 18h32M16 8l-2 10M32 8l2 10"/></>}
+ {kind==='api' && <><path d="M16 14L6 24l10 10M32 14l10 10-10 10M27 9l-6 30"/><circle cx="5" cy="6" r="1" fill="currentColor" stroke="none"/><circle cx="42" cy="41" r="1" fill="currentColor" stroke="none"/></>}
+</svg>

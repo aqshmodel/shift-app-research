@@ -1,9 +1,11 @@
 import { defineMiddleware } from 'astro:middleware';
 import { env } from 'cloudflare:workers';
+import { getResearch } from './lib/data';
 export const onRequest=defineMiddleware(async(context,next)=>{
  const url=context.url; const production=(env as unknown as {ENVIRONMENT?:string}).ENVIRONMENT==='production';
  if(production && url.hostname.endsWith('.workers.dev'))return Response.redirect('https://shift.aqsh.co.jp'+url.pathname+url.search,301);
  const response=await next();
+ response.headers.set('Server-Timing',getResearch(context.locals).timingHeader());
  response.headers.set('X-Content-Type-Options','nosniff');
  response.headers.set('Referrer-Policy','strict-origin-when-cross-origin');
  response.headers.set('Permissions-Policy','tools=(self), camera=(), microphone=(), geolocation=()');

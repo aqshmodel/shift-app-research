@@ -1,9 +1,10 @@
 import type { APIRoute } from 'astro';
-import { scope,search,product,compare,evidence,compactAssessment } from '../../lib/data';
+import {getResearch,compactAssessment} from '../../lib/data';
 import { validateId } from '../../lib/contracts.mjs';
 import { env } from 'cloudflare:workers';
 const json=(value:unknown,status=200)=>new Response(JSON.stringify(value),{status,headers:{'Content-Type':'application/json; charset=utf-8','Cache-Control':'no-store','X-Content-Type-Options':'nosniff'}});
-export const GET: APIRoute=async({request,params})=>{
+export const GET: APIRoute=async({request,params,locals})=>{
+ const {scope,search,product,compare,evidence}=getResearch(locals);
  const path=(params.path??'').replace(/\/$/,'');const url=new URL(request.url);
  const limiter=(env as unknown as {PUBLIC_API_LIMITER?:{limit:(input:{key:string})=>Promise<{success:boolean}>}}).PUBLIC_API_LIMITER;
  const ip=request.headers.get('CF-Connecting-IP');

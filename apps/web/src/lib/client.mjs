@@ -25,6 +25,14 @@ document.getElementById('differences-only')?.addEventListener('change',e=>docume
 document.querySelectorAll('.vendor-logo').forEach(img=>img.addEventListener('error',()=>{const fallback=el('span',img.alt.replace(/ ロゴ$/,''),'logo-fallback');img.replaceWith(fallback);}));
 updateSelection();
 
+// Keep native GET navigation and a useful pending state, including bfcache restoration.
+const submitting=[];
+document.querySelectorAll('form[method="get"]').forEach(form=>form.addEventListener('submit',()=>{
+ const button=form.querySelector('button[type="submit"]');if(!button)return;
+ submitting.push({button,nodes:[...button.childNodes]});button.disabled=true;button.setAttribute('aria-busy','true');button.textContent='読み込んでいます…';
+}));
+window.addEventListener('pageshow',()=>{for(const {button,nodes} of submitting){button.disabled=false;button.removeAttribute('aria-busy');button.replaceChildren(...nodes);}submitting.length=0;});
+
 function recordNode(r){
  const article=el('article',undefined,'record');article.append(el('p',`${r.label} · ${r.evidence_role==='accepted'?'現在の採用根拠':r.evidence_role==='conflicting'?'資料に不一致':r.evidence_role==='rejected'?'採用除外・訂正対象':'過去・補足'}`,'small'),el('p',r.summary));
  for(const s of r.sources){const p=el('p',undefined,'small');p.append(link(s.title+' ↗',s.url),el('span',` · ${s.locator} · 取得 ${s.retrieved_on}`));article.append(p);}

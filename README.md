@@ -4,7 +4,7 @@
 
 調査データとツールは [Aqsh_Shift_Research_v2_Batch02_DB_20261011](Aqsh_Shift_Research_v2_Batch02_DB_20261011/) にあります。
 
-無料・会員登録不要の **Aqsh シフト比較** をCloudflareへデプロイしました。[確認用URL](https://aqsh-shift.pages.dev/)で検索・比較・詳細を閲覧できます。本番・検証D1の登録、50詳細ページとWeb MCPを含む検証も完了しました。指定ドメイン **shift.aqsh.co.jp** はCloudflareへ登録済みで、ムームードメイン側のCNAME設定待ちです。公開状況と接続手順は [公開報告](docs/deployment-20261011.md) を参照してください。
+無料・会員登録不要の **Aqsh シフトづくりサービス比較** をCloudflareへデプロイしました。[確認用URL](https://aqsh-shift.pages.dev/)で検索・比較・詳細を閲覧できます。本番・検証D1の登録、50詳細ページとWeb MCPを含む検証も完了しました。指定ドメイン **shift.aqsh.co.jp** はCloudflareへ登録済みで、ムームードメイン側のCNAME設定待ちです。公開状況と接続手順は [公開報告](docs/deployment-20261011.md) を参照してください。
 
 | ファイル | 用途 |
 |---|---|

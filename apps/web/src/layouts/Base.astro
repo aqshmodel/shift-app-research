@@ -1,34 +1,35 @@
 ---
 import '../styles/global.css';
-import { SITE } from '../lib/catalog';
+import { SITE,SITE_NAME } from '../lib/catalog';
 const { title,description='シフト管理・自動作成サービス50製品を、公開資料の根拠と提供条件で比較。医療・介護・店舗向けの検索、料金、様式9、管理者MFA、解約データ出力を調査。無料・会員登録不要。',noindex=false,breadcrumbs=[],structured=null }=Astro.props;
 const canonical=SITE+Astro.url.pathname;
-const graph=[{'@type':'Organization','@id':SITE+'/#publisher',name:'Aqsh株式会社',url:'https://aqsh.co.jp/',logo:SITE+'/brand/aqsh-logo.png',email:'info@aqsh.co.jp'}, {'@type':'WebSite','@id':SITE+'/#website',name:'Aqsh シフト比較',url:SITE+'/',inLanguage:'ja',publisher:{'@id':SITE+'/#publisher'}}, {'@type':'WebPage',name:title,url:canonical,isPartOf:{'@id':SITE+'/#website'},description,inLanguage:'ja',publisher:{'@id':SITE+'/#publisher'}},...(breadcrumbs.length?[{'@type':'BreadcrumbList',itemListElement:breadcrumbs.map((b:any,i:number)=>({'@type':'ListItem',position:i+1,name:b.name,item:SITE+b.url}))}]:[]),...(structured?[structured]:[])];
+const graph=[{'@type':'Organization','@id':SITE+'/#publisher',name:'Aqsh株式会社',url:'https://aqsh.co.jp/',logo:SITE+'/brand/aqsh-logo.png',email:'info@aqsh.co.jp'}, {'@type':'WebSite','@id':SITE+'/#website',name:SITE_NAME,url:SITE+'/',inLanguage:'ja',publisher:{'@id':SITE+'/#publisher'}}, {'@type':'WebPage',name:title,url:canonical,isPartOf:{'@id':SITE+'/#website'},description,inLanguage:'ja',publisher:{'@id':SITE+'/#publisher'}},...(breadcrumbs.length?[{'@type':'BreadcrumbList',itemListElement:breadcrumbs.map((b:any,i:number)=>({'@type':'ListItem',position:i+1,name:b.name,item:SITE+b.url}))}]:[]),...(structured?[structured]:[])];
 ---
 <!doctype html>
 <html lang="ja">
 <head>
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>{title} | Aqsh シフト比較</title><meta name="description" content={description} />
-  <link rel="canonical" href={canonical} /><meta name="robots" content={noindex || Astro.url.search?'noindex, follow':'index, follow'} />
-  <meta property="og:type" content="website" /><meta property="og:locale" content="ja_JP" /><meta property="og:site_name" content="Aqsh シフト比較" />
-  <meta property="og:title" content={title+' | Aqsh シフト比較'} /><meta property="og:description" content={description} /><meta property="og:url" content={canonical} /><meta property="og:image" content={SITE+'/brand/aqsh-logo.png'} />
+  <title>{title} | {SITE_NAME}</title><meta name="description" content={description} />
+  <link rel="preload" href="/fonts/manrope-latin-variable.woff2" as="font" type="font/woff2" crossorigin />
+  <meta name="theme-color" content="#f7f8f4" /><link rel="canonical" href={canonical} /><meta name="robots" content={noindex || Astro.url.search?'noindex, follow':'index, follow'} />
+  <meta property="og:type" content="website" /><meta property="og:locale" content="ja_JP" /><meta property="og:site_name" content={SITE_NAME} />
+  <meta property="og:title" content={title+' | '+SITE_NAME} /><meta property="og:description" content={description} /><meta property="og:url" content={canonical} /><meta property="og:image" content={SITE+'/brand/aqsh-logo.png'} />
   <meta name="twitter:card" content="summary" /><link rel="icon" type="image/png" sizes="32x32" href="/brand/favicon-32.png" /><link rel="icon" sizes="192x192" href="/brand/icon-192.png" /><link rel="apple-touch-icon" href="/brand/apple-touch-icon.png" />
   <script type="application/ld+json" set:html={JSON.stringify({'@context':'https://schema.org','@graph':graph}).replace(/</g,'\u003c')}></script>
 </head>
 <body>
   <a class="skip" href="#main">本文へ進む</a>
   <header class="site-header"><div class="header-inner">
-    <a class="identity" href="/" aria-label="Aqsh シフト比較 トップ"><img src="/brand/aqsh-logo.png" width="1112" height="385" alt="Aqsh" /><span>シフト比較</span></a>
-    <nav aria-label="メインナビゲーション"><a href="/products/">製品を探す</a><a href="/compare/">比較<span id="compare-count"></span></a><a href="/methodology/">調査について</a><a class="mcp-link" href="/webmcp/">Web MCP対応</a></nav>
+    <a class="identity" href="/" aria-label={SITE_NAME+' トップ'}><img src="/brand/aqsh-logo-240.webp" width="240" height="83" alt="Aqsh" /><span>シフトづくり<span class="brand-break"></span>サービス比較</span></a>
+    <nav aria-label="メインナビゲーション"><a href="/products/" aria-current={Astro.url.pathname.startsWith('/products/')?'page':undefined}>サービスを探す</a><a href="/compare/" aria-current={Astro.url.pathname.startsWith('/compare/')?'page':undefined}>比較<span id="compare-count"></span></a><a href="/methodology/" aria-current={Astro.url.pathname.startsWith('/methodology/')?'page':undefined}>調査について</a><a class="mcp-link" href="/webmcp/" aria-current={Astro.url.pathname.startsWith('/webmcp/')?'page':undefined}>Web MCP対応<span aria-hidden="true">↗</span></a></nav>
   </div></header>
   <main id="main">
     {breadcrumbs.length>0 && <nav class="breadcrumbs container" aria-label="パンくず"><ol>{breadcrumbs.map((b:any,i:number)=><li>{i===breadcrumbs.length-1?<span aria-current="page">{b.name}</span>:<a href={b.url}>{b.name}</a>}</li>)}</ol></nav>}
     <slot />
     <aside id="agent-result" class="agent-result container" hidden aria-label="AIが取得した情報"><div class="section-head"><h2>AIが取得した情報</h2><button id="agent-close" type="button">閉じる</button></div><div id="agent-content"></div></aside>
   </main>
-  <footer class="site-footer"><div class="container footer-grid"><div><a class="footer-brand" href="https://aqsh.co.jp/"><img src="/brand/aqsh-logo.png" alt="Aqsh株式会社" width="1112" height="385" /></a><p>選ぶ前に、根拠を確かめる。<br />無料・会員登録不要の調査資料サイト。</p><p class="small">2026年10月11日現在の調査内容です。<br />公開資料の確認と実動作の検証は区別して掲載しています。</p></div><nav aria-label="フッターナビゲーション"><a href="/about/">運営会社・お問い合わせ</a><a href="/methodology/">調査方法</a><a href="/references/form-9/">様式9の参照資料</a><a href="/webmcp/">Web MCP・AIでの利用</a><a href="/privacy/">プライバシーポリシー</a><a href="/terms/">利用規約</a></nav></div><div class="container copyright">© 2026 Aqsh株式会社</div></footer>
-  <div id="compare-bar" class="compare-bar" hidden><div><strong>比較する製品</strong><div id="compare-selected"></div></div><a id="compare-go" class="button" href="/compare/">比較する</a><button id="compare-clear" type="button">クリア</button></div>
+  <footer class="site-footer"><div class="container footer-grid"><div><a class="footer-brand" href="https://aqsh.co.jp/"><img src="/brand/aqsh-logo-240.webp" alt="Aqsh株式会社" width="240" height="83" /></a><p>シフトづくりの選択を、資料でお手伝いします。<br />無料・会員登録不要でご覧いただけます。</p><p class="small">2026年10月11日現在の調査内容です。<br />公開資料の確認と実動作の検証は区別して掲載しています。</p></div><nav aria-label="フッターナビゲーション"><a href="/about/">運営会社・お問い合わせ</a><a href="/methodology/">調査方法</a><a href="/references/form-9/">様式9の参照資料</a><a href="/webmcp/">Web MCP・AIでの利用</a><a href="/privacy/">プライバシーポリシー</a><a href="/terms/">利用規約</a></nav></div><div class="container copyright">© 2026 Aqsh株式会社</div></footer>
+  <div id="compare-bar" class="compare-bar" hidden><div><strong>比較するサービス <span class="small">2〜4件お選びください</span></strong><div id="compare-selected"></div></div><a id="compare-go" class="button" href="/compare/">比較する</a><button id="compare-clear" type="button">クリア</button></div>
   <p id="ui-announcement" class="sr-only" role="status" aria-live="polite"></p>
   <script>import '../lib/client.mjs';</script>
 </body>
