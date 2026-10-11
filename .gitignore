@@ -34,6 +34,7 @@ apps/web/worker-configuration.d.ts
 !.env.example
 .aws/
 .codex/
+.local/
 
 # Temporary files and database sidecars
 tmp/
@@ -51,3 +52,6 @@ temp/
 *.db-journal
 
 # research.sqlite3, source ZIP/PDF, D1 SQL and validation reports are tracked.
+
+# Private and ad-hoc live QA
+apps/web/.local-live-qa.mjs

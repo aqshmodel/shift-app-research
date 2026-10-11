@@ -1,0 +1,31 @@
+{
+  "checked_at": "2026-10-11T12:25:07.050Z",
+  "official": [
+    {
+      "status": 200,
+      "width": 1280,
+      "overflow": false,
+      "link": "https://shift.aqsh.co.jp/"
+    },
+    {
+      "status": 200,
+      "width": 390,
+      "overflow": false,
+      "link": "https://shift.aqsh.co.jp/"
+    }
+  ],
+  "analytics": {
+    "id": "G-E205Y93JB7",
+    "before_consent_google_requests": 0,
+    "after_refusal_google_requests": 0,
+    "tag_requests": 1,
+    "collection_responses": [
+      {
+        "status": 204,
+        "measurement_id": "G-E205Y93JB7",
+        "event": "page_view"
+      }
+    ],
+    "status": "passed"
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "checked_at": "2026-10-11T12:26:25.498Z",
+  "passed": 12,
+  "failed": 0,
+  "checks": [
+    {
+      "file": "analytics.spec.mjs",
+      "name": "opt-in loads one tag, sanitized events omit raw query, and withdrawal stops future collection",
+      "status": "expected"
+    },
+    {
+      "file": "analytics.spec.mjs",
+      "name": "refusal survives navigation and preview hosts cannot load a Google tag",
+      "status": "expected"
+    },
+    {
+      "file": "analytics.spec.mjs",
+      "name": "a page restored from history respects consent withdrawn on another page",
+      "status": "expected"
+    },
+    {
+      "file": "catalog.spec.mjs",
+      "name": "all 50 products are searchable, server rendered and have distinct detail metadata",
+      "status": "expected"
+    },
+    {
+      "file": "catalog.spec.mjs",
+      "name": "API input boundaries, nonmutation, evidence pagination and complete price conditions",
+      "status": "expected"
+    },
+    {
+      "file": "catalog.spec.mjs",
+      "name": "SEO routes, no fabricated reviews, operator phone omission, and real 404s",
+      "status": "expected"
+    },
+    {
+      "file": "catalog.spec.mjs",
+      "name": "normal UI search, filters, compare selection and mobile overflow",
+      "status": "expected"
+    },
+    {
+      "file": "catalog.spec.mjs",
+      "name": "search and comparison work without JavaScript",
+      "status": "expected"
+    },
+    {
+      "file": "catalog.spec.mjs",
+      "name": "planned care calculation and task assignment preserve capability scope",
+      "status": "expected"
+    },
+    {
+      "file": "guides.spec.mjs",
+      "name": "selection guides are crawlable, evidence-linked, and use one D1 round trip",
+      "status": "expected"
+    },
+    {
+      "file": "guides.spec.mjs",
+      "name": "guide navigation, FAQs and service links work on mobile without JavaScript",
+      "status": "expected"
+    },
+    {
+      "file": "guides.spec.mjs",
+      "name": "guide interfaces meet automated WCAG AA checks",
+      "status": "expected"
+    }
+  ]
+}

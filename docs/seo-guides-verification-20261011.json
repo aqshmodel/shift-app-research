@@ -1,0 +1,117 @@
+{
+  "as_of": "2026-10-11",
+  "site": "https://shift.aqsh.co.jp/",
+  "guides": [
+    "medical",
+    "care",
+    "general",
+    "api"
+  ],
+  "research_snapshot": "B07-20261011-pub2",
+  "research_database_changed": false,
+  "deployment": {
+    "staging_version": "052b8e52-0926-4658-b563-056b194ffab0",
+    "production_version": "861a2a11-fc03-43d1-8989-9071830059bd"
+  },
+  "search_console": {
+    "property": "sc-domain:shift.aqsh.co.jp",
+    "sitemap": {
+      "status": "success",
+      "detected_urls": 62
+    },
+    "aggregate_index_report": "processing",
+    "urls": [
+      {
+        "path": "/",
+        "indexed": true
+      },
+      {
+        "path": "/products/",
+        "indexed": true
+      },
+      {
+        "path": "/products/jp04/",
+        "indexed": true
+      },
+      {
+        "path": "/categories/medical/",
+        "indexed": true,
+        "reason": null,
+        "request_accepted": true
+      },
+      {
+        "path": "/categories/care/",
+        "indexed": true,
+        "reason": null,
+        "request_accepted": true
+      },
+      {
+        "path": "/categories/general/",
+        "indexed": true,
+        "reason": null,
+        "request_accepted": null,
+        "request_acceptance_observed": false,
+        "request_submitted": true,
+        "result": "indexed_on_recheck"
+      },
+      {
+        "path": "/categories/api/",
+        "indexed": true,
+        "reason": null,
+        "request_accepted": true
+      }
+    ],
+    "known_indexed_count_in_checked_sample": 7,
+    "total_indexed_urls": null
+  },
+  "official_link": {
+    "page": "https://aqsh.co.jp/workforce-design/",
+    "target": "https://shift.aqsh.co.jp/",
+    "post_id": 1203225,
+    "before_sha256": "5c44bfa8da82ec63f4305c7e880770707cc1847026016332313746262c6e6d34",
+    "after_sha256": "041614278e333919a86c2f137d980f625487b217154bdd64453acb1ca5ec5e4c",
+    "seo_settings_preserved": true,
+    "auto_updated_seo_fields": [
+      "image_scan_date",
+      "updated"
+    ],
+    "postmeta_preserved": true,
+    "public_http": 200,
+    "link_count": 1,
+    "viewport_checks": [
+      1280,
+      390
+    ],
+    "overflow": false
+  },
+  "checks": {
+    "astro_errors": 0,
+    "node_tests_passed": 14,
+    "browser_tests_passed": 12,
+    "sitemap_urls": 62,
+    "seo_issues": 0,
+    "guide_d1_round_trips": 1,
+    "mobile_lighthouse": {
+      "performance": 97,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "final_guide_recheck": {
+      "checked_at": "2026-10-11T12:34:59.476Z",
+      "passed": 3,
+      "failed": 0
+    }
+  },
+  "ga4_email_recheck": {
+    "measurement_id": "G-E205Y93JB7",
+    "google_requests_before_consent": 0,
+    "google_requests_after_refusal": 0,
+    "tag_downloads_after_consent": 1,
+    "page_view_http": 204,
+    "real_time_guide_title_confirmed": true,
+    "duplicate_tag_added": false,
+    "automatic_email_reason": "unconfirmed; consent-gated scanning or notification delay is plausible"
+  },
+  "verification_completed_at": "2026-10-11T12:48:40.663554+00:00"
+}
