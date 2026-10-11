@@ -14,6 +14,7 @@
 | [DB設計書](Aqsh_Shift_Research_v2_Batch02_DB_20261011/DB_DESIGN.md) | Cloudflare D1向けのテーブル・ビュー設計 |
 | [D1初回登録用SQL](Aqsh_Shift_Research_v2_Batch02_DB_20261011/d1/import.sql) | 空のD1にスキーマと全データを登録するSQL |
 | [最新の調査報告](Aqsh_Shift_Research_v2_Batch02_DB_20261011/reports/Batch07_research_report.md) | 様式9算式、管理者MFA、解約時の出力、分類訂正と残課題 |
+| [デザイン・性能の改修記録](docs/design-quality-20261011.md) | 新名称、数字、画面品質、D1取得回数、公開側の検証と計測 |
 | [制度の参照データ](Aqsh_Shift_Research_v2_Batch02_DB_20261011/reports/regulation_index.csv) | 様式9の式・除外・丸め・集計期間。製品の実装証拠とは別に保存 |
 
 ## ローカルで確認する

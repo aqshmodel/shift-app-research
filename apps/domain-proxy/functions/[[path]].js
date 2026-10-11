@@ -8,6 +8,12 @@ export async function onRequest({request,env}) {
  const target=new URL(incoming.pathname+incoming.search,'https://shift.aqsh.co.jp');
  const upstream=await env.RESEARCH.fetch(new Request(target,request));
  const response=new Response(upstream.body,{status:upstream.status,statusText:upstream.statusText,headers:upstream.headers});
- if(!isPublic){response.headers.set('X-Robots-Tag','noindex, nofollow');response.headers.set('Cache-Control','no-store');}
+ if(!isPublic){
+  response.headers.set('X-Robots-Tag','noindex, nofollow');
+  // Keep preview HTML and API fresh; reuse static assets with the Worker's
+  // fingerprinted immutable or conditional-revalidation cache policy.
+  const staticAsset=['/_astro/','/fonts/','/brand/'].some(prefix=>incoming.pathname.startsWith(prefix));
+  if(!staticAsset || ![200,304].includes(response.status))response.headers.set('Cache-Control','no-store');
+ }
  return response;
 }

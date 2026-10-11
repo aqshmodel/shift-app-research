@@ -52,6 +52,8 @@ ManropeのLatin可変フォントは24,836バイト、SIL Open Font License 1.1�
 - 初回のモバイルLighthouseは性能98、アクセシビリティ100、ベストプラクティス100でした。LCP1.5秒、TBT0ms、CLS0でした。最終版の数値は公開確認後に追記します。
 - 本番依存のnpm auditは既知の脆弱性0件でした。
 
+最終のLighthouseで、確認用Pages入口が静的ファイルにもno-storeを設定していることを確認しました。確認用URLでも`/_astro/`のハッシュ付きCSS・JavaScriptはimmutable、フォント・ブランド素材は条件付き再検証の配信方針を維持するように修正しました。確認用HTMLとAPIはno-store、全リソースのnoindexを保持しています。独自ドメイン側は従来からWorkerの配信方針を保持しています。入口の3回帰テストでHTML・API・素材・エラー・304応答を確認し、公開側のヘッダーも照合しました。
+
 ## 公開と最終計測
 
 公開版の確認結果・バージョン・スクリーンショット・HTTP計測を、この節とdesign-quality-verification-20261011.jsonへ保存します。確認用Pages URLと検証Workerは意図的にnoindexです。LighthouseのSEO点にはこの検索対象外の設定が反映されるため、独自ドメインの公開確認とは分けます。Googleインデックスや検索順位、受賞、実機Safari・Firefoxはこの検証の対象外です。
