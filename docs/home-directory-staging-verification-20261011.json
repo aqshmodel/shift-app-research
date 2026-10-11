@@ -1,0 +1,124 @@
+{
+  "environment": "staging",
+  "worker_version": "82dec15d-e7f3-4379-afcb-3471489390f2",
+  "verification_stage": "before_visual_polish",
+  "stats": {
+    "startTime": "2026-10-11T14:29:26.187Z",
+    "duration": 41365.221999999994,
+    "expected": 18,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "tests": [
+    {
+      "title": "opt-in loads one tag, sanitized events omit raw query, and withdrawal stops future collection",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "refusal survives navigation and preview hosts cannot load a Google tag",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "a page restored from history respects consent withdrawn on another page",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "home server-renders DB services, bounded pages, facets and one D1 round trip",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "name-free filters combine capabilities, remove conditions and restore browser history",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "pagination preserves compare selection and replacement cards retain working actions",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "GET filtering works without JavaScript and treats planned care as outside documented filters",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "a failed refresh restores applied controls, and stale requests cannot overwrite newer filters",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "mobile exposes context and services first, with accessible optional filters and no overflow",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "new branding, lining numerals, polite copy and reduced-motion rendering",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "WCAG AA automated checks cover home, catalog, detail and comparison",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "320, 390, 768 and 1440 pixel layouts keep controls and pages in view",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "native search navigation restores its usable button and decorative markup after back",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "deployed D1 request batching exposes the intended round-trip counts",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "consent controls and the comparison bar remain usable at each viewport without Google requests",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "five native tools return source-backed data and update visible UI",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "native cancellation prevents delayed results and page lifecycle removes tools",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "unsupported WebMCP leaves the normal UI operational",
+      "results": [
+        "passed"
+      ]
+    }
+  ],
+  "database_changed": false
+}

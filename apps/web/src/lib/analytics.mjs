@@ -123,9 +123,10 @@ export function initializeAnalytics() {
     if(vendor && /^OF-(?:JP|US)\d{2}$/.test(vendor.dataset.vendorId || '')) track('vendor_click',{product_id:vendor.dataset.vendorId});
   });
   document.addEventListener('submit',event=>{
-    if(event.target?.id === 'product-search') track('catalog_search');
+    if(event.target?.id === 'product-search' && !event.target.hasAttribute('data-home-search')) track('catalog_search');
     if(event.target?.classList.contains('compare-form')) track('compare_submit');
   });
+  document.addEventListener('directory:updated',()=>track('catalog_search'));
   if(choice === 'granted') start();
   else forgetCookies();
   show(choice === null);

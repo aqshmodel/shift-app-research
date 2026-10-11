@@ -27,7 +27,7 @@ python3 tests/publication_test.py
 
 ## 公開
 
-`CLOUDFLARE_ENV=staging npm run build` で検証用D1の設定を選択し、`npm run deploy:staging`。本番は `npm run build` 後に `npm run deploy`。ビルドごとに生成されるdist/server/wrangler.jsonを使用します。ステージング成果物を本番へ流用しません。
+検証環境は `npm run deploy:staging`、本番は `npm run deploy`。各コマンドが対象環境でビルドし、生成された `dist/server/wrangler.json` のWorker名・環境名・D1 IDを照合してから公開します。事前の別ビルドは不要です。ステージング成果物を本番へ流用しません。
 
 初回D1登録は `python3 scripts/d1-initialize.py staging` または `production`。既存テーブルがあれば停止します。以後の更新は原本の差分バッチと新しい公開版を追加する方式にし、初回import.sqlを再投入しません。
 
@@ -44,6 +44,12 @@ CLOUDFLARE_ACCOUNT_ID=032177c6a3d3bbf36ce3c60cc4e62404 \
 画面・API・ネイティブWeb MCPは `TEST_BASE_URL=https://... npm run test:browser`。Chrome155の実験機能を有効化して検証します。登録・実行テストと、独立したAIの自然言語によるツール選択は別です。後者の150評価ケースは `docs/webmcp/eval-cases.json` に保存しています。
 
 ## 表示品質とデータ取得
+
+TOPはDBのサービスを12件ずつサーバー描画し、用途・国内／海外・複数の機能で絞り込めます。`home-directory.mjs`で条件の検証、すべての選択機能に記載があるサービスの抽出、件数計算、ページ送りを扱います。提供予定・記載未確認を、資料で確認済みの機能として数えません。
+
+GETフォーム・ページリンクはJavaScriptなしでも使えます。`home-client.mjs`の拡張時は同じGETのHTMLを取得し、一覧・条件・件数を差し替えます。独立した検索APIや画面用の全製品JSONを追加せず、D1はリクエストごとの1回のbatch（2クエリ）で公開版と一覧を取得します。中断、通信失敗、戻る操作と比較選択の維持を検証しています。既存API・Web MCPの契約と原本は変更していません。
+
+FIKAIGOの公式ロゴは外部画像レスポンスのCookie設定を避けるため、元のSVGを編集せず自己配信します。完全一致する出典URLだけをローカルパスへ対応付け、APIは原URLを保持します。出典・取得日・SHA-256はルートの `docs/service-logo-assets.json`、TOPの検証結果と測定条件は `docs/home-directory-20261011.md` に記録しています。
 
 数値には自己配信のManropeと`lining-nums tabular-nums`を使い、高さと幅を揃えています。フォントの出典・ライセンスは`docs/font-assets.json`に記録しています。案内文は丁寧語の表示用コピーに分け、調査記録とAPIの原文を保持しています。
 

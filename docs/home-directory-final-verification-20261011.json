@@ -1,0 +1,112 @@
+{
+  "environment": "production",
+  "url": "https://shift.aqsh.co.jp/",
+  "worker_version": "982a2f3c-fae7-4cfe-a69c-f0e2fb0e499c",
+  "research_snapshot": "B07-20261011-pub2",
+  "database_changed": false,
+  "stats": {
+    "startTime": "2026-10-11T14:49:14.591Z",
+    "duration": 16071.367000000002,
+    "expected": 10,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "tests": [
+    {
+      "title": "home server-renders DB services, bounded pages, facets and one D1 round trip",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "name-free filters combine capabilities, remove conditions and restore browser history",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "pagination preserves compare selection and replacement cards retain working actions",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "GET filtering works without JavaScript and treats planned care as outside documented filters",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "a failed refresh restores applied controls, and stale requests cannot overwrite newer filters",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "mobile exposes context and services first, with accessible optional filters and no overflow",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "fragment navigation avoids a DB refetch and the featured FIKAIGO logo uses the original local SVG",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "five native tools return source-backed data and update visible UI",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "native cancellation prevents delayed results and page lifecycle removes tools",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "unsupported WebMCP leaves the normal UI operational",
+      "results": [
+        "passed"
+      ]
+    }
+  ],
+  "unit_tests": {
+    "passed": 18,
+    "failed": 0
+  },
+  "astro_check": {
+    "files": 55,
+    "errors": 0,
+    "warnings": 0,
+    "hints": 0
+  },
+  "screenshots": [
+    {
+      "path": "docs/screenshots/home-directory-20261011.jpg",
+      "width": 1792,
+      "height": 976,
+      "sha256": "431deb16546bfc88186c9a78367d7dcbd606d23496dcad4cad8f76be1be88ba7"
+    },
+    {
+      "path": "docs/screenshots/home-directory-390-20261011.jpg",
+      "width": 390,
+      "height": 844,
+      "sha256": "4e6f35521efefec2eae34f5e865bbaa79132242c5e26644bc6345969da760aaf"
+    },
+    {
+      "path": "docs/screenshots/home-directory-768-20261011.jpg",
+      "width": 768,
+      "height": 1024,
+      "sha256": "598ae22b20749b79c218d80c3cbfd788965747d550c7fa92bac3c6ff19ac7968"
+    }
+  ],
+  "earlier_quality_verification": "home-directory-production-verification-20261011.json",
+  "limitations": [
+    "自動アクセシビリティ検査は、全支援技術での手動試験を代替しません。",
+    "Web MCPのブラウザ内ツール登録・実行を検証しています。独立したAIによる自然言語での選択評価は含みません。"
+  ]
+}

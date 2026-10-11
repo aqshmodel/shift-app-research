@@ -1,0 +1,48 @@
+---
+import ProductCard from './ProductCard.astro';
+import ContextIcon from './ContextIcon.astro';
+import {categoryInfo} from '../lib/catalog';
+import {directoryUrl, featureNames} from '../lib/home-directory.mjs';
+const {result, error} = Astro.props;
+const {filters, counts, products, total, pages, start} = result;
+const regions: Record<string,string> = {'': '国内・海外', domestic: '国内', overseas: '海外'};
+const active = [
+  ...(filters.category ? [{label: categoryInfo[filters.category].name, href: directoryUrl(filters, {category: '', page: 1})}] : []),
+  ...(filters.region ? [{label: regions[filters.region], href: directoryUrl(filters, {region: '', page: 1})}] : []),
+  ...filters.features.map((id: string) => ({label: featureNames[id], href: directoryUrl(filters, {features: filters.features.filter((x: string) => x !== id), page: 1})})),
+  ...(filters.q ? [{label: '検索：' + filters.q, href: directoryUrl(filters, {q: '', page: 1})}] : []),
+];
+---
+<section class="container home-directory" id="services" aria-labelledby="directory-title" data-home-directory>
+ <div class="directory-heading"><div><p class="eyebrow">FIND YOUR SERVICE</p><h2 id="directory-title">用途や機能から探せます。</h2></div><p>気になるサービスを2〜4件選ぶと、比較できます。</p></div>
+ <form action="/#services" method="get" id="product-search" class="directory-layout" data-home-search>
+  <aside class="directory-filters" aria-label="サービスの絞り込み">
+   <div class="filter-heading"><h3>条件で絞り込む</h3><a href="/#services" data-directory-link>すべて解除</a></div>
+   <fieldset class="context-options"><legend>ご利用の現場</legend>
+    <label class="context-option"><input type="radio" name="category" value="" checked={!filters.category} /><span class="context-option-label">すべての用途</span><span class="facet-count" data-facet="category:" aria-hidden="true">{counts.category['']}</span></label>
+    {Object.entries(categoryInfo).map(([id, c]) => <label class="context-option"><input type="radio" name="category" value={id} checked={filters.category === id} /><ContextIcon kind={id}/><span class="context-option-label">{c.name}</span><span class="facet-count" data-facet={'category:' + id} aria-hidden="true">{counts.category[id]}</span></label>)}
+   </fieldset>
+   <button type="button" id="mobile-filters-toggle" class="mobile-filters-toggle" aria-expanded="false" aria-controls="additional-filters" hidden><span>機能・地域で絞り込む<span id="mobile-filter-count"></span></span><span aria-hidden="true">↓</span></button>
+   <div id="additional-filters" class="additional-filters">
+    <fieldset class="feature-options"><legend>必要な機能<span>複数選択できます</span></legend><p class="filter-description">選んだすべての項目について、公開資料に記載があるサービスを表示します。</p>
+     {Object.entries(featureNames).map(([id, name]) => <label class="feature-option"><input type="checkbox" name="feature" value={id} checked={filters.features.includes(id)} /><span>{name}</span><span class="facet-count" data-facet={'feature:' + id} aria-hidden="true">{counts.feature[id]}</span></label>)}
+    </fieldset>
+    <fieldset class="region-options"><legend>国内・海外</legend><div>{Object.entries(regions).map(([id, name]) => <label><input type="radio" name="region" value={id} checked={filters.region === id} /><span>{name}</span><span class="facet-count" data-facet={'region:' + id} aria-hidden="true">{counts.region[id]}</span></label>)}</div></fieldset>
+    <p class="filter-description">プランや提供範囲は詳細でご確認ください。掲載がない項目は、非対応を意味しません。</p>
+   </div>
+  </aside>
+  <div class="directory-main">
+   <div class="directory-search"><label for="q">製品名・会社名・機能で検索<span>入力せずに絞り込めます</span></label><div><input type="search" name="q" id="q" value={filters.q} maxlength="100" placeholder="例：夜勤、様式9、サービス名" /><button type="submit" class="button">検索する <span aria-hidden="true">→</span></button></div></div>
+   <noscript><p class="small">条件を選び「検索する」を押すと、絞り込めます。比較は比較ページからご利用ください。</p></noscript>
+   <div class="directory-toolbar"><p id="directory-status" role="status" aria-live="polite">{total}件のサービス</p><label>並び順<select name="sort" id="directory-sort"><option value="domestic" selected={filters.sort === 'domestic'}>国内から・名前順</option><option value="name" selected={filters.sort === 'name'}>名前順</option></select></label></div>
+   <p class="directory-error notice" id="directory-error" role="alert" hidden={!error}>{error}</p>
+   <div id="home-results" data-total={total} data-page={filters.page}>
+    {active.length > 0 && <div class="active-filters" aria-label="選択中の条件"><span>絞り込み中</span>{active.map(item => <a href={item.href} data-directory-link aria-label={item.label + 'の条件を解除'}>{item.label}<span aria-hidden="true">×</span></a>)}<a class="active-clear" href="/#services" data-directory-link>すべて解除</a></div>}
+    <div class="results-heading"><h3 id="home-results-title" tabindex="-1">{total ? `${total}件のうち${start + 1}〜${start + products.length}件を表示しています` : '条件に合うサービスが見つかりませんでした'}</h3><a href="/methodology/">掲載情報の読み方 <span aria-hidden="true">↗</span></a></div>
+    {products.length ? <div class="product-grid">{products.map((p: any) => <ProductCard product={p} highlights />)}</div> : <div class="directory-empty"><p>公開資料で確認できていない場合もあります。条件を減らしてお探しください。</p><a class="button secondary" href="/#services" data-directory-link>条件を解除して、すべてを見る</a></div>}
+    {pages > 1 && <nav class="directory-pagination" aria-label="サービス一覧のページ"><span class="pagination-position">{filters.page} / {pages}ページ</span><div>{Array.from({length: pages}, (_, i) => i + 1).map(page => <a href={directoryUrl(filters, {page})} data-directory-link data-pagination aria-label={page + 'ページ目'} aria-current={page === filters.page ? 'page' : undefined}>{page}</a>)}</div>{filters.page < pages && <a class="next-page" href={directoryUrl(filters, {page: filters.page + 1})} data-directory-link data-pagination>次のサービスを見る <span aria-hidden="true">→</span></a>}</nav>}
+   </div>
+   <p class="directory-footnote">件数は選択中の条件を反映しています。表示順はおすすめ順ではありません。2026年10月11日現在の調査内容です。</p>
+  </div>
+ </form>
+</section>

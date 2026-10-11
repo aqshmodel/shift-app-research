@@ -1,36 +1,32 @@
 ---
 import Base from '../layouts/Base.astro';
-import SearchForm from '../components/SearchForm.astro';
+import HomeDirectory from '../components/HomeDirectory.astro';
+import '../styles/home-directory.css';
 import ContextIcon from '../components/ContextIcon.astro';
 import {getResearch} from '../lib/data';
 import {categoryInfo} from '../lib/catalog';
-const data=await getResearch(Astro.locals).scope();
-const days=['月','火','水','木','金','土','日'];
-const patterns=[[1,1,0,2,2,0,1],[0,2,2,1,0,1,1],[2,0,1,0,1,2,2]];
+import {buildDirectory, readDirectoryFilters} from '../lib/home-directory.mjs';
+const research = getResearch(Astro.locals);
+const catalog = await research.catalog();
+const data = await research.scope();
+let filters; let error = '';
+try { filters = readDirectoryFilters(Astro.url.searchParams); }
+catch { error = '検索条件を確認してください。条件を解除して、もう一度お探しください。'; Astro.response.status = 400; filters = readDirectoryFilters(new URLSearchParams()); }
+const result = buildDirectory(catalog, filters);
 ---
-<Base title="シフトづくりサービスを、機能と料金から探せます">
- <section class="hero container">
-  <div class="hero-copy">
+<Base title="シフトづくりサービスを、用途や機能から探せます" description="シフトづくりサービス50製品を、医療・介護・店舗などの用途と必要な機能で絞り込めます。ロゴ付きの一覧から、勤務表の自動割当、様式9、料金や利用条件を比較できます。無料・会員登録不要。" structured={{'@type':'CollectionPage',mainEntity:{'@type':'ItemList',numberOfItems:result.total,itemListElement:result.products.map((p:any,i:number)=>({'@type':'ListItem',position:result.start+i+1,name:p.name,url:'https://shift.aqsh.co.jp/products/'+p.slug+'/'}))}}}>
+ <section class="home-intro container">
+  <div>
    <p class="eyebrow"><span class="eyebrow-line" aria-hidden="true"></span> SHIFT RESEARCH <span class="eyebrow-date">2026.10.11</span></p>
-   <h1>現場に合うサービスを、<br /><span>機能と料金から探せます。</span></h1>
-   <p class="hero-description">勤務表の自動作成から、様式9、料金、解約時のデータ出力まで。公開資料で確認した機能や利用条件を、同じ画面で比較できます。</p>
-   <div class="hero-actions"><a class="button" href="/products/">サービスを探す <span aria-hidden="true">↗</span></a><a class="text-link" href="/compare/">比較から始める <span aria-hidden="true">→</span></a></div>
+   <h1><span class="home-service-title">シフトづくりサービスを</span><span>用途や機能から探せます。</span></h1>
+   <p class="home-lead">サービス名を知らなくても、条件に合う候補を絞り込めます。</p>
    <p class="free-note"><span class="status-indicator" aria-hidden="true"></span> 無料・会員登録不要でご利用いただけます。</p>
   </div>
-  <aside class="research-board" aria-label="調査の収録件数">
-   <div class="board-top"><span>RESEARCH NOTE</span><span>2026 / 10</span></div>
-   <div class="board-main"><div><span class="small muted">調査対象</span><p class="research-number"><strong>{data.products}</strong><span>サービス</span></p></div><a class="board-link" href="/methodology/" aria-label="調査の範囲を確認する"><span aria-hidden="true">↗</span></a></div>
-   <div class="shift-illustration" aria-hidden="true"><div class="calendar-header"><span>SHIFT PLANNING</span><span>イメージ</span></div><div class="calendar-days">{days.map(d=><span>{d}</span>)}</div><div class="calendar-grid">{patterns.flatMap((row,ri)=>row.map((cell,i)=><span class:list={['calendar-cell','cell-'+cell,{'cell-focus':ri===1&&i===3}]}>{cell===0?'—':cell===1?'日':'夜'}</span>))}</div></div>
-   <div class="board-stats"><div><strong>{data.document_observations.toLocaleString()}</strong><span>件の調査記録</span></div><div><strong>{data.research_documents}</strong><span>件の参照文書</span></div></div>
-   <p class="board-note">2026年10月11日現在の調査内容です。</p>
-  </aside>
+  <aside class="home-scope" aria-label="調査の収録件数"><p class="research-number"><strong>{data.products}</strong><span>サービスを収録</span></p><p><strong>{data.document_observations.toLocaleString()}</strong>件の調査記録 / <strong>{data.research_documents}</strong>件の参照文書</p><a href="/methodology/">調査の範囲をご確認いただけます <span aria-hidden="true">↗</span></a></aside>
  </section>
- <section class="container search-home" aria-label="製品検索">
-  <SearchForm compact />
-  <div class="quick-search"><span>確認したいことから</span><a href="/products/?feature=B01">勤務表の自動作成 <span aria-hidden="true">↗</span></a><a href="/products/?feature=J05">様式9の計算方法 <span aria-hidden="true">↗</span></a><a href="/products/?feature=N02">認証の確認範囲 <span aria-hidden="true">↗</span></a><a href="/products/?feature=M08">解約時のデータ出力 <span aria-hidden="true">↗</span></a></div>
- </section>
+ <HomeDirectory result={result} error={error}/>
  <section class="container section contexts">
-  <div class="section-head"><div><p class="eyebrow">01 / BY CONTEXT</p><h2>現場から探せます。</h2></div><a class="text-link" href="/products/">すべてのサービスを見る <span aria-hidden="true">↗</span></a></div>
+  <div class="section-head"><div><p class="eyebrow">CHOOSING A SERVICE</p><h2>比較のポイントもご案内します。</h2></div><a class="text-link" href="/products/">すべてのサービスを見る <span aria-hidden="true">↗</span></a></div>
   <div class="category-grid">{Object.entries(categoryInfo).map(([id,c],i)=><a class="category-card" href={'/categories/'+id+'/'}><div class="category-card-top"><span class="category-number">0{i+1}</span><span class="category-arrow" aria-hidden="true">↗</span></div><ContextIcon kind={id}/><h3>{c.name}</h3><p>{c.checks[0]}<br />{c.checks[1]}</p><span class="category-cta">選び方・サービスを確認する <span aria-hidden="true">→</span></span></a>)}</div>
  </section>
  <section class="research-strip">

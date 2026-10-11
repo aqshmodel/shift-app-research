@@ -1,0 +1,15 @@
+[
+  {
+    "product_id": "JP03",
+    "brand": "FIKAIGO",
+    "source_url": "https://www.fikaigo.com/hubfs/logo_fikaigo.svg",
+    "source_page_url": "https://www.fikaigo.com/",
+    "local_path": "/brand/products/fikaigo.svg",
+    "retrieved_on": "2026-10-11",
+    "sha256": "de77d5800edf52c0f133242710e7ae2a7b77f4056e491c191f1334545065bd6e",
+    "bytes": 14479,
+    "content_type": "image/svg+xml",
+    "purpose": "比較サイトのサービス紹介用。商標・画像の権利は各権利者に帰属します。",
+    "delivery_note": "外部画像レスポンスのCookie送信を避けるため、元のSVGを編集せず自己配信します。"
+  }
+]

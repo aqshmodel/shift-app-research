@@ -12,4 +12,9 @@ export const criterionLabels: Record<string,string> = {B01:'勤務表の自動�
 export const methodLabels:Record<string,string>={vendor_document:'販売元資料',vendor_quote:'正式見積',synthetic_test:'合成データでの試験',demo:'実画面・デモ',public_document:'公開資料',independent_source:'利用者側の一次資料',unknown:'確認方法を検討中'};
 export const safeUrl=(url:string)=>/^https:\/\//.test(url) ? url : undefined;
 
-export const safeImage=(url:string|undefined)=>url && (url.startsWith('https://') || /^data:image\/(svg\+xml|png|jpeg|webp);base64,[A-Za-z0-9+/=]+$/.test(url)) ? url : undefined;
+export function safeImage(url: string | undefined) {
+ if (!url) return undefined;
+ // Exact source matching prevents using an old local logo after a DB asset change.
+ if (url === 'https://www.fikaigo.com/hubfs/logo_fikaigo.svg') return '/brand/products/fikaigo.svg';
+ return url.startsWith('https://') || /^data:image\/(svg\+xml|png|jpeg|webp);base64,[A-Za-z0-9+/=]+$/.test(url) ? url : undefined;
+}

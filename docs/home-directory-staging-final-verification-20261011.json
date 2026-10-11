@@ -1,0 +1,106 @@
+{
+  "environment": "staging",
+  "worker_version": "1dae0d96-6b3b-41c1-9c2d-355097e180aa",
+  "verification_stage": "final_behavior_and_layout_before_heading_linebreak_polish",
+  "stats": {
+    "startTime": "2026-10-11T14:35:14.428Z",
+    "duration": 38144.301999999996,
+    "expected": 15,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "tests": [
+    {
+      "title": "home server-renders DB services, bounded pages, facets and one D1 round trip",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "name-free filters combine capabilities, remove conditions and restore browser history",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "pagination preserves compare selection and replacement cards retain working actions",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "GET filtering works without JavaScript and treats planned care as outside documented filters",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "a failed refresh restores applied controls, and stale requests cannot overwrite newer filters",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "mobile exposes context and services first, with accessible optional filters and no overflow",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "new branding, lining numerals, polite copy and reduced-motion rendering",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "WCAG AA automated checks cover home, catalog, detail and comparison",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "320, 390, 768 and 1440 pixel layouts keep controls and pages in view",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "native search navigation restores its usable button and decorative markup after back",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "deployed D1 request batching exposes the intended round-trip counts",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "consent controls and the comparison bar remain usable at each viewport without Google requests",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "five native tools return source-backed data and update visible UI",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "native cancellation prevents delayed results and page lifecycle removes tools",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "unsupported WebMCP leaves the normal UI operational",
+      "results": [
+        "passed"
+      ]
+    }
+  ],
+  "database_changed": false
+}

@@ -1,5 +1,7 @@
 import {displayText,isVisibleAssessment} from './presentation.mjs';
+import {initializeHomeDirectory} from './home-client.mjs';
 import { toolSchemas,validateSearch,validateId,validateIds,validateEvidence } from './contracts.mjs';
+const homeDirectory = initializeHomeDirectory();
 const announce = text => { const node=document.getElementById('ui-announcement'); if(node)node.textContent=text; };
 const safeLink=(url)=>typeof url==='string'&&(url.startsWith('/')&&!url.startsWith('//')||/^https:\/\//.test(url));
 function el(tag,text,className){const node=document.createElement(tag);if(text!==undefined)node.textContent=String(text);if(className)node.className=className;return node;}
@@ -14,21 +16,24 @@ function updateSelection(){
   const go=document.getElementById('compare-go');if(go){go.href='/compare/?products='+selection.map(p=>p.id).join(',');go.setAttribute('aria-disabled',String(selection.length<2));go.textContent=selection.length<2?'あと1製品を追加':'比較する →';}
   document.querySelectorAll('.compare-add').forEach(b=>{const selected=selection.some(p=>p.id===b.dataset.id);b.setAttribute('aria-pressed',String(selected));b.textContent=selected?'比較から外す':'比較に追加';});
 }
-document.querySelectorAll('.compare-add').forEach(b=>b.addEventListener('click',()=>{
+document.addEventListener('click',event=>{
+  const b=event.target instanceof Element ? event.target.closest('.compare-add') : null;if(!b)return;
   const id=b.dataset.id;try{validateId(id);}catch{return;}
   if(selection.some(p=>p.id===id))selection=selection.filter(p=>p.id!==id);
   else if(selection.length===4){announce('比較できるのは4製品までです。選択を1件外してください。');return;}
   else selection.push({id,name:b.dataset.label||id});updateSelection();announce(`比較する製品は${selection.length}件です。`);
-}));
+});
+document.addEventListener('directory:updated',updateSelection);
 document.getElementById('compare-go')?.addEventListener('click',e=>{if(selection.length<2){e.preventDefault();announce('比較する製品を2件以上選択してください。');}});
 document.getElementById('compare-clear')?.addEventListener('click',()=>{selection=[];updateSelection();announce('比較の選択を解除しました。');});
 document.getElementById('differences-only')?.addEventListener('change',e=>document.querySelectorAll('tr[data-different="false"]').forEach(row=>{row.hidden=e.target.checked;}));
-document.querySelectorAll('.vendor-logo').forEach(img=>img.addEventListener('error',()=>{const fallback=el('span',img.alt.replace(/ ロゴ$/,''),'logo-fallback');img.replaceWith(fallback);}));
+document.addEventListener('error',event=>{const img=event.target;if(img instanceof HTMLImageElement&&img.classList.contains('vendor-logo')){const fallback=el('span',img.alt.replace(/ ロゴ$/,''),'logo-fallback');img.replaceWith(fallback);}},true);
 updateSelection();
 
 // Keep native GET navigation and a useful pending state, including bfcache restoration.
 const submitting=[];
-document.querySelectorAll('form[method="get"]').forEach(form=>form.addEventListener('submit',()=>{
+document.querySelectorAll('form[method="get"]').forEach(form=>form.addEventListener('submit',event=>{
+ if(event.defaultPrevented)return;
  const button=form.querySelector('button[type="submit"]');if(!button)return;
  submitting.push({button,nodes:[...button.childNodes]});button.disabled=true;button.setAttribute('aria-busy','true');button.textContent='読み込んでいます…';
 }));
@@ -78,7 +83,18 @@ async function registerTools(){
       if(name==='get_research_scope'){if(Object.keys(input).length)return {error:'入力項目はありません。'};path='/api/scope/';}
       const merged=AbortSignal.any([signal,current.signal,AbortSignal.timeout(15000)]);
       const data=await getJson(path,merged);merged.throwIfAborted();
-      if(name==='search_shift_products'){const form=document.getElementById('product-search');if(form)for(const [k,v] of Object.entries(data.filters)){const field=form.elements.namedItem(k);if(field&&'value' in field)field.value=v||'';}}
+      if(name==='search_shift_products') {
+        if(homeDirectory) {
+          if(!data.filters.state || data.filters.state==='documented') await homeDirectory.applySearchFilters(data.filters,merged);
+        } else {
+          const form=document.getElementById('product-search');
+          if(form) for(const [key,value] of Object.entries(data.filters)) {
+            const field=form.elements.namedItem(key);
+            if(field && 'value' in field) field.value=value||'';
+          }
+        }
+        merged.throwIfAborted();
+      }
       if(name==='compare_shift_products'){selection=data.products.map(p=>({id:p.id,name:p.name}));updateSelection();}
       showResult(name,data);return data;
     }catch(error){if(signal.aborted||current.signal.aborted)throw error;return {error:error.message||'取得できませんでした。',retryable:!String(error.message).includes('入力')};}

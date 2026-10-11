@@ -1,0 +1,84 @@
+{
+  "url": "https://shift.aqsh.co.jp/",
+  "fetch_time": "2026-10-11T14:49:17.643Z",
+  "worker_version": "982a2f3c-fae7-4cfe-a69c-f0e2fb0e499c",
+  "lighthouse_version": "13.5.0",
+  "form_factor": "mobile",
+  "throttling_method": "simulate",
+  "throttling": {
+    "rttMs": 150,
+    "throughputKbps": 1638.4,
+    "requestLatencyMs": 562.5,
+    "downloadThroughputKbps": 1474.5600000000002,
+    "uploadThroughputKbps": 675,
+    "cpuSlowdownMultiplier": 4
+  },
+  "environment": {
+    "networkUserAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Mobile Safari/537.36",
+    "hostUserAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+    "benchmarkIndex": 1967.5,
+    "credits": {
+      "axe-core": "4.13.0"
+    }
+  },
+  "consent": "初期状態。Googleタグは未同意のため起動しません。",
+  "scores": {
+    "performance": 99,
+    "accessibility": 100,
+    "best-practices": 100,
+    "seo": 100
+  },
+  "metrics": {
+    "first-contentful-paint": {
+      "value": 1447.4610000000002,
+      "display": "1.4 s"
+    },
+    "largest-contentful-paint": {
+      "value": 1765.5350000000003,
+      "display": "1.8 s"
+    },
+    "cumulative-layout-shift": {
+      "value": 0.01177098767464498,
+      "display": "0.012"
+    },
+    "total-blocking-time": {
+      "value": 0,
+      "display": "0 ms"
+    }
+  },
+  "initial_observation": {
+    "worker_version": "44aee9f2-af6c-4b99-9a8e-81a9c96a21a3",
+    "scores": {
+      "performance": 94,
+      "accessibility": 100,
+      "best-practices": 77,
+      "seo": 100
+    },
+    "finding": "FIKAIGO公式ロゴのレスポンスが外部Cookieを設定していました。元のSVGを編集せずサイト内配信に変更し、出典とハッシュを記録しました。"
+  },
+  "remaining_opportunities": [
+    {
+      "id": "cache-insight",
+      "title": "Use efficient cache lifetimes"
+    },
+    {
+      "id": "forced-reflow-insight",
+      "title": "Forced reflow"
+    },
+    {
+      "id": "image-delivery-insight",
+      "title": "Improve image delivery"
+    },
+    {
+      "id": "network-dependency-tree-insight",
+      "title": "Network dependency tree"
+    },
+    {
+      "id": "render-blocking-insight",
+      "title": "Render-blocking requests"
+    }
+  ],
+  "limitations": [
+    "単回のモバイル条件によるラボ測定です。実際の利用者のCore Web VitalsやGoogleの順位・インデックス登録を示すものではありません。"
+  ]
+}
