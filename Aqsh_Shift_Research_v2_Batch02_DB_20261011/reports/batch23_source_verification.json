@@ -1,0 +1,60 @@
+{
+  "status": "passed",
+  "official_sources": 4,
+  "checked_on": "2026-10-12",
+  "sources": [
+    {
+      "key": "service",
+      "url": "https://www.healthstream.com/contact-us/service",
+      "title": "HealthStream Service：一般支援と契約別Success Management",
+      "publisher": "HealthStream, Inc.",
+      "reference": "Need support / Success Management / Academy",
+      "retrieved_on": "2026-10-12",
+      "method": "public_web_body",
+      "method_note": "一般支援の対象Anyone、平日7〜19時CT、管理者ポータル、Success Managementは契約別tiered。Academyの24/7は教材。公開・更新日未表示。全文・本文ハッシュ未保存。"
+    },
+    {
+      "key": "community",
+      "url": "https://community.healthstream.com/customer-support",
+      "title": "HealthStream Customer Support：電話とポータル案内",
+      "publisher": "HealthStream, Inc.",
+      "reference": "Call Support / Getting Access / Portal Access Confirmation",
+      "retrieved_on": "2026-10-12",
+      "method": "public_web_body",
+      "method_note": "Web本文と公開ブラウザを確認。平日7〜19:30 CT、表示877-301-4786。portal accessの別リンクのtel属性は800-521-4786で表示と異なるため電話操作なし。全社ページでShiftWizard別契約時間とは確定しない。公開・更新日未表示。全文・本文ハッシュ未保存。"
+    },
+    {
+      "key": "support-faq",
+      "url": "https://image.email.healthstream.com/lib/fe2a117371640474701176/m/1/3399b92b-1379-461e-8e30-1942d5b9b6ff.pdf",
+      "title": "ShiftWizard Support FAQs：2023年6月1日からの支援運用変更",
+      "publisher": "HealthStream, Inc.",
+      "reference": "公式1ページPDF。2026年1月通知のCustomer Support FAQから到達",
+      "retrieved_on": "2026-10-12",
+      "version_label": "Support process transition begins 2023-06-01; still linked from January 2026 notification",
+      "method": "official_document_body",
+      "scope_note": "公式PDF原本1ページと抽出テキストをローカル保存。原本をレンダーして文字を目視照合。",
+      "method_note": "2023-06-01は移行の開始日で公開・最終更新日ではない。抽出文字にはShiftWizardの一部字形が置換されるため原本画像を確認。現行製品操作は未試験。原本PDFを保存しSHA256検証。",
+      "archive_path": "assets/sources/B23-20261012/shiftwizard-support-faq.pdf",
+      "page_count": 1
+    },
+    {
+      "key": "january",
+      "url": "https://community.healthstream.com/viewdocument/shiftwizard-monthly-notification-ja-2",
+      "title": "ShiftWizard Monthly Notification January 2026：具体的休業日と保守枠",
+      "publisher": "HealthStream Success Management",
+      "reference": "12-31-2025 10:46 AM / Holiday Office Hours / Customer Support Information / Maintenance Window",
+      "retrieved_on": "2026-10-12",
+      "published_on": "2025-12-31",
+      "method": "public_web_body",
+      "method_note": "公開日時表示と2025-12-31早期閉鎖・2026-01-01休業、夜間のnetwork maintenance枠を確認。既存B14平日7〜18CTと電話の観測を単独では重複追加しない。全文・ハッシュ未保存。"
+    }
+  ],
+  "pdf_pages_rendered_and_reviewed": 1,
+  "pdf_sha256": "a7ae587e25b6cb9a672d528c129358bff56e8673f9d33058e31cb737b52e57c5",
+  "pdf_extraction_glyph_substitution_preserved": true,
+  "full_text_archived_sources": 1,
+  "HTML_full_text_archived": false,
+  "login_gated_FAQ_body": "not obtained; hStream sign-in boundary retained",
+  "independent_tests_performed": false,
+  "external_contact": false
+}

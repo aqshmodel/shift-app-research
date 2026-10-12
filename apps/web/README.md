@@ -25,7 +25,7 @@ python3 -m unittest discover -s tests -p '*_test.py'
 
 原本はルートの調査パッケージです。公開用SQL生成は `python3 scripts/build-publication.py`。提供条件・出典・判断履歴は原本を保ち、4つのweb_テーブルへ版付きで投影します。Airシフトの業務割当を勤務表生成として確認済みには分類しません。Clairviaの初期URLは顧客のヘルプだったため、公開リンクはOracle公式へ補正しています。
 
-ローカル正本・公開用投影は第18バッチ（`B18-20261012-pub2`）まで更新済みです。B13〜B18を本番・検証環境へ反映し、全39テーブル・全50サービスを照合しました。公開記録は [本番反映](../../docs/research-b18-publication-20261012.md) に保存しています。調査と検証は [第18バッチ報告](../../Aqsh_Shift_Research_v2_Batch02_DB_20261011/reports/Batch18_research_report.md) を参照してください。
+ローカル正本・公開用投影は第24バッチ（`B24-20261012-pub2`）まで更新済みです。B19〜B24を本番・検証環境へ反映し、全39テーブル・全50サービスを照合しました。公開記録は [本番反映](../../docs/research-b24-publication-20261013.md)、調査内容は [第24バッチ報告](../../Aqsh_Shift_Research_v2_Batch02_DB_20261011/reports/Batch24_research_report.md) を参照してください。
 
 公開投影は構造化された `support_status=planned` を「予定」として保持します。既存機能の資料に将来の追加機能を併記している場合は、各記録を残して既存機能の区分を維持します。プレビューの日付が過ぎたことだけで提供済みに変更しません。
 

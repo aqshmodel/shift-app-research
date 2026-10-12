@@ -1,0 +1,347 @@
+{
+  "status": "passed",
+  "batch_id": "B21-20261012",
+  "tables": [
+    {
+      "table": "assessment_resolutions",
+      "previous_rows": 2716,
+      "current_rows": 2719,
+      "old_rows_preserved": true,
+      "allowed_mutable_changes": []
+    },
+    {
+      "table": "asset_evidence",
+      "previous_rows": 6,
+      "current_rows": 6,
+      "old_rows_preserved": true,
+      "allowed_mutable_changes": []
+    },
+    {
+      "table": "audit_issues",
+      "previous_rows": 32,
+      "current_rows": 32,
+      "old_rows_preserved": true,
+      "allowed_mutable_changes": []
+    },
+    {
+      "table": "batch_product_membership",
+      "previous_rows": 156,
+      "current_rows": 157,
+      "old_rows_preserved": true,
+      "allowed_mutable_changes": []
+    },
+    {
+      "table": "benchmark_runs",
+      "previous_rows": 0,
+      "current_rows": 0,
+      "old_rows_preserved": true,
+      "allowed_mutable_changes": []
+    },
+    {
+      "table": "benchmark_scenario_criteria",
+      "previous_rows": 45,
+      "current_rows": 45,
+      "old_rows_preserved": true,
+      "allowed_mutable_changes": []
+    },
+    {
+      "table": "benchmark_scenarios",
+      "previous_rows": 14,
+      "current_rows": 14,
+      "old_rows_preserved": true,
+      "allowed_mutable_changes": []
+    },
+    {
+      "table": "brand_assets",
+      "previous_rows": 51,
+      "current_rows": 51,
+      "old_rows_preserved": true,
+      "allowed_mutable_changes": []
+    },
+    {
+      "table": "classification_corrections",
+      "previous_rows": 12,
+      "current_rows": 12,
+      "old_rows_preserved": true,
+      "allowed_mutable_changes": []
+    },
+    {
+      "table": "cost_requirements",
+      "previous_rows": 36,
+      "current_rows": 36,
+      "old_rows_preserved": true,
+      "allowed_mutable_changes": []
+    },
+    {
+      "table": "cost_scenarios",
+      "previous_rows": 8,
+      "current_rows": 8,
+      "old_rows_preserved": true,
+      "allowed_mutable_changes": []
+    },
+    {
+      "table": "criteria",
+      "previous_rows": 164,
+      "current_rows": 164,
+      "old_rows_preserved": true,
+      "allowed_mutable_changes": []
+    },
+    {
+      "table": "current_assessments",
+      "previous_rows": 2123,
+      "current_rows": 2123,
+      "old_rows_preserved": true,
+      "allowed_mutable_changes": [
+        {
+          "key": [
+            "OF-US10",
+            "O04"
+          ],
+          "fields": [
+            "resolution_id"
+          ]
+        },
+        {
+          "key": [
+            "OF-US10",
+            "P02"
+          ],
+          "fields": [
+            "resolution_id"
+          ]
+        },
+        {
+          "key": [
+            "OF-US10",
+            "P03"
+          ],
+          "fields": [
+            "resolution_id"
+          ]
+        }
+      ]
+    },
+    {
+      "table": "domains",
+      "previous_rows": 20,
+      "current_rows": 20,
+      "old_rows_preserved": true,
+      "allowed_mutable_changes": []
+    },
+    {
+      "table": "legacy_feature_map",
+      "previous_rows": 86,
+      "current_rows": 86,
+      "old_rows_preserved": true,
+      "allowed_mutable_changes": []
+    },
+    {
+      "table": "metric_catalog",
+      "previous_rows": 20,
+      "current_rows": 20,
+      "old_rows_preserved": true,
+      "allowed_mutable_changes": []
+    },
+    {
+      "table": "observation_evidence",
+      "previous_rows": 2085,
+      "current_rows": 2093,
+      "old_rows_preserved": true,
+      "allowed_mutable_changes": []
+    },
+    {
+      "table": "observations",
+      "previous_rows": 2969,
+      "current_rows": 2977,
+      "old_rows_preserved": true,
+      "allowed_mutable_changes": []
+    },
+    {
+      "table": "offerings",
+      "previous_rows": 50,
+      "current_rows": 50,
+      "old_rows_preserved": true,
+      "allowed_mutable_changes": []
+    },
+    {
+      "table": "plans",
+      "previous_rows": 99,
+      "current_rows": 99,
+      "old_rows_preserved": true,
+      "allowed_mutable_changes": []
+    },
+    {
+      "table": "price_components",
+      "previous_rows": 118,
+      "current_rows": 118,
+      "old_rows_preserved": true,
+      "allowed_mutable_changes": []
+    },
+    {
+      "table": "product_aliases",
+      "previous_rows": 57,
+      "current_rows": 57,
+      "old_rows_preserved": true,
+      "allowed_mutable_changes": []
+    },
+    {
+      "table": "products",
+      "previous_rows": 50,
+      "current_rows": 50,
+      "old_rows_preserved": true,
+      "allowed_mutable_changes": []
+    },
+    {
+      "table": "regulation_support",
+      "previous_rows": 0,
+      "current_rows": 0,
+      "old_rows_preserved": true,
+      "allowed_mutable_changes": []
+    },
+    {
+      "table": "regulations",
+      "previous_rows": 17,
+      "current_rows": 17,
+      "old_rows_preserved": true,
+      "allowed_mutable_changes": []
+    },
+    {
+      "table": "research_assets",
+      "previous_rows": 6,
+      "current_rows": 6,
+      "old_rows_preserved": true,
+      "allowed_mutable_changes": []
+    },
+    {
+      "table": "research_batches",
+      "previous_rows": 20,
+      "current_rows": 21,
+      "old_rows_preserved": true,
+      "allowed_mutable_changes": []
+    },
+    {
+      "table": "research_task_updates",
+      "previous_rows": 83,
+      "current_rows": 86,
+      "old_rows_preserved": true,
+      "allowed_mutable_changes": []
+    },
+    {
+      "table": "research_tasks",
+      "previous_rows": 980,
+      "current_rows": 980,
+      "old_rows_preserved": true,
+      "allowed_mutable_changes": [
+        {
+          "key": [
+            "TASK-RES01298"
+          ],
+          "fields": [
+            "required_method",
+            "last_checked_on",
+            "task_state"
+          ]
+        },
+        {
+          "key": [
+            "TASK-RES01300"
+          ],
+          "fields": [
+            "required_method",
+            "last_checked_on",
+            "task_state"
+          ]
+        },
+        {
+          "key": [
+            "TASK-RES01301"
+          ],
+          "fields": [
+            "required_method",
+            "last_checked_on",
+            "task_state"
+          ]
+        }
+      ]
+    },
+    {
+      "table": "resolution_evidence",
+      "previous_rows": 3698,
+      "current_rows": 3709,
+      "old_rows_preserved": true,
+      "allowed_mutable_changes": []
+    },
+    {
+      "table": "retrieval_checks",
+      "previous_rows": 167,
+      "current_rows": 170,
+      "old_rows_preserved": true,
+      "allowed_mutable_changes": []
+    },
+    {
+      "table": "run_metrics",
+      "previous_rows": 0,
+      "current_rows": 0,
+      "old_rows_preserved": true,
+      "allowed_mutable_changes": []
+    },
+    {
+      "table": "schema_info",
+      "previous_rows": 17,
+      "current_rows": 17,
+      "old_rows_preserved": true,
+      "allowed_mutable_changes": [
+        {
+          "key": [
+            "latest_batch"
+          ],
+          "fields": [
+            "value"
+          ]
+        }
+      ]
+    },
+    {
+      "table": "source_archives",
+      "previous_rows": 5,
+      "current_rows": 5,
+      "old_rows_preserved": true,
+      "allowed_mutable_changes": []
+    },
+    {
+      "table": "source_documents",
+      "previous_rows": 301,
+      "current_rows": 304,
+      "old_rows_preserved": true,
+      "allowed_mutable_changes": []
+    },
+    {
+      "table": "source_method_attributes",
+      "previous_rows": 382,
+      "current_rows": 386,
+      "old_rows_preserved": true,
+      "allowed_mutable_changes": []
+    },
+    {
+      "table": "source_revisions",
+      "previous_rows": 442,
+      "current_rows": 446,
+      "old_rows_preserved": true,
+      "allowed_mutable_changes": []
+    },
+    {
+      "table": "sources",
+      "previous_rows": 303,
+      "current_rows": 306,
+      "old_rows_preserved": true,
+      "allowed_mutable_changes": []
+    },
+    {
+      "table": "vendors",
+      "previous_rows": 11,
+      "current_rows": 11,
+      "old_rows_preserved": true,
+      "allowed_mutable_changes": []
+    }
+  ]
+}

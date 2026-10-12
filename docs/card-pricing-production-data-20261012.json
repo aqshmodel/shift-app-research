@@ -1,5 +1,5 @@
 {
-  "snapshot": "B12-20261012-pub2",
+  "snapshot": "B24-20261012-pub2",
   "products": [
     {
       "id": "OF-JP27",
@@ -116,9 +116,9 @@
     {
       "id": "OF-US16",
       "name": "PerfectServe Lightning Bolt",
-      "label": "非公開",
+      "label": "個別見積もり",
       "note": "",
-      "kind": "unpublished"
+      "kind": "quote"
     },
     {
       "id": "OF-JP10",
@@ -228,9 +228,9 @@
     {
       "id": "OF-US06",
       "name": "UKG Pro Workforce Management",
-      "label": "非公開",
+      "label": "個別見積もり",
       "note": "",
-      "kind": "unpublished"
+      "kind": "quote"
     },
     {
       "id": "OF-US19",
@@ -263,8 +263,8 @@
     {
       "id": "OF-JP12",
       "name": "シフトラ",
-      "label": "月額250円 / 人",
-      "note": "スタンダード · 税区分未確認",
+      "label": "月額250円 / ユーザー",
+      "note": "シフトラ月額・会社特商法表示 · 税区分未確認",
       "kind": "published"
     },
     {
@@ -299,7 +299,7 @@
       "id": "OF-JP11",
       "name": "ナースシフト",
       "label": "月額5,500円 / アカウント",
-      "note": "個人アカウント月額 · 税込 · 100人まで",
+      "note": "個人有料購読・月次自動更新 · 税込 · 100人まで",
       "kind": "published"
     },
     {

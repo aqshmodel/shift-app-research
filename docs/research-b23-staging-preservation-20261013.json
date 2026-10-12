@@ -1,0 +1,17 @@
+{
+  "web_snapshots": {
+    "before": 4,
+    "after": 5,
+    "all_prior_rows_preserved": true
+  },
+  "web_products": {
+    "before": 200,
+    "after": 250,
+    "all_prior_rows_preserved": true
+  },
+  "web_categories": {
+    "before": 244,
+    "after": 305,
+    "all_prior_rows_preserved": true
+  }
+}

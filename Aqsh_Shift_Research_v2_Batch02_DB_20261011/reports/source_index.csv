@@ -1,7 +1,7 @@
 ﻿revision_id,document_id,publisher,title,retrieval_url,retrieved_on,published_on,updated_on,origin_kind,full_text_archived,relative_path,sha256
-B18-20261012-REV001,DOC-ab55dc905d8a11eff9e4013a,HealthStream / Nursegrid,Nursegrid Manager：下書きの調整・割当・公開の操作ヘルプ,https://healthstreamhelp.mcoutput.com/nursegridmanager/Content/NG_Manager/Schedule_Mgmt/Balancing_and_Publishing_a_Draft_Schedule.htm,2026-10-12,,2025-09-09,public_web_body,0,,
-B18-20261012-REV002,DOC-e84d2fed65c9ddbf94e72c85,HealthStream / Nursegrid,Nursegrid Manager：自己割当希望の個別・一括承認,https://healthstreamhelp.mcoutput.com/nursegridmanager/Content/NG_Manager/Schedule_Mgmt/Reviewing_and_Assigning_Self_Scheduling_Responses.htm,2026-10-12,,2025-09-09,public_web_body,0,,
-B18-20261012-REV003,DOC-9b6fab0ab9d5ec70287fbf7f,HealthStream / Nursegrid,Nursegrid Manager：Schedule Builderの自己割当段階と対象職員,https://healthstreamhelp.mcoutput.com/nursegridmanager/Content/NG_Manager/Schedule_Mgmt/Creating_a_Draft_Schedule_with_the_Schedule_Builder.htm,2026-10-12,,2025-09-09,public_web_body,0,,
-B18-20261012-REV004,DOC-cb7c30891a9e935b0dc42e3d,HealthStream / Nursegrid,Nursegrid Manager：Restricted Usersの空きシフト受信制限,https://healthstreamhelp.mcoutput.com/nursegridmanager/Content/NG_Manager/User_Management/Restricted_Users.htm,2026-10-12,,2025-09-09,public_web_body,0,,
-B18-20261012-REV005,DOC-ec2100b6d951152753094049,Nursegrid / HealthStream,Nursegrid App：無料の個人向け機能と組織向けManagerの区別,https://nursegrid.com/for-nurses/nursegrid-app/,2026-10-12,,,public_web_body,0,,
-B18-20261012-REV006,DOC-1a7d9d96cfb7b313181b5a0f,,Nursegrid Manager：公開ヘルプと問い合わせ導線の範囲,https://nursegrid.com/for-organizations/nursegrid-manager/,2026-10-12,,,public_web_body,0,,
+B24-20261012-REV001,DOC-2a09c37c5af3f6ba8c026d45,,SHIFTEE シフトAI自動作成（月）,https://www.shifteeapp.jp/functions/シフト自動作成（月）/,2026-10-12,,,public_web_body,0,,
+B24-20261012-REV002,DOC-d22615439d4627dadc0b9075,SHIFTEE公式,SHIFTEE 機能紹介：標準機能とオプション,https://www.shifteeapp.jp/function/,2026-10-12,,,public_web_body,0,,
+B24-20261012-REV003,DOC-d1d70d3484907e2369ff167d,SHIFTEE公式サイト,SHIFTEE 店舗管理,https://www.shifteeapp.jp/functions/店舗管理/,2026-10-12,,,public_web_body,0,,
+B24-20261012-REV004,DOC-09193d13f850cbd386b64ae4,SHIFTEE公式サイト,SHIFTEE シフト収集,https://www.shifteeapp.jp/functions/シフト収集/,2026-10-12,,,public_web_body,0,,
+B24-20261012-REV005,DOC-b29665ec2049e4aa9e0c72ad,SHIFTEE公式サイト,JR四国ステーション開発株式会社：SHIFTEE導入事例,https://www.shifteeapp.jp/case/jr四国ステーション開発株式会社/,2026-10-12,,,public_web_body,0,,
+B24-20261012-REV006,DOC-a9206bc56a32ff589c548880,SHIFTEE公式サイト,日本赤十字社 古河赤十字病院：SHIFTEE導入事例,https://www.shifteeapp.jp/case/日本赤十字社　古河赤十字病院/,2026-10-12,,,public_web_body,0,,

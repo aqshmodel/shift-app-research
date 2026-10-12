@@ -1,0 +1,44 @@
+{
+  "status": "passed",
+  "batch_id": "B22-20261012",
+  "method": "CUA Chrome on isolated local static viewer; visual and read-only DOM",
+  "scope": "Affected RosterElf detail only; comprehensive 38 web cases planned C02T05",
+  "viewports": [
+    {
+      "width": 1440,
+      "height": 1000,
+      "overflow": false,
+      "cards": 1,
+      "records": 2068
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "overflow": false,
+      "cards": 1,
+      "records": 2068
+    }
+  ],
+  "checks": {
+    "new9_observation_ids_visible": true,
+    "old_prices_and_history_visible": true,
+    "tax_P07_and_SMS_P06_visible": true,
+    "unresolved_plan_timing_visible": true,
+    "Flex_minimum_and_SMS_scope_limitations_visible": true,
+    "new_sources_linked": true,
+    "console_errors_returned": 0
+  },
+  "screenshots": "Observed in CUA tool output; not archived as package files",
+  "local_server": {
+    "host": "127.0.0.1",
+    "port": 49871,
+    "stopped": true,
+    "escalation_review": "approved"
+  },
+  "favicon": "Static test server favicon.ico 404; no console errors returned; app output unaffected",
+  "html_dataset": {
+    "products": 50,
+    "observations": 2068,
+    "duplicate_ids": 0
+  }
+}

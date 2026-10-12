@@ -1,0 +1,8 @@
+{
+  "status": "passed",
+  "new_findings": 6,
+  "exact_summary_duplicates": 0,
+  "semantic_review": "Night-after-leave setting; first/monthly/manual workflow; store versus joint optimization; submission options versus approved leave; elapsed days versus hours; physician versus nursing scope. Prior general functionality and prices omitted.",
+  "new_price_components": 0,
+  "existing_price_components": 118
+}

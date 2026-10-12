@@ -1,0 +1,225 @@
+{
+  "checked_at": "2026-10-12T23:30:27.206Z",
+  "base": "https://shift.aqsh.co.jp",
+  "status": "passed",
+  "snapshot_id": "B24-20261012-pub2",
+  "checks": [
+    {
+      "id": "OF-JP17",
+      "width": 320,
+      "title": "SHIFTEE",
+      "viewport": 320,
+      "documentWidth": 320,
+      "recordParagraphs": 50,
+      "recordWrapping": true
+    },
+    {
+      "id": "OF-JP17",
+      "width": 390,
+      "title": "SHIFTEE",
+      "viewport": 390,
+      "documentWidth": 390,
+      "recordParagraphs": 50,
+      "recordWrapping": true
+    },
+    {
+      "id": "OF-JP17",
+      "width": 768,
+      "title": "SHIFTEE",
+      "viewport": 768,
+      "documentWidth": 768,
+      "recordParagraphs": 50,
+      "recordWrapping": true
+    },
+    {
+      "id": "OF-JP17",
+      "width": 1440,
+      "title": "SHIFTEE",
+      "viewport": 1440,
+      "documentWidth": 1440,
+      "recordParagraphs": 50,
+      "recordWrapping": true
+    },
+    {
+      "id": "OF-US04",
+      "width": 320,
+      "title": "Smartlinx Scheduling",
+      "viewport": 320,
+      "documentWidth": 320,
+      "recordParagraphs": 50,
+      "recordWrapping": true
+    },
+    {
+      "id": "OF-US04",
+      "width": 390,
+      "title": "Smartlinx Scheduling",
+      "viewport": 390,
+      "documentWidth": 390,
+      "recordParagraphs": 50,
+      "recordWrapping": true
+    },
+    {
+      "id": "OF-US04",
+      "width": 768,
+      "title": "Smartlinx Scheduling",
+      "viewport": 768,
+      "documentWidth": 768,
+      "recordParagraphs": 50,
+      "recordWrapping": true
+    },
+    {
+      "id": "OF-US04",
+      "width": 1440,
+      "title": "Smartlinx Scheduling",
+      "viewport": 1440,
+      "documentWidth": 1440,
+      "recordParagraphs": 50,
+      "recordWrapping": true
+    },
+    {
+      "id": "OF-US05",
+      "width": 320,
+      "title": "Rotageek",
+      "viewport": 320,
+      "documentWidth": 320,
+      "recordParagraphs": 50,
+      "recordWrapping": true
+    },
+    {
+      "id": "OF-US05",
+      "width": 390,
+      "title": "Rotageek",
+      "viewport": 390,
+      "documentWidth": 390,
+      "recordParagraphs": 50,
+      "recordWrapping": true
+    },
+    {
+      "id": "OF-US05",
+      "width": 768,
+      "title": "Rotageek",
+      "viewport": 768,
+      "documentWidth": 768,
+      "recordParagraphs": 50,
+      "recordWrapping": true
+    },
+    {
+      "id": "OF-US05",
+      "width": 1440,
+      "title": "Rotageek",
+      "viewport": 1440,
+      "documentWidth": 1440,
+      "recordParagraphs": 50,
+      "recordWrapping": true
+    },
+    {
+      "id": "OF-US10",
+      "width": 320,
+      "title": "Timefold Employee Shift Scheduling API",
+      "viewport": 320,
+      "documentWidth": 320,
+      "recordParagraphs": 44,
+      "recordWrapping": true
+    },
+    {
+      "id": "OF-US10",
+      "width": 390,
+      "title": "Timefold Employee Shift Scheduling API",
+      "viewport": 390,
+      "documentWidth": 390,
+      "recordParagraphs": 44,
+      "recordWrapping": true
+    },
+    {
+      "id": "OF-US10",
+      "width": 768,
+      "title": "Timefold Employee Shift Scheduling API",
+      "viewport": 768,
+      "documentWidth": 768,
+      "recordParagraphs": 44,
+      "recordWrapping": true
+    },
+    {
+      "id": "OF-US10",
+      "width": 1440,
+      "title": "Timefold Employee Shift Scheduling API",
+      "viewport": 1440,
+      "documentWidth": 1440,
+      "recordParagraphs": 44,
+      "recordWrapping": true
+    },
+    {
+      "id": "OF-US12",
+      "width": 320,
+      "title": "ShiftWizard",
+      "viewport": 320,
+      "documentWidth": 320,
+      "recordParagraphs": 50,
+      "recordWrapping": true
+    },
+    {
+      "id": "OF-US12",
+      "width": 390,
+      "title": "ShiftWizard",
+      "viewport": 390,
+      "documentWidth": 390,
+      "recordParagraphs": 50,
+      "recordWrapping": true
+    },
+    {
+      "id": "OF-US12",
+      "width": 768,
+      "title": "ShiftWizard",
+      "viewport": 768,
+      "documentWidth": 768,
+      "recordParagraphs": 50,
+      "recordWrapping": true
+    },
+    {
+      "id": "OF-US12",
+      "width": 1440,
+      "title": "ShiftWizard",
+      "viewport": 1440,
+      "documentWidth": 1440,
+      "recordParagraphs": 50,
+      "recordWrapping": true
+    },
+    {
+      "id": "OF-US21",
+      "width": 320,
+      "title": "RosterElf",
+      "viewport": 320,
+      "documentWidth": 320,
+      "recordParagraphs": 50,
+      "recordWrapping": true
+    },
+    {
+      "id": "OF-US21",
+      "width": 390,
+      "title": "RosterElf",
+      "viewport": 390,
+      "documentWidth": 390,
+      "recordParagraphs": 50,
+      "recordWrapping": true
+    },
+    {
+      "id": "OF-US21",
+      "width": 768,
+      "title": "RosterElf",
+      "viewport": 768,
+      "documentWidth": 768,
+      "recordParagraphs": 50,
+      "recordWrapping": true
+    },
+    {
+      "id": "OF-US21",
+      "width": 1440,
+      "title": "RosterElf",
+      "viewport": 1440,
+      "documentWidth": 1440,
+      "recordParagraphs": 50,
+      "recordWrapping": true
+    }
+  ],
+  "external_media_availability": "not separately validated"
+}

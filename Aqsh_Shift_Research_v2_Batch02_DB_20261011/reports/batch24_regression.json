@@ -1,0 +1,11 @@
+{
+  "status": "passed",
+  "total_tests": 67,
+  "research_python": 14,
+  "web_python": 31,
+  "node": 22,
+  "logs_directory": "/Users/tsukadatakahiro/Python/app/shift-app/.local/research-backups/C03T01/logs",
+  "implementation_changes": false,
+  "typecheck_and_build": "C03T05 planned; no implementation change",
+  "draft_repairs": "Only isolated unpublished candidate: delivery values aligned to existing addon/native enum and publisher label limited to the observed SHIFTEE official site before canonical registration. Final draft reingested from baseline and all 67 tests passed."
+}

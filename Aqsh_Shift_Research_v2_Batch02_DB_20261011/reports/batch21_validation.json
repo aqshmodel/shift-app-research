@@ -1,0 +1,99 @@
+{
+  "status": "passed",
+  "batch_id": "B21-20261012",
+  "checked_at": "2026-10-12T14:06:03.647587+00:00",
+  "research_sha256": "73eed124d5f7f6c73a7a887f1561c1542f072267a09feed57301fbd930188e99",
+  "prepared_public_snapshot": "B21-20261012-pub2",
+  "prepared_content_sha256": "ac725cb42aceca59f548643ce0ae94f44177237976e0aaa1993e4212dc9744f5",
+  "checks": {
+    "db": {
+      "status": "passed",
+      "record": "db_validation_batch21.json"
+    },
+    "history": {
+      "status": "passed",
+      "tables": 39,
+      "record": "batch21_history_preservation.json"
+    },
+    "regression": {
+      "status": "passed",
+      "tests": 67,
+      "record": "batch21_regression.json"
+    },
+    "prices": {
+      "status": "passed",
+      "services": 50,
+      "unchanged_from_B20": true,
+      "record": "batch21_price_summaries.json"
+    },
+    "browser": {
+      "status": "passed",
+      "viewports": [
+        1440,
+        390
+      ],
+      "record": "batch21_viewer_scope.json"
+    },
+    "sources": {
+      "status": "passed",
+      "record": "batch21_source_verification.json"
+    },
+    "completion": {
+      "status": "passed",
+      "record": "batch21_completion_review.json",
+      "tasks_marked_done": 0
+    }
+  },
+  "continued_research": {
+    "batch_id": "B21-20261012",
+    "new_document_findings": 8,
+    "editorial_corrections": 0,
+    "new_price_components": 0,
+    "reference_regulations": 0,
+    "source_retrievals": 4,
+    "functional_research_sources": 4,
+    "functional_research_products": 1,
+    "products_including_classification_corrections": 1,
+    "finding_states": {
+      "known": 6,
+      "not_found": 2
+    }
+  },
+  "task_states": {
+    "blocked": 78,
+    "done": 2,
+    "in_progress": 226,
+    "not_started": 674
+  },
+  "unfinished": 978,
+  "priority1_open": 29,
+  "tasks_started": 3,
+  "tasks_marked_done": 0,
+  "new_tasks": 0,
+  "independent_tests_performed": false,
+  "production_current_rechecked": false,
+  "user_reported_production_batch": "B18-20261012",
+  "production_status_source": "User report relayed during C02T03; awareness only",
+  "remote_d1_updated": false,
+  "production_deployed_by_this_turn": false,
+  "commit_push_ci_or_paid_api": false,
+  "typecheck_build_full_browser": "Planned C02T05 with new substantive research; no implementation change",
+  "local_server": {
+    "host": "127.0.0.1",
+    "port": 49331,
+    "escalation_review": "approved",
+    "stopped": true
+  },
+  "comparison_deltas": {
+    "B18": {
+      "statement_count": 330,
+      "sql_sha256": "939fa0f85ed341d2d2615a40a77b5e5579cd1306dbf341b4dd4b137d070828b0",
+      "local_sql_roundtrip": "passed"
+    },
+    "B20": {
+      "statement_count": 177,
+      "sql_sha256": "4b8f0afbe6268590b1fcc24e00b4ea2fa8fa4d9095b199eb1308742a30603f1a",
+      "local_sql_roundtrip": "passed"
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "status": "passed",
+  "batch_id": "B20-20261012",
+  "offering_id": "OF-US05",
+  "browser": "Chrome via CUA",
+  "document_observations": 2051,
+  "checks": [
+    {
+      "width": 1440,
+      "status": "passed",
+      "new_batch_cards": 1,
+      "horizontal_overflow": false,
+      "history_and_contract_notes_visible": true
+    },
+    {
+      "width": 390,
+      "status": "passed",
+      "new_batch_cards": 1,
+      "horizontal_overflow": false,
+      "history_and_contract_notes_visible": true
+    }
+  ],
+  "source_urls_in_detail": 13,
+  "visual_inspection": true,
+  "screenshot_files_saved": false,
+  "viewport_restored": true,
+  "source_and_local_tabs_closed": true,
+  "server_stopped": true,
+  "independent_product_tests": false,
+  "scope": "Affected local comparison detail only; full UI suite planned for C02T05"
+}

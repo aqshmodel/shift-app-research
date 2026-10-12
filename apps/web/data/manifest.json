@@ -1,18 +1,18 @@
 {
-  "snapshot_id": "B18-20261012-pub2",
-  "research_sha256": "567e341dd479a91db582baf002478551d13a5bb40c1805529aaa3517a81075e6",
-  "content_sha256": "d0048171ab7afdc9a3f2c1a17370862c20218048fd5112ce2d8107b3da20ddd1",
+  "snapshot_id": "B24-20261012-pub2",
+  "research_sha256": "2e7712e19cd34361065741f444abcdf58b5c291924fc73b7e30f6a11626054ca",
+  "content_sha256": "531b81907c8c64fccf0656d1df3ac1be23943b7cab5c4fb4667330f132a7ffe2",
   "products": 50,
   "category_memberships": 61,
   "maximum_statement_bytes": 86116,
   "scope": {
-    "snapshot_id": "B18-20261012-pub2",
+    "snapshot_id": "B24-20261012-pub2",
     "as_of_date": "2026-10-12",
-    "research_sha256": "567e341dd479a91db582baf002478551d13a5bb40c1805529aaa3517a81075e6",
+    "research_sha256": "2e7712e19cd34361065741f444abcdf58b5c291924fc73b7e30f6a11626054ca",
     "products": 50,
     "offerings": 50,
-    "document_observations": 2037,
-    "research_documents": 277,
+    "document_observations": 2080,
+    "research_documents": 304,
     "price_components": 118,
     "logos": 51,
     "reference_regulations": 17,
@@ -324,6 +324,6 @@
         "retrieved_on": "2026-10-11"
       }
     ],
-    "content_sha256": "d0048171ab7afdc9a3f2c1a17370862c20218048fd5112ce2d8107b3da20ddd1"
+    "content_sha256": "531b81907c8c64fccf0656d1df3ac1be23943b7cab5c4fb4667330f132a7ffe2"
   }
 }

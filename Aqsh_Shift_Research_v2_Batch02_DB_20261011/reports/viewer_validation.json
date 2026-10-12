@@ -1,22 +1,47 @@
 {
-  "browser": "Google Chrome via Playwright",
-  "batch": "B18-20261012",
-  "cards": 50,
-  "enriched": 1,
-  "domestic": 28,
-  "overseas": 22,
-  "comparisonRows": 40,
-  "comparisonColumns": 5,
-  "uniqueDocumentObservations": 2037,
-  "logos": 50,
-  "serviceLogos": 40,
-  "companyLogos": 10,
-  "logoFailureFallback": "passed",
-  "classificationHistory": "passed",
-  "pageErrors": [],
+  "status": "passed",
+  "batch_id": "B24-20261012",
+  "method": "CUA Chrome on isolated local static viewer; screenshot visual review and read-only DOM",
+  "scope": "Affected SHIFTEE detail only; full web browser suite planned C03T05",
   "viewports": [
-    1440,
-    390
+    {
+      "width": 1440,
+      "height": 1000,
+      "overflow": false,
+      "records": 2080
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "overflow": false,
+      "detail_overflow": false,
+      "records": 2080
+    }
   ],
-  "status": "passed"
+  "checks": {
+    "new6_ids_present": true,
+    "new_sources_linked": true,
+    "night_scope": true,
+    "store_joint_optimization_limit": true,
+    "leave_approval_limit": true,
+    "elapsed_days_not_hours": true,
+    "physician_not_nursing": true,
+    "workflow": true,
+    "prior_prices_and_history_visible": true,
+    "console_errors_and_warnings_returned": 0
+  },
+  "screenshots": "Observed in CUA tool output; not archived as package files",
+  "local_server": {
+    "host": "127.0.0.1",
+    "port": 49624,
+    "stopped": true,
+    "escalation_review": "approved"
+  },
+  "favicon": "Static test server favicon.ico 404; no console errors or warnings returned; output unaffected",
+  "html_dataset": {
+    "products": 50,
+    "observations": 2080,
+    "duplicate_ids": 0
+  },
+  "external_logo_availability": "not independently tested"
 }

@@ -1,0 +1,158 @@
+{
+  "batch_id": "B23-20261012",
+  "prior_batch": "B22-20261012",
+  "as_of_date": "2026-10-12",
+  "resolution_policy_version": 2,
+  "description": "ShiftWizard既存支援時間課題の限定追加照合：全社窓口、管理者ケース、2023移行、休日・保守の区別と時間差",
+  "method": "既存B14-20261012-TASK003だけ。既存製品案内7〜19CST・1月通知7〜18CTと電話だけの再確認は重複追加せず、全社2案内、通知リンクのFAQ原本、具体的休日と保守枠を追加。一般/製品/顧客管理者/契約別支援、受付/応答保証、教材/有人緊急対応、CT/CSTの留保を保持。PDF1ページは保存・SHA・レンダーで確認し、3HTMLは全文未保存。公開支援FAQのhStreamログイン画面で停止し本文を回避取得しない。ログイン・登録・連絡・支援ケース・資格情報・アクセス変更・課金API・製品の独立試験・本番再監査・公開操作なし。",
+  "sources": [
+    {
+      "key": "service",
+      "url": "https://www.healthstream.com/contact-us/service",
+      "title": "HealthStream Service：一般支援と契約別Success Management",
+      "publisher": "HealthStream, Inc.",
+      "reference": "Need support / Success Management / Academy",
+      "retrieved_on": "2026-10-12",
+      "method": "public_web_body",
+      "method_note": "一般支援の対象Anyone、平日7〜19時CT、管理者ポータル、Success Managementは契約別tiered。Academyの24/7は教材。公開・更新日未表示。全文・本文ハッシュ未保存。"
+    },
+    {
+      "key": "community",
+      "url": "https://community.healthstream.com/customer-support",
+      "title": "HealthStream Customer Support：電話とポータル案内",
+      "publisher": "HealthStream, Inc.",
+      "reference": "Call Support / Getting Access / Portal Access Confirmation",
+      "retrieved_on": "2026-10-12",
+      "method": "public_web_body",
+      "method_note": "Web本文と公開ブラウザを確認。平日7〜19:30 CT、表示877-301-4786。portal accessの別リンクのtel属性は800-521-4786で表示と異なるため電話操作なし。全社ページでShiftWizard別契約時間とは確定しない。公開・更新日未表示。全文・本文ハッシュ未保存。"
+    },
+    {
+      "key": "support-faq",
+      "url": "https://image.email.healthstream.com/lib/fe2a117371640474701176/m/1/3399b92b-1379-461e-8e30-1942d5b9b6ff.pdf",
+      "title": "ShiftWizard Support FAQs：2023年6月1日からの支援運用変更",
+      "publisher": "HealthStream, Inc.",
+      "reference": "公式1ページPDF。2026年1月通知のCustomer Support FAQから到達",
+      "retrieved_on": "2026-10-12",
+      "version_label": "Support process transition begins 2023-06-01; still linked from January 2026 notification",
+      "method": "official_document_body",
+      "scope_note": "公式PDF原本1ページと抽出テキストをローカル保存。原本をレンダーして文字を目視照合。",
+      "method_note": "2023-06-01は移行の開始日で公開・最終更新日ではない。抽出文字にはShiftWizardの一部字形が置換されるため原本画像を確認。現行製品操作は未試験。原本PDFを保存しSHA256検証。",
+      "archive_path": "assets/sources/B23-20261012/shiftwizard-support-faq.pdf",
+      "page_count": 1
+    },
+    {
+      "key": "january",
+      "url": "https://community.healthstream.com/viewdocument/shiftwizard-monthly-notification-ja-2",
+      "title": "ShiftWizard Monthly Notification January 2026：具体的休業日と保守枠",
+      "publisher": "HealthStream Success Management",
+      "reference": "12-31-2025 10:46 AM / Holiday Office Hours / Customer Support Information / Maintenance Window",
+      "retrieved_on": "2026-10-12",
+      "published_on": "2025-12-31",
+      "method": "public_web_body",
+      "method_note": "公開日時表示と2025-12-31早期閉鎖・2026-01-01休業、夜間のnetwork maintenance枠を確認。既存B14平日7〜18CTと電話の観測を単独では重複追加しない。全文・ハッシュ未保存。"
+    }
+  ],
+  "findings": [
+    {
+      "product": "US12",
+      "criterion": "O04",
+      "source": "service",
+      "summary": "全社Serviceページは誰でも電話877-301-4786で月〜金7〜19時CTに連絡できるとし、HealthStream管理者にはCustomer Support Portalを案内する。Success Managerの支援は契約に応じた段階別と記載する。",
+      "locator": "Need support / Success Management footnote",
+      "limitations": "ShiftWizard製品ページの800-521-0574・CSTと、一般問い合わせ/管理者ポータルを分ける。全社の時間・無料教材をShiftWizardの個別SLA・全顧客無料支援へ拡張しない。Academyの24/7は教材参照で有人緊急支援ではない。公開・更新日未表示。",
+      "state": "known",
+      "delivery": "managed_service",
+      "support": "limited"
+    },
+    {
+      "product": "US12",
+      "criterion": "O04",
+      "source": "community",
+      "summary": "顧客支援ページは電話時に製品を選択し、ポータルアクセスの申請後2営業日以内に歓迎メール・アクセス情報・手順を受け取ると説明する。ポータルでは支援ケースを提出・閲覧・管理できる。",
+      "locator": "Getting Access to the Portal / Portal Access Confirmation / Submitting & Managing Cases",
+      "limitations": "2営業日はポータル案内の受領説明で障害の応答・解決保証ではない。既存hStream/管理者の利用範囲と製品選択が必要で、全職員へ施設全件を無条件公開するとはしない。電話・アクセス申請・ケース提出未実施。公開・更新日未表示。",
+      "state": "known",
+      "delivery": "managed_service",
+      "support": "limited"
+    },
+    {
+      "product": "US12",
+      "criterion": "O04",
+      "source": "support-faq",
+      "summary": "ShiftWizardの支援FAQは2023年6月1日からケース管理基盤をZendeskからHealthStreamのSalesforceへ移すと説明する。製品内Help→Request Supportのフォームと担当支援チームは継続し、管理者には自分と施設のケースを集中管理する専用UserIDの申請を案内する。",
+      "locator": "PDF p1：Beginning June 1, 2023 / support tickets / support team / Admins view cases",
+      "limitations": "2026年1月通知がリンクする過去の移行資料。移行日を現行営業時間や契約改定日とせず、現行全ユーザー権限・外部ポータルだけが唯一の受付・緊急SLAを確認したとはしない。ログイン・UserID作成・支援依頼なし。PDF原本を保存・文字目視確認。",
+      "state": "known",
+      "delivery": "managed_service",
+      "support": "limited"
+    },
+    {
+      "product": "US12",
+      "criterion": "O04",
+      "source": "january",
+      "summary": "1月通知は2025年12月31日の14:30 CTからと2026年1月1日に有人支援を休止する具体的休業を掲載する。同ページの毎週火曜22:00〜翌1:00 CTはnetwork maintenanceとして別欄に記載する。",
+      "locator": "Holiday Office Hours / Software Maintenance Window",
+      "limitations": "2025-12-31公開の限定日付で、現在の休日全一覧や祝日の定義を確定しない。ケース提出・セルフサービスが参照できる説明と有人稼働を分け、夜間の保守枠を支援窓口の営業時間・緊急対応と扱わない。CT表記を保持し日本時間・固定UTCオフセットへ変換しない。",
+      "state": "known",
+      "delivery": "managed_service",
+      "support": "limited"
+    },
+    {
+      "product": "US12",
+      "criterion": "O04",
+      "source": "community",
+      "summary": "現在の顧客支援ページは平日7〜19:30 CTと記載するが、全社Serviceは7〜19 CT、1月ShiftWizard通知は7〜18 CT、ShiftWizard製品案内は7〜19 CST・別電話を掲載する。製品別窓口・契約・改定時点の差を確認できず営業時間は未解決。",
+      "locator": "Call Support / 対照：https://www.healthstream.com/contact-us/service と既存B14製品案内・1月通知",
+      "limitations": "電話877-301-4786の共通表示だけでは製品別支援チーム・保証・受付時間の同一性を証明しない。製品案内URL=https://www.healthstream.com/solution/scheduling/nurse-and-staff-scheduling/shiftwizard、通知URL=https://community.healthstream.com/viewdocument/shiftwizard-monthly-notification-ja-2。CT/CSTを同義・固定時差と推定せず、全社7:30までをShiftWizard最新時間として採用しない。公開・更新日未表示。",
+      "state": "disputed",
+      "delivery": "managed_service"
+    },
+    {
+      "product": "US12",
+      "criterion": "O04",
+      "source": "service",
+      "summary": "確認した公開案内から、ShiftWizardの契約別・地域別の現行確定時間、時間外の緊急障害受付、初動・解決SLA、全休日例外と対応言語までは特定できない。",
+      "locator": "Service / Customer Support / product page / January notice / support FAQ",
+      "limitations": "一般Customer Service、製品内ケース受付、契約別Success Management、24/7教材と緊急対応を区別。具体的資料の不足を緊急支援なしとはしない。日本の導入先や国際電話、地域、夏時間の運用も未確認。一般ポータルFAQリンクはhStreamログイン画面へ移り本文未取得、ログインや別経路の回避なし。",
+      "state": "not_found",
+      "delivery": "managed_service"
+    }
+  ],
+  "prices": [],
+  "followups": [],
+  "task_updates": [
+    {
+      "task_id": "B14-20261012-TASK003",
+      "state": "in_progress",
+      "priority": 2,
+      "method": "vendor_document",
+      "note": "B23：全社Service平日7〜19CTとcommunity7〜19:30CT、製品選択と管理者ポータル・アクセス案内2営業日、2023 Salesforce移行・製品内受付維持、具体的休業・保守枠を追加確認。製品/一般/契約/地域/CT-CSTと緊急対応・全休日例外は未解決。既存製品7〜19CST・1月7〜18CTを排除せず確認中継続。"
+    }
+  ],
+  "retrieval_checks": [
+    {
+      "product": "US12",
+      "url": "https://www.healthstream.com/solution/scheduling/nurse-and-staff-scheduling/shiftwizard",
+      "result": "existing_B14_product_support_hours_rechecked_without_duplicate",
+      "notes": "800-521-0574、customer.service@healthstream.com、7〜19CST・祝日除外は既存B14を保持。製品版・地域・顧客契約・更新日は明示されず、一般電話との関係は未確定。"
+    },
+    {
+      "product": "US12",
+      "url": "https://www.shiftwizard.com/support/",
+      "result": "legacy_support_link_redirects_to_product_page",
+      "notes": "通知のShiftWizard Support PortalリンクはWebツールで製品案内へ転送。別の旧表示・crawl日が返るため現行専用ポータル内容とは扱わない。転送を支援廃止と判断しない。"
+    },
+    {
+      "product": "US12",
+      "url": "https://community.healthstream.com/viewdocument/customer-support-portal-faqs?CommunityKey=5a77a611-24eb-48ab-af43-14991edd88c5&tab=librarydocuments",
+      "result": "public_link_requires_hStream_sign_in_body_not_obtained",
+      "notes": "WebはJS要求、公開ブラウザはhStream IDログイン画面。本文未取得。ログイン・認証変更・別経路回避は未実施。"
+    },
+    {
+      "product": "US12",
+      "url": "https://community.healthstream.com/viewdocument/shiftwizard-monthly-notification-ja-2",
+      "result": "existing_B14_hours_preserved_new_holiday_dates_and_maintenance_scope_only",
+      "notes": "時刻7〜18CTや電話・セルフサービス一般説明は重複追加せず、具体日付・保守欄の対象を追加。一般検索の無関係な結果は根拠不採用。"
+    }
+  ]
+}

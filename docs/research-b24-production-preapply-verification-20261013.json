@@ -1,0 +1,6 @@
+{
+  "status": "passed",
+  "unchanged_tables": 43,
+  "baseline_snapshot": "B23-20261012-pub2",
+  "delta_statements": 188
+}

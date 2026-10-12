@@ -1,0 +1,38 @@
+{
+  "status": "passed",
+  "checked_at": "2026-10-12T23:31:50.987757+00:00",
+  "production_url": "https://shift.aqsh.co.jp/",
+  "baseline_snapshot": "B18-20261012-pub2",
+  "snapshot_id": "B24-20261012-pub2",
+  "research_sha256": "2e7712e19cd34361065741f444abcdf58b5c291924fc73b7e30f6a11626054ca",
+  "content_sha256": "531b81907c8c64fccf0656d1df3ac1be23943b7cab5c4fb4667330f132a7ffe2",
+  "offerings": 50,
+  "document_observations": 2080,
+  "research_documents": 304,
+  "price_components": 118,
+  "added_document_observations": 43,
+  "checks": {
+    "staging": {
+      "research_tables": 39,
+      "foreign_key_errors": 0,
+      "prices": 50,
+      "details": 50,
+      "browser_cases": 38
+    },
+    "production": {
+      "research_tables": 39,
+      "foreign_key_errors": 0,
+      "prices": 50,
+      "details": 50,
+      "browser_cases": 38
+    }
+  },
+  "affected_service_layouts": 24,
+  "SEO_pages": 62,
+  "production_worker_version": "8c9b350a-538f-4d33-9bf3-721083efac82",
+  "staging_worker_version": "f5d81634-2c81-4cc7-8500-608ac6b79c5a",
+  "all_prior_publication_rows_preserved": true,
+  "release_included_in_existing_allowance": true,
+  "plans_changed": false,
+  "follow_on_local_research": "Preserved; excluded from frozen B24 release"
+}

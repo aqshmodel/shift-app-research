@@ -1,0 +1,73 @@
+{
+  "status": "passed",
+  "official_sources": 6,
+  "discovery_pages_not_registered": 1,
+  "new_distinct_research_documents": 4,
+  "sources": [
+    {
+      "key": "auto",
+      "url": "https://www.shifteeapp.jp/functions/シフト自動作成（月）/",
+      "title": "SHIFTEE シフトAI自動作成（月）",
+      "publisher": "SHIFTEE公式サイト",
+      "reference": "自動作成の流れ / 夜勤に関するQ&A",
+      "retrieved_on": "2026-10-12",
+      "method": "public_web_body",
+      "method_note": "Web本文L39〜73。公式の通常公開本文を確認。公開・最終更新日は未表示。全文・本文ハッシュ・原本画像は未保存。検索要約だけでは採用しない。事例は提供者サイト掲載の利用者発言で、利用者自身の独立発信・製品独立試験とは区別。"
+    },
+    {
+      "key": "functions",
+      "url": "https://www.shifteeapp.jp/function/",
+      "title": "SHIFTEE 機能紹介：標準機能とオプション",
+      "publisher": "SHIFTEE公式サイト",
+      "reference": "店舗管理Full / シフト収集Light・Full / AI自動作成Fullオプション",
+      "retrieved_on": "2026-10-12",
+      "method": "public_web_body",
+      "method_note": "Web本文L45〜66。公式の通常公開本文を確認。公開・最終更新日は未表示。全文・本文ハッシュ・原本画像は未保存。検索要約だけでは採用しない。事例は提供者サイト掲載の利用者発言で、利用者自身の独立発信・製品独立試験とは区別。"
+    },
+    {
+      "key": "stores",
+      "url": "https://www.shifteeapp.jp/functions/店舗管理/",
+      "title": "SHIFTEE 店舗管理",
+      "publisher": "SHIFTEE公式サイト",
+      "reference": "店舗単位の管理 / 他店のリアルタイム確認 / エリア表示",
+      "retrieved_on": "2026-10-12",
+      "method": "public_web_body",
+      "method_note": "Web本文L39〜44。公式の通常公開本文を確認。公開・最終更新日は未表示。全文・本文ハッシュ・原本画像は未保存。検索要約だけでは採用しない。事例は提供者サイト掲載の利用者発言で、利用者自身の独立発信・製品独立試験とは区別。"
+    },
+    {
+      "key": "collection",
+      "url": "https://www.shifteeapp.jp/functions/シフト収集/",
+      "title": "SHIFTEE シフト収集",
+      "publisher": "SHIFTEE公式サイト",
+      "reference": "提出画面 / 収集間隔 / 再提出Q&A",
+      "retrieved_on": "2026-10-12",
+      "method": "public_web_body",
+      "method_note": "Web本文L47〜82。公式の通常公開本文を確認。公開・最終更新日は未表示。全文・本文ハッシュ・原本画像は未保存。検索要約だけでは採用しない。事例は提供者サイト掲載の利用者発言で、利用者自身の独立発信・製品独立試験とは区別。"
+    },
+    {
+      "key": "jr",
+      "url": "https://www.shifteeapp.jp/case/jr四国ステーション開発株式会社/",
+      "title": "JR四国ステーション開発株式会社：SHIFTEE導入事例",
+      "publisher": "SHIFTEE公式サイト",
+      "reference": "会社の対象規模 / 導入前後 / 店長・学生の意見",
+      "retrieved_on": "2026-10-12",
+      "method": "public_web_body",
+      "method_note": "Web本文L43〜71。公式の通常公開本文を確認。公開・最終更新日は未表示。全文・本文ハッシュ・原本画像は未保存。検索要約だけでは採用しない。事例は提供者サイト掲載の利用者発言で、利用者自身の独立発信・製品独立試験とは区別。"
+    },
+    {
+      "key": "hospital",
+      "url": "https://www.shifteeapp.jp/case/日本赤十字社　古河赤十字病院/",
+      "title": "日本赤十字社 古河赤十字病院：SHIFTEE導入事例",
+      "publisher": "SHIFTEE公式サイト",
+      "reference": "医師の日当直と希望・配布",
+      "retrieved_on": "2026-10-12",
+      "method": "public_web_body",
+      "method_note": "Web本文L43〜49。公式の通常公開本文を確認。公開・最終更新日は未表示。全文・本文ハッシュ・原本画像は未保存。検索要約だけでは採用しない。事例は提供者サイト掲載の利用者発言で、利用者自身の独立発信・製品独立試験とは区別。"
+    }
+  ],
+  "body_checked": true,
+  "full_text_archived": false,
+  "publication_dates_not_shown": true,
+  "independent_tests_performed": false,
+  "external_contact": false
+}

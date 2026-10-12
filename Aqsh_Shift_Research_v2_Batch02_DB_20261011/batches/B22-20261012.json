@@ -1,0 +1,226 @@
+{
+  "batch_id": "B22-20261012",
+  "prior_batch": "B21-20261012",
+  "as_of_date": "2026-10-12",
+  "resolution_policy_version": 2,
+  "description": "RosterElfの既存課題：席の計数・増減精算・SMS表示・Flex未確認条件を限定追加調査",
+  "method": "既存B04-20261011-TASK005のみ。Australia (Global)の既存AUD・GST別料金を保持。月払と年払、月換算と一括年額、active staffとrostered staff、手動購入と5日超過精算を区別。公式KB検索でSMS通知を読み、Web取得と公開ブラウザの更新日差を記録。既存金額・最低人数・猶予だけの再確認を重複追加しない。本文要約のみで全文ハッシュ未保存。公式文書の部分確認で、独立製品試験・連絡・契約操作・課金API・本番反映なし。",
+  "sources": [
+    {
+      "key": "pricing",
+      "url": "https://www.rosterelf.com/pricing",
+      "title": "RosterElf Australia (Global) pricing",
+      "publisher": "Roster Elf Pty Ltd",
+      "reference": "公式ページ本文・見出し・FAQ（各findingsのlocator参照）",
+      "retrieved_on": "2026-10-12",
+      "method": "public_web_body",
+      "method_note": "AUD・GST除外の現行料金、Flex FAQ、plan changesの総括。既存B04料金・月3人/年10席・5日猶予は再登録しない。 全文・原本画像・本文ハッシュ未保存。アカウント登録・製品試験・問い合わせ・外部送信未実施。"
+    },
+    {
+      "key": "minimum",
+      "url": "https://www.rosterelf.com/support/knowledge-base/billing-and-subscription/minimum-monthly-fee",
+      "title": "Minimum staff policy",
+      "publisher": "Roster Elf Pty Ltd",
+      "reference": "公式ページ本文・見出し・FAQ（各findingsのlocator参照）",
+      "retrieved_on": "2026-10-12",
+      "method": "public_web_body",
+      "method_note": "選択席数×年単価×12か月、一般管理者計数とMy Accountant例外。Flex固有の適用は未確認。 全文・原本画像・本文ハッシュ未保存。アカウント登録・製品試験・問い合わせ・外部送信未実施。",
+      "updated_on": "2026-09-07"
+    },
+    {
+      "key": "seats",
+      "url": "https://www.rosterelf.com/support/knowledge-base/billing-and-subscription/update-annual-plan-seats",
+      "title": "Update annual plan seats",
+      "publisher": "Roster Elf Pty Ltd",
+      "reference": "公式ページ本文・見出し・FAQ（各findingsのlocator参照）",
+      "retrieved_on": "2026-10-12",
+      "method": "public_web_body",
+      "method_note": "手動購入と職員有効化の超過を区別。減席の適用日と在籍者入替の計数。 全文・原本画像・本文ハッシュ未保存。アカウント登録・製品試験・問い合わせ・外部送信未実施。",
+      "updated_on": "2026-09-16"
+    },
+    {
+      "key": "proration",
+      "url": "https://www.rosterelf.com/support/knowledge-base/billing-and-subscription/understanding-your-prorated-invoice",
+      "title": "Understanding your prorated invoice",
+      "publisher": "Roster Elf Pty Ltd",
+      "reference": "公式ページ本文・見出し・FAQ（各findingsのlocator参照）",
+      "retrieved_on": "2026-10-12",
+      "method": "public_web_body",
+      "method_note": "年Core12席→14席の控除・加算例、残期間の日割り。具体的金額・課税を算出しない。 全文・原本画像・本文ハッシュ未保存。アカウント登録・製品試験・問い合わせ・外部送信未実施。",
+      "updated_on": "2026-06-24"
+    },
+    {
+      "key": "tax",
+      "url": "https://www.rosterelf.com/support/knowledge-base/billing-and-subscription/set-country-specific-tax-settings-in-rosterelf",
+      "title": "Tax region and GST on your invoice",
+      "publisher": "Roster Elf Pty Ltd",
+      "reference": "公式ページ本文・見出し・FAQ（各findingsのlocator参照）",
+      "retrieved_on": "2026-10-12",
+      "method": "public_web_body",
+      "method_note": "請求のTax Region SettingによるGST処理と次回請求からの適用。実際の設定変更なし。 全文・原本画像・本文ハッシュ未保存。アカウント登録・製品試験・問い合わせ・外部送信未実施。",
+      "updated_on": "2026-09-16"
+    },
+    {
+      "key": "accountant",
+      "url": "https://www.rosterelf.com/support/knowledge-base/account-setup-and-admin/assigning-accountant-bookkeeper-advisor-permission",
+      "title": "Add accountant or bookkeeper access",
+      "publisher": "Roster Elf Pty Ltd",
+      "reference": "公式ページ本文・見出し・FAQ（各findingsのlocator参照）",
+      "retrieved_on": "2026-10-12",
+      "method": "public_web_body",
+      "method_note": "My Accountant経由の1名限定・閲覧用無料アクセス。一般管理者とは区別。招待・権限変更なし。 全文・原本画像・本文ハッシュ未保存。アカウント登録・製品試験・問い合わせ・外部送信未実施。",
+      "updated_on": "2026-09-30"
+    },
+    {
+      "key": "plans",
+      "url": "https://www.rosterelf.com/support/knowledge-base/billing-and-subscription/changing-plans",
+      "title": "Changing your subscription plan",
+      "publisher": "Roster Elf Pty Ltd",
+      "reference": "公式ページ本文・見出し・FAQ（各findingsのlocator参照）",
+      "retrieved_on": "2026-10-12",
+      "method": "public_web_body",
+      "method_note": "Web取得表示は2026-05-22だったが公開ブラウザと公式記事一覧は2026-10-01。通常の公開本文で日付・変更表を確認。価格FAQとの相反を保持。 全文・原本画像・本文ハッシュ未保存。アカウント登録・製品試験・問い合わせ・外部送信未実施。",
+      "updated_on": "2026-10-01"
+    },
+    {
+      "key": "sms",
+      "url": "https://www.rosterelf.com/support/knowledge-base/notifications-and-alerts/roster-notifications-for-staff",
+      "title": "Roster notifications for staff",
+      "publisher": "Roster Elf Pty Ltd",
+      "reference": "公式ページ本文・見出し・FAQ（各findingsのlocator参照）",
+      "retrieved_on": "2026-10-12",
+      "method": "public_web_body",
+      "method_note": "公式KBのSMS検索から公開ブラウザで本文確認。SMS ($0.05 per SMS)、既定未選択、Email/Push Freeのラベル。通貨・税・Flex適用は未特定。 全文・原本画像・本文ハッシュ未保存。アカウント登録・製品試験・問い合わせ・外部送信未実施。",
+      "updated_on": "2026-10-07"
+    }
+  ],
+  "findings": [
+    {
+      "product": "US21",
+      "criterion": "P02",
+      "source": "minimum",
+      "summary": "年契約は実有効職員数だけでなく、契約時に選択した席数に年プラン単価と12か月を掛けて請求する。実職員数が減っても選択した契約席数が課金基準になる。",
+      "locator": "Annual minimum §2.1.2 / FAQ4",
+      "limitations": "既存の最低10席・単価・年一括払を重複登録せず、選択席数の計数を補足。年額を月次支払と扱わない。Core/Full Suite/HRの公開年プラン範囲。Flexへ一律適用しない。2026-09-07更新。",
+      "state": "known",
+      "delivery": "unknown",
+      "support": "limited"
+    },
+    {
+      "product": "US21",
+      "criterion": "P02",
+      "source": "accountant",
+      "summary": "My Accountant経由で追加した会計士・記帳担当・助言者1名は、職員とは別の無料閲覧用アクセスで請求職員数に含まれない。シフト配置や休暇申請はできない。",
+      "locator": "§1 introduction / Note / §2.1.1〜2.1.5",
+      "limitations": "一般のAdmin・Manager・ownerの職員プロフィールは既存根拠どおり課金対象。無料管理者席を一般化しない。1名限定の閲覧権限で、複数顧客用Advisor Centreとも別。2026-09-30更新。",
+      "state": "known",
+      "delivery": "unknown",
+      "support": "limited"
+    },
+    {
+      "product": "US21",
+      "criterion": "P06",
+      "source": "seats",
+      "summary": "年契約の席数を設定画面で購入して増やすと確認時に即時請求される。先に席を購入せず職員を有効化して超過した場合は5日後に精算する。減席は次回請求日から適用され、現在の席数はそれまで残る。",
+      "locator": "Overview / §1・2 / FAQ9・11",
+      "limitations": "最低10席と有効職員数を下回れない条件を保持。退職者を先にアーカイブし同じ席を後任が使う場合は同時有効数が超過しない限り追加席不要。5日猶予を手動購入に適用しない。Flex・Xero経由の契約へ拡張しない。2026-09-16更新。",
+      "state": "known",
+      "delivery": "unknown",
+      "support": "limited"
+    },
+    {
+      "product": "US21",
+      "criterion": "P06",
+      "source": "proration",
+      "summary": "年Coreの12席を2026年6月19日に14席へ増やす公式例は、旧12席の残期間の未使用分を控除し、新14席の同期間料金を加算する。差額は追加2席の残期間分で、期間の席単価・日数・残日数・増席数による日割りとして説明する。",
+      "locator": "§1 invoice lines / §2 Worked example / §3 daily proration",
+      "limitations": "控除行を既存12席の二重請求と扱わず、例示日付を料金改定日としない。開始・終了日、総日数、丸め、税、実請求額は例示されず計算しない。原文の月換算単価と期間単価を区別し、6ドルをそのまま年日数で割らない。2026-06-24更新。",
+      "state": "known",
+      "delivery": "unknown",
+      "support": "limited"
+    },
+    {
+      "product": "US21",
+      "criterion": "P07",
+      "source": "tax",
+      "summary": "請求の税地域設定がAustraliaの場合はGSTを加算し、他の国の設定ではAustralian GSTを加算しないと公式ヘルプは説明する。設定変更は次の請求から適用され、既に発行済みの請求書を自動再発行しない。",
+      "locator": "Tax region setting / GST table / §3",
+      "limitations": "製品の請求挙動の案内で、各国の税法・VAT免除や顧客の納税義務を判定しない。AUD価格表は税別のまま保持。地域設定から請求通貨や為替を推定しない。職員賃金ルールとは別設定。設定変更や支援連絡は未実施。2026-09-16更新。",
+      "state": "known",
+      "delivery": "unknown",
+      "support": "limited"
+    },
+    {
+      "product": "US21",
+      "criterion": "P06",
+      "source": "sms",
+      "summary": "通知ヘルプはシフト公開時のSMS選択肢に$0.05 per SMSという表示があり、SMSは既定では未選択、EmailとPushはFreeと説明する。",
+      "locator": "SMS §2.1.3 / Publishing §4.1.3 / FAQ3",
+      "limitations": "公開通知ヘルプの表示だけの部分確認。$のISO通貨、税込・税別、宛先国、文字分割・送信失敗、プラン差とFlex契約への適用は本文に未特定。AUDやUSDの確定価格明細に変換しない。2026-10-07更新、独立製品試験なし。",
+      "state": "known",
+      "delivery": "unknown",
+      "support": "limited"
+    },
+    {
+      "product": "US21",
+      "criterion": "P06",
+      "source": "plans",
+      "summary": "価格FAQはプラン変更が次の請求周期開始時に適用と総括する一方、詳細変更ガイドは月プラン変更・年の上位変更と増席を即時、年の下位変更と減席を次回請求日と区分する。総括を全変更へ適用できるかは未解決。",
+      "locator": "Changing plans table §1・4 / pricing FAQ Where can I view my invoices and manage billing?",
+      "limitations": "詳細ガイドは公開ブラウザで2026-10-01更新を確認（Web取得の日付は2026-05-22、公式一覧も10-01）。価格ページ更新日は未表示。双方を保持し、旧版と断定して排除しない。対象契約・プラン・変更種別の確認が必要。",
+      "state": "disputed",
+      "delivery": "unknown"
+    },
+    {
+      "product": "US21",
+      "criterion": "P02",
+      "source": "pricing",
+      "summary": "Flexの最低人数・最低請求額を固有条件として確認できない。料金FAQは月内に1回以上配置した職員とSMS利用量を説明するが、最低人数を明示していない。",
+      "locator": "Flex FAQ / Is there a minimum staff count? / minimum policy冒頭",
+      "limitations": "最低方針はall plansと月3 active staffを述べるが、Flexはrostered staffで別計数かつ連絡設定のプラン。Flexへの月3人の適用または最低なしと確定しない。公式契約・Flex専用請求条件が必要。既存10.60単価は再追加しない。",
+      "state": "not_found",
+      "delivery": "unknown"
+    },
+    {
+      "product": "US21",
+      "criterion": "P07",
+      "source": "sms",
+      "summary": "SMSの0.05表示は見つかったが、Flexに適用する確定通貨・税処理・課金数量と宛先別単価までは確認できない。",
+      "locator": "SMS charge label / pricing Flex plus SMS usage",
+      "limitations": "単価の表示がないという旧未確認を部分的に進めたが、Flex契約SMS単価全条件の完了には不足。無料・含む・AUD税別と見なさず、追加価格明細は0件。Flex専用の現行条件または見積明細が必要。",
+      "state": "not_found",
+      "delivery": "unknown"
+    }
+  ],
+  "prices": [],
+  "followups": [],
+  "task_updates": [
+    {
+      "task_id": "B04-20261011-TASK005",
+      "state": "in_progress",
+      "priority": 2,
+      "method": "vendor_document",
+      "note": "B22：選択年席数、会計閲覧1名の除外、手動即時購入/5日超過精算/減席次回、12→14席日割り例、税地域、SMS $0.05表示を確認。Flex固有の最低人数とSMS通貨・税・宛先/分割・契約適用は未確認。価格FAQと詳細ガイドの変更時期も相反を保持し確認中継続。完了にしない。"
+    }
+  ],
+  "retrieval_checks": [
+    {
+      "product": "US21",
+      "url": "https://www.rosterelf.com/pricing",
+      "result": "existing_B04_fee_and_threshold_rechecked_without_duplicate",
+      "notes": "Core月8/年6、Suite月10/年7、Flex10.60、月3人/年10席、一般Admin課金、5日猶予は既存根拠を保持。新規金額明細なし。UK誘導で地域を切り替えずAustralia (Global)範囲。"
+    },
+    {
+      "product": "US21",
+      "url": "https://www.rosterelf.com/support/knowledge-base/billing-and-subscription/change-subscription-to-annual",
+      "result": "context_for_annual_seat_selection_no_duplicate",
+      "notes": "2026-09-16更新：選択席が有効職員数以上・最低10、初月残日分と翌月1日の年間請求を参照。既存年一括料金を新明細化せず、増席例と初回年移行例を混同しない。"
+    },
+    {
+      "product": "US21",
+      "url": "https://www.rosterelf.com/support/knowledge-base/",
+      "result": "official_KB_SMS_search_public_notification_body_read",
+      "notes": "SMS検索で通知ヘルプを発見。料金0.05の表示を確認したがISO通貨・税・Flex固有条件は不足。一般検索の無関係な結果は根拠不採用。Elf AIへの送信はなし。"
+    }
+  ]
+}

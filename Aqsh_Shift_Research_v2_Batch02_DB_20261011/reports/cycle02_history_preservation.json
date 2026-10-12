@@ -1,0 +1,717 @@
+{
+  "status": "passed",
+  "baseline_batch": "B18-20261012",
+  "target_batch": "B23-20261012",
+  "tables": [
+    {
+      "table": "assessment_resolutions",
+      "prior_rows": 2707,
+      "new_rows": 16,
+      "old_rows_preserved": true,
+      "mutable_changes": []
+    },
+    {
+      "table": "asset_evidence",
+      "prior_rows": 6,
+      "new_rows": 0,
+      "old_rows_preserved": true,
+      "mutable_changes": []
+    },
+    {
+      "table": "audit_issues",
+      "prior_rows": 32,
+      "new_rows": 0,
+      "old_rows_preserved": true,
+      "mutable_changes": []
+    },
+    {
+      "table": "batch_product_membership",
+      "prior_rows": 154,
+      "new_rows": 5,
+      "old_rows_preserved": true,
+      "mutable_changes": []
+    },
+    {
+      "table": "benchmark_runs",
+      "prior_rows": 0,
+      "new_rows": 0,
+      "old_rows_preserved": true,
+      "mutable_changes": []
+    },
+    {
+      "table": "benchmark_scenario_criteria",
+      "prior_rows": 45,
+      "new_rows": 0,
+      "old_rows_preserved": true,
+      "mutable_changes": []
+    },
+    {
+      "table": "benchmark_scenarios",
+      "prior_rows": 14,
+      "new_rows": 0,
+      "old_rows_preserved": true,
+      "mutable_changes": []
+    },
+    {
+      "table": "brand_assets",
+      "prior_rows": 51,
+      "new_rows": 0,
+      "old_rows_preserved": true,
+      "mutable_changes": []
+    },
+    {
+      "table": "classification_corrections",
+      "prior_rows": 12,
+      "new_rows": 0,
+      "old_rows_preserved": true,
+      "mutable_changes": []
+    },
+    {
+      "table": "cost_requirements",
+      "prior_rows": 36,
+      "new_rows": 0,
+      "old_rows_preserved": true,
+      "mutable_changes": []
+    },
+    {
+      "table": "cost_scenarios",
+      "prior_rows": 8,
+      "new_rows": 0,
+      "old_rows_preserved": true,
+      "mutable_changes": []
+    },
+    {
+      "table": "criteria",
+      "prior_rows": 164,
+      "new_rows": 0,
+      "old_rows_preserved": true,
+      "mutable_changes": []
+    },
+    {
+      "table": "current_assessments",
+      "prior_rows": 2123,
+      "new_rows": 0,
+      "old_rows_preserved": true,
+      "mutable_changes": [
+        {
+          "key": [
+            "OF-US12",
+            "O04"
+          ],
+          "fields": [
+            "resolution_id"
+          ]
+        },
+        {
+          "key": [
+            "OF-US21",
+            "P02"
+          ],
+          "fields": [
+            "resolution_id"
+          ]
+        },
+        {
+          "key": [
+            "OF-US04",
+            "B07"
+          ],
+          "fields": [
+            "resolution_id"
+          ]
+        },
+        {
+          "key": [
+            "OF-US04",
+            "O04"
+          ],
+          "fields": [
+            "resolution_id"
+          ]
+        },
+        {
+          "key": [
+            "OF-US04",
+            "P01"
+          ],
+          "fields": [
+            "resolution_id"
+          ]
+        },
+        {
+          "key": [
+            "OF-US04",
+            "P03"
+          ],
+          "fields": [
+            "resolution_id"
+          ]
+        },
+        {
+          "key": [
+            "OF-US05",
+            "B07"
+          ],
+          "fields": [
+            "resolution_id"
+          ]
+        },
+        {
+          "key": [
+            "OF-US05",
+            "O04"
+          ],
+          "fields": [
+            "resolution_id"
+          ]
+        },
+        {
+          "key": [
+            "OF-US05",
+            "P01"
+          ],
+          "fields": [
+            "resolution_id"
+          ]
+        },
+        {
+          "key": [
+            "OF-US05",
+            "P02"
+          ],
+          "fields": [
+            "resolution_id"
+          ]
+        },
+        {
+          "key": [
+            "OF-US05",
+            "P03"
+          ],
+          "fields": [
+            "resolution_id"
+          ]
+        },
+        {
+          "key": [
+            "OF-US10",
+            "O04"
+          ],
+          "fields": [
+            "resolution_id"
+          ]
+        },
+        {
+          "key": [
+            "OF-US10",
+            "P02"
+          ],
+          "fields": [
+            "resolution_id"
+          ]
+        },
+        {
+          "key": [
+            "OF-US10",
+            "P03"
+          ],
+          "fields": [
+            "resolution_id"
+          ]
+        },
+        {
+          "key": [
+            "OF-US21",
+            "P06"
+          ],
+          "fields": [
+            "resolution_id"
+          ]
+        },
+        {
+          "key": [
+            "OF-US21",
+            "P07"
+          ],
+          "fields": [
+            "resolution_id"
+          ]
+        }
+      ]
+    },
+    {
+      "table": "domains",
+      "prior_rows": 20,
+      "new_rows": 0,
+      "old_rows_preserved": true,
+      "mutable_changes": []
+    },
+    {
+      "table": "legacy_feature_map",
+      "prior_rows": 86,
+      "new_rows": 0,
+      "old_rows_preserved": true,
+      "mutable_changes": []
+    },
+    {
+      "table": "metric_catalog",
+      "prior_rows": 20,
+      "new_rows": 0,
+      "old_rows_preserved": true,
+      "mutable_changes": []
+    },
+    {
+      "table": "observation_evidence",
+      "prior_rows": 2071,
+      "new_rows": 37,
+      "old_rows_preserved": true,
+      "mutable_changes": []
+    },
+    {
+      "table": "observations",
+      "prior_rows": 2955,
+      "new_rows": 37,
+      "old_rows_preserved": true,
+      "mutable_changes": []
+    },
+    {
+      "table": "offerings",
+      "prior_rows": 50,
+      "new_rows": 0,
+      "old_rows_preserved": true,
+      "mutable_changes": []
+    },
+    {
+      "table": "plans",
+      "prior_rows": 99,
+      "new_rows": 0,
+      "old_rows_preserved": true,
+      "mutable_changes": []
+    },
+    {
+      "table": "price_components",
+      "prior_rows": 118,
+      "new_rows": 0,
+      "old_rows_preserved": true,
+      "mutable_changes": []
+    },
+    {
+      "table": "product_aliases",
+      "prior_rows": 57,
+      "new_rows": 0,
+      "old_rows_preserved": true,
+      "mutable_changes": []
+    },
+    {
+      "table": "products",
+      "prior_rows": 50,
+      "new_rows": 0,
+      "old_rows_preserved": true,
+      "mutable_changes": []
+    },
+    {
+      "table": "regulation_support",
+      "prior_rows": 0,
+      "new_rows": 0,
+      "old_rows_preserved": true,
+      "mutable_changes": []
+    },
+    {
+      "table": "regulations",
+      "prior_rows": 17,
+      "new_rows": 0,
+      "old_rows_preserved": true,
+      "mutable_changes": []
+    },
+    {
+      "table": "research_assets",
+      "prior_rows": 6,
+      "new_rows": 0,
+      "old_rows_preserved": true,
+      "mutable_changes": []
+    },
+    {
+      "table": "research_batches",
+      "prior_rows": 18,
+      "new_rows": 5,
+      "old_rows_preserved": true,
+      "mutable_changes": []
+    },
+    {
+      "table": "research_task_updates",
+      "prior_rows": 72,
+      "new_rows": 16,
+      "old_rows_preserved": true,
+      "mutable_changes": []
+    },
+    {
+      "table": "research_tasks",
+      "prior_rows": 980,
+      "new_rows": 0,
+      "old_rows_preserved": true,
+      "mutable_changes": [
+        {
+          "key": [
+            "TASK-RES00994"
+          ],
+          "fields": [
+            "required_method",
+            "last_checked_on",
+            "task_state"
+          ]
+        },
+        {
+          "key": [
+            "TASK-RES01025"
+          ],
+          "fields": [
+            "required_method"
+          ]
+        },
+        {
+          "key": [
+            "TASK-RES01026"
+          ],
+          "fields": [
+            "required_method"
+          ]
+        },
+        {
+          "key": [
+            "TASK-RES01027"
+          ],
+          "fields": [
+            "required_method"
+          ]
+        },
+        {
+          "key": [
+            "TASK-RES01028"
+          ],
+          "fields": [
+            "required_method",
+            "last_checked_on",
+            "task_state"
+          ]
+        },
+        {
+          "key": [
+            "TASK-RES01040"
+          ],
+          "fields": [
+            "required_method",
+            "last_checked_on"
+          ]
+        },
+        {
+          "key": [
+            "TASK-RES01070"
+          ],
+          "fields": [
+            "required_method",
+            "last_checked_on"
+          ]
+        },
+        {
+          "key": [
+            "TASK-RES01071"
+          ],
+          "fields": [
+            "required_method",
+            "last_checked_on",
+            "task_state"
+          ]
+        },
+        {
+          "key": [
+            "TASK-RES01072"
+          ],
+          "fields": [
+            "required_method",
+            "last_checked_on",
+            "task_state"
+          ]
+        },
+        {
+          "key": [
+            "TASK-RES01073"
+          ],
+          "fields": [
+            "required_method",
+            "last_checked_on",
+            "task_state"
+          ]
+        },
+        {
+          "key": [
+            "TASK-RES01298"
+          ],
+          "fields": [
+            "required_method",
+            "last_checked_on",
+            "task_state"
+          ]
+        },
+        {
+          "key": [
+            "TASK-RES01300"
+          ],
+          "fields": [
+            "required_method",
+            "last_checked_on",
+            "task_state"
+          ]
+        },
+        {
+          "key": [
+            "TASK-RES01301"
+          ],
+          "fields": [
+            "required_method",
+            "last_checked_on",
+            "task_state"
+          ]
+        },
+        {
+          "key": [
+            "B04-20261011-TASK005"
+          ],
+          "fields": [
+            "last_checked_on"
+          ]
+        },
+        {
+          "key": [
+            "B04-20261011-TASK006"
+          ],
+          "fields": [
+            "last_checked_on"
+          ]
+        }
+      ]
+    },
+    {
+      "table": "resolution_evidence",
+      "prior_rows": 3670,
+      "new_rows": 61,
+      "old_rows_preserved": true,
+      "mutable_changes": []
+    },
+    {
+      "table": "retrieval_checks",
+      "prior_rows": 157,
+      "new_rows": 20,
+      "old_rows_preserved": true,
+      "mutable_changes": []
+    },
+    {
+      "table": "run_metrics",
+      "prior_rows": 0,
+      "new_rows": 0,
+      "old_rows_preserved": true,
+      "mutable_changes": []
+    },
+    {
+      "table": "schema_info",
+      "prior_rows": 17,
+      "new_rows": 0,
+      "old_rows_preserved": true,
+      "mutable_changes": [
+        {
+          "key": [
+            "latest_batch"
+          ],
+          "fields": [
+            "value"
+          ]
+        }
+      ]
+    },
+    {
+      "table": "source_archives",
+      "prior_rows": 5,
+      "new_rows": 1,
+      "old_rows_preserved": true,
+      "mutable_changes": []
+    },
+    {
+      "table": "source_documents",
+      "prior_rows": 291,
+      "new_rows": 23,
+      "old_rows_preserved": true,
+      "mutable_changes": []
+    },
+    {
+      "table": "source_method_attributes",
+      "prior_rows": 371,
+      "new_rows": 27,
+      "old_rows_preserved": true,
+      "mutable_changes": []
+    },
+    {
+      "table": "source_revisions",
+      "prior_rows": 431,
+      "new_rows": 27,
+      "old_rows_preserved": true,
+      "mutable_changes": []
+    },
+    {
+      "table": "sources",
+      "prior_rows": 293,
+      "new_rows": 23,
+      "old_rows_preserved": true,
+      "mutable_changes": []
+    },
+    {
+      "table": "vendors",
+      "prior_rows": 11,
+      "new_rows": 0,
+      "old_rows_preserved": true,
+      "mutable_changes": []
+    }
+  ],
+  "table_count": 39,
+  "task_changes": [
+    {
+      "task_id": "TASK-RES00994",
+      "before": "not_started",
+      "after": "in_progress",
+      "fields": [
+        "required_method",
+        "last_checked_on",
+        "task_state"
+      ]
+    },
+    {
+      "task_id": "TASK-RES01025",
+      "before": "in_progress",
+      "after": "in_progress",
+      "fields": [
+        "required_method"
+      ]
+    },
+    {
+      "task_id": "TASK-RES01026",
+      "before": "in_progress",
+      "after": "in_progress",
+      "fields": [
+        "required_method"
+      ]
+    },
+    {
+      "task_id": "TASK-RES01027",
+      "before": "in_progress",
+      "after": "in_progress",
+      "fields": [
+        "required_method"
+      ]
+    },
+    {
+      "task_id": "TASK-RES01028",
+      "before": "not_started",
+      "after": "in_progress",
+      "fields": [
+        "required_method",
+        "last_checked_on",
+        "task_state"
+      ]
+    },
+    {
+      "task_id": "TASK-RES01040",
+      "before": "in_progress",
+      "after": "in_progress",
+      "fields": [
+        "required_method",
+        "last_checked_on"
+      ]
+    },
+    {
+      "task_id": "TASK-RES01070",
+      "before": "in_progress",
+      "after": "in_progress",
+      "fields": [
+        "required_method",
+        "last_checked_on"
+      ]
+    },
+    {
+      "task_id": "TASK-RES01071",
+      "before": "not_started",
+      "after": "in_progress",
+      "fields": [
+        "required_method",
+        "last_checked_on",
+        "task_state"
+      ]
+    },
+    {
+      "task_id": "TASK-RES01072",
+      "before": "not_started",
+      "after": "in_progress",
+      "fields": [
+        "required_method",
+        "last_checked_on",
+        "task_state"
+      ]
+    },
+    {
+      "task_id": "TASK-RES01073",
+      "before": "not_started",
+      "after": "in_progress",
+      "fields": [
+        "required_method",
+        "last_checked_on",
+        "task_state"
+      ]
+    },
+    {
+      "task_id": "TASK-RES01298",
+      "before": "not_started",
+      "after": "in_progress",
+      "fields": [
+        "required_method",
+        "last_checked_on",
+        "task_state"
+      ]
+    },
+    {
+      "task_id": "TASK-RES01300",
+      "before": "not_started",
+      "after": "in_progress",
+      "fields": [
+        "required_method",
+        "last_checked_on",
+        "task_state"
+      ]
+    },
+    {
+      "task_id": "TASK-RES01301",
+      "before": "not_started",
+      "after": "in_progress",
+      "fields": [
+        "required_method",
+        "last_checked_on",
+        "task_state"
+      ]
+    },
+    {
+      "task_id": "B04-20261011-TASK005",
+      "before": "in_progress",
+      "after": "in_progress",
+      "fields": [
+        "last_checked_on"
+      ]
+    },
+    {
+      "task_id": "B04-20261011-TASK006",
+      "before": "in_progress",
+      "after": "in_progress",
+      "fields": [
+        "last_checked_on"
+      ]
+    }
+  ],
+  "tasks_started": 8,
+  "tasks_completed": 0,
+  "all_prior_rows_preserved": true
+}

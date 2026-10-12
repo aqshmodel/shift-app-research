@@ -1,0 +1,23 @@
+{
+  "status": "passed",
+  "batch": "B21-20261012",
+  "offering_id": "OF-US10",
+  "browser": "Chrome via CUA",
+  "cards_before_filter": 50,
+  "new_batch_cards": 1,
+  "unique_document_observations": 2059,
+  "viewports": [
+    1440,
+    390
+  ],
+  "horizontal_overflow": false,
+  "source_urls_in_detail": 13,
+  "conditional_currency_term_and_support_notes_visible": true,
+  "visual_inspection": true,
+  "screenshot_files_saved": false,
+  "server_stopped": true,
+  "viewport_restored": true,
+  "tabs_closed": true,
+  "independent_product_tests": false,
+  "scope": "Affected local comparison only; full UI suite planned C02T05"
+}

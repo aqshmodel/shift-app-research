@@ -1,12 +1,12 @@
 # Aqsh シフト管理・作成サービス調査
 
-シフト管理・自動作成サービスの公開一次資料を整理した調査DBです。2026年10月12日の第18バッチまでに、**50提供単位、2,037文書記録、277調査文書、118料金明細、ロゴ50製品、制度参照17件**を収録しています。第18バッチまで本番へ反映済みです。未確認事項、資料間の矛盾、提供予定、契約・地域・プランの限定を区別して保持しています。
+シフト管理・自動作成サービスの公開一次資料を整理した調査DBです。2026年10月12日の第24バッチまでに、**50提供単位、2,080文書記録、304調査文書、118料金明細、ロゴ50製品、制度参照17件**を収録しています。第24バッチまで本番へ反映済みです。未確認事項、資料間の矛盾、提供予定、契約・地域・プランの限定を区別して保持しています。
 
 第8・9バッチでは11サービスの公開一次資料25件を確認し、54記録と分類訂正1件を追加しました。優先度1の未完了課題は29件です。詳細は [第8バッチ調査報告](Aqsh_Shift_Research_v2_Batch02_DB_20261011/reports/Batch08_research_report.md) と [第9バッチ追補](Aqsh_Shift_Research_v2_Batch02_DB_20261011/reports/Batch09_research_report.md)。第8〜12バッチの追加調査は、履歴と過去の公開版を残したまま本番D1・公開サイトへ反映しました。
 
 第10バッチでは5サービスの公式資料8件から35記録を追加しました。課金主体、外部LLM利用と退出データ、勤怠連携のファイル操作・別契約、権限・通知・受付時間を確認し、未着手13課題を追加確認へ進めました。詳細は [第10バッチ調査報告](Aqsh_Shift_Research_v2_Batch02_DB_20261011/reports/Batch10_research_report.md)。優先度1の残課題29件は、見積・契約資料・実機確認等が引き続き必要です。
 
-最新の公開版は `B18-20261012-pub2`。調査基準日を公開データから表示し、全39調査テーブルと50料金概要を照合しました。公開・復旧の記録は [第12バッチまでの本番反映](docs/research-b12-publication-20261012.md) に保存しています。
+最新の公開版は `B24-20261012-pub2`。調査基準日を公開データから表示し、全39調査テーブルと50料金概要を照合しました。公開・復旧の記録は [第24バッチまでの本番反映](docs/research-b24-publication-20261013.md) に保存しています。
 
 第13バッチでは国内4サービスの公式資料15件から52記録と4料金明細を追加しました。解約・退会後の保持、削除期限の記載差、任意支援費、店舗間機能の範囲を確認し、未着手課題は732件から712件になりました。正本DB・比較画面・公開用データとB12からの差分SQLは更新済みで、今回分の本番反映は未実施です。[第13バッチ調査報告](Aqsh_Shift_Research_v2_Batch02_DB_20261011/reports/Batch13_research_report.md)
 
@@ -22,6 +22,8 @@
 
 第13〜18バッチは本番・検証D1の全39テーブルと全50サービスを照合し、本番・検証の各38画面テスト、公開62ページのSEO検査が成功しています。[第18バッチまでの本番反映](docs/research-b18-publication-20261012.md)をご覧ください。過去の未公開表示は各報告の作成時点です。
 
+第19〜24バッチでは6サービスを補完し、43記録を追加しました。全39調査テーブル・全50料金／詳細、本番と検証の各38画面ケース、公開62ページを確認しています。[第24バッチまでの本番反映](docs/research-b24-publication-20261013.md)をご覧ください。
+
 調査データとツールは [Aqsh_Shift_Research_v2_Batch02_DB_20261011](Aqsh_Shift_Research_v2_Batch02_DB_20261011/) にあります。
 
 無料・会員登録不要の **[Aqsh シフト管理・作成サービス比較](https://shift.aqsh.co.jp/)** をCloudflareへ公開しました。ムームードメインのCNAME接続、HTTPS証明書、検索・比較・50詳細ページ・Web MCPを確認しています。医療・介護・店舗・APIの4用途に、選ぶ順序、比較項目、資料の確認例、販売元への質問を追加しました。Aqsh公式の関連ページにも紹介リンクを掲載しています。
@@ -35,7 +37,7 @@ Googleはサイトマップの62ページを検出し、今回検査したトッ
 | [正本DB](Aqsh_Shift_Research_v2_Batch02_DB_20261011/research.sqlite3) | 出典と判断履歴を含むSQLite DB |
 | [DB設計書](Aqsh_Shift_Research_v2_Batch02_DB_20261011/DB_DESIGN.md) | Cloudflare D1向けのテーブル・ビュー設計 |
 | [D1初回登録用SQL](Aqsh_Shift_Research_v2_Batch02_DB_20261011/d1/import.sql) | 空のD1にスキーマと全データを登録するSQL |
-| [継続調査](Aqsh_Shift_Research_v2_Batch02_DB_20261011/reports/Batch08_research_report.md)・[第12バッチ](Aqsh_Shift_Research_v2_Batch02_DB_20261011/reports/Batch12_research_report.md)・[第13バッチ](Aqsh_Shift_Research_v2_Batch02_DB_20261011/reports/Batch13_research_report.md)・[第14バッチ](Aqsh_Shift_Research_v2_Batch02_DB_20261011/reports/Batch14_research_report.md)・[第15バッチ](Aqsh_Shift_Research_v2_Batch02_DB_20261011/reports/Batch15_research_report.md)・[第16バッチ](Aqsh_Shift_Research_v2_Batch02_DB_20261011/reports/Batch16_research_report.md)・[第17バッチ](Aqsh_Shift_Research_v2_Batch02_DB_20261011/reports/Batch17_research_report.md)・[最新の第18バッチ](Aqsh_Shift_Research_v2_Batch02_DB_20261011/reports/Batch18_research_report.md) | 自動割当・契約条件、保守・追加費用、支払・解約、データの削除・復元・出力、参考価格の適用条件 |
+| [継続調査](Aqsh_Shift_Research_v2_Batch02_DB_20261011/reports/Batch08_research_report.md)・[第12バッチ](Aqsh_Shift_Research_v2_Batch02_DB_20261011/reports/Batch12_research_report.md)・[第13バッチ](Aqsh_Shift_Research_v2_Batch02_DB_20261011/reports/Batch13_research_report.md)・[第14バッチ](Aqsh_Shift_Research_v2_Batch02_DB_20261011/reports/Batch14_research_report.md)・[第15バッチ](Aqsh_Shift_Research_v2_Batch02_DB_20261011/reports/Batch15_research_report.md)・[第16バッチ](Aqsh_Shift_Research_v2_Batch02_DB_20261011/reports/Batch16_research_report.md)・[第17バッチ](Aqsh_Shift_Research_v2_Batch02_DB_20261011/reports/Batch17_research_report.md)・[第18バッチ](Aqsh_Shift_Research_v2_Batch02_DB_20261011/reports/Batch18_research_report.md)・[最新の第24バッチ](Aqsh_Shift_Research_v2_Batch02_DB_20261011/reports/Batch24_research_report.md) | 自動割当・契約条件、保守・追加費用、支払・解約、データの削除・復元・出力、参考価格の適用条件 |
 | [デザイン・性能の改修記録](docs/design-quality-20261011.md) | 新名称、数字、画面品質、D1取得回数、公開側の検証と計測 |
 | [独自ドメインの公開接続記録](docs/custom-domain-20261011.md) | DNS・SSL・公開ドメインの動作・SEO・Google Search Console |
 | [SEO・アクセス解析の対応記録](docs/seo-analytics-20261011.md) | サイトマップ成功、Google登録、62ページのタグ検査、同意に基づくGA4の実受信 |

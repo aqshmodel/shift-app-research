@@ -1,0 +1,79 @@
+{
+  "status": "passed",
+  "source_bodies": [
+    {
+      "key": "platform-pricing-support",
+      "url": "https://timefold.ai/pricing",
+      "title": "Timefold Platform：Spark・Flow・Horizonの支援範囲",
+      "publisher": "Timefold BV",
+      "reference": "Platform pricingのService & support。Employee Shift Scheduling APIを含む対象列も確認",
+      "retrieved_on": "2026-10-12",
+      "method": "public_web_body",
+      "method_note": "Sparkのガイド・API文書、Flowの導入支援・支援ポータル、Horizonの専用Slack・助言担当・24/7支援の案内を確認。Solver Community/Enterpriseは別区分。公開・更新日は本文に確認できずNULL。既存プラン一般と金額未公開の記録は再登録しない。全文・ハッシュ未保存。"
+    },
+    {
+      "key": "general-terms",
+      "url": "https://timefold.ai/terms",
+      "title": "Timefold General Terms：適用、支援、Resources、請求と契約更新",
+      "publisher": "Timefold BV",
+      "reference": "Last updated April 21st, 2026。第1・2・5・8・13・14条と定義",
+      "retrieved_on": "2026-10-12",
+      "updated_on": "2026-04-21",
+      "method": "public_web_body",
+      "method_note": "proprietary software、Platform/modelsを含む定義、Order優先を確認。公開ブラウザで規約のmailto表示がinfo@timefold.aiであることを読むのみ。公開一般条件の要約で、個別契約や法的有効性の判定ではない。共通規約の条件付き既定値を全APIプランの確定値にしない。全文・ハッシュ未保存。"
+    },
+    {
+      "key": "platform-contact-support",
+      "url": "https://docs.timefold.ai/timefold-platform/latest/support/contacting-support",
+      "title": "Timefold Platform：公開支援メール",
+      "publisher": "Timefold BV",
+      "reference": "Platform / Support / Contacting support本文とmailto",
+      "retrieved_on": "2026-10-12",
+      "method": "public_web_body",
+      "method_note": "公開ブラウザでsupport@timefold.aiの表示・mailtoを確認。一般規約のinfo@timefold.aiと専用支援導線を区別。曜日・時間・応答保証・言語の記載は確認できず。公開・更新日未表示でNULL。メール送信や製品ログイン未実施。全文・ハッシュ未保存。"
+    },
+    {
+      "key": "platform-plan-capabilities",
+      "url": "https://docs.timefold.ai/timefold-platform/latest/plans",
+      "title": "Timefold Platform：契約・調達参照用のプラン能力資料",
+      "publisher": "Timefold BV",
+      "reference": "Pricing plans and capabilitiesの冒頭、CollaborationとInfrastructure表",
+      "retrieved_on": "2026-10-12",
+      "method": "public_web_body",
+      "method_note": "Webツールでは取得不可。公式Platform目次のリンクから公開ブラウザで本文を確認。能力の参照資料で、価格は別ページへ案内する。メモリーはper threadと記載し、サイト価格案内より粒度が細かい。通貨・請求単位・更新日をこの表から推定しない。全文・ハッシュ未保存。"
+    }
+  ],
+  "retrieval_checks": [
+    {
+      "product": "US10",
+      "url": "https://timefold.ai/pricing",
+      "result": "existing_B07_P01_rechecked_without_duplicate",
+      "notes": "既存B01-O00344のプラン区別・B01-O00362の公開具体額なしと問い合わせ導線を保持。今回P01・B07へ同じ観測を追加しない。Solver無料やEnterprise SolverとPlatformを区別。"
+    },
+    {
+      "product": "US10",
+      "url": "https://docs.timefold.ai/timefold-platform/latest/plans",
+      "result": "web_tool_unavailable_public_browser_body_reviewed",
+      "notes": "Webツールでnot accessible。既に取得できた公式Platform目次から公開ブラウザで通常の本文を読み、プラン能力の対象範囲を確認。ログイン・登録・アクセス変更なし。"
+    },
+    {
+      "product": "US10",
+      "url": "https://docs.timefold.ai/employee-shift-scheduling/latest/introduction",
+      "result": "existing_model_platform_relationship_rechecked_without_duplicate",
+      "notes": "Employee Shift SchedulingはPlatformのScheduling APIという既存の対象対応を保持。latestの版選択に1.35.xが見えるが、価格・契約の改定日とは扱わない。400,000シフトというデータセット上限を料金単位へ流用しない。"
+    }
+  ],
+  "general_terms_updated_on": "2026-04-21",
+  "other_sources_published_updated_on": null,
+  "retrieved_on": "2026-10-12",
+  "scope": "Commercial proprietary Platform/models subject to Order precedence; open-source Solver is separate",
+  "emails_observed_by_public_browser": [
+    "info@timefold.ai",
+    "support@timefold.ai"
+  ],
+  "default_currency": "EUR unless Order specifies otherwise",
+  "published_amounts_registered": 0,
+  "unit_definition": "Resources may be used by the Order-defined usage model; exact model counts unknown",
+  "full_text_images_or_body_hashes_saved": false,
+  "registration_contact_payment_or_api_execution": false
+}

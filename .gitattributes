@@ -1,6 +1,8 @@
 * text=auto eol=lf
 # Preserve generated CSV bytes so manifest SHA-256 stays valid after cloning.
 *.csv -text
+# Preserve archived extraction bytes and original source whitespace.
+Aqsh_Shift_Research_v2_Batch02_DB_20261011/assets/sources/**/*.txt -text -whitespace
 *.sqlite3 binary
 *.zip binary
 *.pdf binary

@@ -1,0 +1,56 @@
+{
+  "batch_id": "B21-20261012",
+  "reviewed_on": "2026-10-12",
+  "status": "passed",
+  "tasks_marked_done": 0,
+  "new_evidence_is_not_full_completion": true,
+  "conditions": [
+    {
+      "task_id": "TASK-RES01298",
+      "criterion": "O04",
+      "state": "in_progress",
+      "documented": [
+        "Tier-specific support and onboarding",
+        "General/proprietary versus Platform support emails",
+        "SLA agreement and trial caveats"
+      ],
+      "missing": [
+        "Language",
+        "Numerical response/resolution guarantees",
+        "Incident/contact procedure",
+        "Applicable customer SLA and included service fees"
+      ]
+    },
+    {
+      "task_id": "TASK-RES01300",
+      "criterion": "P02",
+      "state": "in_progress",
+      "documented": [
+        "Order-defined model can be linked to Resources",
+        "Authorized users and capacity are distinct"
+      ],
+      "missing": [
+        "Exact Employee Shift Scheduling Resource counting",
+        "Inactive/admin/multi-role/duplicate and time-period treatment",
+        "Minimum volume and step rates"
+      ]
+    },
+    {
+      "task_id": "TASK-RES01301",
+      "criterion": "P03",
+      "state": "in_progress",
+      "documented": [
+        "Order precedence",
+        "Default annual term and 90-day renewal notice",
+        "Default invoice timing and 30-day due date",
+        "EUR or Order currency; taxes excluded"
+      ],
+      "missing": [
+        "Actual per-plan monthly/annual invoice schedule",
+        "Applicable minimum term/users/amount",
+        "Prepayment amounts",
+        "Quarterly adjustment versus normal invoice relationship"
+      ]
+    }
+  ]
+}

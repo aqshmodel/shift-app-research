@@ -1,0 +1,39 @@
+{
+  "batch_id": "B19-20261012",
+  "prior_batch": "B18-20261012",
+  "as_of_date": "2026-10-12",
+  "resolution_policy_version": 2,
+  "description": "Smartlinx Schedulingのモバイル利用条件、ストア無料表示の範囲、継続支援と契約周期の限定追加調査",
+  "method": "OF-US04のB07・O04・P01・P02・P03に限定。公式サイト本文とそこからリンクされた米国App Store・Google Playの開発者説明を既存観測に照合。B14の研修、電話・チケット・支援レベル、導入支援、Web規約とアプリ規約の未確認を重複登録しない。支援センターはWebツールでInternal Errorとなり本文を取得できず、別経路での再取得や認証は行わない。ログイン、ダウンロード、登録、問い合わせ、デモ・見積取得、製品API、支払、独立動作試験は未実施。全文・本文ハッシュは未保存。ストアの利用者レビューを製品・契約の根拠に採用しない。",
+  "sources": [
+    {"key":"go-access","url":"https://www.smartlinx.com/solutions/smartlinx-go/","title":"Smartlinx Go：公式FAQのダウンロード・認証情報による利用開始","publisher":"Smartlinx","reference":"SchedulingページのMobile App導線から公式FAQ本文を確認","retrieved_on":"2026-10-12","method":"public_web_body","method_note":"FAQの認証情報によるログイン手順を確認。既存の空き勤務・交代の一般機能を再登録しない。ダウンロード・ログイン未実施。全文・ハッシュ未保存。"},
+    {"key":"go-ios-store","url":"https://apps.apple.com/us/app/smartlinx-go/id1446077536","title":"SmartLinx Go：米国App StoreのFree表示と開発者","publisher":"Apple / Smartlinx Solutions LLC","reference":"公式GoページのApp Storeリンク。米国ストアの商品表示・開発者説明","retrieved_on":"2026-10-12","method":"public_web_body","method_note":"Free表示、SmartLinx Solutions LLCの開発者表記を確認。法人Schedulingの契約・価格と区別。利用者レビューと独立性能評価は採用しない。アプリ取得・購入未実施。全文・ハッシュ未保存。"},
+    {"key":"go-android-store","url":"https://play.google.com/store/apps/details?hl=en_US&id=com.smartlinx6.ess3","title":"SmartLinx Go：Google Play開発者説明の打刻権限留保","publisher":"Google Play / Smartlinx","reference":"公式GoページのGoogle Playリンク。About this appの開発者本文","retrieved_on":"2026-10-12","updated_on":"2026-09-29","method":"public_web_body","method_note":"打刻はif authorizedという条件、更新日を確認。打刻権限をSchedulingの標準契約内包や課金対象と解釈しない。レビュー・Data safetyの情報は今回の範囲へ採用しない。取得・実操作未実施。全文・ハッシュ未保存。"},
+    {"key":"success-service","url":"https://www.smartlinx.com/services/optimization/","title":"Smartlinx Optimization：Customer Successと定期業務レビュー","publisher":"Smartlinx","reference":"公式サービス案内のCustomer Success・Maximize Workforce ROI本文","retrieved_on":"2026-10-12","method":"public_web_body","method_note":"利用状況を使った普及支援、定期業務レビューを確認。year after yearは支援の説明であり年払い・最低年契約の条項ではない。Smartlinx全体の案内の留保。全文・ハッシュ未保存。"}
+  ],
+  "findings": [
+    {"product":"US04","criterion":"B07","source":"go-access","summary":"Smartlinx Goの公式FAQは、iOS・Androidストアからアプリを取得し、自分の認証情報でログインして利用を始める手順を案内する。","locator":"Frequently Asked Questions：How do I access and download the mobile app? / How easy is it to onboard staff?","limitations":"アプリの利用開始手順に限る。公開ダウンロードだけでSchedulingの法人アカウントや全機能が提供されるとは記載されていない。認証情報の発行条件、対象版・モジュール、追加契約・料金は未確認。既存の一般的な勤務閲覧・応募・交代は再登録しない。","state":"known","support":"limited","delivery":"unknown"},
+    {"product":"US04","criterion":"B07","source":"go-android-store","summary":"Google PlayのSmartlinx開発者説明は、職員のスマートフォン打刻を、権限が認められた場合に利用できる機能として記載する。","locator":"About this app：As an employee ... Punch in and out of work if authorized / Updated on Sep 29, 2026","limitations":"Androidアプリ説明の打刻権限留保。勤務閲覧・空き勤務応募まで同じ許可条件が必要とは断定しない。打刻の契約内包、法人Schedulingのエディション・モジュール境界、権限設定の実動作、課金対象者の定義は未確認。","state":"known","support":"limited","delivery":"unknown"},
+    {"product":"US04","criterion":"P01","source":"go-ios-store","summary":"米国App StoreはSmartLinx GoをFreeと表示するが、これはストアのアプリ取得表示であり、法人向けSmartlinx Schedulingの無料プラン・基本料・利用料金を確定する資料ではない。","locator":"アプリ名直下のFree表示 / Developer：SmartLinx Solutions LLC","limitations":"法人Scheduling料金への適用は記載未確認。アプリ取得の無料表示から法人サービスの0円料金明細を作らず、既存の非公開という料金概要を維持。Webサイト無料条項のB14観測とは別のストア表示を補足。","state":"not_found","delivery":"unknown"},
+    {"product":"US04","criterion":"O04","source":"success-service","summary":"Customer Success Teamは利用状況をもとに普及支援を行い、専門担当者が勤務・予算・コンプライアンス等の業務データを定期レビューすると説明する。","locator":"Optimization：Customer Success Team / Drive Higher Adoption / Maximize Workforce ROI","limitations":"Smartlinx全体の運用改善サービスの説明。Scheduling契約への内包・支援料金・レビュー頻度、障害窓口の曜日時間帯・言語・応答保証は未確認。定期レビューを技術SLAや独立性能検証と解釈しない。B14の研修・電話・Help Deskは再登録しない。","state":"known","support":"limited","delivery":"unknown"},
+    {"product":"US04","criterion":"P03","source":"success-service","summary":"Optimizationは継続的な支援をyear after yearと説明するが、Schedulingの月払・年払、前払、最低契約期間・最低請求額の条項はこの本文で確認できない。","locator":"Optimization冒頭、Your Workforce Success Is Our Priority / Your Growth Partner","limitations":"継続支援の表現は課金周期・年契約の証拠ではない。非対応とも、最低契約なしとも判断しない。法人の見積・製品契約が必要。定期業務レビューの頻度を請求周期へ流用しない。","state":"not_found","delivery":"unknown"}
+  ],
+  "prices": [],
+  "followups": [],
+  "task_updates": [
+    {"task_id":"TASK-RES00994","state":"in_progress","priority":3,"method":"vendor_document","note":"B19：Goの認証情報による利用開始とAndroid打刻の権限留保を補完。法人Schedulingの対象版・モジュール・標準内包・追加契約は未確定。既存の一般機能は重複追加せず継続。"},
+    {"task_id":"TASK-RES01025","state":"in_progress","priority":3,"method":"vendor_document","note":"B19：Customer Successによる普及支援と定期業務レビューを補完。B14の研修・電話・Help Deskを保持。支援センター本文はWebツールで取得不可。曜日時間帯・言語・応答保証・Scheduling契約内包は未確認で継続。"},
+    {"task_id":"TASK-RES01026","state":"in_progress","priority":3,"method":"vendor_document","note":"B19：米国App StoreのFreeはGoのアプリ取得表示で、法人Schedulingを無料と扱わない。金額・価格方式は未確定。Webサイト無料条項の既存B14記録を重複追加せず継続。"},
+    {"task_id":"TASK-RES01027","state":"in_progress","priority":3,"method":"vendor_document","note":"B19：Goの利用者・打刻権限と法人課金対象を区別。Scheduling・Go・サービス案内を点検したが、管理者・休職・兼務・施設等の課金計数は確認できない。同じ未確認観測を追加せず、法人見積・契約が必要な未完了課題として継続。"},
+    {"task_id":"TASK-RES01028","state":"in_progress","priority":3,"method":"vendor_document","note":"B19：継続支援のyear after yearは年払・最低年契約の条件ではない。請求周期・前払・最低契約・最低請求額は未確認。初回の本文点検として確認中へ進め、完了にしない。"}
+  ],
+  "retrieval_checks": [
+    {"product":"US04","url":"https://www.smartlinx.com/solutions/scheduling/","result":"existing_features_and_price_non_disclosure_rechecked_without_duplicate","notes":"一般の自動割当、資格、モバイル、統合と具体的金額の未確認は既存記録を保持。今回B07の詳細対象へGoの公式リンクを辿った。"},
+    {"product":"US04","url":"https://www.smartlinx.com/services/customer-support/","result":"existing_phone_ticket_support_levels_rechecked_without_duplicate","notes":"B14-OBS0006の電話、チケット、選択可能なHelp Desk・保守を再確認。曜日・時間帯・応答目標は本文に確認できない。"},
+    {"product":"US04","url":"https://www.smartlinx.com/services/training/","result":"existing_training_and_24_7_guides_rechecked_without_duplicate","notes":"B14-OBS0005の少人数講師研修、顧客ガイド24/7、訪問研修を再確認。24/7教材閲覧を有人24時間支援と扱わない。"},
+    {"product":"US04","url":"https://www.smartlinx.com/services/deployment/","result":"existing_implementation_support_rechecked_without_duplicate","notes":"B14-OBS0003・0004の導入支援と料金未確認を保持。既存スイートの拡大も支援するという案内は標準内包・必須契約の表ではない。"},
+    {"product":"US04","url":"https://support.smartlinxsolutions.com/","result":"web_tool_internal_error_body_unavailable","notes":"公式Customer Supportのリンクと直接openでInternal Error。HTTPステータス・認証拒否は観測していない。資料未取得を製品非対応としない。登録、認証、別経路取得を行わない。"},
+    {"product":"US04","url":"https://www.smartlinx.com/solutions/","result":"suite_listing_does_not_define_billable_units","notes":"Scheduling・Time & Attendance・Mobile等の案内は確認したが課金計数・契約表ではない。人や施設の数を価格単位へ流用しない。"},
+    {"product":"US04","url":"https://www.smartlinx.com/sitemap/","result":"public_navigation_checked_contract_document_not_identified","notes":"公開サイトの製品・サービス・Web規約導線を点検。対象5設問を確定する法人価格表・契約条項を発見できなかった。全サイトに存在しないという断定はしない。"}
+  ]
+}

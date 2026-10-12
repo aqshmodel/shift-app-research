@@ -1,0 +1,6 @@
+{
+  "status": "passed",
+  "unchanged_tables": 43,
+  "latest_baseline_snapshot": "B18-20261012-pub2",
+  "guarded_delta_sha256": "cb8dfc512fa150d61afae49707035db3d022b3148e8ee1b329f0943c6f3a370c"
+}

@@ -1,0 +1,21 @@
+{
+  "status": "passed",
+  "task_id": "B14-20261012-TASK003",
+  "task_state": "in_progress",
+  "tasks_marked_done": 0,
+  "known_partial": [
+    "general versus product telephone scope",
+    "contract-tiered Success Management",
+    "product selection and two-business-day portal onboarding explanation",
+    "2023 ShiftWizard Salesforce case transition",
+    "specified holidays and distinct network maintenance"
+  ],
+  "unfulfilled": [
+    "current product-specific hours, region and contract eligibility",
+    "CT versus CST and daylight-saving handling",
+    "after-hours emergency route and response/resolution SLA",
+    "all holiday exceptions and language support"
+  ],
+  "new_conflict": "Community ends 19:30 CT; general Service ends 19 CT; January ShiftWizard ends 18 CT; product says 19 CST",
+  "no_assumed_resolution": true
+}

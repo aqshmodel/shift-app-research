@@ -1,0 +1,25 @@
+{
+  "status": "passed",
+  "batch_id": "B19-20261012",
+  "new_findings": 5,
+  "new_sources": 4,
+  "known": 3,
+  "not_found": 2,
+  "new_prices": 0,
+  "new_tasks": 0,
+  "done_tasks": 0,
+  "existing_observations_preserved": [
+    "B01-O00288",
+    "B03-20261011-OBS0176",
+    "B14-20261012-OBS0003",
+    "B14-20261012-OBS0004",
+    "B14-20261012-OBS0005",
+    "B14-20261012-OBS0006",
+    "B14-20261012-OBS0007",
+    "B14-20261012-OBS0008",
+    "B14-20261012-OBS0009",
+    "B14-20261012-OBS0010"
+  ],
+  "billing_unit_has_only_retrieval_and_task_note": true,
+  "registered_prior_batches_unchanged": true
+}

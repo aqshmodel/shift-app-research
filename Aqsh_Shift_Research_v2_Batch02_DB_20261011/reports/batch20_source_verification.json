@@ -1,0 +1,106 @@
+{
+  "status": "passed",
+  "source_bodies": [
+    {
+      "url": "https://www.rotageek.com/industries/healthcare",
+      "publisher": "Rotageek",
+      "method": "public_web_body",
+      "updated_on": null,
+      "note": "Web本文では記号が欠落するため公開ブラウザの表示と読み取り専用DOM検査を併用。Digital Schedulingと+Auto Schedulingを列見出しとして確認。任意Cookieを拒否。全文・元サイト画像・本文ハッシュは未保存。"
+    },
+    {
+      "url": "https://www.rotageek.com/solutions/rota-auto-scheduling/",
+      "publisher": "Rotageek",
+      "method": "public_web_body",
+      "updated_on": null,
+      "note": "Digital Schedulingの機能を土台にする説明と、Add-Ons導線を確認。金額やHealthcare契約への内包は未確認。既存の自動割当・効果指標を再登録しない。全文・ハッシュ未保存。"
+    },
+    {
+      "url": "https://www.rotageek.com/solutions/digital-rotas-schedules/",
+      "publisher": "Rotageek",
+      "method": "public_web_body",
+      "updated_on": null,
+      "note": "support included as standardとアプリ内live chat、費用は要件に依存する説明を確認。標準支援の営業時間・SLA・Healthcare個別契約は未確定。ROIを利用料や価格表と扱わない。全文・ハッシュ未保存。"
+    },
+    {
+      "url": "https://www.rotageek.com/support",
+      "publisher": "Rotageek",
+      "method": "public_web_body",
+      "updated_on": null,
+      "note": "公式サイトのSupportリンクから支援の専用メールとヘルプセンターを確認。営業問い合わせと区別。チャットを送信・起動して職員へ接続する操作はしない。全文・ハッシュ未保存。"
+    },
+    {
+      "url": "https://support.rotageek.com/en/articles/9612318-creating-support-tickets",
+      "publisher": "Rotageek Help Centre",
+      "method": "public_web_body",
+      "updated_on": "2024-10-01",
+      "note": "作成はgroup adminsとsupervisors、会社ポータルはアクセスを付与されたgroup adminsのみという区別。P1〜P4は優先度の説明で応答時間の保証ではない。製品ログイン・権限付与・チケット作成・連絡は未実施。全文・ハッシュ未保存。"
+    },
+    {
+      "url": "https://support.rotageek.com/en/articles/9656843-people-page-profile-tab",
+      "publisher": "Rotageek Help Centre",
+      "method": "public_web_body",
+      "updated_on": null,
+      "note": "User/Supervisor/Adminと主拠点・追加拠点の機能権限を確認。更新表示はUpdated over 3 weeks agoで、正確な更新日は推定しない。権限区分や拠点数を課金単位にしない。全文・ハッシュ未保存。"
+    },
+    {
+      "url": "https://support.rotageek.com/en/articles/16527315-contract-types",
+      "publisher": "Rotageek Help Centre",
+      "method": "public_web_body",
+      "updated_on": "2026-08-19",
+      "note": "職員の労働・勤務・休憩・休暇設定のcontract typeであり、法人SaaSの支払・最低契約ではない。管理・非有効化の実操作をしない。全文・ハッシュ未保存。"
+    }
+  ],
+  "retrieval_checks": [
+    {
+      "product": "US05",
+      "url": "https://www.rotageek.com/industries/healthcare",
+      "result": "rendered_feature_icons_checked_with_public_browser",
+      "notes": "B04の本文だけでは判別できなかった列のチェック記号を公開ブラウザで展開・視覚・DOM照合。一般機能・専任支援・24時間監視を重複追加しない。親子行の表示不整合を未解決として保存。原本画像・全文未保存。"
+    },
+    {
+      "product": "US05",
+      "url": "https://support.rotageek.com/en/",
+      "result": "public_help_navigation_checked",
+      "notes": "Getting Started・People Setup・Admin and Reportingを点検して新しい公開詳細へ到達。料金・SaaS契約の専用条項は発見できなかったが、全公開資料に存在しないとは断定しない。"
+    },
+    {
+      "product": "US05",
+      "url": "https://www.rotageek.com/contact",
+      "result": "sales_and_support_routes_separated_without_contact",
+      "notes": "SalesのフォームとCustomer Supportのチャット・メールを区別。問い合わせ・フォーム送信・見積・デモ依頼は未実施。営業導線だけで個別見積制を確認済みとしない。"
+    }
+  ],
+  "rendered_healthcare_table": {
+    "columns": [
+      "Digital Scheduling",
+      "+Auto Scheduling"
+    ],
+    "SSO": [
+      "check",
+      "check"
+    ],
+    "API_SFTP": [
+      "check",
+      "check"
+    ],
+    "roster_optimisation_parent": [
+      "cross",
+      "check"
+    ],
+    "one_click_creation_child": [
+      "check",
+      "check"
+    ],
+    "methods": [
+      "visible expanded table",
+      "read-only DOM cell classes and SVG symbols"
+    ],
+    "contract_inclusion": "unresolved"
+  },
+  "full_text_archived": false,
+  "source_images_archived": false,
+  "body_sha256_saved": false,
+  "public_web_only": true,
+  "contact_login_payment_or_api_calls": false
+}

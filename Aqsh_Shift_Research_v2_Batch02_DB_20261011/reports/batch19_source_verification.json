@@ -1,0 +1,79 @@
+{
+  "status": "passed",
+  "checked_on": "2026-10-12",
+  "source_bodies": [
+    {
+      "url": "https://www.smartlinx.com/solutions/smartlinx-go/",
+      "publisher": "Smartlinx",
+      "method": "public_web_body",
+      "updated_on": null
+    },
+    {
+      "url": "https://apps.apple.com/us/app/smartlinx-go/id1446077536",
+      "publisher": "Apple / Smartlinx Solutions LLC",
+      "method": "public_web_body",
+      "updated_on": null
+    },
+    {
+      "url": "https://play.google.com/store/apps/details?hl=en_US&id=com.smartlinx6.ess3",
+      "publisher": "Google Play / Smartlinx",
+      "method": "public_web_body",
+      "updated_on": "2026-09-29"
+    },
+    {
+      "url": "https://www.smartlinx.com/services/optimization/",
+      "publisher": "Smartlinx",
+      "method": "public_web_body",
+      "updated_on": null
+    }
+  ],
+  "checks": [
+    {
+      "product": "US04",
+      "url": "https://www.smartlinx.com/solutions/scheduling/",
+      "result": "existing_features_and_price_non_disclosure_rechecked_without_duplicate",
+      "notes": "一般の自動割当、資格、モバイル、統合と具体的金額の未確認は既存記録を保持。今回B07の詳細対象へGoの公式リンクを辿った。"
+    },
+    {
+      "product": "US04",
+      "url": "https://www.smartlinx.com/services/customer-support/",
+      "result": "existing_phone_ticket_support_levels_rechecked_without_duplicate",
+      "notes": "B14-OBS0006の電話、チケット、選択可能なHelp Desk・保守を再確認。曜日・時間帯・応答目標は本文に確認できない。"
+    },
+    {
+      "product": "US04",
+      "url": "https://www.smartlinx.com/services/training/",
+      "result": "existing_training_and_24_7_guides_rechecked_without_duplicate",
+      "notes": "B14-OBS0005の少人数講師研修、顧客ガイド24/7、訪問研修を再確認。24/7教材閲覧を有人24時間支援と扱わない。"
+    },
+    {
+      "product": "US04",
+      "url": "https://www.smartlinx.com/services/deployment/",
+      "result": "existing_implementation_support_rechecked_without_duplicate",
+      "notes": "B14-OBS0003・0004の導入支援と料金未確認を保持。既存スイートの拡大も支援するという案内は標準内包・必須契約の表ではない。"
+    },
+    {
+      "product": "US04",
+      "url": "https://support.smartlinxsolutions.com/",
+      "result": "web_tool_internal_error_body_unavailable",
+      "notes": "公式Customer Supportのリンクと直接openでInternal Error。HTTPステータス・認証拒否は観測していない。資料未取得を製品非対応としない。登録、認証、別経路取得を行わない。"
+    },
+    {
+      "product": "US04",
+      "url": "https://www.smartlinx.com/solutions/",
+      "result": "suite_listing_does_not_define_billable_units",
+      "notes": "Scheduling・Time & Attendance・Mobile等の案内は確認したが課金計数・契約表ではない。人や施設の数を価格単位へ流用しない。"
+    },
+    {
+      "product": "US04",
+      "url": "https://www.smartlinx.com/sitemap/",
+      "result": "public_navigation_checked_contract_document_not_identified",
+      "notes": "公開サイトの製品・サービス・Web規約導線を点検。対象5設問を確定する法人価格表・契約条項を発見できなかった。全サイトに存在しないという断定はしない。"
+    }
+  ],
+  "full_text_saved": false,
+  "body_hash_saved": false,
+  "public_web_only": true,
+  "product_login_download_contact_or_payment": false,
+  "scope": "Website source statements and developer-submitted store descriptions; reviews are excluded"
+}

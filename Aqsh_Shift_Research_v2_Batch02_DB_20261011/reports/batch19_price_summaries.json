@@ -1,0 +1,363 @@
+{
+  "status": "passed",
+  "snapshot_id": "B19-20261012-pub2",
+  "services": 50,
+  "prices": [
+    {
+      "id": "OF-JP01",
+      "name": "Shiftmation",
+      "label": "個別見積もり",
+      "note": "",
+      "kind": "quote"
+    },
+    {
+      "id": "OF-JP02",
+      "name": "Optamo for Shift",
+      "label": "個別見積もり",
+      "note": "",
+      "kind": "quote"
+    },
+    {
+      "id": "OF-JP03",
+      "name": "FIKAIGO",
+      "label": "年額8,400円 / 人",
+      "note": "標準・年間契約 · 税別 · 年契約 · 年額前払い",
+      "kind": "published"
+    },
+    {
+      "id": "OF-JP04",
+      "name": "Nafty",
+      "label": "月額5,000円 / 部署 ＋ 500円 / 人",
+      "note": "Standard 基本 · 税区分未確認",
+      "kind": "published"
+    },
+    {
+      "id": "OF-JP05",
+      "name": "勤務シフト作成お助けマン Day",
+      "label": "月額12,000円 / 拠点",
+      "note": "Day 月払基本・1～50名 · 税別 · 対象1〜50人",
+      "kind": "published"
+    },
+    {
+      "id": "OF-JP06",
+      "name": "勤務シフト作成お助けマン Time",
+      "label": "月額6,000円 / 拠点",
+      "note": "Time 月払基本・1～20名 · 税別 · 対象1〜20人",
+      "kind": "published"
+    },
+    {
+      "id": "OF-JP07",
+      "name": "miramos",
+      "label": "非公開",
+      "note": "",
+      "kind": "unpublished"
+    },
+    {
+      "id": "OF-JP08",
+      "name": "シンクロシフト",
+      "label": "非公開",
+      "note": "",
+      "kind": "unpublished"
+    },
+    {
+      "id": "OF-JP09",
+      "name": "快決！シフト君NEO メディカル",
+      "label": "個別見積もり",
+      "note": "",
+      "kind": "quote"
+    },
+    {
+      "id": "OF-JP10",
+      "name": "Pitat-Shift",
+      "label": "月額2,980円 / アカウント",
+      "note": "月額基本 · 税込",
+      "kind": "published"
+    },
+    {
+      "id": "OF-JP11",
+      "name": "ナースシフト",
+      "label": "月額5,500円 / アカウント",
+      "note": "個人有料購読・月次自動更新 · 税込 · 100人まで",
+      "kind": "published"
+    },
+    {
+      "id": "OF-JP12",
+      "name": "シフトラ",
+      "label": "月額250円 / ユーザー",
+      "note": "シフトラ月額・会社特商法表示 · 税区分未確認",
+      "kind": "published"
+    },
+    {
+      "id": "OF-JP13",
+      "name": "ほすぴタッチ",
+      "label": "月額1,000円 / 人",
+      "note": "通常利用 月額 · 税別 · 30人まで · 初期費用300,000円 / チーム",
+      "kind": "published"
+    },
+    {
+      "id": "OF-JP14",
+      "name": "NTTデータ数理システム シフトスケジューリング",
+      "label": "非公開",
+      "note": "",
+      "kind": "unpublished"
+    },
+    {
+      "id": "OF-JP15",
+      "name": "快決！シフト君NEO ウェルネス",
+      "label": "個別見積もり",
+      "note": "",
+      "kind": "quote"
+    },
+    {
+      "id": "OF-JP16",
+      "name": "Optamo for Task",
+      "label": "個別見積もり",
+      "note": "",
+      "kind": "quote"
+    },
+    {
+      "id": "OF-JP17",
+      "name": "SHIFTEE",
+      "label": "月額250円〜 / 人",
+      "note": "SHIFTEE Light 月額下限 · 税別 · 自動作成プランは個別見積もり · 初期費用は別途",
+      "kind": "published"
+    },
+    {
+      "id": "OF-JP18",
+      "name": "oplus",
+      "label": "個別見積もり",
+      "note": "適用料金はお問い合わせください",
+      "kind": "quote"
+    },
+    {
+      "id": "OF-JP19",
+      "name": "勤夢表VX（V5/VX）",
+      "label": "個別見積もり",
+      "note": "",
+      "kind": "quote"
+    },
+    {
+      "id": "OF-JP20",
+      "name": "エピタルHR",
+      "label": "個別見積もり",
+      "note": "",
+      "kind": "quote"
+    },
+    {
+      "id": "OF-JP21",
+      "name": "Ramanas",
+      "label": "初期費用308,000円〜",
+      "note": "参考額 · 月額・保守費は個別見積もり",
+      "kind": "published"
+    },
+    {
+      "id": "OF-JP22",
+      "name": "セルヴィスEX",
+      "label": "個別見積もり",
+      "note": "",
+      "kind": "quote"
+    },
+    {
+      "id": "OF-JP23",
+      "name": "シフッタ",
+      "label": "非公開",
+      "note": "",
+      "kind": "unpublished"
+    },
+    {
+      "id": "OF-JP24",
+      "name": "シフト屋さん",
+      "label": "無料プランあり",
+      "note": "1プロジェクト6人まで · 税込 · 有料プランの条件は詳細へ",
+      "kind": "free"
+    },
+    {
+      "id": "OF-JP25",
+      "name": "アールシフト",
+      "label": "個別見積もり",
+      "note": "",
+      "kind": "quote"
+    },
+    {
+      "id": "OF-JP26",
+      "name": "らくしふ",
+      "label": "非公開",
+      "note": "",
+      "kind": "unpublished"
+    },
+    {
+      "id": "OF-JP27",
+      "name": "Airシフト",
+      "label": "月額330円 / 人",
+      "note": "Airシフト 利用料 · 税込 · 最低月額990円",
+      "kind": "published"
+    },
+    {
+      "id": "OF-JP28",
+      "name": "シフト屋さん Public API / MCP",
+      "label": "無料β",
+      "note": "正式提供後の料金は未公開",
+      "kind": "free"
+    },
+    {
+      "id": "OF-US01",
+      "name": "RosterLab AI",
+      "label": "個別見積もり",
+      "note": "適用料金はお問い合わせください",
+      "kind": "quote"
+    },
+    {
+      "id": "OF-US02",
+      "name": "QGenda Nurse & Staff Scheduling",
+      "label": "非公開",
+      "note": "",
+      "kind": "unpublished"
+    },
+    {
+      "id": "OF-US03",
+      "name": "Smart Square（symplr）",
+      "label": "非公開",
+      "note": "",
+      "kind": "unpublished"
+    },
+    {
+      "id": "OF-US04",
+      "name": "Smartlinx Scheduling",
+      "label": "非公開",
+      "note": "",
+      "kind": "unpublished"
+    },
+    {
+      "id": "OF-US05",
+      "name": "Rotageek",
+      "label": "非公開",
+      "note": "",
+      "kind": "unpublished"
+    },
+    {
+      "id": "OF-US06",
+      "name": "UKG Pro Workforce Management",
+      "label": "個別見積もり",
+      "note": "",
+      "kind": "quote"
+    },
+    {
+      "id": "OF-US07",
+      "name": "Deputy Core",
+      "label": "個別見積もり",
+      "note": "",
+      "kind": "quote"
+    },
+    {
+      "id": "OF-US08",
+      "name": "Nursegrid Manager",
+      "label": "月額USD 5 / 人",
+      "note": "Nursegrid Manager · 税区分未確認",
+      "kind": "published"
+    },
+    {
+      "id": "OF-US09",
+      "name": "Connecteam Operations Hub Expert",
+      "label": "月額USD 119 / アカウント",
+      "note": "Operations Expert 月払（30人まで） · 税区分未確認 · 30人まで",
+      "kind": "published"
+    },
+    {
+      "id": "OF-US10",
+      "name": "Timefold Employee Shift Scheduling API",
+      "label": "個別見積もり",
+      "note": "",
+      "kind": "quote"
+    },
+    {
+      "id": "OF-US11",
+      "name": "Allocate Optima",
+      "label": "個別見積もり",
+      "note": "",
+      "kind": "quote"
+    },
+    {
+      "id": "OF-US12",
+      "name": "ShiftWizard",
+      "label": "非公開",
+      "note": "",
+      "kind": "unpublished"
+    },
+    {
+      "id": "OF-US13",
+      "name": "Lantum In-Genius Rota",
+      "label": "非公開",
+      "note": "",
+      "kind": "unpublished"
+    },
+    {
+      "id": "OF-US14",
+      "name": "Patchwork Rota",
+      "label": "非公開",
+      "note": "",
+      "kind": "unpublished"
+    },
+    {
+      "id": "OF-US15",
+      "name": "Clairvia",
+      "label": "非公開",
+      "note": "",
+      "kind": "unpublished"
+    },
+    {
+      "id": "OF-US16",
+      "name": "PerfectServe Lightning Bolt",
+      "label": "個別見積もり",
+      "note": "",
+      "kind": "quote"
+    },
+    {
+      "id": "OF-US17",
+      "name": "Humanity Schedule",
+      "label": "月額USD 2.75 / 人",
+      "note": "Essentials 年契約 · 税区分未確認 · 年契約（月額換算）",
+      "kind": "published"
+    },
+    {
+      "id": "OF-US18",
+      "name": "Quinyx",
+      "label": "非公開",
+      "note": "",
+      "kind": "unpublished"
+    },
+    {
+      "id": "OF-US19",
+      "name": "When I Work",
+      "label": "個別見積もり",
+      "note": "適用料金はお問い合わせください",
+      "kind": "quote"
+    },
+    {
+      "id": "OF-US20",
+      "name": "Planday",
+      "label": "個別見積もり",
+      "note": "",
+      "kind": "quote"
+    },
+    {
+      "id": "OF-US21",
+      "name": "RosterElf",
+      "label": "月額AUD 8 / 人",
+      "note": "Core 月払い · 税別 · 最低3人",
+      "kind": "published"
+    },
+    {
+      "id": "OF-US22",
+      "name": "Sona",
+      "label": "非公開",
+      "note": "",
+      "kind": "unpublished"
+    }
+  ],
+  "checks": {
+    "all_50_price_summaries_unchanged": true,
+    "smartlinx_store_free_does_not_make_corporate_free": true,
+    "unknown_pricing_unit_commitment_preserved": true,
+    "independent_tests_performed": false
+  }
+}

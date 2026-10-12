@@ -1,0 +1,104 @@
+{
+  "status": "passed",
+  "official_sources": 8,
+  "checked_on": "2026-10-12",
+  "sources": [
+    {
+      "key": "pricing",
+      "url": "https://www.rosterelf.com/pricing",
+      "title": "RosterElf Australia (Global) pricing",
+      "publisher": "Roster Elf Pty Ltd",
+      "reference": "公式ページ本文・見出し・FAQ（各findingsのlocator参照）",
+      "retrieved_on": "2026-10-12",
+      "method": "public_web_body",
+      "method_note": "AUD・GST除外の現行料金、Flex FAQ、plan changesの総括。既存B04料金・月3人/年10席・5日猶予は再登録しない。 全文・原本画像・本文ハッシュ未保存。アカウント登録・製品試験・問い合わせ・外部送信未実施。"
+    },
+    {
+      "key": "minimum",
+      "url": "https://www.rosterelf.com/support/knowledge-base/billing-and-subscription/minimum-monthly-fee",
+      "title": "Minimum staff policy",
+      "publisher": "Roster Elf Pty Ltd",
+      "reference": "公式ページ本文・見出し・FAQ（各findingsのlocator参照）",
+      "retrieved_on": "2026-10-12",
+      "method": "public_web_body",
+      "method_note": "選択席数×年単価×12か月、一般管理者計数とMy Accountant例外。Flex固有の適用は未確認。 全文・原本画像・本文ハッシュ未保存。アカウント登録・製品試験・問い合わせ・外部送信未実施。",
+      "updated_on": "2026-09-07"
+    },
+    {
+      "key": "seats",
+      "url": "https://www.rosterelf.com/support/knowledge-base/billing-and-subscription/update-annual-plan-seats",
+      "title": "Update annual plan seats",
+      "publisher": "Roster Elf Pty Ltd",
+      "reference": "公式ページ本文・見出し・FAQ（各findingsのlocator参照）",
+      "retrieved_on": "2026-10-12",
+      "method": "public_web_body",
+      "method_note": "手動購入と職員有効化の超過を区別。減席の適用日と在籍者入替の計数。 全文・原本画像・本文ハッシュ未保存。アカウント登録・製品試験・問い合わせ・外部送信未実施。",
+      "updated_on": "2026-09-16"
+    },
+    {
+      "key": "proration",
+      "url": "https://www.rosterelf.com/support/knowledge-base/billing-and-subscription/understanding-your-prorated-invoice",
+      "title": "Understanding your prorated invoice",
+      "publisher": "Roster Elf Pty Ltd",
+      "reference": "公式ページ本文・見出し・FAQ（各findingsのlocator参照）",
+      "retrieved_on": "2026-10-12",
+      "method": "public_web_body",
+      "method_note": "年Core12席→14席の控除・加算例、残期間の日割り。具体的金額・課税を算出しない。 全文・原本画像・本文ハッシュ未保存。アカウント登録・製品試験・問い合わせ・外部送信未実施。",
+      "updated_on": "2026-06-24"
+    },
+    {
+      "key": "tax",
+      "url": "https://www.rosterelf.com/support/knowledge-base/billing-and-subscription/set-country-specific-tax-settings-in-rosterelf",
+      "title": "Tax region and GST on your invoice",
+      "publisher": "Roster Elf Pty Ltd",
+      "reference": "公式ページ本文・見出し・FAQ（各findingsのlocator参照）",
+      "retrieved_on": "2026-10-12",
+      "method": "public_web_body",
+      "method_note": "請求のTax Region SettingによるGST処理と次回請求からの適用。実際の設定変更なし。 全文・原本画像・本文ハッシュ未保存。アカウント登録・製品試験・問い合わせ・外部送信未実施。",
+      "updated_on": "2026-09-16"
+    },
+    {
+      "key": "accountant",
+      "url": "https://www.rosterelf.com/support/knowledge-base/account-setup-and-admin/assigning-accountant-bookkeeper-advisor-permission",
+      "title": "Add accountant or bookkeeper access",
+      "publisher": "Roster Elf Pty Ltd",
+      "reference": "公式ページ本文・見出し・FAQ（各findingsのlocator参照）",
+      "retrieved_on": "2026-10-12",
+      "method": "public_web_body",
+      "method_note": "My Accountant経由の1名限定・閲覧用無料アクセス。一般管理者とは区別。招待・権限変更なし。 全文・原本画像・本文ハッシュ未保存。アカウント登録・製品試験・問い合わせ・外部送信未実施。",
+      "updated_on": "2026-09-30"
+    },
+    {
+      "key": "plans",
+      "url": "https://www.rosterelf.com/support/knowledge-base/billing-and-subscription/changing-plans",
+      "title": "Changing your subscription plan",
+      "publisher": "Roster Elf Pty Ltd",
+      "reference": "公式ページ本文・見出し・FAQ（各findingsのlocator参照）",
+      "retrieved_on": "2026-10-12",
+      "method": "public_web_body",
+      "method_note": "Web取得表示は2026-05-22だったが公開ブラウザと公式記事一覧は2026-10-01。通常の公開本文で日付・変更表を確認。価格FAQとの相反を保持。 全文・原本画像・本文ハッシュ未保存。アカウント登録・製品試験・問い合わせ・外部送信未実施。",
+      "updated_on": "2026-10-01"
+    },
+    {
+      "key": "sms",
+      "url": "https://www.rosterelf.com/support/knowledge-base/notifications-and-alerts/roster-notifications-for-staff",
+      "title": "Roster notifications for staff",
+      "publisher": "Roster Elf Pty Ltd",
+      "reference": "公式ページ本文・見出し・FAQ（各findingsのlocator参照）",
+      "retrieved_on": "2026-10-12",
+      "method": "public_web_body",
+      "method_note": "公式KBのSMS検索から公開ブラウザで本文確認。SMS ($0.05 per SMS)、既定未選択、Email/Push Freeのラベル。通貨・税・Flex適用は未特定。 全文・原本画像・本文ハッシュ未保存。アカウント登録・製品試験・問い合わせ・外部送信未実施。",
+      "updated_on": "2026-10-07"
+    }
+  ],
+  "updated_date_difference": {
+    "url": "https://www.rosterelf.com/support/knowledge-base/billing-and-subscription/changing-plans",
+    "web_display": "2026-05-22",
+    "public_browser_and_official_index": "2026-10-01",
+    "used": "public_browser_current_display"
+  },
+  "full_text_archived": false,
+  "independent_tests_performed": false,
+  "external_contact": false,
+  "scope": "Public AU global sources; no private contract obtained"
+}

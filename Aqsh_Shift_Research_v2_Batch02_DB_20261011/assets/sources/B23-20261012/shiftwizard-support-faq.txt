@@ -1,0 +1,28 @@
+Shi$Wizard Support FAQs
+Shi$Wizard Support Just Got Be4er
+Beginning June 1, 2023, you may no2ce some changes to the Shi8Wizard 
+support process
+Shi$Wizard support is moving away from ZenDesk and taking advantage of the enterprise 
+Salesforce pla=orm within HealthStream.
+This process will be seamless for the end user, as entering your Support Request within 
+Shi$Wizard will remain the same. We will manage these cases in Salesforce and sEll provide you 
+with a confirmaEon email and case number to manage your requests.
+FAQs
+Will I s'll enter Support 'ckets (cases) through the Shi7Wizard pla:orm?
+Answer: Yes! Support cases should always be entered through the Shi7Wizard pla:orm, the same as 
+you enter them today. You will s>ll go under “Help” on the menu bar and select “Request Support” to 
+enter your case. It will be the same form you use to submit today. 
+Is the support form on the Shi7Wizard pla:orm changing?
+Answer: No, the form is the same. Con>nue to enter support cases using the support form on the 
+Shi7Wizard pla:orm. You will s>ll receive a confirma>on email with your case number and valida>on 
+your request has been submiJed to the Shi7Wizard support team.
+Now that Shi7Wizard is part of the HealthStream family of products, is my support team changing?
+Answer: No, the same group of talented Customer Support Specialists will con>nue to handle your 
+support needs.
+It sounds like things are remaining the same for the most part. What is changing?
+Answer: The main change will be the way in which Admins view their own submiJed support cases as 
+well as the cases opened at their facility. To beJer serve our customers, we are offering a login 
+specifically for Shi7Wizard Administrators to manage their cases in a more centralized approach. There is 
+a new process to submit for a unique UserID for the Salesforce Customer Portal that allows you to view 
+“My Cases” as well as all cases entered for your Facility/Facili>es. Please reach out to Customer Support 
+to take advantage of this enhanced feature. 

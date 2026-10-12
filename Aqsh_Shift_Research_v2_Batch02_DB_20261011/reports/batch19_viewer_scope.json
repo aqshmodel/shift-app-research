@@ -1,0 +1,27 @@
+{
+  "status": "passed",
+  "offering_id": "OF-US04",
+  "checks": [
+    {
+      "width": 1440,
+      "status": "passed",
+      "new_batch_cards": 1,
+      "source_links": 4,
+      "old_B14_visible": true,
+      "unknown_contract_notes_visible": true,
+      "horizontal_overflow": false
+    },
+    {
+      "width": 390,
+      "status": "passed",
+      "new_batch_cards": 1,
+      "source_links": 4,
+      "old_B14_visible": true,
+      "unknown_contract_notes_visible": true,
+      "horizontal_overflow": false
+    }
+  ],
+  "page_errors": [],
+  "external_requests": "blocked for isolated local verification",
+  "independent_product_tests": false
+}

@@ -1,0 +1,21 @@
+{
+  "status": "passed",
+  "tasks_marked_done": 0,
+  "task_id": "B04-20261011-TASK005",
+  "task_state": "in_progress",
+  "known_partial": [
+    "selected annual seats basis",
+    "single accountant view user excluded",
+    "manual immediate versus five-day staff activation reconciliation",
+    "decrease effective next billing date",
+    "12 to 14 seat residual period credit/charge example",
+    "invoice tax region rule",
+    "SMS literal $0.05 display"
+  ],
+  "unfulfilled": [
+    "Flex minimum count/amount and applicability of general all-plans policy",
+    "Flex SMS ISO currency, tax, destination/segment/failed-send count and contract applicability",
+    "pricing FAQ general next-cycle sentence versus granular immediate change rules"
+  ],
+  "no_guessed_contract_or_price": true
+}

@@ -1,0 +1,20 @@
+{
+  "web_snapshots": {
+    "B18": 4,
+    "B23": 5,
+    "B24": 6,
+    "all_prior_rows_preserved": true
+  },
+  "web_products": {
+    "B18": 200,
+    "B23": 250,
+    "B24": 300,
+    "all_prior_rows_preserved": true
+  },
+  "web_categories": {
+    "B18": 244,
+    "B23": 305,
+    "B24": 366,
+    "all_prior_rows_preserved": true
+  }
+}

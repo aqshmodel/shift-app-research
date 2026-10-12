@@ -1,0 +1,9 @@
+{
+  "status": "passed",
+  "new_findings": 9,
+  "exact_summary_duplicates": 0,
+  "new_price_components": 0,
+  "existing_price_components": 118,
+  "old_B04_fee_threshold_and_grace_records_reused": true,
+  "additional_meaning": "seat count, accountant exception, billing flow, proration, invoice region, SMS literal and remaining scope; unresolved plan timing retained"
+}

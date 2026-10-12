@@ -1,0 +1,101 @@
+{
+  "batch_id": "B19-20261012",
+  "status": "passed",
+  "checked_at": "2026-10-12T13:16:48.223773+00:00",
+  "as_of_date": "2026-10-12",
+  "research_sha256": "03af570704d465ca4ebdb5ebafab1fdc03456f4708a1b4ed7137074587f8af91",
+  "prepared_public_snapshot": "B19-20261012-pub2",
+  "prepared_content_sha256": "3a283bf95e799fd75bfbdeab07194e6a2e0dc39c08e1e18fccb4af02045c18f2",
+  "last_verified_production_saved_record": "B12-20261012-pub2",
+  "production_current_rechecked": false,
+  "checks": {
+    "sqlite_integrity_foreign_keys_sql_roundtrip": {
+      "status": "passed",
+      "record": "db_validation_batch19.json"
+    },
+    "history_preservation": {
+      "status": "passed",
+      "tables": 39,
+      "record": "batch19_history_preservation.json"
+    },
+    "regression": {
+      "status": "passed",
+      "tests": 67,
+      "record": "batch19_regression.json"
+    },
+    "all_50_prices": {
+      "status": "passed",
+      "record": "batch19_price_summaries.json",
+      "unchanged_from_B18": true
+    },
+    "static_viewer": {
+      "status": "passed",
+      "record": "viewer_validation_batch19.json"
+    },
+    "affected_details": {
+      "status": "passed",
+      "record": "batch19_viewer_scope.json",
+      "viewports": [
+        1440,
+        390
+      ],
+      "mobile_visual_inspection": true
+    },
+    "deduplication": {
+      "status": "passed",
+      "record": "batch19_deduplication.json"
+    },
+    "sources": {
+      "status": "passed",
+      "record": "batch19_source_verification.json"
+    },
+    "comparison_delta_B12": {
+      "status": "passed",
+      "statements": 1457,
+      "record": "../../apps/web/data/research-update-B12-to-B19.json"
+    },
+    "comparison_delta_B18": {
+      "status": "passed",
+      "statements": 184,
+      "record": "../../apps/web/data/research-update-B18-to-B19.json"
+    }
+  },
+  "continued_research": {
+    "batch_id": "B19-20261012",
+    "new_document_findings": 5,
+    "editorial_corrections": 0,
+    "new_price_components": 0,
+    "reference_regulations": 0,
+    "source_retrievals": 4,
+    "functional_research_sources": 4,
+    "functional_research_products": 1,
+    "products_including_classification_corrections": 1,
+    "finding_states": {
+      "known": 3,
+      "not_found": 2
+    }
+  },
+  "task_states": {
+    "blocked": 78,
+    "done": 2,
+    "in_progress": 220,
+    "not_started": 680
+  },
+  "tasks_marked_done": 0,
+  "new_tasks": 0,
+  "unfinished": 978,
+  "priority1_open": 29,
+  "independent_tests_performed": false,
+  "remote_d1_updated": false,
+  "production_deployed": false,
+  "staging_deployed": false,
+  "commit_push_ci_requested": false,
+  "typecheck_and_build": "No app implementation changes; comprehensive C02T05 includes new research and type/build/browser verification",
+  "headless_browser": {
+    "initial_sandbox": "SIGABRT at launch",
+    "approval_review": "approved",
+    "isolated_browser_recheck": "passed",
+    "external_http_requests": "blocked"
+  },
+  "cost": "No new paid API, deployment, CI, plan or budget changes. Account costs not rechecked because publication is outside this turn."
+}

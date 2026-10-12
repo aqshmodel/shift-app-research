@@ -1,0 +1,197 @@
+{
+  "batch_id": "B24-20261012",
+  "prior_batch": "B23-20261012",
+  "as_of_date": "2026-10-12",
+  "resolution_policy_version": 2,
+  "description": "SHIFTEE未着手課題の限定調査：夜勤明け、店舗表示、希望収集と用途・分母を区別した2導入事例",
+  "method": "6公式公開本文と事例一覧のリンクを確認。未着手C02/B06/E01/Q04を優先し、既存K03の初回/月次/手動工程を追加。機能の部分確認と設問完了、会社規模と製品計算規模、経過日数と作業時間、医師当直と看護勤務を区別。既存料金・既存一般機能・公開されない契約事項だけの巡回を重複追加しない。全文・本文ハッシュ未保存。外部送信・問い合わせ・登録・試用・製品独立試験・認証/課金/本番操作なし。",
+  "sources": [
+    {
+      "key": "auto",
+      "url": "https://www.shifteeapp.jp/functions/シフト自動作成（月）/",
+      "title": "SHIFTEE シフトAI自動作成（月）",
+      "publisher": "SHIFTEE公式サイト",
+      "reference": "自動作成の流れ / 夜勤に関するQ&A",
+      "retrieved_on": "2026-10-12",
+      "method": "public_web_body",
+      "method_note": "Web本文L39〜73。公式の通常公開本文を確認。公開・最終更新日は未表示。全文・本文ハッシュ・原本画像は未保存。検索要約だけでは採用しない。事例は提供者サイト掲載の利用者発言で、利用者自身の独立発信・製品独立試験とは区別。"
+    },
+    {
+      "key": "functions",
+      "url": "https://www.shifteeapp.jp/function/",
+      "title": "SHIFTEE 機能紹介：標準機能とオプション",
+      "publisher": "SHIFTEE公式サイト",
+      "reference": "店舗管理Full / シフト収集Light・Full / AI自動作成Fullオプション",
+      "retrieved_on": "2026-10-12",
+      "method": "public_web_body",
+      "method_note": "Web本文L45〜66。公式の通常公開本文を確認。公開・最終更新日は未表示。全文・本文ハッシュ・原本画像は未保存。検索要約だけでは採用しない。事例は提供者サイト掲載の利用者発言で、利用者自身の独立発信・製品独立試験とは区別。"
+    },
+    {
+      "key": "stores",
+      "url": "https://www.shifteeapp.jp/functions/店舗管理/",
+      "title": "SHIFTEE 店舗管理",
+      "publisher": "SHIFTEE公式サイト",
+      "reference": "店舗単位の管理 / 他店のリアルタイム確認 / エリア表示",
+      "retrieved_on": "2026-10-12",
+      "method": "public_web_body",
+      "method_note": "Web本文L39〜44。公式の通常公開本文を確認。公開・最終更新日は未表示。全文・本文ハッシュ・原本画像は未保存。検索要約だけでは採用しない。事例は提供者サイト掲載の利用者発言で、利用者自身の独立発信・製品独立試験とは区別。"
+    },
+    {
+      "key": "collection",
+      "url": "https://www.shifteeapp.jp/functions/シフト収集/",
+      "title": "SHIFTEE シフト収集",
+      "publisher": "SHIFTEE公式サイト",
+      "reference": "提出画面 / 収集間隔 / 再提出Q&A",
+      "retrieved_on": "2026-10-12",
+      "method": "public_web_body",
+      "method_note": "Web本文L47〜82。公式の通常公開本文を確認。公開・最終更新日は未表示。全文・本文ハッシュ・原本画像は未保存。検索要約だけでは採用しない。事例は提供者サイト掲載の利用者発言で、利用者自身の独立発信・製品独立試験とは区別。"
+    },
+    {
+      "key": "jr",
+      "url": "https://www.shifteeapp.jp/case/jr四国ステーション開発株式会社/",
+      "title": "JR四国ステーション開発株式会社：SHIFTEE導入事例",
+      "publisher": "SHIFTEE公式サイト",
+      "reference": "会社の対象規模 / 導入前後 / 店長・学生の意見",
+      "retrieved_on": "2026-10-12",
+      "method": "public_web_body",
+      "method_note": "Web本文L43〜71。公式の通常公開本文を確認。公開・最終更新日は未表示。全文・本文ハッシュ・原本画像は未保存。検索要約だけでは採用しない。事例は提供者サイト掲載の利用者発言で、利用者自身の独立発信・製品独立試験とは区別。"
+    },
+    {
+      "key": "hospital",
+      "url": "https://www.shifteeapp.jp/case/日本赤十字社　古河赤十字病院/",
+      "title": "日本赤十字社 古河赤十字病院：SHIFTEE導入事例",
+      "publisher": "SHIFTEE公式サイト",
+      "reference": "医師の日当直と希望・配布",
+      "retrieved_on": "2026-10-12",
+      "method": "public_web_body",
+      "method_note": "Web本文L43〜49。公式の通常公開本文を確認。公開・最終更新日は未表示。全文・本文ハッシュ・原本画像は未保存。検索要約だけでは採用しない。事例は提供者サイト掲載の利用者発言で、利用者自身の独立発信・製品独立試験とは区別。"
+    }
+  ],
+  "findings": [
+    {
+      "product": "JP17",
+      "criterion": "C02",
+      "source": "auto",
+      "summary": "月間AI自動作成のQ&Aは、夜勤後に明けを経て休日を置きたいという質問に対し、夜勤明け後に休日を必ず入れる設定が可能と回答する。希望条件は打合せで確認し、標準設定で実現できない場合はバージョンアップや有償カスタマイズも案内する。",
+      "locator": "夜勤→明け→休のQ&A",
+      "limitations": "Full向け追加オプションという既存範囲を保持。日跨ぎ勤務の開始終了時刻、日付帰属、明けの勤務日数計数、連続夜勤、時間外の扱いは本文に未特定。すべての夜勤条件が標準・無料・必ず適用とはしない。公開・更新日未表示。実製品・境界条件の試験なし。",
+      "state": "known",
+      "delivery": "addon",
+      "support": "limited"
+    },
+    {
+      "product": "JP17",
+      "criterion": "K03",
+      "source": "auto",
+      "summary": "自動作成の手順は、職員ごとの条件を大きな変更がなければ初回に設定し、必要出勤人数を毎月の曜日別または日別に設定して実行した後、修正があれば手動で最終調整すると説明する。具体的設定内容は別途案内とされる。",
+      "locator": "シフトAI自動作成の流れ 1〜4 / 設定内容の別途案内",
+      "limitations": "初回・月次・最終調整の工程を部分確認。入力・ルール設定・マスター更新を顧客と提供者のどちらが行うか、権限・工数・代行料金は未確定。既存FAQの一般導入支援とは別の具体的な運用手順。手動調整を自動検算・自動承認と扱わない。",
+      "state": "known",
+      "delivery": "addon",
+      "support": "limited"
+    },
+    {
+      "product": "JP17",
+      "criterion": "B06",
+      "source": "stores",
+      "summary": "シフト表は店舗単位で管理し、他店のシフト状況をリアルタイムに確認でき、エリア全体の表示モードもあると説明する。機能一覧では店舗管理をFullの標準機能に分類する。",
+      "locator": "店舗管理本文 / 対照：機能紹介の標準機能・店舗管理Full",
+      "limitations": "参照先=https://www.shifteeapp.jp/function/。表示・管理の共有についての根拠。店舗横断で必要人数・職員移動・希望を一つのモデルとして同時最適化する説明は未確認。Lightに含むとせず、Fullの店舗管理と別料金の月間AI自動作成を区別する。権限分離・更新遅延・拠点上限の実測なし。",
+      "state": "known",
+      "delivery": "native",
+      "support": "limited"
+    },
+    {
+      "product": "JP17",
+      "criterion": "E01",
+      "source": "collection",
+      "summary": "希望提出画面は個人ごとに表示する勤務パターンを絞り込め、自由入力の表示可否と曜日ごとの固定勤務パターンを設定できる。企業ごとに希望収集を月または半月とし、提出後の再提出を許可するかも切り替えられる。",
+      "locator": "提出画面 / 収集間隔Q&A / 再提出Q&A",
+      "limitations": "Light・Fullの希望収集の具体的設定を部分確認。希望提出・曜日パターンを、承認済み有給休暇の確定・取消権限・再最適化時の必須固定と同一扱いしない。希望と確定休暇を分けるデータ構造・承認状態・競合処理は未確認。既存スマホ提出・未提出通知の一般説明は重複追加しない。",
+      "state": "known",
+      "delivery": "native",
+      "support": "limited"
+    },
+    {
+      "product": "JP17",
+      "criterion": "Q04",
+      "source": "jr",
+      "summary": "JR四国ステーション開発の掲載事例は、社員・パート等400人あまり、ショッピングセンター3店舗と直営15店舗等の運営を背景に、勤務表の収集・転記・作成・配布が通常業務の合間で3〜5日かかっていたものを、導入後は1日あれば完成できると利用者が述べる。",
+      "locator": "対象規模の説明 / 導入前の課題 / 導入後の変化",
+      "limitations": "提供者サイト掲載の利用者発言。400人は会社の従業員規模で、実導入の登録人数・対象店舗数・一回の計算人数ではない。日数は経過期間を含む説明で労働時間ではなく、削減率やROIを計算しない。計測期間・担当者数・入力規模・契約プラン・AIオプション使用・費用は未表示。独立評価・看護勤務の一般効果へ拡張しない。",
+      "state": "known",
+      "delivery": "unknown",
+      "support": "limited"
+    },
+    {
+      "product": "JP17",
+      "criterion": "Q04",
+      "source": "hospital",
+      "summary": "古河赤十字病院の掲載事例は医師の日当直の作成を導入用途とし、希望の取りまとめと調整の時間短縮、医師へのメール配布と急な変更への利用を述べる。医師希望休を考慮する自動作成がニーズとして示される。",
+      "locator": "医師の日当直の導入本文 / 課題・ニーズ",
+      "limitations": "提供者掲載の利用者発言で、看護師・病棟の交代勤務、様式9、配置基準の適合を示すものではない。医師数・勤務枠数・期間・削減時間・希望実現の分母・プラン・費用は未表示。医師同士の変更を自動承認や変更履歴の検証とは扱わない。",
+      "state": "known",
+      "delivery": "unknown",
+      "support": "limited"
+    }
+  ],
+  "prices": [],
+  "followups": [],
+  "task_updates": [
+    {
+      "task_id": "TASK-RES00727",
+      "state": "in_progress",
+      "priority": 3,
+      "method": "vendor_document",
+      "note": "B24：夜勤明け後の休日設定と標準で実現できない時の有償対応を部分確認。時刻・帰属・計数・境界条件は未確認。"
+    },
+    {
+      "task_id": "TASK-RES00747",
+      "state": "in_progress",
+      "priority": 3,
+      "method": "vendor_document",
+      "note": "B24：初回職員条件・月次人数・実行・手動最終調整の工程を追加。主体分担・工数・代行料金は未確認。"
+    },
+    {
+      "task_id": "TASK-RES00724",
+      "state": "in_progress",
+      "priority": 3,
+      "method": "vendor_document",
+      "note": "B24：Fullの店舗別・他店リアルタイム・エリア表示を確認。横断同時最適化と権限・上限は未確認。"
+    },
+    {
+      "task_id": "TASK-RES00732",
+      "state": "in_progress",
+      "priority": 3,
+      "method": "vendor_document",
+      "note": "B24：希望の個人パターン・自由入力・固定曜日・収集周期・再提出設定を追加。確定休暇の承認状態と固定は未確認。"
+    },
+    {
+      "task_id": "TASK-RES00761",
+      "state": "in_progress",
+      "priority": 3,
+      "method": "vendor_document",
+      "note": "B24：JR四国の会社規模・3〜5日から1日という発言と古河赤十字病院の医師日当直用途を追加。独立計測・計算分母・費用・期間は不足。"
+    }
+  ],
+  "retrieval_checks": [
+    {
+      "product": "JP17",
+      "url": "https://www.shifteeapp.jp/cases/",
+      "result": "official_directory_followed_to_two_case_bodies",
+      "notes": "一覧の要約だけで効果判定せず、JR四国と古河赤十字の個別本文を採用。その他一覧の多数事例は本ターン登録しない。"
+    },
+    {
+      "product": "JP17",
+      "url": "https://www.shifteeapp.jp/function/",
+      "result": "existing_general_features_reused_plan_scope_only_added",
+      "notes": "相性・過不足・スキル所持・Excel・料金・支援時間の既存内容は再追加しない。Light/Fullラベルで店舗管理の範囲を照合。"
+    },
+    {
+      "product": "JP17",
+      "url": "https://www.shifteeapp.jp/functions/シフト収集/",
+      "result": "fixed_submission_pattern_not_assumed_pinned_assignment",
+      "notes": "曜日固定パターンは提出画面の設定であり、H01の最適化時pinned固定の証拠としない。確定休暇の区別は追加未確認のまま。"
+    }
+  ]
+}

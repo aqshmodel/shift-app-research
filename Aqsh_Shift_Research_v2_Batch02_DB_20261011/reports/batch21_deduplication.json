@@ -1,0 +1,15 @@
+{
+  "status": "passed",
+  "new_findings": 8,
+  "new_source_revisions": 4,
+  "new_research_documents": 3,
+  "finding_states": {
+    "known": 6,
+    "not_found": 2
+  },
+  "existing_B01_B07_P01_preserved": true,
+  "new_prices": 0,
+  "new_tasks": 0,
+  "tasks_marked_done": 0,
+  "exact_unknown_amounts_not_filled": true
+}

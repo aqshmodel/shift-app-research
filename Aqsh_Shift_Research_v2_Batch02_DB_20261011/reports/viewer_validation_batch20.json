@@ -1,0 +1,15 @@
+{
+  "status": "passed",
+  "batch": "B20-20261012",
+  "cards_before_filter": 50,
+  "enriched": 1,
+  "unique_document_observations": 2051,
+  "viewports": [
+    1440,
+    390
+  ],
+  "record": "batch20_viewer_scope.json",
+  "scope": "Scoped browser validation; no claim of rerunning all historical viewer cases",
+  "unique_document_ids_verified": true,
+  "dataset_matches_SQLite_counts": true
+}

@@ -1,0 +1,18 @@
+{
+  "status": "passed",
+  "new_document_findings": 9,
+  "new_source_revisions": 7,
+  "new_research_documents": 6,
+  "finding_states": {
+    "known": 5,
+    "disputed": 1,
+    "not_found": 3
+  },
+  "existing_B04_B05_B06_preserved": true,
+  "B11_OF_US05_observations": 0,
+  "new_prices": 0,
+  "new_tasks": 0,
+  "done_tasks": 0,
+  "contract_table_conflict_not_resolved_by_guess": true,
+  "B01_auto_assignment_unchanged": true
+}

@@ -1,0 +1,110 @@
+{
+  "status": "passed",
+  "batch_id": "B20-20261012",
+  "checked_at": "2026-10-12T13:42:18.930012+00:00",
+  "research_sha256": "b5dc147f29c5fd4d74180ef900ea3918d51c901f685c780833e10407fd719b48",
+  "prepared_public_snapshot": "B20-20261012-pub2",
+  "prepared_content_sha256": "027d68ae79d6ac25dcc5b3e8f076d06b213e800960db954d306ebad2d020a903",
+  "checks": {
+    "db": {
+      "status": "passed",
+      "record": "db_validation_batch20.json"
+    },
+    "history": {
+      "status": "passed",
+      "tables": 39,
+      "record": "batch20_history_preservation.json"
+    },
+    "regression": {
+      "status": "passed",
+      "tests": 67,
+      "record": "batch20_regression.json"
+    },
+    "all_50_prices": {
+      "status": "passed",
+      "record": "batch20_price_summaries.json",
+      "unchanged_from_B19": true
+    },
+    "browser": {
+      "status": "passed",
+      "record": "batch20_viewer_scope.json",
+      "viewports": [
+        1440,
+        390
+      ]
+    },
+    "sources": {
+      "status": "passed",
+      "record": "batch20_source_verification.json"
+    },
+    "deduplication": {
+      "status": "passed",
+      "record": "batch20_deduplication.json"
+    }
+  },
+  "continued_research": {
+    "batch_id": "B20-20261012",
+    "new_document_findings": 9,
+    "editorial_corrections": 0,
+    "new_price_components": 0,
+    "reference_regulations": 0,
+    "source_retrievals": 7,
+    "functional_research_sources": 7,
+    "functional_research_products": 1,
+    "products_including_classification_corrections": 1,
+    "finding_states": {
+      "known": 5,
+      "disputed": 1,
+      "not_found": 3
+    }
+  },
+  "task_states": {
+    "blocked": 78,
+    "done": 2,
+    "in_progress": 223,
+    "not_started": 677
+  },
+  "unfinished": 978,
+  "priority1_open": 29,
+  "tasks_started": 3,
+  "tasks_marked_done": 0,
+  "new_tasks": 0,
+  "independent_tests_performed": false,
+  "production_current_rechecked": false,
+  "remote_d1_updated": false,
+  "production_deployed": false,
+  "staging_deployed": false,
+  "commit_push_ci": false,
+  "typecheck_build_full_browser": "No implementation change; C02T05 comprehensive verification also includes substantive new research",
+  "cost": "No paid API or remote operations; no budget/plan/auth changes",
+  "local_server": {
+    "initial_sandbox_bind": "PermissionError",
+    "escalation_review": "approved",
+    "host": "127.0.0.1",
+    "port": 63923,
+    "stopped": true
+  },
+  "comparison_deltas": {
+    "B12": {
+      "status": "passed",
+      "statement_count": 1545,
+      "sql_sha256": "793e2ea2804b9bedd70a495a015358d963c8e029b7f841d62703f316803ef969",
+      "local_sql_roundtrip": "passed",
+      "baselines": "Historical saved/local files only; current production not inspected"
+    },
+    "B18": {
+      "status": "passed",
+      "statement_count": 271,
+      "sql_sha256": "273eb044758d7a3bb6100da1e15f29d2eee3c799bfc757031705f808fa114528",
+      "local_sql_roundtrip": "passed",
+      "baselines": "Historical saved/local files only; current production not inspected"
+    },
+    "B19": {
+      "status": "passed",
+      "statement_count": 206,
+      "sql_sha256": "7eabb672680158e2658b1428a2569c38b95af424c97ed288694f0da14e127901",
+      "local_sql_roundtrip": "passed",
+      "baselines": "Historical saved/local files only; current production not inspected"
+    }
+  }
+}

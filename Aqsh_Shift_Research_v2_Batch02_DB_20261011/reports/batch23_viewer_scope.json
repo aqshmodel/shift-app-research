@@ -1,0 +1,34 @@
+{
+  "status": "passed",
+  "batch_id": "B23-20261012",
+  "static_comparison": {
+    "method": "CUA Chrome on isolated static server, after regenerated HTML cache refresh",
+    "records": 2074,
+    "products": 50,
+    "new6_and_prior_B14_hours_visible": true,
+    "unconfirmed_emergency_and_disputed_time_visible": true,
+    "viewports": [
+      1440,
+      390
+    ],
+    "horizontal_overflow": false
+  },
+  "public_product": {
+    "method": "CUA Chrome on latest built local Worker",
+    "product": "OF-US12",
+    "viewports": [
+      320,
+      390,
+      768,
+      1440
+    ],
+    "horizontal_overflow": false,
+    "record_wrap": "anywhere",
+    "disputed_and_onboarding_not_SLA_visible": true,
+    "PDF_source_link_visible": true,
+    "console_errors_returned": 0
+  },
+  "initial_overflow": "Long source URLs in historical record paragraph. Corrected in public detail CSS and static template; registered batch and evidence unchanged.",
+  "screenshots": "CUA inspection images in conversation; full suite images in durable logs",
+  "all_local_servers_stopped": true
+}

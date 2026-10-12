@@ -1,6 +1,6 @@
-# Aqsh シフト競合調査 — 第18バッチまで / 未完了課題の継続調査
+# Aqsh シフト競合調査 — 第24バッチまで / 未完了課題の継続調査
 
-2026年10月12日、公開一次資料の追加調査を登録。**50提供単位、2,037文書記録、277調査文書、118料金明細、ロゴ50製品、制度参照17件**。第18バッチはNursegrid Managerの6本文から6記録を追加しました。一括承認を自動最適化とせず、Mobile無料とManager契約を区別し、既存料金と任意機能の注意を重複登録していません。未着手682、確認中218、停止中78、未完了総数978、優先度1の未完了29件。共通40項目の資料採用は592/2,000枠です。本番・検証環境は `B18-20261012-pub2` へ反映済みです。全39調査テーブルと全50サービスを照合しました。最新の公開・復旧記録は [第18バッチまでの本番反映](../docs/research-b18-publication-20261012.md) を参照してください。
+2026年10月12日UTC、公開一次資料の追加調査を登録。**50提供単位、2,080文書記録、304調査文書、118料金明細、ロゴ50製品、制度参照17件**。第24バッチ（C03T01）はSHIFTEEの6公式資料から6部分確認を追加。夜勤明け・初回/月次工程・店舗表示・希望の再提出と2導入事例の対象・分母を記録し、4課題を未着手から確認中へ移動、完了0。未着手670、確認中230、停止78、未完了978、優先度1未完了29。共通資料採用598/2,000は課題完了数と別。2026年10月13日、第24バッチまで本番へ反映し、全件照合を完了しました。
 
 ## 最初に見るファイル
 
@@ -8,6 +8,12 @@
 |---|---|
 | [comparison.html](comparison.html) | ブラウザで開く比較・検索画面。今回追加調査のみの絞り込み、出典、最大4対象の比較 |
 | [research.sqlite3](research.sqlite3) | 最新の正本DB。39テーブル・12ビュー |
+| [第24バッチ調査報告](reports/Batch24_research_report.md) | SHIFTEEの夜勤明け・店舗表示・希望収集と用途・分母を区別した事例 |
+| [第23バッチ調査報告](reports/Batch23_research_report.md) | ShiftWizardの一般/製品支援時間・ケース運用・未解決とC02包括検証 |
+| [第22バッチ調査報告](reports/Batch22_research_report.md) | RosterElfの席・SMS・Flex未確認と変更時期の相反 |
+| [第21バッチ調査報告](reports/Batch21_research_report.md) | Timefoldの支援・利用単位・既定契約と請求条件、完了条件の不足 |
+| [第20バッチ調査報告](reports/Batch20_research_report.md) | Rotageekの比較表矛盾・支援窓口と権限・法人料金の未確認範囲 |
+| [第19バッチ調査報告](reports/Batch19_research_report.md) | Smartlinxの利用条件・無料取得表示・継続支援と法人契約の未確認範囲 |
 | [第18バッチ調査報告](reports/Batch18_research_report.md) | 手動割当・一括承認、自己割当段階と制限、Mobile無料とManager契約、支援の未確認範囲 |
 | [第17バッチ調査報告](reports/Batch17_research_report.md) | QGendaの対象別説明・全社支援・Web規約と製品契約の区別・重複除外 |
 | [第16バッチ調査報告](reports/Batch16_research_report.md) | Smart Squareの周期型勤務・契約と支援の未確認範囲・2事例の測定条件 |
@@ -31,6 +37,9 @@
 | [batches/B12-20261012.json](batches/B12-20261012.json) | 3サービス62記録・24料金明細、12出典取得、PDF3原本、追加課題4件 |
 | [batches/B13-20261012.json](batches/B13-20261012.json) | 4サービス52記録・4料金明細、15出典取得、追加課題5件、B12までの原本・履歴を保持 |
 | [batches/B14-20261012.json](batches/B14-20261012.json) | 4サービス45記録、16出典取得、PDF1原本、追加課題5件、既存の原本・履歴を保持 |
+| [batches/B21-20261012.json](batches/B21-20261012.json) | Timefoldの8記録・4出典取得・3課題更新、料金・完了課題なし |
+| [batches/B20-20261012.json](batches/B20-20261012.json) | Rotageekの9記録・7出典取得・6課題更新、料金・完了課題なし |
+| [batches/B19-20261012.json](batches/B19-20261012.json) | Smartlinxの5記録・4出典取得・5課題更新、料金と完了課題は増やさない |
 | [batches/B15-20261012.json](batches/B15-20261012.json) | 3サービス53記録・2料金明細、16出典取得、公開OpenAPI仕様の照合、追加課題4件 |
 | [batches/B06-20261011.json](batches/B06-20261011.json) | 新規130記録、分類訂正3、出典取得40、制度参照17、課題と進捗の入力データ |
 | [reports/regulation_index.csv](reports/regulation_index.csv) | 行政資料・専門団体手引きの算式、除外、丸め、適用条件と出典 |
@@ -52,7 +61,7 @@
 
 ## D1へ登録する
 
-初回登録には、生のSQLiteファイルではなく`d1/import.sql`を使います。既存D1はこのSQLを再投入せず、直前のエクスポートから生成した差分SQLで更新します。第12バッチまでの本番・検証D1は全39調査テーブルを正本と照合しました。最新の反映状況は [本番反映記録](../docs/research-b12-publication-20261012.md)、研究作成時点の検証は [B12検証記録](reports/batch12_validation.json) を参照してください。
+初回登録には、生のSQLiteファイルではなく`d1/import.sql`を使います。既存D1はこのSQLを再投入せず、直前のエクスポートから生成した差分SQLで更新します。第24バッチまでの本番・検証D1は全39調査テーブルを正本と照合しました。最新の反映状況は [本番反映記録](../docs/research-b24-publication-20261013.md)、研究作成時点の検証は [B12検証記録](reports/batch12_validation.json) を参照してください。
 
 既存のデータがないD1を作り、実際のdatabase_idを指定したWrangler設定を用意してから実行します。
 
@@ -92,6 +101,12 @@ python3 tools/research_db.py ingest --db /tmp/aqsh-rebuilt.sqlite3 --batch batch
 python3 tools/research_db.py ingest --db /tmp/aqsh-rebuilt.sqlite3 --batch batches/B16-20261012.json
 python3 tools/research_db.py ingest --db /tmp/aqsh-rebuilt.sqlite3 --batch batches/B17-20261012.json
 python3 tools/research_db.py ingest --db /tmp/aqsh-rebuilt.sqlite3 --batch batches/B18-20261012.json
+python3 tools/research_db.py ingest --db /tmp/aqsh-rebuilt.sqlite3 --batch batches/B19-20261012.json
+python3 tools/research_db.py ingest --db /tmp/aqsh-rebuilt.sqlite3 --batch batches/B20-20261012.json
+python3 tools/research_db.py ingest --db /tmp/aqsh-rebuilt.sqlite3 --batch batches/B21-20261012.json
+python3 tools/research_db.py ingest --db /tmp/aqsh-rebuilt.sqlite3 --batch batches/B22-20261012.json
+python3 tools/research_db.py ingest --db /tmp/aqsh-rebuilt.sqlite3 --batch batches/B23-20261012.json
+python3 tools/research_db.py ingest --db /tmp/aqsh-rebuilt.sqlite3 --batch batches/B24-20261012.json
 python3 tools/research_db.py stats --db /tmp/aqsh-rebuilt.sqlite3
 ```
 
@@ -114,3 +129,9 @@ verifyはSQL再取り込みによるデータ一致、外部キー、証拠と�
 検証結果：[DB](reports/db_validation.json)、[ローカルD1](reports/d1_local_validation.json)、[画面](reports/viewer_validation.json)。優先度1の残課題：[priority_followups.csv](reports/priority_followups.csv)。
 
 公開アプリとD1の配信手順は、ルートの [apps/web/README.md](../apps/web/README.md) と公開報告を参照してください。
+
+第22バッチの検証：[結果](reports/batch22_validation.json)、[完了条件](reports/batch22_completion_review.json)、[8出典](reports/batch22_source_verification.json)。C02T05はShiftWizard支援時間の追加照合と包括検証・引き継ぎを予定。
+
+C02の最終結果：[B23包括検証](reports/batch23_validation.json)、[全38ケース](reports/batch23_browser_validation.json)、[サイクル履歴](reports/cycle02_history_preservation.json)。現在は停止、次サイクルの開始なし。
+
+第24バッチの検証：[結果](reports/batch24_validation.json)、[完了条件](reports/batch24_completion_review.json)、[出典](reports/batch24_source_verification.json)。C03T02は親の指示待ち。T05にも追加調査を含め包括検証と引き継ぎ後に停止。

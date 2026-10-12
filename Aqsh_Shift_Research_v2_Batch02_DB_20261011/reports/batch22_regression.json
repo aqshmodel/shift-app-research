@@ -1,0 +1,11 @@
+{
+  "status": "passed",
+  "total_tests": 67,
+  "research_python": 14,
+  "web_python": 31,
+  "node": 22,
+  "logs_directory": "/tmp/shift-C02T04/logs",
+  "implementation_changes": false,
+  "typecheck_and_build": "C02T05 planned",
+  "draft_classification_review": "Before canonical registration, tax was aligned to P07 and SMS usage to P06 in the unpublished work copy; final batch replay and 67 tests passed."
+}
