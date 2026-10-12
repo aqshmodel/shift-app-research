@@ -1,0 +1,830 @@
+{
+  "batch_id": "B15-20261012",
+  "prior_batch": "B14-20261012",
+  "as_of_date": "2026-10-12",
+  "resolution_policy_version": 2,
+  "description": "3サービスの料金・支援契約、旧版条件、AIデータ処理とAPIベータの境界を追加調査",
+  "method": "公式Web・製品別規程・公開PDF本文・OpenAPI GETを既存記録と照合。年払いは公開ブラウザの選択表示で確認。OpenAPIの32,260bytesとSHA-256を再取得照合。UKG PDF2件の直接取得は403、Web本文で確認し未保存。登録・申込・キー発行・決済・勤務データ送信・計算API・独立試験は未実施。",
+  "sources": [
+    {
+      "key": "ukg-price",
+      "url": "https://www.ukg.com/learn/article-library/operations-leaders/how-much-does-workforce-management-software-cost-buyers-guide-pricing-2026",
+      "title": "UKG WFM Pricing Guide 2026：Pro Workforce Managementの見積方式",
+      "publisher": "UKG",
+      "reference": "公式資料の本文確認",
+      "retrieved_on": "2026-10-12",
+      "method": "public_web_body",
+      "scope_note": "一般的な費用説明と、UKG Pro Workforce Managementを明示した結論・FAQを区別。一般的な従量課金を製品の課金方式と断定しない。",
+      "published_on": "2026-09-23"
+    },
+    {
+      "key": "ukg-support",
+      "url": "https://www.ukg.com/support-policies-and-services",
+      "title": "UKG Support Policies：Pro Workforce Managementを含むSaaS支援規程",
+      "publisher": "UKG",
+      "reference": "公式資料の本文確認",
+      "retrieved_on": "2026-10-12",
+      "method": "public_web_body",
+      "scope_note": "冒頭のPro Workforce Managementを明示したSaaS規程だけを採用。後続のWorkforce Central・機器・オンプレミス規程を混ぜない。"
+    },
+    {
+      "key": "ukg-sow",
+      "url": "https://www.ukg.com/sites/default/files/2026-02/UKG-Pro-Suite-Standard-SOW-2026-02-05.pdf",
+      "title": "UKG Pro Pay and People Center SOW：購入時のPro WFM・Scheduling範囲（9頁）",
+      "publisher": "UKG",
+      "reference": "Web PDF本文、p.1–2・7の製品別表を確認",
+      "retrieved_on": "2026-10-12",
+      "method": "public_pdf_body",
+      "scope_note": "Web経由でPDF本文を確認。直接ダウンロードは403で原本は保存しない。Pro WFM・Schedulingは購入時のみ適用。ファイル名の日付を公開日とはしない。",
+      "version_label": "ファイル名の日付2026-02-05 / UKG Pro SOW_Standard"
+    },
+    {
+      "key": "ukg-api-services",
+      "url": "https://www.ukg.com/sites/default/files/2025-09/FY25_SV0269-USv4w_API%20Empowerment%20Services%20Datasheet_ResourcePDF_09-24-25.pdf",
+      "title": "UKG Pro Workforce Management API Empowerment Services（2頁）",
+      "publisher": "UKG",
+      "reference": "Web PDF本文のAPI枠組み・3サービス区分を確認",
+      "retrieved_on": "2026-10-12",
+      "method": "public_pdf_body",
+      "scope_note": "Web経由で2頁の本文を確認。直接ダウンロードは403で原本は保存しない。copyright年・ファイル名の日付を公開日とはしない。",
+      "version_label": "SV0269-USv4w / copyright 2025"
+    },
+    {
+      "key": "servis-comparison",
+      "url": "https://www.sbn.co.jp/servis/systems/",
+      "title": "セルヴィスEXと旧セルヴィスの機能比較・動作環境",
+      "publisher": "システムバンク株式会社",
+      "reference": "公式資料の本文確認",
+      "retrieved_on": "2026-10-12",
+      "method": "public_web_body",
+      "scope_note": "自社製品を区別した機能表。更新日は不明。掲載の旧OS・SQL要件を現在の対応保証として扱わない。"
+    },
+    {
+      "key": "servis-faq",
+      "url": "https://www.sbn.co.jp/servis/faq/",
+      "title": "セルヴィスEX FAQ：条件違反許容と勤務作成",
+      "publisher": "システムバンク株式会社",
+      "reference": "公式資料の本文確認",
+      "retrieved_on": "2026-10-12",
+      "method": "public_web_body",
+      "scope_note": "公開一次資料の該当箇所を確認。独立試験・契約適用確認とは区別。原文全文は保存しない。"
+    },
+    {
+      "key": "servis-options",
+      "url": "https://www.sbn.co.jp/servis/hello-world/",
+      "title": "セルヴィスEX 公開案内：第三者製オプション・連携",
+      "publisher": "システムバンク株式会社",
+      "reference": "公式資料の本文確認",
+      "retrieved_on": "2026-10-12",
+      "method": "public_web_body",
+      "scope_note": "タイトルはHello world!だが、本文は製品案内。公開・最終更新日は不明。Ramanasの参考初期費をセルヴィスEXへ転用しない。"
+    },
+    {
+      "key": "servis-support",
+      "url": "https://www.sbn.co.jp/servis/user/",
+      "title": "セルヴィスEX ユーザーサポート情報の公開範囲",
+      "publisher": "システムバンク株式会社",
+      "reference": "公式資料の本文確認",
+      "retrieved_on": "2026-10-12",
+      "method": "public_web_body",
+      "scope_note": "公開一覧は2019-10-11の記事で「現在、サポート情報はありません」と記載。ページの公開日・最終更新日や現在の保守不提供とは扱わない。",
+      "version_label": "表示記事日2019-10-11"
+    },
+    {
+      "key": "shiftyasan-price",
+      "url": "https://shiftyasan.com/pricing",
+      "title": "シフト屋さん 料金プラン：月払い・年払い",
+      "publisher": "クラーヴェ合同会社",
+      "reference": "CU公開料金表の月払い・年払いタブを確認",
+      "retrieved_on": "2026-10-12",
+      "method": "browser_public_web_body",
+      "scope_note": "ログイン・申込はせず表示を確認。年額は算出値でなく、年払いタブの実表示16,280円／43,780円を採用。"
+    },
+    {
+      "key": "shiftyasan-law",
+      "url": "https://shiftyasan.com/law",
+      "title": "シフト屋さん 特商法表示：年払い・請求書・更新",
+      "publisher": "クラーヴェ合同会社",
+      "reference": "公式資料の本文確認",
+      "retrieved_on": "2026-10-12",
+      "method": "public_web_body",
+      "scope_note": "公開一次資料の該当箇所を確認。独立試験・契約適用確認とは区別。原文全文は保存しない。"
+    },
+    {
+      "key": "shiftyasan-terms",
+      "url": "https://shiftyasan.com/terms",
+      "title": "シフト屋さん 利用規約：契約・退会・サービス停止・AI解析",
+      "publisher": "クラーヴェ合同会社",
+      "reference": "公式資料の本文確認",
+      "retrieved_on": "2026-10-12",
+      "method": "public_web_body",
+      "scope_note": "公開一次資料の該当箇所を確認。独立試験・契約適用確認とは区別。原文全文は保存しない。",
+      "updated_on": "2026-06-29",
+      "version_label": "2026年6月29日改訂"
+    },
+    {
+      "key": "shiftyasan-privacy",
+      "url": "https://shiftyasan.com/privacy",
+      "title": "シフト屋さん 個人情報方針：保管とAI解析を区別",
+      "publisher": "クラーヴェ合同会社",
+      "reference": "公式資料の本文確認",
+      "retrieved_on": "2026-10-12",
+      "method": "public_web_body",
+      "scope_note": "公開一次資料の該当箇所を確認。独立試験・契約適用確認とは区別。原文全文は保存しない。",
+      "updated_on": "2026-07-29"
+    },
+    {
+      "key": "shiftyasan-release",
+      "url": "https://shiftyasan.com/announcements/530",
+      "title": "シフト屋さん 2026-07-29 更新：AI取込・CSV・境界修正",
+      "publisher": "クラーヴェ合同会社",
+      "reference": "公式資料の本文確認",
+      "retrieved_on": "2026-10-12",
+      "method": "public_web_body",
+      "scope_note": "公開一次資料の該当箇所を確認。独立試験・契約適用確認とは区別。原文全文は保存しない。",
+      "published_on": "2026-07-29"
+    },
+    {
+      "key": "shiftyasan-trial",
+      "url": "https://shiftyasan.com/announcements/300",
+      "title": "シフト屋さん 2026-05-23 料金改定・初回試用の対象",
+      "publisher": "クラーヴェ合同会社",
+      "reference": "公式資料の本文確認",
+      "retrieved_on": "2026-10-12",
+      "method": "public_web_body",
+      "scope_note": "公開一次資料の該当箇所を確認。独立試験・契約適用確認とは区別。原文全文は保存しない。",
+      "published_on": "2026-05-23"
+    },
+    {
+      "key": "shiftyasan-api",
+      "url": "https://platform.shiftyasan.com/",
+      "title": "シフト屋さん Public API & MCP ベータの案内",
+      "publisher": "クラーヴェ合同会社",
+      "reference": "公式資料の本文確認",
+      "retrieved_on": "2026-10-12",
+      "method": "public_web_body",
+      "scope_note": "通常Web版と別の公開APIベータの説明。MCPはサーバー側の連携で、ブラウザネイティブWebMCPとは区別。外部アプリの設定手順は実行・検証していない。"
+    },
+    {
+      "key": "shiftyasan-openapi",
+      "url": "https://api.shiftyasan.com/v1/public/openapi.json",
+      "title": "Shiftyasan Public Solver API OpenAPI 3.1・v1",
+      "publisher": "クラーヴェ合同会社",
+      "reference": "公開GETのJSON仕様の本文確認",
+      "retrieved_on": "2026-10-12",
+      "method": "public_openapi_document",
+      "scope_note": "仕様GETのみ実施。validate・solve等は呼び出さず、キー発行・OAuth接続・決済・勤務データ送信は行わない。原本は配布パッケージへ保存しない。",
+      "version_label": "OpenAPI 3.1 / info.version v1 / SHA-256 82998ddad223ba4706131eeed28405e3685329871ad26de1141d122a53ab3ed9"
+    }
+  ],
+  "findings": [
+    {
+      "product": "US06",
+      "criterion": "P01",
+      "source": "ukg-price",
+      "summary": "UKG Pro Workforce Managementは職員規模・複雑さ・必要機能に応じた個別見積もりで、標準価格表を公開しないと説明。",
+      "locator": "結論の製品別記載／FAQ: How much does workforce management software cost?",
+      "limitations": "製品を明示した見積方式。記事内の一般的なPEPM・拠点課金等を、この製品の確定した課金単位として採用しない。",
+      "state": "known",
+      "delivery": "unknown"
+    },
+    {
+      "product": "US06",
+      "criterion": "P02",
+      "source": "ukg-price",
+      "summary": "規模に応じた見積とは説明するが、登録・稼働・休職・兼務・管理者を数える課金単位は記載未確認。",
+      "locator": "UKG Pro Workforce Managementの見積説明",
+      "limitations": "一般論のper employee等を転用しない。人数下限・拠点追加・段階単価も見積確認が必要。",
+      "state": "not_found",
+      "delivery": "unknown"
+    },
+    {
+      "product": "US06",
+      "criterion": "B07",
+      "source": "ukg-sow",
+      "summary": "Pro WFMのTimekeeping・Accruals、Pro Scheduling、WFM Analyticsを別の購入対象として列挙する。",
+      "locator": "p.1: Subscription Service(s) in Scope",
+      "limitations": "購入時の導入サービス範囲。すべての機能がPro WFM基本料に含まれるとは扱わない。",
+      "state": "known",
+      "delivery": "native"
+    },
+    {
+      "product": "US06",
+      "criterion": "K03",
+      "source": "ukg-sow",
+      "summary": "Schedulingの所定導入範囲は最大10グループ、テンプレート1件、技能資格取込1件・勤務規則3組等。顧客の設定・試験参加を前提とする。",
+      "locator": "p.7: UKG Pro Scheduling／p.2: Customer Tasks",
+      "limitations": "初期導入作業の契約範囲で、製品の実行時上限ではない。顧客のOrder・変更依頼により異なる。",
+      "state": "known",
+      "delivery": "managed_service"
+    },
+    {
+      "product": "US06",
+      "criterion": "K04",
+      "source": "ukg-sow",
+      "summary": "Pro Pay and People CenterまたはPro WFMを含むSuite導入のPhase 1は、開始から通常4か月との目安。",
+      "locator": "p.2: Full Suite Launch",
+      "limitations": "Suite導入の想定。Scheduling単独や日本向け全案件の実測工数・保証期日ではない。顧客作業の遅延等で変わる。",
+      "state": "known",
+      "delivery": "managed_service"
+    },
+    {
+      "product": "US06",
+      "criterion": "P04",
+      "source": "ukg-sow",
+      "summary": "所定導入範囲は固定価格。顧客側の遅延・重大な範囲変更等は価格修正や別のService Request対象で、旅費は別請求。",
+      "locator": "p.1冒頭／p.2: Launch Pricing, Travel and Access",
+      "limitations": "具体額は未公開。契約Orderを前提とした導入費で、購読の固定料金ではない。",
+      "state": "known",
+      "delivery": "managed_service"
+    },
+    {
+      "product": "US06",
+      "criterion": "A08",
+      "source": "ukg-sow",
+      "summary": "米国・カナダ外のGlobal Employeesには、所定の非計算型勤務・PTO管理と時間出力の範囲を定める。",
+      "locator": "p.2: Global Employees／p.7: Global Employees predefined scope",
+      "limitations": "当該SOWの限定範囲。各国固有の給与・休暇計算を自動対応する契約ではなく、日本の制度適合の証拠にはしない。",
+      "state": "known",
+      "delivery": "managed_service"
+    },
+    {
+      "product": "US06",
+      "criterion": "M04",
+      "source": "ukg-api-services",
+      "summary": "Pro WFMのAPI枠組みと、人事・給与・休暇等の事前作成コネクターを案内する。",
+      "locator": "p.1: API framework / pre-built connectors",
+      "limitations": "APIの参照・書込・計算の操作、認証、版、上限、費用と具体接続先の詳細は未確認。",
+      "state": "known",
+      "delivery": "native"
+    },
+    {
+      "product": "US06",
+      "criterion": "K03",
+      "source": "ukg-api-services",
+      "summary": "API支援は電話・メールのCore、設計レビュー・設計書のEnhanced、開発者と協働するAugmentationの3段階。",
+      "locator": "p.2: Choose the service level",
+      "limitations": "通常導入の設定範囲とは別の支援区分。必要構成・保守内包・金額は個別確認。",
+      "state": "known",
+      "delivery": "managed_service"
+    },
+    {
+      "product": "US06",
+      "criterion": "O04",
+      "source": "ukg-support",
+      "summary": "SaaS支援はHighの初期応答目標30分、Mediumは営業1時間、Lowは営業2時間。Highだけ24時間365日、他は営業時間内と説明。",
+      "locator": "SaaS Policies: Priority Based Support / Service Coverage Period",
+      "limitations": "初期応答の目標で、解決・復旧時間の保証ではない。Critical継続対応は顧客側の協力要員等にも依存。",
+      "state": "known",
+      "delivery": "managed_service"
+    },
+    {
+      "product": "US06",
+      "criterion": "O04",
+      "source": "ukg-support",
+      "summary": "基本の支援言語は英語。一部地域の営業時間に仏・独・西語も提供される場合がある。",
+      "locator": "SaaS Policies: Support Language",
+      "limitations": "日本語窓口の記載は未確認。後続Workforce CentralのGold・Platinum条件をPro WFMへ転用しない。",
+      "state": "known",
+      "delivery": "managed_service"
+    },
+    {
+      "product": "US06",
+      "criterion": "P05",
+      "source": "ukg-support",
+      "summary": "新機能の設定には複雑さに応じた追加費の可能性があり、導入・設定変更・カスタム帳票は通常支援の除外対象。",
+      "locator": "SaaS Policies冒頭 / Support Exclusions",
+      "limitations": "除外作業がすべて同じ価格や無償になるとはしない。支援レベル・API支援・設定作業を見積で区別。",
+      "state": "known",
+      "delivery": "managed_service"
+    },
+    {
+      "product": "US06",
+      "criterion": "O01",
+      "source": "ukg-support",
+      "summary": "Customer Support SLAは支援の応答目標を定めるが、Pro WFMの稼働率・計測対象・補償条件はこのページでは未確認。",
+      "locator": "Customer Support Service Level Agreement",
+      "limitations": "サポート応答時間を、システム稼働率や復旧期限の保証に置き換えない。",
+      "state": "not_found",
+      "delivery": "unknown"
+    },
+    {
+      "product": "US06",
+      "criterion": "M08",
+      "source": "ukg-sow",
+      "summary": "SOWには初期移行・導入範囲があるが、解約時の希望・規則・設定・履歴の全量搬出は確認できない。",
+      "locator": "SOWのサービス・移行範囲",
+      "limitations": "導入時のデータ移行を退出時の返却権と扱わない。費用・形式・取得猶予は本体契約・搬出仕様を確認。",
+      "state": "not_found",
+      "delivery": "unknown"
+    },
+    {
+      "product": "JP22",
+      "criterion": "A07",
+      "source": "servis-comparison",
+      "summary": "公開環境表はWindowsクライアント・SQL Expressサーバー構成と、PC1台での運用を案内する。",
+      "locator": "動作環境",
+      "limitations": "旧OS・SQL Server版を含む更新日不明の表。クラウド提供や現在のWindows 11対応を確定しない。",
+      "state": "known",
+      "delivery": "native"
+    },
+    {
+      "product": "JP22",
+      "criterion": "P02",
+      "source": "servis-comparison",
+      "summary": "セルヴィスEXは管理病棟1病棟から、最低限のライセンスで購入可能と比較表に記載する。",
+      "locator": "04その他: 管理病棟数",
+      "limitations": "金額・ライセンスの計数・追加病棟費は未確認。旧セルヴィスの5病棟からという条件と区別する。",
+      "state": "known",
+      "delivery": "unknown"
+    },
+    {
+      "product": "JP22",
+      "criterion": "B08",
+      "source": "servis-comparison",
+      "summary": "一度の作成につき勤務表1〜99パターンと記載する。",
+      "locator": "04その他: 作成可能勤務表数",
+      "limitations": "候補表の数で、病棟数・職員数・同時計算数の上限ではない。実時間・計算結果は未測定。",
+      "state": "known",
+      "delivery": "native"
+    },
+    {
+      "product": "JP22",
+      "criterion": "B07",
+      "source": "servis-comparison",
+      "summary": "旧製品でオプションだったスケジュールロック・禁止勤務設定等はEXでは標準搭載と記載する。",
+      "locator": "04その他",
+      "limitations": "比較表での標準区分。顧客契約・対象版の内包は確認が必要。",
+      "state": "known",
+      "delivery": "native"
+    },
+    {
+      "product": "JP22",
+      "criterion": "F01",
+      "source": "servis-comparison",
+      "summary": "EXの条件表に「優先して解消する絶対条件」と、人数・回数・パターン等の優先設定を挙げる。",
+      "locator": "02条件設定全般／03条件設定",
+      "limitations": "名称だけで違反不可の数学的hard制約と判断しない。違反許容との関係と法令必須条件への設定権限は未確認。",
+      "state": "known",
+      "delivery": "native"
+    },
+    {
+      "product": "JP22",
+      "criterion": "F01",
+      "source": "servis-faq",
+      "summary": "矛盾条件に対し指定条件の違反をn回まで許容する設定も案内する。",
+      "locator": "複雑な勤務形態・条件の矛盾のFAQ",
+      "limitations": "既存の違反許容の確認を保持。絶対条件との優先順位、法令必須条件の緩和禁止はデモ・資料確認が残る。",
+      "state": "known",
+      "delivery": "native"
+    },
+    {
+      "product": "JP22",
+      "criterion": "F02",
+      "source": "servis-comparison",
+      "summary": "優先設定は掲載されるが、重み付き合計・階層優先等の解消方式は公開表から確定できない。",
+      "locator": "条件設定全般／条件設定",
+      "limitations": "画面ラベルから最適化の数式・hard制約の保証を推定しない。",
+      "state": "not_found",
+      "delivery": "native"
+    },
+    {
+      "product": "JP22",
+      "criterion": "G08",
+      "source": "servis-comparison",
+      "summary": "EXは経過時間による自動停止を掲載する。",
+      "locator": "01自動計算",
+      "limitations": "停止後に実行可能な暫定解を返すか、解なし・未判定をどう分けるかは未確認。",
+      "state": "known",
+      "delivery": "native"
+    },
+    {
+      "product": "JP22",
+      "criterion": "G08",
+      "source": "servis-faq",
+      "summary": "計算を一時停止し、条件を修正して再開する操作を案内する。",
+      "locator": "自動作成のやり直しFAQ",
+      "limitations": "既存の中断・再開の記録を保持。経過時間で停止した場合にも同様に再開できるとは未確定。",
+      "state": "known",
+      "delivery": "native"
+    },
+    {
+      "product": "JP22",
+      "criterion": "M03",
+      "source": "servis-comparison",
+      "summary": "届出書添付のExcelシートへの入力支援を標準として掲載し、様式9出力にはExcel 2007以上が必要と記載。",
+      "locator": "04その他／動作環境のExcel注記",
+      "limitations": "旧版資料の出力環境・入力支援。2026年の帳票様式・算式・適用基準を実装確認したものではない。",
+      "state": "known",
+      "delivery": "native"
+    },
+    {
+      "product": "JP22",
+      "criterion": "M06",
+      "source": "servis-options",
+      "summary": "オーウラ・デジタル・クリエイト製の看護職員情報管理・超勤管理を連携機能として案内する。",
+      "locator": "セルヴィスEX連携機能",
+      "limitations": "第三者の別システム。技術接続の方向・項目・対象版・追加費・現在の提供を要確認。",
+      "state": "known",
+      "delivery": "third_party"
+    },
+    {
+      "product": "JP22",
+      "criterion": "P05",
+      "source": "servis-options",
+      "summary": "管理日誌・個人勤務表・週予定表・詳細勤務抽出等を第三者製オプションとして列挙するが、料金と必要構成は未確認。",
+      "locator": "セルヴィスEXオプション機能",
+      "limitations": "本体の標準出力と区別。Ramanasの初期参考額を、EX本体・オプションの金額へ転用しない。",
+      "state": "not_found",
+      "delivery": "third_party"
+    },
+    {
+      "product": "JP22",
+      "criterion": "O04",
+      "source": "servis-support",
+      "summary": "公開サポート一覧には2019年の記事で情報なしとある。現行の保守窓口・応答目標は確定できない。",
+      "locator": "ユーザーサポート情報一覧",
+      "limitations": "公開情報がないことは、契約サポートの不提供を意味しない。既存の一般問い合わせ10〜17時も保守時間と同一にはしない。",
+      "state": "not_found",
+      "delivery": "unknown"
+    },
+    {
+      "product": "JP24",
+      "criterion": "P03",
+      "source": "shiftyasan-price",
+      "summary": "税込年額はベーシック16,280円、プロ43,780円。月払いとは別の年払いタブで表示する。",
+      "locator": "年払いタブ",
+      "limitations": "年額料金を月額として表示しない。無料・月払いの既存料金明細はそのまま維持。",
+      "state": "known",
+      "delivery": "native"
+    },
+    {
+      "product": "JP24",
+      "criterion": "P03",
+      "source": "shiftyasan-law",
+      "summary": "年額は月額11か月分相当を一括請求。許可された請求書払いは発行から30日以内の後払いで、振込手数料は利用者負担。",
+      "locator": "販売価格／支払方法／銀行振込の期限",
+      "limitations": "支払方法により前払・後払が異なる。年額一括を一律の前払いとは扱わない。",
+      "state": "known",
+      "delivery": "native"
+    },
+    {
+      "product": "JP24",
+      "criterion": "P08",
+      "source": "shiftyasan-terms",
+      "summary": "月・年の契約は同期間で自動更新。解約は次回更新を止め、現在の期間中は有料機能を利用できる。途中解約の既払い額は返金しないと記載。",
+      "locator": "第11条の2",
+      "limitations": "退会と有料契約の解約は別。規約上の記載で、法的効力の判断ではない。",
+      "state": "known",
+      "delivery": "native"
+    },
+    {
+      "product": "JP24",
+      "criterion": "K08",
+      "source": "shiftyasan-trial",
+      "summary": "Basic・Proは初回申込から1か月無料。過去に有料プランを解約した利用者は対象外と案内する。",
+      "locator": "初回1ヶ月無料キャンペーン",
+      "limitations": "特商法は試用適用時に終了後課金とする。終了前に解約せず継続した場合の扱いは規約・申込表示を照合。",
+      "state": "known",
+      "delivery": "native"
+    },
+    {
+      "product": "JP24",
+      "criterion": "N04",
+      "source": "shiftyasan-privacy",
+      "summary": "会員・職員のDBとアップロードファイルはAWSの米国サーバーに保存し、シフト表のAI解析は日本リージョンで行うと説明。",
+      "locator": "第18節(1)(2)",
+      "limitations": "保存と解析の場所を区別。バックアップ・全処理地域の詳細は未確認。「国内解析」から全データ国内保存とはしない。",
+      "state": "known",
+      "delivery": "native"
+    },
+    {
+      "product": "JP24",
+      "criterion": "N05",
+      "source": "shiftyasan-privacy",
+      "summary": "シフト表解析はAWSのAI基盤へ委託し、モデル学習には使わず、Anthropic等のモデル提供者へデータを提供しないと説明。",
+      "locator": "第17節",
+      "limitations": "提供者の説明で実送信・契約設定は未検証。サポートチャットの外部送信条件は別。",
+      "state": "known",
+      "delivery": "native"
+    },
+    {
+      "product": "JP24",
+      "criterion": "N05",
+      "source": "shiftyasan-privacy",
+      "summary": "サポートチャットは入力内容・ユーザーID等を外部サービスへ送信・処理する場合がある。",
+      "locator": "第16節",
+      "limitations": "チャット側の事業者・地域・保持・学習の条件はこの記載では未確認。ファイル解析の非学習説明を一律転用しない。",
+      "state": "known",
+      "delivery": "native"
+    },
+    {
+      "product": "JP24",
+      "criterion": "N06",
+      "source": "shiftyasan-privacy",
+      "summary": "元ファイルは原則24時間以内、解析ドラフトは適用・破棄時か最長30日で削除すると説明。",
+      "locator": "第17節の保持・削除",
+      "limitations": "原本削除に数日かかる例外と、バックアップの残存を記載。全マスター・勤務表の退会時削除や削除証明とは別。",
+      "state": "known",
+      "delivery": "native"
+    },
+    {
+      "product": "JP24",
+      "criterion": "N06",
+      "source": "shiftyasan-price",
+      "summary": "Basic・Proに勤務表の自動バックアップ・復元を掲載する。",
+      "locator": "ベーシックの機能表／プロの継承",
+      "limitations": "既存の復元機能の採用記録を保持。保管期間・復元成功・退会時の消去は未確認。",
+      "state": "known",
+      "delivery": "native"
+    },
+    {
+      "product": "JP24",
+      "criterion": "K01",
+      "source": "shiftyasan-release",
+      "summary": "Excel・画像から設定の下書きを作り、確認・修正後に登録する。形式はxlsx・png・jpg・jpeg、5MBまで。",
+      "locator": "AI初期設定の導入",
+      "limitations": "任意の旧勤務表を完全再現する取込の保証や、読み取り精度の独立試験ではない。",
+      "state": "known",
+      "delivery": "native"
+    },
+    {
+      "product": "JP24",
+      "criterion": "P06",
+      "source": "shiftyasan-release",
+      "summary": "AIファイル解析は無料プランで1日3回、Basic・Proで1日5回までと案内する。",
+      "locator": "AI解析の回数制限",
+      "limitations": "APIのunitsや勤務表生成回数とは別。超過時の動作・課金・日付の起点は未確認。",
+      "state": "known",
+      "delivery": "native"
+    },
+    {
+      "product": "JP24",
+      "criterion": "M02",
+      "source": "shiftyasan-release",
+      "summary": "詳細CSVとKING OF TIME取込用CSVを、無料を含む全プランへ開放したと案内する。",
+      "locator": "詳細CSV・勤怠管理ソフト取込用CSV",
+      "limitations": "勤務表の通常出力。希望・ルール・履歴等の解約時全量搬出の証拠ではない。文字コード・列定義は未確認。",
+      "state": "known",
+      "delivery": "native"
+    },
+    {
+      "product": "JP24",
+      "criterion": "M07",
+      "source": "shiftyasan-release",
+      "summary": "計画内編集をマスターへ同時反映する選択があり、対象は名前・時間等の基本項目。追加削除・必要人数・希望・有給は反映対象外。",
+      "locator": "計画内での編集をマスタにも同時反映",
+      "limitations": "一意ID・同時更新の衝突・他システムとの同期は未確認。全設定の同期として扱わない。",
+      "state": "known",
+      "delivery": "native"
+    },
+    {
+      "product": "JP24",
+      "criterion": "C03",
+      "source": "shiftyasan-release",
+      "summary": "前期間から続く休み起点のシフト遷移や、前期間末の休業日について、境界での制限適用を修正したと案内。",
+      "locator": "シフトの自動作成を改善",
+      "limitations": "特定事象の修正履歴。全ての月・週・年度境界の正確性を独立試験した結果ではない。",
+      "state": "known",
+      "delivery": "native"
+    },
+    {
+      "product": "JP24",
+      "criterion": "G03",
+      "source": "shiftyasan-release",
+      "summary": "手動編集の事前チェックが、休みの絡む連続シフト制限にも対応したと案内。",
+      "locator": "自動作成の改善: 手動編集チェック",
+      "limitations": "生成器と別の独立検証ロジックや、全違反の検出保証を確認したものではない。",
+      "state": "known",
+      "delivery": "native"
+    },
+    {
+      "product": "JP24",
+      "criterion": "O01",
+      "source": "shiftyasan-terms",
+      "summary": "提供者の責任で連続72時間以上利用不能となる場合の減額・利用権等の賠償条項と、損害発生から1か月以内の請求を記載する。",
+      "locator": "第15条3項",
+      "limitations": "稼働率のパーセント保証ではない。規約の適用対象・判断条件・個別契約の効力は別確認。",
+      "state": "known",
+      "delivery": "native"
+    },
+    {
+      "product": "JP24",
+      "criterion": "M08",
+      "source": "shiftyasan-terms",
+      "summary": "退会後は利用不能・会員地位を復元できないと記載するが、希望・規則・設定・履歴の全量搬出は未確認。",
+      "locator": "第8条／第11条の2",
+      "limitations": "本人の個人情報開示や勤務表CSVを全量搬出とみなさない。退会後の取得猶予・費用は未確認。",
+      "state": "not_found",
+      "delivery": "native"
+    },
+    {
+      "product": "JP24",
+      "criterion": "M04",
+      "source": "shiftyasan-openapi",
+      "summary": "公開APIは入力検証・計算・非同期ジョブ取得・利用枠取得の4操作。計算等はAPIキーまたはOAuthトークンのBearer認証を定義する。",
+      "locator": "paths / securitySchemes",
+      "limitations": "公開APIベータの仕様。Web版の契約内包・製品管理者のSSO/MFA・実動作を確認したものではない。",
+      "state": "known",
+      "delivery": "addon",
+      "scope": "通常Web版と区別した公開Solver API・MCPベータ。Web版の有料プロとAPI pro tierは別。"
+    },
+    {
+      "product": "JP24",
+      "criterion": "G09",
+      "source": "shiftyasan-openapi",
+      "summary": "APIの成功応答には不足の日付・シフト・人数を示すshortagesがあり、不足を残す結果も有効な勤務表として返すと定義する。",
+      "locator": "SolveResponse.solution.shortages",
+      "limitations": "APIベータの返却仕様。正常終了を全必要人数充足や安全な公開判断と同一視しない。独立実行は未実施。",
+      "state": "known",
+      "delivery": "addon",
+      "scope": "通常Web版と区別した公開Solver API・MCPベータ。Web版の有料プロとAPI pro tierは別。"
+    },
+    {
+      "product": "JP24",
+      "criterion": "G02",
+      "source": "shiftyasan-openapi",
+      "summary": "API仕様は入力不正・上限・矛盾をHTTP422、時間切れを504として区別。矛盾の場合はsolver_status・diagnosis等を返す場合がある。",
+      "locator": "POST /solve: responses 422 / 504, SolveProblem",
+      "limitations": "422すべてが解なし証明ではない。時間切れの意味・実際の判定器・最小矛盾集合を独立検証していない。",
+      "state": "known",
+      "delivery": "addon",
+      "scope": "通常Web版と区別した公開Solver API・MCPベータ。Web版の有料プロとAPI pro tierは別。"
+    },
+    {
+      "product": "JP24",
+      "criterion": "M04",
+      "source": "shiftyasan-openapi",
+      "summary": "大きい問題の202非同期応答はAPIキーのpro tierを必要とし、職員×シフト×業務×日数80,000超を目安とする。同仕様にtimeout>30秒の非同期未実装501も載る。",
+      "locator": "paths./solve.post.responses.202・501",
+      "limitations": "202と501の条件・利用可能な経路の関係は未確認。API pro tierとWeb版の有料プロを区別し、非同期経路が全条件で提供済みとはしない。実動作・速度は未測定。",
+      "state": "known",
+      "delivery": "addon",
+      "scope": "通常Web版と区別した公開Solver API・MCPベータ。Web版の有料プロとAPI pro tierは別。"
+    },
+    {
+      "product": "JP24",
+      "criterion": "P06",
+      "source": "shiftyasan-api",
+      "summary": "APIベータはキーごとの無料units枠から計算ごとに消費する。通常公開後の料金は準備中と説明する。",
+      "locator": "料金／クイックスタートHTTP API",
+      "limitations": "Web版の月額・無料枠とは別。units総数・消費算式・pro tier取得条件・正式単価は未確定。料金明細として0円を本体へ追加しない。",
+      "state": "known",
+      "delivery": "addon",
+      "scope": "通常Web版と区別した公開Solver API・MCPベータ。Web版の有料プロとAPI pro tierは別。"
+    },
+    {
+      "product": "JP22",
+      "criterion": "P01",
+      "source": "servis-faq",
+      "summary": "病院の対象勤務表を作成できることを確認した後、見積もりを提示すると公式FAQに記載する。",
+      "locator": "価格はいくらですか？",
+      "limitations": "既存の見積方式を再確認。金額・保守・追加病棟・第三者オプションの内包は未確認。",
+      "state": "known",
+      "delivery": "unknown"
+    },
+    {
+      "product": "JP24",
+      "criterion": "N05",
+      "source": "shiftyasan-privacy",
+      "summary": "Excel解析にはセル値・選択シート名を再構成して送り、コメント・非表示行列等は送らないと説明。画像はEXIF除去・縮小後に送る。",
+      "locator": "第17節：解析への送信データ",
+      "limitations": "提供者の方針。実送信内容・除去の完全性は未検証。原本の米国保存やチャットの外部送信と区別する。",
+      "state": "known",
+      "delivery": "native"
+    },
+    {
+      "product": "JP24",
+      "criterion": "P06",
+      "source": "shiftyasan-openapi",
+      "summary": "APIキー経路の枠・残高不足を429 quota-exceededで区別し、待機だけでは回復せず、Retry-Afterも付けないと仕様に記載する。",
+      "locator": "paths./solve.post.responses.429",
+      "limitations": "公開APIベータの仕様。時間当たりのアクセス頻度制限とは別。枠更新・追加・正式単価は未確認で、実行は行っていない。",
+      "state": "known",
+      "delivery": "addon",
+      "scope": "通常Web版と区別した公開Solver API・MCPベータ。Web版の有料プロとAPI pro tierは別。"
+    },
+    {
+      "product": "JP24",
+      "criterion": "M04",
+      "source": "shiftyasan-openapi",
+      "summary": "solveの402応答仕様にはAPIキー、x402、mppの支払い認証候補を定義する。環境によりx402未設定・検証失敗時の応答も定義する。",
+      "locator": "paths./solve.post.responses.401・402／components.schemas.PaymentRequiredProblem",
+      "limitations": "仕様上の選択肢で、全経路の現在の提供・単価・決済成立を保証しない。決済・接続・API呼出しは未実施。",
+      "state": "known",
+      "delivery": "addon",
+      "scope": "通常Web版と区別した公開Solver API・MCPベータ。Web版の有料プロとAPI pro tierは別。"
+    }
+  ],
+  "prices": [
+    {
+      "product": "JP24",
+      "source": "shiftyasan-price",
+      "criterion": "P03",
+      "plan": "ベーシック 年払い",
+      "amount": "16280",
+      "currency": "JPY",
+      "tax_status": "inclusive",
+      "billable_unit": "account_month",
+      "commitment_months": 12,
+      "billing_period_months": 12,
+      "prepayment": "unknown",
+      "charge_type": "subscription",
+      "recurrence_months": 12,
+      "requirement": "required",
+      "quantity_definition": "1契約の年額。各5プロジェクト、従業員上限はプロジェクトごと。",
+      "conditions": {
+        "max_staff_per_project": 25,
+        "max_projects": 5,
+        "notes": "年払いタブの税込年額実表示。月額11か月分相当を年額一括請求。カードと請求書払いで支払時期が異なるため前払いは一律確定しない。無料・月払いとは選択する別プラン。"
+      }
+    },
+    {
+      "product": "JP24",
+      "source": "shiftyasan-price",
+      "criterion": "P03",
+      "plan": "プロ 年払い",
+      "amount": "43780",
+      "currency": "JPY",
+      "tax_status": "inclusive",
+      "billable_unit": "account_month",
+      "commitment_months": 12,
+      "billing_period_months": 12,
+      "prepayment": "unknown",
+      "charge_type": "subscription",
+      "recurrence_months": 12,
+      "requirement": "required",
+      "quantity_definition": "1契約の年額。各5プロジェクト、従業員上限はプロジェクトごと。",
+      "conditions": {
+        "max_staff_per_project": 50,
+        "max_projects": 5,
+        "notes": "年払いタブの税込年額実表示。月額11か月分相当を年額一括請求。カードと請求書払いで支払時期が異なるため前払いは一律確定しない。無料・月払いとは選択する別プラン。"
+      }
+    }
+  ],
+  "followups": [
+    {
+      "product": "US06",
+      "criterion": "P05",
+      "priority": 2,
+      "method": "vendor_quote",
+      "question": "Pro WFM・Scheduling・Analytics・API支援の購入範囲と、課金対象・周期・初期固定費・追加設定・旅費・支援除外作業を同条件の見積で照合する。"
+    },
+    {
+      "product": "JP22",
+      "criterion": "A07",
+      "priority": 2,
+      "method": "vendor_document",
+      "question": "旧OS・SQL Serverを載せた公開環境表の対象版・現行対応環境、1病棟ライセンスと標準出力、第三者オプションの現在の提供・契約内包・金額を確認する。"
+    },
+    {
+      "product": "JP24",
+      "criterion": "N06",
+      "priority": 2,
+      "method": "vendor_document",
+      "question": "アップロード原本・解析ドラフト・登録済み勤務表・バックアップの保持期限、退会後の削除・証明・全量搬出を照合する。国内解析と米国保存、チャット外部送信も機能ごとに確認する。"
+    },
+    {
+      "product": "JP24",
+      "criterion": "M04",
+      "priority": 2,
+      "method": "vendor_document",
+      "question": "公開APIベータのpro tier・units配付・消費式・正式料金とWeb版契約の関係を確認する。202の非同期経路とtimeout>30秒の501未実装応答の条件、x402/mppの提供環境と課金確定、不足つき結果の公開手順も照合する。"
+    }
+  ],
+  "task_updates": [
+    {
+      "task_id": "TASK-B02-010",
+      "state": "in_progress",
+      "priority": 1,
+      "method": "demo",
+      "note": "公式比較表の「優先して解消する絶対条件」とFAQの違反n回許容を照合。名称からhard制約の強制・法定条件の緩和禁止を確定せず、デモ課題を維持する。"
+    }
+  ],
+  "retrieval_checks": [
+    {
+      "product": "JP24",
+      "url": "https://shiftyasan.com/pricing",
+      "result": "browser_annual_prices_confirmed",
+      "notes": "公開月払1,480円/3,980円・無料0円を確認後、年払タブの16,280円/43,780円税込を確認。申込・登録せず。"
+    },
+    {
+      "product": "JP24",
+      "url": "https://api.shiftyasan.com/v1/public/openapi.json",
+      "result": "public_spec_get_confirmed",
+      "notes": "公開GETで32,260bytesのOpenAPI JSON本文を取得。SHA-256 82998ddad223ba4706131eeed28405e3685329871ad26de1141d122a53ab3ed9。勤務データの送信・solver呼出しは行わない。"
+    },
+    {
+      "product": "US06",
+      "url": "https://www.ukg.com/sites/default/files/2026-02/UKG-Pro-Suite-Standard-SOW-2026-02-05.pdf",
+      "result": "direct_download_403_web_pdf_body_confirmed",
+      "notes": "公式PDFはWebツールで9頁の本文を確認。直接ダウンロードはHTTP403、原本は保存しない。"
+    },
+    {
+      "product": "US06",
+      "url": "https://www.ukg.com/sites/default/files/2025-09/FY25_SV0269-USv4w_API%20Empowerment%20Services%20Datasheet_ResourcePDF_09-24-25.pdf",
+      "result": "direct_download_403_web_pdf_body_confirmed",
+      "notes": "公式PDFはWebツールで2頁の本文を確認。直接ダウンロードはHTTP403、原本は保存しない。"
+    }
+  ]
+}

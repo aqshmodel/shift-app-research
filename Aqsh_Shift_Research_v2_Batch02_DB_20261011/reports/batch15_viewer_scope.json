@@ -1,0 +1,12 @@
+{
+  "status": "passed",
+  "products": 3,
+  "annual_prices_labeled": true,
+  "api_beta_scope_visible": true,
+  "old_os_scope_visible": true,
+  "pageErrors": [],
+  "viewports": [
+    1440,
+    390
+  ]
+}

@@ -1,9 +1,9 @@
 import {test,expect} from '@playwright/test';
 async function call(page,name,input,options={}) {return page.evaluate(async({name,input,options})=>{const tools=await document.modelContext.getTools();const result=await document.modelContext.executeTool(tools.find(t=>t.name===name),input,options);return typeof result==='string'?JSON.parse(result):result;},{name,input,options});}
-test('five native tools return source-backed data and update visible UI',async({page})=>{
+test('five native tools return source-backed data and update visible UI',async({page,request})=>{
  await page.goto('/');await page.waitForFunction(()=>document.documentElement.dataset.webmcp==='ready');const tools=await page.evaluate(async()=>(await document.modelContext.getTools()).map(t=>({name:t.name,annotations:t.annotations,schema:t.inputSchema})));
  expect(tools.length).toBe(5);expect(tools.every(t=>t.annotations.readOnlyHint&&t.annotations.untrustedContentHint)).toBe(true);
- const scope=await call(page,'get_research_scope',{});expect(scope.products).toBe(50);expect(scope.document_observations).toBe(1664);await expect(page.locator('#agent-result')).toBeVisible();await expect(page.locator('#agent-content')).toContainText('1,664'.replace(',',''));
+ const publishedScope=await(await request.get('/api/scope/')).json();const scope=await call(page,'get_research_scope',{});expect(scope).toEqual(publishedScope);expect(scope.products).toBe(50);expect(scope.document_observations).toBeGreaterThan(0);await expect(page.locator('#agent-result')).toBeVisible();await expect(page.locator('#agent-content')).toContainText(String(scope.document_observations));
  const result=await call(page,'search_shift_products',{q:'Shiftmation',limit:10});expect(result.total).toBe(1);expect(result.products[0].id).toBe('OF-JP01');await expect(page.locator('#q')).toHaveValue('shiftmation');
  const detail=await call(page,'get_shift_product',{id:'OF-JP01'});expect(detail.assessments.some(a=>a.id==='B01'&&a.findings.some(f=>f.sources.length))).toBe(true);expect(detail.independent_tests_performed).toBe(false);await expect(page.locator('#agent-content')).toContainText('Shiftmation');
  const comparison=await call(page,'compare_shift_products',{ids:['OF-JP04','OF-US01']});expect(comparison.products.length).toBe(2);await expect(page.locator('#compare-selected button')).toHaveCount(2);

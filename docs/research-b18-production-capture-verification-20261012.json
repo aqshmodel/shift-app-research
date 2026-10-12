@@ -1,0 +1,17 @@
+{
+  "status": "passed",
+  "checks": [
+    {
+      "width": 1440,
+      "product": "OF-US06",
+      "quote_visible": true,
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "product": "OF-US06",
+      "quote_visible": true,
+      "overflow": false
+    }
+  ]
+}

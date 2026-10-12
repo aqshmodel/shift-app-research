@@ -1,14 +1,15 @@
 ---
 import ProductCard from './ProductCard.astro';
 import ContextIcon from './ContextIcon.astro';
-import {categoryInfo} from '../lib/catalog';
-import {directoryUrl, featureNames} from '../lib/home-directory.mjs';
-const {result, error} = Astro.props;
+import {categoryInfo,formatResearchDate} from '../lib/catalog';
+import {directoryUrl, featureNames, priceNames} from '../lib/home-directory.mjs';
+const {result, error, asOfDate} = Astro.props;
 const {filters, counts, products, total, pages, start} = result;
 const regions: Record<string,string> = {'': '国内・海外', domestic: '国内', overseas: '海外'};
 const active = [
   ...(filters.category ? [{label: categoryInfo[filters.category].name, href: directoryUrl(filters, {category: '', page: 1})}] : []),
   ...(filters.region ? [{label: regions[filters.region], href: directoryUrl(filters, {region: '', page: 1})}] : []),
+  ...(filters.price ? [{label: priceNames[filters.price], href: directoryUrl(filters, {price: '', page: 1})}] : []),
   ...filters.features.map((id: string) => ({label: featureNames[id], href: directoryUrl(filters, {features: filters.features.filter((x: string) => x !== id), page: 1})})),
   ...(filters.q ? [{label: '検索：' + filters.q, href: directoryUrl(filters, {q: '', page: 1})}] : []),
 ];
@@ -22,8 +23,12 @@ const active = [
     <label class="context-option"><input type="radio" name="category" value="" checked={!filters.category} /><span class="context-option-label">すべての用途</span><span class="facet-count" data-facet="category:" aria-hidden="true">{counts.category['']}</span></label>
     {Object.entries(categoryInfo).map(([id, c]) => <label class="context-option"><input type="radio" name="category" value={id} checked={filters.category === id} /><ContextIcon kind={id}/><span class="context-option-label">{c.name}</span><span class="facet-count" data-facet={'category:' + id} aria-hidden="true">{counts.category[id]}</span></label>)}
    </fieldset>
-   <button type="button" id="mobile-filters-toggle" class="mobile-filters-toggle" aria-expanded="false" aria-controls="additional-filters" hidden><span>機能・地域で絞り込む<span id="mobile-filter-count"></span></span><span aria-hidden="true">↓</span></button>
+   <button type="button" id="mobile-filters-toggle" class="mobile-filters-toggle" aria-expanded="false" aria-controls="additional-filters" hidden><span>料金・機能・地域で絞り込む<span id="mobile-filter-count"></span></span><span aria-hidden="true">↓</span></button>
    <div id="additional-filters" class="additional-filters">
+    <fieldset class="price-options"><legend>料金</legend>
+     {Object.entries(priceNames).map(([id, name]) => <label class="price-option"><input type="radio" name="price" value={id} checked={filters.price === id} /><span>{name}</span><span class="facet-count" data-facet={'price:' + id} aria-hidden="true">{counts.price[id]}</span></label>)}
+     <p class="filter-description">無料には人数制限のあるプランやβ版を含みます。金額・契約条件は詳細でご確認ください。</p>
+    </fieldset>
     <fieldset class="feature-options"><legend>必要な機能<span>複数選択できます</span></legend><p class="filter-description">選んだすべての項目について、公開資料に記載があるサービスを表示します。</p>
      {Object.entries(featureNames).map(([id, name]) => <label class="feature-option"><input type="checkbox" name="feature" value={id} checked={filters.features.includes(id)} /><span>{name}</span><span class="facet-count" data-facet={'feature:' + id} aria-hidden="true">{counts.feature[id]}</span></label>)}
     </fieldset>
@@ -42,7 +47,7 @@ const active = [
     {products.length ? <div class="product-grid">{products.map((p: any) => <ProductCard product={p} highlights />)}</div> : <div class="directory-empty"><p>公開資料で確認できていない場合もあります。条件を減らしてお探しください。</p><a class="button secondary" href="/#services" data-directory-link>条件を解除して、すべてを見る</a></div>}
     {pages > 1 && <nav class="directory-pagination" aria-label="サービス一覧のページ"><span class="pagination-position">{filters.page} / {pages}ページ</span><div>{Array.from({length: pages}, (_, i) => i + 1).map(page => <a href={directoryUrl(filters, {page})} data-directory-link data-pagination aria-label={page + 'ページ目'} aria-current={page === filters.page ? 'page' : undefined}>{page}</a>)}</div>{filters.page < pages && <a class="next-page" href={directoryUrl(filters, {page: filters.page + 1})} data-directory-link data-pagination>次のサービスを見る <span aria-hidden="true">→</span></a>}</nav>}
    </div>
-   <p class="directory-footnote">件数は選択中の条件を反映しています。表示順はおすすめ順ではありません。2026年10月11日現在の調査内容です。</p>
+   <p class="directory-footnote">件数は選択中の条件を反映しています。表示順はおすすめ順ではありません。{formatResearchDate(asOfDate)}現在の調査内容です。</p>
   </div>
  </form>
 </section>

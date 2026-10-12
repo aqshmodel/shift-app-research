@@ -2,14 +2,17 @@
 import {introduction} from '../lib/service-copy';
 import {categoryInfo,safeImage} from '../lib/catalog';
 import {featureNames} from '../lib/home-directory.mjs';
+import {summarizePrice} from '../lib/price-summary.mjs';
 const {product:p, highlights=false}=Astro.props;
 const documented = highlights ? p.features.filter((f:any)=>f.status==='documented').slice(0,3) : [];
+const price = p.price_summary ?? summarizePrice(p.prices, p.assessments?.find((a:any)=>a.id==='P01'));
 ---
 <article class="product-card">
-  <div class="card-top"><div class="product-logo">{p.logo?.url && safeImage(p.logo.url)?<img src={safeImage(p.logo.url)} alt={p.logo.brand+' ロゴ'} width="180" height="48" loading="lazy" referrerpolicy="no-referrer" class="vendor-logo" />:<span>{p.name.slice(0,1)}</span>}</div><span class="region">{p.region==='domestic'?(highlights?'国内':'国内の調査対象'):(highlights?'海外':'海外の調査対象')}</span></div>
+  <div class="card-top"><a class="product-logo" href={'/products/'+p.slug+'/'} aria-label={p.name+'の詳細を見る'}>{p.logo?.url && safeImage(p.logo.url)?<img src={safeImage(p.logo.url)} alt={p.logo.brand+' ロゴ'} width="180" height="48" loading="lazy" referrerpolicy="no-referrer" class="vendor-logo" />:<span>{p.name.slice(0,1)}</span>}</a><span class="region">{p.region==='domestic'?(highlights?'国内':'国内の調査対象'):(highlights?'海外':'海外の調査対象')}</span></div>
   <h3><a href={'/products/'+p.slug+'/'}>{p.name}</a></h3>{(p.vendor||!highlights)&&<p class="vendor-name">{p.vendor||'提供法人の詳細は調査記録をご確認ください。'}</p>}
   <p class="card-summary">{introduction(p)}</p>
   {documented.length > 0 && <ul class="card-feature-list" aria-label="公開資料で確認した項目">{documented.map((f:any)=><li>{featureNames[f.id]}</li>)}</ul>}
+  <dl class="card-price"><dt>料金</dt><dd><strong>{price.label}</strong>{price.note && <span>{price.note}</span>}</dd></dl>
   <div class="category-list">{p.categories.map((c:string)=><a href={'/categories/'+c+'/'}>{categoryInfo[c].name}</a>)}</div>
   <div class="card-actions"><a href={'/products/'+p.slug+'/'}>機能・料金を見る <span aria-hidden="true">↗</span></a><button class="compare-add" type="button" data-id={p.id} data-label={p.name} aria-pressed="false">比較に追加</button></div>
 </article>

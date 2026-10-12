@@ -1,4 +1,5 @@
 import { validateSearch, validateIds, validateId, validateEvidence } from './contracts.mjs';
+import { summarizePrice } from './price-summary.mjs';
 type Row = Record<string, any>;
 interface Statement {
   bind(...values: unknown[]): Statement;
@@ -25,6 +26,8 @@ export function createResearchRepository(database: Database) {
   const productPromises = new Map<string, Promise<Row | null>>();
   const metrics = { calls: 0, queries: 0, duration: 0 };
   const snapshotSql = 'SELECT s.snapshot_id,s.as_of_date,s.scope_json FROM web_live l JOIN web_snapshots s ON s.snapshot_id=l.snapshot_id WHERE l.id=1';
+  const catalogFields = `p.summary_json,p.search_text,json_extract(p.detail_json,'$.prices') AS prices_json,
+    (SELECT value FROM json_each(p.detail_json,'$.assessments') WHERE json_extract(value,'$.id')='P01' LIMIT 1) AS pricing_json`;
   function hydrate(row: Row | null): Row {
     if (!row) throw new Error('Published snapshot unavailable');
     return { id: row.snapshot_id, date: row.as_of_date, scope: JSON.parse(row.scope_json) };
@@ -45,16 +48,18 @@ export function createResearchRepository(database: Database) {
       if (!snapshotPromise) {
         const batch = read(() => database.batch([
           database.prepare(snapshotSql),
-          database.prepare('SELECT p.summary_json,p.search_text FROM web_products p JOIN web_live l ON p.snapshot_id=l.snapshot_id WHERE l.id=1 ORDER BY p.slug'),
+          database.prepare(`SELECT ${catalogFields} FROM web_products p JOIN web_live l ON p.snapshot_id=l.snapshot_id WHERE l.id=1 ORDER BY p.slug`),
         ]), 2);
         snapshotPromise = batch.then(rows => hydrate(rows[0].results[0]));
         const [rows] = await Promise.all([batch, snapshotPromise]);
         results = rows[1].results;
       } else {
         const current = await snapshot();
-        results = (await read(() => database.prepare('SELECT summary_json,search_text FROM web_products WHERE snapshot_id=? ORDER BY slug').bind(current.id).all())).results;
+        results = (await read(() => database.prepare(`SELECT ${catalogFields} FROM web_products p WHERE p.snapshot_id=? ORDER BY p.slug`).bind(current.id).all())).results;
       }
-      return results.map(row => ({ ...JSON.parse(row.summary_json), search_text: row.search_text })).sort((a, b) => nameOrder.compare(a.name, b.name));
+      return results.map(row => ({ ...JSON.parse(row.summary_json), search_text: row.search_text,
+        price_summary: summarizePrice(JSON.parse(row.prices_json || '[]'), JSON.parse(row.pricing_json || 'null')),
+      })).sort((a, b) => nameOrder.compare(a.name, b.name));
     })();
   }
   async function search(input: Record<string, unknown> = {}) {

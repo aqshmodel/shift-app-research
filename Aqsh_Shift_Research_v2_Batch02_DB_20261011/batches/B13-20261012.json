@@ -1,0 +1,861 @@
+{
+  "batch_id": "B13-20261012",
+  "prior_batch": "B12-20261012",
+  "as_of_date": "2026-10-12",
+  "resolution_policy_version": 2,
+  "description": "国内4サービスの解約・データ搬出・削除期限、契約と機能境界の追加調査",
+  "method": "公式Web本文、公開規約・特商法・会社方針、製品を明示した記事を既存記録と照合。取得困難な3規約等と1記事はログイン不要のブラウザで確認。操作・契約・送信・独立試験は行わず、原本の変更はせず追記する。",
+  "sources": [
+    {
+      "key": "pitat-terms",
+      "url": "https://www.pitat-shift.jp/terms.html",
+      "title": "Pitat-Shift 利用規約",
+      "publisher": "Pitat-Shift / 伊藤智幸",
+      "reference": "CU公開利用規約・AX本文確認",
+      "retrieved_on": "2026-10-12",
+      "method": "browser_public_web_body",
+      "scope_note": "公開資料の本文を確認。原文全文・画像は保存しない。",
+      "updated_on": "2026-05-27"
+    },
+    {
+      "key": "pitat-privacy",
+      "url": "https://www.pitat-shift.jp/privacy.html",
+      "title": "Pitat-Shift プライバシーポリシー",
+      "publisher": "Pitat-Shift / 伊藤智幸",
+      "reference": "CU公開プライバシーポリシー・AX本文確認",
+      "retrieved_on": "2026-10-12",
+      "method": "browser_public_web_body",
+      "scope_note": "公開資料の本文を確認。原文全文・画像は保存しない。",
+      "published_on": "2026-05-27"
+    },
+    {
+      "key": "pitat-disclaimer",
+      "url": "https://www.pitat-shift.jp/disclaimer.html",
+      "title": "Pitat-Shift データの所有権と免責事項",
+      "publisher": "Pitat-Shift / 伊藤智幸",
+      "reference": "CU公開重要事項説明・AX本文確認",
+      "retrieved_on": "2026-10-12",
+      "method": "browser_public_web_body",
+      "scope_note": "公開資料の本文を確認。原文全文・画像は保存しない。"
+    },
+    {
+      "key": "pitat-tokusho",
+      "url": "https://www.pitat-shift.jp/tokusho.html",
+      "title": "Pitat-Shift 特定商取引法に基づく表記",
+      "publisher": "Pitat-Shift / 伊藤智幸",
+      "reference": "公式LPリンク先／Web本文確認",
+      "retrieved_on": "2026-10-12",
+      "method": "public_web_body",
+      "scope_note": "公開資料の本文を確認。原文全文・画像は保存しない。"
+    },
+    {
+      "key": "nurse",
+      "url": "https://nurse-shift.com/",
+      "title": "ナースシフト 公開FAQ・利用規約・個人情報方針・特商法表示",
+      "publisher": "ナースシフト / 蔡弘聖",
+      "reference": "Web公開ページの埋め込み規約・ヘルプ本文確認",
+      "retrieved_on": "2026-10-12",
+      "method": "public_web_body",
+      "scope_note": "規約と個人情報方針の最終改定日2026-08-04を使用。FAQ・料金・操作ガイドの改定日は不明。公開マークアップの説明で、操作結果ではない。",
+      "updated_on": "2026-08-04"
+    },
+    {
+      "key": "shiftra-main",
+      "url": "https://www.aishift.com/",
+      "title": "シフトラ 公式機能・料金・FAQ",
+      "publisher": "株式会社ams",
+      "reference": "Web公式LPの料金・連携FAQ本文確認",
+      "retrieved_on": "2026-10-12",
+      "method": "public_web_body",
+      "scope_note": "取得時はaishift.comへ転送。既存のwww版URLと同じ資料として記録。"
+    },
+    {
+      "key": "shiftra-ai",
+      "url": "https://aishift.com/blog/ai-shift-creation/",
+      "title": "AIでシフトを自動作成するには？条件の伝え方と確認項目",
+      "publisher": "株式会社ams",
+      "reference": "Web本文のシフトラを明示した段落のみ機能根拠へ使用",
+      "retrieved_on": "2026-10-12",
+      "method": "public_web_body",
+      "scope_note": "一般論・架空の条件例や他AIへのプロンプトを、シフトラの実装・試験結果へ転用しない。",
+      "updated_on": "2026-09-06",
+      "published_on": "2026-09-06"
+    },
+    {
+      "key": "shiftra-multi",
+      "url": "https://aishift.com/blog/multi-store-support-shift/",
+      "title": "他店舗への応援シフト：複数店舗機能の提供範囲",
+      "publisher": "株式会社ams",
+      "reference": "CU公開記事・製品を明示した第6節を確認",
+      "retrieved_on": "2026-10-12",
+      "method": "browser_public_web_body",
+      "scope_note": "記事の日付2026-09-21、機能情報の基準日は2026-09-05。架空例は独立試験の根拠にしない。",
+      "published_on": "2026-09-21"
+    },
+    {
+      "key": "ams-tokusho",
+      "url": "https://www.ams.jp/tokushoho",
+      "title": "株式会社ams 特定商取引法表示：シフトラの価格・支払・キャンセル",
+      "publisher": "株式会社ams",
+      "reference": "Web本文・販売サービスのシフトラ明記を確認",
+      "retrieved_on": "2026-10-12",
+      "method": "public_web_body",
+      "scope_note": "easySIMとシフトラを分ける。税込価格と商品代金外の消費税表記の適用範囲は未確定。"
+    },
+    {
+      "key": "ams-policy",
+      "url": "https://www.ams.jp/policy",
+      "title": "株式会社ams 個人情報取扱い・共通利用規約",
+      "publisher": "株式会社ams",
+      "reference": "Web個人情報取扱い・共通規約本文確認",
+      "retrieved_on": "2026-10-12",
+      "method": "public_web_body",
+      "scope_note": "2026-05-25は個人情報保護方針の最終改正日。共通規約・別の個別条項の改定日ではない。eSIM固有の返金条件をシフトラへ転用しない。",
+      "updated_on": "2026-05-25"
+    },
+    {
+      "key": "oplus-faq",
+      "url": "https://opluswork.com/faq",
+      "title": "oplus FAQ：CSV、登録代行、退会手続き",
+      "publisher": "Oplus株式会社",
+      "reference": "Web公開FAQの該当回答を確認",
+      "retrieved_on": "2026-10-12",
+      "method": "public_web_body",
+      "scope_note": "公開資料の本文を確認。原文全文・画像は保存しない。"
+    },
+    {
+      "key": "oplus-terms",
+      "url": "https://opluswork.com/terms",
+      "title": "oplus 基本規約",
+      "publisher": "Oplus株式会社",
+      "reference": "Web共通規約本文確認",
+      "retrieved_on": "2026-10-12",
+      "method": "public_web_body",
+      "scope_note": "公開資料の本文を確認。原文全文・画像は保存しない。",
+      "updated_on": "2021-01-06"
+    },
+    {
+      "key": "oplus-tokusho",
+      "url": "https://opluswork.com/tokushoho",
+      "title": "oplus 特商法に基づく表示",
+      "publisher": "Oplus株式会社",
+      "reference": "Web価格の税・返品・解約条項確認",
+      "retrieved_on": "2026-10-12",
+      "method": "public_web_body",
+      "scope_note": "公開資料の本文を確認。原文全文・画像は保存しない。"
+    },
+    {
+      "key": "oplus-privacy",
+      "url": "https://www.opluswork.com/privacypolicy",
+      "title": "oplus プライバシーポリシー",
+      "publisher": "Oplus株式会社",
+      "reference": "Web保管国と開示請求条項確認",
+      "retrieved_on": "2026-10-12",
+      "method": "public_web_body",
+      "scope_note": "公開資料の本文を確認。原文全文・画像は保存しない。",
+      "updated_on": "2024-08-14",
+      "published_on": "2019-10-10"
+    },
+    {
+      "key": "oplus-plan",
+      "url": "https://opluswork.com/plan",
+      "title": "oplus 料金プラン・自動作成オプション",
+      "publisher": "Oplus株式会社",
+      "reference": "Web料金欄と年額費用対効果表を照合",
+      "retrieved_on": "2026-10-12",
+      "method": "public_web_body",
+      "scope_note": "300円の価格表示と費用対効果表の250円相当の差は未解決。新しい料金明細として同額を重複追加しない。"
+    }
+  ],
+  "findings": [
+    {
+      "product": "JP10",
+      "criterion": "P02",
+      "source": "pitat-terms",
+      "summary": "複数拠点には拠点ごとに管理者アカウントと別の購読契約が必要。",
+      "locator": "第2条3項",
+      "limitations": "人数の上限や管理者同時利用数は未確認。",
+      "state": "known",
+      "delivery": "native"
+    },
+    {
+      "product": "JP10",
+      "criterion": "P03",
+      "source": "pitat-terms",
+      "summary": "期限内の解約手続きがなければ購読を自動更新する。支払不成立時は生成等の一部機能が止まる。",
+      "locator": "第3条3–4項",
+      "limitations": "月・年ごとの期日、解約が確定する時点は個別手続き確認。",
+      "state": "known",
+      "delivery": "native"
+    },
+    {
+      "product": "JP10",
+      "criterion": "P04",
+      "source": "pitat-terms",
+      "summary": "Setupは税込330,000円。初期入力・UUID整合性・初回生成までの技術支援を含む任意契約。",
+      "locator": "第4条1–2項",
+      "limitations": "購読料とは別の業務委託。全設定の代行・保守・成功保証ではない。",
+      "state": "known",
+      "delivery": "managed_service"
+    },
+    {
+      "product": "JP10",
+      "criterion": "P04",
+      "source": "pitat-terms",
+      "summary": "Premiumは税込550,000円。Setupの内容に、制約の整理・設計支援と設計書納品を加える。",
+      "locator": "第4条1–2項",
+      "limitations": "購読料とは別の任意契約。Setupと重ねて必須加算しない。",
+      "state": "known",
+      "delivery": "managed_service"
+    },
+    {
+      "product": "JP10",
+      "criterion": "P08",
+      "source": "pitat-tokusho",
+      "summary": "支援費の支払時期は別契約で合意。決済後の返金・キャンセルを受けないと表示する。",
+      "locator": "支払時期／返品・キャンセル",
+      "limitations": "利用規約第4条も支援費の返金を原則行わないと記載。法的効力の判断ではない。",
+      "state": "known",
+      "delivery": "native"
+    },
+    {
+      "product": "JP10",
+      "criterion": "M08",
+      "source": "pitat-terms",
+      "summary": "規約は解約後30日のファイル取得停止と90日の読取専用出力を記載するが、全設定・希望・履歴の全量搬出は未確認。",
+      "locator": "第6条2–5項",
+      "limitations": "同条は90日間の読取専用エクスポートも記載。ファイル取得と別形式出力の対象・費用・期限を要照合。",
+      "state": "not_found",
+      "delivery": "native"
+    },
+    {
+      "product": "JP10",
+      "criterion": "N06",
+      "source": "pitat-terms",
+      "summary": "規約は全データを解約90日後に完全削除するとするが、個人情報方針のスタッフ最大約105日と期限の扱いが異なる。",
+      "locator": "第6条4項",
+      "limitations": "https://www.pitat-shift.jp/privacy.html 第5条と照合。TTL遅延・起算日・対象範囲・現行契約を確定していない。",
+      "state": "disputed",
+      "delivery": "native"
+    },
+    {
+      "product": "JP10",
+      "criterion": "N06",
+      "source": "pitat-privacy",
+      "summary": "方針はスタッフ最大約105日、シフト・ファイル90日、入力ログ約200日、Webhook約400日を記載する。",
+      "locator": "第5条・保持期間表／第6条",
+      "limitations": "規約の全データ90日完全削除との整合、ログの起算日や削除実施日は未確定。URLトークン約45日、TTL処理遅延の説明もある。",
+      "state": "disputed",
+      "delivery": "native"
+    },
+    {
+      "product": "JP10",
+      "criterion": "N03",
+      "source": "pitat-privacy",
+      "summary": "職員の希望入力について更新日時・端末情報・内部IDを収集すると説明する。",
+      "locator": "第1条／第5条",
+      "limitations": "管理者・運営者の変更監査、改ざん対策、監査ログの全量出力は未確認。",
+      "state": "known",
+      "delivery": "native"
+    },
+    {
+      "product": "JP10",
+      "criterion": "N01",
+      "source": "pitat-privacy",
+      "summary": "HMAC署名URLと権限設定で制御し、職員入力URLはトークンごとに即時無効化できるとする。",
+      "locator": "第4条",
+      "limitations": "テナント境界・管理者MFA・実際の権限解除は未検証。",
+      "state": "known",
+      "delivery": "native"
+    },
+    {
+      "product": "JP10",
+      "criterion": "N05",
+      "source": "pitat-terms",
+      "summary": "アップロード情報と生成表の権利は利用者に帰属し、承諾なく第三者AI学習や他テナントへ直接流用しないとする。",
+      "locator": "第5条",
+      "limitations": "不具合解消・匿名統計等への利用は認める。外部送信項目、保存先、学習停止設定の実機は未確認。",
+      "state": "known",
+      "delivery": "native"
+    },
+    {
+      "product": "JP10",
+      "criterion": "O03",
+      "source": "pitat-disclaimer",
+      "summary": "削除後のデータ復元には対応しないと明示する。",
+      "locator": "重要事項説明5",
+      "limitations": "稼働中のバックアップ・復元やRPO/RTOの約束は別途確認。",
+      "state": "known",
+      "delivery": "native"
+    },
+    {
+      "product": "JP10",
+      "criterion": "G06",
+      "source": "pitat-disclaimer",
+      "summary": "重要事項は管理者による確認・修正を要求するが、最適化器とは別の機械検査の範囲は示していない。",
+      "locator": "重要事項説明1–2",
+      "limitations": "人間の確認を独立ロジックの合格や法定必須条件の保証へ置き換えない。",
+      "state": "not_found",
+      "delivery": "native"
+    },
+    {
+      "product": "JP10",
+      "criterion": "O04",
+      "source": "pitat-privacy",
+      "summary": "個人情報の問い合わせ欄はメールアドレスの仮置き表記で、受付時間・応答保証は確認できない。",
+      "locator": "第7条",
+      "limitations": "LP・特商法の問合せフォームの存在と、契約サポートの条件は分ける。",
+      "state": "not_found",
+      "delivery": "native"
+    },
+    {
+      "product": "JP11",
+      "criterion": "P01",
+      "source": "nurse",
+      "summary": "個人の有料購読は税込月額5,500円、1か月ごとに自動更新と明記する。",
+      "locator": "特商法6・9",
+      "limitations": "登録100名まで。施設契約は相談で、同じ価格・条件を一律適用しない。",
+      "state": "known",
+      "delivery": "native"
+    },
+    {
+      "product": "JP11",
+      "criterion": "P03",
+      "source": "nurse",
+      "summary": "有料申込で初回決済、以後更新日に課金。初回30日試用はカード不要で自動課金なし。",
+      "locator": "特商法6・9／料金・試用FAQ",
+      "limitations": "再登録者の試用条件は規約第7項で異なる。最低継続期間・年契約は未確認。",
+      "state": "known",
+      "delivery": "native"
+    },
+    {
+      "product": "JP11",
+      "criterion": "P08",
+      "source": "nurse",
+      "summary": "次の更新日の前日までに解約し、満了日までは利用できる。支払済みの日割り返金は行わない。",
+      "locator": "特商法11／利用規約6",
+      "limitations": "課金の解約と退会は別手続き。解約の操作は実施していない。",
+      "state": "known",
+      "delivery": "native"
+    },
+    {
+      "product": "JP11",
+      "criterion": "N06",
+      "source": "nurse",
+      "summary": "購読のみの解約では入力データを保持し、退会で入力・認証情報を削除または失効させる。",
+      "locator": "利用規約5・12／個人情報方針6",
+      "limitations": "バックアップ・サーバーログ等の削除実施・証明は未確認。法定保存が必要な決済記録は別扱い。",
+      "state": "known",
+      "delivery": "native"
+    },
+    {
+      "product": "JP11",
+      "criterion": "N06",
+      "source": "nurse",
+      "summary": "退会後の内部ID・日時と再登録判定用HMAC等を12か月保持し、解約再試行用購読IDは解約完了30日後に削除する。",
+      "locator": "個人情報方針1・6",
+      "limitations": "生のメール・端末IDの保持とは区別。匿名の利用状況イベントも最長12か月で、入力本文とは別種別。",
+      "state": "known",
+      "delivery": "native"
+    },
+    {
+      "product": "JP11",
+      "criterion": "M08",
+      "source": "nurse",
+      "summary": "勤務表のPDF・CSV・Excel保存は案内されるが、設定・希望・変更履歴を含む解約時の全量出力は未確認。",
+      "locator": "保存FAQ／利用規約10・12",
+      "limitations": "勤務表の書き出しを移行可能な全量dumpへ拡張しない。",
+      "state": "not_found",
+      "delivery": "native"
+    },
+    {
+      "product": "JP11",
+      "criterion": "N04",
+      "source": "nurse",
+      "summary": "決済はStripe Checkoutへ委託し、運営者はカード番号を保持しないと記載する。",
+      "locator": "個人情報方針2・5",
+      "limitations": "職員・勤務表のクラウド、委託先一覧、保管地域は未確認。",
+      "state": "known",
+      "delivery": "native"
+    },
+    {
+      "product": "JP11",
+      "criterion": "N01",
+      "source": "nurse",
+      "summary": "規約はアカウントの第三者への貸与・共有を禁止する。",
+      "locator": "利用規約2",
+      "limitations": "施設内共同運用・権限分離は施設契約を確認。1契約の容量を複数管理者の利用権へ読み替えない。",
+      "state": "known",
+      "delivery": "native"
+    },
+    {
+      "product": "JP11",
+      "criterion": "H01",
+      "source": "nurse",
+      "summary": "手修正したセルも固定していなければ再割当の対象になると説明する。",
+      "locator": "微調整ガイド・決めた配置を残す",
+      "limitations": "公開ガイドの説明。実機での保持や同時操作は未検証。",
+      "state": "known",
+      "delivery": "native"
+    },
+    {
+      "product": "JP11",
+      "criterion": "C03",
+      "source": "nurse",
+      "summary": "夜勤・明け・休みの編集連動は同じ月のセルだけに行うと説明する。",
+      "locator": "微調整ガイド・夜勤を変更",
+      "limitations": "自動生成や月境界の既存勤務照合の可否までは説明されていない。",
+      "state": "known",
+      "delivery": "native"
+    },
+    {
+      "product": "JP11",
+      "criterion": "G09",
+      "source": "nurse",
+      "summary": "手修正後の保存でも、人数やリーダーの不足が残る場合があると案内する。",
+      "locator": "微調整ガイド・調整した内容を残す",
+      "limitations": "手修正の保存に関する説明。生成器の解なし証明・安全な確定・全条件充足とは扱わない。",
+      "state": "known",
+      "delivery": "native"
+    },
+    {
+      "product": "JP11",
+      "criterion": "O04",
+      "source": "nurse",
+      "summary": "メールで問い合わせを受け、要望・不具合報告は開発者へ直接届くと説明する。",
+      "locator": "個人開発の説明／問い合わせ",
+      "limitations": "受付時間・応答目標・導入代行は未確認。大手型の導入支援・営業窓口はないとの自己説明。",
+      "state": "known",
+      "delivery": "native"
+    },
+    {
+      "product": "JP12",
+      "criterion": "F01",
+      "source": "shiftra-ai",
+      "summary": "シフトラの条件には絶対・優先・できればの優先度があると明記する。",
+      "locator": "条件の対象・期間・数・優先度",
+      "limitations": "自然文の誤解釈・優先度変更・緩和禁止の実動作は未検証。架空プロンプトを仕様の証明にしない。",
+      "state": "known",
+      "delivery": "native"
+    },
+    {
+      "product": "JP12",
+      "criterion": "C03",
+      "source": "shiftra-ai",
+      "summary": "個人の連勤上限と前月の確定勤務を参照情報に含めて生成できると説明する。",
+      "locator": "生成後の確認3・月をまたぐ勤務",
+      "limitations": "週・年度境界、前月変更後の再計算・検証範囲は未確認。",
+      "state": "known",
+      "delivery": "native"
+    },
+    {
+      "product": "JP12",
+      "criterion": "B06",
+      "source": "shiftra-multi",
+      "summary": "共有スタッフの統一希望フォームと、全店の必要・可能・確定枠の比較を提供する。",
+      "locator": "第6節・2026-09-05時点の機能情報",
+      "limitations": "機能有効化と対象店舗の権限が必要。複数店の同時最適化や価格への標準内包は未確認。",
+      "state": "known",
+      "delivery": "native",
+      "scope": "記事2026-09-21／機能基準日2026-09-05"
+    },
+    {
+      "product": "JP12",
+      "criterion": "I06",
+      "source": "shiftra-multi",
+      "summary": "店舗間の比較表示は、応援者の自動割当・承認、移動経路の自動計算、両店の表の同時更新とは別と説明する。",
+      "locator": "第6節／末尾の製品案内",
+      "limitations": "移動確認、本人・両店の合意、確定表の反映は担当者が完了する。製品全体の非対応判定ではない。",
+      "state": "known",
+      "delivery": "native"
+    },
+    {
+      "product": "JP12",
+      "criterion": "P01",
+      "source": "ams-tokusho",
+      "summary": "シフトラは1ユーザー月額250円と明記し、最新価格はサービス・申込画面で案内するとする。",
+      "locator": "販売サービス／販売価格",
+      "limitations": "税込表記と別項の消費税の適用は要照合。easySIMの価格を転用しない。",
+      "state": "known",
+      "delivery": "native"
+    },
+    {
+      "product": "JP12",
+      "criterion": "P02",
+      "source": "ams-tokusho",
+      "summary": "シフトラの利用料は利用人数に応じた課金と説明する。",
+      "locator": "販売価格・シフトラ",
+      "limitations": "管理者・休職者・削除スタッフ・兼務者の数え方や月中増減は未確認。",
+      "state": "known",
+      "delivery": "native"
+    },
+    {
+      "product": "JP12",
+      "criterion": "P03",
+      "source": "ams-tokusho",
+      "summary": "カードは注文時処理、国内銀行振込は注文後3日以内と説明する。",
+      "locator": "代金の支払方法・時期",
+      "limitations": "両サービス共通欄。シフトラの更新日・最低期間・毎月の振込条件は別契約確認。",
+      "state": "known",
+      "delivery": "native"
+    },
+    {
+      "product": "JP12",
+      "criterion": "P08",
+      "source": "ams-tokusho",
+      "summary": "試用中キャンセルは無課金。本申込後のキャンセル月は利用料が発生し、手続き完了後の翌月以降は止まる。",
+      "locator": "返金・キャンセル",
+      "limitations": "月途中の日割り返金は行わない。データ搬出期限・削除の時点は別途確認。",
+      "state": "known",
+      "delivery": "native"
+    },
+    {
+      "product": "JP12",
+      "criterion": "P07",
+      "source": "ams-tokusho",
+      "summary": "月額250円を税込と表示する一方、商品代金外の必要料金に消費税を記載し、適用範囲は未確定。",
+      "locator": "販売価格／商品代金以外の必要料金",
+      "limitations": "複数サービスの共通欄のため断定せず、シフトラの申込表示・請求総額を照合する。",
+      "state": "disputed",
+      "delivery": "native"
+    },
+    {
+      "product": "JP12",
+      "criterion": "P05",
+      "source": "shiftra-main",
+      "summary": "連携FAQはExcel取込に加えスマレジ等の連携オプションを案内するが、個別の追加料金は記載未確認。",
+      "locator": "FAQ・既存の勤怠管理や他ツールとの連携",
+      "limitations": "全機能というプラン表現から、外部連携・APIが無条件で標準内包されるとは判断しない。",
+      "state": "not_found",
+      "delivery": "native"
+    },
+    {
+      "product": "JP12",
+      "criterion": "N02",
+      "source": "ams-policy",
+      "summary": "会社方針の二要素認証は運営者側の安全管理の説明で、顧客管理者のMFA・SSO提供条件は確認できない。",
+      "locator": "安全管理措置11",
+      "limitations": "運営会社の対策を製品の顧客認証へ転用しない。",
+      "state": "not_found",
+      "delivery": "native"
+    },
+    {
+      "product": "JP12",
+      "criterion": "N05",
+      "source": "ams-policy",
+      "summary": "共通方針はAI API等への委託の可能性を記載するが、シフトラの送信項目・保持期間・学習利用は未確認。",
+      "locator": "個人情報取扱い5",
+      "limitations": "個別のAIモデル、匿名化、学習拒否、国内処理の保証を推定しない。",
+      "state": "not_found",
+      "delivery": "native"
+    },
+    {
+      "product": "JP12",
+      "criterion": "M08",
+      "source": "ams-policy",
+      "summary": "個人情報の開示手続きはあるが、シフトラの希望・ルール・設定・履歴を含む退出用全量出力は確認できない。",
+      "locator": "開示等の請求6／利用規約11",
+      "limitations": "本人の開示請求とサービス移行用dumpは別。eSIM固有の返金条項もシフトラへ転用しない。",
+      "state": "not_found",
+      "delivery": "native"
+    },
+    {
+      "product": "JP12",
+      "criterion": "O04",
+      "source": "ams-policy",
+      "summary": "個人情報窓口は平日10〜17時と表示するが、製品の技術サポート時間・応答保証は未確認。",
+      "locator": "個人情報保護管理者2／苦情相談9",
+      "limitations": "個人情報窓口の時間を、シフトラの全相談に適用しない。",
+      "state": "not_found",
+      "delivery": "native"
+    },
+    {
+      "product": "JP18",
+      "criterion": "P08",
+      "source": "oplus-tokusho",
+      "summary": "指定の手続きで解約できるが、支払済みの料金は返金しないと記載する。",
+      "locator": "返品・解約条件",
+      "limitations": "解約締切、日割り、個別有料契約の優先条件は未確認。",
+      "state": "known",
+      "delivery": "native"
+    },
+    {
+      "product": "JP18",
+      "criterion": "P07",
+      "source": "oplus-tokusho",
+      "summary": "特商法表示は価格を税込と説明する。",
+      "locator": "販売価格帯／商品代金外の費用",
+      "limitations": "料金表の自動作成300円と費用対効果表250円相当の差は解消していない。現在の請求額は見積確認。",
+      "state": "known",
+      "delivery": "native"
+    },
+    {
+      "product": "JP18",
+      "criterion": "M02",
+      "source": "oplus-faq",
+      "summary": "勤務表のCSV取得はシフト管理画面で行い、アプリからは取得できないと説明する。",
+      "locator": "機能FAQ・エクセルCSVダウンロード",
+      "limitations": "Excelブック出力や職員・希望・設定の全量搬出はこの回答から判定しない。",
+      "state": "known",
+      "delivery": "native"
+    },
+    {
+      "product": "JP18",
+      "criterion": "M08",
+      "source": "oplus-privacy",
+      "summary": "本人の開示請求は郵送・1回1,000円の切手負担だが、サービス移行用の全量出力の根拠は確認できない。",
+      "locator": "個人情報の開示等請求1–2",
+      "limitations": "本人の開示制度の費用であり、勤務表・設定の退出エクスポート料金へ転用しない。",
+      "state": "not_found",
+      "delivery": "native"
+    },
+    {
+      "product": "JP18",
+      "criterion": "M08",
+      "source": "oplus-faq",
+      "summary": "勤務表CSVと退会手続きは案内されるが、希望・設定・監査履歴を含む解約時の全量形式・期限は未確認。",
+      "locator": "CSV出力FAQ／退会方法",
+      "limitations": "退会処理1〜2営業日の案内は、削除完了や移行猶予期限の保証ではない。",
+      "state": "not_found",
+      "delivery": "native"
+    },
+    {
+      "product": "JP18",
+      "criterion": "N04",
+      "source": "oplus-privacy",
+      "summary": "共通方針の個人データ保管国欄には日本・米国とGoogleデータセンターを掲げる。",
+      "locator": "外的環境の把握・保管国",
+      "limitations": "製品データごとのリージョン・バックアップ・委託先処理範囲は未特定。",
+      "state": "known",
+      "delivery": "native"
+    },
+    {
+      "product": "JP18",
+      "criterion": "N05",
+      "source": "oplus-terms",
+      "summary": "非識別の統計データをサービス等で利用・第三者提供できる条項はあるが、生成AI学習の条件は未確認。",
+      "locator": "第5条2項",
+      "limitations": "統計利用の許諾を、外部AIへの送信・モデル学習の合意として扱わない。",
+      "state": "not_found",
+      "delivery": "native"
+    },
+    {
+      "product": "JP18",
+      "criterion": "O08",
+      "source": "oplus-terms",
+      "summary": "運営者は1か月前の通知でサービスを終了でき、同時に契約も終了すると定める。",
+      "locator": "第9条",
+      "limitations": "データ返却や移行支援、通知到達、個別契約の条件は未確認。",
+      "state": "known",
+      "delivery": "native"
+    },
+    {
+      "product": "JP18",
+      "criterion": "B07",
+      "source": "oplus-terms",
+      "summary": "共通規約と異なる個別規定があれば、特段の定めがない限り個別規定を優先する。",
+      "locator": "第1条2–3項",
+      "limitations": "自動作成や勤怠の個別契約・申込書は未取得。無料管理と自動作成を区別する。",
+      "state": "known",
+      "delivery": "native"
+    },
+    {
+      "product": "JP18",
+      "criterion": "B07",
+      "source": "oplus-plan",
+      "summary": "自動作成は料金表で別のオプションとして記載する。",
+      "locator": "自動シフト作成機能・オプション欄",
+      "limitations": "FAQは有料プラン機能として案内するが、Pro100円への無条件の内包を示すものではない。",
+      "state": "known",
+      "delivery": "native"
+    },
+    {
+      "product": "JP18",
+      "criterion": "K03",
+      "source": "oplus-faq",
+      "summary": "運営者によるスタッフ登録代行はメールで相談できると案内する。",
+      "locator": "登録ログインFAQ・スタッフ登録方法4",
+      "limitations": "初期移行の範囲、代行費、設定・維持の責任分担は未確認。",
+      "state": "known",
+      "delivery": "managed_service"
+    },
+    {
+      "product": "JP18",
+      "criterion": "N06",
+      "source": "oplus-faq",
+      "summary": "退会手続きの対応は1〜2営業日と案内するが、本体・ログ・バックアップの削除期限は未確認。",
+      "locator": "退会方法FAQ",
+      "limitations": "処理受付の時間と、実際の削除完了・削除証明を区別する。",
+      "state": "not_found",
+      "delivery": "native"
+    }
+  ],
+  "prices": [
+    {
+      "product": "JP10",
+      "source": "pitat-terms",
+      "criterion": "P04",
+      "plan": "Setup任意技術支援・別契約",
+      "amount": "330000",
+      "currency": "JPY",
+      "tax_status": "inclusive",
+      "billable_unit": "支援契約",
+      "quantity_definition": "記載された提供単位。人数・兼務・管理者の数え方はlimitationsを参照。",
+      "commitment_months": null,
+      "billing_period_months": null,
+      "prepayment": "unknown",
+      "charge_type": "setup",
+      "recurrence_months": null,
+      "requirement": "optional",
+      "conditions": {
+        "notes": "税込。購読とは別の任意業務委託。支払時期は別途合意、原則返金なし。PremiumにはSetup内容が含まれ、重ねて加算しない。"
+      }
+    },
+    {
+      "product": "JP10",
+      "source": "pitat-terms",
+      "criterion": "P04",
+      "plan": "Premium任意設計支援・別契約",
+      "amount": "550000",
+      "currency": "JPY",
+      "tax_status": "inclusive",
+      "billable_unit": "支援契約",
+      "quantity_definition": "記載された提供単位。人数・兼務・管理者の数え方はlimitationsを参照。",
+      "commitment_months": null,
+      "billing_period_months": null,
+      "prepayment": "unknown",
+      "charge_type": "setup",
+      "recurrence_months": null,
+      "requirement": "optional",
+      "conditions": {
+        "notes": "税込。Setupを内包し、制約設計書を納品。購読とは別の任意業務委託。成果や手修正不要は保証されない。"
+      }
+    },
+    {
+      "product": "JP11",
+      "source": "nurse",
+      "criterion": "P01",
+      "plan": "個人有料購読・月次自動更新",
+      "amount": "5500",
+      "currency": "JPY",
+      "tax_status": "inclusive",
+      "billable_unit": "アカウント",
+      "quantity_definition": "記載された提供単位。人数・兼務・管理者の数え方はlimitationsを参照。",
+      "commitment_months": null,
+      "billing_period_months": 1,
+      "prepayment": "unknown",
+      "charge_type": "subscription",
+      "recurrence_months": 1,
+      "requirement": "required",
+      "conditions": {
+        "notes": "税込。1アカウント100名まで。申込時と月次更新日に決済し、次の更新日の前日まで解約可能。日割り返金なし。購読解約と退会は別。",
+        "staff_count_max": 100
+      }
+    },
+    {
+      "product": "JP12",
+      "source": "ams-tokusho",
+      "criterion": "P01",
+      "plan": "シフトラ月額・会社特商法表示",
+      "amount": "250",
+      "currency": "JPY",
+      "tax_status": "unknown",
+      "billable_unit": "ユーザー",
+      "quantity_definition": "記載された提供単位。人数・兼務・管理者の数え方はlimitationsを参照。",
+      "commitment_months": null,
+      "billing_period_months": 1,
+      "prepayment": "unknown",
+      "charge_type": "subscription",
+      "recurrence_months": 1,
+      "requirement": "required",
+      "conditions": {
+        "notes": "250円税込の表示と、別項の追加消費税表記の適用範囲を要照合。課金は利用人数、各種ユーザーの定義未確認。キャンセル月は課金、日割り返金なし。"
+      }
+    }
+  ],
+  "followups": [
+    {
+      "product": "JP10",
+      "criterion": "N06",
+      "priority": 2,
+      "method": "vendor_document",
+      "question": "2026-05-27規約の全データ90日削除と方針のスタッフ約105日・ログ200/400日、TTL遅延・起算日・残存範囲を照合する。"
+    },
+    {
+      "product": "JP10",
+      "criterion": "M08",
+      "priority": 2,
+      "method": "vendor_document",
+      "question": "ファイルアクセス30日と読取専用エクスポート90日の形式・対象を分け、希望・制約・設定・履歴の全量と搬出費を確認する。"
+    },
+    {
+      "product": "JP11",
+      "criterion": "M08",
+      "priority": 2,
+      "method": "synthetic_test",
+      "question": "退会前に全設定・希望・保存勤務表・変更履歴を搬出し、解約後の保存種別と復元可能性を確認する。"
+    },
+    {
+      "product": "JP12",
+      "criterion": "P07",
+      "priority": 2,
+      "method": "vendor_quote",
+      "question": "250円税込表記と商品代金外の消費税の適用対象を、シフトラの申込画面・請求総額・現行契約で確定する。"
+    },
+    {
+      "product": "JP12",
+      "criterion": "B07",
+      "priority": 2,
+      "method": "vendor_document",
+      "question": "共有スタッフ希望と枠比較の有効化・権限・料金条件、応援自動割当と両店同時更新の提供範囲を確認する。"
+    }
+  ],
+  "task_updates": [
+    {
+      "task_id": "B03-20261011-TASK008",
+      "state": "in_progress",
+      "priority": 1,
+      "method": "synthetic_test",
+      "note": "規約・重要事項は人間による確定を要求。別ロジックの独立検査を証明しないため実検算課題を継続。"
+    },
+    {
+      "task_id": "TASK-RES00800",
+      "state": "in_progress",
+      "priority": 2,
+      "method": "vendor_quote",
+      "note": "税込と返金条件を特商法で補完。料金表300円と年間試算250円相当の差は残り、適用価格を継続確認。"
+    }
+  ],
+  "retrieval_checks": [
+    {
+      "product": "JP10",
+      "url": "https://www.pitat-shift.jp/terms.html",
+      "result": "browser_verified",
+      "notes": "Web取得エラーの後、ログイン不要のブラウザの公開本文・日付・該当条項を確認。フォーム送信なし。"
+    },
+    {
+      "product": "JP10",
+      "url": "https://www.pitat-shift.jp/privacy.html",
+      "result": "browser_verified",
+      "notes": "Web取得エラーの後、ログイン不要のブラウザの公開本文・日付・該当条項を確認。フォーム送信なし。"
+    },
+    {
+      "product": "JP10",
+      "url": "https://www.pitat-shift.jp/disclaimer.html",
+      "result": "browser_verified",
+      "notes": "Web取得エラーの後、ログイン不要のブラウザの公開本文・日付・該当条項を確認。フォーム送信なし。"
+    },
+    {
+      "product": "JP12",
+      "url": "https://aishift.com/blog/multi-store-support-shift/",
+      "result": "browser_verified",
+      "notes": "Web取得エラーの後、ログイン不要のブラウザの公開本文・日付・該当条項を確認。フォーム送信なし。"
+    },
+    {
+      "product": "JP18",
+      "url": "https://www.opluswork.com/docs/item6/item6-1",
+      "result": "inaccessible",
+      "notes": "ヘルプ本文のWeb取得に失敗。検索抜粋のみの料金・契約説明を新規観測へ採用しない。"
+    }
+  ]
+}

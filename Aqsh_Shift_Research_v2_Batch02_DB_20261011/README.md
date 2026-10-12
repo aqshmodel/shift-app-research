@@ -1,6 +1,6 @@
-# Aqsh シフト競合調査 — 第6バッチ / 様式9・MFA・解約データ出力
+# Aqsh シフト競合調査 — 第18バッチまで / 未完了課題の継続調査
 
-2026年10月11日、公開一次資料の追加調査を登録。**50提供単位、1,664文書記録、188調査文書、88料金明細、ロゴ50製品、制度参照17件**。第7バッチでは8対象へ37記録を追加し、公式URL50件を点検しました。共通40項目の資料採用は524/2,000枠です。部分確認・提供予定を含み、実性能の点数ではありません。
+2026年10月12日、公開一次資料の追加調査を登録。**50提供単位、2,037文書記録、277調査文書、118料金明細、ロゴ50製品、制度参照17件**。第18バッチはNursegrid Managerの6本文から6記録を追加しました。一括承認を自動最適化とせず、Mobile無料とManager契約を区別し、既存料金と任意機能の注意を重複登録していません。未着手682、確認中218、停止中78、未完了総数978、優先度1の未完了29件。共通40項目の資料採用は592/2,000枠です。本番・検証環境は `B18-20261012-pub2` へ反映済みです。全39調査テーブルと全50サービスを照合しました。最新の公開・復旧記録は [第18バッチまでの本番反映](../docs/research-b18-publication-20261012.md) を参照してください。
 
 ## 最初に見るファイル
 
@@ -8,12 +8,30 @@
 |---|---|
 | [comparison.html](comparison.html) | ブラウザで開く比較・検索画面。今回追加調査のみの絞り込み、出典、最大4対象の比較 |
 | [research.sqlite3](research.sqlite3) | 最新の正本DB。39テーブル・12ビュー |
-| [第6バッチ調査報告](reports/Batch06_research_report.md) | 算式・管理者MFA・全量出力の追加確認、矛盾、残課題 |
+| [第18バッチ調査報告](reports/Batch18_research_report.md) | 手動割当・一括承認、自己割当段階と制限、Mobile無料とManager契約、支援の未確認範囲 |
+| [第17バッチ調査報告](reports/Batch17_research_report.md) | QGendaの対象別説明・全社支援・Web規約と製品契約の区別・重複除外 |
+| [第16バッチ調査報告](reports/Batch16_research_report.md) | Smart Squareの周期型勤務・契約と支援の未確認範囲・2事例の測定条件 |
+| [第15バッチ調査報告](reports/Batch15_research_report.md) | 料金・支援契約、旧版資料、AI解析と保存先、公開APIベータの境界と未確認事項 |
+| [第14バッチ調査報告](reports/Batch14_research_report.md) | 顧客認証・権限、支援の契約範囲、プレビューと実装済みの区分、個別開発の事例 |
+| [第13バッチ調査報告](reports/Batch13_research_report.md) | 国内4サービスの解約・データ搬出・削除期限、任意支援費、店舗間機能・顧客認証の範囲 |
+| [第12バッチ調査報告](reports/Batch12_research_report.md) | 支払・解約、支援の追加費、削除・バックアップ・出力・履歴、VXの参考価格と製品境界 |
+| [第11バッチ調査報告](reports/Batch11_research_report.md) | ライセンス・保守、販売チャネル、顧客認証と社内対策、需要作成アドオン、共通規約の適用範囲 |
+| [第10バッチ調査報告](reports/Batch10_research_report.md) | 課金主体、外部LLM・退出データ、勤怠連携のファイル操作と別契約、権限・通知・受付時間、残課題 |
+| [第8バッチ調査報告](reports/Batch08_research_report.md) | 公開・通知、APIの未適用制約、病院側の試行報告、料金・認証・解約条件、残課題 |
+| [第9バッチ追補](reports/Batch09_research_report.md) | Nafty提供前表示・予定仕様、課題進捗2件の訂正、最新の検証状況 |
 | [DB_DESIGN.md](DB_DESIGN.md) | D1向け設計、履歴・出典・料金・最新判断の扱い |
 | [d1/import.sql](d1/import.sql) | **空のD1へ初回登録**する全件SQL |
 | [d1/schema.sql](d1/schema.sql) | スキーマのみ。import.sqlには同じスキーマも含む |
 | [d1/queries.sql](d1/queries.sql) | Webアプリ向けの読み取りクエリ例 |
 | [batches/B07-20261011.json](batches/B07-20261011.json) | 37記録、15出典取得、50公式URL点検、5課題進捗の入力データ |
+| [batches/B08-20261012.json](batches/B08-20261012.json) | 51記録、分類訂正1件、24出典取得、12課題進捗・追加2課題の入力データ |
+| [batches/B09-20261012.json](batches/B09-20261012.json) | Naftyの3記録・1出典取得、課題進捗2件の訂正と提供時期の再確認 |
+| [batches/B10-20261012.json](batches/B10-20261012.json) | 5サービス35記録、8出典取得、Clairviaの取得結果、追加課題3件 |
+| [batches/B11-20261012.json](batches/B11-20261012.json) | 6サービス47記録、12出典取得、認証に転送された資料の取得結果、追加課題4件 |
+| [batches/B12-20261012.json](batches/B12-20261012.json) | 3サービス62記録・24料金明細、12出典取得、PDF3原本、追加課題4件 |
+| [batches/B13-20261012.json](batches/B13-20261012.json) | 4サービス52記録・4料金明細、15出典取得、追加課題5件、B12までの原本・履歴を保持 |
+| [batches/B14-20261012.json](batches/B14-20261012.json) | 4サービス45記録、16出典取得、PDF1原本、追加課題5件、既存の原本・履歴を保持 |
+| [batches/B15-20261012.json](batches/B15-20261012.json) | 3サービス53記録・2料金明細、16出典取得、公開OpenAPI仕様の照合、追加課題4件 |
 | [batches/B06-20261011.json](batches/B06-20261011.json) | 新規130記録、分類訂正3、出典取得40、制度参照17、課題と進捗の入力データ |
 | [reports/regulation_index.csv](reports/regulation_index.csv) | 行政資料・専門団体手引きの算式、除外、丸め、適用条件と出典 |
 | [reports/logo_index.csv](reports/logo_index.csv) | 全50対象のロゴURL、公式掲載ページ、サービス／会社、確認日 |
@@ -26,7 +44,7 @@
 
 - known/documentedは資料に記載された範囲の確認。実動作・対象契約・独立性能試験の合格とは異なります。
 - 未調査、記載未確認、取得不可、非公開、矛盾を非対応へ置き換えません。部分確認や提供予定、地域・プランの限定を保持しています。
-- 出典Webページの全文やスクリーンショットは未保存です。比較画面の検証画像はreportsに保存しています。ほすぴタッチの公開SLA PDFは原本を保存し、source_archivesにパス・SHA-256を記録しました。ロゴは公式のURLまたは埋め込みSVGのdata URLで保持します。未保存の本文ハッシュはNULLです。
+- 出典Webページの全文やスクリーンショットは未保存です。比較画面の検証画像はreportsに保存しています。ほすぴタッチの公開SLA、お助けマンの利用規約・Day/TimeのセキュリティPDFは原本を保存し、source_archivesにパス・SHA-256を記録しました。ロゴは公式のURLまたは埋め込みSVGのdata URLで保持します。未保存の本文ハッシュはNULLです。
 - ロゴはサービス優先、会社を代替として選びます。brand_assetsとv_preferred_brand_assetsを使います。共用ブランド・親サービス・権利未確認は注記しています。
 - 料金は通貨・税・プラン・追加機能・人数・契約期間を揃えて解釈してください。未知の金額はNULLで、0円に置換していません。
 - 14件の独立試験シナリオ設計がありますが、実施結果は0件です。見積取得やログイン後のデモ操作も未実施です。
@@ -34,7 +52,7 @@
 
 ## D1へ登録する
 
-生のSQLiteファイルではなく`d1/import.sql`を使います。SQLはCloudflare公式Wrangler 4.149.0で**ローカルD1への取り込みと全データの一致を検証済み**。遠隔D1の作成・登録・Web公開はまだ行っていません。
+初回登録には、生のSQLiteファイルではなく`d1/import.sql`を使います。既存D1はこのSQLを再投入せず、直前のエクスポートから生成した差分SQLで更新します。第12バッチまでの本番・検証D1は全39調査テーブルを正本と照合しました。最新の反映状況は [本番反映記録](../docs/research-b12-publication-20261012.md)、研究作成時点の検証は [B12検証記録](reports/batch12_validation.json) を参照してください。
 
 既存のデータがないD1を作り、実際のdatabase_idを指定したWrangler設定を用意してから実行します。
 
@@ -63,6 +81,17 @@ python3 tools/research_db.py ingest --db /tmp/aqsh-rebuilt.sqlite3 --batch batch
 python3 tools/research_db.py ingest --db /tmp/aqsh-rebuilt.sqlite3 --batch batches/B05-20261011.json
 python3 tools/research_db.py ingest --db /tmp/aqsh-rebuilt.sqlite3 --batch batches/B06-20261011.json
 python3 tools/research_db.py ingest --db /tmp/aqsh-rebuilt.sqlite3 --batch batches/B07-20261011.json
+python3 tools/research_db.py ingest --db /tmp/aqsh-rebuilt.sqlite3 --batch batches/B08-20261012.json
+python3 tools/research_db.py ingest --db /tmp/aqsh-rebuilt.sqlite3 --batch batches/B09-20261012.json
+python3 tools/research_db.py ingest --db /tmp/aqsh-rebuilt.sqlite3 --batch batches/B10-20261012.json
+python3 tools/research_db.py ingest --db /tmp/aqsh-rebuilt.sqlite3 --batch batches/B11-20261012.json
+python3 tools/research_db.py ingest --db /tmp/aqsh-rebuilt.sqlite3 --batch batches/B12-20261012.json
+python3 tools/research_db.py ingest --db /tmp/aqsh-rebuilt.sqlite3 --batch batches/B13-20261012.json
+python3 tools/research_db.py ingest --db /tmp/aqsh-rebuilt.sqlite3 --batch batches/B14-20261012.json
+python3 tools/research_db.py ingest --db /tmp/aqsh-rebuilt.sqlite3 --batch batches/B15-20261012.json
+python3 tools/research_db.py ingest --db /tmp/aqsh-rebuilt.sqlite3 --batch batches/B16-20261012.json
+python3 tools/research_db.py ingest --db /tmp/aqsh-rebuilt.sqlite3 --batch batches/B17-20261012.json
+python3 tools/research_db.py ingest --db /tmp/aqsh-rebuilt.sqlite3 --batch batches/B18-20261012.json
 python3 tools/research_db.py stats --db /tmp/aqsh-rebuilt.sqlite3
 ```
 

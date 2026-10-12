@@ -1,0 +1,22 @@
+{
+  "browser": "Google Chrome via Playwright",
+  "batch": "B10-20261012",
+  "cards": 50,
+  "enriched": 5,
+  "domestic": 28,
+  "overseas": 22,
+  "comparisonRows": 40,
+  "comparisonColumns": 5,
+  "uniqueDocumentObservations": 1754,
+  "logos": 50,
+  "serviceLogos": 40,
+  "companyLogos": 10,
+  "logoFailureFallback": "passed",
+  "classificationHistory": "passed",
+  "pageErrors": [],
+  "viewports": [
+    1440,
+    390
+  ],
+  "status": "passed"
+}

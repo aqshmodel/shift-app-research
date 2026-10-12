@@ -1,0 +1,93 @@
+{
+  "batch_id": "B12-20261012",
+  "as_of_date": "2026-10-12",
+  "status": "passed",
+  "research_sha256": "9d407025bc45dc5d1f5753b282da1eda188d988844618092566641e46f2e6409",
+  "public_snapshot": "B12-20261012-pub2",
+  "checks": {
+    "sqlite_integrity_foreign_keys_sql_roundtrip": {
+      "status": "passed",
+      "record": "db_validation_batch12.json"
+    },
+    "history_preservation": {
+      "status": "passed",
+      "tables": 36,
+      "record": "batch12_history_preservation.json"
+    },
+    "research_regression": {
+      "status": "passed",
+      "tests": 14
+    },
+    "public_projection": {
+      "status": "passed",
+      "tests": 4
+    },
+    "web_regression": {
+      "status": "passed",
+      "tests": 22,
+      "runtime": "Node.js 24.19.0"
+    },
+    "static_viewer": {
+      "status": "passed",
+      "record": "viewer_validation_batch12.json",
+      "viewports": [
+        1440,
+        390
+      ]
+    },
+    "pricing_semantics": {
+      "status": "passed",
+      "services": 50,
+      "day": "published JPY 12000 per location/month, 1–50 staff",
+      "time": "published JPY 6000 per location/month, 1–20 staff",
+      "vx": "quote; six scenario-dependent reference components excluded from normal card rate",
+      "new_zero_subscription_components": 0,
+      "new_zero_setup_components": 2,
+      "record": "batch12_price_summaries.json"
+    },
+    "pdf_archives": {
+      "status": "passed",
+      "new_pdf_files": 3,
+      "page_counts": [
+        19,
+        7,
+        7
+      ],
+      "sha256": "verified by research_db.verify"
+    },
+    "followup_ownership": {
+      "status": "passed",
+      "checked_against_batch_product_and_criterion": true
+    }
+  },
+  "continued_research": {
+    "batch_id": "B12-20261012",
+    "new_document_findings": 62,
+    "editorial_corrections": 0,
+    "new_price_components": 24,
+    "reference_regulations": 0,
+    "source_retrievals": 12,
+    "functional_research_sources": 12,
+    "functional_research_products": 3,
+    "products_including_classification_corrections": 3,
+    "finding_states": {
+      "known": 51,
+      "not_found": 7,
+      "disputed": 4
+    }
+  },
+  "task_states": {
+    "blocked": 78,
+    "done": 2,
+    "in_progress": 154,
+    "not_started": 732
+  },
+  "previous_not_started": 749,
+  "current_not_started": 732,
+  "priority1_open": 29,
+  "new_priority2_tasks": 4,
+  "independent_tests_performed": false,
+  "local_d1_runtime": "not_run_for_B12; SQLite SQL roundtrip and public projection tests passed",
+  "remote_d1_updated": false,
+  "production_deployed": false
+}

@@ -1,6 +1,9 @@
 export const SITE = 'https://shift.aqsh.co.jp';
 export const SITE_NAME = 'Aqsh シフト管理・作成サービス比較';
-export const AS_OF = '2026年10月11日';
+export function formatResearchDate(value?: string) {
+ const match=value?.match(/^(\d{4})-(\d{2})-(\d{2})$/);
+ return match?`${match[1]}年${Number(match[2])}月${Number(match[3])}日`:'調査日未確認';
+}
 export const categoryInfo: Record<string,{name:string;intro:string;checks:string[]}> = {
  medical:{name:'医療・看護',intro:'夜勤、資格別の人数、病棟の兼務など、医療の勤務表には施設ごとの条件があります。医療向けの公開案内がある製品を集め、様式9の出力と計算方法を分けて調査しています。',checks:['二交代・三交代と日跨ぎ夜勤の扱い','資格・職種別の配置と兼務の按分','様式9の対象年度、算式、実際の出力']},
  care:{name:'介護・福祉',intro:'特養、老健、グループホームでは、勤務形態や配置基準の数え方が異なります。介護向けの案内がある製品を集め、常勤換算の提供状況、対象サービス種別、帳票の範囲を確認します。',checks:['対象のサービス種別と雇用区分','常勤換算の分母・丸め・兼務','提供予定と現在利用できる機能の区別']},

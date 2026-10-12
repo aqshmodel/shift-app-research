@@ -20,10 +20,16 @@ class Publication(unittest.TestCase):
   self.assertEqual(list(self.db.execute('pragma foreign_key_check')),[])
  def test_projection_keeps_prices_and_sources(self):
   details=[json.loads(x[0]) for x in self.db.execute('select detail_json from web_products')]
-  self.assertEqual(sum(len(x['prices']) for x in details),88)
+  expected_prices=self.db.execute('select count(*) from price_components').fetchone()[0]
+  latest=self.db.execute("select value from schema_info where key='latest_batch'").fetchone()[0]
+  expected_date=self.db.execute('select as_of_date from research_batches where batch_id=?',(latest,)).fetchone()[0]
+  self.assertEqual(sum(len(x['prices']) for x in details),expected_prices)
+  snapshot=self.db.execute('select s.* from web_snapshots s join web_live l using(snapshot_id)').fetchone()
+  self.assertEqual(snapshot['as_of_date'],expected_date)
+  self.assertEqual(json.loads(snapshot['scope_json'])['as_of_date'],expected_date)
   for d in details:
    self.assertTrue(d['official_url'].startswith('https://'));self.assertTrue(d['logo']['url'].startswith(('https://','data:image/svg+xml;base64,')))
-   self.assertEqual(d['as_of_date'],'2026-10-11')
+   self.assertEqual(d['as_of_date'],expected_date)
    self.assertFalse(d['independent_tests_performed'])
    for a in d['assessments']:
     for f in a['findings']:
@@ -36,6 +42,23 @@ class Publication(unittest.TestCase):
   self.db.execute("delete from web_products where snapshot_id='partial-v2' and offering_id='OF-JP01'")
   self.db.executescript('INSERT INTO web_live'+self.sql.rsplit('INSERT INTO web_live',1)[1].replace(live,'partial-v2'))
   self.assertEqual(self.db.execute('select snapshot_id from web_live').fetchone()[0],live)
+ def test_planned_support_keeps_its_public_status(self):
+  planned_assessments=0
+  for row in self.db.execute('select detail_json from web_products'):
+   detail=json.loads(row[0])
+   for assessment in detail['assessments']:
+    findings=assessment['findings']
+    if findings and all(f['state']=='known' and f['support']=='planned' for f in findings):
+     planned_assessments+=1
+     self.assertEqual(assessment['status'],'planned',(detail['id'],assessment['id']))
+    # A documented feature can also have a future enhancement. Keep both
+    # source statements without turning the current capability into a plan.
+    if any(f['state']=='known' and f['support']=='planned' for f in findings) and any(
+      f['state']=='known' and f['support'] in ('supported','limited')
+      and not any(t in json.dumps(f['scope'],ensure_ascii=False)+f['summary'] for t in ('提供予定','提供前','未リリース'))
+      for f in findings):
+     self.assertEqual(assessment['status'],'documented',(detail['id'],assessment['id']))
+  self.assertGreater(planned_assessments,0)
  def test_reusing_version_with_different_content_cannot_publish(self):
   self.db.execute('delete from web_live')
   manifest=json.loads((ROOT/'apps/web/data/manifest.json').read_text())

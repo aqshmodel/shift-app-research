@@ -1,0 +1,48 @@
+{
+  "checked_on": "2026-10-12",
+  "production_url": "https://shift.aqsh.co.jp/",
+  "staging_version": "01782f5e-2bc6-47e0-9351-f3d7181f51c6",
+  "production_version": "419901d5-4d60-4013-85d3-b5ef4764115f",
+  "snapshot": "B07-20261011-pub2",
+  "services": 50,
+  "matches_staging": true,
+  "database_writes": false,
+  "regression_tests": {
+    "passed": 20,
+    "failed": 0
+  },
+  "astro_check": {
+    "files": 57,
+    "errors": 0,
+    "warnings": 0,
+    "hints": 0
+  },
+  "staging_browser_tests": {
+    "initial": 5,
+    "final_css": 2,
+    "failed": 0
+  },
+  "production_browser_tests": {
+    "passed": 5,
+    "failed": 0
+  },
+  "browser_checks": [
+    "SSR on home, products and care category",
+    "320/390/1440 px",
+    "no horizontal overflow",
+    "WCAG AA automated scan",
+    "filtering",
+    "pagination and compare selection",
+    "JavaScript disabled"
+  ],
+  "source_sha256": {
+    "apps/web/src/components/ProductCard.astro": "3f4ed5e27efcdc9e275f53d5e579dc131a09bf116a69f1955a6b627c16c78526",
+    "apps/web/src/lib/repository.ts": "f02ccda4592b846343ce717893ed04f80f24c42afc8e8f6a7681a5fc6362beef",
+    "apps/web/src/lib/price-summary.mjs": "b8caa402b0181dd470d7b6147306cc03997a7dd889366a2ab597f03a4dfa7e33",
+    "apps/web/src/styles/catalog.css": "2b9545314942908e41fb48d53d93d1a01e187f0f25013c96221bd7859e0f772a"
+  },
+  "screenshots": [
+    "docs/screenshots/card-pricing-cards-20261012.png",
+    "docs/screenshots/card-pricing-mobile-20261012.png"
+  ]
+}

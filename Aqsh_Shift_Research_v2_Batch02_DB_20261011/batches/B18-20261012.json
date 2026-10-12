@@ -1,0 +1,61 @@
+{
+  "batch_id": "B18-20261012", "prior_batch": "B17-20261012", "as_of_date": "2026-10-12", "resolution_policy_version": 2,
+  "description": "Nursegrid Managerの自動割当と自己割当承認の区別、Mobileとの機能・契約境界、公開支援の限定追加調査",
+  "method": "Manager・App公式ページと公開操作ヘルプを既存30観測に照合。Webツールで取得できないヘルプ詳細は、公式サイトのヘルプ目次から公開ブラウザで本文を読んだ。製品へのログイン、職員登録、勤務表作成・承認・公開、フォーム送信、見積・営業連絡、決済、API実行、独立製品試験は未実施。既存の月5ドル、30日試用、任意・役割別機能の一般注意、MSA参照条項は重複追加しない。全文・原本画像は保存しない。",
+  "sources": [
+    {
+      "key": "manager-balance", "url": "https://healthstreamhelp.mcoutput.com/nursegridmanager/Content/NG_Manager/Schedule_Mgmt/Balancing_and_Publishing_a_Draft_Schedule.htm",
+      "title": "Nursegrid Manager：下書きの調整・割当・公開の操作ヘルプ", "publisher": "HealthStream / Nursegrid",
+      "reference": "公式サイトのManager Support導線から開いた公開ヘルプ本文", "retrieved_on": "2026-10-12", "updated_on": "2025-09-09", "method": "public_web_body",
+      "method_note": "Webツールで詳細取得不可。公開ブラウザで本文を確認。2025-09-09更新、任意・役割別機能の留保を保持。実画面で勤務表を操作せず説明文だけを読んだ。全文・ハッシュ未保存。"
+    },
+    {
+      "key": "manager-approve", "url": "https://healthstreamhelp.mcoutput.com/nursegridmanager/Content/NG_Manager/Schedule_Mgmt/Reviewing_and_Assigning_Self_Scheduling_Responses.htm",
+      "title": "Nursegrid Manager：自己割当希望の個別・一括承認", "publisher": "HealthStream / Nursegrid",
+      "reference": "公式公開操作ヘルプ本文", "retrieved_on": "2026-10-12", "updated_on": "2025-09-09", "method": "public_web_body",
+      "method_note": "公開ブラウザで本文を確認。一括承認と過剰配置の手動解除を勤務表最適化と区別。任意・役割別機能と対象契約は未確定。全文・ハッシュ未保存。"
+    },
+    {
+      "key": "manager-builder", "url": "https://healthstreamhelp.mcoutput.com/nursegridmanager/Content/NG_Manager/Schedule_Mgmt/Creating_a_Draft_Schedule_with_the_Schedule_Builder.htm",
+      "title": "Nursegrid Manager：Schedule Builderの自己割当段階と対象職員", "publisher": "HealthStream / Nursegrid",
+      "reference": "公式公開操作ヘルプ本文", "retrieved_on": "2026-10-12", "updated_on": "2025-09-09", "method": "public_web_body",
+      "method_note": "公開ブラウザで本文を確認。職位・タグ・FTEによる自己割当の受付段階を、FTE公平性の最適化算式と混同しない。任意・役割別機能の留保。全文・ハッシュ未保存。"
+    },
+    {
+      "key": "manager-restricted", "url": "https://healthstreamhelp.mcoutput.com/nursegridmanager/Content/NG_Manager/User_Management/Restricted_Users.htm",
+      "title": "Nursegrid Manager：Restricted Usersの空きシフト受信制限", "publisher": "HealthStream / Nursegrid",
+      "reference": "公式公開操作ヘルプ本文", "retrieved_on": "2026-10-12", "updated_on": "2025-09-09", "method": "public_web_body",
+      "method_note": "公開ブラウザで本文を確認。Restricted UserとMobile未利用者、契約・無課金者を同一視しない。任意・役割別機能の留保。全文・ハッシュ未保存。"
+    },
+    {
+      "key": "mobile-app-boundary", "url": "https://nursegrid.com/for-nurses/nursegrid-app/",
+      "title": "Nursegrid App：無料の個人向け機能と組織向けManagerの区別", "publisher": "Nursegrid / HealthStream",
+      "reference": "公式App案内のFAQ本文", "retrieved_on": "2026-10-12", "method": "public_web_body",
+      "method_note": "公式FAQの無料対象、iPhone/Android/Web、組織向け別ツールの記載を確認。Mobileの無料をManagerやLearnの契約へ流用しない。全文・ハッシュ未保存。"
+    },
+    {
+      "key": "manager-public-support", "url": "https://nursegrid.com/for-organizations/nursegrid-manager/",
+      "title": "Nursegrid Manager：公開ヘルプと問い合わせ導線の範囲", "publisher": "Nursegrid / HealthStream",
+      "reference": "公式Managerページの支援導線・FAQ本文", "retrieved_on": "2026-10-12", "method": "public_web_body",
+      "method_note": "Manager SupportとApp Supportの別導線を確認。一般問い合わせ・営業フォームを技術SLAと扱わない。月5ドル、30日試用、2〜250人、自己割当の一般案内は既存観測を保持し再登録しない。全文・ハッシュ未保存。"
+    }
+  ],
+  "findings": [
+    {"product":"US08","criterion":"B01","source":"manager-balance","summary":"調整手順は、自己割当期間後に管理者がグリッドをクリックして職員を勤務枠へ割り当て、不足・充足・超過の人数表示を見て確認する。全体の制約付き自動最適化はこの手順で確認できない。","locator":"Balancing and Publishing a Draft Schedule：冒頭・coverage grid・手順8〜10","limitations":"操作説明の確認。人数の表示や手動割当を全制約の自動検証・最適化と同一視しない。実操作、公開阻止条件、現在の対象契約は未検証。既存の非対応未確定という判断を保持。","state":"not_found","delivery":"unknown"},
+    {"product":"US08","criterion":"B01","source":"manager-approve","summary":"Approve All Responsesは全ての自己割当希望を承認し、過剰配置になった日の勤務を管理者が解除する方式を案内する。希望の一括承認から自動最適化を確認済みとはしない。","locator":"Reviewing and Approving Self-Scheduling Responses：最終段落","limitations":"一括処理の公開説明。最適解選択、資格・休息・人数制約の完全検証、全体自動割当を保証する仕様ではない。自己割当の受付期間が終わるまで承認できないという前提を保持。","state":"not_found","delivery":"unknown"},
+    {"product":"US08","criterion":"B07","source":"manager-builder","summary":"自己割当の受付段階を職位・タグ・FTE状態で設定し、どの段階にも含まれない職員は自己割当できないと説明する。","locator":"Schedule Builder：Configure Stages、手順9・9.9","limitations":"設定による機能対象の区別。任意・役割別機能の留保があり、契約上の標準内包・追加費用は未確認。FTEによる受付順を勤務量補正の公平性算式へ置換しない。","state":"known","support":"limited","delivery":"unknown"},
+    {"product":"US08","criterion":"B07","source":"manager-restricted","summary":"Restricted Userは空きシフトを受け取れず、管理者が職員のWork Detailsでその状態を切り替えると記載する。","locator":"Restricted Users：冒頭・手順4〜5","limitations":"特定機能の設定上の制限。Mobile未利用者、課金対象外、全機能禁止を意味するとは記載されていない。制限中の勤務表閲覧・通知・契約料金は未確認。","state":"known","support":"limited","delivery":"unknown"},
+    {"product":"US08","criterion":"B07","source":"mobile-app-boundary","summary":"Nursegrid Appは看護師・医療職向けに無料と案内し、iPhone・Android・Webに対応。組織向けの勤務管理には別ツールNursegrid Managerを紹介する。","locator":"FAQs：Is the app really free? / What platforms / Can my organization use Nursegrid?","limitations":"個人向けApp/Mobileの公開条件。Manager契約、職員人数課金、Learnの講座・会員プランまで無料とは扱わない。Managerの既存月5ドルの記録・料金概要を保持し、新規料金明細は作らない。","state":"known","support":"limited","delivery":"unknown"},
+    {"product":"US08","criterion":"O04","source":"manager-public-support","summary":"公式サイトはManager SupportとApp Supportを別の公開ヘルプへ案内し、一般問い合わせ・チャット案内・営業フォームの導線を載せる。","locator":"Still have questions? / ResourcesのApp Support・Nursegrid Manager Support / Contact Us","limitations":"公開の支援入口の確認に限る。Managerの技術専用窓口、営業時間・タイムゾーン・応答目標・保証・言語・料金内包は未確認。営業導線から技術SLAを推定せず、連絡やフォーム送信は行わない。","state":"known","support":"limited","delivery":"unknown"}
+  ],
+  "prices": [], "followups": [],
+  "task_updates": [
+    {"task_id":"TASK-RES01168","state":"in_progress","priority":2,"method":"vendor_document","note":"B18：公開操作ヘルプで手動割当・自己割当の一括承認・過剰配置の解除を確認。以前のB01-O00328のホームページだけの未確認要約は重複追加しない。全体の制約付き自動割当・最適化・検証器は未確定で継続。"},
+    {"task_id":"TASK-RES01171","state":"in_progress","priority":2,"method":"vendor_document","note":"B18：自己割当段階、Restricted User、Mobile無料と組織Managerの境界を補完。一般的な任意・役割別注意、月5ドル・MSA参照は旧記録を維持。制限中の全機能、標準内包・追加費用・課金定義は個別契約資料未取得で継続。"},
+    {"task_id":"TASK-RES01200","state":"in_progress","priority":2,"method":"vendor_document","note":"B18：Manager/App公開ヘルプと一般問い合わせ導線を確認。技術専用窓口・受付時間・言語・応答・保証・支援費のManager契約適用は未確認。営業連絡や登録・デモは行わず、未完了として継続。"}
+  ],
+  "retrieval_checks": [
+    {"product":"US08","url":"https://nursegrid.com/for-organizations/nursegrid-manager/","result":"existing_price_and_self_schedule_findings_rechecked_without_duplicate","notes":"既存月5ドル・30日試用・2〜250人・自己割当と通知の一般案内を再確認し、同じ観測と料金明細を追加しない。"},
+    {"product":"US08","url":"https://healthstreamhelp.mcoutput.com/nursegridmanager/Content/NG_Manager/ManagerLandingPage.htm","result":"optional_role_note_rechecked_without_duplicate","notes":"B11で登録済みの任意・役割別機能の一般注意を再確認し、そのまま保持。今回の詳細4ヘルプはWebツールで取得できず、公式目次から公開ブラウザ本文を読んで採用。"}
+  ]
+}

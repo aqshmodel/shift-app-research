@@ -1,7 +1,9 @@
 import {test,expect} from '@playwright/test';
 test('all 50 products are searchable, server rendered and have distinct detail metadata',async({request})=>{
  const res=await request.get('/api/search/?limit=50');expect(res.status()).toBe(200);const data=await res.json();expect(data.products.length).toBe(50);expect(new Set(data.products.map(x=>x.id)).size).toBe(50);
- const titles=new Set();for(const product of data.products){const r=await request.get('/products/'+product.slug+'/');expect(r.status()).toBe(200);const html=await r.text();expect(html).toContain(product.name.replace(/&/g,'&amp;'));expect(html).toContain('2026年10月11日現在');expect(html).toContain(product.official_url.replace(/&/g,'&amp;'));titles.add(html.match(/<title>(.*?)<\/title>/s)?.[1]);expect(html).toContain('https://shift.aqsh.co.jp/products/'+product.slug+'/');}
+ const scope=await(await request.get('/api/scope/')).json();expect(data.as_of_date).toBe(scope.as_of_date);expect(data.snapshot_id).toBe(scope.snapshot_id);
+ const [year,month,day]=scope.as_of_date.split('-').map(Number);const asOf=`${year}年${month}月${day}日`;
+ const titles=new Set();for(const product of data.products){const r=await request.get('/products/'+product.slug+'/');expect(r.status()).toBe(200);const html=await r.text();expect(html).toContain(product.name.replace(/&/g,'&amp;'));expect(html).toContain(asOf+'現在');expect(product.as_of_date).toBe(scope.as_of_date);expect(html).toContain(product.official_url.replace(/&/g,'&amp;'));titles.add(html.match(/<title>(.*?)<\/title>/s)?.[1]);expect(html).toContain('https://shift.aqsh.co.jp/products/'+product.slug+'/');}
  expect(titles.size).toBe(50);
 });
 test('API input boundaries, nonmutation, evidence pagination and complete price conditions',async({request})=>{
@@ -29,7 +31,7 @@ test('search and comparison work without JavaScript',async({browser})=>{
 });
 test('planned care calculation and task assignment preserve capability scope',async({request})=>{
  const nafty=await(await request.get('/api/products/OF-JP04/')).json();expect(nafty.assessments.find(a=>a.id==='J06').status).toBe('planned');
- const air=await(await request.get('/api/products/OF-JP27/')).json();expect(air.assessments.find(a=>a.id==='B01').status).toBe('unknown');expect(air.assessments.find(a=>a.id==='B01').findings[0].summary).toContain('業務割当');
+ const air=await(await request.get('/api/products/OF-JP27/')).json();const assignment=air.assessments.find(a=>a.id==='B01');expect(assignment.status).toBe('unknown');expect(assignment.rationale).toContain('業務の自動割当');
  const results=await(await request.get('/api/search/?feature=B01&limit=50')).json();expect(results.products.some(p=>p.id==='OF-JP27')).toBe(false);
  const refs=await(await request.get('/references/form-9/')).text();expect(refs).toContain('D');expect(refs).toContain('E');expect(refs).toContain('B');expect(refs).toContain('実装');
 });

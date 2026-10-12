@@ -81,7 +81,7 @@ test('GET filtering works without JavaScript and treats planned care as outside 
 test('a failed refresh restores applied controls, and stale requests cannot overwrite newer filters', async ({page}) => {
   await page.goto('/');
   await page.route('**/?category=medical*', route => route.fulfill({status: 503, body: 'unavailable'}));
-  await page.getByRole('radio', {name: '医療・看護', exact: true}).check();
+  await page.getByRole('radio', {name: '医療・看護', exact: true}).click();
   await expect(page.locator('#directory-error')).toBeVisible();
   await expect(page.getByRole('radio', {name: 'すべての用途', exact: true})).toBeChecked();
   await expect(page.locator('.product-card')).toHaveCount(12);

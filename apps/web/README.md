@@ -20,16 +20,45 @@ python3 scripts/d1-initialize.py local  # 空のローカルD1限定
 npm run dev
 npm test
 npm run check
-python3 tests/publication_test.py
+python3 -m unittest discover -s tests -p '*_test.py'
 ```
 
 原本はルートの調査パッケージです。公開用SQL生成は `python3 scripts/build-publication.py`。提供条件・出典・判断履歴は原本を保ち、4つのweb_テーブルへ版付きで投影します。Airシフトの業務割当を勤務表生成として確認済みには分類しません。Clairviaの初期URLは顧客のヘルプだったため、公開リンクはOracle公式へ補正しています。
+
+ローカル正本・公開用投影は第18バッチ（`B18-20261012-pub2`）まで更新済みです。B13〜B18を本番・検証環境へ反映し、全39テーブル・全50サービスを照合しました。公開記録は [本番反映](../../docs/research-b18-publication-20261012.md) に保存しています。調査と検証は [第18バッチ報告](../../Aqsh_Shift_Research_v2_Batch02_DB_20261011/reports/Batch18_research_report.md) を参照してください。
+
+公開投影は構造化された `support_status=planned` を「予定」として保持します。既存機能の資料に将来の追加機能を併記している場合は、各記録を残して既存機能の区分を維持します。プレビューの日付が過ぎたことだけで提供済みに変更しません。
+
+概要カードの料金は、公開中の詳細JSONの料金・P01評価から `price-summary.mjs` で生成します。月額・年額・人数単位・必須の基本料を区別し、未判明の金額は「非公開」または「個別見積もり」と表示します。初期費用0円を無料の継続プランへ置き換えません。検索APIの `price_summary` も同じ表示を使い、カードごとのD1追加呼出しは行いません。対応記録はルートの [料金カード](../../docs/card-pricing-20261012.md) に保存しています。
+
+TOPの料金フィルターは `price=published|free|quote|unpublished`。用途・機能・地域と組み合わせ、件数・選択中の条件・ページ送り・履歴にも反映します。無料の区分には人数制限のあるプランと無料βを含みます。価格の通貨・周期・課金単位が異なるため、金額の単純な大小比較は行いません。概要カードのロゴとサービス名は詳細へのリンクです。詳細ページ上部にも同じ料金概要と条件を表示します。
+
+詳細ページはPC・スマートフォンともにロゴ、サービス名、料金の順で縦に表示します。本文も1カラムとし、比較の案内は本文の下に配置します。
 
 ## 公開
 
 検証環境は `npm run deploy:staging`、本番は `npm run deploy`。各コマンドが対象環境でビルドし、生成された `dist/server/wrangler.json` のWorker名・環境名・D1 IDを照合してから公開します。事前の別ビルドは不要です。ステージング成果物を本番へ流用しません。
 
 初回D1登録は `python3 scripts/d1-initialize.py staging` または `production`。既存テーブルがあれば停止します。以後の更新は原本の差分バッチと新しい公開版を追加する方式にし、初回import.sqlを再投入しません。
+
+既存D1の調査更新は、直前の全件エクスポートから `scripts/build-research-update.py` で差分SQLを生成します。公開版・件数・変更前の課題情報を照合し、調査履歴と新しい公開用データを同じD1ファイルインポートで更新します。既存の調査行と過去の公開版を残し、確認処理はD1の式の深さ制限に合わせて分割します。生成時にも、全39テーブルが正本と一致することをローカルで確認します。
+
+```sh
+# apps/webで実行。検証環境を先に更新・照合してから本番へ進める。
+npx wrangler d1 export DB --remote --env staging --output /private/tmp/shift-before.sql --skip-confirmation
+python3 scripts/build-research-update.py --baseline /private/tmp/shift-before.sql --output /private/tmp/shift-update.sql
+npm run deploy:staging
+npx wrangler d1 execute DB --remote --env staging --file /private/tmp/shift-update.sql --yes
+npx wrangler d1 export DB --remote --env staging --output /private/tmp/shift-after.sql --skip-confirmation
+python3 scripts/verify-d1-export.py /private/tmp/shift-after.sql --output /private/tmp/shift-d1-check.json
+python3 scripts/verify-publication.py --base https://aqsh-shift-research-staging.aqsh-reprom.workers.dev --output /private/tmp/shift-public-check.json
+```
+
+公開照合の `scripts/verify-publication.py` は、選択した `data/manifest.json` と `data/publication.sql` の版・件数・調査ハッシュ・内容ハッシュを先に照合します。期待料金は同じ公開SQLの全50製品から `price-summary.mjs` で生成し、特定バッチの料金報告には依存しません。検索概要と全50詳細の料金・版・日付・評価状態を照合し、不一致では成功報告を書き込みません。実環境へ実行する場合はscope・検索・全詳細の52回のGETを行います。C01T04の試験はローカル模擬応答だけで行い、実環境へは接続していません。
+
+Node.jsがPATHにない場合は `--node /path/to/node` または `NODE_BINARY` で指定します。既定以外の版を調べる場合は `--manifest` と `--publication` で対応する保存ファイルの組を明示します。片方だけ古い版でも停止します。ローカル境界テストは `python3 -m unittest discover -s apps/web/tests -p verify_publication_test.py -v`（リポジトリのルート）です。合成した将来版の料金変更、古い版、改変されたmanifest・SQL、料金・詳細・件数の不一致を確認します。
+
+公開側の調査基準日は公開版のデータから表示します。検索API・詳細・一覧・用途別一覧・調査方法・AI向けの取得結果で同じ基準日を使い、解説本文や制度資料の実際の更新・取得日は別に保持します。
 
 ムームードメインのDNSを維持するため、Cloudflare Pagesの `apps/domain-proxy` がサービスバインディング経由でWorkerを配信します。接続するのは `shift.aqsh.co.jp CNAME aqsh-shift.pages.dev` です。Cloudflare側でカスタムドメインを登録してからDNSを設定してください。apexのネームサーバーは変更不要です。
 

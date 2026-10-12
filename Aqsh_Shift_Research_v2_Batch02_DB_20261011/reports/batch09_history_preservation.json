@@ -1,0 +1,17 @@
+{
+  "batch_id": "B09-20261012",
+  "before_sha256": "3b8a9af033ac5cd7d2cf92db603a4e320f070a32fe2731618bd8f83fd0fca758",
+  "after_sha256": "cccfd6732f20fc0a6b67be7e3ba3a477013208f1f95582022ddf7c2e2818ac3e",
+  "preserved_rows": {
+    "observations": 2634,
+    "observation_evidence": 1750,
+    "source_revisions": 337,
+    "assessment_resolutions": 2435,
+    "resolution_evidence": 3156,
+    "price_components": 88,
+    "classification_corrections": 12,
+    "research_batches": 8,
+    "research_task_updates": 47
+  },
+  "scope": "B08までの原観測・出典・判断履歴・進捗メモ・バッチchecksumを保持。進捗誤対応はB09で訂正を追記。"
+}

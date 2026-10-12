@@ -1,0 +1,41 @@
+{
+  "checked_at": "2026-10-12T13:32:36.243284+00:00",
+  "status": "passed",
+  "snapshot_id": "B18-20261012-pub2",
+  "research_sha256": "567e341dd479a91db582baf002478551d13a5bb40c1805529aaa3517a81075e6",
+  "content_sha256": "d0048171ab7afdc9a3f2c1a17370862c20218048fd5112ce2d8107b3da20ddd1",
+  "production_url": "https://shift.aqsh.co.jp/",
+  "production_worker_version": "d37dc4b5-ac5e-4a57-b0ba-98daae0a4759",
+  "staging_worker_version": "84bb49c5-6375-4145-a82c-a6509321d880",
+  "checks": {
+    "regression_tests": 67,
+    "astro_errors": 0,
+    "astro_warnings": 0,
+    "astro_hints": 0,
+    "production_and_staging_builds": "passed",
+    "staging_browser_tests": 38,
+    "production_browser_tests": 38,
+    "research_tables": 39,
+    "price_summaries_matched": 50,
+    "product_details_matched": 50,
+    "seo_pages": 62,
+    "seo_issues": 0,
+    "prior_publications_preserved": true
+  },
+  "deployment": {
+    "remote_d1_updated": true,
+    "production_deployed": true,
+    "guarded_sql_statements": 1397,
+    "old_snapshot": "B12-20261012-pub2",
+    "management_api_504_resolved_by_active_deployment_verification": true
+  },
+  "cost": {
+    "plan_changed": false,
+    "bounded_operations_within_existing_allowances": true
+  },
+  "parallel_work": {
+    "local_later_batch": "B19-20261012",
+    "public_release_isolated_at": "B18-20261012",
+    "local_work_preserved": true
+  }
+}

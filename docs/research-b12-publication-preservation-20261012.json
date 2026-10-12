@@ -1,0 +1,36 @@
+{
+  "production": {
+    "web_snapshots": {
+      "before": 2,
+      "after": 3,
+      "previous_rows_preserved": true
+    },
+    "web_products": {
+      "before": 100,
+      "after": 150,
+      "previous_rows_preserved": true
+    },
+    "web_categories": {
+      "before": 122,
+      "after": 183,
+      "previous_rows_preserved": true
+    }
+  },
+  "staging": {
+    "web_snapshots": {
+      "before": 2,
+      "after": 3,
+      "previous_rows_preserved": true
+    },
+    "web_products": {
+      "before": 100,
+      "after": 150,
+      "previous_rows_preserved": true
+    },
+    "web_categories": {
+      "before": 122,
+      "after": 183,
+      "previous_rows_preserved": true
+    }
+  }
+}

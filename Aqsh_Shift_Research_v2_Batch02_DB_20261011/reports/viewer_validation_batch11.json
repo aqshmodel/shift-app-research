@@ -1,0 +1,24 @@
+{
+  "browser": "Google Chrome via Playwright",
+  "batch": "B11-20261012",
+  "cards": 50,
+  "enriched": 6,
+  "domestic": 28,
+  "overseas": 22,
+  "comparisonRows": 40,
+  "comparisonColumns": 5,
+  "uniqueDocumentObservations": 1801,
+  "logos": 50,
+  "serviceLogos": 40,
+  "companyLogos": 10,
+  "logoFailureFallback": "passed",
+  "classificationHistory": "passed",
+  "pageErrors": [],
+  "viewports": [
+    1440,
+    390
+  ],
+  "status": "passed",
+  "as_of_date": "2026-10-12",
+  "latest_batch_date_display": "verified in generated HTML after date rendering fix"
+}

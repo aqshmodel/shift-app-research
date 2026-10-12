@@ -17,7 +17,8 @@ members={
  'api':['JP28','US10']}
 with connect() as c:
  stat=stats(c);version=stat['latest_batch']+'-pub2';research_hash=fingerprint(c)
- scope=dict(snapshot_id=version,as_of_date='2026-10-11',research_sha256=research_hash,products=stat['products'],offerings=stat['offerings'],document_observations=stat['document_observations'],research_documents=stat['research_documents'],price_components=stat['tables']['price_components'],logos=stat['tables']['brand_assets'],reference_regulations=stat['tables']['regulations'],benchmark_runs=stat['benchmark_runs'],independent_tests_performed=False,
+ as_of_date=c.execute('select as_of_date from research_batches where batch_id=?',(stat['latest_batch'],)).fetchone()[0]
+ scope=dict(snapshot_id=version,as_of_date=as_of_date,research_sha256=research_hash,products=stat['products'],offerings=stat['offerings'],document_observations=stat['document_observations'],research_documents=stat['research_documents'],price_components=stat['tables']['price_components'],logos=stat['tables']['brand_assets'],reference_regulations=stat['tables']['regulations'],benchmark_runs=stat['benchmark_runs'],independent_tests_performed=False,
   priority_open=c.execute("select count(*) from research_tasks where priority=1 and task_state!='done'").fetchone()[0],
   limitations=['公開資料の確認で、実動作・性能・個別契約の保証ではありません。','記載未確認は非対応を意味しません。','医療制度の参照と各製品の実装確認は別です。'],
   criteria=[dict(x) for x in c.execute("select criterion_id,label_ja from criteria where research_stage='L1_common' order by criterion_id")],
@@ -42,7 +43,7 @@ with connect() as c:
    contexts=[x for x in facts if x['criterion']==cid and x['evidence_role']=='context']
    meta=c.execute('select * from criteria where criterion_id=?',(cid,)).fetchone()
    current=c.execute('select * from v_latest_resolutions where offering_id=? and criterion_id=?',(oid,cid)).fetchone()
-   status='disputed' if any(x['state']=='disputed' for x in selected) else 'planned' if selected and all('提供予定' in dumps(x['scope']) or '提供前' in x['summary'] or '未リリース' in x['summary'] for x in selected) else 'documented' if any(x['state']=='known' for x in selected) else 'unknown'
+   status='disputed' if any(x['state']=='disputed' for x in selected) else 'planned' if selected and all(x['support']=='planned' or '提供予定' in dumps(x['scope']) or '提供前' in x['summary'] or '未リリース' in x['summary'] for x in selected) else 'documented' if any(x['state']=='known' for x in selected) else 'unknown'
    rationale=current['rationale'] if current else 'この設問を確定する資料はまだありません。'
    if pid=='JP27' and cid=='B01':
     status='unknown';rationale='業務の自動割当は確認したが、勤務表そのものの自動割当は記載未確認。別機能の説明を勤務表自動作成の確認に含めない。'
@@ -60,7 +61,7 @@ with connect() as c:
   summary=dict(id=oid,product_id=pid,slug=pid.lower(),name=p['canonical_name'],vendor=p['legal_name'],region=p['market_region'],kind=p['product_kind'],aliases=aliases,summary=intro,categories=cats,official_url=official,official_note=official_note,
    logo=dict(url=logo['asset_url'],kind=logo['logo_kind'],brand=logo['brand_name'],source_url=logo['source_page_url'],rights=logo['rights_status']) if logo else None,
    features=[dict(id=x['id'],status=x['status']) for x in assessments if x['id'] in ['B01','J05','J06','N02','M08']],
-   record_count=len(facts),as_of_date='2026-10-11',snapshot_id=version)
+   record_count=len(facts),as_of_date=as_of_date,snapshot_id=version)
   prices=[]
   for price in c.execute('select * from v_price_details where offering_id=? order by component_id',(oid,)):
    row=dict(price); row['conditions']=json.loads(row.pop('conditions_json') or '{}')
@@ -75,7 +76,7 @@ with connect() as c:
  payload=dumps(dict(scope=scope,products=rows,membership=membership));content_hash=hashlib.sha256(payload.encode()).hexdigest()
  scope['content_sha256']=content_hash
  sql=['-- Apply migration 0001 first. Research import is only for an empty DB.']
- sql.append('INSERT OR IGNORE INTO web_snapshots(snapshot_id,as_of_date,research_sha256,content_sha256,scope_json) VALUES('+','.join(map(literal,[version,'2026-10-11',research_hash,content_hash,dumps(scope)]))+');')
+ sql.append('INSERT OR IGNORE INTO web_snapshots(snapshot_id,as_of_date,research_sha256,content_sha256,scope_json) VALUES('+','.join(map(literal,[version,as_of_date,research_hash,content_hash,dumps(scope)]))+');')
  for row in rows:
   sql.append('INSERT OR IGNORE INTO web_products VALUES('+','.join(map(literal,[version,row['id'],row['slug'],row['search'],dumps(row['summary']),dumps(row['detail'])]))+');')
  for m in membership:sql.append('INSERT OR IGNORE INTO web_categories VALUES('+','.join(map(literal,[version,m['category'],m['id'],dumps(m['provenance'])]))+');')

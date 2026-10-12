@@ -1,0 +1,678 @@
+{
+  "batch_id": "B11-20261012",
+  "prior_batch": "B10-20261012",
+  "as_of_date": "2026-10-12",
+  "resolution_policy_version": 2,
+  "description": "未着手項目の追加調査：NEOの構成・ライセンスとクラウド保守、販売チャネルの支援分担、企業と利用者の認証の区別、需要作成アドオンと共通規約の課金条件",
+  "method": "公式Web本文・公開ヘルプ・利用規約を既存観測と照合。検索抜粋・ログインに転送された記事の見出しは機能根拠に採用しない。フォーム送信、営業連絡、契約資料取得、ログイン後操作、独立試験は未実施。",
+  "sources": [
+    {
+      "key": "neo_sales",
+      "url": "https://products.ndis.jp/shift-neo/sales/",
+      "title": "快決！シフト君NEO ご購入には",
+      "publisher": "NTTデータセキスイシステムズ",
+      "reference": "turn41view2 / turn42view0",
+      "retrieved_on": "2026-10-12"
+    },
+    {
+      "key": "neo_system",
+      "url": "https://products.ndis.jp/shift-neo/system.html",
+      "title": "快決！シフト君NEO 製品仕様",
+      "publisher": "NTTデータセキスイシステムズ",
+      "reference": "turn41view1 / turn45view0",
+      "retrieved_on": "2026-10-12",
+      "updated_on": "2025-08-01",
+      "version_label": "動作環境の更新日2025-08-01／クラウド機能の注記は2021年5月現在",
+      "scope_note": "仕様表と脚注・milQ機種変更コードを確認。数値は登録・同時接続・1表の立案を区別。表の列・動作環境ごとの適用と現行見積の照合は未実施。"
+    },
+    {
+      "key": "neo_customer",
+      "url": "https://products.ndis.jp/shift-neo/customer.html",
+      "title": "快決！シフト君NEO ご利用中のお客様",
+      "publisher": "NTTデータセキスイシステムズ",
+      "reference": "turn41view0",
+      "retrieved_on": "2026-10-12",
+      "version_label": "2026年6月アップデート案内／2026-10-15予定の保守告知",
+      "scope_note": "本文の保守窓口、医療版の様式9追加と停止対象を確認。将来の計画停止は実発生と扱わない。アップデートファイルはパスワードが必要で未取得。"
+    },
+    {
+      "key": "neo_terms",
+      "url": "https://products.ndis.jp/shift-neo/terms.html?id=04",
+      "title": "クラウドリンクサービス利用規約（快決！シフト君NEOバンドル版）",
+      "publisher": "NTTデータセキスイシステムズ",
+      "reference": "turn46view1 / turn48view0 / turn49view0",
+      "retrieved_on": "2026-10-12",
+      "updated_on": "2022-02-21",
+      "version_label": "附則の最終改定実施日2022-02-21",
+      "scope_note": "NEOバンドル版クラウドリンクの規約。Windows本体のライセンス契約や全帳票契約へ一律適用しない。個別利用契約が規約と異なるときは個別契約優先（第6条）。"
+    },
+    {
+      "key": "ramanas_partner",
+      "url": "https://www.sbn.co.jp/ramanas/partner/",
+      "title": "Ramanas 販売パートナー制度",
+      "publisher": "システムバンク",
+      "reference": "turn41view3 / turn42view1",
+      "retrieved_on": "2026-10-12"
+    },
+    {
+      "key": "smartlinx_security",
+      "url": "https://www.smartlinx.com/security/",
+      "title": "Smartlinx Security",
+      "publisher": "Smartlinx",
+      "reference": "turn39view0 / turn48view2 / turn49view2",
+      "retrieved_on": "2026-10-12",
+      "scope_note": "公開企業セキュリティ説明。冒頭に項目が顧客へ適用されない場合があること、Secureframeへの相談文が残り、所在地も角括弧付き。製品・契約・監査対象への適用は未確認。社内従業員の認証と顧客の認証を区別。"
+    },
+    {
+      "key": "lb_addons",
+      "url": "https://support.lightning-bolt.com/hc/en-us/categories/360003285832-Add-Ons",
+      "title": "Lightning Bolt Add-Ons",
+      "publisher": "PerfectServe / Lightning Bolt",
+      "reference": "turn44view1",
+      "retrieved_on": "2026-10-12"
+    },
+    {
+      "key": "lb_access",
+      "url": "https://support.lightning-bolt.com/hc/en-us/articles/360044043252-Access-Optimization-Overview",
+      "title": "Lightning Bolt Access Optimization Overview",
+      "publisher": "PerfectServe / Lightning Bolt",
+      "reference": "turn45view1",
+      "retrieved_on": "2026-10-12"
+    },
+    {
+      "key": "lb_access_faq",
+      "url": "https://support.lightning-bolt.com/hc/en-us/articles/360044043332-FAQ-about-Access-Optimization",
+      "title": "Lightning Bolt FAQ about Access Optimization",
+      "publisher": "PerfectServe / Lightning Bolt",
+      "reference": "turn50view0",
+      "retrieved_on": "2026-10-12"
+    },
+    {
+      "key": "lb_support",
+      "url": "https://support.lightning-bolt.com/hc/en-us/articles/360044014252-How-do-I-contact-support",
+      "title": "Lightning Bolt How do I contact support?",
+      "publisher": "PerfectServe / Lightning Bolt",
+      "reference": "turn44view2",
+      "retrieved_on": "2026-10-12"
+    },
+    {
+      "key": "nursegrid_terms",
+      "url": "https://nursegrid.com/terms-of-service/",
+      "title": "Nursegrid Terms of Service",
+      "publisher": "HealthStream",
+      "reference": "turn46view0",
+      "retrieved_on": "2026-10-12",
+      "updated_on": "2024-03-12",
+      "version_label": "Last Updated March 12, 2024",
+      "scope_note": "ManagerページからリンクするNursegrid共通アプリ規約。Free/Managed Accessと個人の講座等Purchasesを分ける。ManagerとManaged Accessの個別注文書・MSA対応は未取得で、共通条項をManagerの確定契約に置き換えない。"
+    },
+    {
+      "key": "nursegrid_help",
+      "url": "https://healthstreamhelp.mcoutput.com/nursegridmanager/Content/NG_Manager/ManagerLandingPage.htm",
+      "title": "Welcome to Nursegrid Manager",
+      "publisher": "HealthStream",
+      "reference": "turn43view1",
+      "retrieved_on": "2026-10-12",
+      "updated_on": "2025-09-09",
+      "version_label": "Last updated: 9/9/2025"
+    }
+  ],
+  "findings": [
+    {
+      "product": "JP09",
+      "criterion": "P01",
+      "source": "neo_sales",
+      "summary": "価格数値は公開せず、希望に応じて見積書作成や販売店紹介に対応する。",
+      "locator": "ご購入について／L29–31",
+      "limitations": "NEOシリーズ共通の販売案内。版・人数・保守の金額は個別見積で未取得。",
+      "support": "limited",
+      "delivery": "native"
+    },
+    {
+      "product": "JP09",
+      "criterion": "P02",
+      "source": "neo_system",
+      "summary": "利用人数に応じたライセンスを用意し、ライセンスのクライアント数は制限しないと説明。",
+      "locator": "ライセンス／L36–44",
+      "limitations": "契約ユーザー数や同時接続、立案人数は別。管理者・兼務者等の課金人数の定義と段階金額は未確認。",
+      "support": "limited",
+      "delivery": "native"
+    },
+    {
+      "product": "JP09",
+      "criterion": "A06",
+      "source": "neo_system",
+      "summary": "1勤務表の最大立案100人・シフト100・グループ種別10。登録管理1000人・同時接続5台は別項目。",
+      "locator": "動作環境・仕様詳細／L119–138,173–187,217–233／注8",
+      "limitations": "NEO S・メディカル・ウェルネスの仕様表。登録1000人を1回の自動立案規模と扱わない。モードごとの適用、推奨環境・SQL Server Express前提、実性能を要確認。",
+      "support": "limited",
+      "delivery": "native"
+    },
+    {
+      "product": "JP09",
+      "criterion": "A07",
+      "source": "neo_system",
+      "summary": "Windowsの本体をPC単体やサーバー・複数クライアントで構築し、クラウドリンクを組み合わせる。",
+      "locator": "ライセンス・製品タイプ／L42–63／動作環境・注7",
+      "limitations": "ブラウザだけで全機能が使えるSaaSとは確定しない。分離時のデータ同期はアップロード／ダウンロード。現行構成は個別確認。",
+      "support": "limited",
+      "delivery": "native"
+    },
+    {
+      "product": "JP09",
+      "criterion": "B07",
+      "source": "neo_system",
+      "summary": "milQ連携、クラウド帳票、勤務負担チェック、オンライン保守は保守・サービス利用権の加入者に限定。",
+      "locator": "クラウドリンク・オンライン保守／注7／L286–296",
+      "limitations": "機能列挙は2021年5月現在の注記。現行の版・帳票・利用契約への内包と金額は未確認。",
+      "support": "limited",
+      "delivery": "addon"
+    },
+    {
+      "product": "JP09",
+      "criterion": "P05",
+      "source": "neo_system",
+      "summary": "帳票作成はデスクトップExcelが必要。SQL Server Express以外のEditionは顧客が別途用意する。",
+      "locator": "ソフトウェア・DB注意／注5–6／L275–284",
+      "limitations": "ExcelのWeb版非対応・ストアアプリ版保証外。必要ライセンスの既存保有や別途費用は見積へ含めて確認。",
+      "support": "limited",
+      "delivery": "third_party"
+    },
+    {
+      "product": "JP09",
+      "criterion": "N06",
+      "source": "neo_system",
+      "summary": "milQの機種変更コードに結び付く予定・連携情報・所属・お知らせは、コード削除までサーバーに保持する。",
+      "locator": "milQ 機種変更コード／L313–338",
+      "limitations": "機種変更用の保持範囲。事業所解約時の全データ削除やバックアップ残存期限とは別。",
+      "support": "limited",
+      "delivery": "native"
+    },
+    {
+      "product": "JP09",
+      "criterion": "N06",
+      "source": "neo_terms",
+      "summary": "クラウドの障害復旧用バックアップは定めるが、原資料の保管と直近データの復元は顧客の責任とする。",
+      "locator": "第13条／L126–129",
+      "limitations": "クラウドリンク規約のみ。復旧を完全保証せず、保持周期・RPO/RTO・Windows本体のバックアップ運用は未確認。",
+      "support": "limited",
+      "delivery": "native"
+    },
+    {
+      "product": "JP09",
+      "criterion": "N06",
+      "source": "neo_terms",
+      "summary": "契約終了時は要請のあった提供資料を返還し、サービス設備上の資料を消去すると定める。",
+      "locator": "第26条2／L225–227",
+      "limitations": "クラウドリンク規約のみ。消去期限・バックアップ・削除証明を定めた個別契約は未取得。",
+      "support": "limited",
+      "delivery": "native"
+    },
+    {
+      "product": "JP09",
+      "criterion": "N02",
+      "source": "neo_terms",
+      "summary": "クラウド規約のID・パスワード管理だけでは、顧客向けSSO・MFAの方式や必須化は確認できない。",
+      "locator": "第14条／L132–137",
+      "limitations": "MFA非対応とは判定しない。本体・milQ・管理者で適用を分けて確認する。",
+      "support": "unknown",
+      "delivery": "unknown",
+      "state": "not_found"
+    },
+    {
+      "product": "JP09",
+      "criterion": "M08",
+      "source": "neo_terms",
+      "summary": "要請資料の返還条項はあるが、希望・ルール・全設定・履歴の機械可読な全量出力は本文未記載。",
+      "locator": "第26条2／L225–227",
+      "limitations": "クラウドリンクの資料返還を、本体の全量搬出や指定形式・費用・期限の保証と扱わない。",
+      "support": "unknown",
+      "delivery": "unknown",
+      "state": "not_found"
+    },
+    {
+      "product": "JP09",
+      "criterion": "O04",
+      "source": "neo_customer",
+      "summary": "窓口は平日9–12時・13–17時30分、土日祝・長期休暇は休業。問合せにユーザーIDが必要。",
+      "locator": "サポート窓口情報／L50–62",
+      "limitations": "現行公開窓口。応答・解決時間の保証、夜間障害の別窓口は未確認。",
+      "support": "limited",
+      "delivery": "native"
+    },
+    {
+      "product": "JP09",
+      "criterion": "O04",
+      "source": "neo_terms",
+      "summary": "クラウドリンクの電話・メールでの操作問合せを定め、顧客固有環境や登録データ内容は対象外。",
+      "locator": "別紙サービス内容／問合せ対応／L270–286",
+      "limitations": "規約の対象範囲。現在の本体保守や個別契約の支援範囲まで確定しない。",
+      "support": "limited",
+      "delivery": "native"
+    },
+    {
+      "product": "JP15",
+      "criterion": "P01",
+      "source": "neo_sales",
+      "summary": "価格数値は公開せず、希望に応じて見積書作成や販売店紹介に対応する。",
+      "locator": "ご購入について／L29–31",
+      "limitations": "NEOシリーズ共通の販売案内。版・人数・保守の金額は個別見積で未取得。",
+      "support": "limited",
+      "delivery": "native"
+    },
+    {
+      "product": "JP15",
+      "criterion": "P02",
+      "source": "neo_system",
+      "summary": "利用人数に応じたライセンスを用意し、ライセンスのクライアント数は制限しないと説明。",
+      "locator": "ライセンス／L36–44",
+      "limitations": "契約ユーザー数や同時接続、立案人数は別。管理者・兼務者等の課金人数の定義と段階金額は未確認。",
+      "support": "limited",
+      "delivery": "native"
+    },
+    {
+      "product": "JP15",
+      "criterion": "A06",
+      "source": "neo_system",
+      "summary": "1勤務表の最大立案100人・シフト100・グループ種別10。登録管理1000人・同時接続5台は別項目。",
+      "locator": "動作環境・仕様詳細／L119–138,173–187,217–233／注8",
+      "limitations": "NEO S・メディカル・ウェルネスの仕様表。登録1000人を1回の自動立案規模と扱わない。モードごとの適用、推奨環境・SQL Server Express前提、実性能を要確認。",
+      "support": "limited",
+      "delivery": "native"
+    },
+    {
+      "product": "JP15",
+      "criterion": "A07",
+      "source": "neo_system",
+      "summary": "Windowsの本体をPC単体やサーバー・複数クライアントで構築し、クラウドリンクを組み合わせる。",
+      "locator": "ライセンス・製品タイプ／L42–63／動作環境・注7",
+      "limitations": "ブラウザだけで全機能が使えるSaaSとは確定しない。分離時のデータ同期はアップロード／ダウンロード。現行構成は個別確認。",
+      "support": "limited",
+      "delivery": "native"
+    },
+    {
+      "product": "JP15",
+      "criterion": "B07",
+      "source": "neo_system",
+      "summary": "milQ連携、クラウド帳票、勤務負担チェック、オンライン保守は保守・サービス利用権の加入者に限定。",
+      "locator": "クラウドリンク・オンライン保守／注7／L286–296",
+      "limitations": "機能列挙は2021年5月現在の注記。現行の版・帳票・利用契約への内包と金額は未確認。",
+      "support": "limited",
+      "delivery": "addon"
+    },
+    {
+      "product": "JP15",
+      "criterion": "P05",
+      "source": "neo_system",
+      "summary": "帳票作成はデスクトップExcelが必要。SQL Server Express以外のEditionは顧客が別途用意する。",
+      "locator": "ソフトウェア・DB注意／注5–6／L275–284",
+      "limitations": "ExcelのWeb版非対応・ストアアプリ版保証外。必要ライセンスの既存保有や別途費用は見積へ含めて確認。",
+      "support": "limited",
+      "delivery": "third_party"
+    },
+    {
+      "product": "JP15",
+      "criterion": "N06",
+      "source": "neo_system",
+      "summary": "milQの機種変更コードに結び付く予定・連携情報・所属・お知らせは、コード削除までサーバーに保持する。",
+      "locator": "milQ 機種変更コード／L313–338",
+      "limitations": "機種変更用の保持範囲。事業所解約時の全データ削除やバックアップ残存期限とは別。",
+      "support": "limited",
+      "delivery": "native"
+    },
+    {
+      "product": "JP15",
+      "criterion": "N06",
+      "source": "neo_terms",
+      "summary": "クラウドの障害復旧用バックアップは定めるが、原資料の保管と直近データの復元は顧客の責任とする。",
+      "locator": "第13条／L126–129",
+      "limitations": "クラウドリンク規約のみ。復旧を完全保証せず、保持周期・RPO/RTO・Windows本体のバックアップ運用は未確認。",
+      "support": "limited",
+      "delivery": "native"
+    },
+    {
+      "product": "JP15",
+      "criterion": "N06",
+      "source": "neo_terms",
+      "summary": "契約終了時は要請のあった提供資料を返還し、サービス設備上の資料を消去すると定める。",
+      "locator": "第26条2／L225–227",
+      "limitations": "クラウドリンク規約のみ。消去期限・バックアップ・削除証明を定めた個別契約は未取得。",
+      "support": "limited",
+      "delivery": "native"
+    },
+    {
+      "product": "JP15",
+      "criterion": "N02",
+      "source": "neo_terms",
+      "summary": "クラウド規約のID・パスワード管理だけでは、顧客向けSSO・MFAの方式や必須化は確認できない。",
+      "locator": "第14条／L132–137",
+      "limitations": "MFA非対応とは判定しない。本体・milQ・管理者で適用を分けて確認する。",
+      "support": "unknown",
+      "delivery": "unknown",
+      "state": "not_found"
+    },
+    {
+      "product": "JP15",
+      "criterion": "M08",
+      "source": "neo_terms",
+      "summary": "要請資料の返還条項はあるが、希望・ルール・全設定・履歴の機械可読な全量出力は本文未記載。",
+      "locator": "第26条2／L225–227",
+      "limitations": "クラウドリンクの資料返還を、本体の全量搬出や指定形式・費用・期限の保証と扱わない。",
+      "support": "unknown",
+      "delivery": "unknown",
+      "state": "not_found"
+    },
+    {
+      "product": "JP15",
+      "criterion": "O04",
+      "source": "neo_customer",
+      "summary": "窓口は平日9–12時・13–17時30分、土日祝・長期休暇は休業。問合せにユーザーIDが必要。",
+      "locator": "サポート窓口情報／L50–62",
+      "limitations": "現行公開窓口。応答・解決時間の保証、夜間障害の別窓口は未確認。",
+      "support": "limited",
+      "delivery": "native"
+    },
+    {
+      "product": "JP15",
+      "criterion": "O04",
+      "source": "neo_terms",
+      "summary": "クラウドリンクの電話・メールでの操作問合せを定め、顧客固有環境や登録データ内容は対象外。",
+      "locator": "別紙サービス内容／問合せ対応／L270–286",
+      "limitations": "規約の対象範囲。現在の本体保守や個別契約の支援範囲まで確定しない。",
+      "support": "limited",
+      "delivery": "native"
+    },
+    {
+      "product": "JP09",
+      "criterion": "J04",
+      "source": "neo_customer",
+      "summary": "2026年6月更新案内は医療版に令和8年度改定の様式9帳票9種類を追加したと説明。",
+      "locator": "保守サービス／2026年6月／L79–108",
+      "limitations": "更新プログラムはパスワード保護で未取得。10月6日に共同提供元が停止したファイルの採用・修正反映や計算妥当性は未確認。",
+      "support": "limited",
+      "delivery": "native"
+    },
+    {
+      "product": "JP21",
+      "criterion": "K03",
+      "source": "ramanas_partner",
+      "summary": "PROはデモ・納品・技術支援を販売パートナーが担当。UNITE/FREEの技術支援はシステムバンクが担当。",
+      "locator": "パートナーPRO・UNITE・FREE／L21–46,89–94",
+      "limitations": "販売チャネルによる作業分担。従来の3か月設定支援の工数・範囲が全契約に共通とは確定しない。",
+      "support": "limited",
+      "delivery": "native"
+    },
+    {
+      "product": "JP21",
+      "criterion": "O04",
+      "source": "ramanas_partner",
+      "summary": "PRO経由の難解なトラブルは、別途二次保守契約の範囲でシステムバンクが対応する。",
+      "locator": "パートナーPRO／L25–30",
+      "limitations": "利用者向け保守料や全案件の窓口時間は未記載。販売パートナーの初期研修費を利用者の導入価格に移さない。",
+      "support": "limited",
+      "delivery": "native"
+    },
+    {
+      "product": "US04",
+      "criterion": "N04",
+      "source": "smartlinx_security",
+      "summary": "企業説明はMicrosoft Azureのデータベースを米国所在と記載する。",
+      "locator": "Cloud Infrastructure / Data Hosting Security／L178–185",
+      "limitations": "冒頭に適用対象留保、国名に角括弧が残る。Schedulingの契約・処理・バックアップ地域は未確認。",
+      "support": "limited",
+      "delivery": "native"
+    },
+    {
+      "product": "US04",
+      "criterion": "N06",
+      "source": "smartlinx_security",
+      "summary": "ハードウェア障害のデータ損失を減らすためホスティング提供者のバックアップを利用すると説明。",
+      "locator": "Business Continuity and Disaster Recovery／L202–204",
+      "limitations": "企業説明かつ冒頭の適用留保あり。Schedulingの保持・解約時削除・復旧目標は未確認。",
+      "support": "limited",
+      "delivery": "native"
+    },
+    {
+      "product": "US04",
+      "criterion": "N07",
+      "source": "smartlinx_security",
+      "summary": "保存時暗号化・TLS/SSL通信・年次第三者侵入試験を自己申告し、SOC 2基準に沿う情報管理を説明。",
+      "locator": "Information Security Program／L160／Penetration Testing／L167／Encryption／L187–197",
+      "limitations": "適用留保のある企業説明。SOC 2報告書の取得・監査対象・有効期間やScheduling契約への適用は未確認。SOC 2認証取得とは判定しない。",
+      "support": "limited",
+      "delivery": "native"
+    },
+    {
+      "product": "US04",
+      "criterion": "N02",
+      "source": "smartlinx_security",
+      "summary": "SSO・2FAの説明対象は従業員によるクラウド基盤アクセス。顧客Schedulingの認証方式・強制は記載未確認。",
+      "locator": "Permissions and Authentication／L214–216",
+      "limitations": "社内対策を顧客向け機能に置き換えない。非対応とは判定しない。",
+      "support": "unknown",
+      "delivery": "unknown",
+      "state": "not_found"
+    },
+    {
+      "product": "US04",
+      "criterion": "N03",
+      "source": "smartlinx_security",
+      "summary": "クラウドサービスの監視・ログを説明するが、顧客による設定・公開・出力の監査ログは確認できない。",
+      "locator": "Logging and Monitoring／L199–200",
+      "limitations": "企業基盤のログと製品操作ログは別。顧客側の保持・出力・改ざん対策は未確認。",
+      "support": "unknown",
+      "delivery": "unknown",
+      "state": "not_found"
+    },
+    {
+      "product": "US16",
+      "criterion": "B07",
+      "source": "lb_addons",
+      "summary": "公開ヘルプはAccess Optimization・Analytics・Integrationsを追加機能の区分に置く。",
+      "locator": "Add-Ons／L11–26",
+      "limitations": "ヘルプの機能区分。全連携や全分析が別料金になるとは確定せず、契約内包の確認が必要。",
+      "support": "limited",
+      "delivery": "addon"
+    },
+    {
+      "product": "US16",
+      "criterion": "P05",
+      "source": "lb_access",
+      "summary": "Access Optimizationは部署への追加前に購入が必要と明記する。",
+      "locator": "What is Access Optimization / Prerequisites／L19–24",
+      "limitations": "本体に自動内包する料金と扱わない。追加費の金額・課金単位・期間は未記載。",
+      "support": "limited",
+      "delivery": "addon"
+    },
+    {
+      "product": "US16",
+      "criterion": "B02",
+      "source": "lb_access_faq",
+      "summary": "利用者が日別目標数を入力し、勤務カバーを自動作成する。目標は反復パターンや表貼付で設定する。",
+      "locator": "What does Access Optimization do / Demand Target／L19–24",
+      "limitations": "追加購入機能。需要の自動予測・必要人数そのものの推定精度とは区別。",
+      "support": "limited",
+      "delivery": "addon"
+    },
+    {
+      "product": "US16",
+      "criterion": "K03",
+      "source": "lb_access",
+      "summary": "勤務テンプレート、対象職員・勤務、日別目標、職員への反復割当、表示への追加という設定手順。",
+      "locator": "Setting Up Work Templates / Target Definitions / Template Schedule / Viewer／L26–60",
+      "limitations": "利用者が操作する公開手順の確認。提供者代行の有無・導入工数・実作成結果は未確認。",
+      "support": "limited",
+      "delivery": "addon"
+    },
+    {
+      "product": "US16",
+      "criterion": "M03",
+      "source": "lb_access",
+      "summary": "日別需要値は専用Excelテンプレートで投入できると説明。",
+      "locator": "Editing Target Definition Demand Patterns／L45–50",
+      "limitations": "追加購入機能の需要入力。既存勤務表の任意Excel自動取込とは区別。",
+      "support": "limited",
+      "delivery": "addon"
+    },
+    {
+      "product": "US16",
+      "criterion": "O04",
+      "source": "lb_support",
+      "summary": "電話とチケットのサポートへ24時間・毎日連絡できると案内し、米国・英国の番号を掲載。",
+      "locator": "How do I contact support／L16–24",
+      "limitations": "連絡可能時間。受付と応答・解決のSLA、日本語窓口、契約プランの内包は未確認。",
+      "support": "limited",
+      "delivery": "native"
+    },
+    {
+      "product": "US08",
+      "criterion": "B07",
+      "source": "nursegrid_help",
+      "summary": "Managerヘルプは一部の機能が任意・役割別で、利用環境によって表示されないと注記。",
+      "locator": "How to Use the Online Help／L33–40",
+      "limitations": "2025-09-09更新。全機能の標準内包は保証しない。対象機能ごとの契約対応表は未取得。",
+      "support": "limited",
+      "delivery": "native"
+    },
+    {
+      "product": "US08",
+      "criterion": "P02",
+      "source": "nursegrid_terms",
+      "summary": "Managed Accessの雇用主月額は、雇用主がアクセスを付与した利用者数を基準と定める。",
+      "locator": "Section 6 Fees and Payment／L97",
+      "limitations": "Managerページが参照する共通アプリ規約。個別MSA・注文書が未取得で、Managerの管理者・休職者・兼務者の課金定義は未確定。",
+      "support": "limited",
+      "delivery": "native"
+    },
+    {
+      "product": "US08",
+      "criterion": "P03",
+      "source": "nursegrid_terms",
+      "summary": "Managed Accessの初回が月未満なら按分。請求・支払周期は雇用主MSA・注文書に従う。",
+      "locator": "Section 6 Fees and Payment／L97",
+      "limitations": "個人向け講座等Purchasesの年次自動更新条項をManager契約へ転用しない。最低人数・最低期間は未取得。",
+      "support": "limited",
+      "delivery": "native"
+    },
+    {
+      "product": "US08",
+      "criterion": "P07",
+      "source": "nursegrid_terms",
+      "summary": "共通規約は料金を米ドル表示とし、該当税の負担を定める。",
+      "locator": "Section 6 Fees and Payment／L93–97",
+      "limitations": "Managerページから参照する共通規約の範囲。Manager注文書の通貨・税と公開月額5ドルの適用は別途照合。新しい金額明細は作成しない。",
+      "support": "limited",
+      "delivery": "native"
+    },
+    {
+      "product": "US08",
+      "criterion": "P08",
+      "source": "nursegrid_terms",
+      "summary": "Managed Accessの解約・職員アクセス撤去は当該請求期間末に有効、アクセス終了時の既払料は返金しないとする。",
+      "locator": "Section 6 Fees and Payment／L98–101",
+      "limitations": "共通規約の範囲。個人講座の30日返金条件と混同しない。Manager固有の解約予告・退出費用は個別契約未取得。",
+      "support": "limited",
+      "delivery": "native"
+    },
+    {
+      "product": "US08",
+      "criterion": "N06",
+      "source": "nursegrid_terms",
+      "summary": "規約終了後に、提供者が裁量でデータやアカウント情報を削除し得ると定める。",
+      "locator": "Section 12 Acceptable Use／L129–131",
+      "limitations": "共通アプリ規約。Manager管理データ全体の削除期限・バックアップ残存・削除証明は未確認。",
+      "support": "limited",
+      "delivery": "native"
+    },
+    {
+      "product": "US08",
+      "criterion": "M08",
+      "source": "nursegrid_terms",
+      "summary": "終了時のデータ削除条項はあるが、希望・ルール・全設定・履歴の機械可読な搬出権は本文未確認。",
+      "locator": "Section 12 Acceptable Use／L129–131",
+      "limitations": "Managerの個別MSA・注文書は未取得。共通規約の沈黙から非対応とは判断しない。",
+      "support": "unknown",
+      "delivery": "unknown",
+      "state": "not_found"
+    }
+  ],
+  "followups": [
+    {
+      "product": "US04",
+      "criterion": "N07",
+      "priority": 2,
+      "method": "vendor_document",
+      "question": "公開Securityページの適用留保・角括弧付き所在地について、Scheduling対象の暗号化、保存・処理・バックアップ地域、SOC 2監査範囲・期間、顧客MFAを現行契約資料で確認する。"
+    },
+    {
+      "product": "US16",
+      "criterion": "P05",
+      "priority": 2,
+      "method": "vendor_quote",
+      "question": "Access Optimizationを含む構成の本体・追加費、部署／職員の課金単位、分析・連携・サポート内包、支払周期を同条件の見積で確認する。"
+    },
+    {
+      "product": "US08",
+      "criterion": "P03",
+      "priority": 2,
+      "method": "vendor_document",
+      "question": "ManagerとManaged Access共通規約の適用関係をMSA・注文書で照合し、付与ユーザーの人数計算、通貨・税、按分・最低期間・解約有効日を確認する。"
+    },
+    {
+      "product": "JP09",
+      "criterion": "P05",
+      "priority": 2,
+      "method": "vendor_quote",
+      "question": "医療版の現行構成で、本体の立案100人・同時接続条件、保守・サービス利用権、milQ・クラウド様式9、Excel等の第三者ライセンスと更新費を分けた見積を確認する。"
+    }
+  ],
+  "task_updates": [
+    {
+      "task_id": "B06-20261011-TASK008",
+      "product": "JP09",
+      "criterion": "J03",
+      "state": "in_progress",
+      "priority": 1,
+      "method": "vendor_document",
+      "note": "公式利用者向けページで2026年6月のR8様式9帳票追加を確認。ただし更新ファイルはパスワード保護で未取得。10月6日に共同提供元が停止した26_9chiiki_ryoyo_hojokasan.xlsの製品内採用・修正反映を証明しないため、課題を未完了で保持。"
+    }
+  ],
+  "retrieval_checks": [
+    {
+      "product": "JP09",
+      "url": "https://products.ndis.jp/shift-neo/customer.html",
+      "result": "public_notice_verified_update_file_restricted",
+      "notes": "2026年6月の更新案内は本文確認。ファイル本文未取得。10月15日18–22時は将来の計画停止で、実際の停止結果として記録しない。"
+    },
+    {
+      "product": "US16",
+      "url": "https://support.lightning-bolt.com/hc/en-us/article_attachments/43596532599309",
+      "result": "inaccessible",
+      "notes": "Scheduling Rules PDF検索結果はあるが直接本文取得404。検索抜粋のルール型は新しい機能根拠に採用しない。"
+    },
+    {
+      "product": "US16",
+      "url": "https://support.lightning-bolt.com/hc/en-us/categories/360003310911-Administration",
+      "result": "authentication_required",
+      "notes": "カテゴリは認証へ転送し取得不可。ログイン未実施。"
+    },
+    {
+      "product": "US16",
+      "url": "https://support.lightning-bolt.com/hc/en-us/articles/39072739045133-Integrations-To-Power-Enhanced-Workflows",
+      "result": "authentication_required",
+      "notes": "ログイン画面への転送のみ。連携仕様を採用しない。"
+    },
+    {
+      "product": "US16",
+      "url": "https://support.lightning-bolt.com/hc/en-us/articles/360044493071-How-to-Use-Analytics",
+      "result": "authentication_required",
+      "notes": "ログイン画面への転送のみ。分析・出力仕様を採用しない。"
+    },
+    {
+      "product": "US16",
+      "url": "https://support.lightning-bolt.com/hc/en-us/articles/360044491971-Sync-to-Google-Calendar",
+      "result": "authentication_required",
+      "notes": "関連リンクからの取得は失敗し、記事直URLではログイン画面。カレンダー同期の方向・更新周期は採用しない。"
+    }
+  ]
+}

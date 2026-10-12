@@ -1,0 +1,115 @@
+{
+  "integrity_check": "ok",
+  "foreign_key_errors": 0,
+  "sql_roundtrip_equal": true,
+  "data_sha256": "34093edacc69a2b11edc3597a148cbc436f8446a0c55e29b2379ba4c48dd0444",
+  "tables": {
+    "assessment_resolutions": 2609,
+    "asset_evidence": 6,
+    "audit_issues": 32,
+    "batch_product_membership": 144,
+    "benchmark_runs": 0,
+    "benchmark_scenario_criteria": 45,
+    "benchmark_scenarios": 14,
+    "brand_assets": 51,
+    "classification_corrections": 12,
+    "cost_requirements": 36,
+    "cost_scenarios": 8,
+    "criteria": 164,
+    "current_assessments": 2076,
+    "domains": 20,
+    "legacy_feature_map": 86,
+    "metric_catalog": 20,
+    "observation_evidence": 1949,
+    "observations": 2833,
+    "offerings": 50,
+    "plans": 97,
+    "price_components": 116,
+    "product_aliases": 57,
+    "products": 50,
+    "regulation_support": 0,
+    "regulations": 17,
+    "research_assets": 6,
+    "research_batches": 13,
+    "research_task_updates": 54,
+    "research_tasks": 971,
+    "resolution_evidence": 3489,
+    "retrieval_checks": 142,
+    "run_metrics": 0,
+    "schema_info": 17,
+    "source_archives": 4,
+    "source_documents": 255,
+    "source_method_attributes": 325,
+    "source_revisions": 385,
+    "sources": 257,
+    "vendors": 11
+  },
+  "products": 50,
+  "offerings": 50,
+  "document_observations": 1915,
+  "document_states": {
+    "disputed": 35,
+    "inaccessible": 6,
+    "known": 1793,
+    "not_disclosed": 2,
+    "not_found": 78,
+    "not_researched": 1
+  },
+  "common_slots": 2000,
+  "documented_common_scopes": 573,
+  "research_documents": 241,
+  "benchmark_runs": 0,
+  "preferred_logos": {
+    "company": 10,
+    "service": 40
+  },
+  "latest_batch": "B13-20261012",
+  "latest_batch_details": {
+    "batch_id": "B13-20261012",
+    "new_document_findings": 52,
+    "editorial_corrections": 0,
+    "new_price_components": 4,
+    "reference_regulations": 0,
+    "source_retrievals": 15,
+    "functional_research_sources": 15,
+    "functional_research_products": 4,
+    "products_including_classification_corrections": 4,
+    "finding_states": {
+      "known": 36,
+      "not_found": 13,
+      "disputed": 3
+    }
+  },
+  "research_task_states": {
+    "blocked": 78,
+    "done": 2,
+    "in_progress": 179,
+    "not_started": 712
+  },
+  "by_product": [
+    {
+      "product_id": "JP10",
+      "canonical_name": "Pitat-Shift",
+      "document_records": 14
+    },
+    {
+      "product_id": "JP11",
+      "canonical_name": "ナースシフト",
+      "document_records": 12
+    },
+    {
+      "product_id": "JP12",
+      "canonical_name": "シフトラ",
+      "document_records": 14
+    },
+    {
+      "product_id": "JP18",
+      "canonical_name": "oplus",
+      "document_records": 12
+    }
+  ],
+  "schema_objects": {
+    "table": 39,
+    "view": 12
+  }
+}

@@ -1,0 +1,130 @@
+{
+  "batch_id": "B16-20261012",
+  "prior_batch": "B15-20261012",
+  "as_of_date": "2026-10-12",
+  "resolution_policy_version": 2,
+  "description": "Smart Square 1サービスに限定した周期型勤務、契約・料金・支援の未確認範囲、2導入事例の条件と費用指標の追加調査",
+  "method": "symplr公式4ページの本文を確認し、既存の採用観測と照合。検索抜粋だけの内容は採用しない。Web全文とスクリーンショットは未保存。フォーム送信、営業連絡、会員登録、製品ログイン、見積取得、決済、API計算、独立製品試験は未実施。自社事例の費用効果を独立測定や勤務表自動割当の確認へ置き換えない。",
+  "sources": [
+    {
+      "key": "smart-square-product",
+      "url": "https://www.symplr.com/products/smart-square",
+      "title": "Smart Square Healthcare Scheduling Software：周期型勤務と公開範囲",
+      "publisher": "symplr",
+      "reference": "公式製品ページ本文",
+      "retrieved_on": "2026-10-12",
+      "method": "public_web_body",
+      "method_note": "製品本文とFAQを確認。自動需要予測、空き枠募集、セルフ／周期型勤務を勤務表全自動割当と区別。本文のプラン・料金・算式の未確認範囲を保存。全文・本文ハッシュ未保存。"
+    },
+    {
+      "key": "symplr-support",
+      "url": "https://www.symplr.com/customer-support",
+      "title": "symplr Customer Support：製品別窓口とSmart Squareの掲載範囲",
+      "publisher": "symplr",
+      "reference": "公式サポート一覧本文",
+      "retrieved_on": "2026-10-12",
+      "method": "public_web_body",
+      "method_note": "Workforce Management区分の製品別一覧を確認。別製品の電話・メール・ログインリンクをSmart Squareへ流用しない。全文・本文ハッシュ未保存。"
+    },
+    {
+      "key": "bellin-case",
+      "url": "https://www.symplr.com/case-studies/bellin-healths-journey",
+      "title": "Bellin Health：配置ルール・インセンティブと費用分析の導入事例",
+      "publisher": "symplr",
+      "reference": "販売元掲載の導入事例本文",
+      "retrieved_on": "2026-10-12",
+      "method": "public_web_body",
+      "method_note": "Customer StoryはSept 2025の月表示だけで、正確な公開日は未確認。販売元掲載の顧客事例として要約し、独立試験に登録しない。添付PDFは取得せずWeb本文のみ。全文・本文ハッシュ未保存。"
+    },
+    {
+      "key": "hackensack-case",
+      "url": "https://www.symplr.com/case-studies/revolutionizing-workforce-management-with-smart-square-at-hackensack-meridian-health",
+      "title": "Hackensack Meridian Health：段階導入とFTE Leakageの測定条件",
+      "publisher": "symplr",
+      "reference": "販売元掲載の導入事例本文",
+      "retrieved_on": "2026-10-12",
+      "method": "public_web_body",
+      "method_note": "Customer StoryはSept 2025の月表示だけで、正確な公開日は未確認。2023年の取り組みと過去の段階導入を現在の製品仕様と混ぜない。添付PDFは取得せずWeb本文のみ。全文・本文ハッシュ未保存。"
+    }
+  ],
+  "findings": [
+    {
+      "product": "US03", "criterion": "B05", "source": "smart-square-product",
+      "summary": "セルフスケジューリングに加え周期型スケジューリングを掲載し、労働組合のある環境とない環境の両方を対象に挙げる。",
+      "locator": "Everything you need / Self-Scheduling and Cyclic Scheduling",
+      "limitations": "職員による枠選択・周期型勤務の公開案内。全自動割当、組合規則の具体的設定・強制力、例外承認、対象契約は未確認。", "state": "known", "support": "limited", "delivery": "unknown"
+    },
+    {
+      "product": "US03", "criterion": "B01", "source": "smart-square-product",
+      "summary": "需要予測・空き枠募集・セルフ／周期型勤務は記載されるが、職員を希望・必要人数・制約から全自動割当する詳細手順は今回本文で確認できない。",
+      "locator": "機能一覧 / AI Predictive Scheduling / Self-Scheduling / FAQs",
+      "limitations": "この公開ページの確認範囲。非対応とは判断しない。予測人数、募集の自動化、固定周期の設定だけで勤務表最適化を確認済みにしない。", "state": "not_found", "delivery": "unknown"
+    },
+    {
+      "product": "US03", "criterion": "B07", "source": "smart-square-product",
+      "summary": "機能群を紹介するが、機能別の標準内包・追加契約・エディション条件を分けた表は今回本文に見つからない。",
+      "locator": "Everything you need for smarter healthcare scheduling / Request a demo",
+      "limitations": "同一ページへの掲載を同一契約への内包と解釈しない。現行の注文書・製品別契約資料は未取得。", "state": "not_found", "delivery": "unknown"
+    },
+    {
+      "product": "US03", "criterion": "E03", "source": "smart-square-product",
+      "summary": "公平性に言及するが、契約勤務量や勤務可能枠に応じた配分補正の算式・設定は今回本文で確認できない。",
+      "locator": "Improve staff satisfaction / Self-Scheduling and Cyclic Scheduling",
+      "limitations": "fairnessという説明だけでFTE補正を確認済みにしない。顧客事例のFTE未勤務時間の監視も公平な割当の算式とは別。", "state": "not_found", "delivery": "unknown"
+    },
+    {
+      "product": "US03", "criterion": "P01", "source": "smart-square-product",
+      "summary": "デモ依頼導線はあるが、製品の価格表・金額・課金単位・最低契約は今回本文で確認できない。",
+      "locator": "製品本文 / FAQs / Request a demo",
+      "limitations": "非公開範囲の確認。問い合わせ導線だけで個別見積もり方式を確定せず、0円や料金明細を追加しない。", "state": "not_found", "delivery": "unknown"
+    },
+    {
+      "product": "US03", "criterion": "O04", "source": "symplr-support",
+      "summary": "公式の製品別サポート一覧にSmart Square専用行は今回見つからず、専用窓口・受付時間・応答目標を確定できない。",
+      "locator": "Find support for your symplr solutions / Workforce Managementの製品別一覧",
+      "limitations": "別製品symplr Workforce（API Healthcare）の電話・ログインをSmart Squareへ流用しない。窓口が存在しないとは判断せず、製品別契約資料での確認を残す。", "state": "not_found", "delivery": "unknown"
+    },
+    {
+      "product": "US03", "criterion": "Q04", "source": "bellin-case",
+      "summary": "Bellin Healthの事例はウィスコンシン州北東部の非営利・複数拠点医療網を対象とし、空き枠の早期応募とインセンティブ設計を説明する。",
+      "locator": "Customer profile / The Challenge / The Solution",
+      "limitations": "販売元掲載の顧客事例。職員・部署の正確な数、対象版、導入期間、契約金額は未確認。実証条件や現在の全契約へ一般化しない。", "state": "known", "support": "limited", "delivery": "unknown"
+    },
+    {
+      "product": "US03", "criterion": "K03", "source": "bellin-case",
+      "summary": "Bellin Healthでは標準配置ルールと独自インセンティブを設計し、顧客側の経営・プロジェクトチームが導入と運用変更に関与したと説明する。",
+      "locator": "The Solution / The Results",
+      "limitations": "顧客側の関与の確認に限る。初期設定の実担当、ベンダー代行との分担、支援費、所要工数は未確認。", "state": "known", "support": "limited", "delivery": "unknown"
+    },
+    {
+      "product": "US03", "criterion": "I05", "source": "bellin-case",
+      "summary": "Bellin事例は132,970時間のインセンティブ費用分析で旧支払慣行比1,032,179 USD減を報告。空きシフトの65%が14日以上前、15%が7日以上前に充足したと記載する。",
+      "locator": "The Results / $1.032 Million / 80%",
+      "limitations": "販売元の事例値。測定期間・全費用内訳・生データ・因果比較は未確認。ソフトウェア料金、配置条件充足率、一般的な節約保証、独立試験結果とは扱わない。", "state": "known", "support": "limited", "delivery": "unknown"
+    },
+    {
+      "product": "US03", "criterion": "Q04", "source": "hackensack-case",
+      "summary": "Hackensack Meridian Healthはニュージャージー州の非営利医療網。5病院から段階導入し、COVID-19期に拡大したと説明する。",
+      "locator": "Customer profile / The Solution",
+      "limitations": "販売元掲載の過去の導入経緯。5病院は初期導入範囲であり製品の上限ではない。職員総数、現在の対象施設・版・契約条件は未確認。", "state": "known", "support": "limited", "delivery": "unknown"
+    },
+    {
+      "product": "US03", "criterion": "I05", "source": "hackensack-case",
+      "summary": "Hackensack事例は2023年に看護管理者とFTE未勤務時間を監視し、前年からFTE Leakageを6.5%減らし616,000 USDの費用削減を報告する。",
+      "locator": "The Challenge / The Outcome",
+      "limitations": "FTE Leakageは契約勤務量に対して働かなかった時間を指す。勤務表作成時間の削減率、契約量による公平性の補正式、独立評価ではない。生データ・算式・帰属の詳細は未確認。", "state": "known", "support": "limited", "delivery": "unknown"
+    }
+  ],
+  "prices": [],
+  "followups": [],
+  "task_updates": [
+    {"task_id": "TASK-RES00946", "state": "in_progress", "priority": 2, "method": "vendor_document", "note": "B16：製品本文の予測・空き枠・セルフ／周期型勤務を確認。全自動割当の具体的手順と制約・失敗時仕様は未確認。未完了として製品別仕様資料を要する。"},
+    {"task_id": "TASK-RES00949", "state": "in_progress", "priority": 2, "method": "vendor_document", "note": "B16：機能一覧に契約内包・エディション境界の表は見つからない。現行注文書・機能別購入範囲の確認を継続。"},
+    {"task_id": "TASK-RES00956", "state": "in_progress", "priority": 2, "method": "vendor_document", "note": "B16：fairnessの説明とFTE未勤務時間の顧客側監視を、契約勤務量による配分補正式と区別。補正仕様未確認で継続。"},
+    {"task_id": "TASK-RES00979", "state": "in_progress", "priority": 2, "method": "vendor_document", "note": "B16：symplr公式サポート一覧にSmart Square専用行は今回見つからない。別製品の窓口は流用せず、契約上の窓口・時間・SLAを継続確認。"},
+    {"task_id": "TASK-RES00980", "state": "in_progress", "priority": 2, "method": "vendor_quote", "note": "B16：価格・課金単位・最低契約は今回製品本文で未確認。料金非公開を0円や見積制の確定へ置換せず、個別見積資料を要する。"},
+    {"task_id": "TASK-RES00972", "state": "in_progress", "priority": 2, "method": "vendor_document", "note": "B16：Bellinの顧客側導入チームとルール設計の関与を確認。ベンダーとの設定分担・工数・支援費は未確認で継続。"},
+    {"task_id": "TASK-RES00985", "state": "in_progress", "priority": 2, "method": "independent_source", "note": "B16：販売元掲載のBellin・Hackensack2事例を施設種別・初期範囲・測定条件付きで追加。契約・対象版・生データ、利用施設自身の一次発信は未取得なので完了にしない。"}
+  ],
+  "retrieval_checks": []
+}

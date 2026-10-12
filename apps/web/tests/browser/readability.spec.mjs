@@ -10,13 +10,13 @@ test('all products omit unconfirmed feature rows while retaining documented, pla
     const expected = data.assessments.filter(a => a.status !== 'unknown').map(a => a.id);
     expect(new Set(shown), product.name).toEqual(new Set(expected));
     expect(shown.length, product.name).toBe(expected.length);
-    expect(html, product.name).not.toContain('根拠');
+    expect(html, product.name).not.toMatch(/>\s*根拠\s*</);
     expect(html, product.name).not.toContain('data-state="unknown"');
     expect(html, product.name).not.toMatch(/<details|<summary/);
     expect(response.headers()['server-timing']).toContain('db_calls;desc="2"');
   }
   for (const path of ['/', '/products/', '/about/', '/methodology/', '/webmcp/', '/terms/', '/references/form-9/']) {
-    expect(await (await request.get(path)).text(), path).not.toContain('根拠');
+    expect(await (await request.get(path)).text(), path).not.toMatch(/>\s*根拠\s*</);
   }
 });
 

@@ -33,11 +33,53 @@ test('search and four-product comparison share one catalog and preserve selectio
   const all=await repo.search({limit:50});assert.equal(all.total,50);assert.equal(repo.metrics().calls,1);
   const ids=['OF-US01','OF-JP04','OF-US09','OF-JP01'];const compared=await repo.compare(ids);
   assert.deepEqual(compared.products.map(p=>p.id),ids);assert.equal(repo.metrics().calls,2);
-  assert.equal(sql.filter(s=>s.includes('detail_json')).length,1);
+  assert.equal(sql.filter(s=>s.startsWith('SELECT offering_id,detail_json')).length,1);
   assert.equal((await repo.scope()).snapshot_id,compared.snapshot_id);
   const air=await repo.search({feature:'B01',limit:50});assert(!air.products.some(p=>p.id==='OF-JP27'));
   assert.equal(repo.metrics().calls,2);
   await assert.rejects(()=>repo.compare(['OF-JP01','OF-JP01']));
+ }finally{sqlite.close();}
+});
+
+test('all cards have a price summary with billing units, required charges and unknown-price labels',async()=>{
+ const {sqlite,repo}=fixture();try{
+  const products=await repo.catalog();
+  assert.equal(products.length,50);
+  assert(products.every(p=>p.price_summary?.label), 'Every service needs a visible price or an unknown-price label');
+  const price=id=>products.find(p=>p.id===id).price_summary;
+  assert.equal(price('OF-JP27').label,'月額330円 / 人');
+  assert.match(price('OF-JP27').note,/税込/);
+  assert.match(price('OF-JP27').note,/最低月額990円/);
+  assert.equal(price('OF-JP03').label,'年額8,400円 / 人');
+  assert.match(price('OF-JP03').note,/年契約/);
+  assert.match(price('OF-JP03').note,/前払い/);
+  assert.equal(price('OF-JP04').label,'月額5,000円 / 部署 ＋ 500円 / 人');
+  assert.equal(price('OF-JP20').label,'個別見積もり');
+  assert.equal(price('OF-JP07').label,'非公開');
+  assert.equal(price('OF-JP18').label,'個別見積もり');
+  assert.equal(price('OF-US19').label,'個別見積もり');
+  assert.match(price('OF-JP13').note,/初期費用300,000円/);
+  assert.equal(price('OF-JP24').label,'無料プランあり');
+  assert.match(price('OF-JP24').note,/6人/);
+  assert.equal(price('OF-US21').label,'月額AUD 8 / 人');
+  assert.match(price('OF-US21').note,/最低3人/);
+  assert.equal(repo.metrics().calls,1);
+  assert(products.every(p=>!('prices' in p)), 'The catalog should expose the compact summary, not full price records');
+ }finally{sqlite.close();}
+});
+
+test('card pricing reads the request snapshot even when publication changes before catalog loading',async()=>{
+ const {sqlite,repo,db}=fixture();try{
+  await repo.scope();
+  sqlite.exec("INSERT INTO web_snapshots SELECT 'price-next',as_of_date,research_sha256,content_sha256,json_set(scope_json,'$.snapshot_id','price-next') FROM web_snapshots WHERE snapshot_id=(SELECT snapshot_id FROM web_live WHERE id=1)");
+  sqlite.exec("INSERT INTO web_products SELECT 'price-next',offering_id,slug,search_text,json_set(summary_json,'$.snapshot_id','price-next'),json_set(detail_json,'$.snapshot_id','price-next') FROM web_products WHERE snapshot_id=(SELECT snapshot_id FROM web_live WHERE id=1)");
+  sqlite.exec("UPDATE web_products SET detail_json=json_set(detail_json,'$.prices[0].unit_amount_decimal','999') WHERE snapshot_id='price-next' AND offering_id='OF-JP27'");
+  sqlite.exec("UPDATE web_live SET snapshot_id='price-next' WHERE id=1");
+  const old=(await repo.catalog()).find(p=>p.id==='OF-JP27');
+  const fresh=(await createResearchRepository(db).catalog()).find(p=>p.id==='OF-JP27');
+  assert.equal(old.price_summary.label,'月額330円 / 人');
+  assert.equal(fresh.price_summary.label,'月額999円 / 人');
+  assert.equal(repo.metrics().calls,2);
  }finally{sqlite.close();}
 });
 

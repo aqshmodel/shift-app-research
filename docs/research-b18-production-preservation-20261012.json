@@ -1,0 +1,20 @@
+{
+  "status": "passed",
+  "tables": {
+    "web_snapshots": {
+      "previous": 3,
+      "current": 4,
+      "previous_rows_preserved": true
+    },
+    "web_products": {
+      "previous": 150,
+      "current": 200,
+      "previous_rows_preserved": true
+    },
+    "web_categories": {
+      "previous": 183,
+      "current": 244,
+      "previous_rows_preserved": true
+    }
+  }
+}

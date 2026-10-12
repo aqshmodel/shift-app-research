@@ -1,0 +1,1363 @@
+{
+  "batch_id": "B12-20261012",
+  "prior_batch": "B11-20261012",
+  "as_of_date": "2026-10-12",
+  "resolution_policy_version": 2,
+  "description": "契約・セキュリティ原本と公開手順の追加調査：お助けマンDay/Timeの解約・支払・削除、出力・監査履歴、勤夢表VXの参考構成価格と導入条件",
+  "method": "既存観測と公式Web・公開ヘルプ・PDF原本を照合。PDF3件を保存しSHA-256を記録。ログイン、デモ、実データ送信、フォーム送信、購入、独立性能・退出再構成試験は未実施。",
+  "sources": [
+    {
+      "key": "terms",
+      "url": "https://www.otasukeman.jp/hubfs/利用規約・セキュリティホワイトペーパー/勤務シフト作成お助けマン利用規約.pdf?hsLang=ja",
+      "title": "勤務シフト作成お助けマン 利用規約・別紙提供サービス・料金表",
+      "publisher": "鉄道情報システム株式会社",
+      "reference": "CU公開ヘルプのリンクから原本取得／ローカルPDF本文確認",
+      "retrieved_on": "2026-10-12",
+      "updated_on": "2025-06-01",
+      "version_label": "2025-06-01改定",
+      "method": "browser_public_document_download",
+      "archive_path": "assets/sources/B12-20261012/terms.pdf",
+      "page_count": 19,
+      "scope_note": "Day・Time・Crew共通規約。Crewは比較対象外で観測・料金登録しない。第15条4項は販売店経由で販売店契約優先。公開ヘルプから取得した19ページ原本とSHA-256を保存。"
+    },
+    {
+      "key": "day_security",
+      "url": "https://www.otasukeman.jp/hubfs/利用規約・セキュリティホワイトペーパー/勤務シフト作成お助けマンセキュリティホワイトペーパー(Day).pdf?hsLang=ja",
+      "title": "勤務シフト作成お助けマンDay セキュリティホワイトペーパー",
+      "publisher": "鉄道情報システム株式会社",
+      "reference": "CU公開ヘルプのリンクから原本取得／ローカルPDF本文確認",
+      "retrieved_on": "2026-10-12",
+      "updated_on": "2026-02-01",
+      "version_label": "第1.7版／2026-02-01改訂",
+      "method": "browser_public_document_download",
+      "archive_path": "assets/sources/B12-20261012/day-security.pdf",
+      "page_count": 7,
+      "scope_note": "表紙・改訂履歴に2026-02-01と記載。PDFメタデータの作成日2025-12-02を公開・改訂日へ置き換えない。認証・暗号化は提供者の自己記載で監査報告・実動作は未確認。"
+    },
+    {
+      "key": "time_security",
+      "url": "https://www.otasukeman.jp/hubfs/利用規約・セキュリティホワイトペーパー/勤務シフト作成お助けマンセキュリティホワイトペーパー(Time).pdf?hsLang=ja",
+      "title": "勤務シフト作成お助けマンTime セキュリティホワイトペーパー",
+      "publisher": "鉄道情報システム株式会社",
+      "reference": "CU公開ヘルプのリンクから原本取得／ローカルPDF本文確認",
+      "retrieved_on": "2026-10-12",
+      "updated_on": "2025-06-01",
+      "version_label": "第1.6版／2025-06-01改訂",
+      "method": "browser_public_document_download",
+      "archive_path": "assets/sources/B12-20261012/time-security.pdf",
+      "page_count": 7
+    },
+    {
+      "key": "faq",
+      "url": "https://www.otasukeman.jp/faq",
+      "title": "勤務シフト作成お助けマン よくあるご質問",
+      "publisher": "鉄道情報システム株式会社",
+      "reference": "turn60view0",
+      "retrieved_on": "2026-10-12"
+    },
+    {
+      "key": "support",
+      "url": "https://www.otasukeman.jp/about-support",
+      "title": "勤務シフト作成お助けマン サポート体制",
+      "publisher": "鉄道情報システム株式会社",
+      "reference": "turn55view1",
+      "retrieved_on": "2026-10-12"
+    },
+    {
+      "key": "time_login",
+      "url": "https://www.otasukeman.jp/helpcenter/time-admin-login",
+      "title": "【Time】ログインをする",
+      "publisher": "鉄道情報システム株式会社",
+      "reference": "CU公開ページのAX本文／2026-10-12",
+      "retrieved_on": "2026-10-12",
+      "method": "browser_public_web_body",
+      "method_note": "Web検索ツールでは取得不可だったため、ブラウザでログイン不要のヘルプ本文を確認。機能を実行せず、文書の説明を採用。",
+      "scope_note": "公開本文のみ。ログイン後操作・入力・フォーム送信は未実施。公開日・更新日は未記載。"
+    },
+    {
+      "key": "time_history",
+      "url": "https://www.otasukeman.jp/helpcenter/time-history",
+      "title": "【Time】操作履歴を確認する",
+      "publisher": "鉄道情報システム株式会社",
+      "reference": "CU公開ページのAX本文／2026-10-12",
+      "retrieved_on": "2026-10-12",
+      "method": "browser_public_web_body",
+      "method_note": "Web検索ツールでは取得不可だったため、ブラウザでログイン不要のヘルプ本文を確認。機能を実行せず、文書の説明を採用。",
+      "scope_note": "公開本文のみ。ログイン後操作・入力・フォーム送信は未実施。公開日・更新日は未記載。"
+    },
+    {
+      "key": "time_export",
+      "url": "https://www.otasukeman.jp/helpcenter/time-work-plan-data-export",
+      "title": "【Time】勤務計画情報をデータ出力する",
+      "publisher": "鉄道情報システム株式会社",
+      "reference": "CU公開ページのAX本文／2026-10-12",
+      "retrieved_on": "2026-10-12",
+      "method": "browser_public_web_body",
+      "method_note": "Web検索ツールでは取得不可だったため、ブラウザでログイン不要のヘルプ本文を確認。機能を実行せず、文書の説明を採用。",
+      "scope_note": "公開本文のみ。ログイン後操作・入力・フォーム送信は未実施。公開日・更新日は未記載。"
+    },
+    {
+      "key": "vx_features",
+      "url": "https://ideanexsys.com/勤夢表vxの機能/",
+      "title": "勤夢表VXの機能",
+      "publisher": "マイシスサポートセンター",
+      "reference": "turn59view3",
+      "retrieved_on": "2026-10-12"
+    },
+    {
+      "key": "vx_cost",
+      "url": "https://my-sys.net/2021/?page_id=2067",
+      "title": "勤夢表の導入コスト比較",
+      "publisher": "マイシス株式会社",
+      "reference": "turn62view0",
+      "retrieved_on": "2026-10-12",
+      "scope_note": "5部署・5端末を条件にしたVXとV5 Lightの比較表。本文に公開・更新日なし。URLの2021を価格基準日とみなさない。税・現行適用は未確認。他社列の価格や効果試算は採用しない。"
+    },
+    {
+      "key": "vx_schedule",
+      "url": "https://my-sys.net/2021/?page_id=143",
+      "title": "勤務表製品の導入スケジュール",
+      "publisher": "マイシス株式会社",
+      "reference": "turn62view1",
+      "retrieved_on": "2026-10-12",
+      "scope_note": "本文に旧イデア表記が残る導入例。公開日・更新日、現在の契約適用は未確認。納品の最短値を実測の導入工数と扱わない。"
+    },
+    {
+      "key": "vx_shop",
+      "url": "https://my-sys.net/2021/?post_type=product",
+      "title": "マイシス ショップ",
+      "publisher": "マイシス株式会社",
+      "reference": "turn60view2",
+      "retrieved_on": "2026-10-12",
+      "scope_note": "VXの機能ページからリンクするショップ。掲載2商品はexcel勤夢表で、VXの通常価格に転用しない。購入操作は未実施。"
+    }
+  ],
+  "findings": [
+    {
+      "product": "JP05",
+      "criterion": "P03",
+      "source": "terms",
+      "summary": "月払は翌月末に支払う。6か月未満の解約・拠点削減には6か月に満たない期間分の料金が必要。",
+      "locator": "p.6–7／第18条1–4",
+      "limitations": "期間の定めなしの月払契約と最低支払義務を区別。月途中の開始・終了も1か月分。販売店経由は別契約を照合。",
+      "support": "limited",
+      "delivery": "native"
+    },
+    {
+      "product": "JP05",
+      "criterion": "P03",
+      "source": "terms",
+      "summary": "年払は1年間の利用確約と一括支払い。申込月の翌月末までに1年分を支払う。",
+      "locator": "p.7／第19条1–2",
+      "limitations": "単なる月払12倍と扱わない。年払いの通常価格は別紙の値。販売店経由の支払条件は別確認。",
+      "support": "limited",
+      "delivery": "native"
+    },
+    {
+      "product": "JP05",
+      "criterion": "P08",
+      "source": "terms",
+      "summary": "月払の解約は30日前予告。年払は満了30日前までに別段の意思表示がなければ1年自動更新し、中途解約の返金なし。",
+      "locator": "p.6–7／第18条1・第19条1,3",
+      "limitations": "通知・申込の方法と販売店経由の条件は個別確認。6か月未満の解約・削減時支払も別条項で保持。",
+      "support": "limited",
+      "delivery": "native"
+    },
+    {
+      "product": "JP05",
+      "criterion": "K08",
+      "source": "terms",
+      "summary": "無料試行は指定期間末に利用契約も自動終了し、継続は別途の利用契約が必要。",
+      "locator": "p.7／第20条2–4",
+      "limitations": "FAQは2か月・本契約同機能と説明。指定期間・個別規程優先。期限後のデータの全量搬出は未確認。",
+      "support": "limited",
+      "delivery": "native"
+    },
+    {
+      "product": "JP05",
+      "criterion": "N01",
+      "source": "day_security",
+      "summary": "管理者・シフト作成者・スタッフの役割を設定し、利用者の登録・削除と権限切替ができると説明。",
+      "locator": "p.3／5–6 利用者・アクセス権",
+      "limitations": "役割別機能の全一覧、部署横断、テナント分離の実装・試験は未確認。",
+      "support": "limited",
+      "delivery": "native"
+    },
+    {
+      "product": "JP05",
+      "criterion": "N04",
+      "source": "day_security",
+      "summary": "北関東の自社データセンターに預託データを保管する。",
+      "locator": "p.2／2 データ保管場所",
+      "limitations": "該当製品の保管先説明。メール・音声・通知など外部委託の処理地域やバックアップ地域まで一律の国内保存と扱わない。",
+      "support": "limited",
+      "delivery": "native"
+    },
+    {
+      "product": "JP05",
+      "criterion": "N04",
+      "source": "day_security",
+      "summary": "外部利用はJRSクラウド、メール送信のSendGrid、架電のTwilio Voice API。送信内容・宛先情報の項目を示す。",
+      "locator": "p.6／19 外部クラウドサービス",
+      "limitations": "第1.7版。Twilioの保管・処理地域と保持期間はこの資料だけでは確定しない。",
+      "support": "limited",
+      "delivery": "native"
+    },
+    {
+      "product": "JP05",
+      "criterion": "N06",
+      "source": "day_security",
+      "summary": "終了・試行期限切れから本体データは60日以内、バックアップとログは本体消去から1年後に消去と説明。",
+      "locator": "p.2／3 データの削除",
+      "limitations": "解約から1年以内という期限ではない。削除証明・個別契約の実施記録は未確認。",
+      "support": "limited",
+      "delivery": "native"
+    },
+    {
+      "product": "JP05",
+      "criterion": "N02",
+      "source": "day_security",
+      "summary": "パスワード管理・再発行は説明するが、顧客向けSSO・MFAの方式や強制は記載未確認。",
+      "locator": "p.3／7 パスワードの配布方法",
+      "limitations": "パスワードPDFやIP制限をMFAの根拠にしない。非対応とは判断しない。",
+      "support": "unknown",
+      "delivery": "unknown",
+      "state": "not_found"
+    },
+    {
+      "product": "JP05",
+      "criterion": "H08",
+      "source": "day_security",
+      "summary": "過去の勤務表は職員削除や勤務種別の削除・名称変更の影響を受け、作成当時と同じ内容を保証しない。",
+      "locator": "p.4／11 バックアップの状況",
+      "limitations": "過去1年のダウンロードと履歴の不変性・旧版復元を区別。実際の変更・再出力は未実施。",
+      "support": "limited",
+      "delivery": "native"
+    },
+    {
+      "product": "JP05",
+      "criterion": "O03",
+      "source": "day_security",
+      "summary": "日次でバックアップを取得し過去1年の勤務表をダウンロードできるが、顧客設定のバックアップ復元は受け付けない。",
+      "locator": "p.4／11 バックアップの状況",
+      "limitations": "復旧時間・許容データ損失・復元テスト結果は未確認。バックアップ取得を個別顧客の復元サービス保証と扱わない。",
+      "support": "limited",
+      "delivery": "native"
+    },
+    {
+      "product": "JP05",
+      "criterion": "N07",
+      "source": "day_security",
+      "summary": "パスワードのハッシュ化、その他DBのディスク暗号化、SSL通信、基準適合リスト掲載事業者による定期診断を説明。",
+      "locator": "p.3–5／8,13,18",
+      "limitations": "顧客指定の暗号形式は対応しない。Dayの製品クラウドセキュリティ認証と企業ISMSを自己記載。有効期間・監査対象・最新証書は未確認。",
+      "support": "limited",
+      "delivery": "native"
+    },
+    {
+      "product": "JP05",
+      "criterion": "M08",
+      "source": "day_security",
+      "summary": "勤務表1年分のダウンロードは説明するが、希望・ルール・全設定・履歴の一括搬出形式・期限・費用は記載未確認。",
+      "locator": "p.4／11 バックアップの状況",
+      "limitations": "勤務表の出力と全量搬出を区別。顧客設定の復元不可を全量搬出の非対応と断定しない。",
+      "support": "unknown",
+      "delivery": "unknown",
+      "state": "not_found"
+    },
+    {
+      "product": "JP05",
+      "criterion": "O04",
+      "source": "support",
+      "summary": "現行Webは電話・メール・Web会議と有人チャットを平日10–17時、フォームとチャットは24時間受付とする。",
+      "locator": "サポート窓口一覧／L203–213",
+      "limitations": "規約別紙は10–12時・13–17時で昼休みの表記が異なる。相談窓口と契約サポートの適用を未確定として保持。",
+      "support": "unknown",
+      "delivery": "unknown",
+      "state": "disputed"
+    },
+    {
+      "product": "JP05",
+      "criterion": "O04",
+      "source": "terms",
+      "summary": "規約の契約サポートは平日10–12時・13–17時。販売店経由は販売店契約に従う。",
+      "locator": "p.14–15／別紙提供サービス4",
+      "limitations": "現行Webの10–17時と昼休みの表記が異なる。電話番号も案内用途別に異なり、応答SLAは確認できない。",
+      "support": "unknown",
+      "delivery": "unknown",
+      "state": "disputed"
+    },
+    {
+      "product": "JP05",
+      "criterion": "P05",
+      "source": "terms",
+      "summary": "操作説明会は1回5万円、設定作業支援は1拠点5万円から、訪問交通費は別途実費。",
+      "locator": "p.17–18／別紙料金表オプション",
+      "limitations": "税抜。通常の操作相談が無料というWeb説明とは作業種別を分ける。具体的範囲・提供条件・販売店価格は未確認。",
+      "support": "limited",
+      "delivery": "addon"
+    },
+    {
+      "product": "JP05",
+      "criterion": "P05",
+      "source": "faq",
+      "summary": "汎用的なバージョンアップの費用は毎月の利用料金に含むと説明。",
+      "locator": "バージョンアップ／L264–273",
+      "limitations": "顧客独自機能の開発や操作説明会・設定作業支援まで無料に拡張しない。",
+      "support": "limited",
+      "delivery": "native"
+    },
+    {
+      "product": "JP05",
+      "criterion": "B07",
+      "source": "faq",
+      "summary": "独自機能はオプション開発のケースがあり、大規模・複雑な業務は別サービスのシフトデザイナーを案内。",
+      "locator": "カスタマイズ／L275–285",
+      "limitations": "標準機能への必ずの追加、無償開発、Day/Timeへのシフトデザイナー機能の内包は保証しない。",
+      "support": "limited",
+      "delivery": "custom"
+    },
+    {
+      "product": "JP05",
+      "criterion": "F01",
+      "source": "faq",
+      "summary": "条件が矛盾しても答えを出すと説明するが、法定必須条件の緩和禁止・例外承認の仕様は未確認。",
+      "locator": "勤務条件が難しくても／L193–200",
+      "limitations": "答えがあることを全必須条件充足や最適性の証明と扱わない。設計資料・矛盾条件試験が必要。",
+      "support": "unknown",
+      "delivery": "unknown",
+      "state": "not_found"
+    },
+    {
+      "product": "JP05",
+      "criterion": "G03",
+      "source": "faq",
+      "summary": "満たせなかった勤務条件を一覧表示すると説明。",
+      "locator": "勤務条件が難しくても／L193–200",
+      "limitations": "具体的な日付・対象者・ルール識別、独立検査、解なし証明は未確認。",
+      "support": "limited",
+      "delivery": "native"
+    },
+    {
+      "product": "JP05",
+      "criterion": "P04",
+      "source": "terms",
+      "summary": "料金表に初期費用0円を記載する。",
+      "locator": "p.17–18／別紙料金表 初期費用",
+      "limitations": "標準条件かつ税抜。操作説明会・設定作業支援・訪問交通費は別。個別見積や販売店の条件は別確認。",
+      "support": "limited",
+      "delivery": "native"
+    },
+    {
+      "product": "JP06",
+      "criterion": "P03",
+      "source": "terms",
+      "summary": "月払は翌月末に支払う。6か月未満の解約・拠点削減には6か月に満たない期間分の料金が必要。",
+      "locator": "p.6–7／第18条1–4",
+      "limitations": "期間の定めなしの月払契約と最低支払義務を区別。月途中の開始・終了も1か月分。販売店経由は別契約を照合。",
+      "support": "limited",
+      "delivery": "native"
+    },
+    {
+      "product": "JP06",
+      "criterion": "P03",
+      "source": "terms",
+      "summary": "年払は1年間の利用確約と一括支払い。申込月の翌月末までに1年分を支払う。",
+      "locator": "p.7／第19条1–2",
+      "limitations": "単なる月払12倍と扱わない。年払いの通常価格は別紙の値。販売店経由の支払条件は別確認。",
+      "support": "limited",
+      "delivery": "native"
+    },
+    {
+      "product": "JP06",
+      "criterion": "P08",
+      "source": "terms",
+      "summary": "月払の解約は30日前予告。年払は満了30日前までに別段の意思表示がなければ1年自動更新し、中途解約の返金なし。",
+      "locator": "p.6–7／第18条1・第19条1,3",
+      "limitations": "通知・申込の方法と販売店経由の条件は個別確認。6か月未満の解約・削減時支払も別条項で保持。",
+      "support": "limited",
+      "delivery": "native"
+    },
+    {
+      "product": "JP06",
+      "criterion": "K08",
+      "source": "terms",
+      "summary": "無料試行は指定期間末に利用契約も自動終了し、継続は別途の利用契約が必要。",
+      "locator": "p.7／第20条2–4",
+      "limitations": "FAQは2か月・本契約同機能と説明。指定期間・個別規程優先。期限後のデータの全量搬出は未確認。",
+      "support": "limited",
+      "delivery": "native"
+    },
+    {
+      "product": "JP06",
+      "criterion": "N01",
+      "source": "time_security",
+      "summary": "管理者・シフト作成者・スタッフの役割を設定し、利用者の登録・削除と権限切替ができると説明。",
+      "locator": "p.3／5–6 利用者・アクセス権",
+      "limitations": "役割別機能の全一覧、部署横断、テナント分離の実装・試験は未確認。",
+      "support": "limited",
+      "delivery": "native"
+    },
+    {
+      "product": "JP06",
+      "criterion": "N04",
+      "source": "time_security",
+      "summary": "Microsoft Azure東日本リージョンに預託データを保管する。",
+      "locator": "p.2／2 データ保管場所",
+      "limitations": "該当製品の保管先説明。メール・音声・通知など外部委託の処理地域やバックアップ地域まで一律の国内保存と扱わない。",
+      "support": "limited",
+      "delivery": "native"
+    },
+    {
+      "product": "JP06",
+      "criterion": "N04",
+      "source": "time_security",
+      "summary": "外部利用はAzure、SendGrid、テックタッチ、LINE公式アカウント／Messaging API。通知や閲覧履歴等の項目を示す。",
+      "locator": "p.6／19 外部クラウドサービス",
+      "limitations": "第1.6版。各委託先の地域・保持期間・学習利用は未記載。別製品Dayの架電APIを転用しない。",
+      "support": "limited",
+      "delivery": "native"
+    },
+    {
+      "product": "JP06",
+      "criterion": "N06",
+      "source": "time_security",
+      "summary": "終了・試行期限切れから本体は60日以内、本体消去からバックアップ30日後・ログ1年後に消去と説明。",
+      "locator": "p.2／3 データの削除",
+      "limitations": "バックアップとログで期限が異なる。削除証明・実施記録は未確認。",
+      "support": "limited",
+      "delivery": "native"
+    },
+    {
+      "product": "JP06",
+      "criterion": "N02",
+      "source": "time_login",
+      "summary": "初回のアカウント登録とメールアドレス確認を説明するが、継続ログインのMFA・SSO強制は記載未確認。",
+      "locator": "初回ログイン手続 7–9／2回目以降のログイン",
+      "limitations": "メール確認リンクは5分の有効期限。初回メール確認を毎回の二要素認証と扱わず、現行認証資料と実機で確認。",
+      "support": "unknown",
+      "delivery": "unknown",
+      "state": "not_found"
+    },
+    {
+      "product": "JP06",
+      "criterion": "O03",
+      "source": "time_security",
+      "summary": "日次でバックアップを取得し過去1年の勤務表をダウンロードできるが、顧客設定のバックアップ復元は受け付けない。",
+      "locator": "p.4／11 バックアップの状況",
+      "limitations": "復旧時間・許容データ損失・復元テスト結果は未確認。バックアップ取得を個別顧客の復元サービス保証と扱わない。",
+      "support": "limited",
+      "delivery": "native"
+    },
+    {
+      "product": "JP06",
+      "criterion": "N07",
+      "source": "time_security",
+      "summary": "パスワードのハッシュ化、その他DBのディスク暗号化、SSL通信、基準適合リスト掲載事業者による定期診断を説明。",
+      "locator": "p.3–5／8,13,18",
+      "limitations": "顧客指定の暗号形式は対応しない。企業ISMSを自己記載。Timeの製品クラウドセキュリティ認証とは記載しない。有効期間・監査対象・最新証書は未確認。",
+      "support": "limited",
+      "delivery": "native"
+    },
+    {
+      "product": "JP06",
+      "criterion": "M08",
+      "source": "time_security",
+      "summary": "勤務表1年分のダウンロードは説明するが、希望・ルール・全設定・履歴の一括搬出形式・期限・費用は記載未確認。",
+      "locator": "p.4／11 バックアップの状況",
+      "limitations": "勤務表の出力と全量搬出を区別。顧客設定の復元不可を全量搬出の非対応と断定しない。",
+      "support": "unknown",
+      "delivery": "unknown",
+      "state": "not_found"
+    },
+    {
+      "product": "JP06",
+      "criterion": "O04",
+      "source": "support",
+      "summary": "現行Webは電話・メール・Web会議と有人チャットを平日10–17時、フォームとチャットは24時間受付とする。",
+      "locator": "サポート窓口一覧／L203–213",
+      "limitations": "規約別紙は10–12時・13–17時で昼休みの表記が異なる。相談窓口と契約サポートの適用を未確定として保持。",
+      "support": "unknown",
+      "delivery": "unknown",
+      "state": "disputed"
+    },
+    {
+      "product": "JP06",
+      "criterion": "O04",
+      "source": "terms",
+      "summary": "規約の契約サポートは平日10–12時・13–17時。販売店経由は販売店契約に従う。",
+      "locator": "p.14–15／別紙提供サービス4",
+      "limitations": "現行Webの10–17時と昼休みの表記が異なる。電話番号も案内用途別に異なり、応答SLAは確認できない。",
+      "support": "unknown",
+      "delivery": "unknown",
+      "state": "disputed"
+    },
+    {
+      "product": "JP06",
+      "criterion": "P05",
+      "source": "terms",
+      "summary": "操作説明会は1回5万円、設定作業支援は1拠点5万円から、訪問交通費は別途実費。",
+      "locator": "p.17–18／別紙料金表オプション",
+      "limitations": "税抜。通常の操作相談が無料というWeb説明とは作業種別を分ける。具体的範囲・提供条件・販売店価格は未確認。",
+      "support": "limited",
+      "delivery": "addon"
+    },
+    {
+      "product": "JP06",
+      "criterion": "P05",
+      "source": "faq",
+      "summary": "汎用的なバージョンアップの費用は毎月の利用料金に含むと説明。",
+      "locator": "バージョンアップ／L264–273",
+      "limitations": "顧客独自機能の開発や操作説明会・設定作業支援まで無料に拡張しない。",
+      "support": "limited",
+      "delivery": "native"
+    },
+    {
+      "product": "JP06",
+      "criterion": "B07",
+      "source": "faq",
+      "summary": "独自機能はオプション開発のケースがあり、大規模・複雑な業務は別サービスのシフトデザイナーを案内。",
+      "locator": "カスタマイズ／L275–285",
+      "limitations": "標準機能への必ずの追加、無償開発、Day/Timeへのシフトデザイナー機能の内包は保証しない。",
+      "support": "limited",
+      "delivery": "custom"
+    },
+    {
+      "product": "JP06",
+      "criterion": "F01",
+      "source": "faq",
+      "summary": "条件が矛盾しても答えを出すと説明するが、法定必須条件の緩和禁止・例外承認の仕様は未確認。",
+      "locator": "勤務条件が難しくても／L193–200",
+      "limitations": "答えがあることを全必須条件充足や最適性の証明と扱わない。設計資料・矛盾条件試験が必要。",
+      "support": "unknown",
+      "delivery": "unknown",
+      "state": "not_found"
+    },
+    {
+      "product": "JP06",
+      "criterion": "G03",
+      "source": "faq",
+      "summary": "満たせなかった勤務条件を一覧表示すると説明。",
+      "locator": "勤務条件が難しくても／L193–200",
+      "limitations": "具体的な日付・対象者・ルール識別、独立検査、解なし証明は未確認。",
+      "support": "limited",
+      "delivery": "native"
+    },
+    {
+      "product": "JP06",
+      "criterion": "P04",
+      "source": "terms",
+      "summary": "料金表に初期費用0円を記載する。",
+      "locator": "p.17–18／別紙料金表 初期費用",
+      "limitations": "標準条件かつ税抜。操作説明会・設定作業支援・訪問交通費は別。個別見積や販売店の条件は別確認。",
+      "support": "limited",
+      "delivery": "native"
+    },
+    {
+      "product": "JP05",
+      "criterion": "P01",
+      "source": "terms",
+      "summary": "Day基本は1拠点1–50人で月1万2千円・年12万円、51人以上は見積。標準表は50拠点まで。",
+      "locator": "p.17／別紙料金表",
+      "limitations": "税抜。スマホ追加は別。50拠点超や個別合意・販売店契約は別条件。",
+      "support": "limited",
+      "delivery": "native"
+    },
+    {
+      "product": "JP05",
+      "criterion": "P05",
+      "source": "terms",
+      "summary": "Dayスマホの希望登録・予定参照は1拠点月3千円・年3万円、51人以上は見積。",
+      "locator": "p.17／別紙料金表オプション",
+      "limitations": "税抜。基本料金へ加算し、支援作業等の一時費用と分ける。",
+      "support": "limited",
+      "delivery": "addon"
+    },
+    {
+      "product": "JP06",
+      "criterion": "P01",
+      "source": "terms",
+      "summary": "Timeは1拠点1–20人で月6千円・年6万円。21–30人は9千円／9万円、31–40人は1万2千円／12万円、41–50人は1万5千円／15万円。",
+      "locator": "p.18／別紙料金表",
+      "limitations": "税抜。標準表は50拠点まで、51人以上・50拠点超・個別合意は見積。代行作業の費用は別。",
+      "support": "limited",
+      "delivery": "native"
+    },
+    {
+      "product": "JP06",
+      "criterion": "K03",
+      "source": "time_login",
+      "summary": "企業環境は試行申込の情報で提供者が構築し、作成周期等に誤りがある場合は環境再構築が必要と説明。",
+      "locator": "シフト表の作成周期などを確認する／注1–2",
+      "limitations": "全マスタ・勤務条件の設定代行ではない。再構築時の費用・移行・既存データへの影響は未確認。",
+      "support": "limited",
+      "delivery": "native"
+    },
+    {
+      "product": "JP06",
+      "criterion": "C02",
+      "source": "time_login",
+      "summary": "勤務上の日付区切りの基準時間を、通常の0時から5時や9時などへ設定できる。",
+      "locator": "シフト表の作成周期などを確認する／基準時間",
+      "limitations": "日付所属の設定説明。夜勤明けと休日の法的区別や境界の実計算は未検証。",
+      "support": "limited",
+      "delivery": "native"
+    },
+    {
+      "product": "JP06",
+      "criterion": "C03",
+      "source": "time_login",
+      "summary": "作成周期は月・半月・28日・14日・7日。半月は1–15日と16–末日の固定区切り。",
+      "locator": "シフト表の作成周期などを確認する／作成周期・開始日",
+      "limitations": "前月末の連勤・夜勤・休息の引継ぎや閏日の試験結果は未確認。",
+      "support": "limited",
+      "delivery": "native"
+    },
+    {
+      "product": "JP06",
+      "criterion": "N03",
+      "source": "time_history",
+      "summary": "店舗・期間ごとに、自動作成や通知等の実行者・権限・内容・更新日時を操作履歴で確認できる。",
+      "locator": "画面の説明／表の表示項目",
+      "limitations": "検索・絞り込みの説明。保存期間、ログ出力、改ざん防止、提供者の操作記録は未確認。",
+      "support": "limited",
+      "delivery": "native"
+    },
+    {
+      "product": "JP06",
+      "criterion": "M02",
+      "source": "time_export",
+      "summary": "複数期間・店舗を選び、日別／勤務別でCSVを出力。形式と項目順を設定でき、保存フォーマットは3件まで。",
+      "locator": "勤務計画情報出力・出力フォーマット設定",
+      "limitations": "勤務予定の出力。文字コード・改行等の選択肢は公開手順で確認し、受入側の互換性や実出力は未検証。",
+      "support": "limited",
+      "delivery": "native"
+    },
+    {
+      "product": "JP06",
+      "criterion": "M06",
+      "source": "time_export",
+      "summary": "受入側の勤怠・給与システムに合わせて利用者がCSV形式を作成し、勤務計画を出力する手順。",
+      "locator": "冒頭・操作手順①–⑨・注1",
+      "limitations": "API自動同期や実績の逆方向取込は記載未確認。特定の連携先・追加費・実動作は別確認。",
+      "support": "limited",
+      "delivery": "native"
+    },
+    {
+      "product": "JP19",
+      "criterion": "A02",
+      "source": "vx_cost",
+      "summary": "VXの機能ページから案内された価格比較サイトはマイシス株式会社の表記。",
+      "locator": "サイト名・ページ末尾／L32–36,134",
+      "limitations": "契約・販売主体の契約書は未取得。旧イデア等の表記と製品権利の移管を推測しない。",
+      "support": "limited",
+      "delivery": "native"
+    },
+    {
+      "product": "JP19",
+      "criterion": "P01",
+      "source": "vx_cost",
+      "summary": "5部署5端末の比較例にVXライセンス65万円と追加ライセンス21万円を掲載。",
+      "locator": "価格比較表／L92–108",
+      "limitations": "参考値。掲載時期・税・現行価格・ライセンス人数の定義は未確認。ショップのexcel版価格をVXへ転用しない。",
+      "support": "limited",
+      "delivery": "native"
+    },
+    {
+      "product": "JP19",
+      "criterion": "P04",
+      "source": "vx_cost",
+      "summary": "5部署5端末の導入比較例はセットアップ10万円・データ設定10万円・指導5万円、ソフトを含め合計111万円。",
+      "locator": "価格比較表／L96–105",
+      "limitations": "参考値。ソフト86万円と作業25万円の区別を保持。現行適用・税・実作業範囲は未確認。",
+      "support": "limited",
+      "delivery": "native"
+    },
+    {
+      "product": "JP19",
+      "criterion": "P05",
+      "source": "vx_cost",
+      "summary": "比較表のVX保守参考額は年6万8800円。",
+      "locator": "保守行／L106–108",
+      "limitations": "時点不明の5部署5端末参考条件。保守の必須・任意、範囲、更新・中途解約は未確認。",
+      "support": "limited",
+      "delivery": "native"
+    },
+    {
+      "product": "JP19",
+      "criterion": "B07",
+      "source": "vx_features",
+      "summary": "管理日誌出力と勤務実績から様式9への展開はV5/VXのオプションと明示する。",
+      "locator": "管理日誌・勤務実績印刷から様式9／L161–194",
+      "limitations": "レイアウト・転記の説明。価格内包・現行制度算式・特定の廃止書式採用は未確認。",
+      "support": "limited",
+      "delivery": "addon"
+    },
+    {
+      "product": "JP19",
+      "criterion": "B07",
+      "source": "vx_shop",
+      "summary": "リンク先ショップの0円介護商品と5万5千円Pro商品はexcel勤夢表で、VXとは商品名が異なる。",
+      "locator": "ショップの商品2件／L69–88",
+      "limitations": "VX本体の通常無料プラン・本体価格・全機能内包へ転用しない。価格明細としてこの別製品の金額は登録しない。",
+      "support": "limited",
+      "delivery": "native"
+    },
+    {
+      "product": "JP19",
+      "criterion": "K03",
+      "source": "vx_schedule",
+      "summary": "顧客が設定シート・勤務データを渡し、提供者が1部署のデモと基本データを作成、納品時に操作指導する流れ。",
+      "locator": "導入スケジュール／L85–92",
+      "limitations": "旧イデア表記が残る掲載例。匿名化可否・個別契約の作業分担・価格は未確認。実データ送信は未実施。",
+      "support": "limited",
+      "delivery": "native"
+    },
+    {
+      "product": "JP19",
+      "criterion": "K04",
+      "source": "vx_schedule",
+      "summary": "提供者の最短目安は問合せから3週間（デモまで1週間、注文から納品2週間）、操作指導1日。",
+      "locator": "導入スケジュール／L77–92",
+      "limitations": "実測・全顧客への納期保証ではない。部署数・条件量・設定の実働時間は未記載。",
+      "support": "limited",
+      "delivery": "native"
+    },
+    {
+      "product": "JP19",
+      "criterion": "K08",
+      "source": "vx_features",
+      "summary": "1部署分のデモ勤務表を無料で作成し、利用者の勤務表と比較して販売する流れを案内。",
+      "locator": "デモデータ作成／L44–62",
+      "limitations": "無料の本体プランとは別。体験版60日記載は別のexcel版を含む導線で、VX固有の試用期限として確定しない。",
+      "support": "limited",
+      "delivery": "native"
+    },
+    {
+      "product": "JP19",
+      "criterion": "H08",
+      "source": "vx_features",
+      "summary": "勤務実績表の印刷時に履歴管理を行い、不正改ざん防止に用いると説明。",
+      "locator": "実績登録／L166–170",
+      "limitations": "保存年限・改ざん対策の実装・旧版復元・同時編集は未確認。",
+      "support": "limited",
+      "delivery": "native"
+    },
+    {
+      "product": "JP19",
+      "criterion": "D06",
+      "source": "vx_features",
+      "summary": "組合せ禁止者の設定は10パターンと説明。",
+      "locator": "勤務体系／L153–157",
+      "limitations": "登録パターン数と実行時の必須強制は別。役割・期間・組合せごとの仕様は未確認。",
+      "support": "limited",
+      "delivery": "native"
+    },
+    {
+      "product": "JP19",
+      "criterion": "M08",
+      "source": "vx_features",
+      "summary": "Excel帳票の転記は説明するが、解約時の希望・ルール・全設定・履歴の一括搬出条件は未記載。",
+      "locator": "Excel出力／L180–207",
+      "limitations": "通常帳票の出力と全量搬出を区別。非対応とは判定せず形式・費用・期限は契約で確認。",
+      "support": "unknown",
+      "delivery": "unknown",
+      "state": "not_found"
+    }
+  ],
+  "prices": [
+    {
+      "product": "JP05",
+      "source": "terms",
+      "criterion": "P01",
+      "plan": "Day 月払基本・1～50名",
+      "amount": "12000",
+      "currency": "JPY",
+      "tax_status": "exclusive",
+      "billable_unit": "箇所",
+      "quantity_definition": "箇所ごとの登録人数帯。公開表は50箇所まで。管理者・休職者等の課金人数の定義は未確認。",
+      "commitment_months": 6,
+      "billing_period_months": 1,
+      "prepayment": "no",
+      "charge_type": "subscription",
+      "recurrence_months": 1,
+      "requirement": "required",
+      "conditions": {
+        "notes": "税抜。50箇所までの標準表。月払は6か月未満の解約・拠点削減で残期間分支払、月途中も全額。年払は1年確約・翌月末まで年額一括支払、30日前予告なしで自動更新。販売店条件は別確認。",
+        "staff_count_min": 1,
+        "staff_count_max": 50,
+        "maximum_standard_sites": 50
+      }
+    },
+    {
+      "product": "JP05",
+      "source": "terms",
+      "criterion": "P01",
+      "plan": "Day 年払基本・1～50名",
+      "amount": "120000",
+      "currency": "JPY",
+      "tax_status": "exclusive",
+      "billable_unit": "箇所",
+      "quantity_definition": "箇所ごとの登録人数帯。公開表は50箇所まで。管理者・休職者等の課金人数の定義は未確認。",
+      "commitment_months": 12,
+      "billing_period_months": 12,
+      "prepayment": "no",
+      "charge_type": "subscription",
+      "recurrence_months": 12,
+      "requirement": "required",
+      "conditions": {
+        "notes": "税抜。50箇所までの標準表。月払は6か月未満の解約・拠点削減で残期間分支払、月途中も全額。年払は1年確約・翌月末まで年額一括支払、30日前予告なしで自動更新。販売店条件は別確認。",
+        "staff_count_min": 1,
+        "staff_count_max": 50,
+        "maximum_standard_sites": 50
+      }
+    },
+    {
+      "product": "JP05",
+      "source": "terms",
+      "criterion": "P04",
+      "plan": "Day 標準初期費用",
+      "amount": "0",
+      "currency": "JPY",
+      "tax_status": "exclusive",
+      "billable_unit": "導入",
+      "quantity_definition": "箇所ごとの登録人数帯。公開表は50箇所まで。管理者・休職者等の課金人数の定義は未確認。",
+      "commitment_months": null,
+      "billing_period_months": null,
+      "prepayment": "unknown",
+      "charge_type": "setup",
+      "recurrence_months": null,
+      "requirement": "required",
+      "conditions": {
+        "notes": "税抜。通常の初期費用。操作説明会・設定作業支援・交通費は別。個別見積・販売店条件は別確認。"
+      }
+    },
+    {
+      "product": "JP05",
+      "source": "terms",
+      "criterion": "P05",
+      "plan": "Day 操作説明会",
+      "amount": "50000",
+      "currency": "JPY",
+      "tax_status": "exclusive",
+      "billable_unit": "回",
+      "quantity_definition": "箇所ごとの登録人数帯。公開表は50箇所まで。管理者・休職者等の課金人数の定義は未確認。",
+      "commitment_months": null,
+      "billing_period_months": null,
+      "prepayment": "unknown",
+      "charge_type": "implementation",
+      "recurrence_months": null,
+      "requirement": "optional",
+      "conditions": {
+        "notes": "税抜、1回。無料の操作相談とは別の有料オプション。訪問交通費は実費。"
+      }
+    },
+    {
+      "product": "JP05",
+      "source": "terms",
+      "criterion": "P05",
+      "plan": "Day 設定作業支援",
+      "amount": "50000",
+      "currency": "JPY",
+      "tax_status": "exclusive",
+      "billable_unit": "箇所",
+      "quantity_definition": "箇所ごとの登録人数帯。公開表は50箇所まで。管理者・休職者等の課金人数の定義は未確認。",
+      "commitment_months": null,
+      "billing_period_months": null,
+      "prepayment": "unknown",
+      "charge_type": "implementation",
+      "recurrence_months": null,
+      "requirement": "optional",
+      "conditions": {
+        "notes": "税抜、1箇所5万円から。範囲・最終費用は個別確認。訪問交通費は実費。",
+        "price_qualifier": "from"
+      }
+    },
+    {
+      "product": "JP06",
+      "source": "terms",
+      "criterion": "P01",
+      "plan": "Time 月払基本・1～20名",
+      "amount": "6000",
+      "currency": "JPY",
+      "tax_status": "exclusive",
+      "billable_unit": "箇所",
+      "quantity_definition": "箇所ごとの登録人数帯。公開表は50箇所まで。管理者・休職者等の課金人数の定義は未確認。",
+      "commitment_months": 6,
+      "billing_period_months": 1,
+      "prepayment": "no",
+      "charge_type": "subscription",
+      "recurrence_months": 1,
+      "requirement": "required",
+      "conditions": {
+        "notes": "税抜。50箇所までの標準表。月払は6か月未満の解約・拠点削減で残期間分支払、月途中も全額。年払は1年確約・翌月末まで年額一括支払、30日前予告なしで自動更新。販売店条件は別確認。",
+        "staff_count_min": 1,
+        "staff_count_max": 20,
+        "maximum_standard_sites": 50
+      }
+    },
+    {
+      "product": "JP06",
+      "source": "terms",
+      "criterion": "P01",
+      "plan": "Time 年払基本・1～20名",
+      "amount": "60000",
+      "currency": "JPY",
+      "tax_status": "exclusive",
+      "billable_unit": "箇所",
+      "quantity_definition": "箇所ごとの登録人数帯。公開表は50箇所まで。管理者・休職者等の課金人数の定義は未確認。",
+      "commitment_months": 12,
+      "billing_period_months": 12,
+      "prepayment": "no",
+      "charge_type": "subscription",
+      "recurrence_months": 12,
+      "requirement": "required",
+      "conditions": {
+        "notes": "税抜。50箇所までの標準表。月払は6か月未満の解約・拠点削減で残期間分支払、月途中も全額。年払は1年確約・翌月末まで年額一括支払、30日前予告なしで自動更新。販売店条件は別確認。",
+        "staff_count_min": 1,
+        "staff_count_max": 20,
+        "maximum_standard_sites": 50
+      }
+    },
+    {
+      "product": "JP06",
+      "source": "terms",
+      "criterion": "P01",
+      "plan": "Time 月払基本・21～30名",
+      "amount": "9000",
+      "currency": "JPY",
+      "tax_status": "exclusive",
+      "billable_unit": "箇所",
+      "quantity_definition": "箇所ごとの登録人数帯。公開表は50箇所まで。管理者・休職者等の課金人数の定義は未確認。",
+      "commitment_months": 6,
+      "billing_period_months": 1,
+      "prepayment": "no",
+      "charge_type": "subscription",
+      "recurrence_months": 1,
+      "requirement": "required",
+      "conditions": {
+        "notes": "税抜。50箇所までの標準表。月払は6か月未満の解約・拠点削減で残期間分支払、月途中も全額。年払は1年確約・翌月末まで年額一括支払、30日前予告なしで自動更新。販売店条件は別確認。",
+        "staff_count_min": 21,
+        "staff_count_max": 30,
+        "maximum_standard_sites": 50
+      }
+    },
+    {
+      "product": "JP06",
+      "source": "terms",
+      "criterion": "P01",
+      "plan": "Time 年払基本・21～30名",
+      "amount": "90000",
+      "currency": "JPY",
+      "tax_status": "exclusive",
+      "billable_unit": "箇所",
+      "quantity_definition": "箇所ごとの登録人数帯。公開表は50箇所まで。管理者・休職者等の課金人数の定義は未確認。",
+      "commitment_months": 12,
+      "billing_period_months": 12,
+      "prepayment": "no",
+      "charge_type": "subscription",
+      "recurrence_months": 12,
+      "requirement": "required",
+      "conditions": {
+        "notes": "税抜。50箇所までの標準表。月払は6か月未満の解約・拠点削減で残期間分支払、月途中も全額。年払は1年確約・翌月末まで年額一括支払、30日前予告なしで自動更新。販売店条件は別確認。",
+        "staff_count_min": 21,
+        "staff_count_max": 30,
+        "maximum_standard_sites": 50
+      }
+    },
+    {
+      "product": "JP06",
+      "source": "terms",
+      "criterion": "P01",
+      "plan": "Time 月払基本・31～40名",
+      "amount": "12000",
+      "currency": "JPY",
+      "tax_status": "exclusive",
+      "billable_unit": "箇所",
+      "quantity_definition": "箇所ごとの登録人数帯。公開表は50箇所まで。管理者・休職者等の課金人数の定義は未確認。",
+      "commitment_months": 6,
+      "billing_period_months": 1,
+      "prepayment": "no",
+      "charge_type": "subscription",
+      "recurrence_months": 1,
+      "requirement": "required",
+      "conditions": {
+        "notes": "税抜。50箇所までの標準表。月払は6か月未満の解約・拠点削減で残期間分支払、月途中も全額。年払は1年確約・翌月末まで年額一括支払、30日前予告なしで自動更新。販売店条件は別確認。",
+        "staff_count_min": 31,
+        "staff_count_max": 40,
+        "maximum_standard_sites": 50
+      }
+    },
+    {
+      "product": "JP06",
+      "source": "terms",
+      "criterion": "P01",
+      "plan": "Time 年払基本・31～40名",
+      "amount": "120000",
+      "currency": "JPY",
+      "tax_status": "exclusive",
+      "billable_unit": "箇所",
+      "quantity_definition": "箇所ごとの登録人数帯。公開表は50箇所まで。管理者・休職者等の課金人数の定義は未確認。",
+      "commitment_months": 12,
+      "billing_period_months": 12,
+      "prepayment": "no",
+      "charge_type": "subscription",
+      "recurrence_months": 12,
+      "requirement": "required",
+      "conditions": {
+        "notes": "税抜。50箇所までの標準表。月払は6か月未満の解約・拠点削減で残期間分支払、月途中も全額。年払は1年確約・翌月末まで年額一括支払、30日前予告なしで自動更新。販売店条件は別確認。",
+        "staff_count_min": 31,
+        "staff_count_max": 40,
+        "maximum_standard_sites": 50
+      }
+    },
+    {
+      "product": "JP06",
+      "source": "terms",
+      "criterion": "P01",
+      "plan": "Time 月払基本・41～50名",
+      "amount": "15000",
+      "currency": "JPY",
+      "tax_status": "exclusive",
+      "billable_unit": "箇所",
+      "quantity_definition": "箇所ごとの登録人数帯。公開表は50箇所まで。管理者・休職者等の課金人数の定義は未確認。",
+      "commitment_months": 6,
+      "billing_period_months": 1,
+      "prepayment": "no",
+      "charge_type": "subscription",
+      "recurrence_months": 1,
+      "requirement": "required",
+      "conditions": {
+        "notes": "税抜。50箇所までの標準表。月払は6か月未満の解約・拠点削減で残期間分支払、月途中も全額。年払は1年確約・翌月末まで年額一括支払、30日前予告なしで自動更新。販売店条件は別確認。",
+        "staff_count_min": 41,
+        "staff_count_max": 50,
+        "maximum_standard_sites": 50
+      }
+    },
+    {
+      "product": "JP06",
+      "source": "terms",
+      "criterion": "P01",
+      "plan": "Time 年払基本・41～50名",
+      "amount": "150000",
+      "currency": "JPY",
+      "tax_status": "exclusive",
+      "billable_unit": "箇所",
+      "quantity_definition": "箇所ごとの登録人数帯。公開表は50箇所まで。管理者・休職者等の課金人数の定義は未確認。",
+      "commitment_months": 12,
+      "billing_period_months": 12,
+      "prepayment": "no",
+      "charge_type": "subscription",
+      "recurrence_months": 12,
+      "requirement": "required",
+      "conditions": {
+        "notes": "税抜。50箇所までの標準表。月払は6か月未満の解約・拠点削減で残期間分支払、月途中も全額。年払は1年確約・翌月末まで年額一括支払、30日前予告なしで自動更新。販売店条件は別確認。",
+        "staff_count_min": 41,
+        "staff_count_max": 50,
+        "maximum_standard_sites": 50
+      }
+    },
+    {
+      "product": "JP06",
+      "source": "terms",
+      "criterion": "P04",
+      "plan": "Time 標準初期費用",
+      "amount": "0",
+      "currency": "JPY",
+      "tax_status": "exclusive",
+      "billable_unit": "導入",
+      "quantity_definition": "箇所ごとの登録人数帯。公開表は50箇所まで。管理者・休職者等の課金人数の定義は未確認。",
+      "commitment_months": null,
+      "billing_period_months": null,
+      "prepayment": "unknown",
+      "charge_type": "setup",
+      "recurrence_months": null,
+      "requirement": "required",
+      "conditions": {
+        "notes": "税抜。通常の初期費用。操作説明会・設定作業支援・交通費は別。個別見積・販売店条件は別確認。"
+      }
+    },
+    {
+      "product": "JP06",
+      "source": "terms",
+      "criterion": "P05",
+      "plan": "Time 操作説明会",
+      "amount": "50000",
+      "currency": "JPY",
+      "tax_status": "exclusive",
+      "billable_unit": "回",
+      "quantity_definition": "箇所ごとの登録人数帯。公開表は50箇所まで。管理者・休職者等の課金人数の定義は未確認。",
+      "commitment_months": null,
+      "billing_period_months": null,
+      "prepayment": "unknown",
+      "charge_type": "implementation",
+      "recurrence_months": null,
+      "requirement": "optional",
+      "conditions": {
+        "notes": "税抜、1回。無料の操作相談とは別の有料オプション。訪問交通費は実費。"
+      }
+    },
+    {
+      "product": "JP06",
+      "source": "terms",
+      "criterion": "P05",
+      "plan": "Time 設定作業支援",
+      "amount": "50000",
+      "currency": "JPY",
+      "tax_status": "exclusive",
+      "billable_unit": "箇所",
+      "quantity_definition": "箇所ごとの登録人数帯。公開表は50箇所まで。管理者・休職者等の課金人数の定義は未確認。",
+      "commitment_months": null,
+      "billing_period_months": null,
+      "prepayment": "unknown",
+      "charge_type": "implementation",
+      "recurrence_months": null,
+      "requirement": "optional",
+      "conditions": {
+        "notes": "税抜、1箇所5万円から。範囲・最終費用は個別確認。訪問交通費は実費。",
+        "price_qualifier": "from"
+      }
+    },
+    {
+      "product": "JP05",
+      "source": "terms",
+      "criterion": "P05",
+      "plan": "Day スマートフォン追加・月払",
+      "amount": "3000",
+      "currency": "JPY",
+      "tax_status": "exclusive",
+      "billable_unit": "箇所",
+      "quantity_definition": "箇所ごとの登録人数帯。公開表は50箇所まで。管理者・休職者等の課金人数の定義は未確認。",
+      "commitment_months": 6,
+      "billing_period_months": 1,
+      "prepayment": "no",
+      "charge_type": "subscription",
+      "recurrence_months": 1,
+      "requirement": "optional",
+      "conditions": {
+        "notes": "税抜、Day基本に追加。1～50名／箇所、51名以上は別途見積。希望登録・勤務予定参照。",
+        "staff_count_min": 1,
+        "staff_count_max": 50,
+        "maximum_standard_sites": 50
+      }
+    },
+    {
+      "product": "JP05",
+      "source": "terms",
+      "criterion": "P05",
+      "plan": "Day スマートフォン追加・年払",
+      "amount": "30000",
+      "currency": "JPY",
+      "tax_status": "exclusive",
+      "billable_unit": "箇所",
+      "quantity_definition": "箇所ごとの登録人数帯。公開表は50箇所まで。管理者・休職者等の課金人数の定義は未確認。",
+      "commitment_months": 12,
+      "billing_period_months": 12,
+      "prepayment": "no",
+      "charge_type": "subscription",
+      "recurrence_months": 12,
+      "requirement": "optional",
+      "conditions": {
+        "notes": "税抜、Day基本に追加。1～50名／箇所、51名以上は別途見積。希望登録・勤務予定参照。",
+        "staff_count_min": 1,
+        "staff_count_max": 50,
+        "maximum_standard_sites": 50
+      }
+    },
+    {
+      "product": "JP19",
+      "source": "vx_cost",
+      "criterion": "P01",
+      "plan": "勤夢表VX 5部署5端末 参考値・本体ライセンス",
+      "amount": "650000",
+      "currency": "JPY",
+      "tax_status": "unknown",
+      "billable_unit": "参考構成",
+      "quantity_definition": "比較例の5部署・5端末。現行の数量定義未確認。",
+      "commitment_months": null,
+      "billing_period_months": null,
+      "prepayment": "unknown",
+      "charge_type": "license",
+      "recurrence_months": null,
+      "requirement": "scenario_dependent",
+      "conditions": {
+        "notes": "5部署・5端末の掲載時期不明の参考値。税・現行販売への適用は未確認。通常価格・継続料金の下限として表示しない。",
+        "reference_only": true,
+        "do_not_auto_sum_alternative_plans": true
+      }
+    },
+    {
+      "product": "JP19",
+      "source": "vx_cost",
+      "criterion": "P01",
+      "plan": "勤夢表VX 5部署5端末 参考値・追加ライセンス",
+      "amount": "210000",
+      "currency": "JPY",
+      "tax_status": "unknown",
+      "billable_unit": "参考構成",
+      "quantity_definition": "比較例の5部署・5端末。現行の数量定義未確認。",
+      "commitment_months": null,
+      "billing_period_months": null,
+      "prepayment": "unknown",
+      "charge_type": "license",
+      "recurrence_months": null,
+      "requirement": "scenario_dependent",
+      "conditions": {
+        "notes": "5部署・5端末の掲載時期不明の参考値。税・現行販売への適用は未確認。通常価格・継続料金の下限として表示しない。",
+        "reference_only": true,
+        "do_not_auto_sum_alternative_plans": true
+      }
+    },
+    {
+      "product": "JP19",
+      "source": "vx_cost",
+      "criterion": "P04",
+      "plan": "勤夢表VX 5部署5端末 参考値・セットアップ",
+      "amount": "100000",
+      "currency": "JPY",
+      "tax_status": "unknown",
+      "billable_unit": "参考構成",
+      "quantity_definition": "比較例の5部署・5端末。現行の数量定義未確認。",
+      "commitment_months": null,
+      "billing_period_months": null,
+      "prepayment": "unknown",
+      "charge_type": "implementation",
+      "recurrence_months": null,
+      "requirement": "scenario_dependent",
+      "conditions": {
+        "notes": "5部署・5端末の掲載時期不明の参考値。税・現行販売への適用は未確認。通常価格・継続料金の下限として表示しない。",
+        "reference_only": true,
+        "do_not_auto_sum_alternative_plans": true
+      }
+    },
+    {
+      "product": "JP19",
+      "source": "vx_cost",
+      "criterion": "P04",
+      "plan": "勤夢表VX 5部署5端末 参考値・初期データ設定",
+      "amount": "100000",
+      "currency": "JPY",
+      "tax_status": "unknown",
+      "billable_unit": "参考構成",
+      "quantity_definition": "比較例の5部署・5端末。現行の数量定義未確認。",
+      "commitment_months": null,
+      "billing_period_months": null,
+      "prepayment": "unknown",
+      "charge_type": "implementation",
+      "recurrence_months": null,
+      "requirement": "scenario_dependent",
+      "conditions": {
+        "notes": "5部署・5端末の掲載時期不明の参考値。税・現行販売への適用は未確認。通常価格・継続料金の下限として表示しない。",
+        "reference_only": true,
+        "do_not_auto_sum_alternative_plans": true
+      }
+    },
+    {
+      "product": "JP19",
+      "source": "vx_cost",
+      "criterion": "P04",
+      "plan": "勤夢表VX 5部署5端末 参考値・操作指導",
+      "amount": "50000",
+      "currency": "JPY",
+      "tax_status": "unknown",
+      "billable_unit": "参考構成",
+      "quantity_definition": "比較例の5部署・5端末。現行の数量定義未確認。",
+      "commitment_months": null,
+      "billing_period_months": null,
+      "prepayment": "unknown",
+      "charge_type": "implementation",
+      "recurrence_months": null,
+      "requirement": "scenario_dependent",
+      "conditions": {
+        "notes": "5部署・5端末の掲載時期不明の参考値。税・現行販売への適用は未確認。通常価格・継続料金の下限として表示しない。",
+        "reference_only": true,
+        "do_not_auto_sum_alternative_plans": true
+      }
+    },
+    {
+      "product": "JP19",
+      "source": "vx_cost",
+      "criterion": "P05",
+      "plan": "勤夢表VX 5部署5端末 参考値・保守",
+      "amount": "68800",
+      "currency": "JPY",
+      "tax_status": "unknown",
+      "billable_unit": "参考構成",
+      "quantity_definition": "比較例の5部署・5端末。現行の数量定義未確認。",
+      "commitment_months": null,
+      "billing_period_months": 12,
+      "prepayment": "unknown",
+      "charge_type": "subscription",
+      "recurrence_months": 12,
+      "requirement": "scenario_dependent",
+      "conditions": {
+        "notes": "5部署・5端末の掲載時期不明の参考値。税・現行販売への適用は未確認。通常価格・継続料金の下限として表示しない。",
+        "reference_only": true,
+        "do_not_auto_sum_alternative_plans": true
+      }
+    }
+  ],
+  "followups": [
+    {
+      "product": "JP05",
+      "criterion": "O04",
+      "priority": 2,
+      "method": "vendor_document",
+      "question": "Webの平日10–17時と規約の10–12時／13–17時の昼休み、無料操作相談と有料説明会・設定支援、販売店経由の適用条件を契約資料で照合する。"
+    },
+    {
+      "product": "JP06",
+      "criterion": "O04",
+      "priority": 2,
+      "method": "vendor_document",
+      "question": "Webの平日10–17時と規約の10–12時／13–17時の昼休み、無料操作相談と有料説明会・設定支援、販売店経由の適用条件を契約資料で照合する。"
+    },
+    {
+      "product": "JP19",
+      "criterion": "P01",
+      "priority": 2,
+      "method": "vendor_quote",
+      "question": "5部署5端末のVX価格比較表の基準日・税・現行適用と追加ライセンスの数量を確認し、様式9・日誌オプションと保守を含む現行見積を取得する。"
+    },
+    {
+      "product": "JP05",
+      "criterion": "F01",
+      "priority": 2,
+      "method": "synthetic_test",
+      "question": "条件矛盾時にも答えを出す設定について、法定必須の緩和禁止・優先度・承認権限を確認し、違反を含む結果の公開を防げるか合成データで検証する。"
+    }
+  ],
+  "task_updates": [],
+  "retrieval_checks": [
+    {
+      "product": "JP05",
+      "url": "https://www.otasukeman.jp/helpcenter/terms",
+      "result": "browser_verified",
+      "notes": "Web取得不可からブラウザに切替。ログイン不要の公開本文と2025-06-01規約改定表示、PDFリンクを確認し3原本取得。"
+    },
+    {
+      "product": "JP06",
+      "url": "https://www.otasukeman.jp/helpcenter/time-history",
+      "result": "browser_verified",
+      "notes": "Web取得不可。公開ブラウザ本文で操作履歴の項目・絞り込みを確認。実機の履歴操作は未実施。"
+    },
+    {
+      "product": "US12",
+      "url": "https://community.healthstream.com/viewdocument/scheduling-monthly-notifications-september-2026",
+      "result": "product_scope_unresolved",
+      "notes": "2026-09-03改訂本文を確認。ANSOSとShiftWizardを含む製品ファミリー通知で、一般の新機能に製品名の明示がない。製品別リリースノートへの追跡リンク取得失敗につき、競合防止・Universal Templates等をShiftWizard機能として新規登録しない。"
+    },
+    {
+      "product": "US03",
+      "url": "https://www.symplr.com/platform/ai-in-healthcare",
+      "result": "search_result_not_adopted",
+      "notes": "検索説明はSmart Square予測と別のsymplr Workforce機能を同ページに扱う。既存の予測説明との重複・製品境界を考慮し検索抜粋を新規機能根拠に使わない。"
+    },
+    {
+      "product": "JP14",
+      "url": "https://www.msi.co.jp/solution/scheduling.html",
+      "result": "verified_existing_evidence",
+      "notes": "本文相当の公式検索結果は既存記録と重複。Nuorium Optimizer単体のライセンス・価格問い合わせを個別シフト開発の価格として転用しない。"
+    }
+  ]
+}

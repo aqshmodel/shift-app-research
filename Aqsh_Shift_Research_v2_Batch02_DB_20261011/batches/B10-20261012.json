@@ -1,0 +1,505 @@
+{
+  "batch_id": "B10-20261012",
+  "prior_batch": "B09-20261012",
+  "as_of_date": "2026-10-12",
+  "resolution_policy_version": 2,
+  "description": "未着手項目の追加調査：課金主体、外部LLM・退出データ、勤怠連携の手順と別契約、権限・通知・受付時間、専用環境の条件",
+  "method": "公式Web本文・利用規約・公式掲載PDFを既存観測と照合し追加。検索抜粋は機能根拠に採用しない。営業連絡、登録、資料請求フォーム送信、見積、ログイン後操作、独立性能・再構成試験は未実施。",
+  "sources": [
+    {
+      "key": "optshift",
+      "url": "https://www.optamo.jp/shift/index.html",
+      "title": "Optamo for Shift 機能・連携・比較表",
+      "publisher": "株式会社モーション",
+      "reference": "turn31view0",
+      "retrieved_on": "2026-10-12",
+      "version_label": "特徴欄は日付なし／比較表は2024年8月時点"
+    },
+    {
+      "key": "opttask",
+      "url": "https://www.optamo.jp/task/index.html",
+      "title": "Optamo for Task 専用環境・機能比較",
+      "publisher": "株式会社モーション",
+      "reference": "turn34view1",
+      "retrieved_on": "2026-10-12",
+      "version_label": "特徴欄は日付なし／比較表は2024年8月時点"
+    },
+    {
+      "key": "mira_mf",
+      "url": "https://www.konicaminolta.com/jp-ja/miramos/partner/moneyforward/pdf/miramos_MF.pdf",
+      "title": "miramos MFクラウド勤怠連携手順",
+      "publisher": "コニカミノルタ",
+      "reference": "turn36view0 / turn37view0",
+      "retrieved_on": "2026-10-12",
+      "scope_note": "31ページの本文を確認。PDFメタタイトルはクロノス連携手順だが表紙・本文はMFクラウド勤怠。本文題名を採用。公開日・版番号は未確認。原本はローカル未保存。"
+    },
+    {
+      "key": "mira_freee",
+      "url": "https://www.konicaminolta.com/jp-ja/miramos/partner/freee/pdf/miramos_freee.pdf",
+      "title": "freee 勤怠管理 Plusとの連携方法",
+      "publisher": "コニカミノルタ",
+      "reference": "turn36view1 / turn37view1",
+      "retrieved_on": "2026-10-12",
+      "scope_note": "14ページの連携手順を確認。公開日・版番号は未確認。2026年2月の操作例から公開日は推測しない。原本はローカル未保存。"
+    },
+    {
+      "key": "mira_xronos",
+      "url": "https://www.konicaminolta.com/jp-ja/miramos/partner/xronos/pdf/miramos_xronos_1.pdf",
+      "title": "miramos連携 手順書1（クロノス Performance）",
+      "publisher": "コニカミノルタ公式掲載／クロノス手順書",
+      "reference": "turn36view2",
+      "retrieved_on": "2026-10-12",
+      "scope_note": "15ページの手順書の予定シフト連携・オプション条項を本文確認。公開日・版番号は未確認。原本はローカル未保存。"
+    },
+    {
+      "key": "shiftee_faq",
+      "url": "https://www.shifteeapp.jp/faq/",
+      "title": "SHIFTEE よくあるご質問",
+      "publisher": "SHIFTEE公式サイト",
+      "reference": "turn33view2",
+      "retrieved_on": "2026-10-12"
+    },
+    {
+      "key": "shiftta_terms",
+      "url": "https://shiftta.com/terms-of-service/",
+      "title": "シフッタ利用規約",
+      "publisher": "株式会社Leapsec",
+      "reference": "turn35view0",
+      "retrieved_on": "2026-10-12",
+      "published_on": "2026-04-21",
+      "version_label": "2026年4月21日制定"
+    },
+    {
+      "key": "shiftta_pricing",
+      "url": "https://shiftta.com/resources/service-introduction/",
+      "title": "シフッタ サービス紹介・料金資料",
+      "publisher": "株式会社Leapsec",
+      "reference": "turn33view1",
+      "retrieved_on": "2026-10-12",
+      "updated_on": "2026-10-05",
+      "scope_note": "資料紹介と取得フォームのみ確認。旧/resources/pricing/から転送。個人情報未入力・未送信、PDF本文未取得。"
+    }
+  ],
+  "findings": [
+    {
+      "product": "JP02",
+      "criterion": "P01",
+      "source": "optshift",
+      "summary": "利用料金は相談窓口へ案内し、本文に通常料金の数値はない。",
+      "locator": "お申込について",
+      "limitations": "通貨・税・人数定義・最低契約は未確定。無料トライアルを通常の無料プランとは扱わない。",
+      "support": "limited",
+      "delivery": "native"
+    },
+    {
+      "product": "JP02",
+      "criterion": "M06",
+      "source": "optshift",
+      "summary": "作成した勤務予定を勤怠サービスへ渡す専用CSVのダウンロードを案内。",
+      "locator": "勤怠管理システムとの連携",
+      "limitations": "全サービスへの互換性、API常時同期、実績の逆方向取込は保証しない。",
+      "support": "limited",
+      "delivery": "native"
+    },
+    {
+      "product": "JP02",
+      "criterion": "H07",
+      "source": "optshift",
+      "summary": "比較表にシフト公開とシフト提出依頼を掲載する。",
+      "locator": "機能比較表／スタッフへの通知",
+      "limitations": "2024年8月時点。差分通知・既読記録・現行プランへの適用は未確認。",
+      "support": "limited",
+      "delivery": "native"
+    },
+    {
+      "product": "JP02",
+      "criterion": "F01",
+      "source": "optshift",
+      "summary": "優先度の5段階調整は説明するが、法令必須条件の強制・例外承認は本文で確認できない。",
+      "locator": "5段階チューニング／労働条件比較",
+      "limitations": "優先順位の調整を必須条件の保証へ置き換えない。",
+      "support": "limited",
+      "delivery": "unknown",
+      "state": "not_found"
+    },
+    {
+      "product": "JP02",
+      "criterion": "M08",
+      "source": "optshift",
+      "summary": "スタッフ情報や勤務表の出力は示すが、解約時の全設定・希望・履歴の一括搬出は記載未確認。",
+      "locator": "機能比較表／スタッフデータと出力",
+      "limitations": "この公開ページの範囲。非対応とは判断せず、全量形式・費用・期限は契約資料で確認。",
+      "support": "limited",
+      "delivery": "unknown",
+      "state": "not_found"
+    },
+    {
+      "product": "JP16",
+      "criterion": "A06",
+      "source": "opttask",
+      "summary": "比較表はスタッフ人数を無制限としつつ、プランによる上限を注記する。",
+      "locator": "機能比較表／スタッフ人数上限",
+      "limitations": "2024年8月時点。同時最適化人数・部署数の性能上限ではない。",
+      "support": "limited",
+      "delivery": "native"
+    },
+    {
+      "product": "JP16",
+      "criterion": "C05",
+      "source": "opttask",
+      "summary": "勤務間インターバルは全体設定のみと比較表に示す。",
+      "locator": "機能比較表／勤務間インターバル",
+      "limitations": "2024年8月時点。勤務パターン間・業務間間隔とは別。時間の値と実適用は未確認。",
+      "support": "limited",
+      "delivery": "native"
+    },
+    {
+      "product": "JP16",
+      "criterion": "N01",
+      "source": "opttask",
+      "summary": "IBM Cloud上の顧客専用環境と、サーバーを専有する構成を案内する。",
+      "locator": "貴社専用の環境",
+      "limitations": "標準共有環境へ適用しない。所在地、横断権限、分離の実証は未確認。",
+      "support": "limited",
+      "delivery": "native"
+    },
+    {
+      "product": "JP16",
+      "criterion": "B07",
+      "source": "opttask",
+      "summary": "個別ルール・認証・レポート等のカスタマイズには顧客専用環境の構築が必要。",
+      "locator": "カスタマイズ可能／注意書き",
+      "limitations": "要望によって対応できない場合がある。標準機能との区別、費用は別途確認。",
+      "support": "limited",
+      "delivery": "custom"
+    },
+    {
+      "product": "JP16",
+      "criterion": "M08",
+      "source": "opttask",
+      "summary": "スタッフ情報・Excel出力の比較表だけでは、解約時の全設定・履歴の搬出条件は確定しない。",
+      "locator": "機能比較表／スタッフデータ・出力",
+      "limitations": "2024年8月時点。全量出力の形式・期限・費用は本文未記載。",
+      "support": "limited",
+      "delivery": "unknown",
+      "state": "not_found"
+    },
+    {
+      "product": "JP07",
+      "criterion": "M06",
+      "source": "mira_mf",
+      "summary": "予定をMFクラウド勤怠へCSVで渡し、出勤簿CSVをmiramosの実績加減算チェックへ戻す手順。",
+      "locator": "p.2,17–23／予定・実績連携",
+      "limitations": "利用者によるファイル操作。API同期、契約内包、実連携結果は未確認。",
+      "support": "limited",
+      "delivery": "native"
+    },
+    {
+      "product": "JP07",
+      "criterion": "M06",
+      "source": "mira_freee",
+      "summary": "freee 勤怠管理 Plusと予定・実績をCSVで往復する。実績取込は提供者の変換用Excel.xlsmを経由。",
+      "locator": "p.1,5–6,9–14／CSV連携・実績変換",
+      "limitations": "CSV直結とは区別。変換ファイルの入手・環境・実行結果は未確認。",
+      "support": "limited",
+      "delivery": "native"
+    },
+    {
+      "product": "JP07",
+      "criterion": "M06",
+      "source": "mira_xronos",
+      "summary": "クロノス Performanceへの予定連携はCSVの連動キットか、Excel貼付の2方式。",
+      "locator": "p.2–3,8–11／連携方法",
+      "limitations": "この手順書は予定の出力方向。実績の逆方向取込まで確認していない。",
+      "support": "limited",
+      "delivery": "native"
+    },
+    {
+      "product": "JP07",
+      "criterion": "P05",
+      "source": "mira_xronos",
+      "summary": "連動キットとExcel貼付はいずれもクロノス側の別途オプション契約が必要と記載。",
+      "locator": "p.3–4,10–11／オプション注記",
+      "limitations": "クロノス側の要件。miramos本体の費用と混同せず、金額・周期は未確認。",
+      "support": "limited",
+      "delivery": "third_party"
+    },
+    {
+      "product": "JP07",
+      "criterion": "K03",
+      "source": "mira_freee",
+      "summary": "両サービスのアカウントを用意し、職員コード・勤務パターン・CSVレイアウトを設定する手順。",
+      "locator": "p.2–5,9–11／事前準備",
+      "limitations": "操作手順の確認。ベンダー代行、工数、コード誤対応の検出は未検証。",
+      "support": "limited",
+      "delivery": "native"
+    },
+    {
+      "product": "JP07",
+      "criterion": "M08",
+      "source": "mira_mf",
+      "summary": "予定・実績・職員・勤務時間帯のCSVを扱うが、解約時の全設定・希望・監査履歴の一括搬出は示さない。",
+      "locator": "p.17–23,27–31／連携と一括更新",
+      "limitations": "この連携マニュアルの範囲。全量出力可否・期限・費用の判断は保留。",
+      "support": "limited",
+      "delivery": "unknown",
+      "state": "not_found"
+    },
+    {
+      "product": "JP17",
+      "criterion": "A06",
+      "source": "shiftee_faq",
+      "summary": "FAQは利用人数に制限がないと説明する。",
+      "locator": "利用人数に限界はありますか",
+      "limitations": "登録・管理の説明。同時最適化性能の上限や500名目安の別見積条件とは分ける。",
+      "support": "limited",
+      "delivery": "native"
+    },
+    {
+      "product": "JP17",
+      "criterion": "K01",
+      "source": "shiftee_faq",
+      "summary": "既存のExcelや紙の運用からの移行と、データ取込の支援を案内する。",
+      "locator": "Excelや現在の運用から移行できますか",
+      "limitations": "セル結合・独自記号・複数シートをそのまま取込める保証ではない。",
+      "support": "limited",
+      "delivery": "native"
+    },
+    {
+      "product": "JP17",
+      "criterion": "K03",
+      "source": "shiftee_faq",
+      "summary": "初期設定から運用定着まで支援すると説明する。",
+      "locator": "初期設定／導入後サポート",
+      "limitations": "顧客と提供者の作業分担、代行費、範囲は未確定。",
+      "support": "limited",
+      "delivery": "native"
+    },
+    {
+      "product": "JP17",
+      "criterion": "K04",
+      "source": "shiftee_faq",
+      "summary": "提供者の導入目安は早ければ数日〜1週間程度。",
+      "locator": "初期設定にはどのくらい時間がかかりますか",
+      "limitations": "運用内容による目安で実測値ではない。人数・設定項目・実働時間は未記載。",
+      "support": "limited",
+      "delivery": "native"
+    },
+    {
+      "product": "JP17",
+      "criterion": "H08",
+      "source": "shiftee_faq",
+      "summary": "管理者のシフト承認は変更履歴に残り、確定者と時点を確認できると説明する。",
+      "locator": "誰がシフトを確定したか確認できますか",
+      "limitations": "巻戻し、同時編集の衝突、履歴の保存期間・出力は未確認。",
+      "support": "limited",
+      "delivery": "native"
+    },
+    {
+      "product": "JP17",
+      "criterion": "N01",
+      "source": "shiftee_faq",
+      "summary": "管理者・店舗責任者・従業員などの役割ごとに操作権限を設定可能と説明する。",
+      "locator": "権限管理はできますか",
+      "limitations": "権限一覧、部署横断制御、ベンダー権限、テナント分離の実装は未確認。",
+      "support": "limited",
+      "delivery": "native"
+    },
+    {
+      "product": "JP17",
+      "criterion": "N02",
+      "source": "shiftee_faq",
+      "summary": "公開FAQはパスワードの管理者リセットを示すが、SSO・MFAの方式や管理者強制は記載未確認。",
+      "locator": "ログイン／セキュリティ・サポート",
+      "limitations": "リセットをMFAの根拠にしない。ログイン後ヘルプと契約の照合が必要。",
+      "support": "limited",
+      "delivery": "unknown",
+      "state": "not_found"
+    },
+    {
+      "product": "JP17",
+      "criterion": "O04",
+      "source": "shiftee_faq",
+      "summary": "同じFAQの電話案内に平日9:00–18:00と、10:00–12:00・13:00–17:00の2表記がある。",
+      "locator": "ページ冒頭の2つの電話案内",
+      "limitations": "相談窓口・契約サポートの区別と現行時間を確認。時刻を推定統合しない。",
+      "support": "limited",
+      "delivery": "unknown",
+      "state": "disputed"
+    },
+    {
+      "product": "JP17",
+      "criterion": "H07",
+      "source": "shiftee_faq",
+      "summary": "スマホ・PCでシフトを確認し、確定・変更の通知を案内する。",
+      "locator": "従業員はどのようにシフトを確認しますか",
+      "limitations": "対象プランはFAQで未指定。差分の内容・既読確認まで実証したものではない。",
+      "support": "limited",
+      "delivery": "native"
+    },
+    {
+      "product": "JP23",
+      "criterion": "P01",
+      "source": "shiftta_terms",
+      "summary": "個人の基本利用は無料だが、事業所オーナーは事業所の利用料を負担すると規約に定める。",
+      "locator": "第5条2・第12条1",
+      "limitations": "事業所向け無料プランとは判定しない。具体的金額・プランは別途規定。",
+      "support": "limited",
+      "delivery": "native"
+    },
+    {
+      "product": "JP23",
+      "criterion": "P02",
+      "source": "shiftta_terms",
+      "summary": "支払者は事業所オーナー。課金単位は事業所単位・参加人数単位など別途定める。",
+      "locator": "第2条3・第12条1–2",
+      "limitations": "支払責任と課金人数の定義は別。単位を一つへ確定しない。",
+      "support": "limited",
+      "delivery": "native"
+    },
+    {
+      "product": "JP23",
+      "criterion": "P03",
+      "source": "shiftta_terms",
+      "summary": "課金開始・支払周期等は別途定めるとされ、規約本文に最低期間・請求周期の確定値はない。",
+      "locator": "第12条2–3",
+      "limitations": "個別の料金プラン資料は未取得。",
+      "support": "limited",
+      "delivery": "unknown",
+      "state": "not_disclosed"
+    },
+    {
+      "product": "JP23",
+      "criterion": "P08",
+      "source": "shiftta_terms",
+      "summary": "解除・事業所削除・オーナー移転を理由に、受領済み料金を返金する義務は負わないと定める。",
+      "locator": "第12条5",
+      "limitations": "規約条項の記載確認。個別契約の適用・例外と解約予告期限は未確認。",
+      "support": "limited",
+      "delivery": "native"
+    },
+    {
+      "product": "JP23",
+      "criterion": "N01",
+      "source": "shiftta_terms",
+      "summary": "オーナーは運営権限の全部又は一部を他の利用者へ委任できる。",
+      "locator": "第9条2–4",
+      "limitations": "契約上の定義。技術的なアクセス制御・監査ログ・テナント分離は未検証。",
+      "support": "limited",
+      "delivery": "native"
+    },
+    {
+      "product": "JP23",
+      "criterion": "N05",
+      "source": "shiftta_terms",
+      "summary": "入力等の一部を外部LLMへ送信し得る。外部先のモデル学習は契約で禁止する一方、提供者の匿名化した研究開発利用は定める。",
+      "locator": "第13条4・第15条1–3",
+      "limitations": "外部送信なしとは判定しない。外部先の名称・地域・保持期間・利用停止設定は未確認。",
+      "support": "limited",
+      "delivery": "third_party"
+    },
+    {
+      "product": "JP23",
+      "criterion": "N06",
+      "source": "shiftta_terms",
+      "summary": "職員が退出した後も、その事業所の勤務情報等をオーナー等が閲覧・利用できる。",
+      "locator": "第9条5・第10条",
+      "limitations": "職員退出と事業所削除を区別。削除時は別途取扱いで保存・削除期限は未確定。",
+      "support": "limited",
+      "delivery": "native"
+    },
+    {
+      "product": "JP23",
+      "criterion": "M08",
+      "source": "shiftta_terms",
+      "summary": "事業所削除後の処理は別途定めるとし、解約時の全量搬出形式・期限・費用は本文で確認できない。",
+      "locator": "第8条3・第9条5・第10条",
+      "limitations": "退出後の職員情報の保持を、全量搬出権や永久保存の保証へ置き換えない。",
+      "support": "limited",
+      "delivery": "unknown",
+      "state": "not_found"
+    },
+    {
+      "product": "JP23",
+      "criterion": "G06",
+      "source": "shiftta_terms",
+      "summary": "規約は確定・配信前に利用者によるAI出力の検証を求めるが、別ロジックの自動検証器は記載未確認。",
+      "locator": "第15条4",
+      "limitations": "利用者の確認義務と製品の独立検査は別。",
+      "support": "limited",
+      "delivery": "unknown",
+      "state": "not_found"
+    },
+    {
+      "product": "JP23",
+      "criterion": "P01",
+      "source": "shiftta_pricing",
+      "summary": "料金と費用例のPDFは連絡先入力後の取得で、紹介ページ本文に金額はない。",
+      "locator": "資料紹介／2026-10-05更新／取得フォーム",
+      "limitations": "検索結果の旧説明でなく現行転送先を確認。フォームを送信せずPDFの金額は採用しない。",
+      "support": "limited",
+      "delivery": "unknown",
+      "state": "not_disclosed"
+    }
+  ],
+  "followups": [
+    {
+      "product": "JP23",
+      "criterion": "P01",
+      "priority": 2,
+      "method": "vendor_quote",
+      "question": "事業所オーナー向け現行料金資料で、基本利用の無料範囲、課金人数、AI・サポート、初期費、支払周期を揃えて確認する。"
+    },
+    {
+      "product": "JP23",
+      "criterion": "N05",
+      "priority": 2,
+      "method": "vendor_document",
+      "question": "外部LLMの名称・送信項目・地域・保持期間・再委託先、匿名化した自社研究開発利用と利用停止設定を契約資料で確認する。"
+    },
+    {
+      "product": "JP17",
+      "criterion": "O04",
+      "priority": 2,
+      "method": "vendor_document",
+      "question": "公開FAQの9:00–18:00と10:00–12:00／13:00–17:00が、どの相談・契約サポート窓口へ適用されるか確認する。"
+    }
+  ],
+  "task_updates": [
+    {
+      "task_id": "TASK-B02-012",
+      "product": "US15",
+      "criterion": "A03",
+      "state": "in_progress",
+      "priority": 1,
+      "method": "vendor_document",
+      "note": "Oracle公式の関連採用ページはWeb本文0行、ブラウザでは求人期限切れ。検索抜粋の名称は新しい機能根拠に採用しなかった。求人終了をClairviaの販売終了と扱わない。現行販売版・契約主体の公式資料が引き続き必要。"
+    }
+  ],
+  "retrieval_checks": [
+    {
+      "product": "US15",
+      "url": "https://careers.oracle.com/en/sites/jobsearch/job/345550/",
+      "result": "inaccessible",
+      "notes": "Web本文0行。ブラウザで求人期限切れ表示を確認。製品販売状態は判定しない。"
+    },
+    {
+      "product": "US18",
+      "url": "https://help.quinyx.com/help-centre/docs/multifactor-authentication",
+      "result": "inaccessible",
+      "notes": "検索説明は既存B06観測と重複。Web本文再取得失敗につき新規機能根拠は追加しない。"
+    },
+    {
+      "product": "US20",
+      "url": "https://help.planday.com/en/articles/760172-how-to-generate-a-schedule-automatically-with-the-new-auto-schedule-beta-plus-pro",
+      "result": "verified_existing_evidence",
+      "notes": "本文のβ・対象・下書き公開は既存記録と同じ。正式提供日と契約適用は未完了で保持。"
+    },
+    {
+      "product": "JP23",
+      "url": "https://shiftta.com/resources/service-introduction/",
+      "result": "restricted_document_not_requested",
+      "notes": "紹介ページは確認。PDF取得の氏名・会社・メール・電話フォームは未入力・未送信。"
+    }
+  ]
+}

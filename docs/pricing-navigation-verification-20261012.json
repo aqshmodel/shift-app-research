@@ -1,0 +1,64 @@
+{
+  "checked_on": "2026-10-12",
+  "production_url": "https://shift.aqsh.co.jp/",
+  "staging_version": "81ddd5d2-ccb3-484e-855e-f32967c4d6bb",
+  "production_version": "55f6ab99-2eed-45c7-9e83-887ba2f75b4f",
+  "snapshot": "B07-20261011-pub2",
+  "database_writes": false,
+  "price_counts": {
+    "published": 15,
+    "free": 2,
+    "quote": 12,
+    "unpublished": 21
+  },
+  "regression_tests": {
+    "passed": 22,
+    "failed": 0
+  },
+  "astro_check": {
+    "files": 58,
+    "errors": 0,
+    "warnings": 0,
+    "hints": 0
+  },
+  "staging_browser_tests": {
+    "passed": 12,
+    "failed": 0
+  },
+  "production_browser_tests": {
+    "passed": 5,
+    "failed": 0
+  },
+  "viewport_widths": [
+    320,
+    390,
+    768,
+    1440
+  ],
+  "axe_aa_violations": 0,
+  "verified": [
+    "pricing facets across all 50 services",
+    "combined category/feature/pricing conditions",
+    "pagination and history",
+    "compare selection",
+    "JavaScript-disabled GET",
+    "logo and name links",
+    "detail pricing and contract notes",
+    "mobile and desktop layout"
+  ],
+  "source_sha256": {
+    "apps/web/src/components/HomeDirectory.astro": "d2d10bbbcc1608fefdba27a4d8f2eae4cf4147ddfbadc1c63eb0303670219e0b",
+    "apps/web/src/components/ProductCard.astro": "cc5a89ceae8b5a6922891430e3781db50f8410a76064a7f19d8bc93539537d31",
+    "apps/web/src/lib/home-directory.mjs": "c580502b67b784a1f118abe89d8ce9de757964cf3bacd776b7292e40a2e2e4b8",
+    "apps/web/src/lib/home-client.mjs": "aba515b271b16664869756d7ad4ad50adb55b0940bab674b3055d98988a6cdd3",
+    "apps/web/src/pages/products/[slug].astro": "0590ff4ecce2a623165e1c98d412a9f7204bc2051dd09d24e84741c66a3f769b",
+    "apps/web/src/styles/home-directory.css": "e71c063a0eaca541d2eee9f55cc294541f96b56a210792e727b580bcc8743052",
+    "apps/web/src/styles/catalog.css": "ab0d359cfaf1405a24a488c9905a2bc5606247a6d13d4a0bb86c7160ee47a95a",
+    "apps/web/src/styles/detail.css": "5a059f9e35407ba4c796c70f01b4516a76ddb61d66f6a7c85a6dcc7c5148d9b5"
+  },
+  "production_capture_test": {
+    "passed": 1,
+    "failed": 0,
+    "analytics_consent": "declined in test browser"
+  }
+}

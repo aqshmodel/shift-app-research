@@ -1,24 +1,24 @@
 {
-  "snapshot_id": "B07-20261011-pub2",
-  "research_sha256": "2ddb59f682a829e7ee796950232bccbe36bceee2787eeafd4efac504776fc094",
-  "content_sha256": "74a40b58cb45ed8264a9f8da9d779b0807686a7a169ccb2d251ee86f2e10a4ce",
+  "snapshot_id": "B18-20261012-pub2",
+  "research_sha256": "567e341dd479a91db582baf002478551d13a5bb40c1805529aaa3517a81075e6",
+  "content_sha256": "d0048171ab7afdc9a3f2c1a17370862c20218048fd5112ce2d8107b3da20ddd1",
   "products": 50,
   "category_memberships": 61,
-  "maximum_statement_bytes": 88324,
+  "maximum_statement_bytes": 86116,
   "scope": {
-    "snapshot_id": "B07-20261011-pub2",
-    "as_of_date": "2026-10-11",
-    "research_sha256": "2ddb59f682a829e7ee796950232bccbe36bceee2787eeafd4efac504776fc094",
+    "snapshot_id": "B18-20261012-pub2",
+    "as_of_date": "2026-10-12",
+    "research_sha256": "567e341dd479a91db582baf002478551d13a5bb40c1805529aaa3517a81075e6",
     "products": 50,
     "offerings": 50,
-    "document_observations": 1664,
-    "research_documents": 188,
-    "price_components": 88,
+    "document_observations": 2037,
+    "research_documents": 277,
+    "price_components": 118,
     "logos": 51,
     "reference_regulations": 17,
     "benchmark_runs": 0,
     "independent_tests_performed": false,
-    "priority_open": 30,
+    "priority_open": 29,
     "limitations": [
       "公開資料の確認で、実動作・性能・個別契約の保証ではありません。",
       "記載未確認は非対応を意味しません。",
@@ -324,6 +324,6 @@
         "retrieved_on": "2026-10-11"
       }
     ],
-    "content_sha256": "74a40b58cb45ed8264a9f8da9d779b0807686a7a169ccb2d251ee86f2e10a4ce"
+    "content_sha256": "d0048171ab7afdc9a3f2c1a17370862c20218048fd5112ce2d8107b3da20ddd1"
   }
 }

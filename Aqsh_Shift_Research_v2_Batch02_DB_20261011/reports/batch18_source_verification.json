@@ -1,0 +1,75 @@
+{
+  "batch_id": "B18-20261012",
+  "checked_on": "2026-10-12",
+  "status": "passed",
+  "new_observation_sources": [
+    {
+      "url": "https://healthstreamhelp.mcoutput.com/nursegridmanager/Content/NG_Manager/Schedule_Mgmt/Balancing_and_Publishing_a_Draft_Schedule.htm",
+      "title": "Nursegrid Manager：下書きの調整・割当・公開の操作ヘルプ",
+      "body_reviewed": true,
+      "full_text_archived": false,
+      "body_sha256": null,
+      "scope_note": "Webツールで詳細取得不可。公開ブラウザで本文を確認。2025-09-09更新、任意・役割別機能の留保を保持。実画面で勤務表を操作せず説明文だけを読んだ。全文・ハッシュ未保存。"
+    },
+    {
+      "url": "https://healthstreamhelp.mcoutput.com/nursegridmanager/Content/NG_Manager/Schedule_Mgmt/Reviewing_and_Assigning_Self_Scheduling_Responses.htm",
+      "title": "Nursegrid Manager：自己割当希望の個別・一括承認",
+      "body_reviewed": true,
+      "full_text_archived": false,
+      "body_sha256": null,
+      "scope_note": "公開ブラウザで本文を確認。一括承認と過剰配置の手動解除を勤務表最適化と区別。任意・役割別機能と対象契約は未確定。全文・ハッシュ未保存。"
+    },
+    {
+      "url": "https://healthstreamhelp.mcoutput.com/nursegridmanager/Content/NG_Manager/Schedule_Mgmt/Creating_a_Draft_Schedule_with_the_Schedule_Builder.htm",
+      "title": "Nursegrid Manager：Schedule Builderの自己割当段階と対象職員",
+      "body_reviewed": true,
+      "full_text_archived": false,
+      "body_sha256": null,
+      "scope_note": "公開ブラウザで本文を確認。職位・タグ・FTEによる自己割当の受付段階を、FTE公平性の最適化算式と混同しない。任意・役割別機能の留保。全文・ハッシュ未保存。"
+    },
+    {
+      "url": "https://healthstreamhelp.mcoutput.com/nursegridmanager/Content/NG_Manager/User_Management/Restricted_Users.htm",
+      "title": "Nursegrid Manager：Restricted Usersの空きシフト受信制限",
+      "body_reviewed": true,
+      "full_text_archived": false,
+      "body_sha256": null,
+      "scope_note": "公開ブラウザで本文を確認。Restricted UserとMobile未利用者、契約・無課金者を同一視しない。任意・役割別機能の留保。全文・ハッシュ未保存。"
+    },
+    {
+      "url": "https://nursegrid.com/for-nurses/nursegrid-app/",
+      "title": "Nursegrid App：無料の個人向け機能と組織向けManagerの区別",
+      "body_reviewed": true,
+      "full_text_archived": false,
+      "body_sha256": null,
+      "scope_note": "公式FAQの無料対象、iPhone/Android/Web、組織向け別ツールの記載を確認。Mobileの無料をManagerやLearnの契約へ流用しない。全文・ハッシュ未保存。"
+    },
+    {
+      "url": "https://nursegrid.com/for-organizations/nursegrid-manager/",
+      "title": "Nursegrid Manager：公開ヘルプと問い合わせ導線の範囲",
+      "body_reviewed": true,
+      "full_text_archived": false,
+      "body_sha256": null,
+      "scope_note": "Manager SupportとApp Supportの別導線を確認。一般問い合わせ・営業フォームを技術SLAと扱わない。月5ドル、30日試用、2〜250人、自己割当の一般案内は既存観測を保持し再登録しない。全文・ハッシュ未保存。"
+    }
+  ],
+  "additional_rechecks": [
+    "https://healthstreamhelp.mcoutput.com/nursegridmanager/Content/NG_Manager/ManagerLandingPage.htm"
+  ],
+  "retrieval_checks": [
+    {
+      "product": "US08",
+      "url": "https://nursegrid.com/for-organizations/nursegrid-manager/",
+      "result": "existing_price_and_self_schedule_findings_rechecked_without_duplicate",
+      "notes": "既存月5ドル・30日試用・2〜250人・自己割当と通知の一般案内を再確認し、同じ観測と料金明細を追加しない。"
+    },
+    {
+      "product": "US08",
+      "url": "https://healthstreamhelp.mcoutput.com/nursegridmanager/Content/NG_Manager/ManagerLandingPage.htm",
+      "result": "optional_role_note_rechecked_without_duplicate",
+      "notes": "B11で登録済みの任意・役割別機能の一般注意を再確認し、そのまま保持。今回の詳細4ヘルプはWebツールで取得できず、公式目次から公開ブラウザ本文を読んで採用。"
+    }
+  ],
+  "search_snippets_used_as_evidence": false,
+  "form_contact_signup_or_product_login": false,
+  "browser_read_note": "Four detailed official help bodies read in the public browser from the official table of contents after web-tool retrieval failed."
+}

@@ -1,7 +1,8 @@
 ---
 import type {CategoryGuide} from '../lib/category-guides';
 import '../styles/guides.css';
-const {guide,slug}=Astro.props as {guide:CategoryGuide;slug:string};
+import {formatResearchDate} from '../lib/catalog';
+const {guide,slug,asOfDate}=Astro.props as {guide:CategoryGuide;slug:string;asOfDate:string};
 const contents=[['steps','選ぶ順序'],['checks','比較する項目'],['evidence','資料の確認例'],['questions','販売元への質問'],['faq','よくある質問'],['products','対象サービス']];
 ---
 <div class="container guide-layout">
@@ -12,6 +13,6 @@ const contents=[['steps','選ぶ順序'],['checks','比較する項目'],['evide
     <section class="guide-section" id="evidence" aria-labelledby="evidence-title"><p class="eyebrow">03 / RESEARCH NOTES</p><h2 id="evidence-title">公開資料の確認例です。</h2><p>以下は選定時に注意したい確認例です。おすすめ順位を示すものではありません。実動作は未検証のため、対象プランと自施設の条件を販売元へお確かめください。</p><div class="guide-examples">{guide.examples.map(example=><article><h3><a href={'/products/'+example.slug+'/'}>{example.name}</a></h3><p>{example.body}</p><div class="guide-example-links"><a href={'/products/'+example.slug+'/'}>調査記録を見る <span aria-hidden="true">→</span></a><a href={example.source} rel="noopener">{example.sourceLabel} <span aria-hidden="true">↗</span></a></div></article>)}</div></section>
     <section class="guide-section" id="questions" aria-labelledby="questions-title"><p class="eyebrow">04 / BEFORE CONTRACT</p><h2 id="questions-title">販売元へ聞く質問です。</h2><p>問い合わせやデモでは、自施設の条件と一緒に次の質問をお伝えください。回答は、対象プラン・出力サンプル・契約条件とともに残すと比較しやすくなります。</p><ol class="guide-questions">{guide.questions.map(q=><li>{q}</li>)}</ol></section>
     <section class="guide-section guide-faq" id="faq" aria-labelledby="faq-title"><p class="eyebrow">05 / QUESTIONS</p><h2 id="faq-title">よくある質問にお答えします。</h2>{guide.faqs.map(f=><details><summary>{f.question}</summary><p>{f.answer}</p></details>)}<div class="guide-related"><p class="small muted">次に確認したいこと</p>{guide.related.map(link=><a href={link.href}>{link.label} <span aria-hidden="true">→</span></a>)}<a href="/methodology/">調査の範囲と確認状況の読み方 <span aria-hidden="true">→</span></a></div></section>
-    <p class="guide-credit small muted">編集：<a href="/about/">Aqsh株式会社</a> ／ 解説更新：2026年10月11日<br />製品の記載は2026年10月11日現在の公開資料に基づきます。</p>
+    <p class="guide-credit small muted">編集：<a href="/about/">Aqsh株式会社</a> ／ 解説更新：2026年10月11日<br />サービス一覧の調査基準日：{formatResearchDate(asOfDate)}</p>
   </div>
 </div>

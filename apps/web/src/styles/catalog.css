@@ -17,7 +17,8 @@ select { padding: 11px; background: white; color: var(--ink); border: 1px solid 
 .product-card:hover { border-color: #98b49e; box-shadow: 0 6px 20px #193c2f05; }
 .product-card:nth-child(n+7) { content-visibility: auto; contain-intrinsic-size: auto 400px; }
 .card-top { display: flex; gap: 10px; align-items: start; justify-content: space-between; margin-bottom: 27px; }
-.product-logo { flex: 1; min-width: 0; max-width: 170px; height: 52px; display: flex; align-items: center; }
+.product-logo { flex: 1; min-width: 0; max-width: 170px; height: 52px; display: flex; align-items: center; text-decoration: none; }
+.product-logo:focus-visible { outline: 3px solid #ae6800; outline-offset: 4px; border-radius: 3px; }
 .product-logo img { object-fit: contain; width: auto; height: 48px; max-width: 100%; }
 .logo-fallback { font-size: 14px; color: var(--green); }
 .region { font-size: 11px; color: var(--muted); white-space: nowrap; border: 1px solid var(--line); padding: 3px 6px; border-radius: 3px; }
@@ -26,6 +27,11 @@ select { padding: 11px; background: white; color: var(--ink); border: 1px solid 
 .product-card h3 a:hover { color: var(--green); }
 .vendor-name { font-size: 12px; color: var(--muted); margin-bottom: 20px; }
 .card-summary { font-size: 13px; line-height: 2; flex: 1; }
+.card-price { margin: 0 0 20px; min-height: 72px; }
+.card-price dt { font-size: 10px; color: var(--muted); margin-bottom: 4px; }
+.card-price dd { margin: 0; }
+.card-price strong { display: block; font-size: 17px; line-height: 1.6; font-weight: 650; color: var(--ink); font-variant-numeric: tabular-nums; overflow-wrap: anywhere; }
+.card-price dd > span { display: block; margin-top: 5px; font-size: 11px; line-height: 1.7; color: var(--muted); overflow-wrap: anywhere; }
 .category-list { display: flex; flex-wrap: wrap; gap: 6px 12px; font-size: 11px; margin-bottom: 22px; }
 .category-list a { color: var(--muted); }
 .card-actions { display: flex; justify-content: space-between; align-items: center; gap: 12px; border-top: 1px solid var(--line); padding-top: 18px; }

@@ -1,0 +1,230 @@
+{
+  "batch_id": "B11-20261012",
+  "prior_batch": "B10-20261012",
+  "status": "passed",
+  "tables": [
+    {
+      "table": "assessment_resolutions",
+      "prior_rows": 2469,
+      "current_rows": 2510,
+      "prior_rows_identical": true
+    },
+    {
+      "table": "asset_evidence",
+      "prior_rows": 6,
+      "current_rows": 6,
+      "prior_rows_identical": true
+    },
+    {
+      "table": "audit_issues",
+      "prior_rows": 32,
+      "current_rows": 32,
+      "prior_rows_identical": true
+    },
+    {
+      "table": "batch_product_membership",
+      "prior_rows": 131,
+      "current_rows": 137,
+      "prior_rows_identical": true
+    },
+    {
+      "table": "benchmark_runs",
+      "prior_rows": 0,
+      "current_rows": 0,
+      "prior_rows_identical": true
+    },
+    {
+      "table": "benchmark_scenario_criteria",
+      "prior_rows": 45,
+      "current_rows": 45,
+      "prior_rows_identical": true
+    },
+    {
+      "table": "benchmark_scenarios",
+      "prior_rows": 14,
+      "current_rows": 14,
+      "prior_rows_identical": true
+    },
+    {
+      "table": "brand_assets",
+      "prior_rows": 51,
+      "current_rows": 51,
+      "prior_rows_identical": true
+    },
+    {
+      "table": "classification_corrections",
+      "prior_rows": 12,
+      "current_rows": 12,
+      "prior_rows_identical": true
+    },
+    {
+      "table": "cost_requirements",
+      "prior_rows": 36,
+      "current_rows": 36,
+      "prior_rows_identical": true
+    },
+    {
+      "table": "cost_scenarios",
+      "prior_rows": 8,
+      "current_rows": 8,
+      "prior_rows_identical": true
+    },
+    {
+      "table": "criteria",
+      "prior_rows": 164,
+      "current_rows": 164,
+      "prior_rows_identical": true
+    },
+    {
+      "table": "domains",
+      "prior_rows": 20,
+      "current_rows": 20,
+      "prior_rows_identical": true
+    },
+    {
+      "table": "legacy_feature_map",
+      "prior_rows": 86,
+      "current_rows": 86,
+      "prior_rows_identical": true
+    },
+    {
+      "table": "metric_catalog",
+      "prior_rows": 20,
+      "current_rows": 20,
+      "prior_rows_identical": true
+    },
+    {
+      "table": "observation_evidence",
+      "prior_rows": 1788,
+      "current_rows": 1835,
+      "prior_rows_identical": true
+    },
+    {
+      "table": "observations",
+      "prior_rows": 2672,
+      "current_rows": 2719,
+      "prior_rows_identical": true
+    },
+    {
+      "table": "offerings",
+      "prior_rows": 50,
+      "current_rows": 50,
+      "prior_rows_identical": true
+    },
+    {
+      "table": "plans",
+      "prior_rows": 69,
+      "current_rows": 69,
+      "prior_rows_identical": true
+    },
+    {
+      "table": "price_components",
+      "prior_rows": 88,
+      "current_rows": 88,
+      "prior_rows_identical": true
+    },
+    {
+      "table": "product_aliases",
+      "prior_rows": 57,
+      "current_rows": 57,
+      "prior_rows_identical": true
+    },
+    {
+      "table": "products",
+      "prior_rows": 50,
+      "current_rows": 50,
+      "prior_rows_identical": true
+    },
+    {
+      "table": "regulation_support",
+      "prior_rows": 0,
+      "current_rows": 0,
+      "prior_rows_identical": true
+    },
+    {
+      "table": "regulations",
+      "prior_rows": 17,
+      "current_rows": 17,
+      "prior_rows_identical": true
+    },
+    {
+      "table": "research_assets",
+      "prior_rows": 6,
+      "current_rows": 6,
+      "prior_rows_identical": true
+    },
+    {
+      "table": "research_batches",
+      "prior_rows": 10,
+      "current_rows": 11,
+      "prior_rows_identical": true
+    },
+    {
+      "table": "research_task_updates",
+      "prior_rows": 51,
+      "current_rows": 52,
+      "prior_rows_identical": true
+    },
+    {
+      "table": "resolution_evidence",
+      "prior_rows": 3223,
+      "current_rows": 3296,
+      "prior_rows_identical": true
+    },
+    {
+      "table": "retrieval_checks",
+      "prior_rows": 126,
+      "current_rows": 132,
+      "prior_rows_identical": true
+    },
+    {
+      "table": "run_metrics",
+      "prior_rows": 0,
+      "current_rows": 0,
+      "prior_rows_identical": true
+    },
+    {
+      "table": "source_archives",
+      "prior_rows": 1,
+      "current_rows": 1,
+      "prior_rows_identical": true
+    },
+    {
+      "table": "source_documents",
+      "prior_rows": 220,
+      "current_rows": 232,
+      "prior_rows_identical": true
+    },
+    {
+      "table": "source_method_attributes",
+      "prior_rows": 286,
+      "current_rows": 298,
+      "prior_rows_identical": true
+    },
+    {
+      "table": "source_revisions",
+      "prior_rows": 346,
+      "current_rows": 358,
+      "prior_rows_identical": true
+    },
+    {
+      "table": "sources",
+      "prior_rows": 222,
+      "current_rows": 234,
+      "prior_rows_identical": true
+    },
+    {
+      "table": "vendors",
+      "prior_rows": 11,
+      "current_rows": 11,
+      "prior_rows_identical": true
+    }
+  ],
+  "excluded_mutable_tables": [
+    "research_tasks",
+    "current_assessments",
+    "schema_info"
+  ],
+  "task_ownership": "verified_before_and_after_ingest",
+  "immutable_batch_checksum": "bef9172cd5b40db765a3b01ac1b708b260f9ab9222e6c3369f5879eef5fc83b9"
+}

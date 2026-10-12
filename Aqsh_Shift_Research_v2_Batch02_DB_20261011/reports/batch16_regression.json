@@ -1,0 +1,78 @@
+{
+  "checked_at": "2026-10-12T09:10:38.093369+00:00",
+  "execution": "isolated local copy; no shared local D1 or remote operations",
+  "checks": {
+    "research_regression": {
+      "status": "passed",
+      "tests": 14,
+      "exit_code": 0,
+      "duration_seconds": 6.323,
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.11/bin/python3",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "/Users/tsukadatakahiro/Documents/Codex/2026-10-12/task/shift-research-C01T01-work/Aqsh_Shift_Research_v2_Batch02_DB_20261011/tools",
+        "-p",
+        "test_*.py",
+        "-v"
+      ],
+      "log": "/Users/tsukadatakahiro/Documents/Codex/2026-10-12/task/C01T01-validation-logs/research_regression.txt"
+    },
+    "public_projection_and_research_update": {
+      "status": "passed",
+      "tests": 12,
+      "exit_code": 0,
+      "duration_seconds": 7.724,
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.11/bin/python3",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "/Users/tsukadatakahiro/Documents/Codex/2026-10-12/task/shift-research-C01T01-work/apps/web/tests",
+        "-p",
+        "*_test.py",
+        "-v"
+      ],
+      "log": "/Users/tsukadatakahiro/Documents/Codex/2026-10-12/task/C01T01-validation-logs/public_projection_and_research_update.txt"
+    },
+    "web_regression": {
+      "status": "passed",
+      "tests": 22,
+      "exit_code": 0,
+      "duration_seconds": 5.18,
+      "command": [
+        "/Users/tsukadatakahiro/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node",
+        "--test",
+        "/Users/tsukadatakahiro/Documents/Codex/2026-10-12/task/shift-research-C01T01-work/apps/web/tests/analytics.test.mjs",
+        "/Users/tsukadatakahiro/Documents/Codex/2026-10-12/task/shift-research-C01T01-work/apps/web/tests/contracts.test.mjs",
+        "/Users/tsukadatakahiro/Documents/Codex/2026-10-12/task/shift-research-C01T01-work/apps/web/tests/deployment.test.mjs",
+        "/Users/tsukadatakahiro/Documents/Codex/2026-10-12/task/shift-research-C01T01-work/apps/web/tests/eval.test.mjs",
+        "/Users/tsukadatakahiro/Documents/Codex/2026-10-12/task/shift-research-C01T01-work/apps/web/tests/home-directory.test.mjs",
+        "/Users/tsukadatakahiro/Documents/Codex/2026-10-12/task/shift-research-C01T01-work/apps/web/tests/proxy.test.mjs",
+        "/Users/tsukadatakahiro/Documents/Codex/2026-10-12/task/shift-research-C01T01-work/apps/web/tests/repository.test.mjs"
+      ],
+      "log": "/Users/tsukadatakahiro/Documents/Codex/2026-10-12/task/C01T01-validation-logs/web_regression.txt"
+    },
+    "static_viewer": {
+      "status": "passed",
+      "tests": null,
+      "exit_code": 0,
+      "duration_seconds": 0.798,
+      "command": [
+        "/Users/tsukadatakahiro/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node",
+        "/Users/tsukadatakahiro/Documents/Codex/2026-10-12/task/shift-research-C01T01-work/Aqsh_Shift_Research_v2_Batch02_DB_20261011/tools/test_viewer.cjs"
+      ],
+      "log": "/Users/tsukadatakahiro/Documents/Codex/2026-10-12/task/C01T01-validation-logs/static_viewer.txt",
+      "initial_attempt": {
+        "status": "failed",
+        "reason": "sandbox Chrome launch SIGABRT before rendering",
+        "log": "/Users/tsukadatakahiro/Documents/Codex/2026-10-12/task/C01T01-validation-logs/static_viewer.txt"
+      },
+      "retry": "existing viewer test passed in isolated copy with temporary Chrome profile outside process sandbox"
+    }
+  },
+  "status": "passed"
+}

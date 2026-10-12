@@ -1,0 +1,72 @@
+{
+  "checked_at": "2026-10-12T05:26:56.547634+00:00",
+  "base": "https://shift.aqsh.co.jp",
+  "status": "passed",
+  "snapshot_id": "B12-20261012-pub2",
+  "research_sha256": "9d407025bc45dc5d1f5753b282da1eda188d988844618092566641e46f2e6409",
+  "content_sha256": "975ec80e4b3bdff8b2fa86b92b468818191892f50ad57b15b361325a67ca29ce",
+  "scope_matches": true,
+  "price_summaries_matched": 50,
+  "details": [
+    {
+      "id": "OF-JP05",
+      "price": {
+        "label": "月額12,000円 / 拠点",
+        "note": "Day 月払基本・1～50名 · 税別 · 対象1〜50人",
+        "kind": "published"
+      },
+      "price_components": 13,
+      "record_count": 81
+    },
+    {
+      "id": "OF-JP06",
+      "price": {
+        "label": "月額6,000円 / 拠点",
+        "note": "Time 月払基本・1～20名 · 税別 · 対象1〜20人",
+        "kind": "published"
+      },
+      "price_components": 15,
+      "record_count": 81
+    },
+    {
+      "id": "OF-JP19",
+      "price": {
+        "label": "個別見積もり",
+        "note": "",
+        "kind": "quote"
+      },
+      "price_components": 6,
+      "record_count": 71
+    },
+    {
+      "id": "OF-JP09",
+      "price": {
+        "label": "個別見積もり",
+        "note": "",
+        "kind": "quote"
+      },
+      "price_components": 0,
+      "record_count": 75
+    },
+    {
+      "id": "OF-JP23",
+      "price": {
+        "label": "非公開",
+        "note": "",
+        "kind": "unpublished"
+      },
+      "price_components": 0,
+      "record_count": 35
+    },
+    {
+      "id": "OF-US09",
+      "price": {
+        "label": "月額USD 119 / アカウント",
+        "note": "Operations Expert 月払（30人まで） · 税区分未確認 · 30人まで",
+        "kind": "published"
+      },
+      "price_components": 4,
+      "record_count": 101
+    }
+  ]
+}

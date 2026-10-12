@@ -1,0 +1,50 @@
+{
+  "batch_id": "B16-20261012",
+  "checked_on": "2026-10-12",
+  "status": "passed",
+  "sources": [
+    {
+      "url": "https://www.symplr.com/products/smart-square",
+      "title": "Smart Square Healthcare Scheduling Software：周期型勤務と公開範囲",
+      "publisher": "symplr",
+      "body_reviewed": true,
+      "method": "public_web_body",
+      "full_text_archived": false,
+      "body_sha256": null,
+      "limitations": "製品本文とFAQを確認。自動需要予測、空き枠募集、セルフ／周期型勤務を勤務表全自動割当と区別。本文のプラン・料金・算式の未確認範囲を保存。全文・本文ハッシュ未保存。"
+    },
+    {
+      "url": "https://www.symplr.com/customer-support",
+      "title": "symplr Customer Support：製品別窓口とSmart Squareの掲載範囲",
+      "publisher": "symplr",
+      "body_reviewed": true,
+      "method": "public_web_body",
+      "full_text_archived": false,
+      "body_sha256": null,
+      "limitations": "Workforce Management区分の製品別一覧を確認。別製品の電話・メール・ログインリンクをSmart Squareへ流用しない。全文・本文ハッシュ未保存。"
+    },
+    {
+      "url": "https://www.symplr.com/case-studies/bellin-healths-journey",
+      "title": "Bellin Health：配置ルール・インセンティブと費用分析の導入事例",
+      "publisher": "symplr",
+      "body_reviewed": true,
+      "method": "public_web_body",
+      "full_text_archived": false,
+      "body_sha256": null,
+      "limitations": "Customer StoryはSept 2025の月表示だけで、正確な公開日は未確認。販売元掲載の顧客事例として要約し、独立試験に登録しない。添付PDFは取得せずWeb本文のみ。全文・本文ハッシュ未保存。"
+    },
+    {
+      "url": "https://www.symplr.com/case-studies/revolutionizing-workforce-management-with-smart-square-at-hackensack-meridian-health",
+      "title": "Hackensack Meridian Health：段階導入とFTE Leakageの測定条件",
+      "publisher": "symplr",
+      "body_reviewed": true,
+      "method": "public_web_body",
+      "full_text_archived": false,
+      "body_sha256": null,
+      "limitations": "Customer StoryはSept 2025の月表示だけで、正確な公開日は未確認。2023年の取り組みと過去の段階導入を現在の製品仕様と混ぜない。添付PDFは取得せずWeb本文のみ。全文・本文ハッシュ未保存。"
+    }
+  ],
+  "search_snippets_used_as_evidence": false,
+  "contact_or_signup": false,
+  "independent_product_tests": false
+}

@@ -1,0 +1,13 @@
+{
+  "status": "passed",
+  "products": 1,
+  "viewports": [
+    1440,
+    390
+  ],
+  "new_only_cards": 1,
+  "global_support_scope_visible": true,
+  "website_terms_not_product_terms": true,
+  "unknown_capabilities_preserved": true,
+  "pageErrors": []
+}

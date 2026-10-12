@@ -1,0 +1,61 @@
+{
+  "checked_at": "2026-10-12T09:36:35.575254+00:00",
+  "execution": "isolated local copy; no shared local D1 or remote operations",
+  "checks": {
+    "research_regression": {
+      "status": "passed",
+      "tests": 14,
+      "exit_code": 0,
+      "duration_seconds": 7.313,
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.11/bin/python3",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "/Users/tsukadatakahiro/Documents/Codex/2026-10-12/task/shift-research-C01T02-work/Aqsh_Shift_Research_v2_Batch02_DB_20261011/tools",
+        "-p",
+        "test_*.py",
+        "-v"
+      ],
+      "log": "/Users/tsukadatakahiro/Documents/Codex/2026-10-12/task/C01T02-validation-logs/research_regression.txt"
+    },
+    "public_projection_and_research_update": {
+      "status": "passed",
+      "tests": 12,
+      "exit_code": 0,
+      "duration_seconds": 9.706,
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.11/bin/python3",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "/Users/tsukadatakahiro/Documents/Codex/2026-10-12/task/shift-research-C01T02-work/apps/web/tests",
+        "-p",
+        "*_test.py",
+        "-v"
+      ],
+      "log": "/Users/tsukadatakahiro/Documents/Codex/2026-10-12/task/C01T02-validation-logs/public_projection_and_research_update.txt"
+    },
+    "web_regression": {
+      "status": "passed",
+      "tests": 22,
+      "exit_code": 0,
+      "duration_seconds": 6.5,
+      "command": [
+        "/Users/tsukadatakahiro/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node",
+        "--test",
+        "/Users/tsukadatakahiro/Documents/Codex/2026-10-12/task/shift-research-C01T02-work/apps/web/tests/analytics.test.mjs",
+        "/Users/tsukadatakahiro/Documents/Codex/2026-10-12/task/shift-research-C01T02-work/apps/web/tests/contracts.test.mjs",
+        "/Users/tsukadatakahiro/Documents/Codex/2026-10-12/task/shift-research-C01T02-work/apps/web/tests/deployment.test.mjs",
+        "/Users/tsukadatakahiro/Documents/Codex/2026-10-12/task/shift-research-C01T02-work/apps/web/tests/eval.test.mjs",
+        "/Users/tsukadatakahiro/Documents/Codex/2026-10-12/task/shift-research-C01T02-work/apps/web/tests/home-directory.test.mjs",
+        "/Users/tsukadatakahiro/Documents/Codex/2026-10-12/task/shift-research-C01T02-work/apps/web/tests/proxy.test.mjs",
+        "/Users/tsukadatakahiro/Documents/Codex/2026-10-12/task/shift-research-C01T02-work/apps/web/tests/repository.test.mjs"
+      ],
+      "log": "/Users/tsukadatakahiro/Documents/Codex/2026-10-12/task/C01T02-validation-logs/web_regression.txt"
+    }
+  },
+  "status": "passed"
+}

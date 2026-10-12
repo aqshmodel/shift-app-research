@@ -1,0 +1,186 @@
+{
+  "status": "passed",
+  "prior_batch": "B12-20261012",
+  "tables": {
+    "assessment_resolutions": {
+      "before": 2562,
+      "after": 2609,
+      "original_rows_equal": true
+    },
+    "asset_evidence": {
+      "before": 6,
+      "after": 6,
+      "original_rows_equal": true
+    },
+    "audit_issues": {
+      "before": 32,
+      "after": 32,
+      "original_rows_equal": true
+    },
+    "batch_product_membership": {
+      "before": 140,
+      "after": 144,
+      "original_rows_equal": true
+    },
+    "benchmark_runs": {
+      "before": 0,
+      "after": 0,
+      "original_rows_equal": true
+    },
+    "benchmark_scenario_criteria": {
+      "before": 45,
+      "after": 45,
+      "original_rows_equal": true
+    },
+    "benchmark_scenarios": {
+      "before": 14,
+      "after": 14,
+      "original_rows_equal": true
+    },
+    "brand_assets": {
+      "before": 51,
+      "after": 51,
+      "original_rows_equal": true
+    },
+    "classification_corrections": {
+      "before": 12,
+      "after": 12,
+      "original_rows_equal": true
+    },
+    "cost_requirements": {
+      "before": 36,
+      "after": 36,
+      "original_rows_equal": true
+    },
+    "cost_scenarios": {
+      "before": 8,
+      "after": 8,
+      "original_rows_equal": true
+    },
+    "criteria": {
+      "before": 164,
+      "after": 164,
+      "original_rows_equal": true
+    },
+    "domains": {
+      "before": 20,
+      "after": 20,
+      "original_rows_equal": true
+    },
+    "legacy_feature_map": {
+      "before": 86,
+      "after": 86,
+      "original_rows_equal": true
+    },
+    "metric_catalog": {
+      "before": 20,
+      "after": 20,
+      "original_rows_equal": true
+    },
+    "observation_evidence": {
+      "before": 1897,
+      "after": 1949,
+      "original_rows_equal": true
+    },
+    "observations": {
+      "before": 2781,
+      "after": 2833,
+      "original_rows_equal": true
+    },
+    "offerings": {
+      "before": 50,
+      "after": 50,
+      "original_rows_equal": true
+    },
+    "plans": {
+      "before": 93,
+      "after": 97,
+      "original_rows_equal": true
+    },
+    "price_components": {
+      "before": 112,
+      "after": 116,
+      "original_rows_equal": true
+    },
+    "product_aliases": {
+      "before": 57,
+      "after": 57,
+      "original_rows_equal": true
+    },
+    "products": {
+      "before": 50,
+      "after": 50,
+      "original_rows_equal": true
+    },
+    "regulation_support": {
+      "before": 0,
+      "after": 0,
+      "original_rows_equal": true
+    },
+    "regulations": {
+      "before": 17,
+      "after": 17,
+      "original_rows_equal": true
+    },
+    "research_assets": {
+      "before": 6,
+      "after": 6,
+      "original_rows_equal": true
+    },
+    "research_batches": {
+      "before": 12,
+      "after": 13,
+      "original_rows_equal": true
+    },
+    "research_task_updates": {
+      "before": 52,
+      "after": 54,
+      "original_rows_equal": true
+    },
+    "resolution_evidence": {
+      "before": 3392,
+      "after": 3489,
+      "original_rows_equal": true
+    },
+    "retrieval_checks": {
+      "before": 137,
+      "after": 142,
+      "original_rows_equal": true
+    },
+    "run_metrics": {
+      "before": 0,
+      "after": 0,
+      "original_rows_equal": true
+    },
+    "source_archives": {
+      "before": 4,
+      "after": 4,
+      "original_rows_equal": true
+    },
+    "source_documents": {
+      "before": 244,
+      "after": 255,
+      "original_rows_equal": true
+    },
+    "source_method_attributes": {
+      "before": 310,
+      "after": 325,
+      "original_rows_equal": true
+    },
+    "source_revisions": {
+      "before": 370,
+      "after": 385,
+      "original_rows_equal": true
+    },
+    "sources": {
+      "before": 246,
+      "after": 257,
+      "original_rows_equal": true
+    },
+    "vendors": {
+      "before": 11,
+      "after": 11,
+      "original_rows_equal": true
+    }
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "batch_id": "B09-20261012",
+  "prior_batch": "B08-20261012",
+  "as_of_date": "2026-10-12",
+  "resolution_policy_version": 2,
+  "description": "Nafty常勤換算の提供時期・予定仕様の追加確認と、B08課題進捗2件のID対応訂正",
+  "method": "Nafty公式ページをブラウザで読み、FAQを展開して本文を確認。B08は書き換えず、課題進捗2件の訂正を追記。実機能の操作・算式検算・個別契約確認は未実施。",
+  "sources": [
+    {
+      "key": "naftyfte",
+      "url": "https://nafty.app/fte/",
+      "title": "常勤換算と人員配置基準の点検・提供前表示とFAQ",
+      "publisher": "株式会社KakuKaku",
+      "retrieved_on": "2026-10-12",
+      "reference": "Codex in-app browser / Nafty fte AX本文・FAQ展開",
+      "method": "public_browser_body",
+      "method_note": "Web取得ツールではCache missだったため、公式ページをブラウザで開き、リリース前表示とFAQ3項目の展開本文を確認。全文・スクリーンショットは未保存。"
+    }
+  ],
+  "findings": [
+    {
+      "product": "JP04",
+      "source": "naftyfte",
+      "criterion": "A03",
+      "summary": "常勤換算の公式ページは引き続きリリース前と表示し、公開時期が決まれば知らせると説明する。取得時点の本文に具体的な提供開始日はない。",
+      "locator": "リリース前の案内",
+      "scope": "Nafty 常勤換算（提供予定）",
+      "state": "known",
+      "delivery": "native",
+      "limitations": "提供予定の公開文書確認。実動作・独立試験・正式公開日は未確認。Nafty本体の正式リリースと常勤換算の公開を同一視しない。"
+    },
+    {
+      "product": "JP04",
+      "source": "naftyfte",
+      "criterion": "J06",
+      "summary": "予定仕様では所定時間を満たす常勤職員を既定で1.0と数え、祝日の多い月の過小計上を防ぐと説明する。勤務時間から数える方式へ切替可能とも記載する。",
+      "locator": "FAQ・常勤の職員は、休みが多い月でも1人と数えられますか？",
+      "scope": "Nafty 常勤換算（提供予定）の算定モード",
+      "state": "known",
+      "delivery": "native",
+      "limitations": "提供予定の仕様説明。既定値と勤務時間方式の切替画面・結果・届出への適用は未検証。制度一般の法的判断として採用しない。"
+    },
+    {
+      "product": "JP04",
+      "source": "naftyfte",
+      "criterion": "J06",
+      "summary": "予定の配置基準判定は特別養護老人ホームと介護老人保健施設の2種別・令和6年度改定を対象とし、その他の種別は検討と説明する。医療様式9は別制度と明示する。",
+      "locator": "FAQ・対応しているサービス種別／医療の様式9とは違うのですか？",
+      "scope": "Nafty 常勤換算（提供予定）の対象種別・制度版",
+      "state": "known",
+      "delivery": "native",
+      "limitations": "介護向け予定機能の対象範囲。グループホーム等を含むシフト作成全体の対象業態と、配置基準の判定対象を分ける。令和8年度の医療様式9の検算は未実施。"
+    }
+  ],
+  "task_updates": [
+    {
+      "task_id": "B03-20261011-TASK003",
+      "product": "US01",
+      "criterion": "P01",
+      "state": "in_progress",
+      "priority": 1,
+      "method": "vendor_quote",
+      "note": "B08の課題ID対応を訂正。このIDはRosterLab料金の課題。米国向けページ内の15 USDカードと20 USD比較表は未解消。課金対象職員・勤務表に含まれない管理者の無料条件は確認できた。地域・請求周期・現行適用額を揃えた見積が必要。B08でこのIDへ記録したDeputyの進捗メモは誤対応であり、採用しない。"
+    },
+    {
+      "task_id": "B03-20261011-TASK001",
+      "product": "US07",
+      "criterion": "C03",
+      "state": "in_progress",
+      "priority": 1,
+      "method": "vendor_document",
+      "note": "B08の課題ID対応を訂正。このIDはDeputyの日最大時間の課題。一般向け記事は冒頭で暦日、詳細で任意の24時間、Enterprise記事は24時間窓と説明する。Coreの現行仕様・契約範囲と日跨ぎ結果は未確定。B08でこのIDへ記録したRosterLabの進捗メモは誤対応であり、採用しない。"
+    },
+    {
+      "task_id": "B03-20261011-TASK005",
+      "product": "JP04",
+      "criterion": "J06",
+      "state": "in_progress",
+      "priority": 1,
+      "method": "public_document",
+      "note": "2026-10-12にブラウザで公式本文を確認。常勤換算は提供前で具体的公開日は引き続き不明。予定の判定対象は特養・老健の2種別、既定の常勤1.0と勤務時間方式の切替を追加確認。医療様式9との別制度・別提供範囲は維持。"
+    }
+  ]
+}

@@ -1,0 +1,760 @@
+{
+  "batch_id": "B14-20261012",
+  "prior_batch": "B13-20261012",
+  "as_of_date": "2026-10-12",
+  "resolution_policy_version": 2,
+  "description": "調査の薄い4サービスの顧客認証・権限、機能の前提、支援費、導入事例と資料公開範囲の追加調査",
+  "method": "公式Web・公開操作ヘルプ・製品別更新通知を既存採用資料と照合。Web取得困難なShiftWizard2ヘルプをログイン不要のブラウザで確認。Lightning BoltのViewerは認証転送まで確認。NTTデータ数理システムの公開導入事例PDF2頁は画像で確認し原本を保存。フォーム送信・アカウント登録・製品の独立試験は行わない。",
+  "sources": [
+    {
+      "key": "smart-compliance",
+      "url": "https://www.smartlinx.com/why-smartlinx/intelligent-compliance/",
+      "title": "Smartlinx Intelligent Compliance：資格・拠点別方針",
+      "publisher": "Smartlinx",
+      "reference": "公式資料の本文確認",
+      "retrieved_on": "2026-10-12",
+      "method": "public_web_body",
+      "scope_note": "公開資料の該当箇所を確認。検索抜粋だけの主張は採用しない。"
+    },
+    {
+      "key": "smart-deploy",
+      "url": "https://www.smartlinx.com/services/deployment/",
+      "title": "Smartlinx Deployment：導入・帳票・既存システム対応",
+      "publisher": "Smartlinx",
+      "reference": "公式資料の本文確認",
+      "retrieved_on": "2026-10-12",
+      "method": "public_web_body",
+      "scope_note": "公開資料の該当箇所を確認。検索抜粋だけの主張は採用しない。"
+    },
+    {
+      "key": "smart-training",
+      "url": "https://www.smartlinx.com/services/training/",
+      "title": "Smartlinx Training：講師・オンライン・訪問研修",
+      "publisher": "Smartlinx",
+      "reference": "公式資料の本文確認",
+      "retrieved_on": "2026-10-12",
+      "method": "public_web_body",
+      "scope_note": "公開資料の該当箇所を確認。検索抜粋だけの主張は採用しない。"
+    },
+    {
+      "key": "smart-support",
+      "url": "https://www.smartlinx.com/services/customer-support/",
+      "title": "Smartlinx Customer Support：支援レベルと保守",
+      "publisher": "Smartlinx",
+      "reference": "公式資料の本文確認",
+      "retrieved_on": "2026-10-12",
+      "method": "public_web_body",
+      "scope_note": "公開資料の該当箇所を確認。検索抜粋だけの主張は採用しない。"
+    },
+    {
+      "key": "smart-sms",
+      "url": "https://www.smartlinx.com/sms-terms/",
+      "title": "Smartlinx SMS Terms & Conditions：雇用者提供アプリ規約",
+      "publisher": "Smartlinx",
+      "reference": "公式資料の本文確認",
+      "retrieved_on": "2026-10-12",
+      "method": "public_web_body",
+      "scope_note": "記載の2020-12-15は発効日。公開日・最終更新日は不明のため日付欄は空欄とし、版ラベルへ保存。職員・雇用者向けアプリ規約で、法人Scheduling契約と区別。",
+      "version_label": "Effective Date: December 15, 2020"
+    },
+    {
+      "key": "smart-site-terms",
+      "url": "https://www.smartlinx.com/terms-conditions/",
+      "title": "Smartlinx Webサイト Terms & Conditions",
+      "publisher": "Smartlinx",
+      "reference": "公式資料の本文確認",
+      "retrieved_on": "2026-10-12",
+      "method": "public_web_body",
+      "scope_note": "公開資料の該当箇所を確認。検索抜粋だけの主張は採用しない。",
+      "updated_on": "2026-01-12"
+    },
+    {
+      "key": "sw-main",
+      "url": "https://www.healthstream.com/solution/scheduling/nurse-and-staff-scheduling/shiftwizard",
+      "title": "ShiftWizard 現行製品案内・支援時間",
+      "publisher": "HealthStream",
+      "reference": "公式資料の本文確認",
+      "retrieved_on": "2026-10-12",
+      "method": "public_web_body",
+      "scope_note": "公開資料の該当箇所を確認。検索抜粋だけの主張は採用しない。"
+    },
+    {
+      "key": "sw-jan",
+      "url": "https://community.healthstream.com/viewdocument/shiftwizard-monthly-notification-ja-2",
+      "title": "ShiftWizard Monthly Notification January 2026",
+      "publisher": "HealthStream",
+      "reference": "公式資料の本文確認",
+      "retrieved_on": "2026-10-12",
+      "method": "public_web_body",
+      "scope_note": "公開資料の該当箇所を確認。検索抜粋だけの主張は採用しない。",
+      "published_on": "2025-12-31"
+    },
+    {
+      "key": "sw-sep",
+      "url": "https://help-healthstream-ps.mcoutput.com/shiftwizard/Content/Resources/ReleaseNotes/Current.htm",
+      "title": "ShiftWizard September 2026 Release Notes：9/16更新・9/30プレビュー",
+      "publisher": "HealthStream",
+      "reference": "公式資料の本文確認",
+      "retrieved_on": "2026-10-12",
+      "method": "public_web_body",
+      "scope_note": "公開資料の該当箇所を確認。検索抜粋だけの主張は採用しない。",
+      "updated_on": "2026-09-22",
+      "version_label": "September 2026; updated 22 September 2026 22:00 GMT"
+    },
+    {
+      "key": "sw-login",
+      "url": "https://help-healthstream-ps.mcoutput.com/shiftwizard/Content/1-GetStarted/LoggingIn.htm",
+      "title": "ShiftWizard Log in：組織SSO・hStream ID・複数アカウント",
+      "publisher": "HealthStream",
+      "reference": "CU公開ヘルプ・全説明を展開してAX本文確認",
+      "retrieved_on": "2026-10-12",
+      "method": "browser_public_web_body",
+      "scope_note": "ログインせず公開操作説明を確認。認証の実施・アカウント登録は行わない。"
+    },
+    {
+      "key": "sw-access",
+      "url": "https://help-healthstream-ps.mcoutput.com/shiftwizard/Content/4-Help/F303800-Help/F303800-00-UserAccessLevelsLoginTypes.htm",
+      "title": "ShiftWizard User Access Levels and Login Types",
+      "publisher": "HealthStream",
+      "reference": "CU公開ヘルプ・権限表と注意事項をAX本文確認",
+      "retrieved_on": "2026-10-12",
+      "method": "browser_public_web_body",
+      "scope_note": "公開説明。実際の顧客権限を試験した結果ではない。"
+    },
+    {
+      "key": "lb-main",
+      "url": "https://www.perfectserve.com/solutions/physician-scheduling-software",
+      "title": "PerfectServe Clinical Team Scheduling / Lightning Bolt：製品FAQ",
+      "publisher": "PerfectServe",
+      "reference": "公式資料の本文確認",
+      "retrieved_on": "2026-10-12",
+      "method": "public_web_body",
+      "scope_note": "公開資料の該当箇所を確認。検索抜粋だけの主張は採用しない。"
+    },
+    {
+      "key": "lb-portal",
+      "url": "https://support.lightning-bolt.com/hc/en-us/articles/39291924762765-How-to-Log-In-to-the-Customer-Portal-for-the-First-Time",
+      "title": "Lightning Bolt Customer Portal 初回ログイン",
+      "publisher": "PerfectServe",
+      "reference": "公式資料の本文確認",
+      "retrieved_on": "2026-10-12",
+      "method": "public_web_body",
+      "scope_note": "公開資料の該当箇所を確認。検索抜粋だけの主張は採用しない。"
+    },
+    {
+      "key": "lb-viewer",
+      "url": "https://support.lightning-bolt.com/hc/en-us/categories/360003285752-Viewer",
+      "title": "Lightning Bolt Viewer ヘルプ：顧客認証へ転送",
+      "publisher": "PerfectServe",
+      "reference": "CU公開Support CenterのViewerリンクから認証画面への転送を確認",
+      "retrieved_on": "2026-10-12",
+      "method": "browser_public_web_body",
+      "scope_note": "認証画面まで確認。顧客アカウントの作成・ログインはせず、ヘルプ本文を取得しない。"
+    },
+    {
+      "key": "ntt-main",
+      "url": "https://www.msi.co.jp/solution/scheduling.html",
+      "title": "NTTデータ数理システム シフトスケジューリング：個別開発",
+      "publisher": "株式会社NTTデータ数理システム",
+      "reference": "公式資料の本文確認",
+      "retrieved_on": "2026-10-12",
+      "method": "public_web_body",
+      "scope_note": "公開資料の該当箇所を確認。検索抜粋だけの主張は採用しない。"
+    },
+    {
+      "key": "ntt-case",
+      "url": "https://www.msiism.jp/usecase/020_202307_Nuorium%20Optimizer%E4%BA%8B%E4%BE%8B_%E5%A4%A7%E9%98%AA%E3%82%AC%E3%82%B9%E6%A7%98.pdf",
+      "title": "Nuorium Optimizer 大阪ガス 当直シフト編成ツール 導入事例（2頁）",
+      "publisher": "株式会社NTTデータ数理システム",
+      "reference": "公式記事の埋め込みPDFリンクから取得、2頁を画像化して目視確認",
+      "retrieved_on": "2026-10-12",
+      "method": "public_pdf_body",
+      "scope_note": "日本語のテキスト抽出は文字化けするため描画した2頁で確認。原本PDFとSHA-256を保存。会社による導入事例で、独立性能試験ではない。",
+      "version_label": "PDF末尾識別子 020-202307",
+      "archive_path": "assets/sources/B14-20261012/osakagas-case-020-202307.pdf",
+      "page_count": 2
+    }
+  ],
+  "findings": [
+    {
+      "product": "US04",
+      "criterion": "D07",
+      "source": "smart-compliance",
+      "summary": "設定可能な規則で、資格失効後の職員への勤務割当を防ぐと説明する。",
+      "locator": "Compliance Built Into Every Process",
+      "limitations": "会社のScheduling・勤怠・給与・人事を横断する説明。例外権限・失効日の境界・個別契約は未確認。",
+      "state": "known",
+      "delivery": "native",
+      "support": "limited"
+    },
+    {
+      "product": "US04",
+      "criterion": "F03",
+      "source": "smart-compliance",
+      "summary": "拠点ごとの方針を適用できると説明する。",
+      "locator": "Labor Compliance Across Locations",
+      "limitations": "米国の連邦・州・地方の労務方針を対象とした説明。日本の制度対応や拠点間共同最適化を証明しない。",
+      "state": "known",
+      "delivery": "native",
+      "support": "limited"
+    },
+    {
+      "product": "US04",
+      "criterion": "K03",
+      "source": "smart-deploy",
+      "summary": "導入担当チームが計画から稼働開始まで支援し、帳票調整と既存システムとの連携を扱う。",
+      "locator": "Expert-Led Implementation / We don’t do cookie-cutter",
+      "limitations": "Smartlinx全体の導入サービス。Schedulingに必要な顧客作業・連携仕様・標準料金内包は未確認。",
+      "state": "known",
+      "delivery": "managed_service",
+      "support": "limited"
+    },
+    {
+      "product": "US04",
+      "criterion": "P04",
+      "source": "smart-deploy",
+      "summary": "導入担当・帳票調整・既存連携の案内はあるが、Schedulingの初期費用は記載未確認。",
+      "locator": "Deployment 本文",
+      "limitations": "未記載を無料とは扱わない。移行・連携・研修の必須／任意と金額は見積が必要。",
+      "state": "not_found",
+      "delivery": "managed_service",
+      "support": "limited"
+    },
+    {
+      "product": "US04",
+      "criterion": "O04",
+      "source": "smart-training",
+      "summary": "10人の小集団での講師研修、オンライン教材・顧客ガイド、訪問研修を案内する。",
+      "locator": "Train Your Team, Your Way",
+      "limitations": "ガイドの24/7閲覧は有人サポートの24時間対応ではない。Schedulingの受講対象・料金・契約内包は未確認。",
+      "state": "known",
+      "delivery": "managed_service",
+      "support": "limited"
+    },
+    {
+      "product": "US04",
+      "criterion": "O04",
+      "source": "smart-support",
+      "summary": "支援ポータルでチケットを受け付け、Help Deskと製品保守の支援レベルを予算に応じて選ぶと説明。窓口は800-307-8535。",
+      "locator": "Need Answers Right Away / Choose the Support Level / footer",
+      "limitations": "Smartlinx共通の支援案内。曜日・時間帯・応答目標、日本語対応、Scheduling契約への内包は未確認。",
+      "state": "known",
+      "delivery": "managed_service",
+      "support": "limited"
+    },
+    {
+      "product": "US04",
+      "criterion": "P05",
+      "source": "smart-support",
+      "summary": "Help Deskと製品保守の支援レベルは選択制だが、料金・標準内包・Schedulingに必須の構成は記載未確認。",
+      "locator": "Choose the Support Level That Fits Your Needs",
+      "limitations": "全支援が基本料内とも、全支援が別料金とも判断しない。",
+      "state": "not_found",
+      "delivery": "managed_service",
+      "support": "limited"
+    },
+    {
+      "product": "US04",
+      "criterion": "M08",
+      "source": "smart-sms",
+      "summary": "雇用終了後に最長30日の読取専用アクセスを雇用者が任意に与えられるが、法人の解約時の全量搬出は記載未確認。",
+      "locator": "II. PASSWORDS AND ACCESS / VII. DURATION OF TERMS",
+      "limitations": "職員・雇用者・Smartlinx間の2020年アプリ規約。職員の退職と法人のサービス解約、閲覧と全量出力を分ける。",
+      "state": "not_found",
+      "delivery": "native",
+      "support": "limited"
+    },
+    {
+      "product": "US04",
+      "criterion": "P02",
+      "source": "smart-sms",
+      "summary": "アプリの登録・購読は原則1人の利用許可とするが、法人Schedulingの課金人数・課金単位は確定できない。",
+      "locator": "II. PASSWORDS AND ACCESS",
+      "limitations": "利用許可を1ユーザー従量課金と解釈しない。兼務・休職・管理者の計数は見積・法人契約で確認。",
+      "state": "not_found",
+      "delivery": "native",
+      "support": "limited"
+    },
+    {
+      "product": "US04",
+      "criterion": "P01",
+      "source": "smart-site-terms",
+      "summary": "Webサイト無料提供の条項はあるが、Schedulingの製品料金には適用できない。具体的金額は未確認。",
+      "locator": "Website定義 / Reasonableness",
+      "limitations": "Webサイト利用規約と法人の製品契約を区別。無料プランの根拠にしない。",
+      "state": "not_found",
+      "delivery": "unknown",
+      "support": "limited"
+    },
+    {
+      "product": "US12",
+      "criterion": "N02",
+      "source": "sw-login",
+      "summary": "組織でSSOを使う場合は提供されたURLの専用ボタンから組織認証で入る。hStream IDでは対象サイトのShiftWizardアカウントとの紐付けが必要。",
+      "locator": "冒頭のSSO NOTE / Log in with hStream ID",
+      "limitations": "SSOの顧客向け提供を部分確認。SAML/OIDC等の方式、プラン、費用、MFA必須化は未確認。電話番号の確認は回復・パスワード再設定用と説明される。",
+      "state": "known",
+      "delivery": "native",
+      "support": "limited"
+    },
+    {
+      "product": "US12",
+      "criterion": "N01",
+      "source": "sw-login",
+      "summary": "同一サイトの複数紐付けアカウントはログイン時に選択し、非アクティブと別組織・別サイトのアカウントはその一覧に表示しない。",
+      "locator": "Linked Accounts / Logging in With Multiple Linked Accounts",
+      "limitations": "別サイトはそれぞれのURLから利用する説明。実際の組織間データ分離や越権防止の試験ではない。",
+      "state": "known",
+      "delivery": "native",
+      "support": "limited"
+    },
+    {
+      "product": "US12",
+      "criterion": "N01",
+      "source": "sw-access",
+      "summary": "Login Type・拠点部署の割当・部署内のAccess Levelを組み合わせる。Login Typeは1人1種類で、変更が部署権限より優先する場合がある。",
+      "locator": "How ShiftWizard Determines Access / CAUTION",
+      "limitations": "部署ごとに別のLogin Typeを設定しないよう注意する。変更後の全所属部署の権限確認が必要。強制的なテナント分離の実試験は未実施。",
+      "state": "known",
+      "delivery": "native",
+      "support": "limited"
+    },
+    {
+      "product": "US12",
+      "criterion": "K03",
+      "source": "sw-access",
+      "summary": "SuperUserがLogin Typeを割り当て、一部の上位・専門役割にはHealthStreamまたはCustomer Success Advisorの支援が必要。",
+      "locator": "Who Can Assign Access",
+      "limitations": "初期権限設定の担当を部分確認。ルール・連携等すべての初期設定代行や追加料金は未確認。",
+      "state": "known",
+      "delivery": "native",
+      "support": "limited"
+    },
+    {
+      "product": "US12",
+      "criterion": "O06",
+      "source": "sw-jan",
+      "summary": "2026年1月向け通知は新モバイルアプリの公開と旧アプリの終了移行を説明する。Push通知・位置情報打刻・資格Walletは同通知で今後の予定。",
+      "locator": "Announcements: new ShiftWizard mobile app",
+      "limitations": "2025-12-31公開の当時の通知。予定機能が2026-10-12に提供済みとは確定しない。切替期限・端末要件・データ移行結果は未確認。",
+      "state": "known",
+      "delivery": "native",
+      "support": "limited"
+    },
+    {
+      "product": "US12",
+      "criterion": "N03",
+      "source": "sw-sep",
+      "summary": "9月30日プレビューはManager以上が部署横断で勤務・職員プロフィールの変更を閲覧できるActivity Logを案内。横断表示の期間は90日以内。",
+      "locator": "September 30, 2026 – Preview / Employee Profile Activity Log Across Departments",
+      "limitations": "プレビューのため提供済みとは未確定。90日は検索範囲の制限で、ログ保存期間ではない。出力・改ざん防止・全操作追跡は未確認。",
+      "state": "known",
+      "delivery": "native",
+      "support": "planned"
+    },
+    {
+      "product": "US12",
+      "criterion": "I01",
+      "source": "sw-main",
+      "summary": "現行製品案内はPredictive Censusによる需要予測とリアルタイムの人員情報を案内する。",
+      "locator": "Predictive Census",
+      "limitations": "予測精度・対象期間・追加費は未確認。別記の9月30日プレビューの詳細が導入済みである証明にはしない。",
+      "state": "known",
+      "delivery": "native",
+      "support": "limited"
+    },
+    {
+      "product": "US12",
+      "criterion": "I01",
+      "source": "sw-sep",
+      "summary": "9月30日プレビューは将来枠の人員計算に予測Censusを使い、実績取得後に置き換える案内。ADT連携、全社・部署の有効化、Census設定が必要。",
+      "locator": "September 30, 2026 – Preview / Staffing Worksheet Predictive Census",
+      "limitations": "同ページはプレビューと明記。新しい人員計算の提供開始・契約内包・予測精度は未確認。",
+      "state": "known",
+      "delivery": "native",
+      "support": "planned"
+    },
+    {
+      "product": "US12",
+      "criterion": "H05",
+      "source": "sw-sep",
+      "summary": "9月16日更新は、既存勤務と競合するGive Shiftを職員が受け取れていた問題の修正を記載する。",
+      "locator": "September 16, 2026 / Give Shift Conflicts",
+      "limitations": "提供者の修正記録。全労務・資格・連勤の再検証や、各顧客環境への適用を独立確認した結果ではない。",
+      "state": "known",
+      "delivery": "native",
+      "support": "limited"
+    },
+    {
+      "product": "US12",
+      "criterion": "O04",
+      "source": "sw-main",
+      "summary": "製品案内はCustomer Service窓口800-521-0574、有人支援7:00〜19:00 CST、祝日除外を掲載する。",
+      "locator": "Customer Support",
+      "limitations": "新しい1月通知の7:00〜18:00 CTとは時間・連絡先が異なる。案内ごとの適用対象・現契約を要照合。",
+      "state": "known",
+      "delivery": "managed_service",
+      "support": "limited"
+    },
+    {
+      "product": "US12",
+      "criterion": "O04",
+      "source": "sw-jan",
+      "summary": "2026年1月通知は月〜金7:00〜18:00 CT、877-301-4786と案内。休業中はポータル・コミュニティ・教材を利用する。",
+      "locator": "Customer Support Information / Holiday Office Hours",
+      "limitations": "2025-12-31の通知内容。製品案内は19:00までと記載。窓口・支援プラン・祝日例外・現時点の時間帯は未確定。",
+      "state": "known",
+      "delivery": "managed_service",
+      "support": "limited"
+    },
+    {
+      "product": "US12",
+      "criterion": "O01",
+      "source": "sw-jan",
+      "summary": "毎週火曜22:00〜翌1:00 CTのネットワーク保守枠を記載するが、製品の稼働率保証・補償条件は未確認。",
+      "locator": "Software Maintenance Window",
+      "limitations": "当時の保守枠。すべての保守で3時間停止することや、現在のSLAを意味しない。",
+      "state": "not_found",
+      "delivery": "native",
+      "support": "limited"
+    },
+    {
+      "product": "US12",
+      "criterion": "P01",
+      "source": "sw-main",
+      "summary": "現行製品案内にはデモ導線があるが、基本料金の金額・料金方式は記載未確認。",
+      "locator": "製品本文・FAQ・デモ導線",
+      "limitations": "デモを無料の本番利用や確定した試用契約と扱わない。",
+      "state": "not_found",
+      "delivery": "unknown",
+      "support": "limited"
+    },
+    {
+      "product": "US12",
+      "criterion": "P05",
+      "source": "sw-sep",
+      "summary": "予測Censusの設定・連携の前提は示されるが、ADT連携や有効化の料金・標準内包は記載未確認。",
+      "locator": "Staffing Worksheet Predictive Census / PREREQUISITE / optional or role-specific留保",
+      "limitations": "プレビューの技術条件と契約費用は別。別のAcuity等の契約内包も引き続き必要。",
+      "state": "not_found",
+      "delivery": "unknown",
+      "support": "limited"
+    },
+    {
+      "product": "US16",
+      "criterion": "P01",
+      "source": "lb-main",
+      "summary": "PerfectServeは組織規模と必要ソリューション（Scheduling等）に応じた個別見積もりと説明する。",
+      "locator": "FAQ: How much does PerfectServe cost?",
+      "limitations": "プラットフォーム共通FAQ。Lightning Bolt単体の金額、課金人数・最低契約・税は未確認。",
+      "state": "known",
+      "delivery": "unknown",
+      "support": "limited"
+    },
+    {
+      "product": "US16",
+      "criterion": "M06",
+      "source": "lb-main",
+      "summary": "Lightning BoltのFAQはClinConnect・Microsoft Outlookとの連携、Epic・Oracleとの認定連携を案内する。",
+      "locator": "FAQ: ClinConnect / custom development with Epic or Oracle",
+      "limitations": "対応相手を部分確認。各連携の方向・項目・版・認証・費用と契約への内包は未確認。全270超の連携がLightning Boltに使えるとはしない。",
+      "state": "known",
+      "delivery": "native",
+      "support": "limited"
+    },
+    {
+      "product": "US16",
+      "criterion": "K04",
+      "source": "lb-main",
+      "summary": "Lightning BoltのFAQは担当コンサルタントによるデータ収集・研修・設定と、通常4〜6週間の導入目安を掲載。",
+      "locator": "FAQ: What does implementation look like?",
+      "limitations": "TPMGの導入に言及する文脈。管理者の都合で調整可能と説明。施設規模ごとの実測工数・全案件の保証期限ではない。",
+      "state": "known",
+      "delivery": "managed_service",
+      "support": "limited"
+    },
+    {
+      "product": "US16",
+      "criterion": "O06",
+      "source": "lb-main",
+      "summary": "lightning-bolt.comからPerfectServeへの移転案内は、既存アカウント・勤務表・ログインに変更がないと説明する。",
+      "locator": "Lightning Bolt has a new home",
+      "limitations": "Web案内の移転範囲。API・帳票・ルール全般の後方互換保証や、実動作の独立試験ではない。",
+      "state": "known",
+      "delivery": "native",
+      "support": "limited"
+    },
+    {
+      "product": "US16",
+      "criterion": "P04",
+      "source": "lb-main",
+      "summary": "個別の導入支援・研修・設定は案内されるが、初期費用の金額と必須／任意区分は未確認。",
+      "locator": "Implementing a long-term scheduling partner / implementation FAQ",
+      "limitations": "基本利用・追加機能・連携・導入支援を同じ見積条件で確認する必要がある。",
+      "state": "not_found",
+      "delivery": "managed_service",
+      "support": "limited"
+    },
+    {
+      "product": "US16",
+      "criterion": "N02",
+      "source": "lb-portal",
+      "summary": "顧客ポータルのZendesk認証はLightning Boltの製品認証と紐付かないと明記する。製品のSSO・MFA仕様はこの資料では未確認。",
+      "locator": "冒頭 Note",
+      "limitations": "サポート認証を製品認証へ転用しない。会社共通の安全性案内も別資料。",
+      "state": "not_found",
+      "delivery": "unknown",
+      "support": "limited"
+    },
+    {
+      "product": "US16",
+      "criterion": "M02",
+      "source": "lb-viewer",
+      "summary": "Viewerヘルプは顧客ログイン画面へ転送され、勤務表・希望・ルールのCSV出力仕様を確認できない。",
+      "locator": "Support Center > Viewer → Sign in",
+      "limitations": "アカウント作成やログインは行わない。検索結果にある過去の説明や添付ファイルの404を現行仕様として採用しない。",
+      "state": "inaccessible",
+      "delivery": "unknown",
+      "support": "limited"
+    },
+    {
+      "product": "US16",
+      "criterion": "M08",
+      "source": "lb-viewer",
+      "summary": "閲覧・出力の顧客ヘルプは認証が必要で、法人解約時の希望・設定・履歴を含む全量出力の形式・費用・期限は未確認。",
+      "locator": "Viewer 認証転送／解約時の契約・出力範囲",
+      "limitations": "ヘルプの認証要求は出力非対応の証拠ではない。解約契約と全量データ搬出仕様の確認が残る。",
+      "state": "inaccessible",
+      "delivery": "unknown",
+      "support": "limited"
+    },
+    {
+      "product": "JP14",
+      "criterion": "Q04",
+      "source": "ntt-case",
+      "summary": "大阪ガスの緊急出動当直の事例。5地区に分かれ、1地区に複数部署からなる約200人がいると説明する。",
+      "locator": "p.1: シフト編成ツールで、どのような問題を解決したのですか",
+      "limitations": "各地区の紹介規模。全員同時の単一最適化や、全案件の上限を示すものではない。有償契約条件・調査人数は未確認。",
+      "state": "known",
+      "delivery": "custom",
+      "support": "limited"
+    },
+    {
+      "product": "JP14",
+      "criterion": "Q04",
+      "source": "ntt-main",
+      "summary": "大阪ガスの当直編成とTMJの300人規模のオペレーター勤務を、別々の適用事例として掲載する。",
+      "locator": "適用例: TMJ / 大阪ガス",
+      "limitations": "既存のTMJ事例の規模記録を保持するため併記。大阪ガス事例の仕様をTMJや標準SaaSへ一律適用しない。",
+      "state": "known",
+      "delivery": "custom",
+      "support": "limited"
+    },
+    {
+      "product": "JP14",
+      "criterion": "Q05",
+      "source": "ntt-case",
+      "summary": "1か月分の編成は従来延べ20時間、正月・GW等は40時間。導入後はデータ準備・計算・微調整まで4時間と利用担当者が説明。",
+      "locator": "p.1: 作業時間が最大10分の1に",
+      "limitations": "ベンダー掲載の担当者インタビュー。計算だけの時間ではなく、希望回収・承認・公開を含む全工程の測定とは未確認。サンプル数・集計期間は不明。",
+      "state": "known",
+      "delivery": "custom",
+      "support": "limited"
+    },
+    {
+      "product": "JP14",
+      "criterion": "D06",
+      "source": "ntt-case",
+      "summary": "2人1組の出動体制で、組の2人が同じ部署にならないという制約を説明する。",
+      "locator": "p.1: シフト編成の制約",
+      "limitations": "大阪ガス用の個別モデル。一般SaaSの設定範囲ではなく、全案件で標準提供されるとは判断しない。",
+      "state": "known",
+      "delivery": "custom",
+      "support": "limited"
+    },
+    {
+      "product": "JP14",
+      "criterion": "E04",
+      "source": "ntt-case",
+      "summary": "当直を日数と曜日の公平性を保ちながら編成すると利用担当者が説明。",
+      "locator": "p.1: シフト編成の制約",
+      "limitations": "個別事例の対象指標を部分確認。契約勤務量による補正・指標式・効果の独立試験は未確認。",
+      "state": "known",
+      "delivery": "custom",
+      "support": "limited"
+    },
+    {
+      "product": "JP14",
+      "criterion": "E05",
+      "source": "ntt-case",
+      "summary": "入力の図に直近の過去3か月の当直勤務実績を含める。",
+      "locator": "p.2: シフト編成ツールの全体像",
+      "limitations": "履歴の入力範囲のみ確認。何の公平性指標にどう使うか、長期補正の式・適用範囲は未確認。",
+      "state": "known",
+      "delivery": "custom",
+      "support": "limited"
+    },
+    {
+      "product": "JP14",
+      "criterion": "F03",
+      "source": "ntt-case",
+      "summary": "個別モデルをExcelから設定・実行し、曜日別の重み・ペナルティの設定シートを図示する。",
+      "locator": "p.2: シフト編成ツールの全体像",
+      "limitations": "数式化した個別開発で、一般利用者が任意の条件を設定できる範囲は未確認。必須条件が重みで緩和可能とも判断しない。",
+      "state": "known",
+      "delivery": "custom",
+      "support": "limited"
+    },
+    {
+      "product": "JP14",
+      "criterion": "K03",
+      "source": "ntt-case",
+      "summary": "顧客の情報通信部が自社開発し、ベンダーのコード相談・私設セミナーを使い、現場で試したプロトタイプからツールに仕上げた。",
+      "locator": "p.2: 数理計画ソルバー採用理由／プログラム開発／プロトタイプ",
+      "limitations": "この顧客事例の作業分担。現在のすべての案件が顧客自作とも、導入費に相談・研修が含まれるとも判断しない。",
+      "state": "known",
+      "delivery": "custom",
+      "support": "limited"
+    },
+    {
+      "product": "JP14",
+      "criterion": "H04",
+      "source": "ntt-case",
+      "summary": "欠員発生時は入力データを1か所置き換えて再計算できると利用担当者が説明する。",
+      "locator": "p.1: 結果と作業時間の説明",
+      "limitations": "特定ツールの再計算手順。既存割当の固定、変更最小化、再計算速度・全安全条件の検証は未確認。",
+      "state": "known",
+      "delivery": "custom",
+      "support": "limited"
+    },
+    {
+      "product": "JP14",
+      "criterion": "M03",
+      "source": "ntt-case",
+      "summary": "Excel上での条件設定・実行は図示されるが、最終勤務表の編集可能なExcelファイル仕様・帳票レイアウトは確定できない。",
+      "locator": "p.2: シフト編成ツールの全体像",
+      "limitations": "Excelの操作画面を、そのままExcel出力の証拠に置き換えない。",
+      "state": "not_found",
+      "delivery": "custom",
+      "support": "limited"
+    },
+    {
+      "product": "JP14",
+      "criterion": "P01",
+      "source": "ntt-main",
+      "summary": "個別要件の相談・開発を案内するが、案件料金・ソルバー費の具体的金額は未確認。",
+      "locator": "お問い合わせ・ご相談／関連製品",
+      "limitations": "他社の勤務シフト作成お助けマンや関連ソルバーの価格を、この受託案件の価格へ転用しない。",
+      "state": "not_found",
+      "delivery": "custom",
+      "support": "limited"
+    },
+    {
+      "product": "JP14",
+      "criterion": "P04",
+      "source": "ntt-main",
+      "summary": "個別システム開発・Excel呼出モジュールに対応するが、必須開発費・研修費・導入移行費の金額は未確認。",
+      "locator": "お問い合わせ・ご相談",
+      "limitations": "顧客側の工数も必要となり得る。開発価格・支援内包を見積で確認。",
+      "state": "not_found",
+      "delivery": "custom",
+      "support": "limited"
+    },
+    {
+      "product": "JP14",
+      "criterion": "O04",
+      "source": "ntt-case",
+      "summary": "PDF末尾は営業問い合わせの平日10:00〜16:00を示すが、契約後の技術サポート時間・応答目標は未確認。",
+      "locator": "p.2: 営業担当 footer",
+      "limitations": "営業受付を本番技術サポートの時間として採用しない。",
+      "state": "not_found",
+      "delivery": "managed_service",
+      "support": "limited"
+    }
+  ],
+  "prices": [],
+  "followups": [
+    {
+      "product": "US04",
+      "criterion": "P05",
+      "priority": 2,
+      "method": "vendor_quote",
+      "question": "Schedulingに必要なHelp Desk・保守・移行・研修の構成、必須／任意、支援レベルごとの時間・応答目標・追加費を同条件の見積で確認する。"
+    },
+    {
+      "product": "US12",
+      "criterion": "I01",
+      "priority": 2,
+      "method": "vendor_document",
+      "question": "9/30プレビューの予測Census・部署横断Activity Logが提供済みか、版・ADT連携・有効化・権限・契約内包と追加費を確認する。90日の表示範囲とログ保持を分ける。"
+    },
+    {
+      "product": "US12",
+      "criterion": "O04",
+      "priority": 2,
+      "method": "vendor_document",
+      "question": "製品案内の7〜19時CSTと1月通知の平日7〜18時CTの窓口・対象契約・現行時間・休日例外を照合する。"
+    },
+    {
+      "product": "US16",
+      "criterion": "M08",
+      "priority": 2,
+      "method": "vendor_document",
+      "question": "Viewer資料の顧客認証後に、勤務・希望・ルール・履歴の出力仕様、法人解約時の全量搬出・費用・猶予・削除条件を確認する。サポート認証と製品認証を分ける。"
+    },
+    {
+      "product": "JP14",
+      "criterion": "P04",
+      "priority": 2,
+      "method": "vendor_quote",
+      "question": "案件の顧客・ベンダー作業分担、開発・Nuoriumライセンス・研修・保守・移行の必須／任意と金額、初期工数を確認する。過去大阪ガス事例の自作方式を現案件の契約と混同しない。"
+    }
+  ],
+  "task_updates": [
+    {
+      "task_id": "B03-20261011-TASK006",
+      "state": "in_progress",
+      "priority": 2,
+      "method": "vendor_document",
+      "note": "公開操作ヘルプで顧客SSOとhStream IDの紐付け・回復用電話番号を確認。旧2020年の2FA予告を現行MFAと扱わず、方式・費用・必須化の契約確認が残る。"
+    }
+  ],
+  "retrieval_checks": [
+    {
+      "product": "US12",
+      "url": "https://help-healthstream-ps.mcoutput.com/shiftwizard/Content/1-GetStarted/LoggingIn.htm",
+      "result": "web_fetch_failed_browser_body_confirmed",
+      "notes": "WebはCache miss。CUで公開本文を展開しSSO・hStream ID・複数紐付けの説明を確認。ログイン・登録はせず。"
+    },
+    {
+      "product": "US12",
+      "url": "https://help-healthstream-ps.mcoutput.com/shiftwizard/Content/4-Help/F303800-Help/F303800-00-UserAccessLevelsLoginTypes.htm",
+      "result": "web_fetch_failed_browser_body_confirmed",
+      "notes": "Webは取得不可。CUで公開本文・権限表・Login Typeの注意を確認。"
+    },
+    {
+      "product": "US16",
+      "url": "https://support.lightning-bolt.com/hc/en-us/categories/360003285752-Viewer",
+      "result": "login_required",
+      "notes": "公開Support CenterのViewerリンクをCUで開くと顧客認証へ転送。本文・添付出力仕様は取得しない。"
+    },
+    {
+      "product": "US16",
+      "url": "https://support.lightning-bolt.com/hc/en-us/article_attachments/31913254581901",
+      "result": "http_404",
+      "notes": "検索に現れた2025年ブランド移行FAQ PDFはWeb Cache miss、直接取得は404。断片のSSO記載を採用せず。"
+    },
+    {
+      "product": "US16",
+      "url": "https://support.lightning-bolt.com/hc/en-us/article_attachments/37603988198541",
+      "result": "http_404",
+      "notes": "検索で見つかったGetting Started PDFは本文取得404。希望入力や権限を検索断片だけで採用せず。"
+    },
+    {
+      "product": "JP14",
+      "url": "https://www.msiism.jp/usecase/020_202307_Nuorium%20Optimizer%E4%BA%8B%E4%BE%8B_%E5%A4%A7%E9%98%AA%E3%82%AC%E3%82%B9%E6%A7%98.pdf",
+      "result": "pdf_downloaded_visual_body_confirmed",
+      "notes": "WebはCache miss。公式リンクのPDFを取得し2頁を画像化して確認。テキスト抽出は日本語が文字化け。原本SHA-256保存。"
+    }
+  ]
+}

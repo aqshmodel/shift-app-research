@@ -13,7 +13,7 @@ export const GET: APIRoute=async({request,params,locals})=>{
  const input=Object.fromEntries(url.searchParams);
  try {
   if(path==='scope'){if(Object.keys(input).length) return json({error:'不要な入力です。'},400);return json(await scope());}
-  if(path==='search') {return json({...await search(input),as_of_date:'2026-10-11',snapshot_id:(await scope()).snapshot_id});}
+  if(path==='search') {const result=await search(input);const current=await scope();return json({...result,as_of_date:current.as_of_date,snapshot_id:current.snapshot_id});}
   if(path.startsWith('products/')){
    if(Object.keys(input).length)return json({error:'不要な入力です。'},400);
    const id=validateId(path.slice(9));const p=await product(id);if(!p)return json({error:'製品が見つかりません。'},404);

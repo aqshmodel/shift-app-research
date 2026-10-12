@@ -1,0 +1,190 @@
+{
+  "batch_id": "B17-20261012",
+  "prior_batch": "B16-20261012",
+  "as_of_date": "2026-10-12",
+  "resolution_policy_version": 2,
+  "description": "QGenda Nurse & Staffの自動割当・契約内包・支援・料金に限定した追加確認。既存の未確認観測と窓口案内は重複登録しない。",
+  "method": "公式製品・共通Scheduling・CX・サポート・Web利用規約・Legalの本文を既存観測と照合。7観測の根拠は4本文。既存B01の全自動割当未確認、P01の金額未公開、サポート電話・ケース・権限注意は再確認ログに留めて同じ内容を追加しない。全社支援案内や医師向けのrule-based記載を看護製品の契約・性能保証へ流用しない。Web全文・PDF原本は未保存。デモ、製品ログイン、フォーム送信、営業連絡、見積、決済、API呼出し、独立製品試験、遠隔更新は行わない。",
+  "sources": [
+    {
+      "key": "qgenda-scheduling-boundary",
+      "url": "https://www.qgenda.com/workforce-scheduling-software/",
+      "title": "QGenda Workforce Scheduling：ProvidersとNurse and Staffの説明範囲",
+      "publisher": "QGenda",
+      "reference": "公式共通Schedulingページ本文",
+      "retrieved_on": "2026-10-12",
+      "method": "public_web_body",
+      "method_note": "医師向けと看護・スタッフ向けの説明を分けて読む。rule-basedという医師向けの記載を看護の全自動割当へ流用しない。Web全文・ハッシュ未保存。"
+    },
+    {
+      "key": "qgenda-cx",
+      "url": "https://www.qgenda.com/qgenda-cx-our-approach/",
+      "title": "QGenda Customer Experience：全社支援・教育・契約留保",
+      "publisher": "QGenda",
+      "reference": "公式CX案内本文",
+      "retrieved_on": "2026-10-12",
+      "method": "public_web_body",
+      "method_note": "全社の支援・教育メニューの記載。Nurse & Staffの個別契約、地域、障害区分、応答期限、費用内包は未確定。Web全文・ハッシュ未保存。"
+    },
+    {
+      "key": "qgenda-nurse-price-units",
+      "url": "https://www.qgenda.com/nurse-and-staff-scheduling-software/",
+      "title": "QGenda Nurse & Staff：課金対象・単位の確認範囲",
+      "publisher": "QGenda",
+      "reference": "公式看護・スタッフ製品本文",
+      "retrieved_on": "2026-10-12",
+      "method": "public_web_body",
+      "method_note": "既存の自動割当未確認・金額未公開という観測は再登録しない。今回初めて確認対象にした課金対象・単位の未確認範囲に限る。Web全文・ハッシュ未保存。"
+    },
+    {
+      "key": "qgenda-website-terms",
+      "url": "https://www.qgenda.com/terms/",
+      "title": "QGenda Terms of Service：Web利用と製品の別書面契約",
+      "publisher": "QGenda",
+      "reference": "公式Webサイト利用規約本文",
+      "retrieved_on": "2026-10-12",
+      "method": "public_web_body",
+      "method_note": "Webサイト用規約のEffective Dateは2017-07-01。これは文書の適用日で、公開日や看護製品の契約開始日ではない。§5の別書面契約の記載から製品の価格・周期・更新条件を推定しない。Web全文・ハッシュ未保存。"
+    }
+  ],
+  "findings": [
+    {
+      "product": "US02",
+      "criterion": "B01",
+      "source": "qgenda-scheduling-boundary",
+      "summary": "共通Schedulingページは医師向けをrule-basedと説明する一方、看護・スタッフ向けは配置計画・柔軟な勤務表・モバイル自己操作を案内する。看護の制約付き全自動割当の詳細はこの本文でも確定できない。",
+      "locator": "Centralized, AI-Driven Scheduling / for Providers と for Nurse and Staff",
+      "limitations": "別対象の説明の境界を確認した新しい根拠。医師向けの規則・希望を考慮する記載を看護へコピーしない。既存の看護製品ページの未確認観測も保持し、非対応とは判断しない。",
+      "state": "not_found",
+      "delivery": "unknown"
+    },
+    {
+      "product": "US02",
+      "criterion": "B07",
+      "source": "qgenda-scheduling-boundary",
+      "summary": "医師向け、看護・スタッフ向け、勤怠を別の案内先として区分するが、単一契約での機能内包・購入単位・追加モジュール条件は本文で確認できない。",
+      "locator": "for Providers / for Nurse and Staff / 共通ナビゲーションのTime and Attendance",
+      "limitations": "同じプラットフォームやサイトに載ることを単一ライセンスの内包と解釈しない。看護製品の現行注文書・機能別購入範囲は未取得。",
+      "state": "not_found",
+      "delivery": "unknown"
+    },
+    {
+      "product": "US02",
+      "criterion": "O04",
+      "source": "qgenda-cx",
+      "summary": "全社CX案内はオンライン・電話・自己解決資料による24x7x365の支援、サービスレベル目標とエスカレーション経路を掲示する。",
+      "locator": "Expert Support You Can Count On",
+      "limitations": "提供者の全社案内。看護契約への適用、タイムゾーン、言語、重大度別の受付・応答・解決時間、保証・補償は未確認。数値のないSLOを契約SLAや実績へ置換しない。",
+      "state": "known",
+      "support": "limited",
+      "delivery": "unknown"
+    },
+    {
+      "product": "US02",
+      "criterion": "O04",
+      "source": "qgenda-cx",
+      "summary": "全社教育案内には動画・チュートリアルの自己解決ポータル、自習型オンライン講習、講師付き実習、役割別の研修・認定プログラムがある。",
+      "locator": "Tailored Education That Fits Your Needs",
+      "limitations": "支援メニューの資料記載。看護契約に含まれる対象者・利用枠、言語、個別費用、修了条件、現行の全講習提供は未確認。",
+      "state": "known",
+      "support": "limited",
+      "delivery": "unknown"
+    },
+    {
+      "product": "US02",
+      "criterion": "B07",
+      "source": "qgenda-cx",
+      "summary": "全社CXは導入コンサルタント、導入後の技術担当、個別の変更管理・相談、パートナーの最適化支援を案内するが、標準内包と追加費用の境界は確定できない。",
+      "locator": "Experienced Service Delivery / Seamless Execution / Technical Expertise",
+      "limitations": "看護製品の個別支援契約・作業分担・見積は未取得。全社メニューの存在を標準契約への無償内包と扱わない。",
+      "state": "not_found",
+      "delivery": "unknown"
+    },
+    {
+      "product": "US02",
+      "criterion": "P02",
+      "source": "qgenda-nurse-price-units",
+      "summary": "看護・スタッフ製品本文には、課金対象の定義、登録・在籍・稼働人数、管理者、施設・部署・ユーザーのどれを課金単位にするかが明示されていない。",
+      "locator": "製品本文 / Related Solutions / Request a Demo",
+      "limitations": "今回の本文範囲に限る未確認。課金単位や最低人数を推定せず、個別見積資料を必要とする。既存の金額未公開というP01観測とは別の確認対象。",
+      "state": "not_found",
+      "delivery": "unknown"
+    },
+    {
+      "product": "US02",
+      "criterion": "P03",
+      "source": "qgenda-website-terms",
+      "summary": "Web利用規約§5は製品・サービスの購入と使用が別の書面契約に従うと記載する。看護製品の請求周期・最低契約・更新条件はこのWeb規約から確定できない。",
+      "locator": "Terms of Service / Effective Date / §1 Parties / §5 Separate Agreements",
+      "limitations": "2017-07-01適用のWebサイト用規約。製品の利用契約や現行注文書ではない。製品固有の支払期限・更新・解約条件をこの規約の別条項から転用しない。",
+      "state": "not_found",
+      "delivery": "unknown"
+    }
+  ],
+  "prices": [],
+  "followups": [],
+  "task_updates": [
+    {
+      "task_id": "TASK-RES00900",
+      "state": "in_progress",
+      "priority": 2,
+      "method": "vendor_document",
+      "note": "B17：共通SchedulingのProvidersとNurse & Staffを分けて再確認。医師向けrule-basedを看護へ流用しない。既存B01-O00268の同じ未確認要約は重複追加しない。看護の具体的割当・制約・失敗時仕様は未確定で継続。"
+    },
+    {
+      "task_id": "TASK-RES00903",
+      "state": "in_progress",
+      "priority": 2,
+      "method": "vendor_document",
+      "note": "B17：製品別導線と全社支援メニューを確認。看護・勤怠・導入後支援・パートナー作業の標準内包／別契約／追加費用は未確認。現行注文書・購入機能表が必要。"
+    },
+    {
+      "task_id": "TASK-RES00933",
+      "state": "in_progress",
+      "priority": 2,
+      "method": "vendor_document",
+      "note": "B17：全社24x7x365、教育メニュー、数値未記載SLOとエスカレーションを補完。既存B05の電話・ケース・Shift Admin別窓口・安全上の操作制限は再登録しない。看護契約の地域・言語・時間・保証・費用適用は未確定で継続。"
+    },
+    {
+      "task_id": "TASK-RES00934",
+      "state": "in_progress",
+      "priority": 2,
+      "method": "vendor_quote",
+      "note": "B17：看護製品本文を再確認し、既存B01-O00267の金額未公開を維持。同じ要約の再登録は行わず、料金方式と金額の確定には個別資料が必要。問い合わせ導線だけで見積制と断定しない。"
+    },
+    {
+      "task_id": "TASK-RES00935",
+      "state": "in_progress",
+      "priority": 2,
+      "method": "vendor_quote",
+      "note": "B17：課金対象・単位・人数の定義は公開本文で未確認。人数従量や施設単位を推定せず、同条件の見積で継続確認。"
+    },
+    {
+      "task_id": "TASK-RES00936",
+      "state": "in_progress",
+      "priority": 2,
+      "method": "vendor_quote",
+      "note": "B17：Web利用規約は製品購入・使用を別書面契約に分ける。看護の請求周期・最低契約・更新・解約条件は未確認。2017年のWeb規約を製品契約へ転用しない。"
+    }
+  ],
+  "retrieval_checks": [
+    {
+      "product": "US02",
+      "url": "https://www.qgenda.com/nurse-and-staff-scheduling-software/",
+      "result": "existing_findings_rechecked_without_duplicate",
+      "notes": "既存B01-O00268（自動割当未確認）とB01-O00267（金額未公開）を再確認。同じ観測は追加せず、task_updatesに再確認範囲を保存。"
+    },
+    {
+      "product": "US02",
+      "url": "https://www.qgenda.com/support/",
+      "result": "existing_support_findings_rechecked_without_duplicate",
+      "notes": "既存B05-20261011-OBS0182の電話・ケース・Shift Admin別窓口とOBS0183の権限注意を再確認し、そのまま保持。今回の新規支援観測はCXページの時間・教育メニューに限定。"
+    },
+    {
+      "product": "US02",
+      "url": "https://content.qgenda.com/i/XsbZ9y4KuKs6RDsCVoxG95xuIIct0oGUBWqsjeW5nhlw3y7GjaD0WUkuRfojhAGiMRLXKFo5OvAItb4uwkKx9______o5LiH45i3ipoiPLUSSIGNUNtWLOoPLUSSIGNiHNvg0WWzP3DmwrbkxI",
+      "result": "temporarily_unavailable_public_datasheet",
+      "notes": "CXページのDatasheet導線を読み取りで開いたが、JavaScript要件とサーバー問題による一時利用不可の本文のみ。資料本文は未取得・機能根拠不採用。ログイン・登録・PDF保存を行わない。"
+    }
+  ]
+}

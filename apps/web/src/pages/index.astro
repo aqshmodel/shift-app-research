@@ -17,14 +17,14 @@ const result = buildDirectory(catalog, filters);
 <Base title="シフト管理・作成サービスを、用途や機能から探せます" description="シフト管理・作成サービス50製品を、医療・介護・店舗などの用途と必要な機能で絞り込めます。ロゴ付きの一覧から、勤務表の自動割当、様式9、料金や利用条件を比較できます。無料・会員登録不要。" structured={{'@type':'CollectionPage',mainEntity:{'@type':'ItemList',numberOfItems:result.total,itemListElement:result.products.map((p:any,i:number)=>({'@type':'ListItem',position:result.start+i+1,name:p.name,url:'https://shift.aqsh.co.jp/products/'+p.slug+'/'}))}}}>
  <section class="home-intro container">
   <div>
-   <p class="eyebrow"><span class="eyebrow-line" aria-hidden="true"></span> SHIFT RESEARCH <span class="eyebrow-date">2026.10.11</span></p>
+   <p class="eyebrow"><span class="eyebrow-line" aria-hidden="true"></span> SHIFT RESEARCH <span class="eyebrow-date">{data.as_of_date.replaceAll('-', '.')}</span></p>
    <h1><span class="home-service-title">シフト管理・作成<span class="home-service-action">サービスを</span></span><span>用途や機能から探せます。</span></h1>
    <p class="home-lead">サービス名を知らなくても、条件に合う候補を絞り込めます。</p>
    <p class="free-note"><span class="status-indicator" aria-hidden="true"></span> 無料・会員登録不要でご利用いただけます。</p>
   </div>
   <aside class="home-scope" aria-label="調査の収録件数"><p class="research-number"><strong>{data.products}</strong><span>サービスを収録</span></p><p><strong>{data.document_observations.toLocaleString()}</strong>件の調査記録 / <strong>{data.research_documents}</strong>件の参照文書</p><a href="/methodology/">調査の範囲をご確認いただけます <span aria-hidden="true">↗</span></a></aside>
  </section>
- <HomeDirectory result={result} error={error}/>
+ <HomeDirectory result={result} error={error} asOfDate={data.as_of_date}/>
  <section class="container section contexts">
   <div class="section-head"><div><p class="eyebrow">CHOOSING A SERVICE</p><h2>比較のポイントもご案内します。</h2></div><a class="text-link" href="/products/">すべてのサービスを見る <span aria-hidden="true">↗</span></a></div>
   <div class="category-grid">{Object.entries(categoryInfo).map(([id,c],i)=><a class="category-card" href={'/categories/'+id+'/'}><div class="category-card-top"><span class="category-number">0{i+1}</span><span class="category-arrow" aria-hidden="true">↗</span></div><ContextIcon kind={id}/><h3>{c.name}</h3><p>{c.checks[0]}<br />{c.checks[1]}</p><span class="category-cta">選び方・サービスを確認する <span aria-hidden="true">→</span></span></a>)}</div>

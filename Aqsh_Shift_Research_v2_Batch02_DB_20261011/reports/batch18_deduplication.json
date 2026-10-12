@@ -1,0 +1,26 @@
+{
+  "batch_id": "B18-20261012",
+  "status": "passed",
+  "new_findings": 6,
+  "not_readded": [
+    {
+      "observation_id": "B01-O00328",
+      "criterion": "B01",
+      "reason": "Homepage uncertainty retained. New B01 evidence is the detailed manual-assignment and bulk-approval procedure."
+    },
+    {
+      "observation_id": "B04-20261011-OBS0228",
+      "criterion": "P01",
+      "reason": "Manager USD5/staff/month unchanged; no new price observation or component."
+    },
+    {
+      "observation_id": "B11-20261012-OBS0041",
+      "criterion": "B07",
+      "reason": "General optional and role-specific warning unchanged; detailed feature settings only added."
+    }
+  ],
+  "existing_trial_size_contract_and_notification_findings_preserved": true,
+  "old_observations_preserved": true,
+  "mobile_free_not_applied_to_manager_contract": true,
+  "restricted_user_not_assumed_unbillable_or_mobile_nonuser": true
+}

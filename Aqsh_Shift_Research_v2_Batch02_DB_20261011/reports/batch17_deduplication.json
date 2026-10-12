@@ -1,0 +1,29 @@
+{
+  "batch_id": "B17-20261012",
+  "status": "passed",
+  "new_findings": 7,
+  "not_readded": [
+    {
+      "observation_id": "B01-O00268",
+      "criterion": "B01",
+      "reason": "Same nurse-page auto-assignment uncertainty; new B01 evidence only addresses the separate provider/nurse descriptions on the common Scheduling page."
+    },
+    {
+      "observation_id": "B01-O00267",
+      "criterion": "P01",
+      "reason": "Same absence of published amount; reread saved in task update, zero new P01 observations or prices."
+    },
+    {
+      "observation_id": "B05-20261011-OBS0182",
+      "criterion": "O04",
+      "reason": "Phone/case/help/Shift Admin routing unchanged; new observations cover global CX availability and education only."
+    },
+    {
+      "observation_id": "B05-20261011-OBS0183",
+      "criterion": "N01",
+      "reason": "Support operator limitations unchanged; no new security observations."
+    }
+  ],
+  "old_observations_preserved": true,
+  "new_sources_not_used_to_expand_nurse_capability_scope": true
+}

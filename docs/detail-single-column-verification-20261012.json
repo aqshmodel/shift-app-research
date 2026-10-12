@@ -1,0 +1,41 @@
+{
+  "checked_on": "2026-10-12",
+  "production_url": "https://shift.aqsh.co.jp/",
+  "staging_version": "ee3f980c-f72c-4faa-86d6-05fa9139a2e4",
+  "production_version": "a59290b4-1c48-43f9-bb5e-de42823da3fc",
+  "snapshot": "B07-20261011-pub2",
+  "database_writes": false,
+  "astro_check": {
+    "files": 58,
+    "errors": 0,
+    "warnings": 0,
+    "hints": 0
+  },
+  "staging_browser_tests": {
+    "passed": 3,
+    "failed": 0
+  },
+  "production_browser_tests": {
+    "passed": 3,
+    "failed": 0
+  },
+  "viewport_widths": [
+    320,
+    390,
+    768,
+    1440
+  ],
+  "axe_aa_violations": 0,
+  "verified": [
+    "logo then service name then price",
+    "single column at desktop and mobile widths",
+    "guidance below full-width body",
+    "card links with JavaScript disabled",
+    "pricing conditions and section jump",
+    "no horizontal overflow"
+  ],
+  "source_sha256": {
+    "apps/web/src/pages/products/[slug].astro": "00d5f400b2df57bc8a8e2c652fbf1021acbe21073662b2a63d3117c274f93a03",
+    "apps/web/src/styles/detail.css": "8d13e22b6542123c37a7a3f7b0e8801eb1d51720a684571fc8d6431e01ebac76"
+  }
+}

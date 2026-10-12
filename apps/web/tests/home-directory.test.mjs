@@ -2,8 +2,8 @@ import {test} from 'node:test';
 import assert from 'node:assert/strict';
 import {buildDirectory, readDirectoryFilters, directoryUrl, PAGE_SIZE} from '../src/lib/home-directory.mjs';
 
-const product = (id, {region = 'domestic', category = 'medical', state = 'documented', name = id} = {}) =>
-  ({id, name, region, categories: [category], search_text: 'ｓｈｉｆｔ 夜勤', features: [{id: 'B01', status: 'documented'}, {id: 'J05', status: state}]});
+const product = (id, {region = 'domestic', category = 'medical', state = 'documented', name = id, price = 'published'} = {}) =>
+  ({id, name, region, categories: [category], search_text: 'ｓｈｉｆｔ 夜勤', price_summary: {kind: price}, features: [{id: 'B01', status: 'documented'}, {id: 'J05', status: state}]});
 
 test('multiple required features exclude planned and unknown records without implying non-support', () => {
   const list = [product('a'), product('b', {state: 'planned'}), product('c', {state: 'unknown'}), product('d', {region: 'overseas'})];
@@ -30,7 +30,7 @@ test('pagination and filter links preserve AND conditions, Unicode query and ava
 });
 
 test('directory input rejects invalid or duplicate single-value fields and uses a neutral stable order', () => {
-  for (const value of ['sql=x', 'category=absent', 'feature=N99', 'sort=price', 'page=0', 'region=domestic&region=overseas', 'q=' + 'x'.repeat(101)]) {
+  for (const value of ['sql=x', 'category=absent', 'feature=N99', 'sort=price', 'price=0', 'price=free&price=quote', 'page=0', 'region=domestic&region=overseas', 'q=' + 'x'.repeat(101)]) {
     assert.throws(() => readDirectoryFilters(new URLSearchParams(value)));
   }
   const filters = readDirectoryFilters(new URLSearchParams('feature=B01&feature=B01'));
@@ -38,4 +38,35 @@ test('directory input rejects invalid or duplicate single-value fields and uses 
   const list = [product('a', {region: 'overseas'}), product('b')];
   assert.deepEqual(buildDirectory(list, {...filters, features: []}).products.map(p => p.id), ['b', 'a']);
   assert.deepEqual(buildDirectory(list, {...filters, features: [], sort: 'name'}).products.map(p => p.id), ['a', 'b']);
+});
+
+test('pricing filters use disclosed status and keep the other facet conditions', () => {
+  const list = [product('paid'), product('free', {price: 'free'}), product('quote', {price: 'quote'}),
+    product('hidden', {price: 'unpublished'}), product('overseas', {price: 'free', region: 'overseas'}),
+    product('planned', {price: 'free', state: 'planned'}), product('store', {price: 'free', category: 'general'})];
+  for (const kind of ['published', 'free', 'quote', 'unpublished']) {
+    const filters = readDirectoryFilters(new URLSearchParams(`price=${kind}&category=medical&region=domestic&feature=J05`));
+    const result = buildDirectory(list, filters);
+    assert.equal(result.total, 1);
+    assert.equal(result.products[0].price_summary.kind, kind);
+    assert.deepEqual(result.counts.price, {'': 4, published: 1, free: 1, quote: 1, unpublished: 1});
+    if (kind === 'free') {
+      assert.equal(result.counts.region.overseas, 1);
+      assert.equal(result.counts.category.general, 1);
+    }
+  }
+  assert.equal(buildDirectory(list, readDirectoryFilters(new URLSearchParams())).total, 7);
+});
+
+test('pricing survives pagination and individual condition removal in shareable URLs', () => {
+  const list = Array.from({length: 26}, (_, i) => product('a' + String(i).padStart(2, '0'), {price: 'unpublished'}));
+  const filters = readDirectoryFilters(new URLSearchParams('price=unpublished&feature=B01&page=2'));
+  assert.equal(buildDirectory(list, filters).start, 12);
+  const url = new URL(directoryUrl(filters, {page: 3}), 'https://shift.aqsh.co.jp');
+  assert.equal(url.searchParams.get('price'), 'unpublished');
+  assert.equal(url.searchParams.get('page'), '3');
+  assert.equal(url.searchParams.get('feature'), 'B01');
+  const cleared = new URL(directoryUrl(filters, {price: '', page: 1}), 'https://shift.aqsh.co.jp');
+  assert.equal(cleared.searchParams.has('price'), false);
+  assert.equal(cleared.searchParams.get('feature'), 'B01');
 });

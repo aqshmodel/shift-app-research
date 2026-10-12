@@ -1,0 +1,65 @@
+{
+  "batch_id": "B17-20261012",
+  "checked_on": "2026-10-12",
+  "status": "passed",
+  "new_observation_sources": [
+    {
+      "url": "https://www.qgenda.com/workforce-scheduling-software/",
+      "title": "QGenda Workforce Scheduling：ProvidersとNurse and Staffの説明範囲",
+      "body_reviewed": true,
+      "full_text_archived": false,
+      "body_sha256": null,
+      "scope_note": "医師向けと看護・スタッフ向けの説明を分けて読む。rule-basedという医師向けの記載を看護の全自動割当へ流用しない。Web全文・ハッシュ未保存。"
+    },
+    {
+      "url": "https://www.qgenda.com/qgenda-cx-our-approach/",
+      "title": "QGenda Customer Experience：全社支援・教育・契約留保",
+      "body_reviewed": true,
+      "full_text_archived": false,
+      "body_sha256": null,
+      "scope_note": "全社の支援・教育メニューの記載。Nurse & Staffの個別契約、地域、障害区分、応答期限、費用内包は未確定。Web全文・ハッシュ未保存。"
+    },
+    {
+      "url": "https://www.qgenda.com/nurse-and-staff-scheduling-software/",
+      "title": "QGenda Nurse & Staff：課金対象・単位の確認範囲",
+      "body_reviewed": true,
+      "full_text_archived": false,
+      "body_sha256": null,
+      "scope_note": "既存の自動割当未確認・金額未公開という観測は再登録しない。今回初めて確認対象にした課金対象・単位の未確認範囲に限る。Web全文・ハッシュ未保存。"
+    },
+    {
+      "url": "https://www.qgenda.com/terms/",
+      "title": "QGenda Terms of Service：Web利用と製品の別書面契約",
+      "body_reviewed": true,
+      "full_text_archived": false,
+      "body_sha256": null,
+      "scope_note": "Webサイト用規約のEffective Dateは2017-07-01。これは文書の適用日で、公開日や看護製品の契約開始日ではない。§5の別書面契約の記載から製品の価格・周期・更新条件を推定しない。Web全文・ハッシュ未保存。"
+    }
+  ],
+  "additional_rechecks": [
+    "https://www.qgenda.com/support/",
+    "https://www.qgenda.com/legal/"
+  ],
+  "retrieval_checks": [
+    {
+      "product": "US02",
+      "url": "https://www.qgenda.com/nurse-and-staff-scheduling-software/",
+      "result": "existing_findings_rechecked_without_duplicate",
+      "notes": "既存B01-O00268（自動割当未確認）とB01-O00267（金額未公開）を再確認。同じ観測は追加せず、task_updatesに再確認範囲を保存。"
+    },
+    {
+      "product": "US02",
+      "url": "https://www.qgenda.com/support/",
+      "result": "existing_support_findings_rechecked_without_duplicate",
+      "notes": "既存B05-20261011-OBS0182の電話・ケース・Shift Admin別窓口とOBS0183の権限注意を再確認し、そのまま保持。今回の新規支援観測はCXページの時間・教育メニューに限定。"
+    },
+    {
+      "product": "US02",
+      "url": "https://content.qgenda.com/i/XsbZ9y4KuKs6RDsCVoxG95xuIIct0oGUBWqsjeW5nhlw3y7GjaD0WUkuRfojhAGiMRLXKFo5OvAItb4uwkKx9______o5LiH45i3ipoiPLUSSIGNUNtWLOoPLUSSIGNiHNvg0WWzP3DmwrbkxI",
+      "result": "temporarily_unavailable_public_datasheet",
+      "notes": "CXページのDatasheet導線を読み取りで開いたが、JavaScript要件とサーバー問題による一時利用不可の本文のみ。資料本文は未取得・機能根拠不採用。ログイン・登録・PDF保存を行わない。"
+    }
+  ],
+  "search_snippets_used_as_evidence": false,
+  "form_contact_signup_or_product_login": false
+}

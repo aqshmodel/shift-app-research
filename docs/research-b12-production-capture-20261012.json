@@ -1,0 +1,23 @@
+{
+  "checked_at": "2026-10-12T05:28:48.868Z",
+  "base": "https://shift.aqsh.co.jp",
+  "status": "passed",
+  "checks": [
+    {
+      "width": 1440,
+      "amount": "月額6,000円 / 拠点",
+      "logo_loaded": true,
+      "order": "logo,name,price",
+      "overflow": false,
+      "path": "../../docs/screenshots/research-b12-time-1440-20261012.png"
+    },
+    {
+      "width": 390,
+      "amount": "月額6,000円 / 拠点",
+      "logo_loaded": true,
+      "order": "logo,name,price",
+      "overflow": false,
+      "path": "../../docs/screenshots/research-b12-time-390-20261012.png"
+    }
+  ]
+}

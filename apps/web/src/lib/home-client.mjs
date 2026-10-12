@@ -17,7 +17,7 @@ export function initializeHomeDirectory() {
     form.elements.sort.value = params.get('sort') || 'domestic';
     for (const input of form.querySelectorAll('input[type="radio"]')) input.checked = input.value === (params.get(input.name) || '');
     for (const input of form.querySelectorAll('input[type="checkbox"]')) input.checked = params.getAll(input.name).includes(input.value);
-    const selected = params.getAll('feature').length + (params.get('region') ? 1 : 0);
+    const selected = params.getAll('feature').length + (params.get('region') ? 1 : 0) + (params.get('price') ? 1 : 0);
     root.querySelector('#mobile-filter-count').textContent = selected ? `（${selected}条件）` : '';
   }
   setControls(new URL(location.href).searchParams);

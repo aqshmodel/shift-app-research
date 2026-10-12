@@ -1,0 +1,17 @@
+{
+  "batch_id": "B08-20261012",
+  "before_sha256": "2ddb59f682a829e7ee796950232bccbe36bceee2787eeafd4efac504776fc094",
+  "after_sha256": "3b8a9af033ac5cd7d2cf92db603a4e320f070a32fe2731618bd8f83fd0fca758",
+  "preserved_rows": {
+    "observations": 2582,
+    "observation_evidence": 1698,
+    "source_revisions": 313,
+    "assessment_resolutions": 2401,
+    "resolution_evidence": 3039,
+    "price_components": 88,
+    "classification_corrections": 11
+  },
+  "integrity": "ok",
+  "foreign_key_errors": 0,
+  "scope": "B07以前の全行を保持。現在判断ポインタ、課題状態、最新バッチは更新対象。"
+}

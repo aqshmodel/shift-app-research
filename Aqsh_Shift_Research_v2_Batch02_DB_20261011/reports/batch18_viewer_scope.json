@@ -1,0 +1,14 @@
+{
+  "status": "passed",
+  "products": 1,
+  "viewports": [
+    1440,
+    390
+  ],
+  "new_only_cards": 1,
+  "bulk_approval_not_optimizer_visible": true,
+  "mobile_free_not_manager_free_visible": true,
+  "restricted_user_scope_visible": true,
+  "unknown_capabilities_preserved": true,
+  "pageErrors": []
+}

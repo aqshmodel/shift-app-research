@@ -450,6 +450,9 @@ def viewer(c):
         'regulations':'SELECT g.*,r.retrieval_url,r.retrieved_on,r.title_at_retrieval FROM regulations g JOIN source_revisions r USING(revision_id) ORDER BY g.regulation_id',
         'criteria':"SELECT * FROM criteria WHERE research_stage='L1_common' ORDER BY criterion_id"}.items()}
     data['counts']=stats(c)
+    as_of_date=c.execute('SELECT as_of_date FROM research_batches WHERE batch_id=?', (data['counts']['latest_batch'],)).fetchone()[0]
+    year,month,day=map(int,as_of_date.split('-'))
+    as_of_label=f'{year}年{month}月{day}日'
     grouped={}
     for row in data['observations']:
         key=row['observation_id']
@@ -459,7 +462,7 @@ def viewer(c):
             grouped[key]['evidence'].append({k:row[k] for k in ['canonical_url','title','locator','retrieved_on','evidence_id']})
     data['observations']=list(grouped.values())
     payload=dumps(data).replace('<','\\u003c').replace('>','\\u003e').replace('&','\\u0026')
-    output=template.replace('__DATASET__',payload).replace('__DOCUMENT_COUNT__',str(data['counts']['document_observations'])).replace('__BATCH_LABEL__',data['counts']['latest_batch'].split('-')[0].replace('B0','Batch'))
+    output=template.replace('__DATASET__',payload).replace('__DOCUMENT_COUNT__',str(data['counts']['document_observations'])).replace('__BATCH_LABEL__',data['counts']['latest_batch'].split('-')[0].replace('B0','Batch')).replace('__AS_OF_LABEL__',as_of_label)
     (ROOT/'comparison.html').write_text(output,encoding='utf-8')
 
 

@@ -1,0 +1,17 @@
+{
+  "batch_id": "B12-20261012",
+  "checked_on": "2026-10-12",
+  "status": "matched",
+  "source": "https://www.otasukeman.jp/price",
+  "reference": "turn64view0",
+  "locator": "Day L34–78; Time L84–107",
+  "checks": {
+    "day_base_monthly_JPY": 12000,
+    "day_base_annual_JPY": 120000,
+    "day_smartphone_optional_monthly_JPY": 3000,
+    "time_1_20_staff_monthly_JPY": 6000,
+    "time_1_20_staff_annual_JPY": 60000,
+    "tax_status": "exclusive"
+  },
+  "notes": "B12登録後に現行公式料金WebとPDF別紙の金額を再照合。既存出典の補助検証で新規機能記録の件数へ加算しない。契約の個別適用は未確認。"
+}

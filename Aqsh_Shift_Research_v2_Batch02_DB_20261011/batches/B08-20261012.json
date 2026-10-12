@@ -1,0 +1,903 @@
+{
+  "batch_id": "B08-20261012",
+  "prior_batch": "B07-20261011",
+  "as_of_date": "2026-10-12",
+  "resolution_policy_version": 2,
+  "description": "未完了課題の継続調査：公開・通知、下書きと自動割当、API制約の適用範囲、病院側の試行報告、料金・認証・解約条件",
+  "method": "販売元の公式ページ・ヘルプ・利用規約・公式GitHub READMEと導入病院の一次発信を本文確認。検索抜粋のみの情報は採用しない。営業連絡、会員登録、デモ、個別見積、実Excel検算、最適化APIの実行、解約再構成試験は未実施。",
+  "sources": [
+    {
+      "key": "syncpublish",
+      "url": "https://support.synchroshift.jp/portal/ja/kb/articles/1076",
+      "title": "シフト表をスタッフに展開したい",
+      "publisher": "シンクロシフト サポート",
+      "reference": "turn7view4",
+      "retrieved_on": "2026-10-12"
+    },
+    {
+      "key": "syncleave",
+      "url": "https://support.synchroshift.jp/portal/ja/kb/articles/1037",
+      "title": "希望休を申請したい",
+      "publisher": "シンクロシフト サポート",
+      "reference": "turn7view5",
+      "retrieved_on": "2026-10-12"
+    },
+    {
+      "key": "syncview",
+      "url": "https://support.synchroshift.jp/portal/ja/kb/articles/1196",
+      "title": "スマホでシフト表を確認したい",
+      "publisher": "シンクロシフト サポート",
+      "reference": "turn22view2",
+      "retrieved_on": "2026-10-12"
+    },
+    {
+      "key": "syncpc",
+      "url": "https://support.synchroshift.jp/portal/ja/kb/articles/1008",
+      "title": "PCでログインする手順",
+      "publisher": "シンクロシフト サポート",
+      "reference": "turn22view1",
+      "retrieved_on": "2026-10-12"
+    },
+    {
+      "key": "syncapp",
+      "url": "https://support.synchroshift.jp/portal/ja/kb/articles/1009",
+      "title": "シンクロシフトにログインしたい（アプリ編）",
+      "publisher": "シンクロシフト サポート",
+      "reference": "turn13view5",
+      "retrieved_on": "2026-10-12"
+    },
+    {
+      "key": "rakuauto",
+      "url": "https://rakushifu.jp/function/ai-gen/",
+      "title": "自動作成 機能紹介",
+      "publisher": "株式会社クロスビット",
+      "reference": "turn13view4",
+      "retrieved_on": "2026-10-12"
+    },
+    {
+      "key": "rakudownload",
+      "url": "https://rakushifu.jp/info-download/",
+      "title": "資料請求・資料の内容",
+      "publisher": "株式会社クロスビット",
+      "reference": "turn13view3",
+      "retrieved_on": "2026-10-12"
+    },
+    {
+      "key": "airdraft",
+      "url": "https://faq.airshift.jp/hc/ja/articles/50609646888857-%E5%B8%8C%E6%9C%9B%E3%82%B7%E3%83%95%E3%83%88%E3%82%92%E8%87%AA%E5%8B%95%E3%81%A7%E4%B8%8B%E6%9B%B8%E3%81%8D%E3%82%B7%E3%83%95%E3%83%88%E3%81%AB%E3%81%99%E3%82%8B-%E3%81%97%E3%81%AA%E3%81%84",
+      "title": "希望シフトを自動で下書きシフトにする/しない",
+      "publisher": "株式会社リクルート",
+      "reference": "turn13view0",
+      "retrieved_on": "2026-10-12"
+    },
+    {
+      "key": "airfixed",
+      "url": "https://faq.airshift.jp/hc/ja/articles/50171275539097-%E3%81%84%E3%81%A4%E3%82%82%E3%82%B7%E3%83%95%E3%83%88%E3%81%8C%E6%B1%BA%E3%81%BE%E3%81%A3%E3%81%A6%E3%81%84%E3%82%8B%E5%A0%B4%E5%90%88%E3%81%AB-%E4%BA%8B%E5%89%8D%E3%81%AB%E7%99%BB%E9%8C%B2%E3%81%97%E3%81%A6%E3%81%8A%E3%81%8D%E3%81%9F%E3%81%84-%E5%9B%BA%E5%AE%9A%E3%82%B7%E3%83%95%E3%83%88%E3%81%AE%E8%A8%AD%E5%AE%9A",
+      "title": "いつもシフトが決まっている場合に、事前に登録しておきたい（固定シフトの設定）",
+      "publisher": "株式会社リクルート",
+      "reference": "turn13view2",
+      "retrieved_on": "2026-10-12"
+    },
+    {
+      "key": "aircreate",
+      "url": "https://faq.airshift.jp/hc/ja/articles/50185391910041-%E3%82%B7%E3%83%95%E3%83%88%E3%81%AE%E4%BD%9C%E6%88%90%E6%96%B9%E6%B3%95%E3%81%8C%E7%9F%A5%E3%82%8A%E3%81%9F%E3%81%84",
+      "title": "シフトの作成方法が知りたい",
+      "publisher": "株式会社リクルート",
+      "reference": "turn13view1",
+      "retrieved_on": "2026-10-12"
+    },
+    {
+      "key": "airwork",
+      "url": "https://airregi.jp/shift/function/workschedule/",
+      "title": "ワークスケジュール",
+      "publisher": "株式会社リクルート",
+      "reference": "turn24view0",
+      "retrieved_on": "2026-10-12"
+    },
+    {
+      "key": "shiftyapi",
+      "url": "https://platform.shiftyasan.com/",
+      "title": "シフト屋さん Public API & MCP サーバー",
+      "publisher": "クラーヴェ合同会社",
+      "reference": "turn2view0",
+      "retrieved_on": "2026-10-12"
+    },
+    {
+      "key": "shiftyterms",
+      "url": "https://shiftyasan.com/terms",
+      "title": "シフト屋さん 利用規約",
+      "publisher": "クラーヴェ合同会社",
+      "reference": "turn20view2 / turn21view0",
+      "retrieved_on": "2026-10-12",
+      "updated_on": "2026-06-29"
+    },
+    {
+      "key": "shiftyrepo",
+      "url": "https://github.com/shiftyasan/mcp-server",
+      "title": "公式MCPクライアント README・未適用の制約・ライセンス",
+      "publisher": "shiftyasan",
+      "reference": "turn23view2 / turn24view1",
+      "retrieved_on": "2026-10-12",
+      "version_label": "main README（取得時点）",
+      "scope_note": "公式GitHub mainのREADME本文を確認。バックエンド最適化エンジンのコード・実行結果・LICENSEファイル本文は取得していない。"
+    },
+    {
+      "key": "deputystress",
+      "url": "https://help.deputy.com/hc/en-au/articles/4658226793999-Set-up-stress-profiles-and-fatigue-management",
+      "title": "Set up stress profiles and fatigue management",
+      "publisher": "Deputy",
+      "reference": "turn2view3 / turn5view6",
+      "retrieved_on": "2026-10-12"
+    },
+    {
+      "key": "deputyent",
+      "url": "https://help.deputy.com/hc/en-au/articles/4755140064911-Enterprise-Stress-profiles-and-employee-set-up",
+      "title": "Enterprise - Stress profiles and employee set up",
+      "publisher": "Deputy",
+      "reference": "turn3view0",
+      "retrieved_on": "2026-10-12"
+    },
+    {
+      "key": "lantumtrust",
+      "url": "https://www.whittington.nhs.uk/default.asp?c=45969",
+      "title": "Lantum / Powering up our rotas with AI",
+      "publisher": "Whittington Health NHS Trust",
+      "reference": "turn7view3 / turn16view0 / turn20view4",
+      "retrieved_on": "2026-10-12",
+      "updated_on": "2025-05-14",
+      "method": "public_primary_user_report",
+      "method_note": "導入病院自身の試行報告。第三者の独立比較試験とは区別。本文の文字化けした通貨記号を推測で確定しない。"
+    },
+    {
+      "key": "wiwprice",
+      "url": "https://wheniwork.com/pricing",
+      "title": "When I Work Pricing & Features",
+      "publisher": "When I Work",
+      "reference": "turn14view4 / turn20view3",
+      "retrieved_on": "2026-10-12"
+    },
+    {
+      "key": "rosterprice",
+      "url": "https://rosterlab.com/us/pricing",
+      "title": "RosterLab 米国向け料金・課金対象",
+      "publisher": "RosterLab",
+      "reference": "turn13view6 / turn16view7",
+      "retrieved_on": "2026-10-12"
+    },
+    {
+      "key": "connectprice",
+      "url": "https://connecteam.com/pricing/",
+      "title": "Connecteam Pricing・Operations Hub・認証比較表",
+      "publisher": "Connecteam",
+      "reference": "turn14view0 / turn16view4",
+      "retrieved_on": "2026-10-12"
+    },
+    {
+      "key": "connect2fa",
+      "url": "https://help.connecteam.com/en/articles/3112479-two-factor-authentication-2fa",
+      "title": "Two-Factor Authentication (2FA)",
+      "publisher": "Connecteam",
+      "reference": "turn14view1",
+      "retrieved_on": "2026-10-12",
+      "updated_on": "2026-08-13"
+    },
+    {
+      "key": "connectsecurity",
+      "url": "https://help.connecteam.com/en/articles/6435553-set-your-app-s-security-settings",
+      "title": "Set your App's Security Settings",
+      "publisher": "Connecteam",
+      "reference": "turn17view1",
+      "retrieved_on": "2026-10-12"
+    },
+    {
+      "key": "plandayexport",
+      "url": "https://help.planday.com/en/articles/30428-how-to-access-and-export-your-data",
+      "title": "How to access and export your data",
+      "publisher": "Planday",
+      "reference": "turn20view0 / turn20view1",
+      "retrieved_on": "2026-10-12",
+      "updated_on": "2025-05-23"
+    },
+    {
+      "key": "plandaycancel",
+      "url": "https://help.planday.com/en/articles/30211-how-to-cancel-your-planday-subscription",
+      "title": "How to cancel your Planday subscription",
+      "publisher": "Planday",
+      "reference": "turn14view2",
+      "retrieved_on": "2026-10-12",
+      "updated_on": "2026-05-08"
+    }
+  ],
+  "findings": [
+    {
+      "product": "JP08",
+      "source": "syncpublish",
+      "criterion": "H07",
+      "summary": "展開後にリセット・自動作成・修正を行っても、スマホアプリへ最新シフトは自動反映されない。再度「シフトを職員へ展開」を実行する必要がある。",
+      "locator": "スマホアプリのシフト表の最新化について",
+      "scope": "シンクロシフト PCから職員アプリへの展開",
+      "state": "known",
+      "delivery": "native",
+      "limitations": "公開文書に記載された範囲の確認。実動作・独立性能試験・個別契約への適用は未検証。"
+    },
+    {
+      "product": "JP08",
+      "source": "syncpublish",
+      "criterion": "H07",
+      "summary": "展開対象のチームを選択する。事業所兼務の職員については、兼務先にも展開するかを選択する手順がある。",
+      "locator": "操作手順／事業所を兼務している職員がいる場合",
+      "scope": "チーム・兼務先への公開操作",
+      "state": "known",
+      "delivery": "native",
+      "limitations": "公開文書に記載された範囲の確認。実動作・独立性能試験・個別契約への適用は未検証。"
+    },
+    {
+      "product": "JP08",
+      "source": "syncpublish",
+      "criterion": "H07",
+      "summary": "再展開の操作は記載されるが、変更を受けた職員への差分通知と既読・確認履歴は本文で確認できない。",
+      "locator": "補足／スマホアプリのシフト表の最新化について",
+      "scope": "公開済みシフトの差分通知・確認記録",
+      "state": "not_found",
+      "delivery": "native",
+      "limitations": "公開文書に記載された範囲の確認。実動作・独立性能試験・個別契約への適用は未検証。確認できない部分を非対応と断定しない。"
+    },
+    {
+      "product": "JP08",
+      "source": "syncleave",
+      "criterion": "L01",
+      "summary": "希望休の申請一覧には申請済・承認・否認を表示するが、申請ステータス変更時の通知機能はないと明記する。",
+      "locator": "登録内容の申請状況を確認する方法",
+      "scope": "希望休申請のステータス通知",
+      "state": "known",
+      "delivery": "native",
+      "limitations": "公開文書に記載された範囲の確認。実動作・独立性能試験・個別契約への適用は未検証。シフト再公開時の通知全般とは別の範囲。"
+    },
+    {
+      "product": "JP08",
+      "source": "syncview",
+      "criterion": "L03",
+      "summary": "アプリで本人のシフトを確認でき、メニューのPDFから展開済みの全員分のシフトを確認できる。",
+      "locator": "手順2〜4",
+      "scope": "職員アプリの勤務表閲覧",
+      "state": "known",
+      "delivery": "native",
+      "limitations": "公開文書に記載された範囲の確認。実動作・独立性能試験・個別契約への適用は未検証。職員ごとの閲覧制限と既読記録は未確認。"
+    },
+    {
+      "product": "JP08",
+      "source": "syncpc",
+      "criterion": "N02",
+      "summary": "システム管理者の二要素認証は2026年7月28日から必須。マネージャー・シフト管理者・スタッフは任意と記載する。",
+      "locator": "冒頭の注記／ログイン時の注意事項",
+      "scope": "PC版の権限別二要素認証",
+      "state": "known",
+      "delivery": "native",
+      "limitations": "公開文書に記載された範囲の確認。実動作・独立性能試験・個別契約への適用は未検証。"
+    },
+    {
+      "product": "JP08",
+      "source": "syncpc",
+      "criterion": "N02",
+      "summary": "二要素認証後に信頼済みデバイスを登録すると、以降30日間は認証コード入力なしでログインできると説明する。",
+      "locator": "信頼済みデバイスの登録",
+      "scope": "PC版・信頼済みデバイス",
+      "state": "known",
+      "delivery": "native",
+      "limitations": "公開文書に記載された範囲の確認。実動作・独立性能試験・個別契約への適用は未検証。管理者が期間や登録可否を強制変更できるかは未確認。"
+    },
+    {
+      "product": "JP08",
+      "source": "syncpc",
+      "criterion": "N02",
+      "summary": "PC記事はシステム管理者の無効化不可を明記する一方、権限限定のないメール削除による無効化も説明する。アプリ記事も権限限定なく無効化操作を掲載するため、全経路で解除不可かは未確定。",
+      "locator": "二要素認証の概要／二要素認証の無効化",
+      "scope": "システム管理者の解除・メール削除・アプリ操作",
+      "state": "disputed",
+      "delivery": "native",
+      "limitations": "公開文書に記載された範囲の確認。実動作・独立性能試験・個別契約への適用は未検証。メール削除やアプリ操作を実際に行えることを確認したものではない。"
+    },
+    {
+      "product": "JP08",
+      "source": "syncapp",
+      "criterion": "N02",
+      "summary": "アプリのログインパスワードはPC版と共通で、アプリで変更したパスワードはPCでも有効になると説明する。",
+      "locator": "ログイン・項目③",
+      "scope": "PC・アプリ間の認証情報共有",
+      "state": "known",
+      "delivery": "native",
+      "limitations": "公開文書に記載された範囲の確認。実動作・独立性能試験・個別契約への適用は未検証。"
+    },
+    {
+      "product": "JP26",
+      "source": "rakuauto",
+      "criterion": "B01",
+      "summary": "時間帯別必要人数、役割、禁止条件、優先順位を設定し、シフト組み候補を自動で提案する。希望の転記を超える勤務表の自動割当を公式資料で確認した。",
+      "locator": "AIを活用した自動作成／2つのタイプをご提供",
+      "scope": "らくしふ 自動作成の公開機能説明",
+      "state": "known",
+      "delivery": "native",
+      "limitations": "公開文書に記載された範囲の確認。実動作・独立性能試験・個別契約への適用は未検証。具体的な契約プラン・最適化品質・実際の制約充足は未確認。"
+    },
+    {
+      "product": "JP26",
+      "source": "rakuauto",
+      "criterion": "B07",
+      "summary": "ピーク・オフタイム向けと24時間体制・複雑な条件向けの2タイプがあり、提供機能と料金はタイプごとに異なると明記する。",
+      "locator": "FUNCTIONS 01／02・末尾の料金注記",
+      "scope": "自動作成のタイプ別提供範囲",
+      "state": "known",
+      "delivery": "native",
+      "limitations": "公開文書に記載された範囲の確認。実動作・独立性能試験・個別契約への適用は未検証。一般契約の標準内包や個別価格は未確認。"
+    },
+    {
+      "product": "JP26",
+      "source": "rakudownload",
+      "criterion": "P05",
+      "summary": "資料請求の内容に基本料金・自動作成プラン・オプションを列挙するが、公開本文には必要機能を含めた金額や追加費用がない。",
+      "locator": "資料の内容",
+      "scope": "自動作成を含めた総費用",
+      "state": "not_found",
+      "delivery": "native",
+      "limitations": "公開文書に記載された範囲の確認。実動作・独立性能試験・個別契約への適用は未検証。資料請求は送信していない。金額不明を0円へ置換しない。"
+    },
+    {
+      "product": "JP27",
+      "source": "airdraft",
+      "criterion": "B09",
+      "summary": "スタッフが提出した希望シフトを自動的に下書きへ設定する機能。初期設定は有効で、設定画面から切り替えられる。",
+      "locator": "冒頭／手順3",
+      "scope": "Airシフト 希望シフトの自動下書き化",
+      "state": "known",
+      "delivery": "native",
+      "limitations": "公開文書に記載された範囲の確認。実動作・独立性能試験・個別契約への適用は未検証。必要人数・勤務ルールから全体を最適化する機能の証拠ではない。"
+    },
+    {
+      "product": "JP27",
+      "source": "airdraft",
+      "criterion": "B06",
+      "summary": "複数グループに所属するスタッフの自動下書きはメイングループにのみ追加される。メイングループはスタッフ情報で確認・変更する。",
+      "locator": "手順3の複数グループ注記",
+      "scope": "希望シフト自動下書き・複数グループ",
+      "state": "known",
+      "delivery": "native",
+      "limitations": "公開文書に記載された範囲の確認。実動作・独立性能試験・個別契約への適用は未検証。複数表の同時最適化や兼務重複防止を確認したものではない。"
+    },
+    {
+      "product": "JP27",
+      "source": "airfixed",
+      "criterion": "B09",
+      "summary": "スタッフごとの曜日・勤務時間を固定シフトとして登録すると自動で下書きを作成する。固定勤務者は休暇日だけを提出する運用を案内する。",
+      "locator": "冒頭／手順3",
+      "scope": "固定パターンの自動下書き",
+      "state": "known",
+      "delivery": "native",
+      "limitations": "公開文書に記載された範囲の確認。実動作・独立性能試験・個別契約への適用は未検証。固定パターンの複製と全体最適化は区別する。"
+    },
+    {
+      "product": "JP27",
+      "source": "aircreate",
+      "criterion": "H07",
+      "summary": "管理者がスタッフ・日にち・勤務時間を指定し、下書き保存した場合はスタッフへ通知しない。",
+      "locator": "手順2〜4",
+      "scope": "手動作成・下書き保存",
+      "state": "known",
+      "delivery": "native",
+      "limitations": "公開文書に記載された範囲の確認。実動作・独立性能試験・個別契約への適用は未検証。"
+    },
+    {
+      "product": "JP27",
+      "source": "aircreate",
+      "criterion": "H07",
+      "summary": "「勤務を依頼する」はスタッフの回答待ちになる。「勤務を確定として通知する」は確定通知を送り、事前にスタッフと合意するよう案内する。",
+      "locator": "手順5〜7",
+      "scope": "勤務依頼と確定通知",
+      "state": "known",
+      "delivery": "native",
+      "limitations": "公開文書に記載された範囲の確認。実動作・独立性能試験・個別契約への適用は未検証。差分通知・既読記録・認識確認の実動作は未検証。"
+    },
+    {
+      "product": "JP27",
+      "source": "airwork",
+      "criterion": "B04",
+      "summary": "ワークスケジュールは作成済みシフトの情報・スキル・必要人数から業務を自動割当する。Airシフトの情報は毎日1回反映される。",
+      "locator": "シフト情報の取り込み／最適な割り当てを自動で作成",
+      "scope": "作成済みシフト内の業務割当",
+      "state": "known",
+      "delivery": "native",
+      "limitations": "公開文書に記載された範囲の確認。実動作・独立性能試験・個別契約への適用は未検証。"
+    },
+    {
+      "product": "JP27",
+      "source": "airdraft",
+      "criterion": "B01",
+      "summary": "希望の下書き化・固定シフト複製・手動作成・勤務内の業務割当は確認できたが、必要人数とルールから勤務表全体へ職員を自動割当する説明は確認できない。",
+      "locator": "自動下書き化設定・手順3",
+      "scope": "勤務表全体の自動割当",
+      "state": "not_found",
+      "delivery": "native",
+      "limitations": "公開文書に記載された範囲の確認。実動作・独立性能試験・個別契約への適用は未検証。未記載だけで機能が存在しないとは断定しない。"
+    },
+    {
+      "product": "JP28",
+      "source": "shiftyapi",
+      "criterion": "P01",
+      "summary": "公開APIは無料β。正式リリース後の料金は準備中で、β利用者へ事前に知らせると記載する。",
+      "locator": "料金",
+      "scope": "シフト屋さん Public API 無料β",
+      "state": "known",
+      "delivery": "native",
+      "limitations": "公開文書に記載された範囲の確認。実動作・独立性能試験・個別契約への適用は未検証。Web本体の有料プランをAPI価格へ流用しない。"
+    },
+    {
+      "product": "JP28",
+      "source": "shiftyapi",
+      "criterion": "P06",
+      "summary": "APIキーごとに無料unitsを付与し、solve呼び出しごとに消費する。枠が尽きた場合はメールで追加を申請する。",
+      "locator": "料金／HTTP API直接",
+      "scope": "無料βの利用枠",
+      "state": "known",
+      "delivery": "native",
+      "limitations": "公開文書に記載された範囲の確認。実動作・独立性能試験・個別契約への適用は未検証。正式課金額・unit計算式・無制限利用は未確定。"
+    },
+    {
+      "product": "JP28",
+      "source": "shiftyrepo",
+      "criterion": "R03",
+      "summary": "公式READMEはMCPクライアントをMITと表示し、公開HTTP APIを呼ぶ薄いクライアントと説明する。最適化エンジン本体のソース・ライセンスとは区別する。",
+      "locator": "What is Shiftyasan?／License",
+      "scope": "公式MCPクライアント main README",
+      "state": "known",
+      "delivery": "native",
+      "limitations": "公開文書に記載された範囲の確認。実動作・独立性能試験・個別契約への適用は未検証。LICENSE原文の取得は失敗した。エンジンの複製・再配布・商用再提供権は未確認。"
+    },
+    {
+      "product": "JP28",
+      "source": "shiftyrepo",
+      "criterion": "F03",
+      "summary": "READMEの未適用制約欄はavoided_shift、working_days_per_week.max、employee_pairingsのrequireが受理後に適用されないと記載する。検証・solve時に脱落項目の警告を出すと説明する。",
+      "locator": "Constraints the schema accepts but the solver does not apply yet",
+      "scope": "公式MCPクライアント経由の制約変換",
+      "state": "known",
+      "delivery": "native",
+      "limitations": "公開文書に記載された範囲の確認。実動作・独立性能試験・個別契約への適用は未検証。READMEの記載確認。取得時のAPIバックエンドでも同じ挙動か、警告が利用者へ届くかは未検証。"
+    },
+    {
+      "product": "JP28",
+      "source": "shiftyterms",
+      "criterion": "R09",
+      "summary": "一般規約第1条は個別規約を優先し、ヘルプ・ガイド等も規約の一部とする。第6条は会員の利用権の第三者への処分を禁止する。APIの商用再提供許諾は取得範囲で確認できない。",
+      "locator": "第1条2・3／第6条",
+      "scope": "一般規約とAPI個別条件の境界",
+      "state": "known",
+      "delivery": "native",
+      "limitations": "公開文書に記載された範囲の確認。実動作・独立性能試験・個別契約への適用は未検証。第三者向けAPI組込の可否を法律判断として確定していない。個別条件の取得が必要。"
+    },
+    {
+      "product": "JP28",
+      "source": "shiftyapi",
+      "criterion": "R09",
+      "summary": "βではAPI仕様が予告なく変更される場合があり、変更はGitHubで告知すると説明する。正式移行の契約・再提供条件・β終了時のデータ搬出条件は公開本文で確認できない。",
+      "locator": "料金／ページ末尾のβ注記",
+      "scope": "βから正式APIへの移行",
+      "state": "not_found",
+      "delivery": "native",
+      "limitations": "公開文書に記載された範囲の確認。実動作・独立性能試験・個別契約への適用は未検証。"
+    },
+    {
+      "product": "JP28",
+      "source": "shiftyterms",
+      "criterion": "M08",
+      "summary": "一般規約第8条は退会後の利用停止と会員資格の復元不可を定める。APIβ終了時に入力・出力・履歴を全量搬出する形式・期限・費用は規約本文で確認できない。",
+      "locator": "第8条",
+      "scope": "API終了・退会時のデータ持出し",
+      "state": "not_found",
+      "delivery": "native",
+      "limitations": "公開文書に記載された範囲の確認。実動作・独立性能試験・個別契約への適用は未検証。AI解析アップロードの削除期間をAPI生成履歴全体へ適用しない。"
+    },
+    {
+      "product": "US07",
+      "source": "deputystress",
+      "criterion": "C03",
+      "summary": "一般向け公式記事の冒頭は日最大時間を暦日（午前0時から午前0時）と説明し、同記事の詳細は暦日でなく任意の24時間と説明する。日界の算定窓は記事内で不一致。",
+      "locator": "What are stress profiles?／Maximum Hours per Day",
+      "scope": "一般向けStress Profileの日最大時間",
+      "state": "disputed",
+      "delivery": "native",
+      "limitations": "公開文書に記載された範囲の確認。実動作・独立性能試験・個別契約への適用は未検証。"
+    },
+    {
+      "product": "US07",
+      "source": "deputyent",
+      "criterion": "C03",
+      "summary": "Enterprise向け記事は日最大時間を暦日ではなく任意の24時間と説明する。一般向け記事の相反記述とCoreへの適用を確定するには現行仕様・実際の日跨ぎ結果が必要。",
+      "locator": "Maximum Hours per Day",
+      "scope": "Enterprise記載とCoreへの適用境界",
+      "state": "disputed",
+      "delivery": "native",
+      "limitations": "公開文書に記載された範囲の確認。実動作・独立性能試験・個別契約への適用は未検証。"
+    },
+    {
+      "product": "US07",
+      "source": "deputystress",
+      "criterion": "C05",
+      "summary": "Overnight休息は前のシフトが19時より後に終わり、次が翌9時より前に始まる場合に限る。全シフト間の休息はCustom Rulesのgapで別に設定する。",
+      "locator": "Minimum Hours between Shifts (Overnight)／Custom Rules",
+      "scope": "一般向けStress Profileの夜間休息と全シフト間gap",
+      "state": "known",
+      "delivery": "native",
+      "limitations": "公開文書に記載された範囲の確認。実動作・独立性能試験・個別契約への適用は未検証。地域・Core契約・日跨ぎ時の実動作は未検証。"
+    },
+    {
+      "product": "US07",
+      "source": "deputyent",
+      "criterion": "F01",
+      "summary": "Enterpriseでは管理者が権限設定に応じてStress Profile警告を上書きできる。自動割当では違反する職員を割り当てず、職員の空き枠選択・交代候補も制限すると説明する。",
+      "locator": "How stress profiles work for scheduling managers／employees",
+      "scope": "Enterpriseの手動操作・自動割当・職員操作の違い",
+      "state": "known",
+      "delivery": "native",
+      "limitations": "公開文書に記載された範囲の確認。実動作・独立性能試験・個別契約への適用は未検証。Coreの同一権限制御を保証する記述ではない。"
+    },
+    {
+      "product": "US07",
+      "source": "deputyent",
+      "criterion": "C07",
+      "summary": "Stress Profileは予定シフトの時間を制限するもので、時間外給与の算定や予定より長く実際に働くことの防止とは無関係と注意する。",
+      "locator": "What are stress profiles? Note",
+      "scope": "Enterpriseの予定時間制御と実績・給与の違い",
+      "state": "known",
+      "delivery": "native",
+      "limitations": "公開文書に記載された範囲の確認。実動作・独立性能試験・個別契約への適用は未検証。"
+    },
+    {
+      "product": "US13",
+      "source": "lantumtrust",
+      "criterion": "Q04",
+      "summary": "Whittington Health自身が小児科registrarの7月勤務表の試行を報告。対象は3施設と2つのon-call拠点で、勤務表自動作成の試行と説明する。",
+      "locator": "Results of a trial period at our trust",
+      "scope": "Whittington Health 小児科registrar試行",
+      "state": "known",
+      "delivery": "native",
+      "limitations": "公開文書に記載された範囲の確認。実動作・独立性能試験・個別契約への適用は未検証。導入病院の自己報告で、比較サイトによる独立試験ではない。更新日は2025-05-14だが、試行したJulyの年・医師人数・希望件数分母は本文にない。"
+    },
+    {
+      "product": "US13",
+      "source": "lantumtrust",
+      "criterion": "Q06",
+      "summary": "病院側は各医師の休暇希望の70〜100%、平均90%を交換・臨時職員なしで勤務表へ組み込んだと報告する。希望件数の分母と集計方式は未提示。",
+      "locator": "Results of a trial period at our trust・leave requests",
+      "scope": "同病院・同試行の休暇希望",
+      "state": "known",
+      "delivery": "native",
+      "limitations": "公開文書に記載された範囲の確認。実動作・独立性能試験・個別契約への適用は未検証。導入病院の自己報告で、比較サイトによる独立試験ではない。更新日は2025-05-14だが、試行したJulyの年・医師人数・希望件数分母は本文にない。"
+    },
+    {
+      "product": "US13",
+      "source": "lantumtrust",
+      "criterion": "Q08",
+      "summary": "同試行の臨時職員費用を65,000削減したと病院側が報告する。取得本文の通貨記号に文字化けがあるため通貨を確定せず、比較基準・サービス利用料の控除も未確認。",
+      "locator": "Results of a trial period at our trust・temporary staffing spend",
+      "scope": "同病院・同試行の費用削減",
+      "state": "known",
+      "delivery": "native",
+      "limitations": "公開文書に記載された範囲の確認。実動作・独立性能試験・個別契約への適用は未検証。導入病院の自己報告で、比較サイトによる独立試験ではない。更新日は2025-05-14だが、試行したJulyの年・医師人数・希望件数分母は本文にない。"
+    },
+    {
+      "product": "US13",
+      "source": "lantumtrust",
+      "criterion": "Q04",
+      "summary": "病院側は勤務表の空きが67%減少したとし、夜間90→45、平日の長時間勤務39.5→0、週末の長時間勤務16.3→8という内訳を掲載する。単位・加重・丸めの算出方法は未提示。",
+      "locator": "Results of a trial period at our trust・rota gaps",
+      "scope": "同病院・同試行の空き枠削減",
+      "state": "known",
+      "delivery": "native",
+      "limitations": "公開文書に記載された範囲の確認。実動作・独立性能試験・個別契約への適用は未検証。導入病院の自己報告で、比較サイトによる独立試験ではない。更新日は2025-05-14だが、試行したJulyの年・医師人数・希望件数分母は本文にない。"
+    },
+    {
+      "product": "US19",
+      "source": "wiwprice",
+      "criterion": "B07",
+      "summary": "Essentialsのカードは複数拠点を含め、勤怠追加の切替も表示する。一方FAQは単拠点2.50 USD、複数拠点5 USDかつ全プラン勤怠込みと説明する。不一致は残る。",
+      "locator": "Essentialsカード／How much does When I Work cost?",
+      "scope": "公開カードとFAQのプラン・勤怠含有",
+      "state": "disputed",
+      "delivery": "native",
+      "limitations": "公開文書に記載された範囲の確認。実動作・独立性能試験・個別契約への適用は未検証。"
+    },
+    {
+      "product": "US19",
+      "source": "wiwprice",
+      "criterion": "P02",
+      "summary": "料金計算欄は利用する全ユーザー数に管理者を含めるよう案内する。",
+      "locator": "Number of Users",
+      "scope": "公開料金計算の人数単位",
+      "state": "known",
+      "delivery": "native",
+      "limitations": "公開文書に記載された範囲の確認。実動作・独立性能試験・個別契約への適用は未検証。席を休止・削除した場合の請求扱いは未確認。"
+    },
+    {
+      "product": "US19",
+      "source": "wiwprice",
+      "criterion": "B07",
+      "summary": "PremiumカードはProの機能にAPIキー、Webhook、SAML/SSOを加えると説明する。",
+      "locator": "Premium・Get everything in Pro, PLUS",
+      "scope": "When I Work Premium",
+      "state": "known",
+      "delivery": "native",
+      "limitations": "公開文書に記載された範囲の確認。実動作・独立性能試験・個別契約への適用は未検証。調査対象When I Workの下位プランへの内包を示すものではない。"
+    },
+    {
+      "product": "US19",
+      "source": "wiwprice",
+      "criterion": "P03",
+      "summary": "FAQは月払い・年払いを案内するが、価格カードに表示される金額の支払周期や年払い条件との対応は取得本文で確定できない。",
+      "locator": "What payment methods do you accept?／料金カード",
+      "scope": "料金表示と請求周期",
+      "state": "not_found",
+      "delivery": "native",
+      "limitations": "公開文書に記載された範囲の確認。実動作・独立性能試験・個別契約への適用は未検証。"
+    },
+    {
+      "product": "US01",
+      "source": "rosterprice",
+      "criterion": "P01",
+      "summary": "米国向け同一ページのAI料金カードは15 USD/人/月、機能比較表は20 USD/userと表示する。過去価格との違いだけでなく、取得時のページ内にも不一致が残る。",
+      "locator": "AI Optimized Scheduling／Complete Feature Comparison",
+      "scope": "RosterLab 米国向け公開料金",
+      "state": "disputed",
+      "delivery": "native",
+      "limitations": "公開文書に記載された範囲の確認。実動作・独立性能試験・個別契約への適用は未検証。"
+    },
+    {
+      "product": "US01",
+      "source": "rosterprice",
+      "criterion": "P02",
+      "summary": "料金はAIで生成する勤務表に含まれる職員数に基づく。勤務表に含まれない管理者・マネージャーは無料とFAQで説明する。",
+      "locator": "How is pricing calculated?／Does admin users or managers get charged?",
+      "scope": "AI生成対象の課金人数",
+      "state": "known",
+      "delivery": "native",
+      "limitations": "公開文書に記載された範囲の確認。実動作・独立性能試験・個別契約への適用は未検証。管理者が勤務表にも載る場合の人数重複や最低課金人数は未確認。"
+    },
+    {
+      "product": "US01",
+      "source": "rosterprice",
+      "criterion": "B07",
+      "summary": "Enterpriseは個別相談とし、SSO・API・連携・カスタムルール等を列挙する。AIプランへの同一機能の内包は個別に照合する必要がある。",
+      "locator": "Enterprise Solution",
+      "scope": "AIプランとEnterpriseの境界",
+      "state": "known",
+      "delivery": "native",
+      "limitations": "公開文書に記載された範囲の確認。実動作・独立性能試験・個別契約への適用は未検証。"
+    },
+    {
+      "product": "US09",
+      "source": "connect2fa",
+      "criterion": "N02",
+      "summary": "2026-08-13の公式ヘルプは、ダッシュボードへアクセスする全管理者を対象に2FAを有効化する設定を案内し、Basicから利用可能と記載する。",
+      "locator": "How to Enable 2FA? 手順4／Basic Plan注記",
+      "scope": "ダッシュボード・全管理者2FAの設定",
+      "state": "known",
+      "delivery": "native",
+      "limitations": "公開文書に記載された範囲の確認。実動作・独立性能試験・個別契約への適用は未検証。無効化権限、復旧、モバイル・既存セッション・SSOとの関係は未確認。"
+    },
+    {
+      "product": "US09",
+      "source": "connectsecurity",
+      "criterion": "N02",
+      "summary": "一般のSecurity Settings記事も全管理者のダッシュボード2FAを案内する。方式はユーザー名・パスワードに加えるSMSの一時PINと説明する。",
+      "locator": "Security Settings",
+      "scope": "ダッシュボードのSMS二要素認証",
+      "state": "known",
+      "delivery": "native",
+      "limitations": "公開文書に記載された範囲の確認。実動作・独立性能試験・個別契約への適用は未検証。プラン適用・設定解除・復旧の保証ではない。"
+    },
+    {
+      "product": "US09",
+      "source": "connectprice",
+      "criterion": "N02",
+      "summary": "料金ページのOperations Enterpriseカードと比較表は管理者2FAをEnterprise欄に掲載する。Basicから利用可能とするヘルプとの不一致は未解消。",
+      "locator": "Operations Enterprise／Two Factor Authentication (2FA) for admins",
+      "scope": "Operations Expert契約への2FA適用",
+      "state": "disputed",
+      "delivery": "native",
+      "limitations": "公開文書に記載された範囲の確認。実動作・独立性能試験・個別契約への適用は未検証。"
+    },
+    {
+      "product": "US20",
+      "source": "plandayexport",
+      "criterion": "M08",
+      "summary": "従業員情報と従業員変更を別々に出力する。変更レポートは誰がいつ従業員データを変更したかを確認できると説明する。",
+      "locator": "Export Employee details and changes",
+      "scope": "全プラン・Administratorによる従業員情報出力",
+      "state": "known",
+      "delivery": "native",
+      "limitations": "公開文書に記載された範囲の確認。実動作・独立性能試験・個別契約への適用は未検証。全設定・シフト監査履歴の一括dumpを意味しない。"
+    },
+    {
+      "product": "US20",
+      "source": "plandayexport",
+      "criterion": "M08",
+      "summary": "署名済み契約は1件ずつダウンロードする。職員プロフィールのDocument Overviewは書類の一覧を出すだけで、書類ファイル自体は出力しないと明記する。",
+      "locator": "Export data related to documents",
+      "scope": "署名済み契約とプロフィール添付の出力",
+      "state": "known",
+      "delivery": "native",
+      "limitations": "公開文書に記載された範囲の確認。実動作・独立性能試験・個別契約への適用は未検証。全添付の一括搬出と再構成は未検証。"
+    },
+    {
+      "product": "US20",
+      "source": "plandayexport",
+      "criterion": "M08",
+      "summary": "shift historyは全体または個別シフトの画面から閲覧する手順を示すが、履歴全体の機械可読出力手順は本文にない。",
+      "locator": "View shift history to track the changes related to scheduling",
+      "scope": "シフト変更履歴",
+      "state": "not_found",
+      "delivery": "native",
+      "limitations": "公開文書に記載された範囲の確認。実動作・独立性能試験・個別契約への適用は未検証。閲覧可能という説明を履歴全量出力の確認へ置換しない。"
+    },
+    {
+      "product": "US20",
+      "source": "plandayexport",
+      "criterion": "M08",
+      "summary": "打刻はExcel出力を推奨し、休暇と代休の残高は対象期間・状態・部署・職員グループ等のフィルタを選んで出力する。",
+      "locator": "Export the Punch Clock data／Export data related to Leave and Time off in lieu",
+      "scope": "打刻・休暇残高・代休残高の個別出力",
+      "state": "known",
+      "delivery": "native",
+      "limitations": "公開文書に記載された範囲の確認。実動作・独立性能試験・個別契約への適用は未検証。フィルタ漏れと給与・ルール・履歴全体の再構成は未検証。"
+    },
+    {
+      "product": "US20",
+      "source": "plandaycancel",
+      "criterion": "P03",
+      "summary": "Starterは1か月、Plus/Proは12か月の契約期間と説明し、一般条項では自動更新・更新1か月前までの解約申請を案内する。起算日は契約書で確認する。",
+      "locator": "What is my cancellation period?／Where can I find my subscription start date?",
+      "scope": "Plandayのパッケージ別契約期間",
+      "state": "known",
+      "delivery": "native",
+      "limitations": "公開文書に記載された範囲の確認。実動作・独立性能試験・個別契約への適用は未検証。個別契約・請求周期により適用条件を照合する。"
+    },
+    {
+      "product": "US20",
+      "source": "plandaycancel",
+      "criterion": "M08",
+      "summary": "解約後120日以内にworkspaceデータを削除すると説明するが、解約申請日・契約終了日・アクセス停止日のどれを起算日とするかは本文から確定できない。",
+      "locator": "How to cancel your Planday subscription・After cancellation",
+      "scope": "解約後のデータ保持期限",
+      "state": "not_found",
+      "delivery": "native",
+      "limitations": "公開文書に記載された範囲の確認。実動作・独立性能試験・個別契約への適用は未検証。120日間のアクセス保証・出力猶予を意味しない。"
+    }
+  ],
+  "task_updates": [
+    {
+      "task_id": "TASK-B02-008",
+      "state": "in_progress",
+      "method": "demo",
+      "priority": 1,
+      "note": "再展開が必要なこと、チーム・兼務先の選択を公式本文で確認。差分通知・既読・確認履歴は未確認で、修正→再公開→職員通知のデモが引き続き必要。"
+    },
+    {
+      "task_id": "TASK-B02-007",
+      "state": "in_progress",
+      "method": "demo",
+      "priority": 1,
+      "note": "システム管理者必須化と30日間の信頼済みデバイスを確認。PC記事のメール削除説明とアプリの解除操作の権限適用は未確定。権限別の解除可否と復旧を実画面で照合する。"
+    },
+    {
+      "task_id": "TASK-B02-014",
+      "state": "done",
+      "method": "public_document",
+      "priority": 1,
+      "note": "設問「希望転記の先に全体の自動割当があるか」は公式の人数・役割・禁止条件・優先順位による自動割当説明で確認できた。資料に記載された存在確認として完了。契約内包・タイプ別価格・実性能は別課題として残す。"
+    },
+    {
+      "task_id": "TASK-B02-015",
+      "state": "in_progress",
+      "method": "vendor_document",
+      "priority": 1,
+      "note": "公式ヘルプで希望の自動下書き化、固定パターンの下書き、手動作成・依頼・確定を分離。B07の業務割当観測をB04へ訂正。勤務表全体の自動最適化の有無は未確定のまま。"
+    },
+    {
+      "task_id": "TASK-B02-002",
+      "state": "in_progress",
+      "method": "vendor_document",
+      "priority": 1,
+      "note": "無料β・units・正式料金準備中、一般規約の個別条件優先・会員利用権の第三者処分禁止、MCPクライアントのMIT表示を照合。APIの商用組込・再提供許諾、正式移行、β終了時の搬出条件は個別資料が必要。"
+    },
+    {
+      "task_id": "B03-20261011-TASK001",
+      "state": "in_progress",
+      "method": "vendor_quote",
+      "priority": 1,
+      "note": "米国料金ページ内に15 USDカードと20 USD比較表が同時に存在することを確認。AI勤務表に含まれない管理者の無料条件は確認できたが、現行適用額・地域・請求周期は未解消。"
+    },
+    {
+      "task_id": "B03-20261011-TASK003",
+      "state": "in_progress",
+      "method": "vendor_document",
+      "priority": 1,
+      "note": "一般向け記事は冒頭で暦日、詳細で任意の24時間とする。Enterprise記事は24時間窓。Coreの実装・契約範囲を公開本文だけで確定できず、日跨ぎケースの確認が必要。"
+    },
+    {
+      "task_id": "B03-20261011-TASK004",
+      "state": "in_progress",
+      "method": "vendor_document",
+      "priority": 1,
+      "note": "2つの公式ヘルプは全管理者のSMS 2FA設定を案内するが、Basic利用可能という説明と料金表のEnterprise欄は不一致のまま。Expert契約への適用は確定しない。"
+    },
+    {
+      "task_id": "B06-20261011-TASK002",
+      "state": "in_progress",
+      "method": "vendor_document",
+      "priority": 1,
+      "note": "全管理者対象の設定文言を2つのヘルプで確認。料金表のEnterprise表示との矛盾、解除権限・既存セッション・モバイル・復旧を含む現行契約は未取得。"
+    },
+    {
+      "task_id": "TASK-B02-013",
+      "state": "in_progress",
+      "method": "independent_source",
+      "priority": 1,
+      "note": "Whittington Health自身の試行報告を追加。小児科7月・3施設2 on-call拠点・休暇希望平均90%・臨時職員費用65,000削減の記載を確認。試行年・対象人数・希望分母・通貨・料金控除は未確定で、販売元の別病院・別期間の事例と合算しない。"
+    },
+    {
+      "task_id": "TASK-B02-005",
+      "state": "in_progress",
+      "method": "vendor_document",
+      "priority": 1,
+      "note": "管理者を含む課金人数とPremiumのAPI/Webhook/SAMLを追加確認。Essentialsの複数拠点・勤怠追加表示とFAQの単複拠点料金・全プラン勤怠込みの差は未解消。"
+    },
+    {
+      "task_id": "B06-20261011-TASK004",
+      "state": "in_progress",
+      "method": "vendor_document",
+      "priority": 1,
+      "note": "契約書は1件ずつ、添付は一覧のみ、シフト履歴は画面閲覧という出力境界を確認。全履歴・添付・設定のdump、120日起算日、出力費用・アクセス期限は未確定。"
+    }
+  ],
+  "followups": [
+    {
+      "product": "JP26",
+      "criterion": "P05",
+      "priority": 2,
+      "method": "vendor_quote",
+      "question": "自動作成の2タイプについて、既存らくしふ契約への内包、追加費用、らくしふオートメーションとの契約境界を指定した現行見積を確認する。"
+    },
+    {
+      "product": "JP28",
+      "criterion": "F03",
+      "priority": 2,
+      "method": "synthetic_test",
+      "question": "公式MCP READMEの未適用3項目（avoided_shift、working_days_per_week.max、employee_pairings.require）を現行APIの生成結果・警告と照合する。API受理と制約実施を分けて検証する。"
+    }
+  ],
+  "reclassifications": [
+    {
+      "observation_id": "B07-20261011-OBS0024",
+      "criterion": "B04",
+      "rationale": "公式本文は作成済みシフトに対する業務割当の説明。勤務枠への職員自動割当（B01）の採用根拠から外し、勤務内の業務・担当割当（B04）へ移す。原観測・出典・留保は保持する。"
+    }
+  ],
+  "retrieval_checks": [
+    {
+      "product": "JP08",
+      "url": "https://support.synchroshift.jp/portal/ja/kb/articles/1286",
+      "result": "inaccessible",
+      "notes": "Web取得ツールのCache miss。検索結果に本文抜粋があったが、本文未取得のため機能観測へ採用しない。"
+    },
+    {
+      "product": "JP28",
+      "url": "https://github.com/shiftyasan/mcp-server/blob/main/LICENSE",
+      "result": "inaccessible",
+      "notes": "Web取得ツールのInternal Error。公式READMEのMIT表示のみ採用し、LICENSE本文の読了とは扱わない。"
+    },
+    {
+      "product": "US18",
+      "url": "https://help.quinyx.com/help-centre/docs/multifactor-authentication",
+      "result": "inaccessible",
+      "notes": "Web取得ツールのInternal Error。新たな本文観測は採用せず、B06の課題・証拠を維持。"
+    }
+  ]
+}

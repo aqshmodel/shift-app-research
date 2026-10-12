@@ -1,0 +1,32 @@
+{
+  "batch_id": "B15-20261012",
+  "as_of_date": "2026-10-12",
+  "status": "passed",
+  "official_documents": 16,
+  "methods": {
+    "official_web": 13,
+    "official_pdf_body": 2,
+    "public_openapi_get": 1
+  },
+  "annual_price_ui": {
+    "url": "https://shiftyasan.com/pricing",
+    "selected_tab": "年払い 1ヶ月分お得",
+    "basic_inclusive_jpy": 16280,
+    "pro_inclusive_jpy": 43780,
+    "signup_performed": false
+  },
+  "openapi": {
+    "url": "https://api.shiftyasan.com/v1/public/openapi.json",
+    "http_status": 200,
+    "bytes": 32260,
+    "sha256": "82998ddad223ba4706131eeed28405e3685329871ad26de1141d122a53ab3ed9",
+    "version": "3.1.0 / v1",
+    "operation_count": 4,
+    "solver_called": false
+  },
+  "pdf_direct_fetch_status": [
+    403,
+    403
+  ],
+  "full_source_text_distributed": false
+}

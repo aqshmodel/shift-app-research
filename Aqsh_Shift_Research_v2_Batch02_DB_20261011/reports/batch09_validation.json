@@ -1,0 +1,103 @@
+{
+  "batch_id": "B09-20261012",
+  "as_of_date": "2026-10-12",
+  "status": "passed",
+  "research_sha256": "cccfd6732f20fc0a6b67be7e3ba3a477013208f1f95582022ddf7c2e2818ac3e",
+  "public_snapshot": "B09-20261012-pub2",
+  "checks": {
+    "sqlite_integrity_foreign_keys_sql_roundtrip": {
+      "status": "passed",
+      "record": "db_validation_batch09.json"
+    },
+    "history_preservation": {
+      "status": "passed",
+      "record": "batch09_history_preservation.json"
+    },
+    "research_regression": {
+      "status": "passed",
+      "tests": 14,
+      "includes": [
+        "all_batches_rebuild",
+        "idempotent_reingest",
+        "classification_exclusion",
+        "original_evidence_preservation"
+      ]
+    },
+    "public_projection": {
+      "status": "passed",
+      "tests": 4,
+      "includes": [
+        "research_rows_preserved",
+        "prices_sources_preserved",
+        "latest_batch_date",
+        "partial_version_not_activated"
+      ]
+    },
+    "web_regression": {
+      "status": "passed",
+      "tests": 18,
+      "runtime": "Node.js 24.19.0"
+    },
+    "astro_check": {
+      "status": "passed",
+      "files": 55,
+      "errors": 0,
+      "warnings": 0,
+      "hints": 0
+    },
+    "static_viewer": {
+      "status": "passed",
+      "record": "viewer_validation.json",
+      "viewports": [
+        1440,
+        390
+      ],
+      "products": 50,
+      "latest_batch_products": 1
+    },
+    "new_findings_semantics": {
+      "status": "passed",
+      "rakushifu_assignment_task": "done",
+      "air_assignment": "unresolved",
+      "rosterlab_price": "unresolved",
+      "deputy_day_window": "unresolved",
+      "connecteam_mfa_contract": "unresolved",
+      "independent_runs": 0,
+      "prices_added": 0
+    },
+    "task_ownership_corrections": {
+      "status": "passed",
+      "tasks": 2,
+      "correcting_batch": "B09-20261012",
+      "original_batch_preserved": true
+    },
+    "diff_whitespace": {
+      "status": "passed",
+      "csv_line_endings": "existing CRLF retained"
+    },
+    "nafty_planned_state": {
+      "status": "passed",
+      "availability": "planned",
+      "care_rules": "planned"
+    }
+  },
+  "local_d1_runtime": "not_run_for_B08_B09; SQLite SQL roundtrip and projection checks passed",
+  "remote_d1_updated": false,
+  "production_deployed": false,
+  "environment_notes": [
+    "Host default Node.js 20 lacked node:sqlite; bundled Node.js 24 passed.",
+    "Chrome launch in filesystem sandbox aborted; same local viewer test passed with authorized sandbox escalation."
+  ],
+  "source_retrieval_limits": [
+    "Synchroshift article 1286 body fetch failed; excerpt not adopted.",
+    "MCP LICENSE body fetch failed; MIT claim restricted to README display.",
+    "Quinyx MFA body fetch failed; no new functional observation adopted."
+  ],
+  "continued_research": {
+    "products": 11,
+    "primary_pages": 25,
+    "findings": 54,
+    "classification_corrections": 1,
+    "document_records": 1719
+  }
+}

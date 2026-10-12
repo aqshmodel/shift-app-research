@@ -30,7 +30,7 @@ jobs:
       - run: python3 -m unittest discover -s Aqsh_Shift_Research_v2_Batch02_DB_20261011/tools -p 'test_*.py'
       - run: python3 apps/web/scripts/build-publication.py
       - run: git diff --exit-code -- apps/web/data
-      - run: python3 apps/web/tests/publication_test.py
+      - run: python3 -m unittest discover -s apps/web/tests -p '*_test.py'
       - run: npm ci
         working-directory: apps/web
       - run: npm test
