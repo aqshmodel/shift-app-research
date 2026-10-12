@@ -3,7 +3,7 @@ import '../styles/global.css';
 import { SITE,SITE_NAME } from '../lib/catalog';
 import AnalyticsConsent from '../components/AnalyticsConsent.astro';
 import { env } from 'cloudflare:workers';
-const { title,description='シフト管理・自動作成サービス50製品を、公開資料で確認した機能と利用条件を比較。医療・介護・店舗向けの検索、料金、様式9、管理者MFA、解約データ出力を調査。無料・会員登録不要。',noindex=false,breadcrumbs=[],structured=null }=Astro.props;
+const { title,description='シフト管理・作成サービス50製品を、公開資料で確認した機能と利用条件を比較。医療・介護・店舗向けの検索、料金、様式9、管理者MFA、解約データ出力を調査。無料・会員登録不要。',noindex=false,breadcrumbs=[],structured=null }=Astro.props;
 const canonical=SITE+Astro.url.pathname;
 const publicEnv=env as unknown as { ENVIRONMENT?:string; GA4_MEASUREMENT_ID?:string };
 const measurementId=publicEnv.ENVIRONMENT==='production'?publicEnv.GA4_MEASUREMENT_ID:undefined;
@@ -28,7 +28,7 @@ const graph=[{'@type':'Organization','@id':SITE+'/#publisher',name:'Aqsh株式�
 <body>
   <a class="skip" href="#main">本文へ進む</a>
   <header class="site-header"><div class="header-inner">
-    <a class="identity" href="/" aria-label={SITE_NAME+' トップ'}><img src="/brand/aqsh-logo-240.webp" width="240" height="83" alt="Aqsh" /><span>シフトづくり<span class="brand-break"></span>サービス比較</span></a>
+    <a class="identity" href="/" aria-label={SITE_NAME+' トップ'}><img src="/brand/aqsh-logo-240.webp" width="240" height="83" alt="Aqsh" /><span>シフト管理・作成<span class="brand-break"></span>サービス比較</span></a>
     <nav aria-label="メインナビゲーション"><a href="/products/" aria-current={Astro.url.pathname.startsWith('/products/')?'page':undefined}>サービスを探す</a><a href="/compare/" aria-current={Astro.url.pathname.startsWith('/compare/')?'page':undefined}>比較<span id="compare-count"></span></a><a href="/methodology/" aria-current={Astro.url.pathname.startsWith('/methodology/')?'page':undefined}>調査について</a><a class="mcp-link" href="/webmcp/" aria-current={Astro.url.pathname.startsWith('/webmcp/')?'page':undefined}>Web MCP対応<span aria-hidden="true">↗</span></a></nav>
   </div></header>
   <main id="main">
@@ -36,7 +36,7 @@ const graph=[{'@type':'Organization','@id':SITE+'/#publisher',name:'Aqsh株式�
     <slot />
     <aside id="agent-result" class="agent-result container" hidden aria-label="AIが取得した情報"><div class="section-head"><h2>AIが取得した情報</h2><button id="agent-close" type="button">閉じる</button></div><div id="agent-content"></div></aside>
   </main>
-  <footer class="site-footer"><div class="container footer-grid"><div><a class="footer-brand" href="https://aqsh.co.jp/"><img src="/brand/aqsh-logo-240.webp" alt="Aqsh株式会社" width="240" height="83" /></a><p>シフトづくりの選択を、資料でお手伝いします。<br />無料・会員登録不要でご覧いただけます。</p><p class="small">2026年10月11日現在の調査内容です。<br />公開資料の確認と実動作の検証は区別して掲載しています。</p></div><nav aria-label="フッターナビゲーション"><a href="/about/">運営会社・お問い合わせ</a><a href="/methodology/">調査方法</a><a href="/references/form-9/">様式9の参照資料</a><a href="/webmcp/">Web MCP・AIでの利用</a><a href="/privacy/">プライバシーポリシー</a><a href="/terms/">利用規約</a><button id="analytics-settings" class="analytics-settings" type="button" hidden>アクセス解析の設定</button></nav></div><div class="container copyright">© 2026 Aqsh株式会社</div></footer>
+  <footer class="site-footer"><div class="container footer-grid"><div><a class="footer-brand" href="https://aqsh.co.jp/"><img src="/brand/aqsh-logo-240.webp" alt="Aqsh株式会社" width="240" height="83" /></a><p>シフト管理・作成サービス選びをお手伝いします。<br />無料・会員登録不要でご覧いただけます。</p><p class="small">2026年10月11日現在の調査内容です。<br />公開資料の確認と実動作の検証は区別して掲載しています。</p></div><nav aria-label="フッターナビゲーション"><a href="/about/">運営会社・お問い合わせ</a><a href="/methodology/">調査方法</a><a href="/references/form-9/">様式9の参照資料</a><a href="/webmcp/">Web MCP・AIでの利用</a><a href="/privacy/">プライバシーポリシー</a><a href="/terms/">利用規約</a><button id="analytics-settings" class="analytics-settings" type="button" hidden>アクセス解析の設定</button></nav></div><div class="container copyright">© 2026 Aqsh株式会社</div></footer>
   <div id="compare-bar" class="compare-bar" hidden><div><strong>比較するサービス <span class="small">2〜4件お選びください</span></strong><div id="compare-selected"></div></div><a id="compare-go" class="button" href="/compare/">比較する</a><button id="compare-clear" type="button">クリア</button></div>
   <AnalyticsConsent measurementId={measurementId} />
   <p id="ui-announcement" class="sr-only" role="status" aria-live="polite"></p>

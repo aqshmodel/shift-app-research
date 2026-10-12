@@ -1,0 +1,76 @@
+{
+  "environment": "production",
+  "worker_version": "1b1eff49-ad6a-4cb8-bf82-921514968afb",
+  "staging_version": "1157e2d0-def2-4914-9517-38bda501b597",
+  "site_name": "Aqsh シフト管理・作成サービス比較",
+  "research_date": "2026-10-11",
+  "database_changed": false,
+  "stats": {
+    "startTime": "2026-10-12T00:57:10.674Z",
+    "duration": 17367.463,
+    "expected": 6,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "tests": [
+    {
+      "title": "new branding, lining numerals, polite copy and reduced-motion rendering",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "WCAG AA automated checks cover home, catalog, detail and comparison",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "320, 390, 768 and 1440 pixel layouts keep controls and pages in view",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "native search navigation restores its usable button and decorative markup after back",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "deployed D1 request batching exposes the intended round-trip counts",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "consent controls and the comparison bar remain usable at each viewport without Google requests",
+      "results": [
+        "passed"
+      ]
+    }
+  ],
+  "screenshots": [
+    {
+      "path": "docs/screenshots/branding-20261012.jpg",
+      "width": 1792,
+      "height": 976,
+      "sha256": "493162fe7ccefc0b08747c23238a17e23d1568f65e92510adefb2919d6bca3e1"
+    },
+    {
+      "path": "docs/screenshots/branding-390-20261012.jpg",
+      "width": 390,
+      "height": 844,
+      "sha256": "83c52f5d68cb7987a02ede1f4085d21ba78f89338fe1222dcee3082c8ca12526"
+    }
+  ],
+  "astro_check": {
+    "files": 55,
+    "errors": 0,
+    "warnings": 0,
+    "hints": 0
+  },
+  "seo_report": "branding-seo-verification-20261012.json",
+  "metadata_report": "branding-metadata-verification-20261012.json"
+}

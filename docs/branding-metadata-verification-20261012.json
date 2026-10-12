@@ -1,0 +1,21 @@
+{
+  "description": "シフト管理・作成サービス50製品を、医療・介護・店舗などの用途と必要な機能で絞り込めます。ロゴ付きの一覧から、勤務表の自動割当、様式9、料金や利用条件を比較できます。無料・会員登録不要。",
+  "h1": "シフト管理・作成サービスを用途や機能から探せます。",
+  "ogSiteName": "Aqsh シフト管理・作成サービス比較",
+  "ogTitle": "シフト管理・作成サービスを、用途や機能から探せます | Aqsh シフト管理・作成サービス比較",
+  "overflow": false,
+  "title": "シフト管理・作成サービスを、用途や機能から探せます | Aqsh シフト管理・作成サービス比較",
+  "twitterTitle": "シフト管理・作成サービスを、用途や機能から探せます | Aqsh シフト管理・作成サービス比較",
+  "url": "https://shift.aqsh.co.jp/",
+  "websiteName": "Aqsh シフト管理・作成サービス比較",
+  "width": 390,
+  "worker_version": "1b1eff49-ad6a-4cb8-bf82-921514968afb",
+  "llms_txt": {
+    "url": "https://shift.aqsh.co.jp/llms.txt",
+    "status": 200,
+    "heading": "# Aqsh シフト管理・作成サービス比較",
+    "research_date_retained": true,
+    "user_agent": "Aqsh-public-SEO-audit/1.0",
+    "default_python_user_agent_initial_status": 403
+  }
+}

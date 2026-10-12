@@ -12,7 +12,7 @@ const rows=[...new Set<string>(result?.criteria||[])].map(cid=>{
  return {id:cid,label:displayText(cells.find(Boolean)?.label||cid),cells:visible,different:new Set(visible.map((a:any)=>JSON.stringify(a?[a.status,a.findings.map((f:any)=>f.summary)]:null))).size>1};
 }).filter(row=>row.cells.some(Boolean));
 ---
-<Base title="シフトサービスを比較｜機能・料金・利用条件" noindex breadcrumbs={[{name:'トップ',url:'/'},{name:'製品比較',url:'/compare/'}]}>
+<Base title="シフト管理・作成サービスを比較｜機能・料金・利用条件" noindex breadcrumbs={[{name:'トップ',url:'/'},{name:'製品比較',url:'/compare/'}]}>
  <section class="container page-heading"><p class="eyebrow">SIDE BY SIDE</p><h1>機能と利用条件を比較できます。</h1><p>2〜4製品の機能と確認範囲を比較します。料金は提供条件ごとに表示します。</p><p class="small muted">2026年10月11日現在の調査内容です。実動作・性能試験は未実施です。</p></section>
  <form class="container compare-form" action="/compare/" method="get">{[0,1,2,3].map(i=><label>製品{i+1}{i<2?'（必須）':'（任意）'}<select name="products" required={i<2}><option value="">製品を選択</option>{all.map((p:any)=><option value={p.id} selected={raw[i]===p.id}>{p.name}</option>)}</select></label>)}<button class="button" type="submit">比較する</button></form>
  {error&&<p class="container notice" role="alert">{error}</p>}

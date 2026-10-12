@@ -3,7 +3,7 @@ import AxeBuilder from '@axe-core/playwright';
 
 test('new branding, lining numerals, polite copy and reduced-motion rendering',async({page})=>{
  await page.goto('/');await page.evaluate(()=>document.fonts.ready);
- await expect(page).toHaveTitle(/Aqsh シフトづくりサービス比較/);
+ await expect(page).toHaveTitle(/Aqsh シフト管理・作成サービス比較/);
  await expect(page.getByRole('heading',{name:'AIと相談しながら探せます。',exact:true})).toBeVisible();
  const font=await page.locator('.research-number strong').evaluate(el=>({family:getComputedStyle(el).fontFamily,numeric:getComputedStyle(el).fontVariantNumeric,loaded:document.fonts.check('500 72px Manrope')}));
  expect(font.family).toContain('Manrope');expect(font.numeric).toContain('lining-nums');expect(font.numeric).toContain('tabular-nums');expect(font.loaded).toBe(true);

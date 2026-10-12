@@ -3,6 +3,7 @@
 .home-intro h1 { font-size: clamp(28px,2.6vw,36px); line-height: 1.6; margin-bottom: 15px; }
 .home-intro h1 span { color: var(--green); }
 .home-intro h1 .home-service-title { color: var(--ink); }
+.home-intro h1 .home-service-action { display: inline-block; color: inherit; }
 .home-lead { font-size: 14px; line-height: 1.9; color: var(--muted); margin-bottom: 12px; }
 .home-intro .free-note { margin-top: 13px; }
 .home-scope { border-left: 1px solid #c9d7cc; padding: 8px 0 8px 30px; }

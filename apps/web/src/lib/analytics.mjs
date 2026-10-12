@@ -37,7 +37,7 @@ export function initializeAnalytics() {
   gtag('set','ads_data_redaction',true);
   function pageFields() {
     return { page_location:safePageUrl(location.href), page_referrer:safeReferrer(document.referrer),
-      page_title:document.querySelector('meta[property="og:title"]')?.content || 'Aqsh シフトづくりサービス比較' };
+      page_title:document.querySelector('meta[property="og:title"]')?.content || 'Aqsh シフト管理・作成サービス比較' };
   }
   function track(name, params = {}) {
     if(choice !== 'granted' || window[disabled] || !started) return;

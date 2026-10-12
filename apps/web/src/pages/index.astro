@@ -14,11 +14,11 @@ try { filters = readDirectoryFilters(Astro.url.searchParams); }
 catch { error = '検索条件を確認してください。条件を解除して、もう一度お探しください。'; Astro.response.status = 400; filters = readDirectoryFilters(new URLSearchParams()); }
 const result = buildDirectory(catalog, filters);
 ---
-<Base title="シフトづくりサービスを、用途や機能から探せます" description="シフトづくりサービス50製品を、医療・介護・店舗などの用途と必要な機能で絞り込めます。ロゴ付きの一覧から、勤務表の自動割当、様式9、料金や利用条件を比較できます。無料・会員登録不要。" structured={{'@type':'CollectionPage',mainEntity:{'@type':'ItemList',numberOfItems:result.total,itemListElement:result.products.map((p:any,i:number)=>({'@type':'ListItem',position:result.start+i+1,name:p.name,url:'https://shift.aqsh.co.jp/products/'+p.slug+'/'}))}}}>
+<Base title="シフト管理・作成サービスを、用途や機能から探せます" description="シフト管理・作成サービス50製品を、医療・介護・店舗などの用途と必要な機能で絞り込めます。ロゴ付きの一覧から、勤務表の自動割当、様式9、料金や利用条件を比較できます。無料・会員登録不要。" structured={{'@type':'CollectionPage',mainEntity:{'@type':'ItemList',numberOfItems:result.total,itemListElement:result.products.map((p:any,i:number)=>({'@type':'ListItem',position:result.start+i+1,name:p.name,url:'https://shift.aqsh.co.jp/products/'+p.slug+'/'}))}}}>
  <section class="home-intro container">
   <div>
    <p class="eyebrow"><span class="eyebrow-line" aria-hidden="true"></span> SHIFT RESEARCH <span class="eyebrow-date">2026.10.11</span></p>
-   <h1><span class="home-service-title">シフトづくりサービスを</span><span>用途や機能から探せます。</span></h1>
+   <h1><span class="home-service-title">シフト管理・作成<span class="home-service-action">サービスを</span></span><span>用途や機能から探せます。</span></h1>
    <p class="home-lead">サービス名を知らなくても、条件に合う候補を絞り込めます。</p>
    <p class="free-note"><span class="status-indicator" aria-hidden="true"></span> 無料・会員登録不要でご利用いただけます。</p>
   </div>
