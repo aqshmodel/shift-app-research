@@ -1,0 +1,56 @@
+{
+  "status": "passed",
+  "official_sources": 4,
+  "distinct_urls": 4,
+  "sources": [
+    {
+      "key": "product",
+      "url": "https://www.fikaigo.com/ja/product",
+      "title": "FIKAIGO 製品紹介：公開設定図とシフト調整",
+      "publisher": "住友商事株式会社",
+      "reference": "シフト自動作成 / 勤務の偏り / 施設や職員ごとの条件",
+      "retrieved_on": "2026-10-12",
+      "method": "public_web_body",
+      "method_note": "Web本文と通常Chromeの設定イラストを確認。「休憩や交代ルール」の表示を勤務間休息の実時刻制約と扱わない。公開/更新日・製品版の表示なし。 全文・本文ハッシュ・原本画像は未保存。登録・問い合わせ・試用・認証変更・製品独立試験なし。"
+    },
+    {
+      "key": "request",
+      "url": "https://www.fikaigo.com/faq/faq/shift-request",
+      "title": "職員はスマホから希望休・希望勤務を提出できますか？",
+      "publisher": "住友商事株式会社",
+      "reference": "FAQ機能について / 希望の提出方法と提出状況",
+      "retrieved_on": "2026-10-12",
+      "method": "public_web_body",
+      "method_note": "本文を通常ChromeのAX/表示で照合。表示日2026-03-02は公開か更新か未区別。版番号・固有プラン制限は未表示。 全文・本文ハッシュ・原本画像は未保存。登録・問い合わせ・試用・認証変更・製品独立試験なし。"
+    },
+    {
+      "key": "sharing",
+      "url": "https://www.fikaigo.com/faq/faq/shift-sharing",
+      "title": "確定したシフトはどう共有されますか？",
+      "publisher": "住友商事株式会社",
+      "reference": "FAQ機能について / 確定後の通知と閲覧",
+      "retrieved_on": "2026-10-12",
+      "method": "public_web_body",
+      "method_note": "本文を通常ChromeのAX/表示で照合。表示日2026-03-02は公開か更新か未区別。勤務表の確定を休暇申請の承認と同一視しない。版番号・固有プラン制限は未表示。 全文・本文ハッシュ・原本画像は未保存。登録・問い合わせ・試用・認証変更・製品独立試験なし。"
+    },
+    {
+      "key": "interview",
+      "url": "https://www.sumitomocorp.com/ja/jp/enrich/contents/0118",
+      "title": "現場の声を起点に介護業界を変える。住商×SOMPOケアのFIKAIGO開発秘話",
+      "publisher": "住友商事株式会社",
+      "reference": "公式インタビュー / 運用後の声と複雑勤務の調整",
+      "retrieved_on": "2026-10-12",
+      "method": "public_web_body",
+      "method_note": "FIKAIGO公式コラムから案内される住友商事一次記事。2026-01-22の記事時点の担当者の自己申告。希望休ルールの明確化と複雑勤務での自動仮組みの調整負担を通常表示で照合。現行全施設/プランの実動作証明ではない。 全文・本文ハッシュ・原本画像は未保存。登録・問い合わせ・試用・認証変更・製品独立試験なし。",
+      "published_on": "2026-01-22"
+    }
+  ],
+  "body_checked": true,
+  "public_browser_checked": true,
+  "full_text_archived": false,
+  "FAQ_display_date": "2026-03-02, publication/update distinction not labeled",
+  "interview_date": "2026-01-22",
+  "graphic_review": "breaks/rotation label only; no interval or overnight semantics adopted",
+  "independent_tests_performed": false,
+  "external_contact": false
+}

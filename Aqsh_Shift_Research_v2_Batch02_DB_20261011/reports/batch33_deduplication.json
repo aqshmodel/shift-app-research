@@ -1,0 +1,12 @@
+{
+  "status": "passed",
+  "new_findings": 6,
+  "known_partial": 6,
+  "not_found": 0,
+  "exact_summary_duplicates": 0,
+  "new_distinct_research_documents": 5,
+  "reused_normalized_documents": 0,
+  "semantic_review": "New weekly/custom rotation span, contract multi-day patterns, input resource what-if and experiment/comparison granularity. One rotation document supports two distinct conditions; not counted twice. Existing skills/tags/work limits/scoring/authorization/contracts not repeated.",
+  "new_price_components": 0,
+  "existing_price_components": 118
+}

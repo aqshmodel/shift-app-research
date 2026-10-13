@@ -1,0 +1,114 @@
+{
+  "batch_id": "B36-20261013",
+  "prior_batch": "B35-20261013",
+  "as_of_date": "2026-10-13",
+  "resolution_policy_version": 2,
+  "description": "Connecteam F04/F05：AI要望の宣伝、KB回答指示と設定summary/出典を勤務規則変換・承認から区別",
+  "method": "公式新規2文書から4参考記録（未確認4、採用対応根拠0）。取得対照4文書（AI一覧/AI complete guide/利用者KB guide/勤務製品ページ）は新文書/記録へ増量しない。宣伝・回答ルール・設定編集確認・回答後出典を最適化規則生成/承認と区別し、Ops/Comms/SBP差と顧客版/権利を留保。ルール未記載は非対応にしない。料金/課題完了/独立試験追加0。全文/本文hash/原本画像未保存。製品AI/API/登録/問い合わせ/設定/課金/認証/公開/本番再監査なし。",
+  "sources": [
+    {
+      "key": "home",
+      "url": "https://connecteam.com/",
+      "title": "Connecteam — Connecteam official home — Schedule the week in minutes",
+      "publisher": "Connecteam",
+      "reference": "Schedule the week in minutes",
+      "retrieved_on": "2026-10-13",
+      "version_label": "Mutable public homepage; publication date/version not shown",
+      "method": "official_document_body",
+      "method_note": "Web lines 921-925; follow-up linked scheduling product page was read as comparison only. Marketing is not executable rule specification. 要約・URL・locator・取得日・対象機能/版条件と留保を保存。全文/本文hash/公式原本画像未保存。製品AI/登録/試用/API/設定/問い合わせ/課金/認証変更なし。"
+    },
+    {
+      "key": "kb",
+      "url": "https://help.connecteam.com/en/articles/11112114-connecteam-s-knowledge-base-agent-your-company-s-ai-assistant",
+      "title": "Connecteam — Connecteam's Knowledge Base Agent: Your Company's AI Assistant",
+      "publisher": "Connecteam",
+      "reference": "Custom Instructions / Editing / User source view / plan footer",
+      "retrieved_on": "2026-10-13",
+      "version_label": "Mutable Knowledge Base Agent help; displayed Updated this week; exact date unconfirmed",
+      "method": "official_document_body",
+      "method_note": "Web lines 73-121,160. Positive surrounding facts retained as context; not evidence of optimizer rule generation or approval. 要約・URL・locator・取得日・対象機能/版条件と留保を保存。全文/本文hash/公式原本画像未保存。製品AI/登録/試用/API/設定/問い合わせ/課金/認証変更なし。"
+    }
+  ],
+  "findings": [
+    {
+      "product": "US09",
+      "criterion": "F04",
+      "source": "home",
+      "summary": "公式トップはAIへ必要事項を伝えると勤務表を得られると案内するが、今回取得した本文では自然言語を実際の最適化ルールへ変換する仕様を確認できない。",
+      "locator": "Schedule the week in minutes",
+      "limitations": "宣伝文から任意制約の生成/保存、hard/soft、期間/単位/人数の解釈、例外/矛盾入力、日本語、プラン/preview/地域/顧客版を推測しない。リンク先の勤務製品ページとAI一覧/2025ガイドも対照したが、未記載を非対応にしない。製品AI/デモ実行なし。",
+      "state": "not_found",
+      "delivery": "unknown",
+      "support": "unknown",
+      "scope": "General Connecteam homepage marketing; Operations Expert rule-input applicability unconfirmed; contextual observation only; criterion remains unconfirmed; not a non-support determination"
+    },
+    {
+      "product": "US09",
+      "criterion": "F04",
+      "source": "kb",
+      "summary": "Knowledge Base AgentのCustom Instructionsは知識庫を変えずに回答の焦点・避ける話題・口調を調整する設定と説明する。ここから勤務最適化ルールへの変換は確認できない。",
+      "locator": "Setting Up Custom Instructions / plan footer",
+      "limitations": "文書のrulesという語は回答方針の例。勤務条件のhard/softやソルバー入力ではない。Knowledge Base AgentはCommunications Hub Expert・最大20・SBP対象外という別Hub条件で、Operations Expert標準としない。現在の契約/モデル/日本語/実解釈は未確認。既存policy割当APIの一般事項は再登録しない。",
+      "state": "not_found",
+      "delivery": "unknown",
+      "support": "unknown",
+      "scope": "Knowledge Base Agent; Communications Expert in help; response instructions distinct from Operations optimizer rules; contextual observation only; criterion remains unconfirmed; not a non-support determination"
+    },
+    {
+      "product": "US09",
+      "criterion": "F05",
+      "source": "kb",
+      "summary": "Agent編集は知識庫・名称・Custom Instructions・FAQ例・利用者/グループを選び、summary pageを確認してSave Changesする手順。勤務ルールの構造化解釈を適用前に承認する画面とは確認できない。",
+      "locator": "Editing your AI Agent / summary page / Save Changes",
+      "limitations": "設定の保存前確認と自然言語を解釈した規則の事前確認を区別。確認中の副作用抑止、勤務表生成/公開の承認、誤解釈/取消/競合、承認者権限、実画面と版は未確認。非対応の断定ではない。Agent作成/編集操作なし。",
+      "state": "not_found",
+      "delivery": "unknown",
+      "support": "unknown",
+      "scope": "Knowledge Base Agent settings review only; optimizer parse/approval scope unconfirmed; contextual observation only; criterion remains unconfirmed; not a non-support determination"
+    },
+    {
+      "product": "US09",
+      "criterion": "F05",
+      "source": "kb",
+      "summary": "利用者のchatは回答後にview sourcesから参照知識庫へ進める。不満な回答はCustom Instructionsか知識庫を更新して改善する案内だが、勤務条件解釈のプレビュー/確定手順は確認できない。",
+      "locator": "How It Will Appear / view sources / improve answers",
+      "limitations": "出典参照は回答根拠の追跡で、実行する制約・単位・期間・hard/softの構造化表示や承認ではない。確認前の自動適用/公開抑止・取消/復元・プラン/版/権限実挙動は未確認。会話保存や知識庫Q&Aを最適化規則対応へ加点しない。",
+      "state": "not_found",
+      "delivery": "unknown",
+      "support": "unknown",
+      "scope": "Knowledge Base Agent response provenance and maintenance; not optimizer interpretation approval evidence; contextual observation only; criterion remains unconfirmed; not a non-support determination"
+    }
+  ],
+  "prices": [],
+  "followups": [],
+  "task_updates": [
+    {
+      "task_id": "TASK-RES01226",
+      "state": "in_progress",
+      "priority": 3,
+      "method": "vendor_document",
+      "note": "B36：トップのAIへ要望という宣伝と、Communications KB Agent回答Custom Instructionsを限定照合。勤務最適化ルール変換仕様/任意制約/日本語/Expert適用は未確認、参考記録のみで対応認定なし。"
+    },
+    {
+      "task_id": "TASK-RES01227",
+      "state": "in_progress",
+      "priority": 3,
+      "method": "vendor_document",
+      "note": "B36：KB Agent編集summary→Saveと回答後view sourcesの対象を確認。構造化勤務規則の解釈/適用前承認・確認前副作用抑止/取消/実権限は未確認、参考記録のみ。"
+    }
+  ],
+  "retrieval_checks": [
+    {
+      "product": "US09",
+      "url": "https://connecteam.com/ai-capabilities/",
+      "result": "AI_tools_and_KB_vs_scheduling_not_conflated",
+      "notes": "AI一覧はKB回答・自動割当・course prompt等を別機能として列挙。SBP全premiumという広い宣伝とKB helpのSBP除外に差がありKB契約適用は未確定。"
+    },
+    {
+      "product": "US09",
+      "url": "https://developer.connecteam.com/llms.txt",
+      "result": "web_tool_fetch_unavailable",
+      "notes": "公開indexへのWeb取得がInternal Error。利用可能な公式help本文へ切替。未取得を製品不存在/非対応へ判定しない。"
+    }
+  ]
+}

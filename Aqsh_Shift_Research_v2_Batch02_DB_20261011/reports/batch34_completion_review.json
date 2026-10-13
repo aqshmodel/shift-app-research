@@ -1,0 +1,18 @@
+{
+  "status": "passed",
+  "tasks_marked_done": 0,
+  "task_updates": {
+    "C05": "TASK-RES01220",
+    "K01": "TASK-RES01236"
+  },
+  "started_tasks": [
+    "TASK-RES01220",
+    "TASK-RES01236"
+  ],
+  "partial_only": true,
+  "unfulfilled": {
+    "C05": "休息数値/重複時の厳しい値・preventClaim切替・Expertの違反種類/表示切替を部分確認。実時刻差/等号/端数/夜勤/DST/複数表境界/手動hard/顧客版は未試験。",
+    "K01": "Basic以上のテンプレート1行1勤務→CSV・mapping/草案、形式拒否/欠落補完を確認。Job/Sub-jobの同日付説明差を保存。xlsx直接/結合/独自記号/複数sheet/実取込工数は未確認。"
+  },
+  "no_guessed_price_or_scope": true
+}

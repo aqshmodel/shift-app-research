@@ -1,0 +1,182 @@
+{
+  "batch_id": "B29-20261013",
+  "prior_batch": "B28-20261013",
+  "as_of_date": "2026-10-13",
+  "resolution_policy_version": 2,
+  "description": "Timefold未着手D03/B06：技能式・必須指導ペアと数値熟練度の留保、単一モデルの部署/勤務地/職員グループを限定確認",
+  "method": "固定1.35.x公式5資料から7記録（部分確認6・未確認1）。技能条件/指導同伴と数値熟練度、共有職員の単一モデルと運用ACL、直線距離と実移動時間、group previewを分離。既存D01の一般技能説明とC05の一般休息、料金/契約条件を重複再登録しない。新出典本文/URL/版/locator/取得方法を保存、全文/ハッシュ/画像未保存。実行API/試用/キー作成/課金/権限変更/外部連絡/公開/本番再監査/製品独立試験なし。",
+  "sources": [
+    {
+      "key": "skills",
+      "url": "https://docs.timefold.ai/employee-shift-scheduling/1.35.x/shift-service-constraints/skills-and-risk-factors",
+      "title": "Timefold Employee Shift Scheduling 1.35.x — Skills and risk factors",
+      "publisher": "Timefold BV",
+      "reference": "MATCH_ALL/ANY / skills expressions / department eligibility",
+      "retrieved_on": "2026-10-13",
+      "version_label": "Employee Shift Scheduling documentation 1.35.x; fixed document URL, not certified live runtime",
+      "method": "official_document_body",
+      "method_note": "Web本文L84〜112・305〜367・467〜524、通常Chrome本文/技能式表示も照合。 公開/更新日は未表示。全文・本文ハッシュ・原本画像は未保存。例示日付は公開日としない。latest/商用プラン適用/実行APIは未検証、試用・キー作成・問い合わせなし。"
+    },
+    {
+      "key": "pairings",
+      "url": "https://docs.timefold.ai/employee-shift-scheduling/1.35.x/employee-resource-constraints/pairing-employees",
+      "title": "Timefold Employee Shift Scheduling 1.35.x — Pairing employees",
+      "publisher": "Timefold BV",
+      "reference": "Required pairings / commonTagType / groupByEmployeeTag / groupShiftsPerDayLimit preview",
+      "retrieved_on": "2026-10-13",
+      "version_label": "Employee Shift Scheduling documentation 1.35.x; fixed document URL, not certified live runtime",
+      "method": "official_document_body",
+      "method_note": "Web本文L81〜127・1204〜1249・1466〜1513。 公開/更新日は未表示。全文・本文ハッシュ・原本画像は未保存。例示日付は公開日としない。latest/商用プラン適用/実行APIは未検証、試用・キー作成・問い合わせなし。"
+    },
+    {
+      "key": "tags",
+      "url": "https://docs.timefold.ai/employee-shift-scheduling/1.35.x/user-guide/tags-and-tag-types",
+      "title": "Timefold Employee Shift Scheduling 1.35.x — Tags and tag types",
+      "publisher": "Timefold BV",
+      "reference": "Department / top-level tags / include/exclude rule filters",
+      "retrieved_on": "2026-10-13",
+      "version_label": "Employee Shift Scheduling documentation 1.35.x; fixed document URL, not certified live runtime",
+      "method": "official_document_body",
+      "method_note": "Web本文L23〜51。 公開/更新日は未表示。全文・本文ハッシュ・原本画像は未保存。例示日付は公開日としない。latest/商用プラン適用/実行APIは未検証、試用・キー作成・問い合わせなし。"
+    },
+    {
+      "key": "locations",
+      "url": "https://docs.timefold.ai/employee-shift-scheduling/1.35.x/employee-resource-constraints/shift-travel-and-locations",
+      "title": "Timefold Employee Shift Scheduling 1.35.x — Shift travel and locations",
+      "publisher": "Timefold BV",
+      "reference": "Haversine / inter-location minimum / locationsWorkedMax required and preferred",
+      "retrieved_on": "2026-10-13",
+      "version_label": "Employee Shift Scheduling documentation 1.35.x; fixed document URL, not certified live runtime",
+      "method": "official_document_body",
+      "method_note": "Web本文L23〜36・228〜277・660〜696・776〜829・954〜965。 公開/更新日は未表示。全文・本文ハッシュ・原本画像は未保存。例示日付は公開日としない。latest/商用プラン適用/実行APIは未検証、試用・キー作成・問い合わせなし。"
+    },
+    {
+      "key": "usecases",
+      "url": "https://docs.timefold.ai/employee-shift-scheduling/1.35.x/user-guide/use-cases",
+      "title": "Timefold Employee Shift Scheduling 1.35.x — Use case guide",
+      "publisher": "Timefold BV",
+      "reference": "Hospital ward tags / shared workforce across hospitality outlets / role skills",
+      "retrieved_on": "2026-10-13",
+      "version_label": "Employee Shift Scheduling documentation 1.35.x; fixed document URL, not certified live runtime",
+      "method": "official_document_body",
+      "method_note": "Web本文L35〜59・119〜142・155。 公開/更新日は未表示。全文・本文ハッシュ・原本画像は未保存。例示日付は公開日としない。latest/商用プラン適用/実行APIは未検証、試用・キー作成・問い合わせなし。"
+    }
+  ],
+  "findings": [
+    {
+      "product": "US10",
+      "criterion": "D03",
+      "source": "skills",
+      "summary": "技能の複数条件は既定MATCH_ALLまたはMATCH_ANYを選べる。requiredSkillsExpressionはAND/ORを組み合わせた技能ID条件で、NODEの深さは2まで。同じ勤務でrequiredSkillsと必須式を併用できず、推奨技能式にも対応する。",
+      "locator": "Skill matching strategies / Skills expressions / Preferred skill expressions",
+      "limitations": "1人への割当資格の組合せ。複数職員の技能を合算したチーム最低水準、数値の熟練度閾値ではない。requiredはhard、preferredはsoftで未充足割当があり得る。深さ/併用不可を除いた無制限の任意式とはしない。独立実行・顧客版/プラン未確認。",
+      "state": "known",
+      "delivery": "native",
+      "scope": "Employee Shift Scheduling API documentation 1.35.x; commercial plan applicability and live execution unconfirmed; vendor examples are not independent tests",
+      "support": "limited"
+    },
+    {
+      "product": "US10",
+      "criterion": "D03",
+      "source": "pairings",
+      "summary": "requiredPairingsは指導対象職員へ指導者IDまたは職員タグを指定でき、タグ候補は少なくとも1タグで一致する。対象職員の勤務全体を覆う指導者の割当がなければhard違反となる。指導者は対象職員なしでも勤務できる。",
+      "locator": "Required pairings / includeEmployeeWithTags / asymmetric trainee-supervisor example",
+      "limitations": "技能IDに加えて指導者同伴をモデル化できる範囲。自動の熟練度査定、1指導者あたり研修生上限、数値スキル合計、臨床手技の独立可否の認定は未確認。同時刻でも別部署なら適切とは限らず、commonTagTypeなど部署条件も必要。例は独立試験ではない。",
+      "state": "known",
+      "delivery": "native",
+      "scope": "Employee Shift Scheduling API documentation 1.35.x; commercial plan applicability and live execution unconfirmed; vendor examples are not independent tests",
+      "support": "limited"
+    },
+    {
+      "product": "US10",
+      "criterion": "D03",
+      "source": "skills",
+      "summary": "取得した1.35.xの技能仕様は技能IDの有無・有効期間・論理式を説明するが、数値による熟練度と閾値、チーム技能の合算や職員構成比の最低水準を直接指定する公開仕様はこの範囲で確認できない。",
+      "locator": "Skills definitions and expressions; explicit yes/no eligibility statement",
+      "limitations": "未確認は非対応ではない。senior等の技能IDを顧客が定義しても、製品に数値熟練度マスターやチーム合算のネイティブ機能がある証明にはしない。資格の有無D01と混同せず、別の入力仕様・処置別要件・独立試験が必要。",
+      "state": "not_found",
+      "delivery": "unknown",
+      "scope": "Employee Shift Scheduling API documentation 1.35.x; commercial plan applicability and live execution unconfirmed; vendor examples are not independent tests"
+    },
+    {
+      "product": "US10",
+      "criterion": "B06",
+      "source": "usecases",
+      "summary": "病棟・部署はタグで表し、複数アウトレットを共有職員から配置する利用例を公式に案内する。部署固有の割当資格は技能で表す。勤務ごとの表閲覧だけではなく、同一モデル内へ部署別勤務と職員を入力する用途の記載を確認した。",
+      "locator": "Hospital ward/department mapping / Hospitality shared workforce / requirement patterns",
+      "limitations": "1.35.xモデルの用途案内。独立テナント間の共同最適化、既存部署表の自動統合、部署管理者の認可・変更承認、職員/施設の上限や商用プラン適用は未確認。全施設の需要充足/最適性/運用UIの完成を保証しない。",
+      "state": "known",
+      "delivery": "native",
+      "scope": "Employee Shift Scheduling API documentation 1.35.x; commercial plan applicability and live execution unconfirmed; vendor examples are not independent tests",
+      "support": "limited"
+    },
+    {
+      "product": "US10",
+      "criterion": "B06",
+      "source": "tags",
+      "summary": "部署などのタグはtagTypesで分類でき、同じタグIDを職員・勤務・ルールで再利用する。ルールのinclude/excludeEmployeeTagsとinclude/excludeShiftTagsは対象職員や勤務を絞る。単純フィルタにはトップレベルの全タグ列挙を必須としない。",
+      "locator": "Tags and tag types / declare existing tag for tag-type rules / basic filters",
+      "limitations": "単一モデル内のルール対象フィルタ。タグによる勤務割当資格や閲覧/編集拒否とは別で、部署タグを付けるだけでは職員の部署外割当を禁止しない。タグ型を用いるcommonTagTypeには宣言が必要。テナント認可・行単位ACLの独立検証なし。",
+      "state": "known",
+      "delivery": "native",
+      "scope": "Employee Shift Scheduling API documentation 1.35.x; commercial plan applicability and live execution unconfirmed; vendor examples are not independent tests",
+      "support": "limited"
+    },
+    {
+      "product": "US10",
+      "criterion": "B06",
+      "source": "locations",
+      "summary": "勤務地を座標で入力し、異なる勤務地の勤務間に設定した最小分数をhardで守る。locationsWorkedMaxは期間内の勤務地数をREQUIREDならhard、PREFERREDならsoftで制限する。距離はHaversineによる直線距離と説明する。",
+      "locator": "Minimum time between shifts including travel / Maximum number of locations / Haversine distance",
+      "limitations": "同じ職員の複数施設勤務の制約。道路/交通手段/渋滞から算出する実移動時間ではなく、設定値60分や週2拠点は例で既定/法定値ではない。座標一致・同一施設内の別部署・日跨ぎ/境界・休息との重複適用は未試験。必須時は未割当があり得る。",
+      "state": "known",
+      "delivery": "native",
+      "scope": "Employee Shift Scheduling API documentation 1.35.x; commercial plan applicability and live execution unconfirmed; vendor examples are not independent tests",
+      "support": "limited"
+    },
+    {
+      "product": "US10",
+      "criterion": "B06",
+      "source": "pairings",
+      "summary": "commonTagTypeは同時勤務の職員に同じ部署/場所等のタグを要求でき、groupByEmployeeTagで職員グループへ適用する。previewのgroupShiftsPerDayLimitはそのグループの同一日・共通タグの勤務時刻の種類数を上限で制限する。",
+      "locator": "Requiring a shared tag type / Limiting group shift hours per day (preview)",
+      "limitations": "職員グループの共同勤務条件で、組織階層や部署ごとのデータ閲覧権限ではない。groupShiftsPerDayLimitはpreviewで変更対象、商用プラン/現行実行版の適用は未確認。上限1は同じ開始終了の条件で、施設人数上限/需要配置数にしない。latestとの版差・独立実行なし。",
+      "state": "known",
+      "delivery": "native",
+      "scope": "Employee Shift Scheduling API documentation 1.35.x; commercial plan applicability and live execution unconfirmed; vendor examples are not independent tests",
+      "support": "limited"
+    }
+  ],
+  "prices": [],
+  "followups": [],
+  "task_updates": [
+    {
+      "task_id": "TASK-RES01267",
+      "state": "in_progress",
+      "priority": 3,
+      "method": "vendor_document",
+      "note": "B29：技能AND/OR式・深さ2/併用不可・必須指導者ペアの非対称性を部分確認。数値熟練度/チーム技能合算/構成比/指導者負担上限は未確認。"
+    },
+    {
+      "task_id": "TASK-RES01261",
+      "state": "in_progress",
+      "priority": 3,
+      "method": "vendor_document",
+      "note": "B29：単一モデルでの共有職員・部署タグ、勤務地間隔/拠点数、共通タグ/職員グループとpreview時刻種類上限を確認。タグは運用ACLでなく、実移動/テナント横断/現行版/プラン/独立実動作は未確認。"
+    }
+  ],
+  "retrieval_checks": [
+    {
+      "product": "US10",
+      "url": "https://docs.timefold.ai/employee-shift-scheduling/1.35.x/shift-service-constraints/skills-and-risk-factors",
+      "result": "fixed_1_35_x_skill_expressions_and_yes_no_eligibility_verified",
+      "notes": "Web本文を通常Chrome表示で照合。数値熟練度/チーム合算の非対応とは判定しない。"
+    },
+    {
+      "product": "US10",
+      "url": "https://docs.timefold.ai/employee-shift-scheduling/1.35.x/employee-resource-constraints/pairing-employees",
+      "result": "group_shift_hours_limit_explicitly_preview",
+      "notes": "groupShiftsPerDayLimitはpreview。latest再巡回や商用契約適用を確認した件数にしない。"
+    }
+  ]
+}

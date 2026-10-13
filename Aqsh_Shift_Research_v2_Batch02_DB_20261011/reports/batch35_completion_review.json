@@ -1,0 +1,18 @@
+{
+  "status": "passed",
+  "tasks_marked_done": 0,
+  "task_updates": {
+    "L01": "TASK-RES01239",
+    "K03": "TASK-RES01237"
+  },
+  "started_tasks": [
+    "TASK-RES01239",
+    "TASK-RES01237"
+  ],
+  "partial_only": true,
+  "unfulfilled": {
+    "L01": "本人アプリ希望/不可の別経路、勤務表日付開始TZ基準の不可変更期限、割当済み不可登録拒否と管理者配置を部分確認。プラン/OS版/本人web/等号DST/承認/権限実試験は未確認。",
+    "K03": "認定partnerによる設定後単独作業/成果調整と指導後顧客独力の分担、購入plan依存/地域/費用導線を部分確認。hour vs 50min session相違、顧客工数/医療ルール/検収/日本契約は未確認。"
+  },
+  "no_guessed_price_or_scope": true
+}

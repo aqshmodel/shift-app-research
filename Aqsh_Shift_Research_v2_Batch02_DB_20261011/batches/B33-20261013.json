@@ -1,0 +1,171 @@
+{
+  "batch_id": "B33-20261013",
+  "prior_batch": "B32-20261013",
+  "as_of_date": "2026-10-13",
+  "resolution_policy_version": 2,
+  "description": "Timefold C01/I06：週次/CUSTOM rotationと勤務列、技能別人員入力what-if・preview実験/比較の限界",
+  "method": "新規公式5文書から6部分確認。固定ESS1.35.x2文書から3観測、Platform latest3文書から3観測。rotation同一文書の週次とCUSTOM算定は別の新しい適用条件で文書数は1。混在制度/夜勤境界・採用必要数証明/曜日時間実評価を認定せず、preview・集計・個別対象外を保持。既存技能/タグ/勤務上限/採点/API認可/契約一般を反復しない。公開原本全文/本文hash/画像未保存。独立製品試験/Timefold API/登録/実験/設定/課金/公開/本番再監査なし。",
+  "sources": [
+    {
+      "key": "rotation",
+      "url": "https://docs.timefold.ai/employee-shift-scheduling/1.35.x/employee-resource-constraints/shift-rotations-and-patterns/shift-rotations",
+      "title": "Timefold — Shift rotations",
+      "publisher": "Timefold BV",
+      "reference": "Defining shift rotation rules / Required weekly / custom duration",
+      "retrieved_on": "2026-10-13",
+      "version_label": "ESS fixed documentation 1.35.x",
+      "method": "official_document_body",
+      "method_note": "Web L40–89,663–712; weekly and CUSTOM semantics are separate observations on one normalized document. 公開/更新日未表示。全文/本文ハッシュ/原本画像未保存。商用プラン・顧客現行版/preview利用権・実ルール試験/人員差分比較は未確認。登録/試用/API実行/キー生成/認証権限変更/設定操作/実験/問い合わせなし。"
+    },
+    {
+      "key": "sequence",
+      "url": "https://docs.timefold.ai/employee-shift-scheduling/1.35.x/employee-resource-constraints/shift-rotations-and-patterns/multi-day-shift-sequence-patterns",
+      "title": "Timefold — Multi-day shift sequence patterns",
+      "publisher": "Timefold BV",
+      "reference": "Contract pattern / ON-OFF / preferred-unpreferred-prohibited",
+      "retrieved_on": "2026-10-13",
+      "version_label": "ESS fixed documentation 1.35.x",
+      "method": "official_document_body",
+      "method_note": "Web L42–96,165–178,418–425,617–656. Prohibited paragraph names both multi day and single day; preserve unresolved naming difference. 公開/更新日未表示。全文/本文ハッシュ/原本画像未保存。商用プラン・顧客現行版/preview利用権・実ルール試験/人員差分比較は未確認。登録/試用/API実行/キー生成/認証権限変更/設定操作/実験/問い合わせなし。"
+    },
+    {
+      "key": "whatif",
+      "url": "https://docs.timefold.ai/timefold-platform/latest/guides/uncovering-inefficiencies-in-operational-planning",
+      "title": "Timefold — Uncovering inefficiencies in operational planning",
+      "publisher": "Timefold BV",
+      "reference": "Tips / Exploring what-if simulations",
+      "retrieved_on": "2026-10-13",
+      "version_label": "Platform latest; mutable",
+      "method": "official_document_body",
+      "method_note": "Web L90–99. New skills/resource simulation method only; no prior score/assignability or general bottleneck facts re-added. 公開/更新日未表示。全文/本文ハッシュ/原本画像未保存。商用プラン・顧客現行版/preview利用権・実ルール試験/人員差分比較は未確認。登録/試用/API実行/キー生成/認証権限変更/設定操作/実験/問い合わせなし。"
+    },
+    {
+      "key": "experiments",
+      "url": "https://docs.timefold.ai/timefold-platform/latest/how-tos/experiments",
+      "title": "Timefold — Experiments",
+      "publisher": "Timefold BV",
+      "reference": "What-if / core datasets and scenarios / M×N / aggregated results",
+      "retrieved_on": "2026-10-13",
+      "version_label": "Platform latest; preview",
+      "method": "official_document_body",
+      "method_note": "Web L22–56,100–114. Preview access/plan and customer version unconfirmed; no experiment submitted. 公開/更新日未表示。全文/本文ハッシュ/原本画像未保存。商用プラン・顧客現行版/preview利用権・実ルール試験/人員差分比較は未確認。登録/試用/API実行/キー生成/認証権限変更/設定操作/実験/問い合わせなし。"
+    },
+    {
+      "key": "comparison",
+      "url": "https://docs.timefold.ai/timefold-platform/latest/how-tos/comparing-runs",
+      "title": "Timefold — Comparisons",
+      "publisher": "Timefold BV",
+      "reference": "High-level scope / group averages / bounds / input-output/config metrics",
+      "retrieved_on": "2026-10-13",
+      "version_label": "Platform latest; preview",
+      "method": "official_document_body",
+      "method_note": "Web L22–44,64–104. Not individual employee/resource assignments; preview and averaging retained. 公開/更新日未表示。全文/本文ハッシュ/原本画像未保存。商用プラン・顧客現行版/preview利用権・実ルール試験/人員差分比較は未確認。登録/試用/API実行/キー生成/認証権限変更/設定操作/実験/問い合わせなし。"
+    }
+  ],
+  "findings": [
+    {
+      "product": "US10",
+      "criterion": "C01",
+      "source": "rotation",
+      "summary": "1.35.xはcontractsのshiftRotationRulesにWEEKLY/CUSTOMと複数rotationGroupsを定義し、勤務タグで勤務種別をまとめる。週次REQUIREDはある期間の1groupから次期間は別groupへ移るhard制約で、違反する割当は未割当になる。PREFERREDはsoft条件である。",
+      "locator": "Defining shift rotation rules / Rule satisfiability / Required weekly shift rotations",
+      "limitations": "モデル化された勤務種別の交代を部分確認したが、病棟内の二交代/三交代混在プリセット、日本の夜勤体系/境界日/祝日跨ぎ・時差/DST・複数契約競合の実試験は未確認。rotationGroupのANYやinclude/exclude排他はこのルールの条件で、既存B29のタグ一般を反復しない。固定文書版は顧客実行版/プランの認定ではない。",
+      "state": "known",
+      "delivery": "native",
+      "support": "limited",
+      "scope": "ESS fixed documentation 1.35.x; documented partial scope, not independent product validation; commercial plan and current runtime unconfirmed"
+    },
+    {
+      "product": "US10",
+      "criterion": "C01",
+      "source": "rotation",
+      "summary": "CUSTOM REQUIREDのrequiredRotationPeriodMaxSizeInDaysは同じrotationGroupの期間の最大日数を定める。公式例は1月1/2/3/5日の朝勤務を5日間、1月8/10/11/13日の午後勤務を6日間と数え、異なるgroup期間の間の1月6/7日の休日を含めない。",
+      "locator": "Required custom shift rotations / Length of the maximum rotation period",
+      "limitations": "最大日数は割当勤務の件数や連続勤務日数と同じではない。期間内の空き日とgroup間の休日の扱いを混同しない。夜勤跨日・ローテーション開始/終了境界・前月からの継承・複数体系混在/三交代固定順序は未検証。PREFERREDのmin/maxをREQUIREDの最低日数保証にしない。週次とCUSTOMを1観測に混ぜず、同一文書数を水増ししない。",
+      "state": "known",
+      "delivery": "native",
+      "support": "limited",
+      "scope": "ESS fixed documentation 1.35.x; documented partial scope, not independent product validation; commercial plan and current runtime unconfirmed"
+    },
+    {
+      "product": "US10",
+      "criterion": "C01",
+      "source": "sequence",
+      "summary": "multiDayShiftSequencePatternRulesを契約に設定し、職員へ契約を紐付け、勤務タグに一致するONとOFFの順序を定義する。PREFERREDは部分的なpattern要素にsoft報酬、UNPREFERREDは完全一致した列にsoft罰則、PROHIBITEDは翌日のLate→Early等の列をhard条件で禁じる例を示す。",
+      "locator": "Define multi-day shift sequences / Preferred / Unpreferred / Prohibited multi-day shift sequence",
+      "limitations": "勤務列の表現・例を部分確認しただけで、混在交代制度・臨床配置基準・法令適合・月境界/夜勤日帰属の保証ではない。PROHIBITEDの説明はmulti dayとsingle dayの制約名を併記しており、名称の誤記/実制約対応は未確定。soft条件は満たされなくても割当され得る。実出力、顧客現行版/プランは未確認。",
+      "state": "known",
+      "delivery": "native",
+      "support": "limited",
+      "scope": "ESS fixed documentation 1.35.x; documented partial scope, not independent product validation; commercial plan and current runtime unconfirmed"
+    },
+    {
+      "product": "US10",
+      "criterion": "I06",
+      "source": "whatif",
+      "summary": "公開ガイドは特定技能を持つ職員を追加/削除した入力を送って生産性の変化を比較し、勤務pattern・skill mix・team構成を変えるwhat-if simulationを案内する。Experimentsで変種を体系的に比較する導線も示す。",
+      "locator": "Tips for getting the most insight today / Exploring what-if simulations",
+      "limitations": "候補条件を利用者が用意する比較手順で、最適な採用資格/曜日/時間や最小採用必要数を自動算出/証明するとは確認できない。曜日/時間の可用条件・契約・費用・需要/期間を揃えた候補別実評価、改善量の統計確度、プラン/実行版とpreview利用権は未確認。B29技能やB30採点の一般事項は再登録しない。",
+      "state": "known",
+      "delivery": "native",
+      "support": "limited",
+      "scope": "Platform latest; mutable; documented partial scope, not independent product validation; commercial plan and current runtime unconfirmed"
+    },
+    {
+      "product": "US10",
+      "criterion": "I06",
+      "source": "experiments",
+      "summary": "previewのExperimentsは既存dataset IDを参照し、新しい入力は先にsolveせず登録する。入力変種とmodel version/profile/overrideを定義するscenarioを組み合わせ、M datasets×N scenariosのsolveを行い、scenarioごとの集計指標とbaseline差分を比較する。作成はAPI、結果参照はUIと説明する。",
+      "locator": "What-if scenarios / Core concepts / Creating an experiment / Reading the results",
+      "limitations": "入力を作り分ける操作とscenarioの解き方設定を区別する。API例はscenarioごとのdatasets配列だが文章は全M×Nであり、異なる集合の実行網羅性は未試験。集計指標を個別資格/曜日/時間の不足原因や最小採用数の証明へ拡張しない。preview・早期利用問い合わせ・プラン/費用/資源配分は未確認。API/実験/キー/権限変更なし。",
+      "state": "known",
+      "delivery": "native",
+      "support": "limited",
+      "scope": "Platform latest; preview; documented partial scope, not independent product validation; commercial plan and current runtime unconfirmed"
+    },
+    {
+      "product": "US10",
+      "criterion": "I06",
+      "source": "comparison",
+      "summary": "previewのComparison UIは選択datasetの人員/仕事数等のinput metricsとoutput metrics・scoreを比較する。列は単一または複数datasetの平均で、上限10列・1列50dataset。実効configurationは単一dataset列でのみ表示し、個別職員指標/資源割当の比較は対象外と明記する。",
+      "locator": "Comparison scope / How comparisons work / What we compare",
+      "limitations": "高水準の比較で、採用候補ごとの勤務成立/不足解消の因果や資格・曜日・時間の必要人数を直接証明しない。平均による不足ピークの隠れ・期間/需要/制約/版の差を別に評価する必要がある。previewと商用プラン/実動作は未確認。CSV/exportは本ターンの観測へ重複追加せず、M08の全量出口保証にも使わない。",
+      "state": "known",
+      "delivery": "native",
+      "support": "limited",
+      "scope": "Platform latest; preview; documented partial scope, not independent product validation; commercial plan and current runtime unconfirmed"
+    }
+  ],
+  "prices": [],
+  "followups": [],
+  "task_updates": [
+    {
+      "task_id": "TASK-RES01263",
+      "state": "in_progress",
+      "priority": 3,
+      "method": "vendor_document",
+      "note": "B33：週次/CUSTOM rotationのgroupと期間算定、contract別ON/OFF列とsoft/hardを部分確認。病棟内二交代/三交代混在、夜勤跨日・月境界・臨床/法令基準、実出力/プランは未確認。"
+    },
+    {
+      "task_id": "TASK-RES01283",
+      "state": "in_progress",
+      "priority": 3,
+      "method": "vendor_document",
+      "note": "B33：技能別職員追加/削除入力のwhat-if、preview実験M×Nと集計/高水準比較の上限・平均/個別対象外を部分確認。曜日時間候補の実評価・最小採用数証明・preview権/費用/版は未確認。"
+    }
+  ],
+  "retrieval_checks": [
+    {
+      "product": "US10",
+      "url": "https://docs.timefold.ai/employee-shift-scheduling/1.35.x/employee-resource-constraints/shift-rotations-and-patterns/multi-day-shift-sequence-patterns",
+      "result": "prohibited_multi_day_vs_single_day_constraint_name_mismatch",
+      "notes": "PROHIBITED節冒頭はEmployee works prohibited multi day shift sequence patternをhardとし、未割当の説明はsingle dayと表記。noLateFollowedByEarly翌日例/JSONはmultiDay。誤記/内部別制約/版差を推測せず実挙動未確認で保持。"
+    },
+    {
+      "product": "US10",
+      "url": "https://docs.timefold.ai/timefold-platform/latest/how-tos/experiments",
+      "result": "M_times_N_prose_vs_scenario_specific_dataset_arrays_not_run",
+      "notes": "Core conceptsはevery dataset against every scenario/M×Nと説明するがPOST例はscenarios各要素にdatasets配列。例は同じdataset集合で異なる集合時の積・集計は未確定。実API/実験なし。B31認可例外の再観測なし。"
+    }
+  ]
+}

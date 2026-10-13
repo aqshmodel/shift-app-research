@@ -1,0 +1,245 @@
+{
+  "status": "passed",
+  "table_count": 39,
+  "tables": [
+    {
+      "table": "assessment_resolutions",
+      "preserved_rows": 2754,
+      "mutable_rows": 0,
+      "new_rows": 2
+    },
+    {
+      "table": "asset_evidence",
+      "preserved_rows": 6,
+      "mutable_rows": 0,
+      "new_rows": 0
+    },
+    {
+      "table": "audit_issues",
+      "preserved_rows": 32,
+      "mutable_rows": 0,
+      "new_rows": 0
+    },
+    {
+      "table": "batch_product_membership",
+      "preserved_rows": 171,
+      "mutable_rows": 0,
+      "new_rows": 1
+    },
+    {
+      "table": "benchmark_runs",
+      "preserved_rows": 0,
+      "mutable_rows": 0,
+      "new_rows": 0
+    },
+    {
+      "table": "benchmark_scenario_criteria",
+      "preserved_rows": 45,
+      "mutable_rows": 0,
+      "new_rows": 0
+    },
+    {
+      "table": "benchmark_scenarios",
+      "preserved_rows": 14,
+      "mutable_rows": 0,
+      "new_rows": 0
+    },
+    {
+      "table": "brand_assets",
+      "preserved_rows": 51,
+      "mutable_rows": 0,
+      "new_rows": 0
+    },
+    {
+      "table": "classification_corrections",
+      "preserved_rows": 12,
+      "mutable_rows": 0,
+      "new_rows": 0
+    },
+    {
+      "table": "cost_requirements",
+      "preserved_rows": 36,
+      "mutable_rows": 0,
+      "new_rows": 0
+    },
+    {
+      "table": "cost_scenarios",
+      "preserved_rows": 8,
+      "mutable_rows": 0,
+      "new_rows": 0
+    },
+    {
+      "table": "criteria",
+      "preserved_rows": 164,
+      "mutable_rows": 0,
+      "new_rows": 0
+    },
+    {
+      "table": "current_assessments",
+      "preserved_rows": 2123,
+      "mutable_rows": 2,
+      "new_rows": 0
+    },
+    {
+      "table": "domains",
+      "preserved_rows": 20,
+      "mutable_rows": 0,
+      "new_rows": 0
+    },
+    {
+      "table": "legacy_feature_map",
+      "preserved_rows": 86,
+      "mutable_rows": 0,
+      "new_rows": 0
+    },
+    {
+      "table": "metric_catalog",
+      "preserved_rows": 20,
+      "mutable_rows": 0,
+      "new_rows": 0
+    },
+    {
+      "table": "observation_evidence",
+      "preserved_rows": 2181,
+      "mutable_rows": 0,
+      "new_rows": 4
+    },
+    {
+      "table": "observations",
+      "preserved_rows": 3065,
+      "mutable_rows": 0,
+      "new_rows": 4
+    },
+    {
+      "table": "offerings",
+      "preserved_rows": 50,
+      "mutable_rows": 0,
+      "new_rows": 0
+    },
+    {
+      "table": "plans",
+      "preserved_rows": 99,
+      "mutable_rows": 0,
+      "new_rows": 0
+    },
+    {
+      "table": "price_components",
+      "preserved_rows": 118,
+      "mutable_rows": 0,
+      "new_rows": 0
+    },
+    {
+      "table": "product_aliases",
+      "preserved_rows": 57,
+      "mutable_rows": 0,
+      "new_rows": 0
+    },
+    {
+      "table": "products",
+      "preserved_rows": 50,
+      "mutable_rows": 0,
+      "new_rows": 0
+    },
+    {
+      "table": "regulation_support",
+      "preserved_rows": 0,
+      "mutable_rows": 0,
+      "new_rows": 0
+    },
+    {
+      "table": "regulations",
+      "preserved_rows": 17,
+      "mutable_rows": 0,
+      "new_rows": 0
+    },
+    {
+      "table": "research_assets",
+      "preserved_rows": 6,
+      "mutable_rows": 0,
+      "new_rows": 0
+    },
+    {
+      "table": "research_batches",
+      "preserved_rows": 35,
+      "mutable_rows": 0,
+      "new_rows": 1
+    },
+    {
+      "table": "research_task_updates",
+      "preserved_rows": 119,
+      "mutable_rows": 0,
+      "new_rows": 2
+    },
+    {
+      "table": "research_tasks",
+      "preserved_rows": 980,
+      "mutable_rows": 2,
+      "new_rows": 0
+    },
+    {
+      "table": "resolution_evidence",
+      "preserved_rows": 3836,
+      "mutable_rows": 0,
+      "new_rows": 6
+    },
+    {
+      "table": "retrieval_checks",
+      "preserved_rows": 212,
+      "mutable_rows": 0,
+      "new_rows": 2
+    },
+    {
+      "table": "run_metrics",
+      "preserved_rows": 0,
+      "mutable_rows": 0,
+      "new_rows": 0
+    },
+    {
+      "table": "schema_info",
+      "preserved_rows": 17,
+      "mutable_rows": 1,
+      "new_rows": 0
+    },
+    {
+      "table": "source_archives",
+      "preserved_rows": 6,
+      "mutable_rows": 0,
+      "new_rows": 0
+    },
+    {
+      "table": "source_documents",
+      "preserved_rows": 366,
+      "mutable_rows": 0,
+      "new_rows": 2
+    },
+    {
+      "table": "source_method_attributes",
+      "preserved_rows": 460,
+      "mutable_rows": 0,
+      "new_rows": 2
+    },
+    {
+      "table": "source_revisions",
+      "preserved_rows": 520,
+      "mutable_rows": 0,
+      "new_rows": 2
+    },
+    {
+      "table": "sources",
+      "preserved_rows": 368,
+      "mutable_rows": 0,
+      "new_rows": 2
+    },
+    {
+      "table": "vendors",
+      "preserved_rows": 11,
+      "mutable_rows": 0,
+      "new_rows": 0
+    }
+  ],
+  "changed_tasks": [
+    "TASK-RES01226",
+    "TASK-RES01227"
+  ],
+  "all_prior_batch_hashes_preserved": true
+}

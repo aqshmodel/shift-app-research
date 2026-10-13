@@ -1,0 +1,27 @@
+{
+  "status": "passed",
+  "maximum_statement_bytes": 86116,
+  "conservative_limit": 100000,
+  "code_unchanged_from_B31": true,
+  "publication_content_hash_verified": true,
+  "all50_products_readable": true,
+  "SQL_replay_products_preserved": true,
+  "provisional_rows": 0,
+  "new5_regression_tests_included_in72": true,
+  "deltas": {
+    "B31": {
+      "statement_count": 177,
+      "maximum_statement_bytes": 86116,
+      "sql_sha256": "5a4fbd3beee8f5b881cf9b6de1f803e4bda150401c8f9178af20fc6bb91948c6",
+      "local_sql_roundtrip": "passed",
+      "prior_publication_rows_preserved": true
+    },
+    "B18": {
+      "statement_count": 969,
+      "maximum_statement_bytes": 86116,
+      "sql_sha256": "bd21c7d5caba095b477acd2679f992aabbd863fd670919c58612949e48fb35c8",
+      "local_sql_roundtrip": "passed",
+      "prior_publication_rows_preserved": true
+    }
+  }
+}

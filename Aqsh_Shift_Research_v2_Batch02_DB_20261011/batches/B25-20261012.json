@@ -1,0 +1,248 @@
+{
+  "batch_id": "B25-20261012",
+  "prior_batch": "B24-20261012",
+  "as_of_date": "2026-10-12",
+  "resolution_policy_version": 2,
+  "description": "Timefold未着手C02/C05/E01/F01：1.35.x公式仕様の時間境界・休息・不可用と希望・hard/medium/softを限定確認",
+  "method": "7固定1.35.x公式本文とlatest勤務間隔の対照1資料を確認。前サイクルの支援・請求条件と重複なし。勤務時間の分割、night time interval、scope付き休息、absence-aware preview、不可用hardと希望soft、mandatory medium、休暇周辺hard/softを区別。latest取得の版メニューや入力形状差を1.35.xへ混ぜず、例の日時・数値を改定日・法定値としない。本文要約・URL・版・locatorを保存し全文/ハッシュ未保存。API呼出・試用・認証・課金・製品独立試験・公開・本番再監査なし。",
+  "sources": [
+    {
+      "key": "days",
+      "url": "https://docs.timefold.ai/employee-shift-scheduling/1.35.x/employee-resource-constraints/work-limits/days-worked-per-period",
+      "title": "Timefold Employee Shift Scheduling 1.35.x — Days worked per period",
+      "publisher": "Timefold BV",
+      "reference": "期間・rolling windowの日跨ぎの集計 / periodShiftOverlapKind",
+      "retrieved_on": "2026-10-12",
+      "version_label": "Employee Shift Scheduling documentation 1.35.x; not a live runtime certification",
+      "method": "official_document_body",
+      "method_note": "1.35.x固定URLの本文L99〜141。通常公開の仕様本文を確認。公開・最終更新日は未表示。文中の例示実行日時や2027年の勤務日を仕様公開日と扱わない。全文・本文ハッシュ・原本画像は未保存。サンプルAPI未実行・API key未作成。"
+    },
+    {
+      "key": "minutes",
+      "url": "https://docs.timefold.ai/employee-shift-scheduling/1.35.x/employee-resource-constraints/work-limits/minutes-worked-per-period",
+      "title": "Timefold Employee Shift Scheduling 1.35.x — Minutes worked per period",
+      "publisher": "Timefold BV",
+      "reference": "Count only minutes within a daily time interval",
+      "retrieved_on": "2026-10-12",
+      "version_label": "Employee Shift Scheduling documentation 1.35.x; not a live runtime certification",
+      "method": "official_document_body",
+      "method_note": "1.35.x固定URLの本文L261〜289。通常公開の仕様本文を確認。公開・最終更新日は未表示。文中の例示実行日時や2027年の勤務日を仕様公開日と扱わない。全文・本文ハッシュ・原本画像は未保存。サンプルAPI未実行・API key未作成。"
+    },
+    {
+      "key": "rest",
+      "url": "https://docs.timefold.ai/employee-shift-scheduling/1.35.x/employee-resource-constraints/shift-rotations-and-patterns/minutes-between-shifts",
+      "title": "Timefold Employee Shift Scheduling 1.35.x — Minutes between shifts",
+      "publisher": "Timefold BV",
+      "reference": "Define / satisfiability / scope / absence-aware preview / required and preferred",
+      "retrieved_on": "2026-10-12",
+      "version_label": "Employee Shift Scheduling documentation 1.35.x; not a live runtime certification",
+      "method": "official_document_body",
+      "method_note": "1.35.x固定URLの本文L38〜163・351〜383。absenceModeは文字列。通常公開の仕様本文を確認。公開・最終更新日は未表示。文中の例示実行日時や2027年の勤務日を仕様公開日と扱わない。全文・本文ハッシュ・原本画像は未保存。サンプルAPI未実行・API key未作成。"
+    },
+    {
+      "key": "availability",
+      "url": "https://docs.timefold.ai/employee-shift-scheduling/1.35.x/employee-resource-constraints/employee-availability-and-preferences/employee-availability",
+      "title": "Timefold Employee Shift Scheduling 1.35.x — Employee availability",
+      "publisher": "Timefold BV",
+      "reference": "Defining availability / unavailable / available times / end exclusive / example",
+      "retrieved_on": "2026-10-12",
+      "version_label": "Employee Shift Scheduling documentation 1.35.x; not a live runtime certification",
+      "method": "official_document_body",
+      "method_note": "1.35.x固定URLの本文L39〜74・181〜205。通常公開の仕様本文を確認。公開・最終更新日は未表示。文中の例示実行日時や2027年の勤務日を仕様公開日と扱わない。全文・本文ハッシュ・原本画像は未保存。サンプルAPI未実行・API key未作成。"
+    },
+    {
+      "key": "preferences",
+      "url": "https://docs.timefold.ai/employee-shift-scheduling/1.35.x/employee-resource-constraints/employee-availability-and-preferences/employee-preferences",
+      "title": "Timefold Employee Shift Scheduling 1.35.x — Employee preferences",
+      "publisher": "Timefold BV",
+      "reference": "Defining preferences / weights / unpreferred times",
+      "retrieved_on": "2026-10-12",
+      "version_label": "Employee Shift Scheduling documentation 1.35.x; not a live runtime certification",
+      "method": "official_document_body",
+      "method_note": "1.35.x固定URLの本文L33〜71・520〜527。通常公開の仕様本文を確認。公開・最終更新日は未表示。文中の例示実行日時や2027年の勤務日を仕様公開日と扱わない。全文・本文ハッシュ・原本画像は未保存。サンプルAPI未実行・API key未作成。"
+    },
+    {
+      "key": "constraints",
+      "url": "https://docs.timefold.ai/employee-shift-scheduling/1.35.x/user-guide/constraints",
+      "title": "Timefold Employee Shift Scheduling 1.35.x — Constraints",
+      "publisher": "Timefold BV",
+      "reference": "Hard / medium / soft overview / scores and constraint weights",
+      "retrieved_on": "2026-10-12",
+      "version_label": "Employee Shift Scheduling documentation 1.35.x; not a live runtime certification",
+      "method": "official_document_body",
+      "method_note": "1.35.x固定URLの本文L25〜40・89〜104。通常公開の仕様本文を確認。公開・最終更新日は未表示。文中の例示実行日時や2027年の勤務日を仕様公開日と扱わない。全文・本文ハッシュ・原本画像は未保存。サンプルAPI未実行・API key未作成。"
+    },
+    {
+      "key": "near-day-off",
+      "url": "https://docs.timefold.ai/employee-shift-scheduling/1.35.x/employee-resource-constraints/time-off/avoid-shifts-close-to-day-off-requests",
+      "title": "Timefold Employee Shift Scheduling 1.35.x — Shifts to avoid close to day off requests",
+      "publisher": "Timefold BV",
+      "reference": "avoidPrior/AfterShiftTags / satisfiability / prohibited / unpreferred",
+      "retrieved_on": "2026-10-12",
+      "version_label": "Employee Shift Scheduling documentation 1.35.x; not a live runtime certification",
+      "method": "official_document_body",
+      "method_note": "1.35.x固定URLの本文L40〜91・402〜425。通常公開の仕様本文を確認。公開・最終更新日は未表示。文中の例示実行日時や2027年の勤務日を仕様公開日と扱わない。全文・本文ハッシュ・原本画像は未保存。サンプルAPI未実行・API key未作成。"
+    },
+    {
+      "key": "rest-latest",
+      "url": "https://docs.timefold.ai/employee-shift-scheduling/latest/employee-resource-constraints/shift-rotations-and-patterns/minutes-between-shifts",
+      "title": "Minutes between shifts — latest mutable document schema contrast",
+      "publisher": "Timefold BV",
+      "reference": "Absence-aware minutes between shifts (preview)",
+      "retrieved_on": "2026-10-12",
+      "version_label": "latest mutable alias; not assumed identical to 1.35.x",
+      "method": "official_document_body",
+      "method_note": "latest本文L130〜168はabsenceModeがtypeを含むオブジェクト、includeDateTimeSpanTagsによるspan.tagsフィルタを説明。1.35.x本文の文字列と区別。版による表現差で仕様相反・後方互換・現行顧客版を断定しない。全文・本文ハッシュ未保存。対照用で直接追加観測の出典とはしない。"
+    }
+  ],
+  "findings": [
+    {
+      "product": "US10",
+      "criterion": "C02",
+      "source": "days",
+      "summary": "期間・rolling windowのルールは、既定のSTART_ONLYでは勤務開始が対象期間内のシフトを数え、前日に始まって翌朝終わる夜勤を翌日の制限に含めないと説明する。periodShiftOverlapKindをSTART_AND_ENDへ変えると、対象期間に重なる夜勤の部分もルールの集計へ含める。",
+      "locator": "Counting days in rules / periodShiftOverlapKind START_ONLY and START_AND_END",
+      "limitations": "1.35.xの期間ルールの集計挙動。職員の明け勤務という別コード・勤務日数の二重計数・給与上の日付帰属を確定しない。分数と日数の集計を一律に同じ計数へ読み替えず、設定対象のルールを特定する必要がある。DST・月境界・最小単位・丸めの製品試験なし。",
+      "state": "known",
+      "delivery": "native",
+      "support": "limited",
+      "scope": "Employee Shift Scheduling API documentation 1.35.x; sample outputs are vendor examples; live execution and deployment applicability untested"
+    },
+    {
+      "product": "US10",
+      "criterion": "C02",
+      "source": "minutes",
+      "summary": "minutesWorkedLimit.countOnlyBetweenは日内の指定時間帯と勤務が重なる分だけを数える。開始時刻を含み終了時刻を含まず、終了が開始より前なら22:00〜06:00のように翌日へ跨ぐ。職員のタイムゾーンで解釈し、複数日に跨ぐ勤務は各日で重なりを計算する。",
+      "locator": "Count only minutes within a daily time interval",
+      "limitations": "1.35.xの特定時間帯の勤務分数制限。夜勤という名称だけで法令の深夜時間を自動設定するとはしない。periodShiftOverlapKindとの組合せ、DSTの重複/欠落時刻、時差変更、丸め、明け後休日の自動生成は未検証。日本の行政・給与算式の適合を示すものではない。",
+      "state": "known",
+      "delivery": "native",
+      "support": "limited",
+      "scope": "Employee Shift Scheduling API documentation 1.35.x; sample outputs are vendor examples; live execution and deployment applicability untested"
+    },
+    {
+      "product": "US10",
+      "criterion": "C05",
+      "source": "rest",
+      "summary": "minutesBetweenShiftsRulesは前勤務の終了から後勤務の開始までの分数に最小・最大を設定し、REQUIREDではhard、PREFERREDではsoft制約にする。既定はREQUIRED。scope.durationは前終了＋期間を超えて始まる後勤務との組を除外し、前後の勤務タグでも対象を限定できる。",
+      "locator": "Define minutes between shifts / scope / Rule satisfiability / Required and Preferred sections",
+      "limitations": "1.35.xのAPI契約モデル内のルールで商用ライセンス契約ではない。例の720分・1440分は法定値や製品固定値ではない。08:00終了と720分の例は20:00以降を許すと説明するが、scopeちょうどの境界、秒精度・重複勤務・計画窓外の前後勤務・pinned例外は独立未検証。タグinclude/excludeの同じ側での併用不可とALL既定を保持。",
+      "state": "known",
+      "delivery": "native",
+      "support": "limited",
+      "scope": "Employee Shift Scheduling API documentation 1.35.x; sample outputs are vendor examples; live execution and deployment applicability untested"
+    },
+    {
+      "product": "US10",
+      "criterion": "C05",
+      "source": "rest",
+      "summary": "1.35.xのabsenceModeはABSENCE_UNAWAREが既定で勤務間の経過時間を比較する。previewのABSENCE_AWAREはavailableTimeSpansまたはunavailableTimeSpansから不可用分を除き、最小休息の充足にも最大間隔の超過にもその分を数えないと説明する。",
+      "locator": "Absence-aware minutes between shifts (preview), 1.35.x string absenceMode",
+      "limitations": "previewは変更対象で安定版の普遍仕様・全顧客で利用可能とはしない。1.35.xは文字列だがlatest対照はtypeを含むオブジェクトとspan.tagsフィルタで、入力形式を混ぜない。対照URL=https://docs.timefold.ai/employee-shift-scheduling/latest/employee-resource-constraints/shift-rotations-and-patterns/minutes-between-shifts。現行実行モデル、移行・既存入力互換、除外時のscope計算と境界実動作は未確認。休暇を休息時間から除くことが日本法で必要と判断しない。",
+      "state": "known",
+      "delivery": "native",
+      "support": "limited",
+      "scope": "Employee Shift Scheduling API documentation 1.35.x; sample outputs are vendor examples; live execution and deployment applicability untested"
+    },
+    {
+      "product": "US10",
+      "criterion": "E01",
+      "source": "availability",
+      "summary": "availableTimeSpansは列挙した期間だけ利用可能、unavailableTimeSpansは列挙した期間だけ利用不可とし、同一職員で両方は使えない。期間は日跨ぎで指定でき終了端はexclusive。不可用との重なりや利用可能期間で覆われない勤務分にはhard制約を適用し、例は必須シフトを未割当にして不可用を守る。",
+      "locator": "Defining employee availability / unavailable times / available times / Friday unassigned example",
+      "limitations": "1.35.xの可用入力とhard制約。確定済み休暇を不可用へ変換する方法は実装側で設計する必要があり、申請・承認・取消・権限・休暇種類の完成済みワークフローがあるとはしない。明示不可用を単なるsoft希望へ変換しない。既定は不可用指定がなければ勤務可能。タグフィルタの適用漏れと境界の実試験なし。",
+      "state": "known",
+      "delivery": "native",
+      "support": "limited",
+      "scope": "Employee Shift Scheduling API documentation 1.35.x; sample outputs are vendor examples; live execution and deployment applicability untested"
+    },
+    {
+      "product": "US10",
+      "criterion": "E01",
+      "source": "preferences",
+      "summary": "preferredTimeSpansとunpreferredTimeSpansはsoftの勤務希望で、働きたくない期間でも必要なら割当され得る。勤務と希望期間が重なる分数に、期間の重みと職員priority multiplierを掛けて報酬または罰点を付ける。期間の重みは省略時1、指定時は1以上の整数として説明する。",
+      "locator": "Defining employee preferences / preferred soft reward / Employees unpreferred times",
+      "limitations": "1.35.xの希望入力。希望休と確定不可用・有給休暇の承認状態を同一にしない。priorityや重みの大小から希望の全実現・公平性・法令遵守を保証しない。役割・技能・他制約と競合する。希望の収集UI・権限・取消履歴・分母を用いた実現率の独立試験なし。",
+      "state": "known",
+      "delivery": "native",
+      "support": "limited",
+      "scope": "Employee Shift Scheduling API documentation 1.35.x; sample outputs are vendor examples; live execution and deployment applicability untested"
+    },
+    {
+      "product": "US10",
+      "criterion": "F01",
+      "source": "constraints",
+      "summary": "制約をhard・medium・softに分け、hard違反はinfeasible、mediumは必須シフトをできるだけ割り当て、softは業務目標を改善すると説明する。hard違反0の解はsoftが低くてもhard違反のある解より良い。スコア値は違反の件数そのものではなく、重み×match scoreで評価する。",
+      "locator": "Overview / hard-medium-soft score / Constraint weights",
+      "limitations": "1.35.xのスコア定義。mandatoryというラベルだけで全シフト充足をhardと判断しない。未割当を含むfeasibleと需要充足・最適性・解なし証明は別。0hardだけで日本の法令・未入力条件を満たすとは保証しない。既存B03の自己割当と変更抑制の一般相反は重複追加せず、今回の三段階定義を補足。",
+      "state": "known",
+      "delivery": "native",
+      "support": "limited",
+      "scope": "Employee Shift Scheduling API documentation 1.35.x; sample outputs are vendor examples; live execution and deployment applicability untested"
+    },
+    {
+      "product": "US10",
+      "criterion": "F01",
+      "source": "near-day-off",
+      "summary": "休暇前後のavoidShiftCloseToDayOffRequestRulesは前日の避けるタグと翌日の避けるタグを別々に設定する。PROHIBITEDはhardで違反する割当を避け、UNPREFERREDはsoftで罰点を付けつつ割当され得る。省略時はPROHIBITED、タグのALL/ANYは省略時ALLで、片側のタグがなければその側に効果はない。",
+      "locator": "Define tags / Rule satisfiability / Prohibited / Unpreferred sections",
+      "limitations": "1.35.xの休暇周辺勤務ルール。休暇自体は職員のavailabilityで定義する説明。夜勤明けの休日を自動作成する完成済み日本向けパターンとはしない。0:00境界へ跨ぐ勤務、部分休・連続休、前後の暦日と職員timezoneの関係、タグ設定漏れ、例外承認は未検証。独立API試験なし。",
+      "state": "known",
+      "delivery": "native",
+      "support": "limited",
+      "scope": "Employee Shift Scheduling API documentation 1.35.x; sample outputs are vendor examples; live execution and deployment applicability untested"
+    }
+  ],
+  "prices": [],
+  "followups": [],
+  "task_updates": [
+    {
+      "task_id": "TASK-RES01264",
+      "state": "in_progress",
+      "priority": 3,
+      "method": "vendor_document",
+      "note": "B25：1.35.xのSTART_ONLY/START_AND_ENDとcountOnlyBetweenの端点・日跨ぎ・職員timezoneを確認。日本の明けコード・日数/給与帰属・DST・境界実動作は未確認。"
+    },
+    {
+      "task_id": "TASK-RES01265",
+      "state": "in_progress",
+      "priority": 3,
+      "method": "vendor_document",
+      "note": "B25：1.35.xの勤務間分数、最小/最大、REQUIRED/PREFERRED、scope・タグとabsence-aware previewを確認。latestとの文字列/オブジェクト差、現行版・計画窓外・境界は未確認。"
+    },
+    {
+      "task_id": "TASK-RES01268",
+      "state": "in_progress",
+      "priority": 3,
+      "method": "vendor_document",
+      "note": "B25：不可用hardと勤務希望softの別入力、列挙外既定・併用不可・exclusive端点・重みを確認。休暇承認ワークフロー・権限・取消・実現率実測は未確認。"
+    },
+    {
+      "task_id": "TASK-RES01271",
+      "state": "in_progress",
+      "priority": 3,
+      "method": "vendor_document",
+      "note": "B25：hard/medium/softスコアとmandatory未充足の意味、休暇周辺PROHIBITED/UNPREFERREDの範囲を確認。独立テスト・未入力の法令・例外承認は未確認。"
+    }
+  ],
+  "retrieval_checks": [
+    {
+      "product": "US10",
+      "url": "https://docs.timefold.ai/employee-shift-scheduling/latest/employee-resource-constraints/shift-rotations-and-patterns/minutes-between-shifts",
+      "result": "latest_and_1_35_x_preview_input_shapes_differ",
+      "notes": "latestはabsenceMode.typeとincludeDateTimeSpanTagsのオブジェクト、1.35.xは文字列。版ラベルを保存し、相反や互換性、実行顧客版を推測しない。"
+    },
+    {
+      "product": "US10",
+      "url": "https://docs.timefold.ai/employee-shift-scheduling/latest/introduction",
+      "result": "public_document_navigation_only_no_registration_of_existing_introduction_claims",
+      "notes": "latestナビに1.35.x/1.34.x、他ページ取得で1.34/1.33だけを表示する例。過去のintro・上限400,000・支援/料金は再登録せず、根拠を固定版へ移した。"
+    },
+    {
+      "product": "US10",
+      "url": "https://docs.timefold.ai/employee-shift-scheduling/latest/employee-resource-constraints/employee-contracts",
+      "result": "employee_contract_model_not_commercial_license_terms",
+      "notes": "勤務ルールのcontractsをAPIライセンスや料金契約に読み替えない。カテゴリ・親ページは根拠追加数へ含めない。"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "status": "passed",
+  "unique_cases": 38,
+  "stats": {
+    "startTime": "2026-10-13T01:54:51.888Z",
+    "duration": 79354.325,
+    "expected": 38,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "retry_count": 0,
+  "external_DNS": "blocked except loopback",
+  "telemetry": "mock URLs only",
+  "results": ".local/research-backups/C04T05/browser-results.json",
+  "screenshots": ".local/research-backups/C04T05/runtime-evidence/browser-cwd/docs",
+  "traces": ".local/research-backups/C04T05/runtime-evidence/browser-traces",
+  "source_tests_unchanged": true
+}

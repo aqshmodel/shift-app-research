@@ -1,0 +1,11 @@
+{
+  "status": "passed",
+  "total_tests": 67,
+  "research_python": 14,
+  "web_python": 31,
+  "node": 22,
+  "logs_directory": "/Users/tsukadatakahiro/Python/app/shift-app/.local/research-backups/C03T04/logs",
+  "implementation_changes": false,
+  "typecheck_and_build": "C03T05 planned; no implementation change",
+  "draft_repairs": "No ingest repairs. Price verification assumption repaired: prior price records include unknown setup, and contexts include legacy not_researched observations."
+}

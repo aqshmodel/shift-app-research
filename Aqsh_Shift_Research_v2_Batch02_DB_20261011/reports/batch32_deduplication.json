@@ -1,0 +1,12 @@
+{
+  "status": "passed",
+  "new_findings": 6,
+  "known_partial": 4,
+  "not_found": 2,
+  "exact_summary_duplicates": 0,
+  "new_distinct_research_documents": 4,
+  "reused_normalized_documents": 2,
+  "semantic_review": "New input-format boundary and distinct export granularity/limits/compatibility. Existing integration/authorization/profile creation/score facts not repeated; contracts not re-polled.",
+  "new_price_components": 0,
+  "existing_price_components": 118
+}

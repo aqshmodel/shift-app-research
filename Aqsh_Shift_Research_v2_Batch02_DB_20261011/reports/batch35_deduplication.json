@@ -1,0 +1,12 @@
+{
+  "status": "passed",
+  "new_findings": 6,
+  "known_partial": 6,
+  "not_found": 0,
+  "exact_summary_duplicates": 0,
+  "new_distinct_research_documents": 4,
+  "comparison_only_existing_documents": 1,
+  "semantic_review": "New native-app paths, date-start deadline and assigned-shift restriction; partner setup vs training and plan/region/hour-session boundary. Generic availability/autoassign/permissions and Excel import not repeated.",
+  "new_price_components": 0,
+  "existing_price_components": 118
+}

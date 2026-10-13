@@ -5,6 +5,7 @@ ROOT=Path(__file__).resolve().parents[3]
 PKG=ROOT/'Aqsh_Shift_Research_v2_Batch02_DB_20261011'
 sys.path.insert(0,str(PKG/'tools'))
 from research_db import connect,fingerprint,literal,stats
+from publication_sql import product_statements, complete_product_filter
 out=ROOT/'apps/web/data';out.mkdir(exist_ok=True)
 def dumps(v): return json.dumps(v,ensure_ascii=False,separators=(',',':'),sort_keys=True)
 def norm(v): return unicodedata.normalize('NFKC',v).lower()
@@ -78,11 +79,11 @@ with connect() as c:
  sql=['-- Apply migration 0001 first. Research import is only for an empty DB.']
  sql.append('INSERT OR IGNORE INTO web_snapshots(snapshot_id,as_of_date,research_sha256,content_sha256,scope_json) VALUES('+','.join(map(literal,[version,as_of_date,research_hash,content_hash,dumps(scope)]))+');')
  for row in rows:
-  sql.append('INSERT OR IGNORE INTO web_products VALUES('+','.join(map(literal,[version,row['id'],row['slug'],row['search'],dumps(row['summary']),dumps(row['detail'])]))+');')
+  sql.extend(product_statements(version,row['id'],row['slug'],row['search'],dumps(row['summary']),dumps(row['detail'])))
  for m in membership:sql.append('INSERT OR IGNORE INTO web_categories VALUES('+','.join(map(literal,[version,m['category'],m['id'],dumps(m['provenance'])]))+');')
  # Publish only after every product exists; a failed insert cannot activate a
  # partial snapshot. Existing published versions remain available for rollback.
- sql.append('INSERT INTO web_live(id,snapshot_id) SELECT 1,snapshot_id FROM web_snapshots WHERE snapshot_id='+literal(version)+' AND content_sha256='+literal(content_hash)+' AND (SELECT count(*) FROM web_products WHERE snapshot_id='+literal(version)+')=50 AND (SELECT count(*) FROM web_categories WHERE snapshot_id='+literal(version)+')='+str(len(membership))+' ON CONFLICT(id) DO UPDATE SET snapshot_id=excluded.snapshot_id;')
+ sql.append('INSERT INTO web_live(id,snapshot_id) SELECT 1,snapshot_id FROM web_snapshots WHERE snapshot_id='+literal(version)+' AND content_sha256='+literal(content_hash)+' AND (SELECT count(*) FROM web_products WHERE '+complete_product_filter(version)+')=50 AND (SELECT count(*) FROM web_categories WHERE snapshot_id='+literal(version)+')='+str(len(membership))+' ON CONFLICT(id) DO UPDATE SET snapshot_id=excluded.snapshot_id;')
  (out/'publication.sql').write_text('\n'.join(sql)+'\n')
  (out/'manifest.json').write_text(json.dumps(dict(snapshot_id=version,research_sha256=research_hash,content_sha256=content_hash,products=50,category_memberships=len(membership),maximum_statement_bytes=max(len(x.encode()) for x in sql),scope=scope),ensure_ascii=False,indent=2)+'\n')
  print(json.dumps({k:v for k,v in json.loads((out/'manifest.json').read_text()).items() if k!='scope'},ensure_ascii=False))

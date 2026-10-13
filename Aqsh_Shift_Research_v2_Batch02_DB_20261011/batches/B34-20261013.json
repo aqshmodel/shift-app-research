@@ -1,0 +1,160 @@
+{
+  "batch_id": "B34-20261013",
+  "prior_batch": "B33-20261013",
+  "as_of_date": "2026-10-13",
+  "resolution_policy_version": 2,
+  "description": "Connecteam Expert C05/K01：休息ルール競合・応募阻止/表示条件とテンプレートCSV取込の境界",
+  "method": "新しい公式4文書から6部分確認。既存rules/Expert資料2件は対照のみで新調査文書数に含めず、一般ルール/警告/料金/契約を再登録しない。CSV形式とExcel名称、違反表示とhard拒否、API総括とpreventClaim、同日付Job/Sub-job差を区別。全文/本文hash/原本画像未保存。製品独立試験/API/登録/問い合わせ/課金/認証変更/公開/本番再監査なし。",
+  "sources": [
+    {
+      "key": "rules",
+      "url": "https://developer.connecteam.com/docs/company-policies-scheduling-rules",
+      "title": "Connecteam — Scheduling Rule Policies",
+      "publisher": "Connecteam",
+      "reference": "Overview / Rule Types / Rule fields",
+      "retrieved_on": "2026-10-13",
+      "version_label": "API v1 paths; mutable guide; displayed Updated about 1 month ago",
+      "method": "official_document_body",
+      "method_note": "Web lines 38-45,71-77,89-110,573. Exact publication date and customer runtime unconfirmed. 公式本文を取得し要約・URL・locator・取得日・版条件を保存。全文/本文hash/公式原本画像未保存。製品登録/試用/API実行/設定/問い合わせ/課金/認証変更なし。"
+    },
+    {
+      "key": "issues",
+      "url": "https://help.connecteam.com/en/articles/9745134-job-schedule-issues",
+      "title": "Connecteam — Job Schedule Issues",
+      "publisher": "Connecteam",
+      "reference": "Plan conditions / Types / Choose Which Issues to Display",
+      "retrieved_on": "2026-10-13",
+      "version_label": "Help dated 2026-08-12; mutable",
+      "method": "official_document_body",
+      "method_note": "Web lines 18-34,49-64. Scheduling Rules issue gating is distinct from general Issues. 公式本文を取得し要約・URL・locator・取得日・版条件を保存。全文/本文hash/公式原本画像未保存。製品登録/試用/API実行/設定/問い合わせ/課金/認証変更なし。"
+    },
+    {
+      "key": "import",
+      "url": "https://help.connecteam.com/en/articles/6518011-job-scheduling-learn-how-to-import-shifts-from-excel",
+      "title": "Connecteam — Job Scheduling: Learn How to Import Shifts from Excel",
+      "publisher": "Connecteam",
+      "reference": "What Can Be Imported / How to Import Your Data",
+      "retrieved_on": "2026-10-13",
+      "version_label": "Help dated 2025-08-25; mutable",
+      "method": "official_document_body",
+      "method_note": "Web lines 30-73. Excel label retained separately from required CSV file format. 公式本文を取得し要約・URL・locator・取得日・版条件を保存。全文/本文hash/公式原本画像未保存。製品登録/試用/API実行/設定/問い合わせ/課金/認証変更なし。"
+    },
+    {
+      "key": "troubleshoot",
+      "url": "https://help.connecteam.com/en/articles/8343742-troubleshooting-i-can-t-import-shifts-to-the-job-schedule",
+      "title": "Connecteam — Troubleshooting: I Can't Import Shifts to the Job Schedule",
+      "publisher": "Connecteam",
+      "reference": "CSV / required columns / Jobs / Sub-jobs / Important information",
+      "retrieved_on": "2026-10-13",
+      "version_label": "Help dated 2025-08-25; mutable",
+      "method": "official_document_body",
+      "method_note": "Web lines 32-59. Same-date differences from import guide retained; no product import trial. 公式本文を取得し要約・URL・locator・取得日・版条件を保存。全文/本文hash/公式原本画像未保存。製品登録/試用/API実行/設定/問い合わせ/課金/認証変更なし。"
+    }
+  ],
+  "findings": [
+    {
+      "product": "US09",
+      "criterion": "C05",
+      "source": "rules",
+      "summary": "APIガイドはminHoursBetweenShiftsを時間単位の数値と定義する。会社方針と個人customの同じ休息ルールが重なる場合は大きい値を採用し、個人GETは有効な会社/個人ルールを返す。無効な方針は適用されない。",
+      "locator": "Overview / Rule Types / Get user scheduling rule policies",
+      "limitations": "終業→次始業の差の実計算、等号・端数丸め、夜勤跨日/月境界/DST、複数勤務表の対象勤務対は未試験。11.0はAPI例で既定/法定値ではない。helpの複数方針追加案内とAPIの会社方針1件/再割当置換は表面仕様が異なり、実整合未確認。",
+      "state": "known",
+      "delivery": "native",
+      "support": "limited",
+      "scope": "Operations scheduling policies; API guide with v1 endpoints; schedulerApi entitlement required; documented partial scope; no independent product validation or customer runtime confirmation"
+    },
+    {
+      "product": "US09",
+      "criterion": "C05",
+      "source": "rules",
+      "summary": "休息ルールにもpreventClaimがあり、trueは違反するOpen Shift応募を阻止し、falseは管理者へ報告して応募を阻止しない。ガイドの既定はtrue、休息11.0時間の例はfalse。APIにはschedulerApi利用条件がある。",
+      "locator": "Rule fields / Authentication / minHoursBetweenShifts example",
+      "limitations": "APIのenforcesという総括を全手動操作のhard拒否へ拡張しない。既存helpは草案保存/公開時に管理者へ警告と説明し、応募阻止も選択式。無条件hard制約・Expert全契約のAPI権・実API応答は未確認。設定もAPI呼出しも行っていない。",
+      "state": "known",
+      "delivery": "native",
+      "support": "limited",
+      "scope": "Operations scheduling policies; documented preventClaim switch; schedulerApi plan limitation; customer entitlement unconfirmed; documented partial scope; no independent product validation or customer runtime confirmation"
+    },
+    {
+      "product": "US09",
+      "criterion": "C05",
+      "source": "issues",
+      "summary": "2026-08-12のIssues説明は、勤務間の最低時間をScheduling Rules違反の対象に含め、その種類に必要な機能はExpertからと明記する。一般Issuesは全プランで、種類ごとの表示は設定でON/OFFにできる。",
+      "locator": "Plan conditions / Types of Issues / Choose Which Issues to Display",
+      "limitations": "違反の表示を隠す操作と休息ルールの無効化・応募阻止を同一視しない。最低休息の数値域、実警告文、無効化時のhard動作、境界テスト未確認。既存の一般ルール/警告説明を再登録せず、今回の追加事項は休息種類のプラン境界と表示切替。",
+      "state": "known",
+      "delivery": "native",
+      "support": "limited",
+      "scope": "Operations Expert and above for Scheduling Rules issues; generic Issues all plans; help 2026-08-12; documented partial scope; no independent product validation or customer runtime confirmation"
+    },
+    {
+      "product": "US09",
+      "criterion": "K01",
+      "source": "import",
+      "summary": "2025-08-25の取込手順はテンプレートの1行を1勤務として編集し、CSVへ保存してアップロードする。日付/開始終了/休憩分/Job/場所等を扱い、識別子をmappingして職員へ紐付け、確認後も草案となる。Basic Operations以上が対象。",
+      "locator": "What Can Be Imported / How to Import Your Data steps 2-8 / plan footer",
+      "limitations": "ExpertはBasic/Advanced機能を含むという既存公式資料と整合するが、xlsx直接取込の証明ではない。セル結合・独自勤務記号・複数シートの元表保持、変換工数・導入時間・再取込更新/重複は未確認。テンプレート取得/製品取込試験なし。",
+      "state": "known",
+      "delivery": "native",
+      "support": "limited",
+      "scope": "Operations Basic and above including Expert by documented inheritance; template-to-CSV; help 2025-08-25; documented partial scope; no independent product validation or customer runtime confirmation"
+    },
+    {
+      "product": "US09",
+      "criterion": "K01",
+      "source": "troubleshoot",
+      "summary": "障害解説はExcel/PDF/Numbers形式を不可としてCSVを要求し、Job/Shift title両列の存在と少なくとも一方の値を必要とする。未知Jobは新規作成/既存対応/無視、Sub-job列はnote/既存field/無視を案内する。",
+      "locator": "File format / Missing columns and details / Unknown Jobs / Sub-jobs",
+      "limitations": "同日付の取込記事はJob/Sub-jobを列挙し、未知parent/sub-jobは既存Jobへ対応または無視とする。新規作成可否・Sub-job専用取込に説明差があり、版/データ条件/誤記のどれかは未確定。CSVを既存Excel表直接対応へ読み替えない。",
+      "state": "known",
+      "delivery": "native",
+      "support": "limited",
+      "scope": "Operations Basic and above; CSV-only troubleshooting; help 2025-08-25; unresolved same-date mapping differences; documented partial scope; no independent product validation or customer runtime confirmation"
+    },
+    {
+      "product": "US09",
+      "criterion": "K01",
+      "source": "troubleshoot",
+      "summary": "日付形式の不一致や日付なしは取込当日へ、職員名不明は未割当へ、開始/終了時刻不足はアカウント既定時間へ補完されると障害解説が説明する。",
+      "locator": "Important Information Regarding Importing Shifts",
+      "limitations": "補完が既存勤務表の意図を保持する保証ではない。日付設定・職員識別・欠落値を確認する必要がある。日跨ぎ/タイムゾーン/文字コード/大量行/境界の実取込、エラー拒否と補完の詳細条件、工数は未測定。",
+      "state": "known",
+      "delivery": "native",
+      "support": "limited",
+      "scope": "Operations Basic and above; documented missing-data defaults; help 2025-08-25; documented partial scope; no independent product validation or customer runtime confirmation"
+    }
+  ],
+  "prices": [],
+  "followups": [],
+  "task_updates": [
+    {
+      "task_id": "TASK-RES01220",
+      "state": "in_progress",
+      "priority": 3,
+      "method": "vendor_document",
+      "note": "B34：休息数値/重複時の厳しい値・preventClaim切替・Expertの違反種類/表示切替を部分確認。実時刻差/等号/端数/夜勤/DST/複数表境界/手動hard/顧客版は未試験。"
+    },
+    {
+      "task_id": "TASK-RES01236",
+      "state": "in_progress",
+      "priority": 3,
+      "method": "vendor_document",
+      "note": "B34：Basic以上のテンプレート1行1勤務→CSV・mapping/草案、形式拒否/欠落補完を確認。Job/Sub-jobの同日付説明差を保存。xlsx直接/結合/独自記号/複数sheet/実取込工数は未確認。"
+    }
+  ],
+  "retrieval_checks": [
+    {
+      "product": "US09",
+      "url": "https://help.connecteam.com/en/articles/8343742-troubleshooting-i-can-t-import-shifts-to-the-job-schedule",
+      "result": "same_date_job_subjob_mapping_difference",
+      "notes": "取込記事と障害解説は2025-08-25だが未知Job新規作成/Sub-job専用扱いに差。実試験/原因の推定なし。"
+    },
+    {
+      "product": "US09",
+      "url": "https://developer.connecteam.com/docs/company-policies-scheduling-rules",
+      "result": "enforces_summary_vs_optional_claim_block_and_manual_warning",
+      "notes": "API総括はenforces、フィールドpreventClaim=falseは応募阻止なし。既存help手動警告と区別。API1会社方針/再割当置換と既存help追加または上書きは表面の差を保存。"
+    }
+  ]
+}

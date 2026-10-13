@@ -1,0 +1,103 @@
+{
+  "status": "passed",
+  "official_sources": 6,
+  "pinned_version_sources": 1,
+  "mutable_platform_latest_sources": 5,
+  "sources": [
+    {
+      "key": "tenants",
+      "url": "https://docs.timefold.ai/timefold-platform/latest/api/integration-scenarios/multi-environment",
+      "title": "Timefold — Multiple environments and clusters",
+      "publisher": "Timefold BV",
+      "reference": "Tenants provide isolation / regional namespaces / self-hosted single tenant",
+      "retrieved_on": "2026-10-13",
+      "version_label": "Platform latest; Cloud vs self-hosted conditions",
+      "method": "official_document_body",
+      "method_note": "Web本文L24〜35・73〜101。 公開/更新日は未表示。全文・本文ハッシュ・原本画像は未保存。顧客現行版/商用プラン適用/独立権限試験は未確認。登録/招待/キー生成/認証/権限変更/設定操作/API試験/問い合わせは未実施。"
+    },
+    {
+      "key": "roles",
+      "url": "https://docs.timefold.ai/timefold-platform/latest/how-tos/member-management-and-roles",
+      "title": "Timefold — Members",
+      "publisher": "Timefold BV",
+      "reference": "Viewer/User/Administrator / temporary invitations / Experiments exception",
+      "retrieved_on": "2026-10-13",
+      "version_label": "Platform latest; Experiments role exception explicitly preview",
+      "method": "official_document_body",
+      "method_note": "Web本文L26〜80・100〜118。 公開/更新日は未表示。全文・本文ハッシュ・原本画像は未保存。顧客現行版/商用プラン適用/独立権限試験は未確認。登録/招待/キー生成/認証/権限変更/設定操作/API試験/問い合わせは未実施。"
+    },
+    {
+      "key": "keys",
+      "url": "https://docs.timefold.ai/timefold-platform/latest/how-tos/tenant-api-keys",
+      "title": "Timefold — API Keys",
+      "publisher": "Timefold BV",
+      "reference": "Tenant/model scope / user-context independence / expiry/revocation / endpoint permissions",
+      "retrieved_on": "2026-10-13",
+      "version_label": "Platform latest; Model API permissions",
+      "method": "official_document_body",
+      "method_note": "Web本文L22〜71。通常Chrome本文/権限表も照合。 公開/更新日は未表示。全文・本文ハッシュ・原本画像は未保存。顧客現行版/商用プラン適用/独立権限試験は未確認。登録/招待/キー生成/認証/権限変更/設定操作/API試験/問い合わせは未実施。"
+    },
+    {
+      "key": "caller",
+      "url": "https://docs.timefold.ai/timefold-platform/latest/api/model-api-usage",
+      "title": "Timefold — Model API usage",
+      "publisher": "Timefold BV",
+      "reference": "GET /api/aboutme / sample tenant plan and permissions / unauthorized",
+      "retrieved_on": "2026-10-13",
+      "version_label": "Platform latest; caller identity and model-scoped API",
+      "method": "official_document_body",
+      "method_note": "Web本文L122〜158。一般的なREST利用/実行状態/容量/モデルAPI推奨一般は再登録しない。 公開/更新日は未表示。全文・本文ハッシュ・原本画像は未保存。顧客現行版/商用プラン適用/独立権限試験は未確認。登録/招待/キー生成/認証/権限変更/設定操作/API試験/問い合わせは未実施。"
+    },
+    {
+      "key": "integration",
+      "url": "https://docs.timefold.ai/employee-shift-scheduling/1.35.x/user-guide/integration",
+      "title": "Timefold — Integration",
+      "publisher": "Timefold BV",
+      "reference": "Customer data gathering / input creation / result processing / own backend",
+      "retrieved_on": "2026-10-13",
+      "version_label": "Employee Shift Scheduling documentation 1.35.x",
+      "method": "official_document_body",
+      "method_note": "Web本文L32〜51。 公開/更新日は未表示。全文・本文ハッシュ・原本画像は未保存。顧客現行版/商用プラン適用/独立権限試験は未確認。登録/招待/キー生成/認証/権限変更/設定操作/API試験/問い合わせは未実施。"
+    },
+    {
+      "key": "profiles",
+      "url": "https://docs.timefold.ai/timefold-platform/latest/how-tos/configuration-parameters-and-profiles",
+      "title": "Timefold — Configuration profiles and parameters",
+      "publisher": "Timefold BV",
+      "reference": "Per-model read-only Standard / profile selection / configuration precedence",
+      "retrieved_on": "2026-10-13",
+      "version_label": "Platform latest; configuration and tenant-plan ceilings",
+      "method": "official_document_body",
+      "method_note": "Web本文L26〜75・92〜110・166〜179。旧B25の重み/スコア一般は再登録しない。 公開/更新日は未表示。全文・本文ハッシュ・原本画像は未保存。顧客現行版/商用プラン適用/独立権限試験は未確認。登録/招待/キー生成/認証/権限変更/設定操作/API試験/問い合わせは未実施。"
+    }
+  ],
+  "body_checked": true,
+  "full_text_archived": false,
+  "publication_dates_not_shown": true,
+  "preview_feature": {
+    "Experiments": "role exception controlled by Model API key operations",
+    "runtime_version_and_plan": "not determined"
+  },
+  "retrieval_caveats": [
+    {
+      "product": "US10",
+      "url": "https://docs.timefold.ai/timefold-platform/latest/api/api-usage",
+      "result": "fixed_ESS_intro_API_keys_link_returns_404_valid_member_link_found",
+      "notes": "1.35.x introductionのAPI keysリンクは404。Members→Model API usage→API Keysの公開リンクから現行tenant-api-keys本文を取得。サービス終了・認証障害・API廃止と判定しない。404ページを新規根拠文書として登録しない。"
+    },
+    {
+      "product": "US10",
+      "url": "https://docs.timefold.ai/timefold-platform/latest/how-tos/member-management-and-roles",
+      "result": "Experiments_preview_role_exception_key_scope_controls_access",
+      "notes": "Userの一覧は実験view/create/runを含むが、同ページ但し書きはExperimentsは通常roleでなくModel API key operation scopeで制御すると説明。条件付き例外として保存し、未知のキー共有/作成可否を補完しない。通常roles全文の相反と断定しない。"
+    },
+    {
+      "product": "US10",
+      "url": "https://docs.timefold.ai/timefold-platform/latest/how-tos/tenant-api-keys",
+      "result": "permission_names_not_simple_HTTP_verb_equivalence",
+      "notes": "DELETE /idはUpdate、DELETE /id/purgeはDeleteと表が区別。ReadとCreateのGET許可、POST recommendation/score-analysisのCreateを保持。取消/purgeを同一にせず、実API/権限試験なし。"
+    }
+  ],
+  "independent_tests_performed": false,
+  "external_contact": false
+}

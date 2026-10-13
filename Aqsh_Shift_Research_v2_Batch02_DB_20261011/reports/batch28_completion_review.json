@@ -1,0 +1,18 @@
+{
+  "status": "passed",
+  "tasks_marked_done": 0,
+  "task_updates": {
+    "N01": "TASK-RES00129",
+    "Q04": "TASK-RES00137"
+  },
+  "started_tasks": [
+    "TASK-RES00129",
+    "TASK-RES00137"
+  ],
+  "partial_only": true,
+  "unfulfilled": {
+    "N01": "法人/施設/シフトグループ/職員の役割と閲覧編集制御を部分確認。一般職員の端末・操作範囲は別FAQと未整理、テナント認可/横断権限/取消/提供者アクセスの実証は未確認。",
+    "Q04": "記事時点のSOMPOケア介護付きホーム約300施設と共同開発の文脈、導入前100床作業時間/約1万人利用可能規模を区別。施設別職員/部署/交代/期間/本番実証/有償/測定条件が不足。"
+  },
+  "no_guessed_price_or_scope": true
+}

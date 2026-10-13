@@ -1,0 +1,179 @@
+{
+  "batch_id": "B26-20261012",
+  "prior_batch": "B25-20261012",
+  "as_of_date": "2026-10-12",
+  "resolution_policy_version": 2,
+  "description": "oplus未着手E01/H01/N01：確定後スタッフロックと再最適化固定、閲覧/表示/編集の権限、非表示有休HTMLを区別",
+  "method": "4公式本文をWebと通常公開Chrome表示で照合。6記録（部分確認4・未確認2）を追加し、非表示有休DOM・FAQ非表示フォームを現行提供機能として採用しない。勤務確定/スタッフ操作ロック/optimizer固定、全スタッフ閲覧/Proタグ表示/本人編集/提供者内部権限を分ける。既存自動作成一般・価格/ROI相反・認証/ログ/保管/SLAは再登録しない。H01の未確認を非対応に置換せず完了しない。原文全文/画像/本文ハッシュ未保存。登録・招待・問い合わせ・権限/認証変更・製品独立試験・課金・公開・本番再監査なし。",
+  "sources": [
+    {
+      "key": "features",
+      "url": "https://opluswork.com/features",
+      "title": "oplus 機能紹介：シフト確定とスタッフ編集ロック",
+      "publisher": "Oplus株式会社",
+      "reference": "シフト提出 / シフト作成 / 無料プランへの登録導線",
+      "retrieved_on": "2026-10-12",
+      "method": "public_web_body",
+      "method_note": "Web本文と公開ブラウザで確定後スタッフ変更/削除ロック・管理者編集の本文を照合。ロックをoptimizer pinned固定と扱わない。 公開・最終更新日・製品版は未表示。全文・本文ハッシュ・原本画像は未保存。ログイン・登録・問い合わせ・試用・権限変更・製品独立試験なし。"
+    },
+    {
+      "key": "faq",
+      "url": "https://opluswork.com/faq",
+      "title": "oplus 公開FAQ：閲覧と個人情報編集の権限",
+      "publisher": "Oplus株式会社",
+      "reference": "全スタッフへのシフト管理閲覧権限 / スタッフ情報編集 / 表示タグ",
+      "retrieved_on": "2026-10-12",
+      "method": "public_web_body",
+      "method_note": "Webと公開ブラウザのFAQ本文を照合。Web抽出冒頭に含まれる非表示アプリフォームのPTO・Confirm・Weekly Repeatラベルは通常表示されず、仕様根拠から除外。 公開・最終更新日・製品版は未表示。全文・本文ハッシュ・原本画像は未保存。ログイン・登録・問い合わせ・試用・権限変更・製品独立試験なし。"
+    },
+    {
+      "key": "security",
+      "url": "https://opluswork.com/securitychecklist",
+      "title": "oplus Security Checklist：提供者のデータアクセス方針",
+      "publisher": "Oplus株式会社",
+      "reference": "マネジメントの職務分離・アクセス制御 / アプリ運用2(1)",
+      "retrieved_on": "2026-10-12",
+      "method": "public_web_body",
+      "method_note": "公開ブラウザで同意なしにはアクセスしない、閲覧/修正の権限を分ける本文を確認。提供者内部の方針を顧客管理者ACLやテナント分離の実証と扱わない。 公開・最終更新日・製品版は未表示。全文・本文ハッシュ・原本画像は未保存。ログイン・登録・問い合わせ・試用・権限変更・製品独立試験なし。"
+    },
+    {
+      "key": "plan",
+      "url": "https://opluswork.com/plan",
+      "title": "oplus 料金ページ：通常表示と非表示有休HTMLの区別",
+      "publisher": "Oplus株式会社",
+      "reference": "標準プランのシフト提出/管理/確定 / 非表示有休オプションDOM",
+      "retrieved_on": "2026-10-12",
+      "method": "public_web_body",
+      "method_note": "Web抽出は有休申請・承認/棄却・残数・履歴と別オプション欄を返した。公開ブラウザ同URLでは当該欄・語句がinnerTextとAXから欠落し、DOM textContentには存在する。非表示HTMLを現行提供・適用プラン・公開料金の根拠として採用しない。 公開・最終更新日・製品版は未表示。全文・本文ハッシュ・原本画像は未保存。ログイン・登録・問い合わせ・試用・権限変更・製品独立試験なし。"
+    }
+  ],
+  "findings": [
+    {
+      "product": "JP18",
+      "criterion": "E01",
+      "source": "features",
+      "summary": "スタッフの勤務希望を管理画面へ転記し、管理者が編集・確定した後、スタッフが勤務を変更・削除できないようロックできると機能紹介は説明する。料金ページのスタンダードにも提出・管理・確定が掲載され、無料プランへの導線がある。",
+      "locator": "シフト作成本文 / 対照：料金ページStandardの提出・管理・確定",
+      "limitations": "勤務希望と確定勤務の操作段階についての部分確認。ロック固有の設定項目・プラン差・範囲・管理者の解除権限は未特定。承認済み有給休暇の扱いと同一にせず、通常ロックが自動作成中の必須固定になるとはしない。個別カスタム・契約への適用も未確認。",
+      "state": "known",
+      "delivery": "native",
+      "scope": "oplus国内向け公式公開案内。通常表示と非表示DOMを区別。プランと操作主体はlimitations参照。実動作・個別顧客契約は未検証。",
+      "support": "limited"
+    },
+    {
+      "product": "JP18",
+      "criterion": "E01",
+      "source": "plan",
+      "summary": "料金ページのHTMLには有給休暇管理オプションの申請・許可/棄却・申請中・残有休・承認履歴の説明が存在するが、通常公開ブラウザの表示には現れない。現行の提供状態と適用基本プランを確定できない。",
+      "locator": "Web抽出L105〜133 / 公開ブラウザ同URLのAX・innerText・DOM textContent対照",
+      "limitations": "有休欄はtextContentに存在し、innerTextと見出し/AXでは非表示。将来予定・廃止・地域差・未公開機能のどれかとは推測しない。ラベルだけで無料/Pro/Pro+勤怠に有休承認が含まれるとしない。非表示の50円/ユーザー表記は現行料金として登録しない。公式の通常表示仕様・対象版/契約と実画面が必要。",
+      "state": "not_found",
+      "delivery": "unknown",
+      "scope": "oplus国内向け公式公開案内。通常表示と非表示DOMを区別。プランと操作主体はlimitations参照。実動作・個別顧客契約は未検証。"
+    },
+    {
+      "product": "JP18",
+      "criterion": "H01",
+      "source": "features",
+      "summary": "確定後のスタッフ編集・削除ロック、テンプレートや有料のリピート入力の案内は確認したが、自動作成・再割当時に指定した職員・日付・業務の割当を変更しない固定仕様は確認できない。",
+      "locator": "機能紹介のシフト作成ロック / FAQテンプレ / 料金Proリピート / 自動作成LPの再割当",
+      "limitations": "スタッフ操作のロックとoptimizer側の固定を区別。管理者の再実行や手修正・期間外・休暇・制約矛盾でも保持する仕様は不足。未確認を非対応とせず、固定ID・対象・再計算時の例を含む公開マニュアルや実試験が必要。FAQから案内された公式YouTubeのWeb取得はthrottledで本文未取得、動画内容を確認済みとしない。",
+      "state": "not_found",
+      "delivery": "unknown",
+      "scope": "oplus国内向け公式公開案内。通常表示と非表示DOMを区別。プランと操作主体はlimitations参照。実動作・個別顧客契約は未検証。"
+    },
+    {
+      "product": "JP18",
+      "criterion": "N01",
+      "source": "faq",
+      "summary": "管理者はシフト管理の設定で全スタッフへシフト管理の閲覧権限を付けられるとFAQは説明する。別のPro/Pro+勤怠のタグ説明は、特定タグの職員だけをシフト表に表示する機能として案内する。",
+      "locator": "管理者が作ったシフト表をスタッフも見れるようにするには / 表示スタッフ限定のFAQ",
+      "limitations": "全員の閲覧許可と表示フィルタを区別し、タグをアクセス拒否の機構と扱わない。閲覧設定固有のプラン差はFAQに未表示。全員は登録スタッフの文脈で、外部・他社テナント・全拠点への公開とはしない。部署別ACL、勤務希望/給与/休暇の項目権限、既定権限や取消反映の実試験は未確認。",
+      "state": "known",
+      "delivery": "native",
+      "scope": "oplus国内向け公式公開案内。通常表示と非表示DOMを区別。プランと操作主体はlimitations参照。実動作・個別顧客契約は未検証。",
+      "support": "limited"
+    },
+    {
+      "product": "JP18",
+      "criterion": "N01",
+      "source": "faq",
+      "summary": "管理者が編集できる職員情報は名前・社員番号・時給・交通費・月最大出勤数・タグを挙げる一方、メールアドレスと電話番号は職員本人がプロフィールから変更する仕様とFAQは説明する。タグは有料プランの欄と注記する。",
+      "locator": "一度登録したスタッフ情報を編集 / 管理者が変更できる情報 / 本人プロフィール",
+      "limitations": "管理者と本人の操作範囲の公開案内。全管理者の同一権限・権限委譲・役割階層・他拠点の個人情報閲覧を確定しない。本人のメール変更が組織間移動・管理者への昇格や認証解除になるとはしない。プロフィール変更・退会・招待・認証操作は未実施。",
+      "state": "known",
+      "delivery": "native",
+      "scope": "oplus国内向け公式公開案内。通常表示と非表示DOMを区別。プランと操作主体はlimitations参照。実動作・個別顧客契約は未検証。",
+      "support": "limited"
+    },
+    {
+      "product": "JP18",
+      "criterion": "N01",
+      "source": "security",
+      "summary": "セキュリティチェックシートは、提供者が顧客の格納データへ同意なしにアクセスせず、格納データを利用しないと回答する。提供者組織内では役割に応じて情報資産へのアクセス・閲覧・修正権限を分ける方針も記載する。",
+      "locator": "アプリ運用・データ管理2(1) / マネジメント2(2)・5(1)",
+      "limitations": "提供者の自己申告による内部方針と顧客データアクセス方針。顧客側のadmin/staff権限行列、論理/物理テナント分離・API認可・支援時アクセス監査の実証ではない。全プラン/個別契約の適用、同意取得/撤回・緊急例外・委託先の手順は未特定。既存のリージョン・認証・ログ・SLAを重複追加しない。",
+      "state": "known",
+      "delivery": "managed_service",
+      "scope": "oplus国内向け公式公開案内。通常表示と非表示DOMを区別。プランと操作主体はlimitations参照。実動作・個別顧客契約は未検証。",
+      "support": "limited"
+    }
+  ],
+  "prices": [],
+  "followups": [],
+  "task_updates": [
+    {
+      "task_id": "TASK-RES00778",
+      "state": "in_progress",
+      "priority": 3,
+      "method": "vendor_document",
+      "note": "B26：勤務希望→管理者編集/確定→スタッフ編集削除ロックを部分確認。有休管理HTMLは通常非表示で提供/プラン不明、現行仕様として採用せず留保。"
+    },
+    {
+      "task_id": "TASK-RES00788",
+      "state": "in_progress",
+      "priority": 3,
+      "method": "vendor_document",
+      "note": "B26：スタッフ編集ロックとテンプレ/リピートの意味を照合したが、再最適化で指定割当を保持する固定仕様は未確認。動画本文の取得不能も保持し非対応とはしない。"
+    },
+    {
+      "task_id": "TASK-RES00797",
+      "state": "in_progress",
+      "priority": 3,
+      "method": "vendor_document",
+      "note": "B26：全スタッフ閲覧許可とPro表示タグ、管理者/本人の編集欄、提供者の同意アクセス方針を確認。顧客役割ACL・テナント分離・API認可の独立実証は未確認。"
+    }
+  ],
+  "retrieval_checks": [
+    {
+      "product": "JP18",
+      "url": "https://opluswork.com/plan",
+      "result": "pto_and_chat_dom_not_visible_in_regular_public_page",
+      "notes": "通常ChromeのinnerText/AX/見出しには有休管理・承認履歴がなく、textContentには存在。公開HTMLの非表示であり、単純な取得不能・現行機能・廃止とは判定しない。料金追加0。"
+    },
+    {
+      "product": "JP18",
+      "url": "https://opluswork.com/faq",
+      "result": "public_faq_body_verified_nonvisible_widget_labels_excluded",
+      "notes": "FAQの質問/回答本文と権限案内は通常表示。Web抽出の冒頭PTO/Half PTO/Confirm/Weekly Repeatモーダルラベルは通常非表示で根拠除外。"
+    },
+    {
+      "product": "JP18",
+      "url": "https://opluswork.com/aishift",
+      "result": "existing_general_auto_shift_claims_reused_no_pinned_assignment_confirmation",
+      "notes": "既存インターバル/夜勤/過不足/段階割当を再登録せず、手修正・再割当の本文だけをH01の照合に使用。固定保持仕様は未確認。"
+    },
+    {
+      "product": "JP18",
+      "url": "https://www.youtube.com/watch?v=nDP3qy4Sr_8&t=62s",
+      "result": "official_FAQ_link_fetch_throttled_body_not_obtained",
+      "notes": "公式FAQの自動作成/労務管理動画リンク。Web取得はOnline fetch throttled。映像/字幕を確認済みとしない。"
+    },
+    {
+      "product": "JP18",
+      "url": "https://www.blog.opluswork.com/post/feature20190408",
+      "result": "old_CSV_help_link_internal_fetch_error_not_used",
+      "notes": "旧FAQのCSVリンクは取得エラー。今回のE01/H01/N01の根拠に使わない。一般ブログ一覧・検索の非公式結果も不採用。"
+    }
+  ]
+}

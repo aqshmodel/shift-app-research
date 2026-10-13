@@ -1,0 +1,38 @@
+{
+  "status": "passed",
+  "batch_id": "B28-20261013",
+  "method": "CUA Chrome static viewer and built local Worker detail",
+  "viewports": [
+    1440,
+    390
+  ],
+  "static_comparison": {
+    "records": 2104,
+    "products": 50,
+    "new5_ids_present": true,
+    "unconfirmed2_visible": true,
+    "detail_widths": [
+      1398,
+      348
+    ],
+    "detail_client_widths": [
+      1398,
+      348
+    ],
+    "horizontal_overflow": false
+  },
+  "public_product": {
+    "product": "OF-JP03",
+    "roles_visible": true,
+    "device_scope_unknown": true,
+    "case_conditions_visible": true,
+    "before_hours_not_ROI": true,
+    "potential_scale_not_capacity": true,
+    "new_sources_visible": true,
+    "horizontal_overflow": false
+  },
+  "console_errors_and_warnings_returned": 0,
+  "screenshots": "CUA images observed in conversation, not archived; suite screenshots in durable docs/screenshots",
+  "all_local_servers_stopped": true,
+  "external_logo_availability": "not independently tested"
+}

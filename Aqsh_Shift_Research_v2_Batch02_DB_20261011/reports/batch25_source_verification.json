@@ -1,0 +1,106 @@
+{
+  "status": "passed",
+  "official_sources": 8,
+  "pinned_version_sources": 7,
+  "mutable_latest_comparison_sources": 1,
+  "sources": [
+    {
+      "key": "days",
+      "url": "https://docs.timefold.ai/employee-shift-scheduling/1.35.x/employee-resource-constraints/work-limits/days-worked-per-period",
+      "title": "Timefold Employee Shift Scheduling 1.35.x — Days worked per period",
+      "publisher": "Timefold BV",
+      "reference": "期間・rolling windowの日跨ぎの集計 / periodShiftOverlapKind",
+      "retrieved_on": "2026-10-12",
+      "version_label": "Employee Shift Scheduling documentation 1.35.x; not a live runtime certification",
+      "method": "official_document_body",
+      "method_note": "1.35.x固定URLの本文L99〜141。通常公開の仕様本文を確認。公開・最終更新日は未表示。文中の例示実行日時や2027年の勤務日を仕様公開日と扱わない。全文・本文ハッシュ・原本画像は未保存。サンプルAPI未実行・API key未作成。"
+    },
+    {
+      "key": "minutes",
+      "url": "https://docs.timefold.ai/employee-shift-scheduling/1.35.x/employee-resource-constraints/work-limits/minutes-worked-per-period",
+      "title": "Timefold Employee Shift Scheduling 1.35.x — Minutes worked per period",
+      "publisher": "Timefold BV",
+      "reference": "Count only minutes within a daily time interval",
+      "retrieved_on": "2026-10-12",
+      "version_label": "Employee Shift Scheduling documentation 1.35.x; not a live runtime certification",
+      "method": "official_document_body",
+      "method_note": "1.35.x固定URLの本文L261〜289。通常公開の仕様本文を確認。公開・最終更新日は未表示。文中の例示実行日時や2027年の勤務日を仕様公開日と扱わない。全文・本文ハッシュ・原本画像は未保存。サンプルAPI未実行・API key未作成。"
+    },
+    {
+      "key": "rest",
+      "url": "https://docs.timefold.ai/employee-shift-scheduling/1.35.x/employee-resource-constraints/shift-rotations-and-patterns/minutes-between-shifts",
+      "title": "Timefold Employee Shift Scheduling 1.35.x — Minutes between shifts",
+      "publisher": "Timefold BV",
+      "reference": "Define / satisfiability / scope / absence-aware preview / required and preferred",
+      "retrieved_on": "2026-10-12",
+      "version_label": "Employee Shift Scheduling documentation 1.35.x; not a live runtime certification",
+      "method": "official_document_body",
+      "method_note": "1.35.x固定URLの本文L38〜163・351〜383。absenceModeは文字列。通常公開の仕様本文を確認。公開・最終更新日は未表示。文中の例示実行日時や2027年の勤務日を仕様公開日と扱わない。全文・本文ハッシュ・原本画像は未保存。サンプルAPI未実行・API key未作成。"
+    },
+    {
+      "key": "availability",
+      "url": "https://docs.timefold.ai/employee-shift-scheduling/1.35.x/employee-resource-constraints/employee-availability-and-preferences/employee-availability",
+      "title": "Timefold Employee Shift Scheduling 1.35.x — Employee availability",
+      "publisher": "Timefold BV",
+      "reference": "Defining availability / unavailable / available times / end exclusive / example",
+      "retrieved_on": "2026-10-12",
+      "version_label": "Employee Shift Scheduling documentation 1.35.x; not a live runtime certification",
+      "method": "official_document_body",
+      "method_note": "1.35.x固定URLの本文L39〜74・181〜205。通常公開の仕様本文を確認。公開・最終更新日は未表示。文中の例示実行日時や2027年の勤務日を仕様公開日と扱わない。全文・本文ハッシュ・原本画像は未保存。サンプルAPI未実行・API key未作成。"
+    },
+    {
+      "key": "preferences",
+      "url": "https://docs.timefold.ai/employee-shift-scheduling/1.35.x/employee-resource-constraints/employee-availability-and-preferences/employee-preferences",
+      "title": "Timefold Employee Shift Scheduling 1.35.x — Employee preferences",
+      "publisher": "Timefold BV",
+      "reference": "Defining preferences / weights / unpreferred times",
+      "retrieved_on": "2026-10-12",
+      "version_label": "Employee Shift Scheduling documentation 1.35.x; not a live runtime certification",
+      "method": "official_document_body",
+      "method_note": "1.35.x固定URLの本文L33〜71・520〜527。通常公開の仕様本文を確認。公開・最終更新日は未表示。文中の例示実行日時や2027年の勤務日を仕様公開日と扱わない。全文・本文ハッシュ・原本画像は未保存。サンプルAPI未実行・API key未作成。"
+    },
+    {
+      "key": "constraints",
+      "url": "https://docs.timefold.ai/employee-shift-scheduling/1.35.x/user-guide/constraints",
+      "title": "Timefold Employee Shift Scheduling 1.35.x — Constraints",
+      "publisher": "Timefold BV",
+      "reference": "Hard / medium / soft overview / scores and constraint weights",
+      "retrieved_on": "2026-10-12",
+      "version_label": "Employee Shift Scheduling documentation 1.35.x; not a live runtime certification",
+      "method": "official_document_body",
+      "method_note": "1.35.x固定URLの本文L25〜40・89〜104。通常公開の仕様本文を確認。公開・最終更新日は未表示。文中の例示実行日時や2027年の勤務日を仕様公開日と扱わない。全文・本文ハッシュ・原本画像は未保存。サンプルAPI未実行・API key未作成。"
+    },
+    {
+      "key": "near-day-off",
+      "url": "https://docs.timefold.ai/employee-shift-scheduling/1.35.x/employee-resource-constraints/time-off/avoid-shifts-close-to-day-off-requests",
+      "title": "Timefold Employee Shift Scheduling 1.35.x — Shifts to avoid close to day off requests",
+      "publisher": "Timefold BV",
+      "reference": "avoidPrior/AfterShiftTags / satisfiability / prohibited / unpreferred",
+      "retrieved_on": "2026-10-12",
+      "version_label": "Employee Shift Scheduling documentation 1.35.x; not a live runtime certification",
+      "method": "official_document_body",
+      "method_note": "1.35.x固定URLの本文L40〜91・402〜425。通常公開の仕様本文を確認。公開・最終更新日は未表示。文中の例示実行日時や2027年の勤務日を仕様公開日と扱わない。全文・本文ハッシュ・原本画像は未保存。サンプルAPI未実行・API key未作成。"
+    },
+    {
+      "key": "rest-latest",
+      "url": "https://docs.timefold.ai/employee-shift-scheduling/latest/employee-resource-constraints/shift-rotations-and-patterns/minutes-between-shifts",
+      "title": "Minutes between shifts — latest mutable document schema contrast",
+      "publisher": "Timefold BV",
+      "reference": "Absence-aware minutes between shifts (preview)",
+      "retrieved_on": "2026-10-12",
+      "version_label": "latest mutable alias; not assumed identical to 1.35.x",
+      "method": "official_document_body",
+      "method_note": "latest本文L130〜168はabsenceModeがtypeを含むオブジェクト、includeDateTimeSpanTagsによるspan.tagsフィルタを説明。1.35.x本文の文字列と区別。版による表現差で仕様相反・後方互換・現行顧客版を断定しない。全文・本文ハッシュ未保存。対照用で直接追加観測の出典とはしない。"
+    }
+  ],
+  "body_checked": true,
+  "full_text_archived": false,
+  "publication_dates_not_shown": true,
+  "preview_input_shapes": {
+    "1.35.x": "absenceMode is a string",
+    "latest": "absenceMode is an object including type; span tag filter described",
+    "runtime_version_and_compatibility": "not determined"
+  },
+  "independent_tests_performed": false,
+  "external_contact": false
+}

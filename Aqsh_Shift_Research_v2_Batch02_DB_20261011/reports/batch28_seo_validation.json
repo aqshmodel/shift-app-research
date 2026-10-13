@@ -1,0 +1,572 @@
+{
+  "status": "passed",
+  "checked_at": "2026-10-13T00:10:17.583907+00:00",
+  "sitemap_status": 200,
+  "url_count": 62,
+  "unique_urls": 62,
+  "unexpected_issue_count": 0,
+  "local_expected_header_noindex_count": 62,
+  "pages": [
+    {
+      "url": "https://shift.aqsh.co.jp/",
+      "status": 200,
+      "title": "シフト管理・作成サービスを、用途や機能から探せます | Aqsh シフト管理・作成サービス比較",
+      "description": "シフト管理・作成サービス50製品を、医療・介護・店舗などの用途と必要な機能で絞り込めます。ロゴ付きの一覧から、勤務表の自動割当、様式9、料金や利用条件を比較できます。無料・会員登録不要。",
+      "h1_count": 1,
+      "issues": [],
+      "local_expected_header_noindex": true
+    },
+    {
+      "url": "https://shift.aqsh.co.jp/products/",
+      "status": 200,
+      "title": "シフト管理・作成サービス一覧｜50製品を検索・比較 | Aqsh シフト管理・作成サービス比較",
+      "description": "シフト管理・作成サービス50製品を一覧でご覧いただけます。医療・介護・店舗向けの用途、料金条件、機能の公開資料と確認状況で検索・絞り込み・比較できます。",
+      "h1_count": 1,
+      "issues": [],
+      "local_expected_header_noindex": true
+    },
+    {
+      "url": "https://shift.aqsh.co.jp/methodology/",
+      "status": 200,
+      "title": "調査方法・確認状況の読み方 | Aqsh シフト管理・作成サービス比較",
+      "description": "シフト管理・作成サービス50製品の調査方法と確認状況の読み方をご説明します。参照した公開資料、提供条件、未確認事項、独立試験の実施状況を区別して掲載しています。",
+      "h1_count": 1,
+      "issues": [],
+      "local_expected_header_noindex": true
+    },
+    {
+      "url": "https://shift.aqsh.co.jp/references/form-9/",
+      "status": 200,
+      "title": "様式9の算式・夜勤時間の参照資料 | Aqsh シフト管理・作成サービス比較",
+      "description": "令和8年度様式9の月平均夜勤時間、8・12・16時間の除外境界、按分・丸めの参照資料を整理。製品の計算実装確認とは分け、行政資料と手引きにリンクします。",
+      "h1_count": 1,
+      "issues": [],
+      "local_expected_header_noindex": true
+    },
+    {
+      "url": "https://shift.aqsh.co.jp/webmcp/",
+      "status": 200,
+      "title": "AIと相談しながら探せます｜Web MCP対応 | Aqsh シフト管理・作成サービス比較",
+      "description": "対応するブラウザ・AIからシフトサービスの検索、詳細、比較、調査記録、調査範囲を取得。出典URL、料金条件、未確認事項、2026年10月13日の調査基準日を渡します。",
+      "h1_count": 1,
+      "issues": [],
+      "local_expected_header_noindex": true
+    },
+    {
+      "url": "https://shift.aqsh.co.jp/about/",
+      "status": 200,
+      "title": "運営会社・お問い合わせ | Aqsh シフト管理・作成サービス比較",
+      "description": "Aqsh株式会社が運営する無料のシフト管理・作成サービス比較サイトです。運営会社の概要、調査情報の訂正窓口、お問い合わせ先をご案内します。",
+      "h1_count": 1,
+      "issues": [],
+      "local_expected_header_noindex": true
+    },
+    {
+      "url": "https://shift.aqsh.co.jp/privacy/",
+      "status": 200,
+      "title": "プライバシーポリシー | Aqsh シフト管理・作成サービス比較",
+      "description": "Aqsh シフト管理・作成サービス比較の個人情報、ブラウザ内保存、Cloudflare配信、同意に基づくGoogle アナリティクスの利用とお問い合わせ情報の取り扱いをご説明します。",
+      "h1_count": 1,
+      "issues": [],
+      "local_expected_header_noindex": true
+    },
+    {
+      "url": "https://shift.aqsh.co.jp/terms/",
+      "status": 200,
+      "title": "利用規約 | Aqsh シフト管理・作成サービス比較",
+      "description": "無料・会員登録不要のAqsh シフト管理・作成サービス比較の利用条件です。掲載情報の基準日、確認範囲、公開API・Web MCPの利用、著作物・商標、訂正窓口をご案内します。",
+      "h1_count": 1,
+      "issues": [],
+      "local_expected_header_noindex": true
+    },
+    {
+      "url": "https://shift.aqsh.co.jp/categories/medical/",
+      "status": 200,
+      "title": "医療・看護向けシフト管理・作成サービスの選び方・比較 | Aqsh シフト管理・作成サービス比較",
+      "description": "医療・看護のシフト管理・作成サービスを、夜勤・資格別配置・様式9の計算方法から比較します。デモで確かめる条件、販売元への質問、公開資料の確認例と対象サービスをご覧いただけます。",
+      "h1_count": 1,
+      "issues": [],
+      "local_expected_header_noindex": true
+    },
+    {
+      "url": "https://shift.aqsh.co.jp/categories/care/",
+      "status": 200,
+      "title": "介護・福祉向けシフト管理・作成サービスの選び方・比較 | Aqsh シフト管理・作成サービス比較",
+      "description": "介護・福祉のシフト管理・作成サービスを、サービス種別・職種別配置・常勤換算・勤務形態一覧表から比較します。提供予定との違い、実績集計、契約前の質問と公開資料の確認例を紹介します。",
+      "h1_count": 1,
+      "issues": [],
+      "local_expected_header_noindex": true
+    },
+    {
+      "url": "https://shift.aqsh.co.jp/categories/general/",
+      "status": 200,
+      "title": "店舗・多拠点のシフト管理・作成サービスの選び方・比較 | Aqsh シフト管理・作成サービス比較",
+      "description": "店舗や多拠点のシフト管理・作成サービスを、希望回収・勤務表自動作成・業務割当・勤怠連携から比較します。人数課金や追加費用、試用時の確認点、販売元への質問と調査対象をご覧いただけます。",
+      "h1_count": 1,
+      "issues": [],
+      "local_expected_header_noindex": true
+    },
+    {
+      "url": "https://shift.aqsh.co.jp/categories/api/",
+      "status": 200,
+      "title": "シフト最適化APIの選び方・比較｜開発・システム連携 | Aqsh シフト管理・作成サービス比較",
+      "description": "シフト最適化APIを、入力制約・返却状態・検証方法・商用契約から比較します。完成した管理画面との違い、β提供、課金と障害時の設計、契約前の質問を確認できます。",
+      "h1_count": 1,
+      "issues": [],
+      "local_expected_header_noindex": true
+    },
+    {
+      "url": "https://shift.aqsh.co.jp/products/jp27/",
+      "status": 200,
+      "title": "Airシフトの機能・料金・確認状況 | Aqsh シフト管理・作成サービス比較",
+      "description": "Airシフトの公開資料を調査。関連サービスのワークスケジュールでは、作成済みのシフトに業務を自動で割り当てます。勤務表全体の自動生成とは区別しています。 料金条件、公開資料で確認した機能と、契約前の確認事項を掲載。2026年10月13日現在。",
+      "h1_count": 1,
+      "issues": [],
+      "local_expected_header_noindex": true
+    },
+    {
+      "url": "https://shift.aqsh.co.jp/products/us11/",
+      "status": 200,
+      "title": "Allocate Optimaの機能・料金・確認状況 | Aqsh シフト管理・作成サービス比較",
+      "description": "Allocate Optimaの公開資料を調査。必要技能・組織条件を含む自動勤務表を案内しています。 料金条件、公開資料で確認した機能と、契約前の確認事項を掲載。2026年10月13日現在。",
+      "h1_count": 1,
+      "issues": [],
+      "local_expected_header_noindex": true
+    },
+    {
+      "url": "https://shift.aqsh.co.jp/products/us15/",
+      "status": 200,
+      "title": "Clairviaの機能・料金・確認状況 | Aqsh シフト管理・作成サービス比較",
+      "description": "Clairviaの公開資料を調査。病院側が、看護職・管理者向けの教材目次を公開しています。 料金条件、公開資料で確認した機能と、契約前の確認事項を掲載。2026年10月13日現在。",
+      "h1_count": 1,
+      "issues": [],
+      "local_expected_header_noindex": true
+    },
+    {
+      "url": "https://shift.aqsh.co.jp/products/us09/",
+      "status": 200,
+      "title": "Connecteam Operations Hub Expertの機能・料金・確認状況 | Aqsh シフト管理・作成サービス比較",
+      "description": "Connecteam Operations Hub Expertの公開資料を調査。手作成、テンプレート、取込で事前に用意した未割当勤務に職員を配置します。勤務時刻・枠そのものの自動生成とは分けて扱っています。 料金条件、公開資料で確認した機能と、契約前の確認事項を掲載。2026年10月13日現在。",
+      "h1_count": 1,
+      "issues": [],
+      "local_expected_header_noindex": true
+    },
+    {
+      "url": "https://shift.aqsh.co.jp/products/us07/",
+      "status": 200,
+      "title": "Deputy Coreの機能・料金・確認状況 | Aqsh シフト管理・作成サービス比較",
+      "description": "Deputy Coreの公開資料を調査。需要・スキル・勤務可否などに基づく自動割当を説明しています。 料金条件、公開資料で確認した機能と、契約前の確認事項を掲載。2026年10月13日現在。",
+      "h1_count": 1,
+      "issues": [],
+      "local_expected_header_noindex": true
+    },
+    {
+      "url": "https://shift.aqsh.co.jp/products/jp03/",
+      "status": 200,
+      "title": "FIKAIGOの機能・料金・確認状況 | Aqsh シフト管理・作成サービス比較",
+      "description": "FIKAIGOの公開資料を調査。希望・勤務条件・イベントを反映した勤務表の自動作成を提供しています。 料金条件、公開資料で確認した機能と、契約前の確認事項を掲載。2026年10月13日現在。",
+      "h1_count": 1,
+      "issues": [],
+      "local_expected_header_noindex": true
+    },
+    {
+      "url": "https://shift.aqsh.co.jp/products/us17/",
+      "status": 200,
+      "title": "Humanity Scheduleの機能・料金・確認状況 | Aqsh シフト管理・作成サービス比較",
+      "description": "Humanity Scheduleの公開資料を調査。需要予測と勤務表の自動作成・充足を、現行製品ページで案内しています。プラン条件は料金資料も併せて確認しています。 料金条件、公開資料で確認した機能と、契約前の確認事項を掲載。2026年10月13日現在。",
+      "h1_count": 1,
+      "issues": [],
+      "local_expected_header_noindex": true
+    },
+    {
+      "url": "https://shift.aqsh.co.jp/products/us13/",
+      "status": 200,
+      "title": "Lantum In-Genius Rotaの機能・料金・確認状況 | Aqsh シフト管理・作成サービス比較",
+      "description": "Lantum In-Genius Rotaの公開資料を調査。In-Geniusは、常勤・LTFTの医師を対象にAIによる勤務表作成を行います。 料金条件、公開資料で確認した機能と、契約前の確認事項を掲載。2026年10月13日現在。",
+      "h1_count": 1,
+      "issues": [],
+      "local_expected_header_noindex": true
+    },
+    {
+      "url": "https://shift.aqsh.co.jp/products/jp07/",
+      "status": 200,
+      "title": "miramosの機能・料金・確認状況 | Aqsh シフト管理・作成サービス比較",
+      "description": "miramosの公開資料を調査。夜勤・公休を先に配置し、勤務表の骨組みを作成します。 料金条件、公開資料で確認した機能と、契約前の確認事項を掲載。2026年10月13日現在。",
+      "h1_count": 1,
+      "issues": [],
+      "local_expected_header_noindex": true
+    },
+    {
+      "url": "https://shift.aqsh.co.jp/products/jp04/",
+      "status": 200,
+      "title": "Naftyの機能・料金・確認状況 | Aqsh シフト管理・作成サービス比較",
+      "description": "Naftyの公開資料を調査。有料プランでAIによる勤務表生成を提供しています。無料枠の詳細はFAQを優先し、確認が必要です。 料金条件、公開資料で確認した機能と、契約前の確認事項を掲載。2026年10月13日現在。",
+      "h1_count": 1,
+      "issues": [],
+      "local_expected_header_noindex": true
+    },
+    {
+      "url": "https://shift.aqsh.co.jp/products/jp14/",
+      "status": 200,
+      "title": "NTTデータ数理システム シフトスケジューリングの機能・料金・確認状況 | Aqsh シフト管理・作成サービス比較",
+      "description": "NTTデータ数理システム シフトスケジューリングの公開資料を調査。勤務条件を数理モデルにし、勤務表を計算する個別開発を提供しています。 料金条件、公開資料で確認した機能と、契約前の確認事項を掲載。2026年10月13日現在。",
+      "h1_count": 1,
+      "issues": [],
+      "local_expected_header_noindex": true
+    },
+    {
+      "url": "https://shift.aqsh.co.jp/products/us08/",
+      "status": 200,
+      "title": "Nursegrid Managerの機能・料金・確認状況 | Aqsh シフト管理・作成サービス比較",
+      "description": "Nursegrid Managerの公開資料を調査。看護部門向けに、勤務表の共有・調整・連絡を支援しています。 料金条件、公開資料で確認した機能と、契約前の確認事項を掲載。2026年10月13日現在。",
+      "h1_count": 1,
+      "issues": [],
+      "local_expected_header_noindex": true
+    },
+    {
+      "url": "https://shift.aqsh.co.jp/products/jp18/",
+      "status": 200,
+      "title": "oplusの機能・料金・確認状況 | Aqsh シフト管理・作成サービス比較",
+      "description": "oplusの公開資料を調査。自動作成オプションでは、人数・業務・割当条件に基づいて作成します。 料金条件、公開資料で確認した機能と、契約前の確認事項を掲載。2026年10月13日現在。",
+      "h1_count": 1,
+      "issues": [],
+      "local_expected_header_noindex": true
+    },
+    {
+      "url": "https://shift.aqsh.co.jp/products/jp02/",
+      "status": 200,
+      "title": "Optamo for Shiftの機能・料金・確認状況 | Aqsh シフト管理・作成サービス比較",
+      "description": "Optamo for Shiftの公開資料を調査。職員の条件に基づいて、勤務枠へ自動で割り当てます。 料金条件、公開資料で確認した機能と、契約前の確認事項を掲載。2026年10月13日現在。",
+      "h1_count": 1,
+      "issues": [],
+      "local_expected_header_noindex": true
+    },
+    {
+      "url": "https://shift.aqsh.co.jp/products/jp16/",
+      "status": 200,
+      "title": "Optamo for Taskの機能・料金・確認状況 | Aqsh シフト管理・作成サービス比較",
+      "description": "Optamo for Taskの公開資料を調査。月間勤務と日別タスクを自動で割り当てます。 料金条件、公開資料で確認した機能と、契約前の確認事項を掲載。2026年10月13日現在。",
+      "h1_count": 1,
+      "issues": [],
+      "local_expected_header_noindex": true
+    },
+    {
+      "url": "https://shift.aqsh.co.jp/products/us14/",
+      "status": 200,
+      "title": "Patchwork Rotaの機能・料金・確認状況 | Aqsh シフト管理・作成サービス比較",
+      "description": "Patchwork Rotaの公開資料を調査。希望を使ったAIによる勤務表の自動作成を掲載しています。 料金条件、公開資料で確認した機能と、契約前の確認事項を掲載。2026年10月13日現在。",
+      "h1_count": 1,
+      "issues": [],
+      "local_expected_header_noindex": true
+    },
+    {
+      "url": "https://shift.aqsh.co.jp/products/us16/",
+      "status": 200,
+      "title": "PerfectServe Lightning Boltの機能・料金・確認状況 | Aqsh シフト管理・作成サービス比較",
+      "description": "PerfectServe Lightning Boltの公開資料を調査。勤務需要・希望・休暇に合わせた勤務表の自動生成を案内しています。 料金条件、公開資料で確認した機能と、契約前の確認事項を掲載。2026年10月13日現在。",
+      "h1_count": 1,
+      "issues": [],
+      "local_expected_header_noindex": true
+    },
+    {
+      "url": "https://shift.aqsh.co.jp/products/jp10/",
+      "status": 200,
+      "title": "Pitat-Shiftの機能・料金・確認状況 | Aqsh シフト管理・作成サービス比較",
+      "description": "Pitat-Shiftの公開資料を調査。テンプレートの職員・勤務条件に基づいて、自動で割り当てます。 料金条件、公開資料で確認した機能と、契約前の確認事項を掲載。2026年10月13日現在。",
+      "h1_count": 1,
+      "issues": [],
+      "local_expected_header_noindex": true
+    },
+    {
+      "url": "https://shift.aqsh.co.jp/products/us20/",
+      "status": 200,
+      "title": "Plandayの機能・料金・確認状況 | Aqsh シフト管理・作成サービス比較",
+      "description": "Plandayの公開資料を調査。過去の勤務パターン・契約時間・勤務可否・勤務時間ルールに基づいて、勤務枠を含む草案を生成します。 料金条件、公開資料で確認した機能と、契約前の確認事項を掲載。2026年10月13日現在。",
+      "h1_count": 1,
+      "issues": [],
+      "local_expected_header_noindex": true
+    },
+    {
+      "url": "https://shift.aqsh.co.jp/products/us02/",
+      "status": 200,
+      "title": "QGenda Nurse & Staff Schedulingの機能・料金・確認状況 | Aqsh シフト管理・作成サービス比較",
+      "description": "QGenda Nurse & Staff Schedulingの公開資料を調査。入院・外来の看護師とスタッフを対象としたサービスです。 料金条件、公開資料で確認した機能と、契約前の確認事項を掲載。2026年10月13日現在。",
+      "h1_count": 1,
+      "issues": [],
+      "local_expected_header_noindex": true
+    },
+    {
+      "url": "https://shift.aqsh.co.jp/products/us18/",
+      "status": 200,
+      "title": "Quinyxの機能・料金・確認状況 | Aqsh シフト管理・作成サービス比較",
+      "description": "Quinyxの公開資料を調査。手動・Base Schedule・Auto Scheduleで作られた既存の空きシフトを、職員へ割り当てます。 料金条件、公開資料で確認した機能と、契約前の確認事項を掲載。2026年10月13日現在。",
+      "h1_count": 1,
+      "issues": [],
+      "local_expected_header_noindex": true
+    },
+    {
+      "url": "https://shift.aqsh.co.jp/products/jp21/",
+      "status": 200,
+      "title": "Ramanasの機能・料金・確認状況 | Aqsh シフト管理・作成サービス比較",
+      "description": "Ramanasの公開資料を調査。勤務表の自動作成を提供しています。 料金条件、公開資料で確認した機能と、契約前の確認事項を掲載。2026年10月13日現在。",
+      "h1_count": 1,
+      "issues": [],
+      "local_expected_header_noindex": true
+    },
+    {
+      "url": "https://shift.aqsh.co.jp/products/us21/",
+      "status": 200,
+      "title": "RosterElfの機能・料金・確認状況 | Aqsh シフト管理・作成サービス比較",
+      "description": "RosterElfの公開資料を調査。豪州の診療所・関連医療職を対象として説明しています。 料金条件、公開資料で確認した機能と、契約前の確認事項を掲載。2026年10月13日現在。",
+      "h1_count": 1,
+      "issues": [],
+      "local_expected_header_noindex": true
+    },
+    {
+      "url": "https://shift.aqsh.co.jp/products/us01/",
+      "status": 200,
+      "title": "RosterLab AIの機能・料金・確認状況 | Aqsh シフト管理・作成サービス比較",
+      "description": "RosterLab AIの公開資料を調査。AIプランでルールと希望を反映した自動ロスターを提供しています。無料プランは手動作成です。 料金条件、公開資料で確認した機能と、契約前の確認事項を掲載。2026年10月13日現在。",
+      "h1_count": 1,
+      "issues": [],
+      "local_expected_header_noindex": true
+    },
+    {
+      "url": "https://shift.aqsh.co.jp/products/us05/",
+      "status": 200,
+      "title": "Rotageekの機能・料金・確認状況 | Aqsh シフト管理・作成サービス比較",
+      "description": "Rotageekの公開資料を調査。1週以上の勤務割当を自動作成する機能を掲載しています。 料金条件、公開資料で確認した機能と、契約前の確認事項を掲載。2026年10月13日現在。",
+      "h1_count": 1,
+      "issues": [],
+      "local_expected_header_noindex": true
+    },
+    {
+      "url": "https://shift.aqsh.co.jp/products/jp17/",
+      "status": 200,
+      "title": "SHIFTEEの機能・料金・確認状況 | Aqsh シフト管理・作成サービス比較",
+      "description": "SHIFTEEの公開資料を調査。必要人数・職員条件に基づいて月間勤務を作成する追加機能です。 料金条件、公開資料で確認した機能と、契約前の確認事項を掲載。2026年10月13日現在。",
+      "h1_count": 1,
+      "issues": [],
+      "local_expected_header_noindex": true
+    },
+    {
+      "url": "https://shift.aqsh.co.jp/products/jp01/",
+      "status": 200,
+      "title": "Shiftmationの機能・料金・確認状況 | Aqsh シフト管理・作成サービス比較",
+      "description": "Shiftmationの公開資料を調査。人数・職員の希望・施設ルールに基づいて勤務表を生成します。 料金条件、公開資料で確認した機能と、契約前の確認事項を掲載。2026年10月13日現在。",
+      "h1_count": 1,
+      "issues": [],
+      "local_expected_header_noindex": true
+    },
+    {
+      "url": "https://shift.aqsh.co.jp/products/us12/",
+      "status": 200,
+      "title": "ShiftWizardの機能・料金・確認状況 | Aqsh シフト管理・作成サービス比較",
+      "description": "ShiftWizardの公開資料を調査。看護師と病院職員の勤務管理を対象としたサービスです。 料金条件、公開資料で確認した機能と、契約前の確認事項を掲載。2026年10月13日現在。",
+      "h1_count": 1,
+      "issues": [],
+      "local_expected_header_noindex": true
+    },
+    {
+      "url": "https://shift.aqsh.co.jp/products/us03/",
+      "status": 200,
+      "title": "Smart Square（symplr）の機能・料金・確認状況 | Aqsh シフト管理・作成サービス比較",
+      "description": "Smart Square（symplr）の公開資料を調査。病院・医療機関の人員配置と勤務管理を対象としたサービスです。 料金条件、公開資料で確認した機能と、契約前の確認事項を掲載。2026年10月13日現在。",
+      "h1_count": 1,
+      "issues": [],
+      "local_expected_header_noindex": true
+    },
+    {
+      "url": "https://shift.aqsh.co.jp/products/us04/",
+      "status": 200,
+      "title": "Smartlinx Schedulingの機能・料金・確認状況 | Aqsh シフト管理・作成サービス比較",
+      "description": "Smartlinx Schedulingの公開資料を調査。入居者数、ケア必要度、スキルを考慮する自動勤務計画を掲載しています。 料金条件、公開資料で確認した機能と、契約前の確認事項を掲載。2026年10月13日現在。",
+      "h1_count": 1,
+      "issues": [],
+      "local_expected_header_noindex": true
+    },
+    {
+      "url": "https://shift.aqsh.co.jp/products/us22/",
+      "status": 200,
+      "title": "Sonaの機能・料金・確認状況 | Aqsh シフト管理・作成サービス比較",
+      "description": "Sonaの公開資料を調査。技能・希望・規則・予算を考慮した勤務表の自動作成を案内しています。最適性は実証していません。 料金条件、公開資料で確認した機能と、契約前の確認事項を掲載。2026年10月13日現在。",
+      "h1_count": 1,
+      "issues": [],
+      "local_expected_header_noindex": true
+    },
+    {
+      "url": "https://shift.aqsh.co.jp/products/us10/",
+      "status": 200,
+      "title": "Timefold Employee Shift Scheduling APIの機能・料金・確認状況 | Aqsh シフト管理・作成サービス比較",
+      "description": "Timefold Employee Shift Scheduling APIの公開資料を調査。既定の勤務枠への職員割当を、APIで実行します。 料金条件、公開資料で確認した機能と、契約前の確認事項を掲載。2026年10月13日現在。",
+      "h1_count": 1,
+      "issues": [],
+      "local_expected_header_noindex": true
+    },
+    {
+      "url": "https://shift.aqsh.co.jp/products/us06/",
+      "status": 200,
+      "title": "UKG Pro Workforce Managementの機能・料金・確認状況 | Aqsh シフト管理・作成サービス比較",
+      "description": "UKG Pro Workforce Managementの公開資料を調査。資格、技能、希望、勤務可能時間を踏まえて、勤務を自動で割り当てます。 料金条件、公開資料で確認した機能と、契約前の確認事項を掲載。2026年10月13日現在。",
+      "h1_count": 1,
+      "issues": [],
+      "local_expected_header_noindex": true
+    },
+    {
+      "url": "https://shift.aqsh.co.jp/products/us19/",
+      "status": 200,
+      "title": "When I Workの機能・料金・確認状況 | Aqsh シフト管理・作成サービス比較",
+      "description": "When I Workの公開資料を調査。自動割当は、既存の未公開OpenShiftsを職員に配置する方式です。勤務枠は先に用意します。 料金条件、公開資料で確認した機能と、契約前の確認事項を掲載。2026年10月13日現在。",
+      "h1_count": 1,
+      "issues": [],
+      "local_expected_header_noindex": true
+    },
+    {
+      "url": "https://shift.aqsh.co.jp/products/jp25/",
+      "status": 200,
+      "title": "アールシフトの機能・料金・確認状況 | Aqsh シフト管理・作成サービス比較",
+      "description": "アールシフトの公開資料を調査。勤務時間・休日・職員の組合せに基づいて、月間表を生成します。 料金条件、公開資料で確認した機能と、契約前の確認事項を掲載。2026年10月13日現在。",
+      "h1_count": 1,
+      "issues": [],
+      "local_expected_header_noindex": true
+    },
+    {
+      "url": "https://shift.aqsh.co.jp/products/jp20/",
+      "status": 200,
+      "title": "エピタルHRの機能・料金・確認状況 | Aqsh シフト管理・作成サービス比較",
+      "description": "エピタルHRの公開資料を調査。希望を反映するAIによる勤務表生成を掲載しています。 料金条件、公開資料で確認した機能と、契約前の確認事項を掲載。2026年10月13日現在。",
+      "h1_count": 1,
+      "issues": [],
+      "local_expected_header_noindex": true
+    },
+    {
+      "url": "https://shift.aqsh.co.jp/products/jp23/",
+      "status": 200,
+      "title": "シフッタの機能・料金・確認状況 | Aqsh シフト管理・作成サービス比較",
+      "description": "シフッタの公開資料を調査。勤務表の自動作成を提供しています。 料金条件、公開資料で確認した機能と、契約前の確認事項を掲載。2026年10月13日現在。",
+      "h1_count": 1,
+      "issues": [],
+      "local_expected_header_noindex": true
+    },
+    {
+      "url": "https://shift.aqsh.co.jp/products/jp12/",
+      "status": 200,
+      "title": "シフトラの機能・料金・確認状況 | Aqsh シフト管理・作成サービス比較",
+      "description": "シフトラの公開資料を調査。自動作成を標準機能として案内しています。 料金条件、公開資料で確認した機能と、契約前の確認事項を掲載。2026年10月13日現在。",
+      "h1_count": 1,
+      "issues": [],
+      "local_expected_header_noindex": true
+    },
+    {
+      "url": "https://shift.aqsh.co.jp/products/jp24/",
+      "status": 200,
+      "title": "シフト屋さんの機能・料金・確認状況 | Aqsh シフト管理・作成サービス比較",
+      "description": "シフト屋さんの公開資料を調査。必要人数・資格・希望に基づいて、自動で割り当てます。 料金条件、公開資料で確認した機能と、契約前の確認事項を掲載。2026年10月13日現在。",
+      "h1_count": 1,
+      "issues": [],
+      "local_expected_header_noindex": true
+    },
+    {
+      "url": "https://shift.aqsh.co.jp/products/jp28/",
+      "status": 200,
+      "title": "シフト屋さん Public API / MCPの機能・料金・確認状況 | Aqsh シフト管理・作成サービス比較",
+      "description": "シフト屋さん Public API / MCPの公開資料を調査。制約を渡して利用する、勤務表最適化APIです。 料金条件、公開資料で確認した機能と、契約前の確認事項を掲載。2026年10月13日現在。",
+      "h1_count": 1,
+      "issues": [],
+      "local_expected_header_noindex": true
+    },
+    {
+      "url": "https://shift.aqsh.co.jp/products/jp08/",
+      "status": 200,
+      "title": "シンクロシフトの機能・料金・確認状況 | Aqsh シフト管理・作成サービス比較",
+      "description": "シンクロシフトの公開資料を調査。疲労と公平性を考慮した自動作成を案内しています。効果の独立試験は実施していません。 料金条件、公開資料で確認した機能と、契約前の確認事項を掲載。2026年10月13日現在。",
+      "h1_count": 1,
+      "issues": [],
+      "local_expected_header_noindex": true
+    },
+    {
+      "url": "https://shift.aqsh.co.jp/products/jp22/",
+      "status": 200,
+      "title": "セルヴィスEXの機能・料金・確認状況 | Aqsh シフト管理・作成サービス比較",
+      "description": "セルヴィスEXの公開資料を調査。病院の看護勤務表を対象としたサービスです。 料金条件、公開資料で確認した機能と、契約前の確認事項を掲載。2026年10月13日現在。",
+      "h1_count": 1,
+      "issues": [],
+      "local_expected_header_noindex": true
+    },
+    {
+      "url": "https://shift.aqsh.co.jp/products/jp11/",
+      "status": 200,
+      "title": "ナースシフトの機能・料金・確認状況 | Aqsh シフト管理・作成サービス比較",
+      "description": "ナースシフトの公開資料を調査。勤務条件に基づいて自動作成し、固定後の再作成もできます。 料金条件、公開資料で確認した機能と、契約前の確認事項を掲載。2026年10月13日現在。",
+      "h1_count": 1,
+      "issues": [],
+      "local_expected_header_noindex": true
+    },
+    {
+      "url": "https://shift.aqsh.co.jp/products/jp13/",
+      "status": 200,
+      "title": "ほすぴタッチの機能・料金・確認状況 | Aqsh シフト管理・作成サービス比較",
+      "description": "ほすぴタッチの公開資料を調査。医療・介護のほか、工場、倉庫、警備、放送などを対象用途に挙げています。 料金条件、公開資料で確認した機能と、契約前の確認事項を掲載。2026年10月13日現在。",
+      "h1_count": 1,
+      "issues": [],
+      "local_expected_header_noindex": true
+    },
+    {
+      "url": "https://shift.aqsh.co.jp/products/jp26/",
+      "status": 200,
+      "title": "らくしふの機能・料金・確認状況 | Aqsh シフト管理・作成サービス比較",
+      "description": "らくしふの公開資料を調査。公式機能ページでは、時間帯別人数・役割・禁止条件と優先順位を設定した勤務表の自動作成を説明しています。希望の回収・転記に限定された機能ではありません。 料金条件、公開資料で確認した機能と、契約前の確認事項を掲載。2026年10月13日現在。",
+      "h1_count": 1,
+      "issues": [],
+      "local_expected_header_noindex": true
+    },
+    {
+      "url": "https://shift.aqsh.co.jp/products/jp15/",
+      "status": 200,
+      "title": "快決！シフト君NEO ウェルネスの機能・料金・確認状況 | Aqsh シフト管理・作成サービス比較",
+      "description": "快決！シフト君NEO ウェルネスの公開資料を調査。必要人数・月間回数などに基づいて、勤務原案を自動生成します。 料金条件、公開資料で確認した機能と、契約前の確認事項を掲載。2026年10月13日現在。",
+      "h1_count": 1,
+      "issues": [],
+      "local_expected_header_noindex": true
+    },
+    {
+      "url": "https://shift.aqsh.co.jp/products/jp09/",
+      "status": 200,
+      "title": "快決！シフト君NEO メディカルの機能・料金・確認状況 | Aqsh シフト管理・作成サービス比較",
+      "description": "快決！シフト君NEO メディカルの公開資料を調査。必要人数・月間回数などに基づいて、勤務原案を自動生成します。 料金条件、公開資料で確認した機能と、契約前の確認事項を掲載。2026年10月13日現在。",
+      "h1_count": 1,
+      "issues": [],
+      "local_expected_header_noindex": true
+    },
+    {
+      "url": "https://shift.aqsh.co.jp/products/jp05/",
+      "status": 200,
+      "title": "勤務シフト作成お助けマン Dayの機能・料金・確認状況 | Aqsh シフト管理・作成サービス比較",
+      "description": "勤務シフト作成お助けマン Dayの公開資料を調査。利用料金に自動作成を含むことが明示されています。 料金条件、公開資料で確認した機能と、契約前の確認事項を掲載。2026年10月13日現在。",
+      "h1_count": 1,
+      "issues": [],
+      "local_expected_header_noindex": true
+    },
+    {
+      "url": "https://shift.aqsh.co.jp/products/jp06/",
+      "status": 200,
+      "title": "勤務シフト作成お助けマン Timeの機能・料金・確認状況 | Aqsh シフト管理・作成サービス比較",
+      "description": "勤務シフト作成お助けマン Timeの公開資料を調査。利用料金に自動作成を含むことが明示されています。 料金条件、公開資料で確認した機能と、契約前の確認事項を掲載。2026年10月13日現在。",
+      "h1_count": 1,
+      "issues": [],
+      "local_expected_header_noindex": true
+    },
+    {
+      "url": "https://shift.aqsh.co.jp/products/jp19/",
+      "status": 200,
+      "title": "勤夢表VX（V5/VX）の機能・料金・確認状況 | Aqsh シフト管理・作成サービス比較",
+      "description": "勤夢表VX（V5/VX）の公開資料を調査。看護・介護の勤務表を対象としたサービスです。 料金条件、公開資料で確認した機能と、契約前の確認事項を掲載。2026年10月13日現在。",
+      "h1_count": 1,
+      "issues": [],
+      "local_expected_header_noindex": true
+    }
+  ],
+  "transport": "All fetches mapped to isolated 127.0.0.1 server; no production HTTP calls",
+  "indexability_in_production": "not reverified; local dev noindex is intentional",
+  "content_validation": "metadata, canonical, JSON-LD, H1 and uniqueness only"
+}

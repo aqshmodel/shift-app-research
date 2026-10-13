@@ -1,0 +1,70 @@
+{
+  "status": "passed",
+  "official_sources": 2,
+  "new_normalized_documents": 2,
+  "sources": [
+    {
+      "key": "home",
+      "url": "https://connecteam.com/",
+      "title": "Connecteam — Connecteam official home — Schedule the week in minutes",
+      "publisher": "Connecteam",
+      "reference": "Schedule the week in minutes",
+      "retrieved_on": "2026-10-13",
+      "version_label": "Mutable public homepage; publication date/version not shown",
+      "method": "official_document_body",
+      "method_note": "Web lines 921-925; follow-up linked scheduling product page was read as comparison only. Marketing is not executable rule specification. 要約・URL・locator・取得日・対象機能/版条件と留保を保存。全文/本文hash/公式原本画像未保存。製品AI/登録/試用/API/設定/問い合わせ/課金/認証変更なし。"
+    },
+    {
+      "key": "kb",
+      "url": "https://help.connecteam.com/en/articles/11112114-connecteam-s-knowledge-base-agent-your-company-s-ai-assistant",
+      "title": "Connecteam — Connecteam's Knowledge Base Agent: Your Company's AI Assistant",
+      "publisher": "Connecteam",
+      "reference": "Custom Instructions / Editing / User source view / plan footer",
+      "retrieved_on": "2026-10-13",
+      "version_label": "Mutable Knowledge Base Agent help; displayed Updated this week; exact date unconfirmed",
+      "method": "official_document_body",
+      "method_note": "Web lines 73-121,160. Positive surrounding facts retained as context; not evidence of optimizer rule generation or approval. 要約・URL・locator・取得日・対象機能/版条件と留保を保存。全文/本文hash/公式原本画像未保存。製品AI/登録/試用/API/設定/問い合わせ/課金/認証変更なし。"
+    }
+  ],
+  "comparison_only": [
+    {
+      "url": "https://connecteam.com/ai-capabilities/",
+      "version": "mutable; no date",
+      "locators": "48-161,248"
+    },
+    {
+      "url": "https://help.connecteam.com/en/articles/12517029-our-ai-tools-a-complete-guide",
+      "version": "2025-10-05",
+      "locators": "32-41,72-81"
+    },
+    {
+      "url": "https://help.connecteam.com/en/articles/12291274-how-to-use-the-knowledge-base-agent-for-users",
+      "version": "2026-07-14",
+      "locators": "16-24; redirected from ai-agent URL; video not watched"
+    },
+    {
+      "url": "https://connecteam.com/employee-scheduling-app/",
+      "version": "mutable; no date",
+      "locators": "45-47,166-180; linked from homepage; no arbitrary-rule/parse approval specification"
+    }
+  ],
+  "body_checked": true,
+  "full_text_archived": false,
+  "exact_KB_update_date_unconfirmed": true,
+  "retrieval_caveats": [
+    {
+      "product": "US09",
+      "url": "https://connecteam.com/ai-capabilities/",
+      "result": "AI_tools_and_KB_vs_scheduling_not_conflated",
+      "notes": "AI一覧はKB回答・自動割当・course prompt等を別機能として列挙。SBP全premiumという広い宣伝とKB helpのSBP除外に差がありKB契約適用は未確定。"
+    },
+    {
+      "product": "US09",
+      "url": "https://developer.connecteam.com/llms.txt",
+      "result": "web_tool_fetch_unavailable",
+      "notes": "公開indexへのWeb取得がInternal Error。利用可能な公式help本文へ切替。未取得を製品不存在/非対応へ判定しない。"
+    }
+  ],
+  "independent_tests_performed": false,
+  "external_contact": false
+}

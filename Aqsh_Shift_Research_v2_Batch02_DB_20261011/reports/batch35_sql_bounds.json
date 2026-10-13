@@ -1,0 +1,9 @@
+{
+  "status": "passed",
+  "maximum_statement_bytes": 99891,
+  "limit": 100000,
+  "reapply_products": 50,
+  "reapply_provisional_products": 0,
+  "all50_details_readable": true,
+  "split_generator_unchanged": true
+}

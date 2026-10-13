@@ -1,0 +1,103 @@
+{
+  "status": "passed",
+  "official_sources": 6,
+  "new_normalized_documents": 4,
+  "reused_normalized_documents": 2,
+  "fixed_ESS1_35_x_sources": 1,
+  "mutable_platform_latest_sources": 4,
+  "mutable_raw_OpenAPI_sources": 1,
+  "raw_spec_info_version": "v1, not a model release version",
+  "sources": [
+    {
+      "key": "hello",
+      "url": "https://docs.timefold.ai/employee-shift-scheduling/1.35.x/getting-started-with-employee-scheduling",
+      "title": "Timefold — Getting started: Hello world",
+      "publisher": "Timefold BV",
+      "reference": "Create a problem dataset / Custom sample.json upload",
+      "retrieved_on": "2026-10-13",
+      "version_label": "ESS documentation 1.35.x",
+      "method": "official_document_body",
+      "method_note": "Web L54–128,141–155. JSON structure and upload, not workbook parsing. 公開/更新日未表示。全文/本文ハッシュ/原本画像未保存。版/プランの顧客適用・実ファイル取込/出力/API拒否試験・解約後アクセスは未確認。登録/試用/キー生成/認証権限変更/アップロード/設定操作/問い合わせなし。"
+    },
+    {
+      "key": "overview",
+      "url": "https://docs.timefold.ai/timefold-platform/latest/how-tos/categorizing-runs",
+      "title": "Timefold — Datasets overview",
+      "publisher": "Timefold BV",
+      "reference": "Plans versus Revisions / Exporting search results",
+      "retrieved_on": "2026-10-13",
+      "version_label": "Platform latest; mutable",
+      "method": "official_document_body",
+      "method_note": "Web L44–57,108–112; normal Chrome article also checked latest100 cap. No tag/tenant authorization facts re-added. 公開/更新日未表示。全文/本文ハッシュ/原本画像未保存。版/プランの顧客適用・実ファイル取込/出力/API拒否試験・解約後アクセスは未確認。登録/試用/キー生成/認証権限変更/アップロード/設定操作/問い合わせなし。"
+    },
+    {
+      "key": "profiles",
+      "url": "https://docs.timefold.ai/timefold-platform/latest/how-tos/configuration-parameters-and-profiles",
+      "title": "Timefold — Configuration profiles and parameters — export/import",
+      "publisher": "Timefold BV",
+      "reference": "Export and import profiles",
+      "retrieved_on": "2026-10-13",
+      "version_label": "Platform latest; mutable",
+      "method": "official_document_body",
+      "method_note": "Web L76–88; normal Chrome confirmed whole-profile JSON, Standard, import creates new/no merge/default not carried. Reuses B31 normalized document; not counted new. 公開/更新日未表示。全文/本文ハッシュ/原本画像未保存。版/プランの顧客適用・実ファイル取込/出力/API拒否試験・解約後アクセスは未確認。登録/試用/キー生成/認証権限変更/アップロード/設定操作/問い合わせなし。"
+    },
+    {
+      "key": "details",
+      "url": "https://docs.timefold.ai/timefold-platform/latest/how-tos/interpreting-model-run-results",
+      "title": "Timefold — Dataset details — solution output download",
+      "publisher": "Timefold BV",
+      "reference": "Planning solution output and visualization",
+      "retrieved_on": "2026-10-13",
+      "version_label": "Platform latest; mutable",
+      "method": "official_document_body",
+      "method_note": "Web L232–236. Reuses B30 normalized document; no score/justification observation re-added. 公開/更新日未表示。全文/本文ハッシュ/原本画像未保存。版/プランの顧客適用・実ファイル取込/出力/API拒否試験・解約後アクセスは未確認。登録/試用/キー生成/認証権限変更/アップロード/設定操作/問い合わせなし。"
+    },
+    {
+      "key": "spec",
+      "url": "https://app.timefold.ai/openapis/employee-scheduling/v1",
+      "title": "Timefold — Employee Shift Scheduling raw OpenAPI — input/config/logs",
+      "publisher": "Timefold BV",
+      "reference": "GET /v1/schedules/{id}/input, /config, /logs, /model-request",
+      "retrieved_on": "2026-10-13",
+      "version_label": "Mutable live OpenAPI; info.version=v1; not pinned ESS1.35.x",
+      "method": "official_public_openapi_document",
+      "method_note": "Public static application/json via fixed intro API spec link. Web paths L1441–1506,2036–2168,2300–2365. Only specification read; no model API executed, authenticated, or sample submitted. 公開/更新日未表示。全文/本文ハッシュ/原本画像未保存。版/プランの顧客適用・実ファイル取込/出力/API拒否試験・解約後アクセスは未確認。登録/試用/キー生成/認証権限変更/アップロード/設定操作/問い合わせなし。"
+    },
+    {
+      "key": "audit",
+      "url": "https://docs.timefold.ai/timefold-platform/latest/how-tos/audit-log",
+      "title": "Timefold — Audit log — exit completeness comparison",
+      "publisher": "Timefold BV",
+      "reference": "Per-tenant configuration events / Types / Details",
+      "retrieved_on": "2026-10-13",
+      "version_label": "Platform latest; mutable",
+      "method": "official_document_body",
+      "method_note": "Web L22–70. Reviewable audit history is context; no machine-readable full-exit/termination fee or deadline promise found. 公開/更新日未表示。全文/本文ハッシュ/原本画像未保存。版/プランの顧客適用・実ファイル取込/出力/API拒否試験・解約後アクセスは未確認。登録/試用/キー生成/認証権限変更/アップロード/設定操作/問い合わせなし。"
+    }
+  ],
+  "body_checked": true,
+  "full_text_archived": false,
+  "publication_dates_not_shown": true,
+  "retrieval_caveats": [
+    {
+      "product": "US10",
+      "url": "https://docs.timefold.ai/timefold-platform/latest/api/platform-api",
+      "result": "model_vs_platform_API_audit_scope_description_conflict_unresolved",
+      "notes": "Model API usage末尾はPlatform APIでaudit/tenant/member/key管理と説明するが、Platform API usageの注意はaudit/tenant/member/keyを別model APIsと説明。公開raw Platform specの範囲は管理models/maps/config/location等で、今回audit endpoint所在/網羅性を認定しない。仕様ドキュメントのURLだけを読み、実API/authは未実施。新しい権限観測は登録しない。"
+    },
+    {
+      "product": "US10",
+      "url": "https://docs.timefold.ai/employee-shift-scheduling/1.35.x/user-guide/input-validation",
+      "result": "JSON_validation_and_availability_warning_scope_checked_as_context_only",
+      "notes": "New planの不正JSON即時拒否、業務validation errors/warningsを確認しExcel変換とは分離。既存B30のavailable/unavailable例の相反について本ページは両方定義をWARNING/処理可能と説明、専用availabilityは併用不可。解決済みとせず実挙動未確認のまま。追加観測/新文書件数へ水増しせず対照のみ。"
+    },
+    {
+      "product": "US10",
+      "url": "https://docs.timefold.ai/timefold-platform/latest/how-tos/categorizing-runs",
+      "result": "normal_Chrome_matches_latest100_export_cap_but_new_plan_text_has_more_detail",
+      "notes": "Web本文と通常Chromeの100件上限が一致。ChromeはNew planのCustom JSON dropの詳しい手順を表示、Web抽出は短い要約。相反ではなく取得時/レンダリング差として保持。CSV/Upload本体は操作していない。"
+    }
+  ],
+  "independent_tests_performed": false,
+  "external_contact": false
+}

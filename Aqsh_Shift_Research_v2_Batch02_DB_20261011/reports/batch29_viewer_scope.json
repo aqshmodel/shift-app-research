@@ -1,0 +1,49 @@
+{
+  "status": "passed",
+  "batch_id": "B29-20261013",
+  "method": "CUA Chrome on isolated static viewer; read-only DOM and screenshot visual review",
+  "scope": "Timefold detail; full built-Worker/browser suite planned C04T05",
+  "viewports": [
+    {
+      "width": 1440,
+      "height": 1000,
+      "document_overflow": false,
+      "detail_overflow": false
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "document_overflow": false,
+      "detail_overflow": false
+    }
+  ],
+  "checks": {
+    "new7_ids_present": true,
+    "new_source_links": 7,
+    "new_distinct_source_urls": 5,
+    "fixed_1_35_x": true,
+    "numeric_proficiency_unknown_context_visible": true,
+    "tag_filter_not_ACL": true,
+    "group_limit_preview_visible": true,
+    "real_travel_not_asserted": true,
+    "prior_B25_history_visible": true,
+    "price_unknown_preserved": true,
+    "console_errors_and_warnings": 0
+  },
+  "screenshots": "Reviewed in CUA output; source images and full-text not archived; no screenshot files added to package",
+  "html_dataset": {
+    "products": 50,
+    "observations": 2111,
+    "duplicate_ids": 0
+  },
+  "local_server": {
+    "host": "127.0.0.1",
+    "port": 52249,
+    "stopped": true,
+    "escalation_review": "approved"
+  },
+  "favicon": "Isolated HTTP server favicon 404; no returned console error/warning; output unaffected",
+  "viewport_reset": true,
+  "agent_tabs_closed": true,
+  "external_logo_availability": "not independently tested"
+}

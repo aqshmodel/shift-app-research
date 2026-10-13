@@ -1,0 +1,188 @@
+{
+  "batch_id": "B31-20261013",
+  "prior_batch": "B30-20261013",
+  "as_of_date": "2026-10-13",
+  "resolution_policy_version": 2,
+  "description": "Timefold未着手N01/K03：テナント/地域/設置境界・roles/key scopeと初期設定の顧客側処理/profile適用を限定確認",
+  "method": "新規公式6文書（ESS固定1.35.x1・Platform latest5）から6部分確認。テナント隔離の自己申告を独立権限試験とせず、部署タグ/行ACL/キーcaller/roleとoperationを分離。Cloud/地域/self-hosted、Experiments preview例外、APIメソッドと権限表の対応、profile選択と編集/優先順位と契約代行責任を区別。既存B21の支援/料金/契約、B25の重み一般、B29部署/技能、B30採点API一般は再登録せず、新しい主体/認可条件だけ追加。全文/本文ハッシュ/画像未保存。登録/招待/キー生成/認証権限変更/設定/サンプルAPI/問い合わせ/課金/公開/本番再監査/独立製品試験なし。",
+  "sources": [
+    {
+      "key": "tenants",
+      "url": "https://docs.timefold.ai/timefold-platform/latest/api/integration-scenarios/multi-environment",
+      "title": "Timefold — Multiple environments and clusters",
+      "publisher": "Timefold BV",
+      "reference": "Tenants provide isolation / regional namespaces / self-hosted single tenant",
+      "retrieved_on": "2026-10-13",
+      "version_label": "Platform latest; Cloud vs self-hosted conditions",
+      "method": "official_document_body",
+      "method_note": "Web本文L24〜35・73〜101。 公開/更新日は未表示。全文・本文ハッシュ・原本画像は未保存。顧客現行版/商用プラン適用/独立権限試験は未確認。登録/招待/キー生成/認証/権限変更/設定操作/API試験/問い合わせは未実施。"
+    },
+    {
+      "key": "roles",
+      "url": "https://docs.timefold.ai/timefold-platform/latest/how-tos/member-management-and-roles",
+      "title": "Timefold — Members",
+      "publisher": "Timefold BV",
+      "reference": "Viewer/User/Administrator / temporary invitations / Experiments exception",
+      "retrieved_on": "2026-10-13",
+      "version_label": "Platform latest; Experiments role exception explicitly preview",
+      "method": "official_document_body",
+      "method_note": "Web本文L26〜80・100〜118。 公開/更新日は未表示。全文・本文ハッシュ・原本画像は未保存。顧客現行版/商用プラン適用/独立権限試験は未確認。登録/招待/キー生成/認証/権限変更/設定操作/API試験/問い合わせは未実施。"
+    },
+    {
+      "key": "keys",
+      "url": "https://docs.timefold.ai/timefold-platform/latest/how-tos/tenant-api-keys",
+      "title": "Timefold — API Keys",
+      "publisher": "Timefold BV",
+      "reference": "Tenant/model scope / user-context independence / expiry/revocation / endpoint permissions",
+      "retrieved_on": "2026-10-13",
+      "version_label": "Platform latest; Model API permissions",
+      "method": "official_document_body",
+      "method_note": "Web本文L22〜71。通常Chrome本文/権限表も照合。 公開/更新日は未表示。全文・本文ハッシュ・原本画像は未保存。顧客現行版/商用プラン適用/独立権限試験は未確認。登録/招待/キー生成/認証/権限変更/設定操作/API試験/問い合わせは未実施。"
+    },
+    {
+      "key": "caller",
+      "url": "https://docs.timefold.ai/timefold-platform/latest/api/model-api-usage",
+      "title": "Timefold — Model API usage",
+      "publisher": "Timefold BV",
+      "reference": "GET /api/aboutme / sample tenant plan and permissions / unauthorized",
+      "retrieved_on": "2026-10-13",
+      "version_label": "Platform latest; caller identity and model-scoped API",
+      "method": "official_document_body",
+      "method_note": "Web本文L122〜158。一般的なREST利用/実行状態/容量/モデルAPI推奨一般は再登録しない。 公開/更新日は未表示。全文・本文ハッシュ・原本画像は未保存。顧客現行版/商用プラン適用/独立権限試験は未確認。登録/招待/キー生成/認証/権限変更/設定操作/API試験/問い合わせは未実施。"
+    },
+    {
+      "key": "integration",
+      "url": "https://docs.timefold.ai/employee-shift-scheduling/1.35.x/user-guide/integration",
+      "title": "Timefold — Integration",
+      "publisher": "Timefold BV",
+      "reference": "Customer data gathering / input creation / result processing / own backend",
+      "retrieved_on": "2026-10-13",
+      "version_label": "Employee Shift Scheduling documentation 1.35.x",
+      "method": "official_document_body",
+      "method_note": "Web本文L32〜51。 公開/更新日は未表示。全文・本文ハッシュ・原本画像は未保存。顧客現行版/商用プラン適用/独立権限試験は未確認。登録/招待/キー生成/認証/権限変更/設定操作/API試験/問い合わせは未実施。"
+    },
+    {
+      "key": "profiles",
+      "url": "https://docs.timefold.ai/timefold-platform/latest/how-tos/configuration-parameters-and-profiles",
+      "title": "Timefold — Configuration profiles and parameters",
+      "publisher": "Timefold BV",
+      "reference": "Per-model read-only Standard / profile selection / configuration precedence",
+      "retrieved_on": "2026-10-13",
+      "version_label": "Platform latest; configuration and tenant-plan ceilings",
+      "method": "official_document_body",
+      "method_note": "Web本文L26〜75・92〜110・166〜179。旧B25の重み/スコア一般は再登録しない。 公開/更新日は未表示。全文・本文ハッシュ・原本画像は未保存。顧客現行版/商用プラン適用/独立権限試験は未確認。登録/招待/キー生成/認証/権限変更/設定操作/API試験/問い合わせは未実施。"
+    }
+  ],
+  "findings": [
+    {
+      "product": "US10",
+      "criterion": "N01",
+      "source": "tenants",
+      "summary": "Platformはテナントを主な分離境界とし、モデル・データセット・メンバー・APIキー等をテナントごとに保持し、他テナントのデータをDB/アプリ両層で隔離すると説明する。所属する複数テナントの切替は可能。EU/USの名前空間は別で、self-hostedは1設置1テナントと明記する。",
+      "locator": "Tenants provide isolation / Multiple geographic regions / Self-hosted single-tenant limitation",
+      "limitations": "Platform latestの提供者記載で侵入/権限試験や第三者保証ではない。Cloudの複数テナントとself-hostedの単一テナントを同じ条件にしない。業務の施設/部署タグをテナント分離と見なさず、地域間データ同期・テナント数/追加費用・顧客プラン適用は未確認。",
+      "state": "known",
+      "delivery": "native",
+      "support": "limited",
+      "scope": "Official Platform latest; Cloud vs self-hosted conditions documentation; commercial plan applicability and live implementation unconfirmed; vendor access claims not independently tested"
+    },
+    {
+      "product": "US10",
+      "criterion": "N01",
+      "source": "roles",
+      "summary": "Viewerはテナント内のモデル・全データセット・設定プロファイルを閲覧、Userは作成/再実行/取消や名称・タグ編集、Administratorは設定プロファイル・キー・メンバー・モデル等の管理を追加すると説明する。招待時に期限を指定し、Solutions Engineerの一時アクセスにも利用する案内がある。",
+      "locator": "User roles / Invite member / Expiring members",
+      "limitations": "Platform latestの役割一覧。部署/本人単位のデータ行ACL・ロール変更や期限切れの反映時間・運用者の恒常アクセス範囲・実拒否は未確認。Experimentsはpreviewで、通常のtenant role一覧とは別にModel API keyの操作scopeで制御する但し書きがある。Userという名称だけで実験操作可と一律判断しない。",
+      "state": "known",
+      "delivery": "native",
+      "support": "limited",
+      "scope": "Official Platform latest; Experiments role exception explicitly preview documentation; commercial plan applicability and live implementation unconfirmed; vendor access claims not independently tested"
+    },
+    {
+      "product": "US10",
+      "criterion": "N01",
+      "source": "keys",
+      "summary": "Model APIキーはユーザー文脈を持たずテナントと選択モデルへ紐付き、全モデル/選択モデルと全操作/選択操作を選べる。期限未指定は30日、revoke後の後続API呼出は失敗すると説明する。ReadのみではPOST recommendationsやPOST score-analysisを呼べず、作成権限の対象として表記する。",
+      "locator": "API Keys / scope / expiry / revocation / permission table",
+      "limitations": "Platform latestの文書条件で実拒否/期限境界/取消伝播/処理中リクエストは未試験。全管理者にキーがvisibleという記載を秘密値の再表示可否と同一にしない。権限名とHTTPメソッドは単純一致せず、DELETE /idはUpdate、/id/purgeはDelete、取得済みscore-analysisのGETは各操作列で可と表記する。プラン/実行版/外部顧客ACLは未確認。",
+      "state": "known",
+      "delivery": "native",
+      "support": "limited",
+      "scope": "Official Platform latest; Model API permissions documentation; commercial plan applicability and live implementation unconfirmed; vendor access claims not independently tested"
+    },
+    {
+      "product": "US10",
+      "criterion": "N01",
+      "source": "caller",
+      "summary": "GET /api/aboutmeは現在のキー名、所属テナントとplan、resource/operationsの権限を返す診断方法を案内する。キーがない/未知/期限切れの場合は401と説明し、例のAPIキーcallerはroleやemailがnullでもMODEL/EXPERIMENTの操作権限を別に持つ。",
+      "locator": "Discovering caller identity / response sample / 401 conditions",
+      "limitations": "Platform latestの応答例で今回呼び出していない。例のENTERPRISEや全CRUDを顧客の契約/既定権限にしない。キーcallerのrole=nullを無権限・匿名職員の証明にせず、endpoint応答の権限情報と実データアクセス拒否を分ける。無効化・モデルscope・トークン共有時の実動作は未検証。",
+      "state": "known",
+      "delivery": "native",
+      "support": "limited",
+      "scope": "Official Platform latest; caller identity and model-scoped API documentation; commercial plan applicability and live implementation unconfirmed; vendor access claims not independently tested"
+    },
+    {
+      "product": "US10",
+      "criterion": "K03",
+      "source": "integration",
+      "summary": "1.35.xの統合手順は、顧客システムが業務データを集め入力を作り、Timefoldへ送信し、返された最適化結果を顧客側で処理する流れを説明する。計画データと計画モジュールは顧客自身のbackendまたはCRM内に保持する構成とする。",
+      "locator": "API workflow / own backend / input gathering and output processing",
+      "limitations": "顧客側実装を含む手順の部分確認で、完成済み職員UI・マスター作成・日本の勤務規則の自動設定/ベンダー代行を保証しない。B01のAPI分類/M04のREST一般は再登録しない。実際の担当者/代行/共同設定/個別開発、工数・データ整備・移行責任・契約プランの作業分担は未確認。",
+      "state": "known",
+      "delivery": "unknown",
+      "support": "limited",
+      "scope": "Official Employee Shift Scheduling documentation 1.35.x documentation; commercial plan applicability and live implementation unconfirmed; vendor access claims not independently tested"
+    },
+    {
+      "product": "US10",
+      "criterion": "K03",
+      "source": "profiles",
+      "summary": "Platformの設定プロファイルはモデル単位で、read-onlyのStandardを既定とし、独自プロファイルを作成/複製して重み・モデル設定・solve設定を保存する。適用はIDまたは名前/画面から選び、入力設定→一時override→profile→親dataset→model既定の順で決まると説明する。",
+      "locator": "Configuration profiles / Standard / selecting profile / order of options",
+      "limitations": "Platform latestの設定手順で、固定ESS1.35.xモデルの全設定や顧客版を認定しない。Members資料はprofile作成/編集/削除をAdministratorに追加するが、dataset overrideの操作権限の全行列は未確認。入力プロファイルの選択と編集を同一にしない。model/tenant planの上限があり、名前変更で指定先が一致しなくなる留保を保持。作業代行/検収/工数/契約適用は未確認。",
+      "state": "known",
+      "delivery": "unknown",
+      "support": "limited",
+      "scope": "Official Platform latest; configuration and tenant-plan ceilings documentation; commercial plan applicability and live implementation unconfirmed; vendor access claims not independently tested"
+    }
+  ],
+  "prices": [],
+  "followups": [],
+  "task_updates": [
+    {
+      "task_id": "TASK-RES01293",
+      "state": "in_progress",
+      "priority": 3,
+      "method": "vendor_document",
+      "note": "B31：テナントDB/アプリ隔離の自己申告、Cloud/地域名前空間/self-hosted条件、役割・招待期限・API key model/operation scope・aboutme応答を部分確認。部署/本人行ACL・実拒否/期限/取消/内部運用アクセス・プラン適用は未確認、Experiments previewのキー制御例外を保持。"
+    },
+    {
+      "task_id": "TASK-RES01288",
+      "state": "in_progress",
+      "priority": 3,
+      "method": "vendor_document",
+      "note": "B31：顧客側データ収集/入力作成/結果処理と、model単位Standard/profile/override/設定優先順位・Administrator編集を部分確認。プロファイル選択と編集を分離。個別契約の代行/共同設定/開発責任/工数/検収/適用プランは未確認。"
+    }
+  ],
+  "retrieval_checks": [
+    {
+      "product": "US10",
+      "url": "https://docs.timefold.ai/timefold-platform/latest/api/api-usage",
+      "result": "fixed_ESS_intro_API_keys_link_returns_404_valid_member_link_found",
+      "notes": "1.35.x introductionのAPI keysリンクは404。Members→Model API usage→API Keysの公開リンクから現行tenant-api-keys本文を取得。サービス終了・認証障害・API廃止と判定しない。404ページを新規根拠文書として登録しない。"
+    },
+    {
+      "product": "US10",
+      "url": "https://docs.timefold.ai/timefold-platform/latest/how-tos/member-management-and-roles",
+      "result": "Experiments_preview_role_exception_key_scope_controls_access",
+      "notes": "Userの一覧は実験view/create/runを含むが、同ページ但し書きはExperimentsは通常roleでなくModel API key operation scopeで制御すると説明。条件付き例外として保存し、未知のキー共有/作成可否を補完しない。通常roles全文の相反と断定しない。"
+    },
+    {
+      "product": "US10",
+      "url": "https://docs.timefold.ai/timefold-platform/latest/how-tos/tenant-api-keys",
+      "result": "permission_names_not_simple_HTTP_verb_equivalence",
+      "notes": "DELETE /idはUpdate、DELETE /id/purgeはDeleteと表が区別。ReadとCreateのGET許可、POST recommendation/score-analysisのCreateを保持。取消/purgeを同一にせず、実API/権限試験なし。"
+    }
+  ]
+}

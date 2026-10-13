@@ -1,0 +1,8 @@
+{
+  "status": "passed",
+  "new_findings": 8,
+  "exact_summary_duplicates": 0,
+  "semantic_review": "New previously unstarted C02/C05/E01/F01 documentary semantics; prior self-rostering disruption, input validation and lifecycle not re-added; commercial support and billing excluded.",
+  "new_price_components": 0,
+  "existing_price_components": 118
+}

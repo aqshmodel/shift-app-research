@@ -1,0 +1,12 @@
+{
+  "status": "passed",
+  "new_findings": 4,
+  "known_partial": 0,
+  "not_found": 4,
+  "exact_summary_duplicates": 0,
+  "new_distinct_research_documents": 2,
+  "comparison_only_retrievals": 4,
+  "semantic_review": "Marketing request wording, response instructions, settings summary review and answer citations are distinct contextual observations; no optimizer capability credited. Four comparison docs not counted as new evidence.",
+  "new_price_components": 0,
+  "existing_price_components": 118
+}

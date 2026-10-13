@@ -1,0 +1,82 @@
+{
+  "status": "passed",
+  "official_sources": 4,
+  "new_normalized_documents": 4,
+  "sources": [
+    {
+      "key": "rules",
+      "url": "https://developer.connecteam.com/docs/company-policies-scheduling-rules",
+      "title": "Connecteam — Scheduling Rule Policies",
+      "publisher": "Connecteam",
+      "reference": "Overview / Rule Types / Rule fields",
+      "retrieved_on": "2026-10-13",
+      "version_label": "API v1 paths; mutable guide; displayed Updated about 1 month ago",
+      "method": "official_document_body",
+      "method_note": "Web lines 38-45,71-77,89-110,573. Exact publication date and customer runtime unconfirmed. 公式本文を取得し要約・URL・locator・取得日・版条件を保存。全文/本文hash/公式原本画像未保存。製品登録/試用/API実行/設定/問い合わせ/課金/認証変更なし。"
+    },
+    {
+      "key": "issues",
+      "url": "https://help.connecteam.com/en/articles/9745134-job-schedule-issues",
+      "title": "Connecteam — Job Schedule Issues",
+      "publisher": "Connecteam",
+      "reference": "Plan conditions / Types / Choose Which Issues to Display",
+      "retrieved_on": "2026-10-13",
+      "version_label": "Help dated 2026-08-12; mutable",
+      "method": "official_document_body",
+      "method_note": "Web lines 18-34,49-64. Scheduling Rules issue gating is distinct from general Issues. 公式本文を取得し要約・URL・locator・取得日・版条件を保存。全文/本文hash/公式原本画像未保存。製品登録/試用/API実行/設定/問い合わせ/課金/認証変更なし。"
+    },
+    {
+      "key": "import",
+      "url": "https://help.connecteam.com/en/articles/6518011-job-scheduling-learn-how-to-import-shifts-from-excel",
+      "title": "Connecteam — Job Scheduling: Learn How to Import Shifts from Excel",
+      "publisher": "Connecteam",
+      "reference": "What Can Be Imported / How to Import Your Data",
+      "retrieved_on": "2026-10-13",
+      "version_label": "Help dated 2025-08-25; mutable",
+      "method": "official_document_body",
+      "method_note": "Web lines 30-73. Excel label retained separately from required CSV file format. 公式本文を取得し要約・URL・locator・取得日・版条件を保存。全文/本文hash/公式原本画像未保存。製品登録/試用/API実行/設定/問い合わせ/課金/認証変更なし。"
+    },
+    {
+      "key": "troubleshoot",
+      "url": "https://help.connecteam.com/en/articles/8343742-troubleshooting-i-can-t-import-shifts-to-the-job-schedule",
+      "title": "Connecteam — Troubleshooting: I Can't Import Shifts to the Job Schedule",
+      "publisher": "Connecteam",
+      "reference": "CSV / required columns / Jobs / Sub-jobs / Important information",
+      "retrieved_on": "2026-10-13",
+      "version_label": "Help dated 2025-08-25; mutable",
+      "method": "official_document_body",
+      "method_note": "Web lines 32-59. Same-date differences from import guide retained; no product import trial. 公式本文を取得し要約・URL・locator・取得日・版条件を保存。全文/本文hash/公式原本画像未保存。製品登録/試用/API実行/設定/問い合わせ/課金/認証変更なし。"
+    }
+  ],
+  "comparison_only": [
+    {
+      "url": "https://help.connecteam.com/en/articles/12829136-starting-guide-to-scheduling-rules-and-shift-quotas",
+      "version": "2026-09-08",
+      "locators": "48-118,216-266"
+    },
+    {
+      "url": "https://help.connecteam.com/en/articles/5946330-the-operations-hub-expert-plan",
+      "version": "2026-06-25",
+      "locators": "33,51-63"
+    }
+  ],
+  "body_checked": true,
+  "full_text_archived": false,
+  "exact_developer_update_date_unconfirmed": true,
+  "retrieval_caveats": [
+    {
+      "product": "US09",
+      "url": "https://help.connecteam.com/en/articles/8343742-troubleshooting-i-can-t-import-shifts-to-the-job-schedule",
+      "result": "same_date_job_subjob_mapping_difference",
+      "notes": "取込記事と障害解説は2025-08-25だが未知Job新規作成/Sub-job専用扱いに差。実試験/原因の推定なし。"
+    },
+    {
+      "product": "US09",
+      "url": "https://developer.connecteam.com/docs/company-policies-scheduling-rules",
+      "result": "enforces_summary_vs_optional_claim_block_and_manual_warning",
+      "notes": "API総括はenforces、フィールドpreventClaim=falseは応募阻止なし。既存help手動警告と区別。API1会社方針/再割当置換と既存help追加または上書きは表面の差を保存。"
+    }
+  ],
+  "independent_tests_performed": false,
+  "external_contact": false
+}

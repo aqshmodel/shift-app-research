@@ -72,7 +72,15 @@ class VerifyPublication(unittest.TestCase):
             db = sqlite3.connect(':memory:')
             db.row_factory = sqlite3.Row
             db.executescript((verifier.WEB / 'migrations/0001_publication.sql').read_text())
-            db.executescript((verifier.WEB / 'data/publication.sql').read_text().replace(old_sid, sid))
+            # Materialize complete rows before changing this synthetic fixture.
+            # Rewriting SQL text would invalidate staged-assembly length guards.
+            db.executescript((verifier.WEB / 'data/publication.sql').read_text())
+            for table in ['web_snapshots', 'web_products', 'web_categories', 'web_live']:
+                db.execute('UPDATE ' + table + ' SET snapshot_id=? WHERE snapshot_id=?', (sid, old_sid))
+            for table, field in [('web_snapshots', 'scope_json'), ('web_products', 'summary_json'), ('web_products', 'detail_json')]:
+                for record in db.execute('SELECT rowid,' + field + ' FROM ' + table).fetchall():
+                    db.execute('UPDATE ' + table + ' SET ' + field + '=? WHERE rowid=?',
+                        (record[1].replace(old_sid, sid), record[0]))
             row = db.execute("SELECT detail_json FROM web_products WHERE offering_id='OF-US08'").fetchone()
             detail = json.loads(row[0])
             # Synthetic fixture only; no current or historical evidence is edited.

@@ -1,0 +1,19 @@
+{
+  "status": "passed",
+  "tasks_marked_done": 0,
+  "task_updates": {
+    "K01": "TASK-RES01286",
+    "M08": "TASK-RES01292"
+  },
+  "started_tasks": [
+    "TASK-RES01286",
+    "TASK-RES01292"
+  ],
+  "K01_status": "unknown",
+  "M08_support": "limited",
+  "unfulfilled": {
+    "K01": "JSON Custom投入の現行公開手順は確認。結合セル/独自記号/複数sheetのExcel直接取込・変換器/書式/実試験/工数は未確認。K01の支持はunknownのまま。",
+    "M08": "一覧CSV最新100件、単一計画output JSON、profile全体JSON移送と新規import条件、ID単位入力/実効config/solve logs/完全requestを部分確認。監査は閲覧案内、全量解約出口の範囲/期限/費用と復元性は未確認。"
+  },
+  "no_guessed_price_or_scope": true
+}

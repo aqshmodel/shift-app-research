@@ -1,0 +1,153 @@
+{
+  "checked_at": "2026-10-13T06:49:51.525Z",
+  "base": "https://shift.aqsh.co.jp",
+  "status": "passed",
+  "snapshot_id": "B36-20261013-pub2",
+  "checks": [
+    {
+      "id": "OF-JP03",
+      "width": 320,
+      "title": "FIKAIGO",
+      "viewport": 320,
+      "documentWidth": 320,
+      "recordParagraphs": 50,
+      "recordWrapping": true
+    },
+    {
+      "id": "OF-JP03",
+      "width": 390,
+      "title": "FIKAIGO",
+      "viewport": 390,
+      "documentWidth": 390,
+      "recordParagraphs": 50,
+      "recordWrapping": true
+    },
+    {
+      "id": "OF-JP03",
+      "width": 768,
+      "title": "FIKAIGO",
+      "viewport": 768,
+      "documentWidth": 768,
+      "recordParagraphs": 50,
+      "recordWrapping": true
+    },
+    {
+      "id": "OF-JP03",
+      "width": 1440,
+      "title": "FIKAIGO",
+      "viewport": 1440,
+      "documentWidth": 1440,
+      "recordParagraphs": 50,
+      "recordWrapping": true
+    },
+    {
+      "id": "OF-JP18",
+      "width": 320,
+      "title": "oplus",
+      "viewport": 320,
+      "documentWidth": 320,
+      "recordParagraphs": 50,
+      "recordWrapping": true
+    },
+    {
+      "id": "OF-JP18",
+      "width": 390,
+      "title": "oplus",
+      "viewport": 390,
+      "documentWidth": 390,
+      "recordParagraphs": 50,
+      "recordWrapping": true
+    },
+    {
+      "id": "OF-JP18",
+      "width": 768,
+      "title": "oplus",
+      "viewport": 768,
+      "documentWidth": 768,
+      "recordParagraphs": 50,
+      "recordWrapping": true
+    },
+    {
+      "id": "OF-JP18",
+      "width": 1440,
+      "title": "oplus",
+      "viewport": 1440,
+      "documentWidth": 1440,
+      "recordParagraphs": 50,
+      "recordWrapping": true
+    },
+    {
+      "id": "OF-US09",
+      "width": 320,
+      "title": "Connecteam Operations Hub Expert",
+      "viewport": 320,
+      "documentWidth": 320,
+      "recordParagraphs": 50,
+      "recordWrapping": true
+    },
+    {
+      "id": "OF-US09",
+      "width": 390,
+      "title": "Connecteam Operations Hub Expert",
+      "viewport": 390,
+      "documentWidth": 390,
+      "recordParagraphs": 50,
+      "recordWrapping": true
+    },
+    {
+      "id": "OF-US09",
+      "width": 768,
+      "title": "Connecteam Operations Hub Expert",
+      "viewport": 768,
+      "documentWidth": 768,
+      "recordParagraphs": 50,
+      "recordWrapping": true
+    },
+    {
+      "id": "OF-US09",
+      "width": 1440,
+      "title": "Connecteam Operations Hub Expert",
+      "viewport": 1440,
+      "documentWidth": 1440,
+      "recordParagraphs": 50,
+      "recordWrapping": true
+    },
+    {
+      "id": "OF-US10",
+      "width": 320,
+      "title": "Timefold Employee Shift Scheduling API",
+      "viewport": 320,
+      "documentWidth": 320,
+      "recordParagraphs": 50,
+      "recordWrapping": true
+    },
+    {
+      "id": "OF-US10",
+      "width": 390,
+      "title": "Timefold Employee Shift Scheduling API",
+      "viewport": 390,
+      "documentWidth": 390,
+      "recordParagraphs": 50,
+      "recordWrapping": true
+    },
+    {
+      "id": "OF-US10",
+      "width": 768,
+      "title": "Timefold Employee Shift Scheduling API",
+      "viewport": 768,
+      "documentWidth": 768,
+      "recordParagraphs": 50,
+      "recordWrapping": true
+    },
+    {
+      "id": "OF-US10",
+      "width": 1440,
+      "title": "Timefold Employee Shift Scheduling API",
+      "viewport": 1440,
+      "documentWidth": 1440,
+      "recordParagraphs": 50,
+      "recordWrapping": true
+    }
+  ],
+  "external_media_availability": "not separately validated"
+}

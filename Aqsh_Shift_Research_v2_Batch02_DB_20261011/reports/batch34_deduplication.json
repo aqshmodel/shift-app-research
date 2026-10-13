@@ -1,0 +1,12 @@
+{
+  "status": "passed",
+  "new_findings": 6,
+  "known_partial": 6,
+  "not_found": 0,
+  "exact_summary_duplicates": 0,
+  "new_distinct_research_documents": 4,
+  "comparison_only_existing_documents": 2,
+  "semantic_review": "New rest strictest-value and switch/visibility conditions; template CSV fields, format/defaults and conflicting Job/Sub-job handling. Existing generic rules/manual warnings/plan prices not counted again.",
+  "new_price_components": 0,
+  "existing_price_components": 118
+}

@@ -1,0 +1,77 @@
+{
+  "status": "passed",
+  "official_sources": 4,
+  "new_normalized_documents": 4,
+  "sources": [
+    {
+      "key": "preferred",
+      "url": "https://help.connecteam.com/en/articles/6569607-allow-users-to-set-their-preferred-working-hours-and-unavailabilities",
+      "title": "Connecteam — Allow Users to Set Their Preferred Working Hours and Unavailabilities",
+      "publisher": "Connecteam",
+      "reference": "Enabling / How Do Users Mark / Admin deletion",
+      "retrieved_on": "2026-10-13",
+      "version_label": "Help dated 2026-01-28; mutable; no app version",
+      "method": "official_document_body",
+      "method_note": "Web lines 43-56,71-99. General settings tab label differs from Unavailability guide; no app tested. 公式本文の要約・URL・locator・取得日・版条件を保存。全文/本文hash/公式原本画像未保存。登録/試用/API/設定/予約/購入/問い合わせ/課金/認証変更なし。"
+    },
+    {
+      "key": "unavailability",
+      "url": "https://help.connecteam.com/en/articles/6489644-starting-guide-to-unavailability",
+      "title": "Connecteam — Starting Guide to Unavailability",
+      "publisher": "Connecteam",
+      "reference": "Enabling / Limiting Changes / How Does It Look For Users",
+      "retrieved_on": "2026-10-13",
+      "version_label": "Help dated 2026-08-18; mutable; no app version",
+      "method": "official_document_body",
+      "method_note": "Web lines 26-59,82-90. Date-start timezone deadline is distinct from shift-start cutoff. 公式本文の要約・URL・locator・取得日・版条件を保存。全文/本文hash/公式原本画像未保存。登録/試用/API/設定/予約/購入/問い合わせ/課金/認証変更なし。"
+    },
+    {
+      "key": "pros",
+      "url": "https://connecteam.com/connecteam-experts/",
+      "title": "Connecteam — Connecteam Pro's",
+      "publisher": "Connecteam",
+      "reference": "Hire a certified pro / Schedule / Setup / footnotes",
+      "retrieved_on": "2026-10-13",
+      "version_label": "Mutable public service page; date not displayed",
+      "method": "official_document_body",
+      "method_note": "Web linked from official import guide, lines 45-59,105-114. Tracking parameters omitted from canonical URL; normalized page re-read. 公式本文の要約・URL・locator・取得日・版条件を保存。全文/本文hash/公式原本画像未保存。登録/試用/API/設定/予約/購入/問い合わせ/課金/認証変更なし。"
+    },
+    {
+      "key": "prosfaq",
+      "url": "https://help.connecteam.com/en/articles/9113052-connecteam-pros-purchase-certified-partner-services",
+      "title": "Connecteam — Connecteam Pros - Purchase Certified Partner Services",
+      "publisher": "Connecteam",
+      "reference": "Fully Setup / Onboarding / FAQs: cost, region, process, billing",
+      "retrieved_on": "2026-10-13",
+      "version_label": "Mutable help; displayed Updated this week; exact date unconfirmed",
+      "method": "official_document_body",
+      "method_note": "Web lines 18-36,41-71. Relative date not treated as exact; session vs hourly wording difference retained. 公式本文の要約・URL・locator・取得日・版条件を保存。全文/本文hash/公式原本画像未保存。登録/試用/API/設定/予約/購入/問い合わせ/課金/認証変更なし。"
+    }
+  ],
+  "comparison_only": [
+    {
+      "url": "https://help.connecteam.com/en/articles/6518011-job-scheduling-learn-how-to-import-shifts-from-excel",
+      "version": "2025-08-25",
+      "locators": "77 Pro link only; import conditions not re-registered"
+    }
+  ],
+  "body_checked": true,
+  "full_text_archived": false,
+  "exact_prosFAQ_update_date_unconfirmed": true,
+  "retrieval_caveats": [
+    {
+      "product": "US09",
+      "url": "https://help.connecteam.com/en/articles/6569607-allow-users-to-set-their-preferred-working-hours-and-unavailabilities",
+      "result": "availability_enable_general_vs_mobile_tab",
+      "notes": "2026-01-28希望ガイドはGeneral tab、2026-08-18不可ガイドはMobile app tab。画面変更/誤記/別設定のどれか未確認。"
+    },
+    {
+      "product": "US09",
+      "url": "https://help.connecteam.com/en/articles/9113052-connecteam-pros-purchase-certified-partner-services",
+      "result": "pro_hourly_vs_50min_session_wording",
+      "notes": "FAQは40 USD/hourと最大50分、LPは40 USD/50min session。確定見積/算式/総費用を作らない。価格明細追加なし。"
+    }
+  ],
+  "independent_tests_performed": false,
+  "external_contact": false
+}

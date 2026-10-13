@@ -1,0 +1,18 @@
+{
+  "status": "passed",
+  "tasks_marked_done": 0,
+  "task_updates": {
+    "F04": "TASK-RES01226",
+    "F05": "TASK-RES01227"
+  },
+  "started_tasks": [
+    "TASK-RES01226",
+    "TASK-RES01227"
+  ],
+  "unknown_only": true,
+  "unfulfilled": {
+    "F04": "トップのAIへ要望という宣伝と、Communications KB Agent回答Custom Instructionsを限定照合。勤務最適化ルール変換仕様/任意制約/日本語/Expert適用は未確認、参考記録のみで対応認定なし。",
+    "F05": "KB Agent編集summary→Saveと回答後view sourcesの対象を確認。構造化勤務規則の解釈/適用前承認・確認前副作用抑止/取消/実権限は未確認、参考記録のみ。"
+  },
+  "no_guessed_price_or_scope": true
+}

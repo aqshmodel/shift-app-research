@@ -1,0 +1,18 @@
+{
+  "status": "passed",
+  "tasks_marked_done": 0,
+  "task_updates": {
+    "D03": "TASK-RES01267",
+    "B06": "TASK-RES01261"
+  },
+  "started_tasks": [
+    "TASK-RES01267",
+    "TASK-RES01261"
+  ],
+  "partial_only": true,
+  "unfulfilled": {
+    "D03": "技能AND/OR式・深さ2/併用不可・必須指導者ペアの非対称性を部分確認。数値熟練度/チーム技能合算/構成比/指導者負担上限は未確認。",
+    "B06": "単一モデルでの共有職員・部署タグ、勤務地間隔/拠点数、共通タグ/職員グループとpreview時刻種類上限を確認。タグは運用ACLでなく、実移動/テナント横断/現行版/プラン/独立実動作は未確認。"
+  },
+  "no_guessed_price_or_scope": true
+}

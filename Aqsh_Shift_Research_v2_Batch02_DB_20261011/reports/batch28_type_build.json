@@ -1,0 +1,74 @@
+{
+  "status": "passed",
+  "type_generation": {
+    "status": "passed",
+    "checks": [
+      {
+        "check": "wrangler-types",
+        "exit_code": 0,
+        "duration_seconds": 5.294,
+        "command": [
+          "/Users/tsukadatakahiro/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node",
+          "node_modules/wrangler/bin/wrangler.js",
+          "types",
+          "worker-configuration.d.ts"
+        ],
+        "log": "/tmp/shift-C03T05/logs/wrangler-types.log"
+      },
+      {
+        "check": "astro-check",
+        "exit_code": 0,
+        "duration_seconds": 12.62,
+        "command": [
+          "/Users/tsukadatakahiro/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node",
+          "node_modules/astro/bin/astro.mjs",
+          "check"
+        ],
+        "log": "/tmp/shift-C03T05/logs/astro-check.log"
+      }
+    ],
+    "execution": "isolated dependencies and work copy; no installation/deployment/remote D1",
+    "telemetry_disabled": true
+  },
+  "type_diagnostics": {
+    "files": 58,
+    "errors": 0,
+    "warnings": 0,
+    "hints": 0
+  },
+  "builds": {
+    "status": "passed",
+    "checks": [
+      {
+        "check": "build-staging",
+        "exit_code": 0,
+        "duration_seconds": 7.17,
+        "command": [
+          "/Users/tsukadatakahiro/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node",
+          "node_modules/astro/bin/astro.mjs",
+          "build"
+        ],
+        "log": "/tmp/shift-C03T05/logs/build-staging.log",
+        "target_configuration_verified": true
+      },
+      {
+        "check": "build-production",
+        "exit_code": 0,
+        "duration_seconds": 6.102,
+        "command": [
+          "/Users/tsukadatakahiro/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node",
+          "node_modules/astro/bin/astro.mjs",
+          "build"
+        ],
+        "log": "/tmp/shift-C03T05/logs/build-production.log",
+        "target_configuration_verified": true
+      }
+    ],
+    "execution": "isolated dependencies and work copy; no installation/deployment/remote D1",
+    "telemetry_disabled": true
+  },
+  "implementation_changes": [],
+  "deployment": false,
+  "existing_dependencies_copied": true,
+  "telemetry_disabled": true
+}

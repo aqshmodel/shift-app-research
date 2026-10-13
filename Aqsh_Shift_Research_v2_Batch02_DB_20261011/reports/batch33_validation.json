@@ -1,0 +1,146 @@
+{
+  "status": "passed",
+  "batch_id": "B33-20261013",
+  "checked_at": "2026-10-13T02:04:52.803958+00:00",
+  "research_sha256": "cfa3ff89badc689b3b1986bb05ef49b2708de4ac26d1336da02630120bdf680a",
+  "prepared_public_snapshot": "B33-20261013-pub2",
+  "prepared_content_sha256": "13aa181b5235719fe8851729a8d660b85deba9144da42b6b64ee83215ec69fc5",
+  "checks": {
+    "db": {
+      "status": "passed",
+      "record": "db_validation_batch33.json"
+    },
+    "history": {
+      "status": "passed",
+      "tables": 39,
+      "prior_B32": "batch33_history_preservation.json",
+      "cycle_B28": "batch33_cycle_history.json"
+    },
+    "regression": {
+      "status": "passed",
+      "tests": 72,
+      "SQL_tests_included": 5,
+      "record": "batch33_regression.json"
+    },
+    "prices": {
+      "status": "passed",
+      "services": 50,
+      "components": 118,
+      "unchanged_from_B32_and_B28": true,
+      "record": "batch33_price_summaries.json"
+    },
+    "SQL_bounds": {
+      "status": "passed",
+      "maximum": 86116,
+      "limit": 100000,
+      "record": "batch33_sql_bounds.json"
+    },
+    "types_builds": {
+      "status": "passed",
+      "type_files": 58,
+      "diagnostics": 0,
+      "builds": 2,
+      "record": "batch33_type_build.json"
+    },
+    "local_D1": {
+      "status": "passed",
+      "tables": 39,
+      "after_browser": true,
+      "record": "batch33_local_d1.json"
+    },
+    "local_API": {
+      "status": "passed",
+      "prices": 50,
+      "details": 50,
+      "after_browser": true,
+      "record": "batch33_local_publication.json"
+    },
+    "browser": {
+      "status": "passed",
+      "unique_cases": 38,
+      "skip_flaky": 0,
+      "record": "batch33_browser_validation.json"
+    },
+    "SEO": {
+      "status": "passed",
+      "pages": 62,
+      "expected_dev_noindex": 62,
+      "unexpected_issues": 0,
+      "record": "batch33_seo_validation.json"
+    },
+    "viewer": {
+      "status": "passed",
+      "viewports": [
+        1440,
+        390
+      ],
+      "record": "batch33_viewer_scope.json"
+    },
+    "sources": {
+      "status": "passed",
+      "sources": 5,
+      "new_documents": 5,
+      "fixed_ESS1_35_x": 2,
+      "mutable_Platform_latest": 3,
+      "record": "batch33_source_verification.json"
+    },
+    "completion": {
+      "status": "passed",
+      "tasks_marked_done": 0,
+      "record": "batch33_completion_review.json"
+    },
+    "cost_scope": {
+      "status": "passed",
+      "record": "batch33_cost_scope.json"
+    }
+  },
+  "continued_research": {
+    "batch_id": "B33-20261013",
+    "new_document_findings": 6,
+    "editorial_corrections": 0,
+    "new_price_components": 0,
+    "reference_regulations": 0,
+    "source_retrievals": 5,
+    "functional_research_sources": 5,
+    "functional_research_products": 1,
+    "products_including_classification_corrections": 1,
+    "finding_states": {
+      "known": 6
+    }
+  },
+  "task_states": {
+    "blocked": 78,
+    "done": 2,
+    "in_progress": 252,
+    "not_started": 648
+  },
+  "unfinished": 978,
+  "priority1_open": 29,
+  "tasks_started": 2,
+  "task_updates": 2,
+  "tasks_marked_done": 0,
+  "new_tasks": 0,
+  "new_distinct_research_documents": 5,
+  "independent_tests_performed": false,
+  "production_current_rechecked": false,
+  "user_reported_production_batch": "B18-20261012",
+  "remote_operations": false,
+  "all_temporary_servers_stopped": true,
+  "comparison_deltas": {
+    "B32": {
+      "statement_count": 176,
+      "sql_sha256": "3ffc7101c28bea5000baff595c4383ed1369ad0f090b8b6f9bd2529b543cb294",
+      "local_sql_roundtrip": "passed",
+      "prior_publication_rows_preserved": true
+    },
+    "B18": {
+      "statement_count": 1021,
+      "sql_sha256": "b2695f3ba1c4fa45dd61515e62074b71ee1ed6ac7993c531cf1b66600a19a2ed",
+      "local_sql_roundtrip": "passed",
+      "prior_publication_rows_preserved": true
+    }
+  },
+  "final_cycle_turn": true,
+  "next_cycle_started": false,
+  "manifest_files": 373
+}

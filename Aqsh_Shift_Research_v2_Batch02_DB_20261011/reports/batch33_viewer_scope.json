@@ -1,0 +1,46 @@
+{
+  "status": "passed",
+  "batch_id": "B33-20261013",
+  "method": "CUA Chrome built isolated Worker and 38 automated browser cases; static comparison embedded dataset separately parsed",
+  "viewports": [
+    {
+      "width": 1440,
+      "height": 1000,
+      "document_overflow": false
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "document_overflow": false,
+      "main_overflow": false
+    }
+  ],
+  "checks": {
+    "new6_summaries_present": true,
+    "new5_unique_source_urls": true,
+    "ESS_fixed_1_35_x_and_Platform_latest_preview_separate": true,
+    "mixed_ward_shift_system_unconfirmed": true,
+    "minimum_hiring_number_unproven": true,
+    "preview_averaging_and_limits_retained": true,
+    "prior_B32_full_exit_unknown_retained": true,
+    "price_unknown_retained": true,
+    "console_errors_and_warnings": 0
+  },
+  "screenshots": "CUA PC/mobile output reviewed; mobile C01 heading in viewport explicitly checked after responsive scroll; browser generated screenshot evidence archived separately",
+  "html_dataset": {
+    "products": 50,
+    "observations": 2135,
+    "duplicate_ids": 0
+  },
+  "server": {
+    "base": "http://127.0.0.1:56364",
+    "host": "127.0.0.1",
+    "port": 56364,
+    "isolated": true,
+    "started": true,
+    "stopped": true
+  },
+  "viewport_reset": true,
+  "agent_tabs_closed": true,
+  "external_logos": "not independently checked"
+}

@@ -1,0 +1,50 @@
+{
+  "status": "passed",
+  "batch_id": "B35-20261013",
+  "method": "CUA Chrome on isolated static viewer; DOM and screenshot visual review",
+  "scope": "Connecteam L01/K03 and prior B34/price/history",
+  "viewports": [
+    {
+      "width": 1440,
+      "height": 1000,
+      "document_scroll_width": 1440,
+      "detail_client_width": 1398,
+      "detail_scroll_width": 1398
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "document_scroll_width": 390,
+      "detail_client_width": 348,
+      "detail_scroll_width": 348
+    }
+  ],
+  "checks": {
+    "new6_ids_present": true,
+    "new_source_links": 6,
+    "new_distinct_source_urls": 4,
+    "mobile_paths_and_plan_unknown_visible": true,
+    "date_start_TZ_cutoff_and_boundary_unknown_visible": true,
+    "partner_setup_vs_guidance_visible": true,
+    "EMEA_North_America_visible": true,
+    "hour_session_difference_visible": true,
+    "prior_history_and_prices_visible": true,
+    "console_errors_and_warnings": 0
+  },
+  "screenshots": "Reviewed in CUA conversation output; screenshot files not archived",
+  "html_dataset": {
+    "products": 50,
+    "observations": 2147,
+    "duplicate_ids": 0
+  },
+  "viewport_reset": true,
+  "agent_tab_closed": true,
+  "local_server": {
+    "host": "127.0.0.1",
+    "port": 52252,
+    "stopped": true,
+    "escalation_review": "approved; isolated loopback only"
+  },
+  "external_logo_availability": "not independently tested",
+  "initial_probe_notes": "No initial failed probes this turn; locator ground truth and prior documented viewport capability used."
+}

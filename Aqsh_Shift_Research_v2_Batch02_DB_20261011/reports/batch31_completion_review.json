@@ -1,0 +1,18 @@
+{
+  "status": "passed",
+  "tasks_marked_done": 0,
+  "task_updates": {
+    "N01": "TASK-RES01293",
+    "K03": "TASK-RES01288"
+  },
+  "started_tasks": [
+    "TASK-RES01293",
+    "TASK-RES01288"
+  ],
+  "partial_only": true,
+  "unfulfilled": {
+    "N01": "テナントDB/アプリ隔離の自己申告、Cloud/地域名前空間/self-hosted条件、役割・招待期限・API key model/operation scope・aboutme応答を部分確認。部署/本人行ACL・実拒否/期限/取消/内部運用アクセス・プラン適用は未確認、Experiments previewのキー制御例外を保持。",
+    "K03": "顧客側データ収集/入力作成/結果処理と、model単位Standard/profile/override/設定優先順位・Administrator編集を部分確認。プロファイル選択と編集を分離。個別契約の代行/共同設定/開発責任/工数/検収/適用プランは未確認。"
+  },
+  "no_guessed_price_or_scope": true
+}

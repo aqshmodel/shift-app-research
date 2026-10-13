@@ -1,0 +1,50 @@
+{
+  "status": "passed",
+  "batch_id": "B34-20261013",
+  "method": "CUA Chrome on isolated static viewer; DOM and screenshot visual review",
+  "scope": "Connecteam C05/K01 and prior price/history",
+  "viewports": [
+    {
+      "width": 1440,
+      "height": 1000,
+      "document_scroll_width": 1440,
+      "detail_client_width": 1398,
+      "detail_scroll_width": 1398
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "document_scroll_width": 390,
+      "detail_client_width": 348,
+      "detail_scroll_width": 348
+    }
+  ],
+  "checks": {
+    "new6_ids_present": true,
+    "new_source_links": 6,
+    "new_distinct_source_urls": 4,
+    "rest_boundary_unknown_visible": true,
+    "preventClaim_optional_and_schedulerApi_visible": true,
+    "Expert_issue_gating_visible": true,
+    "CSV_not_xlsx_visible": true,
+    "Job_Subjob_difference_visible": true,
+    "prior_history_and_prices_visible": true,
+    "console_errors_and_warnings": 0
+  },
+  "screenshots": "Reviewed in CUA conversation output; screenshot files not archived",
+  "html_dataset": {
+    "products": 50,
+    "observations": 2141,
+    "duplicate_ids": 0
+  },
+  "viewport_reset": true,
+  "agent_tab_closed": true,
+  "local_server": {
+    "host": "127.0.0.1",
+    "port": 52251,
+    "stopped": true,
+    "escalation_review": "approved after sandbox socket denial"
+  },
+  "external_logo_availability": "not independently tested",
+  "initial_probe_notes": "Search input role textbox and exact ID text did not match; used observed #search and substring ID locator; no product/source change."
+}

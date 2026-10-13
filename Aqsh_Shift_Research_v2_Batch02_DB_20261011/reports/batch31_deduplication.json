@@ -1,0 +1,8 @@
+{
+  "status": "passed",
+  "new_findings": 6,
+  "exact_summary_duplicates": 0,
+  "semantic_review": "New previously unstarted N01/K03 semantics: tenant/isolation/role/key authorization boundaries and specific caller identity, customer setup responsibility, model profile selection/editing/precedence. Generic REST/scoring/weights/support/pricing and skill-tag facts not duplicated; commercial terms not re-polled.",
+  "new_price_components": 0,
+  "existing_price_components": 118
+}

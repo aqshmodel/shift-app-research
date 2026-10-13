@@ -1,0 +1,71 @@
+{
+  "status": "passed",
+  "type_files": 58,
+  "errors": 0,
+  "warnings": 0,
+  "hints": 0,
+  "types": {
+    "status": "passed",
+    "checks": [
+      {
+        "check": "wrangler-types",
+        "exit_code": 0,
+        "duration_seconds": 5.379,
+        "command": [
+          "/Users/tsukadatakahiro/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node",
+          "node_modules/wrangler/bin/wrangler.js",
+          "types",
+          "worker-configuration.d.ts"
+        ],
+        "log": "/tmp/shift-C04T05/logs/wrangler-types.log"
+      },
+      {
+        "check": "astro-check",
+        "exit_code": 0,
+        "duration_seconds": 12.123,
+        "command": [
+          "/Users/tsukadatakahiro/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node",
+          "node_modules/astro/bin/astro.mjs",
+          "check"
+        ],
+        "log": "/tmp/shift-C04T05/logs/astro-check.log"
+      }
+    ],
+    "execution": "isolated dependencies and work copy; no installation/deployment/remote D1",
+    "telemetry_disabled": true
+  },
+  "builds": {
+    "status": "passed",
+    "checks": [
+      {
+        "check": "build-staging",
+        "exit_code": 0,
+        "duration_seconds": 3.605,
+        "command": [
+          "/Users/tsukadatakahiro/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node",
+          "node_modules/astro/bin/astro.mjs",
+          "build"
+        ],
+        "log": "/tmp/shift-C04T05/logs/build-staging.log",
+        "target_configuration_verified": true
+      },
+      {
+        "check": "build-production",
+        "exit_code": 0,
+        "duration_seconds": 2.539,
+        "command": [
+          "/Users/tsukadatakahiro/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node",
+          "node_modules/astro/bin/astro.mjs",
+          "build"
+        ],
+        "log": "/tmp/shift-C04T05/logs/build-production.log",
+        "target_configuration_verified": true
+      }
+    ],
+    "execution": "isolated dependencies and work copy; no installation/deployment/remote D1",
+    "telemetry_disabled": true
+  },
+  "configuration_assertions": "Both Worker names/ENVIRONMENT/D1 IDs and staging GA4 non-inheritance checked; no deploy",
+  "dependencies": "Copied existing node_modules with symlinks; no install",
+  "telemetry_disabled": true
+}

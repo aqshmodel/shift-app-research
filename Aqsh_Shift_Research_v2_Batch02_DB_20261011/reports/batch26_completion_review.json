@@ -1,0 +1,21 @@
+{
+  "status": "passed",
+  "tasks_marked_done": 0,
+  "task_updates": {
+    "E01": "TASK-RES00778",
+    "H01": "TASK-RES00788",
+    "N01": "TASK-RES00797"
+  },
+  "started_tasks": [
+    "TASK-RES00778",
+    "TASK-RES00788",
+    "TASK-RES00797"
+  ],
+  "partial_only": true,
+  "unfulfilled": {
+    "E01": "勤務希望→管理者編集/確定→スタッフ編集削除ロックを部分確認。有休管理HTMLは通常非表示で提供/プラン不明、現行仕様として採用せず留保。",
+    "H01": "スタッフ編集ロックとテンプレ/リピートの意味を照合したが、再最適化で指定割当を保持する固定仕様は未確認。動画本文の取得不能も保持し非対応とはしない。",
+    "N01": "全スタッフ閲覧許可とPro表示タグ、管理者/本人の編集欄、提供者の同意アクセス方針を確認。顧客役割ACL・テナント分離・API認可の独立実証は未確認。"
+  },
+  "no_guessed_price_or_scope": true
+}

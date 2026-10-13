@@ -1,0 +1,98 @@
+{
+  "status": "passed",
+  "official_sources": 5,
+  "new_normalized_documents": 5,
+  "reused_normalized_documents": 0,
+  "fixed_ESS1_35_x_sources": 2,
+  "mutable_platform_latest_sources": 3,
+  "sources": [
+    {
+      "key": "rotation",
+      "url": "https://docs.timefold.ai/employee-shift-scheduling/1.35.x/employee-resource-constraints/shift-rotations-and-patterns/shift-rotations",
+      "title": "Timefold — Shift rotations",
+      "publisher": "Timefold BV",
+      "reference": "Defining shift rotation rules / Required weekly / custom duration",
+      "retrieved_on": "2026-10-13",
+      "version_label": "ESS fixed documentation 1.35.x",
+      "method": "official_document_body",
+      "method_note": "Web L40–89,663–712; weekly and CUSTOM semantics are separate observations on one normalized document. 公開/更新日未表示。全文/本文ハッシュ/原本画像未保存。商用プラン・顧客現行版/preview利用権・実ルール試験/人員差分比較は未確認。登録/試用/API実行/キー生成/認証権限変更/設定操作/実験/問い合わせなし。"
+    },
+    {
+      "key": "sequence",
+      "url": "https://docs.timefold.ai/employee-shift-scheduling/1.35.x/employee-resource-constraints/shift-rotations-and-patterns/multi-day-shift-sequence-patterns",
+      "title": "Timefold — Multi-day shift sequence patterns",
+      "publisher": "Timefold BV",
+      "reference": "Contract pattern / ON-OFF / preferred-unpreferred-prohibited",
+      "retrieved_on": "2026-10-13",
+      "version_label": "ESS fixed documentation 1.35.x",
+      "method": "official_document_body",
+      "method_note": "Web L42–96,165–178,418–425,617–656. Prohibited paragraph names both multi day and single day; preserve unresolved naming difference. 公開/更新日未表示。全文/本文ハッシュ/原本画像未保存。商用プラン・顧客現行版/preview利用権・実ルール試験/人員差分比較は未確認。登録/試用/API実行/キー生成/認証権限変更/設定操作/実験/問い合わせなし。"
+    },
+    {
+      "key": "whatif",
+      "url": "https://docs.timefold.ai/timefold-platform/latest/guides/uncovering-inefficiencies-in-operational-planning",
+      "title": "Timefold — Uncovering inefficiencies in operational planning",
+      "publisher": "Timefold BV",
+      "reference": "Tips / Exploring what-if simulations",
+      "retrieved_on": "2026-10-13",
+      "version_label": "Platform latest; mutable",
+      "method": "official_document_body",
+      "method_note": "Web L90–99. New skills/resource simulation method only; no prior score/assignability or general bottleneck facts re-added. 公開/更新日未表示。全文/本文ハッシュ/原本画像未保存。商用プラン・顧客現行版/preview利用権・実ルール試験/人員差分比較は未確認。登録/試用/API実行/キー生成/認証権限変更/設定操作/実験/問い合わせなし。"
+    },
+    {
+      "key": "experiments",
+      "url": "https://docs.timefold.ai/timefold-platform/latest/how-tos/experiments",
+      "title": "Timefold — Experiments",
+      "publisher": "Timefold BV",
+      "reference": "What-if / core datasets and scenarios / M×N / aggregated results",
+      "retrieved_on": "2026-10-13",
+      "version_label": "Platform latest; preview",
+      "method": "official_document_body",
+      "method_note": "Web L22–56,100–114. Preview access/plan and customer version unconfirmed; no experiment submitted. 公開/更新日未表示。全文/本文ハッシュ/原本画像未保存。商用プラン・顧客現行版/preview利用権・実ルール試験/人員差分比較は未確認。登録/試用/API実行/キー生成/認証権限変更/設定操作/実験/問い合わせなし。"
+    },
+    {
+      "key": "comparison",
+      "url": "https://docs.timefold.ai/timefold-platform/latest/how-tos/comparing-runs",
+      "title": "Timefold — Comparisons",
+      "publisher": "Timefold BV",
+      "reference": "High-level scope / group averages / bounds / input-output/config metrics",
+      "retrieved_on": "2026-10-13",
+      "version_label": "Platform latest; preview",
+      "method": "official_document_body",
+      "method_note": "Web L22–44,64–104. Not individual employee/resource assignments; preview and averaging retained. 公開/更新日未表示。全文/本文ハッシュ/原本画像未保存。商用プラン・顧客現行版/preview利用権・実ルール試験/人員差分比較は未確認。登録/試用/API実行/キー生成/認証権限変更/設定操作/実験/問い合わせなし。"
+    }
+  ],
+  "body_checked": true,
+  "full_text_archived": false,
+  "publication_dates_not_shown": true,
+  "preview_features": [
+    "Experiments",
+    "Comparisons"
+  ],
+  "retrieval_caveats": [
+    {
+      "product": "US10",
+      "url": "https://docs.timefold.ai/employee-shift-scheduling/1.35.x/employee-resource-constraints/shift-rotations-and-patterns/multi-day-shift-sequence-patterns",
+      "result": "prohibited_multi_day_vs_single_day_constraint_name_mismatch",
+      "notes": "PROHIBITED節冒頭はEmployee works prohibited multi day shift sequence patternをhardとし、未割当の説明はsingle dayと表記。noLateFollowedByEarly翌日例/JSONはmultiDay。誤記/内部別制約/版差を推測せず実挙動未確認で保持。"
+    },
+    {
+      "product": "US10",
+      "url": "https://docs.timefold.ai/timefold-platform/latest/how-tos/experiments",
+      "result": "M_times_N_prose_vs_scenario_specific_dataset_arrays_not_run",
+      "notes": "Core conceptsはevery dataset against every scenario/M×Nと説明するがPOST例はscenarios各要素にdatasets配列。例は同じdataset集合で異なる集合時の積・集計は未確定。実API/実験なし。B31認可例外の再観測なし。"
+    }
+  ],
+  "independent_tests_performed": false,
+  "external_contact": false,
+  "normal_Chrome_verification": {
+    "prohibited_multi_and_single_day_names_both_visible": true,
+    "Experiments_preview_M_times_N_and_scenario_arrays_both_visible": true
+  },
+  "supplemental_unregistered_context": {
+    "multi_day_RULE_REQUIRED": "Not supported according to same official page; no required-sequence guarantee inferred",
+    "OFF_start_or_end": "Explicit planningWindow interval needed",
+    "multiple_shifts_per_day": "shiftMatches ALL or ANY distinct from shiftTagMatches",
+    "counted_new_observations": false
+  }
+}

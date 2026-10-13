@@ -1,0 +1,153 @@
+{
+  "status": "passed",
+  "batch_id": "B31-20261013",
+  "checked_at": "2026-10-13T01:21:22.831606+00:00",
+  "research_sha256": "7fad5a0cc60885a39d595e67baf93fe6af249abdc4af8dbcfb489cff8e2dc0fe",
+  "prepared_public_snapshot": "B31-20261013-pub2",
+  "prepared_content_sha256": "dccf018566abd26cb73d63dbdc0aecbcdf546b3461c6849732bcad256487a46e",
+  "checks": {
+    "db": {
+      "status": "passed",
+      "record": "db_validation_batch31.json"
+    },
+    "history": {
+      "status": "passed",
+      "tables": 39,
+      "record": "batch31_history_preservation.json"
+    },
+    "regression": {
+      "status": "passed",
+      "tests": 72,
+      "record": "batch31_regression.json"
+    },
+    "prices": {
+      "status": "passed",
+      "services": 50,
+      "unchanged_from_B30": true,
+      "components": 118,
+      "record": "batch31_price_summaries.json"
+    },
+    "SQL_bounds": {
+      "status": "passed",
+      "original": 101655,
+      "limit": 100000,
+      "maximum": 86116,
+      "content_byte_preserved": true,
+      "record": "batch31_sql_bounds.json"
+    },
+    "type_build": {
+      "status": "passed",
+      "files": 58,
+      "diagnostics": 0,
+      "builds": 2,
+      "record": "batch31_type_build.json"
+    },
+    "local_D1": {
+      "status": "passed",
+      "tables": 39,
+      "after_browser": true,
+      "record": "batch31_local_d1.json"
+    },
+    "local_API": {
+      "status": "passed",
+      "prices": 50,
+      "details": 50,
+      "after_browser": true,
+      "record": "batch31_local_publication.json"
+    },
+    "publication_projection": {
+      "status": "passed",
+      "details": 50,
+      "accepted_findings": 6,
+      "new_unknown_observations": 0,
+      "existing_contexts_preserved": true
+    },
+    "browser": {
+      "status": "passed",
+      "unique_cases": 38,
+      "initial_environment_errors_repaired": 3,
+      "record": "batch31_browser_validation.json"
+    },
+    "viewer": {
+      "status": "passed",
+      "viewports": [
+        1440,
+        390
+      ],
+      "record": "batch31_viewer_scope.json"
+    },
+    "SEO_content": {
+      "status": "passed",
+      "pages": 62,
+      "expected_local_noindex": 62,
+      "production_reverified": false,
+      "record": "batch31_seo_validation.json"
+    },
+    "sources": {
+      "status": "passed",
+      "sources": 6,
+      "pinned_1_35_x": 1,
+      "mutable_Platform_latest": 5,
+      "new_distinct_research_documents": 6,
+      "record": "batch31_source_verification.json"
+    },
+    "completion": {
+      "status": "passed",
+      "tasks_marked_done": 0,
+      "record": "batch31_completion_review.json"
+    },
+    "cost_scope": {
+      "status": "passed",
+      "record": "batch31_cost_scope.json"
+    }
+  },
+  "continued_research": {
+    "batch_id": "B31-20261013",
+    "new_document_findings": 6,
+    "editorial_corrections": 0,
+    "new_price_components": 0,
+    "reference_regulations": 0,
+    "source_retrievals": 6,
+    "functional_research_sources": 6,
+    "functional_research_products": 1,
+    "products_including_classification_corrections": 1,
+    "finding_states": {
+      "known": 6
+    }
+  },
+  "task_states": {
+    "blocked": 78,
+    "done": 2,
+    "in_progress": 248,
+    "not_started": 652
+  },
+  "unfinished": 978,
+  "priority1_open": 29,
+  "tasks_started": 2,
+  "task_updates": 2,
+  "tasks_marked_done": 0,
+  "new_tasks": 0,
+  "new_distinct_research_documents": 6,
+  "independent_tests_performed": false,
+  "production_current_rechecked": false,
+  "user_reported_production_batch": "B18-20261012",
+  "remote_operations": false,
+  "commit_push_CI_deploy_paid_API_or_auth_change": false,
+  "all_temporary_servers_stopped": true,
+  "comparison_deltas": {
+    "B30": {
+      "statement_count": 181,
+      "sql_sha256": "32253c03f596a1df357e84131fc01bd36f482cffcf847bab24699efa805c4394",
+      "local_sql_roundtrip": "passed",
+      "prior_publication_rows_preserved": true
+    },
+    "B18": {
+      "statement_count": 916,
+      "sql_sha256": "6787fa09acde158b00f5f772aa38297b8efeafbd7d72c89e3816b570e1555550",
+      "local_sql_roundtrip": "passed",
+      "prior_publication_rows_preserved": true
+    }
+  },
+  "deferred_checks": "C04T05 repeats comprehensive verification for the then-current batch and includes substantive research/handoff; current implementation repair comprehensively checked locally",
+  "manifest_files": 339
+}

@@ -1,0 +1,47 @@
+{
+  "status": "passed",
+  "batch_id": "B25-20261012",
+  "method": "CUA Chrome on isolated local static viewer; screenshot visual review and read-only DOM",
+  "scope": "Affected Timefold detail only; full web browser suite planned C03T05",
+  "viewports": [
+    {
+      "width": 1440,
+      "height": 1000,
+      "overflow": false,
+      "records": 2088
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "overflow": false,
+      "detail_overflow": false,
+      "records": 2088
+    }
+  ],
+  "checks": {
+    "new8_ids_present": true,
+    "new_fixed_version_source_links": 8,
+    "version_1_35_x": true,
+    "night_start_only_and_interval": true,
+    "rest_scope": true,
+    "preview_and_input_shape_difference": true,
+    "leave_approval_limit": true,
+    "mandatory_unassigned_and_zero_hard_limit": true,
+    "prior_price_unknown_and_history_visible": true,
+    "console_errors_and_warnings_returned": 0
+  },
+  "screenshots": "Observed in CUA tool output; not archived as package files",
+  "local_server": {
+    "host": "127.0.0.1",
+    "port": 49625,
+    "stopped": true,
+    "escalation_review": "approved"
+  },
+  "favicon": "Static test server favicon.ico 404; no console errors or warnings returned; output unaffected",
+  "html_dataset": {
+    "products": 50,
+    "observations": 2088,
+    "duplicate_ids": 0
+  },
+  "external_logo_availability": "not independently tested"
+}

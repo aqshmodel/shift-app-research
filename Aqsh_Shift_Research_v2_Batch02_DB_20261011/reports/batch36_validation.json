@@ -1,0 +1,120 @@
+{
+  "status": "passed",
+  "batch_id": "B36-20261013",
+  "checked_at": "2026-10-13T04:23:12.575634+00:00",
+  "research_sha256": "f93c7edb117a65a770172cf8a5d9bac637e7c14f60a6efeb9467d3055fd465ce",
+  "prepared_public_snapshot": "B36-20261013-pub2",
+  "prepared_content_sha256": "e3a5330af88ca0da20536d889af497d2ed794aef55d66f03abc0153eca300ad8",
+  "checks": {
+    "db": {
+      "status": "passed",
+      "record": "db_validation_batch36.json"
+    },
+    "history": {
+      "status": "passed",
+      "record": "batch36_history_preservation.json",
+      "tables": 39
+    },
+    "regression": {
+      "status": "passed",
+      "record": "batch36_regression.json",
+      "tests": 72
+    },
+    "prices": {
+      "status": "passed",
+      "record": "batch36_price_summaries.json",
+      "services": 50,
+      "components": 118,
+      "unchanged_from_B35": true
+    },
+    "SQL_bounds": {
+      "status": "passed",
+      "record": "batch36_sql_bounds.json"
+    },
+    "SQL_split": {
+      "status": "passed",
+      "record": "batch36_sql_split.json"
+    },
+    "viewer": {
+      "status": "passed",
+      "record": "batch36_viewer_scope.json"
+    },
+    "sources": {
+      "status": "passed",
+      "record": "batch36_source_verification.json",
+      "sources": 2,
+      "new_documents": 2,
+      "comparison_only_retrievals": 4
+    },
+    "completion": {
+      "status": "passed",
+      "record": "batch36_completion_review.json",
+      "tasks_marked_done": 0
+    },
+    "cost_scope": {
+      "status": "passed",
+      "record": "batch36_cost_scope.json"
+    },
+    "publication_projection": {
+      "status": "passed",
+      "details": 50,
+      "accepted_new_findings": 0,
+      "new_unknown_contexts": 4,
+      "F04_context_count": 3,
+      "F05_context_count": 3,
+      "F04_F05_status": "unknown",
+      "method": "SQLite JSON projection; live API not executed this turn"
+    }
+  },
+  "continued_research": {
+    "batch_id": "B36-20261013",
+    "new_document_findings": 4,
+    "editorial_corrections": 0,
+    "new_price_components": 0,
+    "reference_regulations": 0,
+    "source_retrievals": 2,
+    "functional_research_sources": 2,
+    "functional_research_products": 1,
+    "products_including_classification_corrections": 1,
+    "finding_states": {
+      "not_found": 4
+    }
+  },
+  "task_states": {
+    "blocked": 78,
+    "done": 2,
+    "in_progress": 258,
+    "not_started": 642
+  },
+  "unfinished": 978,
+  "priority1_open": 29,
+  "tasks_started": 2,
+  "task_updates": 2,
+  "tasks_marked_done": 0,
+  "new_tasks": 0,
+  "new_distinct_research_documents": 2,
+  "independent_tests_performed": false,
+  "production_current_rechecked": false,
+  "user_reported_production_batch": "B18-20261012",
+  "remote_operations": false,
+  "commit_push_CI_deploy_paid_API_or_auth_change": false,
+  "all_temporary_servers_stopped": true,
+  "comparison_deltas": {
+    "B35": {
+      "statement_count": 163,
+      "sql_sha256": "53b198e1784c6c1ced26dfcbb921e1ada55b489e8f359c4fec1a9e17f97de43a",
+      "maximum_statement_bytes": 86116,
+      "local_sql_roundtrip": "passed",
+      "prior_publication_rows_preserved": true
+    },
+    "B18": {
+      "statement_count": 1157,
+      "sql_sha256": "76ec1a4a129986791e5b0f113089ef2f1c025d802b1a66f9e3e6b89f291c24a6",
+      "maximum_statement_bytes": 86116,
+      "local_sql_roundtrip": "passed",
+      "prior_publication_rows_preserved": true
+    }
+  },
+  "deferred_checks": "Types, both builds, isolated local D1/API, full browser/SEO: C05T05 or implementation change; prior comprehensive C04T05 is historical, not current runtime verification",
+  "manifest_files": 416
+}

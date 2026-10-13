@@ -1,0 +1,8 @@
+{
+  "status": "passed",
+  "new_findings": 5,
+  "exact_summary_duplicates": 0,
+  "semantic_review": "Untouched N01/Q04. Role names and case conditions are new criteria; prior hope submission and complex-pattern feedback not re-added. Before-deployment hours and potential scale not treated as after metrics; historical prices omitted.",
+  "new_price_components": 0,
+  "existing_price_components": 118
+}

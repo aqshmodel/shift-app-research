@@ -56,5 +56,5 @@ temp/
 # Private and ad-hoc live QA
 apps/web/.local-live-qa.mjs
 
-# Local deployment restore copies
+# Local deployment restore copies and account usage diagnostics
 .release-backups/

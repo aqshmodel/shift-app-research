@@ -1,0 +1,8 @@
+{
+  "status": "passed",
+  "new_findings": 7,
+  "exact_summary_duplicates": 0,
+  "semantic_review": "New previously unstarted D03/B06 semantics; generic D01 skills and C05 rest not duplicated; numeric proficiency, ACL and real travel unconfirmed; commercial terms not re-polled.",
+  "new_price_components": 0,
+  "existing_price_components": 118
+}

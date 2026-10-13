@@ -1,0 +1,289 @@
+{
+  "status": "passed",
+  "batch_id": "B28-20261013",
+  "test_count": 38,
+  "stats": {
+    "startTime": "2026-10-13T00:10:15.886Z",
+    "duration": 94684.413,
+    "expected": 38,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "cases": [
+    {
+      "title": "opt-in loads one tag, sanitized events omit raw query, and withdrawal stops future collection",
+      "file": "../../../../../../../private/tmp/shift-C03T05/work/apps/web/tests/browser/analytics.spec.mjs",
+      "line": 18,
+      "status": "passed",
+      "duration_ms": 1071
+    },
+    {
+      "title": "refusal survives navigation and preview hosts cannot load a Google tag",
+      "file": "../../../../../../../private/tmp/shift-C03T05/work/apps/web/tests/browser/analytics.spec.mjs",
+      "line": 39,
+      "status": "passed",
+      "duration_ms": 693
+    },
+    {
+      "title": "a page restored from history respects consent withdrawn on another page",
+      "file": "../../../../../../../private/tmp/shift-C03T05/work/apps/web/tests/browser/analytics.spec.mjs",
+      "line": 49,
+      "status": "passed",
+      "duration_ms": 539
+    },
+    {
+      "title": "all 50 products are searchable, server rendered and have distinct detail metadata",
+      "file": "../../../../../../../private/tmp/shift-C03T05/work/apps/web/tests/browser/catalog.spec.mjs",
+      "line": 2,
+      "status": "passed",
+      "duration_ms": 1209
+    },
+    {
+      "title": "API input boundaries, nonmutation, evidence pagination and complete price conditions",
+      "file": "../../../../../../../private/tmp/shift-C03T05/work/apps/web/tests/browser/catalog.spec.mjs",
+      "line": 9,
+      "status": "passed",
+      "duration_ms": 186
+    },
+    {
+      "title": "SEO routes, no fabricated reviews, operator phone omission, and real 404s",
+      "file": "../../../../../../../private/tmp/shift-C03T05/work/apps/web/tests/browser/catalog.spec.mjs",
+      "line": 16,
+      "status": "passed",
+      "duration_ms": 122
+    },
+    {
+      "title": "normal UI search, filters, compare selection and mobile overflow",
+      "file": "../../../../../../../private/tmp/shift-C03T05/work/apps/web/tests/browser/catalog.spec.mjs",
+      "line": 23,
+      "status": "passed",
+      "duration_ms": 1695
+    },
+    {
+      "title": "search and comparison work without JavaScript",
+      "file": "../../../../../../../private/tmp/shift-C03T05/work/apps/web/tests/browser/catalog.spec.mjs",
+      "line": 29,
+      "status": "passed",
+      "duration_ms": 670
+    },
+    {
+      "title": "planned care calculation and task assignment preserve capability scope",
+      "file": "../../../../../../../private/tmp/shift-C03T05/work/apps/web/tests/browser/catalog.spec.mjs",
+      "line": 32,
+      "status": "passed",
+      "duration_ms": 86
+    },
+    {
+      "title": "selection guides are crawlable, evidence-linked, and use one D1 round trip",
+      "file": "../../../../../../../private/tmp/shift-C03T05/work/apps/web/tests/browser/guides.spec.mjs",
+      "line": 5,
+      "status": "passed",
+      "duration_ms": 208
+    },
+    {
+      "title": "guide navigation, FAQs and service links work on mobile without JavaScript",
+      "file": "../../../../../../../private/tmp/shift-C03T05/work/apps/web/tests/browser/guides.spec.mjs",
+      "line": 21,
+      "status": "passed",
+      "duration_ms": 11521
+    },
+    {
+      "title": "guide interfaces meet automated WCAG AA checks",
+      "file": "../../../../../../../private/tmp/shift-C03T05/work/apps/web/tests/browser/guides.spec.mjs",
+      "line": 37,
+      "status": "passed",
+      "duration_ms": 7944
+    },
+    {
+      "title": "home server-renders DB services, bounded pages, facets and one D1 round trip",
+      "file": "../../../../../../../private/tmp/shift-C03T05/work/apps/web/tests/browser/home-directory.spec.mjs",
+      "line": 4,
+      "status": "passed",
+      "duration_ms": 414
+    },
+    {
+      "title": "name-free filters combine capabilities, remove conditions and restore browser history",
+      "file": "../../../../../../../private/tmp/shift-C03T05/work/apps/web/tests/browser/home-directory.spec.mjs",
+      "line": 26,
+      "status": "passed",
+      "duration_ms": 2085
+    },
+    {
+      "title": "pagination preserves compare selection and replacement cards retain working actions",
+      "file": "../../../../../../../private/tmp/shift-C03T05/work/apps/web/tests/browser/home-directory.spec.mjs",
+      "line": 48,
+      "status": "passed",
+      "duration_ms": 1299
+    },
+    {
+      "title": "GET filtering works without JavaScript and treats planned care as outside documented filters",
+      "file": "../../../../../../../private/tmp/shift-C03T05/work/apps/web/tests/browser/home-directory.spec.mjs",
+      "line": 64,
+      "status": "passed",
+      "duration_ms": 2097
+    },
+    {
+      "title": "a failed refresh restores applied controls, and stale requests cannot overwrite newer filters",
+      "file": "../../../../../../../private/tmp/shift-C03T05/work/apps/web/tests/browser/home-directory.spec.mjs",
+      "line": 81,
+      "status": "passed",
+      "duration_ms": 972
+    },
+    {
+      "title": "mobile exposes context and services first, with accessible optional filters and no overflow",
+      "file": "../../../../../../../private/tmp/shift-C03T05/work/apps/web/tests/browser/home-directory.spec.mjs",
+      "line": 100,
+      "status": "passed",
+      "duration_ms": 3641
+    },
+    {
+      "title": "fragment navigation avoids a DB refetch and the featured FIKAIGO logo uses the original local SVG",
+      "file": "../../../../../../../private/tmp/shift-C03T05/work/apps/web/tests/browser/home-directory.spec.mjs",
+      "line": 119,
+      "status": "passed",
+      "duration_ms": 863
+    },
+    {
+      "title": "every service card server-renders a price in home, directory and category pages",
+      "file": "../../../../../../../private/tmp/shift-C03T05/work/apps/web/tests/browser/pricing-cards.spec.mjs",
+      "line": 5,
+      "status": "passed",
+      "duration_ms": 339
+    },
+    {
+      "title": "pricing stays readable on mobile and desktop and survives filtering",
+      "file": "../../../../../../../private/tmp/shift-C03T05/work/apps/web/tests/browser/pricing-cards.spec.mjs",
+      "line": 24,
+      "status": "passed",
+      "duration_ms": 5758
+    },
+    {
+      "title": "pricing groups server-render the correct services, facet counts and bounded pagination",
+      "file": "../../../../../../../private/tmp/shift-C03T05/work/apps/web/tests/browser/pricing-navigation.spec.mjs",
+      "line": 8,
+      "status": "passed",
+      "duration_ms": 580
+    },
+    {
+      "title": "pricing combines with feature and category filters and survives chips, history and pagination",
+      "file": "../../../../../../../private/tmp/shift-C03T05/work/apps/web/tests/browser/pricing-navigation.spec.mjs",
+      "line": 37,
+      "status": "passed",
+      "duration_ms": 2651
+    },
+    {
+      "title": "GET pricing works without JavaScript and logo and service name both open the detail price",
+      "file": "../../../../../../../private/tmp/shift-C03T05/work/apps/web/tests/browser/pricing-navigation.spec.mjs",
+      "line": 66,
+      "status": "passed",
+      "duration_ms": 1745
+    },
+    {
+      "title": "detail hero repeats pricing and conditions for disclosed, quoted, private and free services",
+      "file": "../../../../../../../private/tmp/shift-C03T05/work/apps/web/tests/browser/pricing-navigation.spec.mjs",
+      "line": 89,
+      "status": "passed",
+      "duration_ms": 169
+    },
+    {
+      "title": "pricing filters and prominent detail pricing remain accessible on mobile and desktop",
+      "file": "../../../../../../../private/tmp/shift-C03T05/work/apps/web/tests/browser/pricing-navigation.spec.mjs",
+      "line": 103,
+      "status": "passed",
+      "duration_ms": 20685
+    },
+    {
+      "title": "new branding, lining numerals, polite copy and reduced-motion rendering",
+      "file": "../../../../../../../private/tmp/shift-C03T05/work/apps/web/tests/browser/quality.spec.mjs",
+      "line": 4,
+      "status": "passed",
+      "duration_ms": 570
+    },
+    {
+      "title": "WCAG AA automated checks cover home, catalog, detail and comparison",
+      "file": "../../../../../../../private/tmp/shift-C03T05/work/apps/web/tests/browser/quality.spec.mjs",
+      "line": 13,
+      "status": "passed",
+      "duration_ms": 9412
+    },
+    {
+      "title": "320, 390, 768 and 1440 pixel layouts keep controls and pages in view",
+      "file": "../../../../../../../private/tmp/shift-C03T05/work/apps/web/tests/browser/quality.spec.mjs",
+      "line": 20,
+      "status": "passed",
+      "duration_ms": 3076
+    },
+    {
+      "title": "native search navigation restores its usable button and decorative markup after back",
+      "file": "../../../../../../../private/tmp/shift-C03T05/work/apps/web/tests/browser/quality.spec.mjs",
+      "line": 29,
+      "status": "passed",
+      "duration_ms": 810
+    },
+    {
+      "title": "deployed D1 request batching exposes the intended round-trip counts",
+      "file": "../../../../../../../private/tmp/shift-C03T05/work/apps/web/tests/browser/quality.spec.mjs",
+      "line": 40,
+      "status": "passed",
+      "duration_ms": 117
+    },
+    {
+      "title": "consent controls and the comparison bar remain usable at each viewport without Google requests",
+      "file": "../../../../../../../private/tmp/shift-C03T05/work/apps/web/tests/browser/quality.spec.mjs",
+      "line": 47,
+      "status": "passed",
+      "duration_ms": 1070
+    },
+    {
+      "title": "all products omit unconfirmed feature rows while retaining documented, planned and disputed information",
+      "file": "../../../../../../../private/tmp/shift-C03T05/work/apps/web/tests/browser/readability.spec.mjs",
+      "line": 3,
+      "status": "passed",
+      "duration_ms": 2019
+    },
+    {
+      "title": "feature explanations and notes are readable without opening controls or running JavaScript",
+      "file": "../../../../../../../private/tmp/shift-C03T05/work/apps/web/tests/browser/readability.spec.mjs",
+      "line": 23,
+      "status": "passed",
+      "duration_ms": 3204
+    },
+    {
+      "title": "comparison omits wholly unconfirmed rows and keeps missing information distinct from lack of support",
+      "file": "../../../../../../../private/tmp/shift-C03T05/work/apps/web/tests/browser/readability.spec.mjs",
+      "line": 40,
+      "status": "passed",
+      "duration_ms": 593
+    },
+    {
+      "title": "five native tools return source-backed data and update visible UI",
+      "file": "../../../../../../../private/tmp/shift-C03T05/work/apps/web/tests/browser/webmcp.spec.mjs",
+      "line": 3,
+      "status": "passed",
+      "duration_ms": 821
+    },
+    {
+      "title": "native cancellation prevents delayed results and page lifecycle removes tools",
+      "file": "../../../../../../../private/tmp/shift-C03T05/work/apps/web/tests/browser/webmcp.spec.mjs",
+      "line": 12,
+      "status": "passed",
+      "duration_ms": 489
+    },
+    {
+      "title": "unsupported WebMCP leaves the normal UI operational",
+      "file": "../../../../../../../private/tmp/shift-C03T05/work/apps/web/tests/browser/webmcp.spec.mjs",
+      "line": 19,
+      "status": "passed",
+      "duration_ms": 529
+    }
+  ],
+  "execution": "Built local Worker and dedicated local D1; headless Chrome; external DNS blocked except loopback; production-shaped analytics URLs use intercepted fixtures.",
+  "initial_process_setup": "First CLI launch failed before execution because cwd did not exist; dedicated browser cwd then created. One executed suite passed all38.",
+  "temporary_test_config_changed": true,
+  "repository_test_files_changed": false,
+  "external_logo_loads_verified": false,
+  "raw_results": "/Users/tsukadatakahiro/Python/app/shift-app/.local/research-backups/C03T05/browser-results.json",
+  "screenshots": "/Users/tsukadatakahiro/Python/app/shift-app/.local/research-backups/C03T05/docs/screenshots",
+  "server_stopped": true
+}

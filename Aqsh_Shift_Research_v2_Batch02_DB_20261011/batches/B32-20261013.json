@@ -1,0 +1,188 @@
+{
+  "batch_id": "B32-20261013",
+  "prior_batch": "B31-20261013",
+  "as_of_date": "2026-10-13",
+  "resolution_policy_version": 2,
+  "description": "Timefold未着手K01/M08：Excel直接取込未確認と公開JSON/CSV/profile/ID単位取得の出口境界",
+  "method": "公式6資料（新規正規化文書4・既存文書2再利用）から部分確認4/未確認2の6記録。JSON入力をExcel取込とせず、一覧CSV100件・profile全体・単一plan Output・ID別input/config/logs/model-requestを解約全量archiveと分離。固定ESS1.35.x1、Platform latest4、可変raw OpenAPI1。既存連携/role/key/profile作成/採点一般を再登録しない。監査閲覧とsolveログ、版/契約/費用期限を分ける。対照用Platform API/rawspec/入力検証はretrievalチェックだけで文書水増ししない。登録/試用/実API/アップロード/認証権限/設定/契約問い合わせ/課金/公開/本番再監査なし。",
+  "sources": [
+    {
+      "key": "hello",
+      "url": "https://docs.timefold.ai/employee-shift-scheduling/1.35.x/getting-started-with-employee-scheduling",
+      "title": "Timefold — Getting started: Hello world",
+      "publisher": "Timefold BV",
+      "reference": "Create a problem dataset / Custom sample.json upload",
+      "retrieved_on": "2026-10-13",
+      "version_label": "ESS documentation 1.35.x",
+      "method": "official_document_body",
+      "method_note": "Web L54–128,141–155. JSON structure and upload, not workbook parsing. 公開/更新日未表示。全文/本文ハッシュ/原本画像未保存。版/プランの顧客適用・実ファイル取込/出力/API拒否試験・解約後アクセスは未確認。登録/試用/キー生成/認証権限変更/アップロード/設定操作/問い合わせなし。"
+    },
+    {
+      "key": "overview",
+      "url": "https://docs.timefold.ai/timefold-platform/latest/how-tos/categorizing-runs",
+      "title": "Timefold — Datasets overview",
+      "publisher": "Timefold BV",
+      "reference": "Plans versus Revisions / Exporting search results",
+      "retrieved_on": "2026-10-13",
+      "version_label": "Platform latest; mutable",
+      "method": "official_document_body",
+      "method_note": "Web L44–57,108–112; normal Chrome article also checked latest100 cap. No tag/tenant authorization facts re-added. 公開/更新日未表示。全文/本文ハッシュ/原本画像未保存。版/プランの顧客適用・実ファイル取込/出力/API拒否試験・解約後アクセスは未確認。登録/試用/キー生成/認証権限変更/アップロード/設定操作/問い合わせなし。"
+    },
+    {
+      "key": "profiles",
+      "url": "https://docs.timefold.ai/timefold-platform/latest/how-tos/configuration-parameters-and-profiles",
+      "title": "Timefold — Configuration profiles and parameters — export/import",
+      "publisher": "Timefold BV",
+      "reference": "Export and import profiles",
+      "retrieved_on": "2026-10-13",
+      "version_label": "Platform latest; mutable",
+      "method": "official_document_body",
+      "method_note": "Web L76–88; normal Chrome confirmed whole-profile JSON, Standard, import creates new/no merge/default not carried. Reuses B31 normalized document; not counted new. 公開/更新日未表示。全文/本文ハッシュ/原本画像未保存。版/プランの顧客適用・実ファイル取込/出力/API拒否試験・解約後アクセスは未確認。登録/試用/キー生成/認証権限変更/アップロード/設定操作/問い合わせなし。"
+    },
+    {
+      "key": "details",
+      "url": "https://docs.timefold.ai/timefold-platform/latest/how-tos/interpreting-model-run-results",
+      "title": "Timefold — Dataset details — solution output download",
+      "publisher": "Timefold BV",
+      "reference": "Planning solution output and visualization",
+      "retrieved_on": "2026-10-13",
+      "version_label": "Platform latest; mutable",
+      "method": "official_document_body",
+      "method_note": "Web L232–236. Reuses B30 normalized document; no score/justification observation re-added. 公開/更新日未表示。全文/本文ハッシュ/原本画像未保存。版/プランの顧客適用・実ファイル取込/出力/API拒否試験・解約後アクセスは未確認。登録/試用/キー生成/認証権限変更/アップロード/設定操作/問い合わせなし。"
+    },
+    {
+      "key": "spec",
+      "url": "https://app.timefold.ai/openapis/employee-scheduling/v1",
+      "title": "Timefold — Employee Shift Scheduling raw OpenAPI — input/config/logs",
+      "publisher": "Timefold BV",
+      "reference": "GET /v1/schedules/{id}/input, /config, /logs, /model-request",
+      "retrieved_on": "2026-10-13",
+      "version_label": "Mutable live OpenAPI; info.version=v1; not pinned ESS1.35.x",
+      "method": "official_public_openapi_document",
+      "method_note": "Public static application/json via fixed intro API spec link. Web paths L1441–1506,2036–2168,2300–2365. Only specification read; no model API executed, authenticated, or sample submitted. 公開/更新日未表示。全文/本文ハッシュ/原本画像未保存。版/プランの顧客適用・実ファイル取込/出力/API拒否試験・解約後アクセスは未確認。登録/試用/キー生成/認証権限変更/アップロード/設定操作/問い合わせなし。"
+    },
+    {
+      "key": "audit",
+      "url": "https://docs.timefold.ai/timefold-platform/latest/how-tos/audit-log",
+      "title": "Timefold — Audit log — exit completeness comparison",
+      "publisher": "Timefold BV",
+      "reference": "Per-tenant configuration events / Types / Details",
+      "retrieved_on": "2026-10-13",
+      "version_label": "Platform latest; mutable",
+      "method": "official_document_body",
+      "method_note": "Web L22–70. Reviewable audit history is context; no machine-readable full-exit/termination fee or deadline promise found. 公開/更新日未表示。全文/本文ハッシュ/原本画像未保存。版/プランの顧客適用・実ファイル取込/出力/API拒否試験・解約後アクセスは未確認。登録/試用/キー生成/認証権限変更/アップロード/設定操作/問い合わせなし。"
+    }
+  ],
+  "findings": [
+    {
+      "product": "US10",
+      "criterion": "K01",
+      "source": "hello",
+      "summary": "1.35.xの導入例はemployees/shiftsを含むsample.jsonを作成し、New planのCustomからJSONをアップロードする手順を示す。今回確認した入力案内では、セル結合・独自記号・複数シートを含む既存Excel勤務表の直接取込/自動変換仕様を確認できなかった。",
+      "locator": "Create a problem dataset / ModelInput / Post the dataset in the Timefold Platform UI",
+      "limitations": "構造化JSONの投入は既存Excelの読取対応ではない。今回の公開手順・入力検証・OpenAPIの限定確認で、製品全体にExcel機能がないとは断定しない。顧客側変換器や別商品/個別開発の存在、書式対応、変換精度/工数、実画面・ファイル試験と適用プランは未確認。B31の一般連携主体を再登録しない。",
+      "state": "not_found",
+      "delivery": "unknown",
+      "support": "unknown",
+      "scope": "ESS documentation 1.35.x; official document/specification scope only; live customer version/plan and exit contract applicability unconfirmed"
+    },
+    {
+      "product": "US10",
+      "criterion": "M08",
+      "source": "overview",
+      "summary": "Plans overviewは検索/フィルターに一致したデータセットをExport CSVで出力するが、対象は直近100件までと説明する。Plansは関連solveの連鎖ごとに最新revision、Revisionsは各revisionを表示する。",
+      "locator": "Plans versus Revisions / Exporting search results",
+      "limitations": "Platform latestの一覧CSVに関する上限で、希望・規則・設定・全履歴を内包した全量アーカイブを保証しない。画面のrevision表示とCSV列/全revision出力は別で、100件超の分割取得・整合性・削除済み範囲・CSV実試験・顧客プランは未確認。解約後の可用期限/費用も未確認。",
+      "state": "known",
+      "delivery": "native",
+      "support": "limited",
+      "scope": "Platform latest; mutable; official document/specification scope only; live customer version/plan and exit contract applicability unconfirmed"
+    },
+    {
+      "product": "US10",
+      "criterion": "M08",
+      "source": "profiles",
+      "summary": "設定プロファイルは名称・説明・制約重み・モデル設定・solve設定を含む全体をJSONへExportし、read-onlyのStandardも対象とする。再Importは常に新規プロファイルを作り、既存へ上書き/mergeせず、元のdefault指定を自動継承しない。",
+      "locator": "Export and import profiles",
+      "limitations": "Platform latestの個別profile移送。別モデルや一致しないparameterは汎用import error、同一モデルのminor版間移送等が推奨される。勤務表/希望/データセット履歴/権限等が同梱される保証や全profile一括出口、再現互換性、解約期限/費用・プランは未確認。B31の作成/選択/優先順位を再登録せず、既存正規化文書を再利用する。",
+      "state": "known",
+      "delivery": "native",
+      "support": "limited",
+      "scope": "Platform latest; mutable; official document/specification scope only; live customer version/plan and exit contract applicability unconfirmed"
+    },
+    {
+      "product": "US10",
+      "criterion": "M08",
+      "source": "details",
+      "summary": "データセットのOutputでは計画の全詳細をJSONファイルとしてダウンロードできると説明する。Visualizationは出力品質のspot-check用として別に案内される。",
+      "locator": "Planning solution output and visualization / Output JSON download",
+      "limitations": "Platform latestの単一計画solution outputで、全テナントの入力希望/規則/実効設定/全revision/監査を同梱する全量出口ではない。1件の計画のfull detailsを契約終了時のfull exportへ拡張しない。実ファイル・プラン・解約後の取得期限/費用は未確認。B30の採点/justification一般を再登録せず既存文書を再利用する。",
+      "state": "known",
+      "delivery": "native",
+      "support": "limited",
+      "scope": "Platform latest; mutable; official document/specification scope only; live customer version/plan and exit contract applicability unconfirmed"
+    },
+    {
+      "product": "US10",
+      "criterion": "M08",
+      "source": "spec",
+      "summary": "公開OpenAPIのGETはID単位で/inputをEmployeeSchedule、/configをModelConfiguration2、/logsをLogInfo、/model-requestを完全入力requestのJSONとして返す仕様を示す。個別datasetの入力と実効設定とsolveログを別に取得する設計が確認できる。",
+      "locator": "paths GET /v1/schedules/{id}/input, /config, /logs, /model-request; responses 200 application/json schema refs",
+      "limitations": "info.version=v1の可変公開specで固定ESS1.35.xのruntime認定ではない。仕様閲覧のみでAPI実行/認証なし。入力・実効設定・solveログ・完全requestは別artifactで、solveログをtenant監査にしない。404/401/403/429等を定義し、終了契約下の可用性/全revisionの完全列挙/解約費用期限/実取得や復元性は未確認。",
+      "state": "known",
+      "delivery": "native",
+      "support": "limited",
+      "scope": "Mutable live OpenAPI; info.version=v1; not pinned ESS1.35.x; official document/specification scope only; live customer version/plan and exit contract applicability unconfirmed"
+    },
+    {
+      "product": "US10",
+      "criterion": "M08",
+      "source": "audit",
+      "summary": "監査ガイドはテナントごとに設定イベントを閲覧し、APIキー・profile・member/model・secrets等の種別とactor/IP/time等を確認する手順を示す。今回の公開入出力資料では、希望・規則・設定・全履歴/監査を機械可読で解約時に全量取得する範囲、費用、期限を確認できなかった。",
+      "locator": "Audit log / Types / Details, compared with profile/output/CSV/OpenAPI retrieval scope",
+      "limitations": "監査の画面閲覧を監査export保証にしない。限定公開文書の未確認結果で、解約出口機能の不存在や無料/無期限を断定しない。個別契約の追加権利/代行費用/期限、tenant-wide archive・全revision/削除済みデータ保持・実可搬/復元性は未確認。既存B21の非公開条件巡回や営業連絡は行わない。",
+      "state": "not_found",
+      "delivery": "unknown",
+      "support": "unknown",
+      "scope": "Platform latest; mutable; official document/specification scope only; live customer version/plan and exit contract applicability unconfirmed"
+    }
+  ],
+  "prices": [],
+  "followups": [],
+  "task_updates": [
+    {
+      "task_id": "TASK-RES01286",
+      "state": "in_progress",
+      "priority": 3,
+      "method": "vendor_document",
+      "note": "B32：JSON Custom投入の現行公開手順は確認。結合セル/独自記号/複数sheetのExcel直接取込・変換器/書式/実試験/工数は未確認。K01の支持はunknownのまま。"
+    },
+    {
+      "task_id": "TASK-RES01292",
+      "state": "in_progress",
+      "priority": 3,
+      "method": "vendor_document",
+      "note": "B32：一覧CSV最新100件、単一計画output JSON、profile全体JSON移送と新規import条件、ID単位入力/実効config/solve logs/完全requestを部分確認。監査は閲覧案内、全量解約出口の範囲/期限/費用と復元性は未確認。"
+    }
+  ],
+  "retrieval_checks": [
+    {
+      "product": "US10",
+      "url": "https://docs.timefold.ai/timefold-platform/latest/api/platform-api",
+      "result": "model_vs_platform_API_audit_scope_description_conflict_unresolved",
+      "notes": "Model API usage末尾はPlatform APIでaudit/tenant/member/key管理と説明するが、Platform API usageの注意はaudit/tenant/member/keyを別model APIsと説明。公開raw Platform specの範囲は管理models/maps/config/location等で、今回audit endpoint所在/網羅性を認定しない。仕様ドキュメントのURLだけを読み、実API/authは未実施。新しい権限観測は登録しない。"
+    },
+    {
+      "product": "US10",
+      "url": "https://docs.timefold.ai/employee-shift-scheduling/1.35.x/user-guide/input-validation",
+      "result": "JSON_validation_and_availability_warning_scope_checked_as_context_only",
+      "notes": "New planの不正JSON即時拒否、業務validation errors/warningsを確認しExcel変換とは分離。既存B30のavailable/unavailable例の相反について本ページは両方定義をWARNING/処理可能と説明、専用availabilityは併用不可。解決済みとせず実挙動未確認のまま。追加観測/新文書件数へ水増しせず対照のみ。"
+    },
+    {
+      "product": "US10",
+      "url": "https://docs.timefold.ai/timefold-platform/latest/how-tos/categorizing-runs",
+      "result": "normal_Chrome_matches_latest100_export_cap_but_new_plan_text_has_more_detail",
+      "notes": "Web本文と通常Chromeの100件上限が一致。ChromeはNew planのCustom JSON dropの詳しい手順を表示、Web抽出は短い要約。相反ではなく取得時/レンダリング差として保持。CSV/Upload本体は操作していない。"
+    }
+  ]
+}

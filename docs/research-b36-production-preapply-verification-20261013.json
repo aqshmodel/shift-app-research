@@ -1,0 +1,6 @@
+{
+  "status": "passed",
+  "tables_unchanged": 43,
+  "baseline_snapshot": "B24-20261012-pub2",
+  "target_snapshot": "B36-20261013-pub2"
+}

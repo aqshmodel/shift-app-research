@@ -1,0 +1,13 @@
+{
+  "status": "passed",
+  "total_tests": 72,
+  "research_python": 14,
+  "web_python": 36,
+  "node": 22,
+  "new_SQL_tests": 5,
+  "logs_directory": "/Users/tsukadatakahiro/Python/app/shift-app/.local/research-backups/C04T03/logs",
+  "implementation_changes": true,
+  "implementation_scope": "Bounded publication SQL emission and synthetic fixture materialization; no Astro/TS/browser implementation change",
+  "verification_repairs": "Preserved B31 input and its ingest hash. Original 101655-byte publication statement exceeded repository 100000-byte guard. New row assembly emits bounded statements, gates completion with provisional slug, preserves JSON bytes and replay behavior. Five meaningful cases cover size/Unicode/quotes, resume, readiness, completed rows and prior snapshots. Future snapshot fixture now materializes SQL before changing IDs instead of rewriting length-guarded SQL text.",
+  "initial_type_invocations": "Runner initially absent while dependency copy continued; sandbox runtime types then lacked local listen permission. Reviewed escalation passed. No external/auth operation."
+}

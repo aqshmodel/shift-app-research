@@ -1,0 +1,73 @@
+{
+  "status": "passed",
+  "official_sources": 5,
+  "pinned_version_sources": 5,
+  "mutable_latest_comparison_sources": 0,
+  "sources": [
+    {
+      "key": "skills",
+      "url": "https://docs.timefold.ai/employee-shift-scheduling/1.35.x/shift-service-constraints/skills-and-risk-factors",
+      "title": "Timefold Employee Shift Scheduling 1.35.x — Skills and risk factors",
+      "publisher": "Timefold BV",
+      "reference": "MATCH_ALL/ANY / skills expressions / department eligibility",
+      "retrieved_on": "2026-10-13",
+      "version_label": "Employee Shift Scheduling documentation 1.35.x; fixed document URL, not certified live runtime",
+      "method": "official_document_body",
+      "method_note": "Web本文L84〜112・305〜367・467〜524、通常Chrome本文/技能式表示も照合。 公開/更新日は未表示。全文・本文ハッシュ・原本画像は未保存。例示日付は公開日としない。latest/商用プラン適用/実行APIは未検証、試用・キー作成・問い合わせなし。"
+    },
+    {
+      "key": "pairings",
+      "url": "https://docs.timefold.ai/employee-shift-scheduling/1.35.x/employee-resource-constraints/pairing-employees",
+      "title": "Timefold Employee Shift Scheduling 1.35.x — Pairing employees",
+      "publisher": "Timefold BV",
+      "reference": "Required pairings / commonTagType / groupByEmployeeTag / groupShiftsPerDayLimit preview",
+      "retrieved_on": "2026-10-13",
+      "version_label": "Employee Shift Scheduling documentation 1.35.x; fixed document URL, not certified live runtime",
+      "method": "official_document_body",
+      "method_note": "Web本文L81〜127・1204〜1249・1466〜1513。 公開/更新日は未表示。全文・本文ハッシュ・原本画像は未保存。例示日付は公開日としない。latest/商用プラン適用/実行APIは未検証、試用・キー作成・問い合わせなし。"
+    },
+    {
+      "key": "tags",
+      "url": "https://docs.timefold.ai/employee-shift-scheduling/1.35.x/user-guide/tags-and-tag-types",
+      "title": "Timefold Employee Shift Scheduling 1.35.x — Tags and tag types",
+      "publisher": "Timefold BV",
+      "reference": "Department / top-level tags / include/exclude rule filters",
+      "retrieved_on": "2026-10-13",
+      "version_label": "Employee Shift Scheduling documentation 1.35.x; fixed document URL, not certified live runtime",
+      "method": "official_document_body",
+      "method_note": "Web本文L23〜51。 公開/更新日は未表示。全文・本文ハッシュ・原本画像は未保存。例示日付は公開日としない。latest/商用プラン適用/実行APIは未検証、試用・キー作成・問い合わせなし。"
+    },
+    {
+      "key": "locations",
+      "url": "https://docs.timefold.ai/employee-shift-scheduling/1.35.x/employee-resource-constraints/shift-travel-and-locations",
+      "title": "Timefold Employee Shift Scheduling 1.35.x — Shift travel and locations",
+      "publisher": "Timefold BV",
+      "reference": "Haversine / inter-location minimum / locationsWorkedMax required and preferred",
+      "retrieved_on": "2026-10-13",
+      "version_label": "Employee Shift Scheduling documentation 1.35.x; fixed document URL, not certified live runtime",
+      "method": "official_document_body",
+      "method_note": "Web本文L23〜36・228〜277・660〜696・776〜829・954〜965。 公開/更新日は未表示。全文・本文ハッシュ・原本画像は未保存。例示日付は公開日としない。latest/商用プラン適用/実行APIは未検証、試用・キー作成・問い合わせなし。"
+    },
+    {
+      "key": "usecases",
+      "url": "https://docs.timefold.ai/employee-shift-scheduling/1.35.x/user-guide/use-cases",
+      "title": "Timefold Employee Shift Scheduling 1.35.x — Use case guide",
+      "publisher": "Timefold BV",
+      "reference": "Hospital ward tags / shared workforce across hospitality outlets / role skills",
+      "retrieved_on": "2026-10-13",
+      "version_label": "Employee Shift Scheduling documentation 1.35.x; fixed document URL, not certified live runtime",
+      "method": "official_document_body",
+      "method_note": "Web本文L35〜59・119〜142・155。 公開/更新日は未表示。全文・本文ハッシュ・原本画像は未保存。例示日付は公開日としない。latest/商用プラン適用/実行APIは未検証、試用・キー作成・問い合わせなし。"
+    }
+  ],
+  "body_checked": true,
+  "full_text_archived": false,
+  "publication_dates_not_shown": true,
+  "preview_feature": {
+    "groupShiftsPerDayLimit": "explicit preview subject to change",
+    "latest_difference": "not examined",
+    "runtime_version_and_compatibility": "not determined"
+  },
+  "independent_tests_performed": false,
+  "external_contact": false
+}

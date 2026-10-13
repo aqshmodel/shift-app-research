@@ -1,0 +1,61 @@
+{
+  "status": "passed",
+  "official_sources": 4,
+  "distinct_urls": 4,
+  "sources": [
+    {
+      "key": "roles",
+      "url": "https://www.fikaigo.com/faq/faq/user-permissions",
+      "title": "管理者・サブ管理者など権限を分けられますか？",
+      "publisher": "住友商事株式会社",
+      "reference": "FAQ機能について / 法人・施設・シフトグループ管理者と一般職員",
+      "retrieved_on": "2026-10-13",
+      "method": "public_web_body",
+      "method_note": "Web取得はInternal Errorだったが通常ChromeのAX/本文は取得成功。表示日2026-03-02の公開/更新区別は不明。一般職員のスマホアプリのみ利用という但し書きの適用範囲を別FAQと照合。 全文・本文ハッシュ・原本画像は未保存。登録・問い合わせ・認証/権限操作・製品独立試験なし。"
+    },
+    {
+      "key": "request",
+      "url": "https://www.fikaigo.com/faq/faq/shift-request",
+      "title": "職員はスマホから希望休・希望勤務を提出できますか？",
+      "publisher": "住友商事株式会社",
+      "reference": "希望提出FAQと役割FAQの一般職員の端末範囲の対照",
+      "retrieved_on": "2026-10-13",
+      "method": "public_web_body",
+      "method_note": "既存B27の希望提出一般は再登録せず、通常Chromeのスマホ/PCブラウザ回答と役割FAQの範囲の差だけをN01未確認文脈に使用。表示日2026-03-02の公開/更新区別は不明。 全文・本文ハッシュ・原本画像は未保存。登録・問い合わせ・認証/権限操作・製品独立試験なし。"
+    },
+    {
+      "key": "interview",
+      "url": "https://www.sumitomocorp.com/ja/jp/enrich/contents/0118",
+      "title": "現場の声を起点に介護業界を変える。住商×SOMPOケアのFIKAIGO開発秘話",
+      "publisher": "住友商事株式会社",
+      "reference": "2026-01-22一次インタビュー / 介護付きホーム約300施設 / 要件定義への関与",
+      "retrieved_on": "2026-10-13",
+      "method": "public_web_body",
+      "method_note": "記事時点の住友商事・SOMPOケア担当者の自己申告。施設種別・導入文脈・測定条件の不足を記録。B27の希望休と複雑勤務の調整の観測は重複登録しない。 全文・本文ハッシュ・原本画像は未保存。登録・問い合わせ・認証/権限操作・製品独立試験なし。",
+      "published_on": "2026-01-22"
+    },
+    {
+      "key": "tmip",
+      "url": "https://www.tmip.jp/ja/report/12612",
+      "title": "TMIP Innovation Award 2025 オーディエンス賞：住友商事FIKAIGO 共創レポート",
+      "publisher": "一般社団法人TMIP",
+      "reference": "2025-12-18 / 初期段階の採用と要件定義 / 100床施設の導入前作業 / 約1万人の利用規模",
+      "retrieved_on": "2026-10-13",
+      "method": "public_web_body",
+      "method_note": "FIKAIGO公式コラムから案内されたTMIP公式一次インタビュー。通常Chromeで100床の導入前作業時間と約1万人が利用できる想定規模の段落を照合。受賞は独立性能認証としない。 全文・本文ハッシュ・原本画像は未保存。登録・問い合わせ・認証/権限操作・製品独立試験なし。",
+      "published_on": "2025-12-18"
+    }
+  ],
+  "body_checked": true,
+  "public_browser_checked": true,
+  "full_text_archived": false,
+  "FAQ_display_date": "2026-03-02, publication/update distinction not labeled",
+  "interview_dates": [
+    "2026-01-22",
+    "2025-12-18"
+  ],
+  "role_FAQ_web_failed_Chrome_succeeded": true,
+  "case_self_report_not_independent": true,
+  "independent_tests_performed": false,
+  "external_contact": false
+}

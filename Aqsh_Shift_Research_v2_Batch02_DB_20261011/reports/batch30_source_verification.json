@@ -1,0 +1,103 @@
+{
+  "status": "passed",
+  "official_sources": 6,
+  "pinned_version_sources": 4,
+  "mutable_platform_latest_sources": 2,
+  "comparison_only_model_input_sources": 1,
+  "sources": [
+    {
+      "key": "score",
+      "url": "https://docs.timefold.ai/employee-shift-scheduling/1.35.x/user-guide/score-analysis",
+      "title": "Timefold — Score analysis",
+      "publisher": "Timefold BV",
+      "reference": "GET saved analysis / includeJustifications / forced assignment comparison",
+      "retrieved_on": "2026-10-13",
+      "version_label": "1.35.x",
+      "method": "official_document_body",
+      "method_note": "Web本文L23〜104・105〜130。 公開/更新日は未表示。全文・本文ハッシュ・原本画像は未保存。顧客の現行版/プラン/利用条件は未確認。サンプルAPI/デモ/AI agent未実行、キー作成・試用・問い合わせなし。"
+    },
+    {
+      "key": "recommendations",
+      "url": "https://docs.timefold.ai/employee-shift-scheduling/1.35.x/recommendations",
+      "title": "Timefold — Recommendations",
+      "publisher": "Timefold BV",
+      "reference": "includeJustifications query / scoreDiff / constraintDiffs / matchesDiff",
+      "retrieved_on": "2026-10-13",
+      "version_label": "1.35.x",
+      "method": "official_document_body",
+      "method_note": "Web本文L182〜202・280〜393。 公開/更新日は未表示。全文・本文ハッシュ・原本画像は未保存。顧客の現行版/プラン/利用条件は未確認。サンプルAPI/デモ/AI agent未実行、キー作成・試用・問い合わせなし。"
+    },
+    {
+      "key": "assignability",
+      "url": "https://docs.timefold.ai/employee-shift-scheduling/1.35.x/user-guide/assignability-analysis",
+      "title": "Timefold — Assignability analysis",
+      "publisher": "Timefold BV",
+      "reference": "Empty-rest-of-schedule hard-constraint analysis / blocked employees / preview / filter wording caveat",
+      "retrieved_on": "2026-10-13",
+      "version_label": "1.35.x; visualization explicitly preview",
+      "method": "official_document_body",
+      "method_note": "Web本文L23〜67。通常Chrome本文とpreview/フィルタ記述も照合。 公開/更新日は未表示。全文・本文ハッシュ・原本画像は未保存。顧客の現行版/プラン/利用条件は未確認。サンプルAPI/デモ/AI agent未実行、キー作成・試用・問い合わせなし。"
+    },
+    {
+      "key": "results",
+      "url": "https://docs.timefold.ai/timefold-platform/latest/how-tos/interpreting-model-run-results",
+      "title": "Timefold — Dataset details",
+      "publisher": "Timefold BV",
+      "reference": "Score analysis effective vs configured weight / matched vs triggered / API endpoint",
+      "retrieved_on": "2026-10-13",
+      "version_label": "Platform latest mutable guide; not pinned ESS runtime",
+      "method": "official_document_body",
+      "method_note": "Web本文L182〜245。 公開/更新日は未表示。全文・本文ハッシュ・原本画像は未保存。顧客の現行版/プラン/利用条件は未確認。サンプルAPI/デモ/AI agent未実行、キー作成・試用・問い合わせなし。"
+    },
+    {
+      "key": "explain",
+      "url": "https://docs.timefold.ai/timefold-platform/latest/guides/validating-an-optimized-plan-with-explainable-ai",
+      "title": "Timefold — Validating an optimized plan with Explainable AI",
+      "publisher": "Timefold BV",
+      "reference": "Make plans conversational / APIs embedded in customer UI / roadmap",
+      "retrieved_on": "2026-10-13",
+      "version_label": "Platform latest mutable guide; customer integration examples",
+      "method": "official_document_body",
+      "method_note": "Web本文L145〜176。 公開/更新日は未表示。全文・本文ハッシュ・原本画像は未保存。顧客の現行版/プラン/利用条件は未確認。サンプルAPI/デモ/AI agent未実行、キー作成・試用・問い合わせなし。"
+    },
+    {
+      "key": "input",
+      "url": "https://docs.timefold.ai/employee-shift-scheduling/1.35.x/user-guide/input-datasets/model-input",
+      "title": "Timefold — Model input",
+      "publisher": "Timefold BV",
+      "reference": "Structured contracts/globalRules input as comparison for F04",
+      "retrieved_on": "2026-10-13",
+      "version_label": "1.35.x",
+      "method": "official_document_body",
+      "method_note": "Web本文L23〜88。F04対照用で直接追加観測の出典数へ含めない。 公開/更新日は未表示。全文・本文ハッシュ・原本画像は未保存。顧客の現行版/プラン/利用条件は未確認。サンプルAPI/デモ/AI agent未実行、キー作成・試用・問い合わせなし。"
+    }
+  ],
+  "body_checked": true,
+  "full_text_archived": false,
+  "publication_dates_not_shown": true,
+  "preview_feature": {
+    "Assignability visualization": "explicit preview, contact for early access",
+    "Platform latest": "separate mutable UI guide",
+    "runtime_version_and_plan": "not determined"
+  },
+  "wording_conflicts": [
+    {
+      "product": "US10",
+      "url": "https://docs.timefold.ai/employee-shift-scheduling/1.35.x/user-guide/assignability-analysis",
+      "result": "Include_assigned_enabled_disabled_descriptions_conflict",
+      "notes": "Web L49〜50と通常Chrome同段落：有効時すべて/無効時未割当のみを説明した後、有効時それらのみ/無効時すべてという説明。誤記/別UI版/別操作のどれかを推測せず、フィルタ動作を未確定として留保。個別勤務empty-rest分析の記載自体を否定しない。"
+    },
+    {
+      "product": "US10",
+      "url": "https://docs.timefold.ai/employee-shift-scheduling/1.35.x/recommendations",
+      "result": "availability_example_scope_unresolved_against_dedicated_fixed_version_spec",
+      "notes": "導入JSON L68〜83/148〜161はAnnにavailableTimeSpans/unavailableTimeSpans両方を記載。一方、専用1.35.x availability L43は同一職員の併用不可。メインPOST例L208〜217は不可用のみ。Recommendations特有/誤記/別版のどれかは未確定。対照=https://docs.timefold.ai/employee-shift-scheduling/1.35.x/employee-resource-constraints/employee-availability-and-preferences/employee-availability。既存B25資料の再照合のみで一般可用根拠を再登録しない。"
+    }
+  ],
+  "independent_tests_performed": false,
+  "external_contact": false,
+  "new_observation_backed_research_documents": 5,
+  "new_registered_source_documents": 6,
+  "comparison_only_documents": 1,
+  "semantic_boundary": "Five new direct research documents; one new Model input comparison document registered as metadata only. No generic API/score/lifecycle re-addition."
+}

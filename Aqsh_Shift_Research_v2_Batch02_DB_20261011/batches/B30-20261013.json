@@ -1,0 +1,187 @@
+{
+  "batch_id": "B30-20261013",
+  "prior_batch": "B29-20261013",
+  "as_of_date": "2026-10-13",
+  "resolution_policy_version": 2,
+  "description": "Timefold未着手G04/F04：justifications・仮割当比較・preview assignabilityと最小原因集合の留保、会話UIと自然言語ルール入力の境界",
+  "method": "6新規公式文書（固定1.35.x4、Platform latest2）から6記録（部分確認5・未確認1）。Model input1資料はF04対照で直接観測出典は5資料。既存M04のJSON API一般、B03の同一エンジン採点/独立検算の留保、B25のスコア階層、B29の技能/部署を再登録しない。preview/UI版/プラン/反実仮想と全体不可能/最小原因集合、会話説明とルール変換を分離。Include assigned相反とrecommendations入力例の適用未整理を留保。全文/本文ハッシュ/画像未保存。API/AI agent/デモ/試用/キー作成/課金/権限変更/問い合わせ/公開/本番再監査/独立製品試験なし。",
+  "sources": [
+    {
+      "key": "score",
+      "url": "https://docs.timefold.ai/employee-shift-scheduling/1.35.x/user-guide/score-analysis",
+      "title": "Timefold — Score analysis",
+      "publisher": "Timefold BV",
+      "reference": "GET saved analysis / includeJustifications / forced assignment comparison",
+      "retrieved_on": "2026-10-13",
+      "version_label": "1.35.x",
+      "method": "official_document_body",
+      "method_note": "Web本文L23〜104・105〜130。 公開/更新日は未表示。全文・本文ハッシュ・原本画像は未保存。顧客の現行版/プラン/利用条件は未確認。サンプルAPI/デモ/AI agent未実行、キー作成・試用・問い合わせなし。"
+    },
+    {
+      "key": "recommendations",
+      "url": "https://docs.timefold.ai/employee-shift-scheduling/1.35.x/recommendations",
+      "title": "Timefold — Recommendations",
+      "publisher": "Timefold BV",
+      "reference": "includeJustifications query / scoreDiff / constraintDiffs / matchesDiff",
+      "retrieved_on": "2026-10-13",
+      "version_label": "1.35.x",
+      "method": "official_document_body",
+      "method_note": "Web本文L182〜202・280〜393。 公開/更新日は未表示。全文・本文ハッシュ・原本画像は未保存。顧客の現行版/プラン/利用条件は未確認。サンプルAPI/デモ/AI agent未実行、キー作成・試用・問い合わせなし。"
+    },
+    {
+      "key": "assignability",
+      "url": "https://docs.timefold.ai/employee-shift-scheduling/1.35.x/user-guide/assignability-analysis",
+      "title": "Timefold — Assignability analysis",
+      "publisher": "Timefold BV",
+      "reference": "Empty-rest-of-schedule hard-constraint analysis / blocked employees / preview / filter wording caveat",
+      "retrieved_on": "2026-10-13",
+      "version_label": "1.35.x; visualization explicitly preview",
+      "method": "official_document_body",
+      "method_note": "Web本文L23〜67。通常Chrome本文とpreview/フィルタ記述も照合。 公開/更新日は未表示。全文・本文ハッシュ・原本画像は未保存。顧客の現行版/プラン/利用条件は未確認。サンプルAPI/デモ/AI agent未実行、キー作成・試用・問い合わせなし。"
+    },
+    {
+      "key": "results",
+      "url": "https://docs.timefold.ai/timefold-platform/latest/how-tos/interpreting-model-run-results",
+      "title": "Timefold — Dataset details",
+      "publisher": "Timefold BV",
+      "reference": "Score analysis effective vs configured weight / matched vs triggered / API endpoint",
+      "retrieved_on": "2026-10-13",
+      "version_label": "Platform latest mutable guide; not pinned ESS runtime",
+      "method": "official_document_body",
+      "method_note": "Web本文L182〜245。 公開/更新日は未表示。全文・本文ハッシュ・原本画像は未保存。顧客の現行版/プラン/利用条件は未確認。サンプルAPI/デモ/AI agent未実行、キー作成・試用・問い合わせなし。"
+    },
+    {
+      "key": "explain",
+      "url": "https://docs.timefold.ai/timefold-platform/latest/guides/validating-an-optimized-plan-with-explainable-ai",
+      "title": "Timefold — Validating an optimized plan with Explainable AI",
+      "publisher": "Timefold BV",
+      "reference": "Make plans conversational / APIs embedded in customer UI / roadmap",
+      "retrieved_on": "2026-10-13",
+      "version_label": "Platform latest mutable guide; customer integration examples",
+      "method": "official_document_body",
+      "method_note": "Web本文L145〜176。 公開/更新日は未表示。全文・本文ハッシュ・原本画像は未保存。顧客の現行版/プラン/利用条件は未確認。サンプルAPI/デモ/AI agent未実行、キー作成・試用・問い合わせなし。"
+    },
+    {
+      "key": "input",
+      "url": "https://docs.timefold.ai/employee-shift-scheduling/1.35.x/user-guide/input-datasets/model-input",
+      "title": "Timefold — Model input",
+      "publisher": "Timefold BV",
+      "reference": "Structured contracts/globalRules input as comparison for F04",
+      "retrieved_on": "2026-10-13",
+      "version_label": "1.35.x",
+      "method": "official_document_body",
+      "method_note": "Web本文L23〜88。F04対照用で直接追加観測の出典数へ含めない。 公開/更新日は未表示。全文・本文ハッシュ・原本画像は未保存。顧客の現行版/プラン/利用条件は未確認。サンプルAPI/デモ/AI agent未実行、キー作成・試用・問い合わせなし。"
+    }
+  ],
+  "findings": [
+    {
+      "product": "US10",
+      "criterion": "G04",
+      "source": "score",
+      "summary": "計算済み勤務表のscore-analysisは保存された制約別スコアを取得できる。includeJustifications=trueを指定すると、各制約matchに関係する勤務・職員・時間帯などの具体的オブジェクトを返す例があり、省略時の概要だけの応答と区別する。",
+      "locator": "Score analysis of a solved schedule / With and without justifications",
+      "limitations": "1.35.xの出力仕様。違反箇所の根拠であり、最小の矛盾制約集合や全体の解なし証明ではない。全制約のjustification形状・一意ID/参照完全性・JSONと説明の整合・商用プラン/顧客実行版は独立未検証。B03の手作成表採点一般は再登録しない。",
+      "state": "known",
+      "delivery": "native",
+      "scope": "Official 1.35.x documentation; commercial plan applicability and live execution unconfirmed; vendor examples are not independent tests",
+      "support": "limited"
+    },
+    {
+      "product": "US10",
+      "criterion": "G04",
+      "source": "score",
+      "summary": "特定職員が特定勤務へ割り当てられなかった理由は、その割当を強制した仮の勤務表を作り、POST score-analysis?includeJustifications=trueで最良発見解と比較する方法を案内する。hard違反とsoft悪化を制約・対象オブジェクトへ結び付ける。",
+      "locator": "Explaining why a specific assignment was not made / Provided schedule endpoint",
+      "limitations": "1.35.xの反実仮想比較手順で、元の結果から全代替案を自動列挙する証明ではない。仮の割当以外の入力/設定が同じかを管理する必要がある。局所最良/最良発見解と大域最適は別。最小矛盾集合・独立検算・未入力条件を含む法令適合は未確認。",
+      "state": "known",
+      "delivery": "native",
+      "scope": "Official 1.35.x documentation; commercial plan applicability and live execution unconfirmed; vendor examples are not independent tests",
+      "support": "limited"
+    },
+    {
+      "product": "US10",
+      "criterion": "G04",
+      "source": "results",
+      "summary": "PlatformのScore analysisでは、制約が入力不足や未発火で無効になった場合にeffective weightを0と表示し、設定した重みと区別する。matchedフィルタはスコアに影響した制約、triggeredフィルタは有効だが罰点0の制約も表示する。",
+      "locator": "Score analysis / Weight effective / matched, triggered, all constraints",
+      "limitations": "Platform latestのUI説明で固定ESS1.35.x仕様そのものではない。重み0を常に手動無効化とせず、matched一覧にないことを違反検査済みや未定義の証明にしない。API応答そのものが変更されたとの説明ではない。プラン・現行UI/実行版・独立動作未確認。",
+      "state": "known",
+      "delivery": "native",
+      "scope": "Official Platform latest mutable guide; not pinned ESS runtime documentation; commercial plan applicability and live execution unconfirmed; vendor examples are not independent tests",
+      "support": "limited"
+    },
+    {
+      "product": "US10",
+      "criterion": "G04",
+      "source": "recommendations",
+      "summary": "recommend-employeesはincludeJustifications=trueを任意に指定でき、省略時は候補別の全体スコア差・制約差・match件数差、指定時はmatchesDiff内に勤務IDとdescription等のjustificationを含む応答例を示す。",
+      "locator": "Submit input dataset / Constraint scores with and without justifications",
+      "limitations": "1.35.xの候補比較出力。maxNumberOfRecommendationsで候補数を制限するため全職員の不可能理由一覧ではない。JSON例のscoreDiffを使用し、本文のscoreDiffs表記と混ぜない。導入例の可用/不可用両配列と専用仕様の併用禁止は適用未整理で、実行可能な入力例として認証しない。最小原因集合・大域最適・独立試験なし。",
+      "state": "known",
+      "delivery": "native",
+      "scope": "Official 1.35.x documentation; commercial plan applicability and live execution unconfirmed; vendor examples are not independent tests",
+      "support": "limited"
+    },
+    {
+      "product": "US10",
+      "criterion": "G04",
+      "source": "assignability",
+      "summary": "Assignability analysisは他の勤務が空という条件で、各勤務へhard違反なく割当可能な職員の割合を入力から計算する。0%はその勤務に資格を満たす職員がいない、0%超は少なくとも1候補と説明し、阻害するhard制約と職員を確認できる。",
+      "locator": "Assignability analysis / Understanding results / Other views",
+      "limitations": "可視化はpreview・早期利用は問い合わせで、一般プランへ自動適用しない。各勤務に候補がいても全勤務の同時充足は保証しない。最適化後の結果検証や最小矛盾集合ではない。Include assignedの有効/無効の説明が同じ段落で相反し、フィルタ実動作は確定しない。API詳細スキーマ/独立実行なし。",
+      "state": "known",
+      "delivery": "native",
+      "scope": "Official 1.35.x; visualization explicitly preview documentation; commercial plan applicability and live execution unconfirmed; vendor examples are not independent tests",
+      "support": "limited"
+    },
+    {
+      "product": "US10",
+      "criterion": "F04",
+      "source": "explain",
+      "summary": "Platformガイドの会話型計画は、顧客がAI agentで職員の質問や問題提起を受ける利用例である。対照の1.35.x Model inputはcontracts/globalRules等の構造化JSONを説明するが、会話を実際の最適化ルールへ変換する標準機能・入力仕様は取得範囲で確認できない。",
+      "locator": "Make plans conversational / customer UI integration; comparison Model input contracts/globalRules",
+      "limitations": "自然言語で理由を聞くこと、条件JSONを開発者が作ること、標準製品で自然言語からルールを生成することを分離する。対照URL=https://docs.timefold.ai/employee-shift-scheduling/1.35.x/user-guide/input-datasets/model-input。解釈プレビュー、誤解/曖昧入力の拒否、修正/承認/取消履歴、日本語、対象プラン/版、外部LLM送信/学習条件は未確認。非対応とも標準ネイティブ提供とも判断しない。",
+      "state": "not_found",
+      "delivery": "unknown",
+      "scope": "Official Platform latest mutable guide; customer integration examples documentation; commercial plan applicability and live execution unconfirmed; vendor examples are not independent tests"
+    }
+  ],
+  "prices": [],
+  "followups": [],
+  "task_updates": [
+    {
+      "task_id": "TASK-RES01276",
+      "state": "in_progress",
+      "priority": 3,
+      "method": "vendor_document",
+      "note": "B30：固定1.35.xのjustificationオブジェクト・仮割当比較・候補差分とpreviewの個別勤務assignabilityを確認。Platform latest effective weightとの版境界、Include assigned説明相反・可用例の適用未整理、最小矛盾集合/全体解なし/独立試験は留保。"
+    },
+    {
+      "task_id": "TASK-RES01272",
+      "state": "in_progress",
+      "priority": 3,
+      "method": "vendor_document",
+      "note": "B30：顧客実装の会話型UIと構造化JSON入力を対照。自然言語から実ルール生成、解釈プレビュー/誤解拒否/承認/日本語/プラン/外部LLM条件は未確認。会話説明を条件入力へ読み替えない。"
+    }
+  ],
+  "retrieval_checks": [
+    {
+      "product": "US10",
+      "url": "https://docs.timefold.ai/employee-shift-scheduling/1.35.x/user-guide/assignability-analysis",
+      "result": "Include_assigned_enabled_disabled_descriptions_conflict",
+      "notes": "Web L49〜50と通常Chrome同段落：有効時すべて/無効時未割当のみを説明した後、有効時それらのみ/無効時すべてという説明。誤記/別UI版/別操作のどれかを推測せず、フィルタ動作を未確定として留保。個別勤務empty-rest分析の記載自体を否定しない。"
+    },
+    {
+      "product": "US10",
+      "url": "https://docs.timefold.ai/employee-shift-scheduling/1.35.x/recommendations",
+      "result": "availability_example_scope_unresolved_against_dedicated_fixed_version_spec",
+      "notes": "導入JSON L68〜83/148〜161はAnnにavailableTimeSpans/unavailableTimeSpans両方を記載。一方、専用1.35.x availability L43は同一職員の併用不可。メインPOST例L208〜217は不可用のみ。Recommendations特有/誤記/別版のどれかは未確定。対照=https://docs.timefold.ai/employee-shift-scheduling/1.35.x/employee-resource-constraints/employee-availability-and-preferences/employee-availability。既存B25資料の再照合のみで一般可用根拠を再登録しない。"
+    },
+    {
+      "product": "US10",
+      "url": "https://docs.timefold.ai/timefold-platform/latest/guides/validating-an-optimized-plan-with-explainable-ai",
+      "result": "conversational_customer_integration_not_standard_natural_language_rule_conversion",
+      "notes": "標準製品の自然言語ルール生成とは確認できない。roadmapのwhat-if/UI improvementsを一般提供済み入力機能へ変換しない。最新ESSリンクはlatestへ遷移したため、selected根拠は1.35.xへ固定。"
+    }
+  ]
+}

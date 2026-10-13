@@ -1,0 +1,50 @@
+{
+  "status": "passed",
+  "batch_id": "B27-20261012",
+  "method": "CUA Chrome on isolated local static viewer; screenshot visual review and read-only DOM",
+  "scope": "Affected FIKAIGO detail only; full web browser suite planned C03T05",
+  "viewports": [
+    {
+      "width": 1440,
+      "height": 1000,
+      "overflow": false,
+      "detail_scrollWidth": 1398,
+      "detail_clientWidth": 1398,
+      "records": 2099
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "overflow": false,
+      "detail_scrollWidth": 348,
+      "detail_clientWidth": 348,
+      "records": 2099
+    }
+  ],
+  "checks": {
+    "new5_ids_present": true,
+    "unconfirmed3_visible": true,
+    "new_sources_linked": true,
+    "confirmed_schedule_not_approved_leave": true,
+    "break_rotation_not_inter_shift_rest": true,
+    "night_boundaries_unknown": true,
+    "prior_prices_and_history_visible": true,
+    "local_console_errors_and_warnings_returned": 0,
+    "prior_official_page_external_script_errors": 2,
+    "prior_official_page_external_script_warnings": 1
+  },
+  "screenshots": "Observed in CUA output; not archived as package files",
+  "local_server": {
+    "host": "127.0.0.1",
+    "port": 49627,
+    "stopped": true,
+    "escalation_review": "approved"
+  },
+  "favicon": "Static server favicon.ico 404; output unaffected",
+  "html_dataset": {
+    "products": 50,
+    "observations": 2099,
+    "duplicate_ids": 0
+  },
+  "external_logo_availability": "not independently tested"
+}

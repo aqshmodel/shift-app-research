@@ -1,0 +1,53 @@
+{
+  "status": "passed",
+  "checked_at": "2026-10-13T06:53:36.771636+00:00",
+  "baseline_snapshot": "B24-20261012-pub2",
+  "snapshot_id": "B36-20261013-pub2",
+  "research_sha256": "f93c7edb117a65a770172cf8a5d9bac637e7c14f60a6efeb9467d3055fd465ce",
+  "content_sha256": "e3a5330af88ca0da20536d889af497d2ed794aef55d66f03abc0153eca300ad8",
+  "offerings": 50,
+  "document_observations": 2151,
+  "research_documents": 352,
+  "price_components": 118,
+  "added_records": 71,
+  "tests": 72,
+  "type_files": 58,
+  "type_diagnostics": 0,
+  "checks": {
+    "staging": {
+      "research_tables": 39,
+      "prices": 50,
+      "details": 50,
+      "browser_cases": 38,
+      "prior_publication_rows_preserved": true
+    },
+    "production": {
+      "research_tables": 39,
+      "prices": 50,
+      "details": 50,
+      "browser_cases": 38,
+      "prior_publication_rows_preserved": true
+    }
+  },
+  "affected_layouts": 16,
+  "SEO_pages": 62,
+  "runtime_unchanged": true,
+  "worker_redeployment_required": false,
+  "existing_worker_versions": {
+    "staging": [
+      {
+        "version_id": "f5d81634-2c81-4cc7-8500-608ac6b79c5a",
+        "percentage": 100
+      }
+    ],
+    "production": [
+      {
+        "version_id": "8c9b350a-538f-4d33-9bf3-721083efac82",
+        "percentage": 100
+      }
+    ]
+  },
+  "release_within_existing_allowance": true,
+  "plans_changed": false,
+  "follow_on_research": "preserved separately from frozen B36"
+}

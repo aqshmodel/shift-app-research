@@ -1,0 +1,48 @@
+{
+  "status": "passed",
+  "batch_id": "B32-20261013",
+  "method": "CUA Chrome isolated static comparison DOM and screenshot visual review",
+  "scope": "Affected Timefold K01/M08; public projection separately validated; full built-Worker/browser/SEO checks C04T05",
+  "viewports": [
+    {
+      "width": 1440,
+      "height": 1000,
+      "document_overflow": false,
+      "detail_overflow": false
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "document_overflow": false,
+      "detail_overflow": false
+    }
+  ],
+  "checks": {
+    "new6_ids_present": true,
+    "new_source_urls": 6,
+    "K01_unknown_not_Excel_supported": true,
+    "M08_partial_and_full_exit_unknown_visible": true,
+    "CSV_latest100_visible": true,
+    "profile_new_import_no_merge_and_default_caveats": true,
+    "mutable_raw_OpenAPI_not_fixed_ESS1_35_x": true,
+    "solve_logs_not_tenant_audit": true,
+    "previous_B31_records_preserved": true,
+    "console_errors_and_warnings": 0
+  },
+  "screenshots": "PC/mobile CUA output reviewed, not archived; no source full text or images archived",
+  "html_dataset": {
+    "products": 50,
+    "observations": 2129,
+    "duplicate_ids": 0
+  },
+  "local_server": {
+    "host": "127.0.0.1",
+    "port": 53304,
+    "stopped": true,
+    "escalation_review": "approved"
+  },
+  "favicon": "Local static server favicon 404 only; no returned console error/warning",
+  "viewport_reset": true,
+  "agent_tabs_closed": true,
+  "external_logos": "not independently checked"
+}

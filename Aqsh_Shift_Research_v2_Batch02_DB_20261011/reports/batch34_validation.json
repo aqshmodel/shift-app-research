@@ -1,0 +1,114 @@
+{
+  "status": "passed",
+  "batch_id": "B34-20261013",
+  "checked_at": "2026-10-13T04:00:23.854700+00:00",
+  "research_sha256": "0ad03b3f0f956cffb834c332b32be0dc02d3705c9c2e56f46c522020323c1374",
+  "prepared_public_snapshot": "B34-20261013-pub2",
+  "prepared_content_sha256": "963dc6a512fd7ec39744ceed49a44ce1473a90089f1e16dced25a6a577babe89",
+  "checks": {
+    "db": {
+      "status": "passed",
+      "record": "db_validation_batch34.json"
+    },
+    "history": {
+      "status": "passed",
+      "record": "batch34_history_preservation.json",
+      "tables": 39
+    },
+    "regression": {
+      "status": "passed",
+      "record": "batch34_regression.json",
+      "tests": 72
+    },
+    "prices": {
+      "status": "passed",
+      "record": "batch34_price_summaries.json",
+      "services": 50,
+      "components": 118,
+      "unchanged_from_B33": true
+    },
+    "SQL_bounds": {
+      "status": "passed",
+      "record": "batch34_sql_bounds.json"
+    },
+    "viewer": {
+      "status": "passed",
+      "record": "batch34_viewer_scope.json"
+    },
+    "sources": {
+      "status": "passed",
+      "record": "batch34_source_verification.json",
+      "sources": 4,
+      "new_documents": 4,
+      "comparison_only_existing_documents": 2
+    },
+    "completion": {
+      "status": "passed",
+      "record": "batch34_completion_review.json",
+      "tasks_marked_done": 0
+    },
+    "cost_scope": {
+      "status": "passed",
+      "record": "batch34_cost_scope.json"
+    },
+    "publication_projection": {
+      "status": "passed",
+      "details": 50,
+      "accepted_findings": 6,
+      "C05_partial": 3,
+      "K01_partial": 3,
+      "method": "SQLite JSON projection; live API not executed this turn"
+    }
+  },
+  "continued_research": {
+    "batch_id": "B34-20261013",
+    "new_document_findings": 6,
+    "editorial_corrections": 0,
+    "new_price_components": 0,
+    "reference_regulations": 0,
+    "source_retrievals": 4,
+    "functional_research_sources": 4,
+    "functional_research_products": 1,
+    "products_including_classification_corrections": 1,
+    "finding_states": {
+      "known": 6
+    }
+  },
+  "task_states": {
+    "blocked": 78,
+    "done": 2,
+    "in_progress": 254,
+    "not_started": 646
+  },
+  "unfinished": 978,
+  "priority1_open": 29,
+  "tasks_started": 2,
+  "task_updates": 2,
+  "tasks_marked_done": 0,
+  "new_tasks": 0,
+  "new_distinct_research_documents": 4,
+  "independent_tests_performed": false,
+  "production_current_rechecked": false,
+  "user_reported_production_batch": "B18-20261012",
+  "remote_operations": false,
+  "commit_push_CI_deploy_paid_API_or_auth_change": false,
+  "all_temporary_servers_stopped": true,
+  "comparison_deltas": {
+    "B33": {
+      "statement_count": 172,
+      "sql_sha256": "33cb85f94e8a51dd5534cf94d7e5cfba23c9941b54de1961c99c7edbbbae19be",
+      "maximum_statement_bytes": 89651,
+      "local_sql_roundtrip": "passed",
+      "prior_publication_rows_preserved": true
+    },
+    "B18": {
+      "statement_count": 1070,
+      "sql_sha256": "a0ff3eb41c4d9406e290e302b369668a5423df92535b7df4c38ea59df0b32d05",
+      "maximum_statement_bytes": 89651,
+      "local_sql_roundtrip": "passed",
+      "prior_publication_rows_preserved": true
+    }
+  },
+  "deferred_checks": "Types, both builds, isolated local D1/API, full browser/SEO: C05T05 or any implementation change; prior comprehensive C04T05 results are historical, not current runtime results",
+  "manifest_files": 387
+}

@@ -1,0 +1,133 @@
+{
+  "status": "passed",
+  "batch_id": "B28-20261013",
+  "checked_at": "2026-10-13T00:16:10.307546+00:00",
+  "research_sha256": "9a9caef65af09dae978d62abf12705d63f2752ed8064131d6b2fb28fc4a6ac9e",
+  "prepared_public_snapshot": "B28-20261013-pub2",
+  "prepared_content_sha256": "195d4fb6034bbdf1d0666c120650d493382eb178ff8e198a5ec715f76917cf45",
+  "checks": {
+    "db": {
+      "status": "passed",
+      "record": "db_validation_batch28.json"
+    },
+    "history": {
+      "status": "passed",
+      "tables": 39,
+      "record": "batch28_history_preservation.json"
+    },
+    "cycle_history": {
+      "status": "passed",
+      "tables": 39,
+      "record": "cycle03_history_preservation.json"
+    },
+    "regression": {
+      "status": "passed",
+      "tests": 67,
+      "record": "batch28_regression.json"
+    },
+    "type_build": {
+      "status": "passed",
+      "files": 58,
+      "diagnostics": 0,
+      "builds": 2,
+      "record": "batch28_type_build.json"
+    },
+    "prices": {
+      "status": "passed",
+      "services": 50,
+      "unchanged_from_B27_and_B23": true,
+      "record": "batch28_price_summaries.json"
+    },
+    "local_D1": {
+      "status": "passed",
+      "tables": 39,
+      "record": "batch28_local_d1.json"
+    },
+    "local_API": {
+      "status": "passed",
+      "prices": 50,
+      "details": 50,
+      "record": "batch28_local_publication.json"
+    },
+    "browser": {
+      "status": "passed",
+      "cases": 38,
+      "record": "batch28_browser_validation.json"
+    },
+    "viewer": {
+      "status": "passed",
+      "viewports": [
+        1440,
+        390
+      ],
+      "record": "batch28_viewer_scope.json"
+    },
+    "SEO_content": {
+      "status": "passed",
+      "pages": 62,
+      "expected_local_noindex_headers": 62,
+      "production_indexability": "not reverified",
+      "record": "batch28_seo_validation.json"
+    },
+    "sources": {
+      "status": "passed",
+      "sources": 4,
+      "new_distinct_research_documents": 2,
+      "record": "batch28_source_verification.json"
+    },
+    "completion": {
+      "status": "passed",
+      "tasks_marked_done": 0,
+      "record": "batch28_completion_review.json"
+    }
+  },
+  "continued_research": {
+    "batch_id": "B28-20261013",
+    "new_document_findings": 5,
+    "editorial_corrections": 0,
+    "new_price_components": 0,
+    "reference_regulations": 0,
+    "source_retrievals": 4,
+    "functional_research_sources": 4,
+    "functional_research_products": 1,
+    "products_including_classification_corrections": 1,
+    "finding_states": {
+      "known": 3,
+      "not_found": 2
+    }
+  },
+  "task_states": {
+    "blocked": 78,
+    "done": 2,
+    "in_progress": 242,
+    "not_started": 658
+  },
+  "unfinished": 978,
+  "priority1_open": 29,
+  "tasks_started": 2,
+  "task_updates": 2,
+  "tasks_marked_done": 0,
+  "new_tasks": 0,
+  "new_distinct_research_documents": 2,
+  "independent_tests_performed": false,
+  "production_current_rechecked": false,
+  "user_reported_production_batch": "B18-20261012",
+  "remote_operations": false,
+  "commit_push_CI_deploy_paid_API_or_auth_change": false,
+  "all_temporary_servers_stopped": true,
+  "comparison_deltas": {
+    "B27": {
+      "statement_count": 161,
+      "sql_sha256": "486f67adde790d267c518704f3099978acd8a76bfbf3fc38805dc714878fa582",
+      "local_sql_roundtrip": "passed",
+      "prior_publication_rows_preserved": true
+    },
+    "B18": {
+      "statement_count": 742,
+      "sql_sha256": "7679254348ce264993649bfa60f972a9aa1e2d2a544ceb0d86aceb02460bed26",
+      "local_sql_roundtrip": "passed",
+      "prior_publication_rows_preserved": true
+    }
+  },
+  "manifest_files": 294
+}

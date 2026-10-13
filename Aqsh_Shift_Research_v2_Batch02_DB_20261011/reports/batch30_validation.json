@@ -1,0 +1,117 @@
+{
+  "status": "passed",
+  "batch_id": "B30-20261013",
+  "checked_at": "2026-10-13T00:46:19.106424+00:00",
+  "research_sha256": "bcd5abe5a9dfb175f692ff92931a19f9fc476ac26030f30aed41e41304804764",
+  "prepared_public_snapshot": "B30-20261013-pub2",
+  "prepared_content_sha256": "789df7f6fbcddb470317c4ffd46b793cfea7210b81cc32f55b94dc890e3be295",
+  "checks": {
+    "db": {
+      "status": "passed",
+      "record": "db_validation_batch30.json"
+    },
+    "history": {
+      "status": "passed",
+      "tables": 39,
+      "record": "batch30_history_preservation.json"
+    },
+    "regression": {
+      "status": "passed",
+      "tests": 67,
+      "record": "batch30_regression.json"
+    },
+    "prices": {
+      "status": "passed",
+      "services": 50,
+      "unchanged_from_B29": true,
+      "components": 118,
+      "record": "batch30_price_summaries.json"
+    },
+    "publication_projection": {
+      "status": "passed",
+      "details": 50,
+      "accepted_findings": 5,
+      "new_unknown_context_in_research": 1,
+      "F04_context_count": 2,
+      "F04_status": "unknown",
+      "method": "SQLite projected JSON; live API not executed this turn"
+    },
+    "browser": {
+      "status": "passed",
+      "viewports": [
+        1440,
+        390
+      ],
+      "record": "batch30_viewer_scope.json"
+    },
+    "sources": {
+      "status": "passed",
+      "sources": 6,
+      "pinned_1_35_x": 4,
+      "mutable_Platform_latest": 2,
+      "direct_observation_sources": 5,
+      "comparison_only_sources": 1,
+      "new_distinct_research_documents": 5,
+      "record": "batch30_source_verification.json"
+    },
+    "completion": {
+      "status": "passed",
+      "tasks_marked_done": 0,
+      "record": "batch30_completion_review.json"
+    },
+    "cost_scope": {
+      "status": "passed",
+      "record": "batch30_cost_scope.json"
+    }
+  },
+  "continued_research": {
+    "batch_id": "B30-20261013",
+    "new_document_findings": 6,
+    "editorial_corrections": 0,
+    "new_price_components": 0,
+    "reference_regulations": 0,
+    "source_retrievals": 6,
+    "functional_research_sources": 5,
+    "functional_research_products": 1,
+    "products_including_classification_corrections": 1,
+    "finding_states": {
+      "known": 5,
+      "not_found": 1
+    }
+  },
+  "task_states": {
+    "blocked": 78,
+    "done": 2,
+    "in_progress": 246,
+    "not_started": 654
+  },
+  "unfinished": 978,
+  "priority1_open": 29,
+  "tasks_started": 2,
+  "task_updates": 2,
+  "tasks_marked_done": 0,
+  "new_tasks": 0,
+  "new_distinct_research_documents": 5,
+  "independent_tests_performed": false,
+  "production_current_rechecked": false,
+  "user_reported_production_batch": "B18-20261012",
+  "remote_operations": false,
+  "commit_push_CI_deploy_paid_API_or_auth_change": false,
+  "all_temporary_servers_stopped": true,
+  "comparison_deltas": {
+    "B29": {
+      "statement_count": 176,
+      "sql_sha256": "7e0ccfdf8c6e6ccb4a1e7fb1f508816b055acfee836d86d417484b0b62f71524",
+      "local_sql_roundtrip": "passed",
+      "prior_publication_rows_preserved": true
+    },
+    "B18": {
+      "statement_count": 854,
+      "sql_sha256": "99f3f1b4e6018678b280e1fc116cd8703d8c86e11a082cbe2d095991251a91e0",
+      "local_sql_roundtrip": "passed",
+      "prior_publication_rows_preserved": true
+    }
+  },
+  "deferred_checks": "Typecheck, both builds, actual isolated local D1/API, full browser suite/SEO: C04T05 or any implementation change",
+  "manifest_files": 320
+}

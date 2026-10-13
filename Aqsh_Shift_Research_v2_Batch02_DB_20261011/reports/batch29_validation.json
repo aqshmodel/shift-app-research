@@ -1,0 +1,113 @@
+{
+  "status": "passed",
+  "batch_id": "B29-20261013",
+  "checked_at": "2026-10-13T00:32:19.318696+00:00",
+  "research_sha256": "16b06a0507d19a3ee70f3796155186a9bf27c323f68c0c3ea3254e90f6d57b7b",
+  "prepared_public_snapshot": "B29-20261013-pub2",
+  "prepared_content_sha256": "e5dc7fd53623e36d6cc955e89aba55081cad9e3eebcb43a2f8b488281d24764c",
+  "checks": {
+    "db": {
+      "status": "passed",
+      "record": "db_validation_batch29.json"
+    },
+    "history": {
+      "status": "passed",
+      "tables": 39,
+      "record": "batch29_history_preservation.json"
+    },
+    "regression": {
+      "status": "passed",
+      "tests": 67,
+      "record": "batch29_regression.json"
+    },
+    "prices": {
+      "status": "passed",
+      "services": 50,
+      "unchanged_from_B28": true,
+      "components": 118,
+      "record": "batch29_price_summaries.json"
+    },
+    "publication_projection": {
+      "status": "passed",
+      "details": 50,
+      "accepted_findings": 6,
+      "new_unknown_context_in_research": 1,
+      "D03_context_count": 2,
+      "method": "SQLite projected JSON; live API not executed this turn"
+    },
+    "browser": {
+      "status": "passed",
+      "viewports": [
+        1440,
+        390
+      ],
+      "record": "batch29_viewer_scope.json"
+    },
+    "sources": {
+      "status": "passed",
+      "sources": 5,
+      "pinned_1_35_x": 5,
+      "new_distinct_research_documents": 5,
+      "record": "batch29_source_verification.json"
+    },
+    "completion": {
+      "status": "passed",
+      "tasks_marked_done": 0,
+      "record": "batch29_completion_review.json"
+    },
+    "cost_scope": {
+      "status": "passed",
+      "record": "batch29_cost_scope.json"
+    }
+  },
+  "continued_research": {
+    "batch_id": "B29-20261013",
+    "new_document_findings": 7,
+    "editorial_corrections": 0,
+    "new_price_components": 0,
+    "reference_regulations": 0,
+    "source_retrievals": 5,
+    "functional_research_sources": 5,
+    "functional_research_products": 1,
+    "products_including_classification_corrections": 1,
+    "finding_states": {
+      "known": 6,
+      "not_found": 1
+    }
+  },
+  "task_states": {
+    "blocked": 78,
+    "done": 2,
+    "in_progress": 244,
+    "not_started": 656
+  },
+  "unfinished": 978,
+  "priority1_open": 29,
+  "tasks_started": 2,
+  "task_updates": 2,
+  "tasks_marked_done": 0,
+  "new_tasks": 0,
+  "new_distinct_research_documents": 5,
+  "independent_tests_performed": false,
+  "production_current_rechecked": false,
+  "user_reported_production_batch": "B18-20261012",
+  "remote_operations": false,
+  "commit_push_CI_deploy_paid_API_or_auth_change": false,
+  "all_temporary_servers_stopped": true,
+  "comparison_deltas": {
+    "B28": {
+      "statement_count": 174,
+      "sql_sha256": "a6cb91e22109f37aabf7d35e0ff29f9ab61bc39e1d337b703d9b95d24122005d",
+      "local_sql_roundtrip": "passed",
+      "prior_publication_rows_preserved": true
+    },
+    "B18": {
+      "statement_count": 797,
+      "sql_sha256": "74f1f646373e37c74c22ac47a06ae1170e37f5e2361d7bca8784d97e809eeb8b",
+      "local_sql_roundtrip": "passed",
+      "prior_publication_rows_preserved": true
+    }
+  },
+  "deferred_checks": "Typecheck, both builds, actual isolated local D1/API, full browser suite/SEO: C04T05 or any implementation change",
+  "manifest_files": 307
+}

@@ -1,0 +1,46 @@
+{
+  "status": "passed",
+  "batch_id": "B26-20261012",
+  "method": "CUA Chrome on isolated local static viewer; screenshot visual review and read-only DOM",
+  "scope": "Affected oplus detail only; full web browser suite planned C03T05",
+  "viewports": [
+    {
+      "width": 1440,
+      "height": 1000,
+      "overflow": false,
+      "records": 2094
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "overflow": false,
+      "detail_overflow": false,
+      "records": 2094
+    }
+  ],
+  "checks": {
+    "new6_ids_present": true,
+    "unconfirmed2_visible": true,
+    "new_sources_linked": true,
+    "hidden_PTO_not_adopted": true,
+    "staff_lock_not_optimizer_fixed": true,
+    "display_filter_not_authorization": true,
+    "profile_roles_and_provider_consent": true,
+    "prior_prices_and_ROI_dispute_visible": true,
+    "console_errors_and_warnings_returned": 0
+  },
+  "screenshots": "Observed in CUA tool output; not archived as package files",
+  "local_server": {
+    "host": "127.0.0.1",
+    "port": 49626,
+    "stopped": true,
+    "escalation_review": "approved"
+  },
+  "favicon": "Static test server favicon.ico 404; no console errors or warnings returned; output unaffected",
+  "html_dataset": {
+    "products": 50,
+    "observations": 2094,
+    "duplicate_ids": 0
+  },
+  "external_logo_availability": "not independently tested"
+}

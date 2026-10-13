@@ -1,0 +1,8 @@
+{
+  "status": "passed",
+  "new_findings": 6,
+  "exact_summary_duplicates": 0,
+  "semantic_review": "New previously unstarted G04/F04 semantics: justification objects, hypothetical assignment comparison, effective weight visibility, recommendation differences and preview single-shift assignability; conversational integration kept separate from rule conversion. Generic scoring/API/skill claims not duplicated; commercial terms not re-polled.",
+  "new_price_components": 0,
+  "existing_price_components": 118
+}

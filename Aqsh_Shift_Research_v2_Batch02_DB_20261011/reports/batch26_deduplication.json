@@ -1,0 +1,8 @@
+{
+  "status": "passed",
+  "new_findings": 6,
+  "exact_summary_duplicates": 0,
+  "semantic_review": "New E01/H01/N01 questions. Staff input lock does not confirm optimizer pinning; hidden PTO HTML not adopted; display filter not authorization; prior generic prices/security/auto features omitted.",
+  "new_price_components": 0,
+  "existing_price_components": 118
+}

@@ -1,0 +1,24 @@
+{
+  "status": "passed",
+  "tasks_marked_done": 0,
+  "task_updates": {
+    "C02": "TASK-RES01264",
+    "C05": "TASK-RES01265",
+    "E01": "TASK-RES01268",
+    "F01": "TASK-RES01271"
+  },
+  "started_tasks": [
+    "TASK-RES01264",
+    "TASK-RES01265",
+    "TASK-RES01268",
+    "TASK-RES01271"
+  ],
+  "partial_only": true,
+  "unfulfilled": {
+    "C02": "1.35.xのSTART_ONLY/START_AND_ENDとcountOnlyBetweenの端点・日跨ぎ・職員timezoneを確認。日本の明けコード・日数/給与帰属・DST・境界実動作は未確認。",
+    "C05": "1.35.xの勤務間分数、最小/最大、REQUIRED/PREFERRED、scope・タグとabsence-aware previewを確認。latestとの文字列/オブジェクト差、現行版・計画窓外・境界は未確認。",
+    "E01": "不可用hardと勤務希望softの別入力、列挙外既定・併用不可・exclusive端点・重みを確認。休暇承認ワークフロー・権限・取消・実現率実測は未確認。",
+    "F01": "hard/medium/softスコアとmandatory未充足の意味、休暇周辺PROHIBITED/UNPREFERREDの範囲を確認。独立テスト・未入力の法令・例外承認は未確認。"
+  },
+  "no_guessed_price_or_scope": true
+}

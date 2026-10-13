@@ -1,0 +1,61 @@
+{
+  "status": "passed",
+  "official_sources": 4,
+  "distinct_urls": 4,
+  "sources": [
+    {
+      "key": "features",
+      "url": "https://opluswork.com/features",
+      "title": "oplus 機能紹介：シフト確定とスタッフ編集ロック",
+      "publisher": "Oplus株式会社",
+      "reference": "シフト提出 / シフト作成 / 無料プランへの登録導線",
+      "retrieved_on": "2026-10-12",
+      "method": "public_web_body",
+      "method_note": "Web本文と公開ブラウザで確定後スタッフ変更/削除ロック・管理者編集の本文を照合。ロックをoptimizer pinned固定と扱わない。 公開・最終更新日・製品版は未表示。全文・本文ハッシュ・原本画像は未保存。ログイン・登録・問い合わせ・試用・権限変更・製品独立試験なし。"
+    },
+    {
+      "key": "faq",
+      "url": "https://opluswork.com/faq",
+      "title": "oplus 公開FAQ：閲覧と個人情報編集の権限",
+      "publisher": "Oplus株式会社",
+      "reference": "全スタッフへのシフト管理閲覧権限 / スタッフ情報編集 / 表示タグ",
+      "retrieved_on": "2026-10-12",
+      "method": "public_web_body",
+      "method_note": "Webと公開ブラウザのFAQ本文を照合。Web抽出冒頭に含まれる非表示アプリフォームのPTO・Confirm・Weekly Repeatラベルは通常表示されず、仕様根拠から除外。 公開・最終更新日・製品版は未表示。全文・本文ハッシュ・原本画像は未保存。ログイン・登録・問い合わせ・試用・権限変更・製品独立試験なし。"
+    },
+    {
+      "key": "security",
+      "url": "https://opluswork.com/securitychecklist",
+      "title": "oplus Security Checklist：提供者のデータアクセス方針",
+      "publisher": "Oplus株式会社",
+      "reference": "マネジメントの職務分離・アクセス制御 / アプリ運用2(1)",
+      "retrieved_on": "2026-10-12",
+      "method": "public_web_body",
+      "method_note": "公開ブラウザで同意なしにはアクセスしない、閲覧/修正の権限を分ける本文を確認。提供者内部の方針を顧客管理者ACLやテナント分離の実証と扱わない。 公開・最終更新日・製品版は未表示。全文・本文ハッシュ・原本画像は未保存。ログイン・登録・問い合わせ・試用・権限変更・製品独立試験なし。"
+    },
+    {
+      "key": "plan",
+      "url": "https://opluswork.com/plan",
+      "title": "oplus 料金ページ：通常表示と非表示有休HTMLの区別",
+      "publisher": "Oplus株式会社",
+      "reference": "標準プランのシフト提出/管理/確定 / 非表示有休オプションDOM",
+      "retrieved_on": "2026-10-12",
+      "method": "public_web_body",
+      "method_note": "Web抽出は有休申請・承認/棄却・残数・履歴と別オプション欄を返した。公開ブラウザ同URLでは当該欄・語句がinnerTextとAXから欠落し、DOM textContentには存在する。非表示HTMLを現行提供・適用プラン・公開料金の根拠として採用しない。 公開・最終更新日・製品版は未表示。全文・本文ハッシュ・原本画像は未保存。ログイン・登録・問い合わせ・試用・権限変更・製品独立試験なし。"
+    }
+  ],
+  "body_checked": true,
+  "public_browser_checked": true,
+  "full_text_archived": false,
+  "publication_dates_not_shown": true,
+  "hidden_markup": {
+    "plan_PTO_textContent": true,
+    "plan_PTO_innerText": false,
+    "plan_approval_textContent": true,
+    "plan_approval_innerText": false,
+    "FAQ_Half_PTO_innerText": false,
+    "adopted_as_current_feature": false
+  },
+  "independent_tests_performed": false,
+  "external_contact": false
+}

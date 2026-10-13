@@ -1,0 +1,47 @@
+{
+  "status": "passed",
+  "batch_id": "B31-20261013",
+  "method": "CUA Chrome on isolated built Worker + 38 unique automated browser cases",
+  "scope": "Affected Timefold content and PC/mobile geometry; full suite as additional verification for SQL emitter change",
+  "viewports": [
+    {
+      "width": 1440,
+      "height": 1000,
+      "document_overflow": false
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "document_overflow": false
+    }
+  ],
+  "checks": {
+    "new6_statements_visible": true,
+    "new6_source_urls": true,
+    "ESS_fixed_1_35_x_and_Platform_latest_scope_separate": true,
+    "roles_and_API_key_scope_distinct": true,
+    "independent_tenant_access_test_not_asserted": true,
+    "customer_backend_and_profile_setup_visible": true,
+    "contract_setup_responsibility_unknown_retained": true,
+    "Experiments_preview_exception_retained": true,
+    "price_unknown_retained": true,
+    "snapshot_B31_visible": true,
+    "console_errors_and_warnings": 0
+  },
+  "screenshots": "CUA output reviewed; automated screenshots archived separately under durable backup; source images/full text not archived",
+  "html_dataset": {
+    "products": 50,
+    "observations": 2123,
+    "duplicate_ids": 0,
+    "new_observation_ids": 6
+  },
+  "local_server": {
+    "host": "127.0.0.1",
+    "port": 54503,
+    "stopped": true,
+    "escalation_review": "approved"
+  },
+  "viewport_reset": true,
+  "agent_tabs_closed": true,
+  "external_logo_availability": "not independently tested"
+}

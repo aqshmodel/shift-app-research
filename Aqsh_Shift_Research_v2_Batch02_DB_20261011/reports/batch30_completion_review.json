@@ -1,0 +1,18 @@
+{
+  "status": "passed",
+  "tasks_marked_done": 0,
+  "task_updates": {
+    "G04": "TASK-RES01276",
+    "F04": "TASK-RES01272"
+  },
+  "started_tasks": [
+    "TASK-RES01276",
+    "TASK-RES01272"
+  ],
+  "partial_only": true,
+  "unfulfilled": {
+    "G04": "固定1.35.xのjustificationオブジェクト・仮割当比較・候補差分とpreviewの個別勤務assignabilityを確認。Platform latest effective weightとの版境界、Include assigned説明相反・可用例の適用未整理、最小矛盾集合/全体解なし/独立試験は留保。",
+    "F04": "顧客実装の会話型UIと構造化JSON入力を対照。自然言語から実ルール生成、解釈プレビュー/誤解拒否/承認/日本語/プラン/外部LLM条件は未確認。会話説明を条件入力へ読み替えない。"
+  },
+  "no_guessed_price_or_scope": true
+}

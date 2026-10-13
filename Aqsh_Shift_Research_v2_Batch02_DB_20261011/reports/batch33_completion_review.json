@@ -1,0 +1,18 @@
+{
+  "status": "passed",
+  "tasks_marked_done": 0,
+  "task_updates": {
+    "C01": "TASK-RES01263",
+    "I06": "TASK-RES01283"
+  },
+  "started_tasks": [
+    "TASK-RES01263",
+    "TASK-RES01283"
+  ],
+  "partial_only": true,
+  "unfulfilled": {
+    "C01": "週次/CUSTOM rotationのgroupと期間算定、contract別ON/OFF列とsoft/hardを部分確認。病棟内二交代/三交代混在、夜勤跨日・月境界・臨床/法令基準、実出力/プランは未確認。",
+    "I06": "技能別職員追加/削除入力のwhat-if、preview実験M×Nと集計/高水準比較の上限・平均/個別対象外を部分確認。曜日時間候補の実評価・最小採用数証明・preview権/費用/版は未確認。"
+  },
+  "no_guessed_price_or_scope": true
+}

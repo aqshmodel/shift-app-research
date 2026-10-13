@@ -1,0 +1,53 @@
+{
+  "status": "passed",
+  "maximum_statement_bytes": 86116,
+  "conservative_limit": 100000,
+  "code_unchanged_from_B31": true,
+  "current_content_hash_verified": true,
+  "all50_products_readable": true,
+  "replay_preserves50": true,
+  "provisional_rows": 0,
+  "SQL_regressions_included": 5,
+  "original_C04T03_repair": {
+    "status": "passed",
+    "original_maximum_statement_bytes": 101655,
+    "repaired_maximum_statement_bytes": 86116,
+    "conservative_limit_bytes": 100000,
+    "products_byte_equal": 50,
+    "all_publication_tables_byte_equal": true,
+    "content_sha256_unchanged": true,
+    "research_sha256_unchanged": true,
+    "SQL_replay_byte_equal": true,
+    "staging_rows": 0,
+    "added_regression_cases": 5,
+    "implementation_files": [
+      "apps/web/scripts/publication_sql.py",
+      "apps/web/scripts/build-publication.py",
+      "apps/web/tests/publication_sql_test.py",
+      "apps/web/tests/verify_publication_test.py"
+    ],
+    "workcopy_only": true,
+    "initial_failure_record": ".local/research-backups/C04T03/author-output.log",
+    "oversized_candidate": ".local/research-backups/C04T03/oversized-candidate",
+    "initial_type_checks": "First runner started before dependency-copy setup completed; next sandbox run failed local listen EPERM; reviewed escalation succeeded. No remote/auth change.",
+    "fixture_repair": "Future snapshot test now materializes complete SQL rows before changing synthetic snapshot IDs; SQL text substitution invalidates staged length guards.",
+    "checked_at": "2026-10-13T01:04:59.715287+00:00"
+  },
+  "current_hash_not_equal_to_B31_by_design": "B33 contains additional research; only the before/after SQL repair within B31 preserved that same content hash",
+  "deltas": {
+    "B32": {
+      "statement_count": 176,
+      "maximum_statement_bytes": 86116,
+      "sql_sha256": "3ffc7101c28bea5000baff595c4383ed1369ad0f090b8b6f9bd2529b543cb294",
+      "local_sql_roundtrip": "passed",
+      "prior_publication_rows_preserved": true
+    },
+    "B18": {
+      "statement_count": 1021,
+      "maximum_statement_bytes": 86116,
+      "sql_sha256": "b2695f3ba1c4fa45dd61515e62074b71ee1ed6ac7993c531cf1b66600a19a2ed",
+      "local_sql_roundtrip": "passed",
+      "prior_publication_rows_preserved": true
+    }
+  }
+}

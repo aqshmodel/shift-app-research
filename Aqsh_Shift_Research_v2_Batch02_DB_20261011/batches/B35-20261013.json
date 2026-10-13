@@ -1,0 +1,160 @@
+{
+  "batch_id": "B35-20261013",
+  "prior_batch": "B34-20261013",
+  "as_of_date": "2026-10-13",
+  "resolution_policy_version": 2,
+  "description": "Connecteam L01/K03：本人アプリ希望提出と不可変更期限、認定partner代行/指導の作業分担",
+  "method": "公式4新規文書から6部分確認。本人アプリ経路/不可日付開始TZ期限/割当時の登録制限を既存一般可用性・自動割当とは分け、任意Proによる設定代行と指導後顧客自力を区別。General/Mobile tab差と40USD hour/session差、地域/購入plan依存を保持。既存Excel手順はProへのリンク導線のみで新規資料増加に数えない。料金明細/課題完了追加なし。全文/本文hash/原本画像未保存。登録/問い合わせ/予約/課金/認証設定/公開/本番再監査なし。",
+  "sources": [
+    {
+      "key": "preferred",
+      "url": "https://help.connecteam.com/en/articles/6569607-allow-users-to-set-their-preferred-working-hours-and-unavailabilities",
+      "title": "Connecteam — Allow Users to Set Their Preferred Working Hours and Unavailabilities",
+      "publisher": "Connecteam",
+      "reference": "Enabling / How Do Users Mark / Admin deletion",
+      "retrieved_on": "2026-10-13",
+      "version_label": "Help dated 2026-01-28; mutable; no app version",
+      "method": "official_document_body",
+      "method_note": "Web lines 43-56,71-99. General settings tab label differs from Unavailability guide; no app tested. 公式本文の要約・URL・locator・取得日・版条件を保存。全文/本文hash/公式原本画像未保存。登録/試用/API/設定/予約/購入/問い合わせ/課金/認証変更なし。"
+    },
+    {
+      "key": "unavailability",
+      "url": "https://help.connecteam.com/en/articles/6489644-starting-guide-to-unavailability",
+      "title": "Connecteam — Starting Guide to Unavailability",
+      "publisher": "Connecteam",
+      "reference": "Enabling / Limiting Changes / How Does It Look For Users",
+      "retrieved_on": "2026-10-13",
+      "version_label": "Help dated 2026-08-18; mutable; no app version",
+      "method": "official_document_body",
+      "method_note": "Web lines 26-59,82-90. Date-start timezone deadline is distinct from shift-start cutoff. 公式本文の要約・URL・locator・取得日・版条件を保存。全文/本文hash/公式原本画像未保存。登録/試用/API/設定/予約/購入/問い合わせ/課金/認証変更なし。"
+    },
+    {
+      "key": "pros",
+      "url": "https://connecteam.com/connecteam-experts/",
+      "title": "Connecteam — Connecteam Pro's",
+      "publisher": "Connecteam",
+      "reference": "Hire a certified pro / Schedule / Setup / footnotes",
+      "retrieved_on": "2026-10-13",
+      "version_label": "Mutable public service page; date not displayed",
+      "method": "official_document_body",
+      "method_note": "Web linked from official import guide, lines 45-59,105-114. Tracking parameters omitted from canonical URL; normalized page re-read. 公式本文の要約・URL・locator・取得日・版条件を保存。全文/本文hash/公式原本画像未保存。登録/試用/API/設定/予約/購入/問い合わせ/課金/認証変更なし。"
+    },
+    {
+      "key": "prosfaq",
+      "url": "https://help.connecteam.com/en/articles/9113052-connecteam-pros-purchase-certified-partner-services",
+      "title": "Connecteam — Connecteam Pros - Purchase Certified Partner Services",
+      "publisher": "Connecteam",
+      "reference": "Fully Setup / Onboarding / FAQs: cost, region, process, billing",
+      "retrieved_on": "2026-10-13",
+      "version_label": "Mutable help; displayed Updated this week; exact date unconfirmed",
+      "method": "official_document_body",
+      "method_note": "Web lines 18-36,41-71. Relative date not treated as exact; session vs hourly wording difference retained. 公式本文の要約・URL・locator・取得日・版条件を保存。全文/本文hash/公式原本画像未保存。登録/試用/API/設定/予約/購入/問い合わせ/課金/認証変更なし。"
+    }
+  ],
+  "findings": [
+    {
+      "product": "US09",
+      "criterion": "L01",
+      "source": "preferred",
+      "summary": "管理者がAvailabilityと希望提出を有効にした勤務表で、本人はモバイルアプリのMy availabilityから日付・希望/不可・詳細を選びConfirmする。Only meの＋からは不可だけを追加でき、希望はMy availabilityのみ。",
+      "locator": "Enabling preferred work / How Do Users Mark",
+      "limitations": "本人アプリの手順を部分確認。iOS/Android別対応・アプリ版・本人ブラウザ提出・承認/確定・追加料金/Expert契約の利用権・権限拒否の実試験は未確認。管理者の設定を本人が変更できるとしない。未記入日の可用扱いや既存の自動割当考慮は再登録しない。",
+      "state": "known",
+      "delivery": "native",
+      "support": "limited",
+      "scope": "General Job Scheduler help 2026-01-28; availability enabled; Operations Expert entitlement not explicitly stated; documented partial scope; no independent product test, current customer version or contract confirmation"
+    },
+    {
+      "product": "US09",
+      "criterion": "L01",
+      "source": "unavailability",
+      "summary": "勤務表ごとに不可の追加/編集/削除を日・時間・分の指定期間内で止められる。期限は勤務表タイムゾーンの各日開始から測り、期間内も閲覧は可能。変更ロックはモバイルアプリとdashboard双方に適用されると説明する。",
+      "locator": "Limiting Unavailability Changes Before the Date / User locked message",
+      "limitations": "勤務開始時刻基準や全勤務表共通期限と読み替えない。prefer to workまで同じロックが及ぶか、等号/端数/DST/深夜の境界・管理者代行の例外・Expertの利用権/版は未確認。期間2日は例で既定値/法定値ではない。設定/期限試験なし。",
+      "state": "known",
+      "delivery": "native",
+      "support": "limited",
+      "scope": "General Job Scheduler help 2026-08-18; per-schedule unavailability change window; customer plan/version unconfirmed; documented partial scope; no independent product test, current customer version or contract confirmation"
+    },
+    {
+      "product": "US09",
+      "criterion": "L01",
+      "source": "unavailability",
+      "summary": "本人はアプリMy Availabilityから終日または時間帯の不可を登録できる。既に割当済みの勤務がある場合は不可を記入できず、重複の表示が出ると説明する。管理者/ownerは不可があっても勤務を配置できる。",
+      "locator": "How Does Setting Unavailability Look For Users",
+      "limitations": "希望提出の許否と管理者配置の許否を区別。割当済みの日全体か重複時間帯だけか、複数勤務表・草案/公開済み勤務・代行削除/変更、本人認証と権限は未試験。1月の希望ガイドはGeneral tab、8月の不可ガイドはMobile app tabで設定場所が異なり、現在UIは未確認。",
+      "state": "known",
+      "delivery": "native",
+      "support": "limited",
+      "scope": "General Job Scheduler help 2026-08-18; mobile user path; admin override documented; customer plan/version unconfirmed; documented partial scope; no independent product test, current customer version or contract confirmation"
+    },
+    {
+      "product": "US09",
+      "criterion": "K03",
+      "source": "pros",
+      "summary": "公式Proサービスは認定proによるSchedule設定を案内し、勤務・テンプレート・繰返し・view・availabilityを対象に挙げる。50分セッション40 USDと表示し、サービス範囲は購入済みsubscription planに従う。",
+      "locator": "Hire a certified pro / Schedule / Book a pro / service footnote",
+      "limitations": "製品名Operations Expertと担当者proを混同しない。Expert標準の無料設定代行ではない。全休息/医療制度条件の設定・顧客要件定義/データ準備の分担・必要回数/工数/検収/版は未確認。単価はK03条件として記録し、時間単位の表記差があるため料金明細追加なし。予約/購入なし。",
+      "state": "known",
+      "delivery": "unknown",
+      "support": "limited",
+      "scope": "Optional certified-pro setup; public service page; depends on subscribed plan; no confirmed customer quotation; documented partial scope; no independent product test, current customer version or contract confirmation"
+    },
+    {
+      "product": "US09",
+      "criterion": "K03",
+      "source": "prosfaq",
+      "summary": "FAQは、設定meeting後に必要な作業を認定partnerが単独で続け、成果を提示して調整する方法を説明する。onboarding meetingは顧客へ事業/解決策/設定例を説明し、その後は顧客が独力で継続する方法と分ける。",
+      "locator": "Fully Setup Features / Onboarding and Training / How does the process work",
+      "limitations": "外部認定partner経由の代行・指導という選択肢の確認で、ベンダー従業員による一律代行/個別開発/検収保証ではない。専門勤務ルールの設定範囲・顧客側工数/準備・版/Expert契約への適用は未確認。days instead of weeksという広告を測定導入時間にしない。",
+      "state": "known",
+      "delivery": "unknown",
+      "support": "limited",
+      "scope": "Optional certified partner; setup vs guidance service; plan-specific scope not confirmed; documented partial scope; no independent product test, current customer version or contract confirmation"
+    },
+    {
+      "product": "US09",
+      "criterion": "K03",
+      "source": "prosfaq",
+      "summary": "FAQはProサービスの地域をEMEAとNorth Americaとし、40 USD/hour・meetingは最大50分と表記する。設定依頼はaccount billing内の導線から予約し、請求はConnecteam経由で次回invoiceへ載ると説明する。",
+      "locator": "FAQs: cost / meeting length / countries / process / charged",
+      "limitations": "公開LPの40 USD/50min sessionと時間単位が異なり、超過/作業継続分/単価算式・必要回数は未確定。日本からの契約可否・日本語/時差・地域例外・Expertへの含有は未確認。導線の存在を予約/認証権付与/費用発生と混同しない。課金画面へアクセスしていない。",
+      "state": "known",
+      "delivery": "unknown",
+      "support": "limited",
+      "scope": "Optional certified partner; EMEA/North America in FAQ; USD public wording; hourly/session distinction unresolved; documented partial scope; no independent product test, current customer version or contract confirmation"
+    }
+  ],
+  "prices": [],
+  "followups": [],
+  "task_updates": [
+    {
+      "task_id": "TASK-RES01239",
+      "state": "in_progress",
+      "priority": 3,
+      "method": "vendor_document",
+      "note": "B35：本人アプリ希望/不可の別経路、勤務表日付開始TZ基準の不可変更期限、割当済み不可登録拒否と管理者配置を部分確認。プラン/OS版/本人web/等号DST/承認/権限実試験は未確認。"
+    },
+    {
+      "task_id": "TASK-RES01237",
+      "state": "in_progress",
+      "priority": 3,
+      "method": "vendor_document",
+      "note": "B35：認定partnerによる設定後単独作業/成果調整と指導後顧客独力の分担、購入plan依存/地域/費用導線を部分確認。hour vs 50min session相違、顧客工数/医療ルール/検収/日本契約は未確認。"
+    }
+  ],
+  "retrieval_checks": [
+    {
+      "product": "US09",
+      "url": "https://help.connecteam.com/en/articles/6569607-allow-users-to-set-their-preferred-working-hours-and-unavailabilities",
+      "result": "availability_enable_general_vs_mobile_tab",
+      "notes": "2026-01-28希望ガイドはGeneral tab、2026-08-18不可ガイドはMobile app tab。画面変更/誤記/別設定のどれか未確認。"
+    },
+    {
+      "product": "US09",
+      "url": "https://help.connecteam.com/en/articles/9113052-connecteam-pros-purchase-certified-partner-services",
+      "result": "pro_hourly_vs_50min_session_wording",
+      "notes": "FAQは40 USD/hourと最大50分、LPは40 USD/50min session。確定見積/算式/総費用を作らない。価格明細追加なし。"
+    }
+  ]
+}

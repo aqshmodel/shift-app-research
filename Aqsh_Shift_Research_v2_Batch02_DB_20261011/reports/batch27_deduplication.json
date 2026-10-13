@@ -1,0 +1,8 @@
+{
+  "status": "passed",
+  "new_findings": 5,
+  "exact_summary_duplicates": 0,
+  "semantic_review": "New untouched C02/C05/E01 queries. Browser hope submission and confirmed schedule notification clarify stages. Existing night fairness, generic auto, private schedule and prices omitted. Break/rotation graphic is not inter-shift actual-time rest; confirmed shifts are not approved leave.",
+  "new_price_components": 0,
+  "existing_price_components": 118
+}
