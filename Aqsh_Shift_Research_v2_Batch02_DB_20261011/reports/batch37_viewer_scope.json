@@ -1,0 +1,52 @@
+{
+  "status": "passed",
+  "batch_id": "B37-20261013",
+  "method": "CUA Chrome on isolated static viewer; DOM and screenshot visual review",
+  "scope": "Connecteam D01/B06 limited/context split; prior B36 unknown/history/prices",
+  "viewports": [
+    {
+      "width": 1440,
+      "height": 1000,
+      "document_scroll_width": 1440,
+      "detail_client_width": 1398,
+      "detail_scroll_width": 1398
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "document_scroll_width": 390,
+      "detail_client_width": 348,
+      "detail_scroll_width": 348
+    }
+  ],
+  "checks": {
+    "new6_ids_present": true,
+    "new_source_links": 6,
+    "new_distinct_source_urls": 4,
+    "partial_and_reference_labels": true,
+    "Job_eligible_vs_clinical_credential_counts": true,
+    "parent_subjob_conditions_visible": true,
+    "Basic_Advanced_Expert_scopes": true,
+    "shared_resource_vs_global_solver": true,
+    "Users_view_draft_sync_conditions": true,
+    "manual_override_and_simultaneous_unknown_visible": true,
+    "prior_F04_F05_unknown_visible": true,
+    "prior_history_and_prices_visible": true,
+    "console_errors_and_warnings": 0
+  },
+  "screenshots": "Reviewed in CUA output; original images not archived",
+  "html_dataset": {
+    "products": 50,
+    "observations": 2157,
+    "duplicate_ids": 0
+  },
+  "viewport_reset": true,
+  "agent_tab_closed": true,
+  "local_server": {
+    "host": "127.0.0.1",
+    "port": 52254,
+    "stopped": true,
+    "escalation_review": "approved; isolated loopback only"
+  },
+  "external_logo_availability": "not independently tested"
+}

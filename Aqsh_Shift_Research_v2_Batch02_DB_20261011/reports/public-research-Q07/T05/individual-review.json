@@ -1,0 +1,132 @@
+[
+  {
+    "review_id": "Q07T05-B04-20261011-TASK006",
+    "task_id": "B04-20261011-TASK006",
+    "product": "Rotageek",
+    "offering_id": "OF-US05",
+    "criterion_id": "B07",
+    "original_task": {
+      "priority": 2,
+      "required_method": "vendor_document",
+      "last_checked_on": "2026-10-12",
+      "task_id": "B04-20261011-TASK006",
+      "offering_id": "OF-US05",
+      "criterion_id": "B07",
+      "task_state": "in_progress",
+      "question": "Healthcare比較表のチェック欄を契約版別に確認し、SSO・API・自動作成の包含を確定する。",
+      "evidence_needed": "vendor_document",
+      "owner": "未割当",
+      "next_review_on": null,
+      "block_reason": null
+    },
+    "q01_public_acceptance_atoms": [
+      "機能を使えるプラン/モジュールの公開対応",
+      "追加契約/地域/βの留保"
+    ],
+    "scope": "RotageekのDigital/+Autoの位置付けとHealthcare表のSSO/API/自動作成欄を、親子の記号と公開本文で照合する。",
+    "reason": "SSO/APIの公開記号は確認できるが、自動最適化の親行と詳細行が矛盾し、対象契約版への包含を確定できない。",
+    "evidence_observation_ids": [
+      "B57-20261013-OBS0001",
+      "B57-20261013-OBS0002",
+      "B57-20261013-OBS0003",
+      "B57-20261013-OBS0004"
+    ],
+    "remaining_work": [
+      "対象地域・Healthcare契約版を指定した正式機能表、親子チェック不一致の解消、SSO/API/自動作成の包含・追加費・実測"
+    ],
+    "primary_queue": "external_confirmation_wait",
+    "public_phase": "bounded_public_search_ended_unknown",
+    "external_state": "waiting_for_formal_document",
+    "resume_condition": "公式改定/正式資料/対象見積の取得又は導入判断に残条件が必要な時。新根拠なしの反復探索はしない。",
+    "after_task_state": "blocked",
+    "factual_support_not_inferred": true,
+    "original_requirements_deleted": false,
+    "acceptance_review": [
+      {
+        "atom": "機能を使えるプラン/モジュールの公開対応",
+        "state": "partial_or_unconfirmed",
+        "observation_ids": [
+          "B57-20261013-OBS0001",
+          "B57-20261013-OBS0002",
+          "B57-20261013-OBS0003",
+          "B57-20261013-OBS0004"
+        ]
+      },
+      {
+        "atom": "追加契約/地域/βの留保",
+        "state": "partial_or_unconfirmed",
+        "observation_ids": [
+          "B57-20261013-OBS0001",
+          "B57-20261013-OBS0002",
+          "B57-20261013-OBS0003",
+          "B57-20261013-OBS0004"
+        ]
+      }
+    ]
+  },
+  {
+    "review_id": "Q07T05-TASK-RES01040",
+    "task_id": "TASK-RES01040",
+    "product": "Rotageek",
+    "offering_id": "OF-US05",
+    "criterion_id": "B07",
+    "original_task": {
+      "priority": 3,
+      "required_method": "vendor_document",
+      "last_checked_on": "2026-10-12",
+      "task_id": "TASK-RES01040",
+      "offering_id": "OF-US05",
+      "criterion_id": "B07",
+      "task_state": "in_progress",
+      "question": "プラン・追加機能の境界：定義の未確認部分・現行条件を確認する。",
+      "evidence_needed": "機能仕様・プラン比較・利用規約・デモ",
+      "owner": "未割当",
+      "next_review_on": null,
+      "block_reason": null
+    },
+    "q01_public_acceptance_atoms": [
+      "機能を使えるプラン/モジュールの公開対応",
+      "追加契約/地域/βの留保"
+    ],
+    "scope": "RotageekのDigital/+Autoの位置付けとHealthcare表のSSO/API/自動作成欄を、親子の記号と公開本文で照合する。",
+    "reason": "SSO/APIの公開記号は確認できるが、自動最適化の親行と詳細行が矛盾し、対象契約版への包含を確定できない。",
+    "evidence_observation_ids": [
+      "B57-20261013-OBS0001",
+      "B57-20261013-OBS0002",
+      "B57-20261013-OBS0003",
+      "B57-20261013-OBS0004"
+    ],
+    "remaining_work": [
+      "対象地域・Healthcare契約版を指定した正式機能表、親子チェック不一致の解消、SSO/API/自動作成の包含・追加費・実測"
+    ],
+    "primary_queue": "external_confirmation_wait",
+    "public_phase": "bounded_public_search_ended_unknown",
+    "external_state": "waiting_for_formal_document",
+    "resume_condition": "公式改定/正式資料/対象見積の取得又は導入判断に残条件が必要な時。新根拠なしの反復探索はしない。",
+    "after_task_state": "blocked",
+    "factual_support_not_inferred": true,
+    "original_requirements_deleted": false,
+    "acceptance_review": [
+      {
+        "atom": "機能を使えるプラン/モジュールの公開対応",
+        "state": "partial_or_unconfirmed",
+        "observation_ids": [
+          "B57-20261013-OBS0001",
+          "B57-20261013-OBS0002",
+          "B57-20261013-OBS0003",
+          "B57-20261013-OBS0004"
+        ]
+      },
+      {
+        "atom": "追加契約/地域/βの留保",
+        "state": "partial_or_unconfirmed",
+        "observation_ids": [
+          "B57-20261013-OBS0001",
+          "B57-20261013-OBS0002",
+          "B57-20261013-OBS0003",
+          "B57-20261013-OBS0004"
+        ]
+      }
+    ]
+  }
+]

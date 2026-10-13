@@ -1,0 +1,200 @@
+{
+  "batch_id": "B43-20261013",
+  "prior_batch": "B42-20261013",
+  "as_of_date": "2026-10-13",
+  "resolution_policy_version": 2,
+  "description": "Q05 T01/5 oplus：公開料金の階層・税表示・人数条件",
+  "method": "限定公式公開調査・ローカル反映。前回の既完/外部待ちを再完了しない。原要件・不明・資料不一致・既存価格119行を保持。Git/CI/本番/課金/登録/問い合わせなし。",
+  "sources": [
+    {
+      "key": "oplus-plan",
+      "url": "https://opluswork.com/plan",
+      "title": "oplus 料金プラン一覧",
+      "publisher": "Oplus株式会社",
+      "retrieved_on": "2026-10-13",
+      "version_label": "公開/改定日不明。閲覧2026-10-13",
+      "method": "public_web_body",
+      "method_note": "公式本文・該当注記を照合。原本はQ05バックアップに保存、取得hashはsource-captures.json。入力・登録・課金・問い合わせ・独立製品試験なし。",
+      "scope_note": "Q01の限定公開質問終了基準に従う。原要件と未確認条件を個別台帳へ保持。"
+    },
+    {
+      "key": "oplus-law",
+      "url": "https://opluswork.com/tokushoho",
+      "title": "oplus 特商法に基づく表示",
+      "publisher": "Oplus株式会社",
+      "retrieved_on": "2026-10-13",
+      "version_label": "公開/改定日不明。閲覧2026-10-13",
+      "method": "public_web_body",
+      "method_note": "公式本文・該当注記を照合。原本はQ05バックアップに保存、取得hashはsource-captures.json。入力・登録・課金・問い合わせ・独立製品試験なし。",
+      "scope_note": "Q01の限定公開質問終了基準に従う。原要件と未確認条件を個別台帳へ保持。"
+    },
+    {
+      "key": "oplus-faq",
+      "url": "https://opluswork.com/faqhp",
+      "title": "oplus よくある質問",
+      "publisher": "Oplus株式会社",
+      "retrieved_on": "2026-10-13",
+      "version_label": "公開/改定日不明。閲覧2026-10-13",
+      "method": "public_web_body",
+      "method_note": "公式本文・該当注記を照合。原本はQ05バックアップに保存、取得hashはsource-captures.json。入力・登録・課金・問い合わせ・独立製品試験なし。",
+      "scope_note": "Q01の限定公開質問終了基準に従う。原要件と未確認条件を個別台帳へ保持。"
+    },
+    {
+      "key": "oplus-ai",
+      "url": "https://opluswork.com/aishift",
+      "title": "oplus 自動シフト作成機能",
+      "publisher": "Oplus株式会社",
+      "retrieved_on": "2026-10-13",
+      "version_label": "公開/改定日不明。閲覧2026-10-13",
+      "method": "public_web_body",
+      "method_note": "公式本文・該当注記を照合。原本はQ05バックアップに保存、取得hashはsource-captures.json。入力・登録・課金・問い合わせ・独立製品試験なし。",
+      "scope_note": "Q01の限定公開質問終了基準に従う。原要件と未確認条件を個別台帳へ保持。"
+    },
+    {
+      "key": "oplus-terms",
+      "url": "https://opluswork.com/terms",
+      "title": "oplus 利用規約",
+      "publisher": "Oplus株式会社",
+      "retrieved_on": "2026-10-13",
+      "version_label": "公開/改定日不明。閲覧2026-10-13",
+      "method": "public_web_body",
+      "method_note": "公式本文・該当注記を照合。原本はQ05バックアップに保存、取得hashはsource-captures.json。入力・登録・課金・問い合わせ・独立製品試験なし。",
+      "scope_note": "Q01の限定公開質問終了基準に従う。原要件と未確認条件を個別台帳へ保持。"
+    }
+  ],
+  "findings": [
+    {
+      "product": "JP18",
+      "criterion": "P01",
+      "source": "oplus-plan",
+      "state": "known",
+      "support": "limited",
+      "delivery": "unknown",
+      "summary": "スタンダード0円（上限100ユーザー）、Pro100円/ユーザー、Pro+勤怠200円/ユーザーを掲載。別オプション欄は自動作成300円、有休管理50円、oplus chat100円/ユーザー。",
+      "locator": "基本3プラン / オプション3種",
+      "limitations": "表示額と利用料金への包含を分ける。Proの月換算はROI年額による既存解釈で、全オプションの請求周期を同じと推定しない。自動作成の適用単価は別の不一致記録と照合。",
+      "scope": "2026-10-13の公式公開資料照合。資料の対象国/版/プランに限定。個別契約適用と実動作は未検証。"
+    },
+    {
+      "product": "JP18",
+      "criterion": "P01",
+      "source": "oplus-law",
+      "state": "known",
+      "support": "limited",
+      "delivery": "unknown",
+      "summary": "特商法表示はサービスごとに消費税等を含む販売価格を表示し、追加商品代金なし・料金税込と説明する。",
+      "locator": "販売価格帯 / 商品代金以外に必要な費用",
+      "limitations": "料金表の各欄自体には税表示がなく、一般の税方針と特定プラン・法人個別契約への適用を区別。既存税不明の価格行を上書きしない。",
+      "scope": "2026-10-13の公式公開資料照合。資料の対象国/版/プランに限定。個別契約適用と実動作は未検証。"
+    },
+    {
+      "product": "JP18",
+      "criterion": "P01",
+      "source": "oplus-plan",
+      "state": "disputed",
+      "support": "limited",
+      "delivery": "unknown",
+      "summary": "自動作成は300円/ユーザーの表示に対し、同ページのROI表は20人年60,000円（算術換算250円/人/月）などを使用。FAQはProで自動作成と記載し、料金表は追加オプションとするため適用額・包含は未確定。",
+      "locator": "自動作成オプション / 年間費用対効果表 / FAQ機能の参照",
+      "limitations": "差額を値引き・現行契約単価・年払特典と推定しない。正式な対象プラン/追加料金/税/周期が示された時に再開。FAQと料金表の公開/改定日は不明。",
+      "scope": "2026-10-13の公式公開資料照合。資料の対象国/版/プランに限定。個別契約適用と実動作は未検証。"
+    },
+    {
+      "product": "JP18",
+      "criterion": "P02",
+      "source": "oplus-plan",
+      "state": "known",
+      "support": "limited",
+      "delivery": "unknown",
+      "summary": "課金表示はユーザー単位。無料スタンダードの上限は100ユーザー、有料Pro/Pro+勤怠はユーザー当たりの料金として掲載する。",
+      "locator": "基本プランのユーザー単位と100人注記",
+      "limitations": "有料プランの最低請求人数、管理者・休職者・兼務者の人数算定と重複課金は未記載。無料上限を最低契約人数にしない。",
+      "scope": "2026-10-13の公式公開資料照合。資料の対象国/版/プランに限定。個別契約適用と実動作は未検証。"
+    },
+    {
+      "product": "JP18",
+      "criterion": "P02",
+      "source": "oplus-faq",
+      "state": "known",
+      "support": "limited",
+      "delivery": "unknown",
+      "summary": "FAQはスタッフ数が100名を超える場合に有料への切替が必要と明記する。",
+      "locator": "無料登録後もずっと無料か / 有料プランについて",
+      "limitations": "100ユーザーと100スタッフの表示を記録。スタッフ登録上限と課金数量の定義を同一視しない。管理者の無料除外・実利用者のみ課金は未確認。",
+      "scope": "2026-10-13の公式公開資料照合。資料の対象国/版/プランに限定。個別契約適用と実動作は未検証。"
+    }
+  ],
+  "task_updates": [
+    {
+      "task_id": "TASK-RES00800",
+      "state": "done",
+      "priority": 2,
+      "method": "public_document",
+      "expected_task": {
+        "priority": 2,
+        "required_method": "vendor_quote",
+        "last_checked_on": "2026-10-12",
+        "task_state": "in_progress",
+        "question": "料金方式・公開範囲：定義の未確認部分・現行条件を確認する。",
+        "evidence_needed": "公式料金・個別見積・契約書",
+        "owner": "未割当",
+        "next_review_on": null,
+        "block_reason": null
+      },
+      "changes": {
+        "owner": "公開資料確認終了 / 残条件は導入時再開",
+        "block_reason": null,
+        "next_review_on": null,
+        "question": "oplusの公開基本料金・別オプション表示と一般税方針を照合し、自動作成の資料不一致を分離する。",
+        "evidence_needed": "公式公開資料の該当箇所・日付・適用条件。原要件と個別契約/実測の残条件はQ05台帳へ保持。"
+      },
+      "note": "{\"review_id\":\"Q05T01-TASK-RES00800\",\"task_id\":\"TASK-RES00800\",\"product\":\"oplus\",\"offering_id\":\"OF-JP18\",\"criterion_id\":\"P01\",\"original_task\":{\"priority\":2,\"required_method\":\"vendor_quote\",\"last_checked_on\":\"2026-10-12\",\"task_id\":\"TASK-RES00800\",\"offering_id\":\"OF-JP18\",\"criterion_id\":\"P01\",\"task_state\":\"in_progress\",\"question\":\"料金方式・公開範囲：定義の未確認部分・現行条件を確認する。\",\"evidence_needed\":\"公式料金・個別見積・契約書\",\"owner\":\"未割当\",\"next_review_on\":null,\"block_reason\":null},\"q01_public_acceptance_atoms\":[\"固定/人数/施設/計算/買切り/見積の公開方式\",\"通貨/税/時点/対象プランの条件\"],\"scope\":\"oplusの公開基本料金・別オプション表示と一般税方針を照合し、自動作成の資料不一致を分離する。\",\"reason\":\"該当する公式公開記載を照合し、限定公開質問の肯定根拠と未記載/個別契約の残条件を分離した。\",\"evidence_observation_ids\":[\"B43-20261013-OBS0001\",\"B43-20261013-OBS0002\"],\"remaining_work\":[\"自動作成300円とROI換算250円の適用差、Proへの包含のFAQ相違、全オプションの請求周期、個別契約税・額・組合せ\"],\"primary_queue\":\"completed_public_check\",\"public_phase\":\"completed_bounded_document_question\",\"external_state\":\"deferred_until_adoption\",\"resume_condition\":\"公式改定/正式資料/対象見積の取得又は導入判断に残条件が必要な時。新根拠なしの反復探索はしない。\",\"after_task_state\":\"done\",\"factual_support_not_inferred\":true,\"original_requirements_deleted\":false}",
+      "public_completion": {
+        "scope": "oplusの公開基本料金・別オプション表示と一般税方針を照合し、自動作成の資料不一致を分離する。",
+        "observation_ids": [
+          "B43-20261013-OBS0001",
+          "B43-20261013-OBS0002"
+        ],
+        "remaining_work": [
+          "自動作成300円とROI換算250円の適用差、Proへの包含のFAQ相違、全オプションの請求周期、個別契約税・額・組合せ"
+        ]
+      }
+    },
+    {
+      "task_id": "TASK-RES00801",
+      "state": "done",
+      "priority": 3,
+      "method": "public_document",
+      "expected_task": {
+        "priority": 3,
+        "required_method": "unknown",
+        "last_checked_on": "2026-10-13",
+        "task_state": "in_progress",
+        "question": "課金対象・単位：定義の未確認部分・現行条件を確認する。",
+        "evidence_needed": "公式料金・個別見積・契約書",
+        "owner": "未割当",
+        "next_review_on": null,
+        "block_reason": null
+      },
+      "changes": {
+        "owner": "公開資料確認終了 / 残条件は導入時再開",
+        "block_reason": null,
+        "next_review_on": null,
+        "question": "oplusの公開ユーザー単位と無料100人上限、有料切替条件を照合する。",
+        "evidence_needed": "公式公開資料の該当箇所・日付・適用条件。原要件と個別契約/実測の残条件はQ05台帳へ保持。"
+      },
+      "note": "{\"review_id\":\"Q05T01-TASK-RES00801\",\"task_id\":\"TASK-RES00801\",\"product\":\"oplus\",\"offering_id\":\"OF-JP18\",\"criterion_id\":\"P02\",\"original_task\":{\"priority\":3,\"required_method\":\"unknown\",\"last_checked_on\":null,\"task_id\":\"TASK-RES00801\",\"offering_id\":\"OF-JP18\",\"criterion_id\":\"P02\",\"task_state\":\"not_started\",\"question\":\"課金対象・単位：定義の未確認部分・現行条件を確認する。\",\"evidence_needed\":\"公式料金・個別見積・契約書\",\"owner\":\"未割当\",\"next_review_on\":null,\"block_reason\":null},\"q01_public_acceptance_atoms\":[\"公開された課金対象と単位\",\"管理者/休職/兼務/最低数量等の記載範囲\"],\"scope\":\"oplusの公開ユーザー単位と無料100人上限、有料切替条件を照合する。\",\"reason\":\"該当する公式公開記載を照合し、限定公開質問の肯定根拠と未記載/個別契約の残条件を分離した。\",\"evidence_observation_ids\":[\"B43-20261013-OBS0004\",\"B43-20261013-OBS0005\"],\"remaining_work\":[\"管理者/休職/兼務の算定、最低有料人数/請求額、拠点をまたぐ重複、アカウント登録者と課金対象の差\"],\"primary_queue\":\"completed_public_check\",\"public_phase\":\"completed_bounded_document_question\",\"external_state\":\"deferred_until_adoption\",\"resume_condition\":\"公式改定/正式資料/対象見積の取得又は導入判断に残条件が必要な時。新根拠なしの反復探索はしない。\",\"after_task_state\":\"done\",\"factual_support_not_inferred\":true,\"original_requirements_deleted\":false}",
+      "public_completion": {
+        "scope": "oplusの公開ユーザー単位と無料100人上限、有料切替条件を照合する。",
+        "observation_ids": [
+          "B43-20261013-OBS0004",
+          "B43-20261013-OBS0005"
+        ],
+        "remaining_work": [
+          "管理者/休職/兼務の算定、最低有料人数/請求額、拠点をまたぐ重複、アカウント登録者と課金対象の差"
+        ]
+      }
+    }
+  ],
+  "prices": []
+}

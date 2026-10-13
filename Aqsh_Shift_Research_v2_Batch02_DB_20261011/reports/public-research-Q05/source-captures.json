@@ -1,0 +1,171 @@
+{
+  "captures": [
+    {
+      "key": "oplus-plan",
+      "url": "https://opluswork.com/plan",
+      "final_url": "https://opluswork.com/plan",
+      "status": 200,
+      "bytes": 118792,
+      "sha256": "57917271b4cf3e184981939b084af3ad5f1ccc93dbb7f709ab66457fa80a10d3",
+      "retrieved_at": "2026-10-13T11:53:54.693377+00:00",
+      "path": "/Users/tsukadatakahiro/Python/app/shift-app/.local/research-backups/Q05-20261013/source-captures/oplus-plan.html"
+    },
+    {
+      "key": "oplus-law",
+      "url": "https://opluswork.com/tokushoho",
+      "final_url": "https://opluswork.com/tokushoho",
+      "status": 200,
+      "bytes": 18488,
+      "sha256": "b857742f9cc2800a5d01bb8e645bbf966ecdbbe05971341f4aad0588ffabcb6f",
+      "retrieved_at": "2026-10-13T11:53:54.599541+00:00",
+      "path": "/Users/tsukadatakahiro/Python/app/shift-app/.local/research-backups/Q05-20261013/source-captures/oplus-law.html"
+    },
+    {
+      "key": "oplus-faq",
+      "url": "https://opluswork.com/faqhp",
+      "final_url": "https://opluswork.com/faqhp",
+      "status": 200,
+      "bytes": 29820,
+      "sha256": "87ec1c2ad1b3b3f00062e1add32d53c90b123835ae5782330f92ab58bd9eeb5c",
+      "retrieved_at": "2026-10-13T11:53:54.635525+00:00",
+      "path": "/Users/tsukadatakahiro/Python/app/shift-app/.local/research-backups/Q05-20261013/source-captures/oplus-faq.html"
+    },
+    {
+      "key": "oplus-ai",
+      "url": "https://opluswork.com/aishift",
+      "final_url": "https://opluswork.com/aishift",
+      "status": 200,
+      "bytes": 30641,
+      "sha256": "673d97ae1d5de9585047d1e541f635771991e1b2580e04ebe8c4dccb42881b11",
+      "retrieved_at": "2026-10-13T11:53:54.777069+00:00",
+      "path": "/Users/tsukadatakahiro/Python/app/shift-app/.local/research-backups/Q05-20261013/source-captures/oplus-ai.html"
+    },
+    {
+      "key": "oplus-terms",
+      "url": "https://opluswork.com/terms",
+      "final_url": "https://opluswork.com/terms",
+      "status": 200,
+      "bytes": 43795,
+      "sha256": "25e810303ce223f6622a93a00bab69f37f19f6cfdf40b051c2758859acc60452",
+      "retrieved_at": "2026-10-13T11:53:54.892919+00:00",
+      "path": "/Users/tsukadatakahiro/Python/app/shift-app/.local/research-backups/Q05-20261013/source-captures/oplus-terms.html"
+    },
+    {
+      "key": "shiftee-charge",
+      "url": "https://www.shifteeapp.jp/charge/",
+      "final_url": "https://www.shifteeapp.jp/charge/",
+      "status": 200,
+      "bytes": 56132,
+      "sha256": "53e7b9094c09868ae1b76feb01eb6df38ca1bdd1cd9fe9e42262ef4f3f5f6f45",
+      "retrieved_at": "2026-10-13T11:53:55.732699+00:00",
+      "path": "/Users/tsukadatakahiro/Python/app/shift-app/.local/research-backups/Q05-20261013/source-captures/shiftee-charge.html"
+    },
+    {
+      "key": "shiftee-faq",
+      "url": "https://www.shifteeapp.jp/faq/",
+      "final_url": "https://www.shifteeapp.jp/faq/",
+      "status": 200,
+      "bytes": 63565,
+      "sha256": "4286139071e296255246085172027e1b1f52e452b8e73081b5c6bc47ac78a909",
+      "retrieved_at": "2026-10-13T11:53:55.821991+00:00",
+      "path": "/Users/tsukadatakahiro/Python/app/shift-app/.local/research-backups/Q05-20261013/source-captures/shiftee-faq.html"
+    },
+    {
+      "key": "shiftee-terms-news",
+      "url": "https://www.shifteeapp.jp/%E3%80%8Eshiftee%E3%80%8F%E3%82%AF%E3%83%A9%E3%82%A6%E3%83%89%E3%82%B5%E3%83%BC%E3%83%93%E3%82%B9%E5%88%A9%E7%94%A8%E7%B4%84%E6%AC%BE%E3%82%92%E5%A4%89%E6%9B%B4%E8%87%B4%E3%81%97%E3%81%BE%E3%81%99/",
+      "final_url": "https://www.shifteeapp.jp/%E3%80%8Eshiftee%E3%80%8F%E3%82%AF%E3%83%A9%E3%82%A6%E3%83%89%E3%82%B5%E3%83%BC%E3%83%93%E3%82%B9%E5%88%A9%E7%94%A8%E7%B4%84%E6%AC%BE%E3%82%92%E5%A4%89%E6%9B%B4%E8%87%B4%E3%81%97%E3%81%BE%E3%81%99/",
+      "status": 200,
+      "bytes": 45553,
+      "sha256": "e5f3020bb87e931cbf31e8791875c1e3d14adaf474fe3b3ef1fd45dd51d5fb83",
+      "retrieved_at": "2026-10-13T11:53:55.656272+00:00",
+      "path": "/Users/tsukadatakahiro/Python/app/shift-app/.local/research-backups/Q05-20261013/source-captures/shiftee-terms-news.html"
+    },
+    {
+      "key": "time-price",
+      "url": "https://www.otasukeman.jp/price",
+      "final_url": "https://www.otasukeman.jp/price",
+      "status": 200,
+      "bytes": 57007,
+      "sha256": "5b46b35f664aa22a2bb4939866cd2490e68dcd4b9e6d83864c946c2ac38afcd9",
+      "retrieved_at": "2026-10-13T11:53:56.022377+00:00",
+      "path": "/Users/tsukadatakahiro/Python/app/shift-app/.local/research-backups/Q05-20261013/source-captures/time-price.html"
+    },
+    {
+      "key": "time-main",
+      "url": "https://www.otasukeman.jp/time",
+      "final_url": "https://www.otasukeman.jp/time",
+      "status": 200,
+      "bytes": 122676,
+      "sha256": "07adb442e26d723071e900cef0003f905df093774436eb2b4223f1f53bdabf24",
+      "retrieved_at": "2026-10-13T11:53:56.388926+00:00",
+      "path": "/Users/tsukadatakahiro/Python/app/shift-app/.local/research-backups/Q05-20261013/source-captures/time-main.html"
+    },
+    {
+      "key": "time-faq",
+      "url": "https://www.otasukeman.jp/faq",
+      "final_url": "https://www.otasukeman.jp/faq",
+      "status": 200,
+      "bytes": 73456,
+      "sha256": "2ae184d1a442d6fc170bae74817706af7ac7ddb91f20f100c71cd52ca4619cab",
+      "retrieved_at": "2026-10-13T11:53:56.508353+00:00",
+      "path": "/Users/tsukadatakahiro/Python/app/shift-app/.local/research-backups/Q05-20261013/source-captures/time-faq.html"
+    },
+    {
+      "key": "nurse-main",
+      "url": "https://nurse-shift.com/",
+      "final_url": "https://nurse-shift.com/",
+      "status": 200,
+      "bytes": 86140,
+      "sha256": "0bd1b48faa7b43f90621d847b2c19660d717603c5618c4d4f4410c90eba0fe0d",
+      "retrieved_at": "2026-10-13T11:53:56.245659+00:00",
+      "path": "/Users/tsukadatakahiro/Python/app/shift-app/.local/research-backups/Q05-20261013/source-captures/nurse-main.html"
+    },
+    {
+      "key": "rosterlab-price",
+      "url": "https://rosterlab.com/us/pricing",
+      "final_url": "https://rosterlab.com/us/pricing",
+      "status": 200,
+      "bytes": 216316,
+      "sha256": "18c216168c78c8b09410b6cd0a208814bee3a84b234175bd0ff26b165c3b9d1b",
+      "retrieved_at": "2026-10-13T11:53:57.953781+00:00",
+      "path": "/Users/tsukadatakahiro/Python/app/shift-app/.local/research-backups/Q05-20261013/source-captures/rosterlab-price.html"
+    },
+    {
+      "key": "rosterlab-contact",
+      "url": "https://rosterlab.com/us/contact",
+      "final_url": "https://rosterlab.com/us/contact",
+      "status": 200,
+      "bytes": 94932,
+      "sha256": "07e7136905c2bf6850fdc5001fb18866b5e399a605707b0719a36bedec3976df",
+      "retrieved_at": "2026-10-13T12:03:13.332849+00:00",
+      "path": "/Users/tsukadatakahiro/Python/app/shift-app/.local/research-backups/Q05-20261013/source-captures/rosterlab-contact.html"
+    },
+    {
+      "key": "shifteecloud_public",
+      "url": "https://www.shifteeapp.jp/shifteecloud_public.pdf",
+      "status": 200,
+      "sha256": "3502a34f653336df17e532ec789e779cd49d70326fd7676789dfd1bdd864e1c2",
+      "bytes": 438902,
+      "retrieved_at": "2026-10-13T11:54:34.844247+00:00",
+      "path": "/Users/tsukadatakahiro/Python/app/shift-app/.local/research-backups/Q05-20261013/source-captures/shifteecloud_public.pdf"
+    },
+    {
+      "key": "shifteecustom_public",
+      "url": "https://www.shifteeapp.jp/shifteecustom_public.pdf",
+      "status": 200,
+      "sha256": "f55f294ed6f39eec79a66602512887b76256d4c546c153493e68771d027c2dba",
+      "bytes": 322640,
+      "retrieved_at": "2026-10-13T11:54:35.233077+00:00",
+      "path": "/Users/tsukadatakahiro/Python/app/shift-app/.local/research-backups/Q05-20261013/source-captures/shifteecustom_public.pdf"
+    }
+  ],
+  "HTML_originals": "Q05バックアップsource-capturesに保管",
+  "PDF_originals": "sourcesに2件保存",
+  "published_dates": {
+    "shiftee_terms_effective": "2026-10-05",
+    "shiftee_news": "2019-09-30",
+    "nurse_terms": "2026-08-04",
+    "other": "不明"
+  },
+  "reviewed_at": "2026-10-13T12:17:50.053215+00:00"
+}

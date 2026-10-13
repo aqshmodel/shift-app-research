@@ -1,0 +1,75 @@
+{
+  "status": "passed",
+  "snapshot": "B47-20261013-pub2",
+  "services": 5,
+  "widths": [
+    1440,
+    390
+  ],
+  "checks": [
+    {
+      "product": "JP18",
+      "width": 1440,
+      "required_text": true,
+      "overflow": false
+    },
+    {
+      "product": "JP17",
+      "width": 1440,
+      "required_text": true,
+      "overflow": false
+    },
+    {
+      "product": "JP06",
+      "width": 1440,
+      "required_text": true,
+      "overflow": false
+    },
+    {
+      "product": "JP11",
+      "width": 1440,
+      "required_text": true,
+      "overflow": false
+    },
+    {
+      "product": "US01",
+      "width": 1440,
+      "required_text": true,
+      "overflow": false
+    },
+    {
+      "product": "JP18",
+      "width": 390,
+      "required_text": true,
+      "overflow": false
+    },
+    {
+      "product": "JP17",
+      "width": 390,
+      "required_text": true,
+      "overflow": false
+    },
+    {
+      "product": "JP06",
+      "width": 390,
+      "required_text": true,
+      "overflow": false
+    },
+    {
+      "product": "JP11",
+      "width": 390,
+      "required_text": true,
+      "overflow": false
+    },
+    {
+      "product": "US01",
+      "width": 390,
+      "required_text": true,
+      "overflow": false
+    }
+  ],
+  "overflow": false,
+  "pageErrors": [],
+  "no_fabricated_price": true,
+  "external_DNS_blocked": true
+}

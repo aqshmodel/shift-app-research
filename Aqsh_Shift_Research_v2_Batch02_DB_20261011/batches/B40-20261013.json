@@ -1,0 +1,516 @@
+{
+  "batch_id": "B40-20261013",
+  "prior_batch": "B39-20261013",
+  "as_of_date": "2026-10-13",
+  "resolution_policy_version": 2,
+  "description": "Q02 掲載に影響する8公開質問の限定照合：公式料金画像・BPO自動編成・提供案内と未確認条件の分離",
+  "method": "Q01の公開確認終了ゲートを使用。8件を一巡、4限定公開質問を完了、4未知を正式文書/デモ待ちとして保存。問い合わせ・登録・製品試験・本番/Git/CI/課金なし。元の質問・根拠・履歴を保存。",
+  "sources": [
+    {
+      "key": "syn-image",
+      "url": "https://storage.googleapis.com/studio-design-asset-files/projects/Jgqen72mak/s-1705x1424_v-fms_webp_bb63d3e5-903d-4fb4-97ac-2e26d045a7d6.webp",
+      "title": "シンクロシフト — 公式サブスクリプション料金画像",
+      "publisher": "株式会社サインキューブ",
+      "retrieved_on": "2026-10-13",
+      "version_label": "Mutable official page; exact update date not stated",
+      "method": "official_browser_image",
+      "scope_note": "公開資料の限定確認。登録・問い合わせ・製品操作なし。公開本文又は通常表示画像の記載範囲のみ。",
+      "method_note": "Chrome通常表示の料金画像を目視確認し、公開画像をGETで保存。画像sha256=4477894b56eff828668b84270b8a0a4a50f036f4c89fdaf9a5f83f6e56b2d623。画像はreports/public-research-Q02/synchro-pricing.webpに保存。source_archivesのPDFとして扱わない。",
+      "reference": "https://synchroseries.jp/#plan / alt=シンクロシフトの料金"
+    },
+    {
+      "key": "syn-home",
+      "url": "https://synchroseries.jp/",
+      "title": "シンクロシフト — 現行導入手順・契約周期",
+      "publisher": "株式会社サインキューブ",
+      "retrieved_on": "2026-10-13",
+      "version_label": "Mutable official page; exact update date not stated",
+      "method": "official_browser_body",
+      "scope_note": "公開資料の限定確認。登録・問い合わせ・製品操作なし。公開本文又は通常表示画像の記載範囲のみ。",
+      "method_note": "本文の該当箇所を確認し要約。検索抜粋のみは採用せず、実測や現行個別契約の保証と区別。"
+    },
+    {
+      "key": "hospi-home",
+      "url": "https://hospi.ai/",
+      "title": "ほすぴタッチ — BPOによる勤務表作成の現行案内",
+      "publisher": "シーライヴ株式会社",
+      "retrieved_on": "2026-10-13",
+      "version_label": "Mutable official page; exact update date not stated",
+      "method": "official_browser_body",
+      "scope_note": "公開資料の限定確認。登録・問い合わせ・製品操作なし。公開本文又は通常表示画像の記載範囲のみ。",
+      "method_note": "本文の該当箇所を確認し要約。検索抜粋のみは採用せず、実測や現行個別契約の保証と区別。"
+    },
+    {
+      "key": "hospi-functions",
+      "url": "https://hospi.ai/Strengths/FunctionOverview",
+      "title": "ほすぴタッチ — 主な機能一覧",
+      "publisher": "シーライヴ株式会社",
+      "retrieved_on": "2026-10-13",
+      "version_label": "Mutable official page; exact update date not stated",
+      "method": "official_browser_body",
+      "scope_note": "公開資料の限定確認。登録・問い合わせ・製品操作なし。公開本文又は通常表示画像の記載範囲のみ。",
+      "method_note": "本文の該当箇所を確認し要約。検索抜粋のみは採用せず、実測や現行個別契約の保証と区別。"
+    },
+    {
+      "key": "mysys",
+      "url": "https://ideanexsys.com/看護介護の勤務表概要/",
+      "title": "勤夢表VX — 看護介護の勤務表概要",
+      "publisher": "マイシス",
+      "retrieved_on": "2026-10-13",
+      "version_label": "Mutable official page; exact update date not stated",
+      "method": "public_web_body",
+      "scope_note": "公開資料の限定確認。登録・問い合わせ・製品操作なし。公開本文又は通常表示画像の記載範囲のみ。",
+      "method_note": "本文の該当箇所を確認し要約。検索抜粋のみは採用せず、実測や現行個別契約の保証と区別。"
+    },
+    {
+      "key": "nurse",
+      "url": "https://nurse-shift.com/",
+      "title": "ナースシフト — スマートフォン利用のFAQ",
+      "publisher": "ナースシフト運営者",
+      "retrieved_on": "2026-10-13",
+      "version_label": "Mutable official page; exact update date not stated",
+      "method": "public_web_body",
+      "scope_note": "公開資料の限定確認。登録・問い合わせ・製品操作なし。公開本文又は通常表示画像の記載範囲のみ。",
+      "method_note": "本文の該当箇所を確認し要約。検索抜粋のみは採用せず、実測や現行個別契約の保証と区別。"
+    },
+    {
+      "key": "miramos",
+      "url": "https://www.konicaminolta.com/jp-ja/miramos/function/medical-care.html",
+      "title": "miramos — 医療業界の機能紹介",
+      "publisher": "コニカミノルタ",
+      "retrieved_on": "2026-10-13",
+      "version_label": "Mutable official page; exact update date not stated",
+      "method": "public_web_body",
+      "scope_note": "公開資料の限定確認。登録・問い合わせ・製品操作なし。公開本文又は通常表示画像の記載範囲のみ。",
+      "method_note": "本文の該当箇所を確認し要約。検索抜粋のみは採用せず、実測や現行個別契約の保証と区別。"
+    },
+    {
+      "key": "risk",
+      "url": "https://docs.timefold.ai/timefold-platform/latest/trust/risk-profile",
+      "title": "Timefold Cloud Platform — Risk profile",
+      "publisher": "Timefold BV",
+      "retrieved_on": "2026-10-13",
+      "version_label": "Mutable official page; exact update date not stated",
+      "method": "public_web_body",
+      "scope_note": "公開資料の限定確認。登録・問い合わせ・製品操作なし。公開本文又は通常表示画像の記載範囲のみ。",
+      "method_note": "本文の該当箇所を確認し要約。検索抜粋のみは採用せず、実測や現行個別契約の保証と区別。"
+    },
+    {
+      "key": "terms",
+      "url": "https://timefold.ai/terms",
+      "title": "Timefold — Terms of use / Data Processing Agreement",
+      "publisher": "Timefold BV",
+      "retrieved_on": "2026-10-13",
+      "version_label": "Last updated April 21st, 2026; retrieved 2026-10-13",
+      "method": "public_web_body",
+      "scope_note": "公開資料の限定確認。登録・問い合わせ・製品操作なし。公開本文又は通常表示画像の記載範囲のみ。",
+      "method_note": "本文の該当箇所を確認し要約。検索抜粋のみは採用せず、実測や現行個別契約の保証と区別。",
+      "updated_on": "2026-04-21"
+    }
+  ],
+  "findings": [
+    {
+      "product": "JP08",
+      "criterion": "P01",
+      "source": "syn-image",
+      "state": "known",
+      "support": "limited",
+      "delivery": "native",
+      "summary": "公式料金画像は有料サブスクリプションを月額500円／ユーザー（税別）とする。ユーザーは勤務表に含まれる人数で、10名以上・5名単位の契約。超過登録には追加契約が必要で、期間中の減数返金は不可。",
+      "locator": "サブスクリプション料金画像 / 1ユーザーあたりの単価",
+      "limitations": "公表価格の確認で、顧客別見積や休職・兼務・最低請求総額の契約適用は未確認。月払い料金と誤解しないよう、年払い・1年契約の本文条件と併記する。",
+      "scope": "2026-10-13公開資料の記載確認。顧客契約・実動作・制度適合・独立性能試験は未検証。"
+    },
+    {
+      "product": "JP08",
+      "criterion": "P01",
+      "source": "syn-home",
+      "state": "known",
+      "support": "limited",
+      "delivery": "native",
+      "summary": "公式本文は有料契約を1年単位・年払い・利用開始前日までの前払いと案内する。機能制限付き無料プランはトライアル終了後または有料解約後に移行でき、最初からの利用はできない。",
+      "locator": "SUBSCRIPTION注記 / FLOW 05",
+      "limitations": "料金画像の500円は月額表示。個別契約・最低年間請求総額・無料プランの機能内訳は未確認。表示料金だけで導入総額を保証しない。",
+      "scope": "2026-10-13公開資料の記載確認。顧客契約・実動作・制度適合・独立性能試験は未検証。"
+    },
+    {
+      "product": "JP08",
+      "criterion": "B07",
+      "source": "syn-image",
+      "state": "known",
+      "support": "limited",
+      "delivery": "native",
+      "summary": "有料サブスクリプションの公式料金画像は、スマホアプリ・シフト自動作成・勤務形態一覧表自動生成・加算チェックなど全機能を利用可能と案内する。無料プランは機能制限付きで、入口は試用終了又は有料解約後の移行と公式本文に記載される。",
+      "locator": "サブスクリプション料金画像 / ご利用頂ける機能",
+      "limitations": "有料機能の公表包含範囲のみを今回確認。無料プランの機能内訳、対象施設/制度版、契約適用・実動作は未確認。過去の「料金画像未確認」はその取得時点の履歴として保存し、この有料プラン説明で更新する。",
+      "scope": "2026-10-13公開資料の記載確認。顧客契約・実動作・制度適合・独立性能試験は未検証。"
+    },
+    {
+      "product": "JP08",
+      "criterion": "A03",
+      "source": "syn-home",
+      "state": "known",
+      "support": "limited",
+      "delivery": "native",
+      "summary": "2026-10-13の公式案内には、有料サブスクリプションへの本契約、サポート付き1か月トライアルと導入手順が掲載されている。商用・試用を案内中のサービスとして掲載できる。",
+      "locator": "FLOW 01〜05 / SUBSCRIPTION",
+      "limitations": "公式の提供案内を確認した範囲。申込枠・各顧客の新規契約受理・即時利用可否は未確認。フォームの存在だけを販売成立の根拠にしていない。",
+      "scope": "2026-10-13公開資料の記載確認。顧客契約・実動作・制度適合・独立性能試験は未検証。"
+    },
+    {
+      "product": "JP13",
+      "criterion": "A03",
+      "source": "hospi-home",
+      "state": "known",
+      "support": "limited",
+      "delivery": "managed_service",
+      "summary": "2026-10-13の公式案内は、完成した勤務表を納品するBPO型のクラウドサービスを案内している。資料・相談・見積の案内と契約者向けログインを区別し、商用サービスの現行公開案内として確認した。",
+      "locator": "HOME / 勤務表を納品するBPO説明",
+      "limitations": "公開案内の確認であり、新規注文の受理・実際の納品・各顧客への提供条件は未確認。医療・介護での各制度適合も保証しない。",
+      "scope": "2026-10-13公開資料の記載確認。顧客契約・実動作・制度適合・独立性能試験は未検証。"
+    },
+    {
+      "product": "JP13",
+      "criterion": "B01",
+      "source": "hospi-functions",
+      "state": "known",
+      "support": "limited",
+      "delivery": "managed_service",
+      "summary": "公式機能一覧は、独自の勤務ルールや個人希望をAIと数理モデルで処理し、指定期間の勤務表を自動編成すると説明する。HOMEはシステム作業を代行し完成勤務表を納品するBPOを案内しており、単なる共有・転記とは区別できる。",
+      "locator": "勤務シフトを自動作成 / 希望受け付け / 自動編成",
+      "limitations": "文書で案内された機能の確認のみ。現行BPO契約での顧客・ベンダーの操作分担、必要人数の指定方法、必須制約の強制力、生成精度・時間は未検証。機能一覧に残る顧客操作説明を全顧客の現行セルフサービス契約とみなさない。",
+      "scope": "2026-10-13公開資料の記載確認。顧客契約・実動作・制度適合・独立性能試験は未検証。"
+    },
+    {
+      "product": "JP19",
+      "criterion": "B01",
+      "source": "mysys",
+      "state": "not_found",
+      "support": "limited",
+      "delivery": "unknown",
+      "summary": "公式概要には、手編集と集計、定例勤務の毎月配置、禁止パターン、勤務記号のシミュレーションを確認した。一方、希望・必要人数・規則から職員全体を自動割当する手順はこの公開資料で特定できない。",
+      "locator": "シフトシミュレーション / 定例勤務設定 / 勤務パターン・勤務体系",
+      "limitations": "定例勤務の反映・Excel転記・様式9出力を勤務表全体の最適化とみなさない。非対応とは断定しない。リンク先の2026年6月カタログは勤務表データ変換ワークシートであり、VXの全体割当機能を証明しない。",
+      "scope": "2026-10-13公開資料の記載確認。顧客契約・実動作・制度適合・独立性能試験は未検証。"
+    },
+    {
+      "product": "JP11",
+      "criterion": "L01",
+      "source": "nurse",
+      "state": "not_found",
+      "support": "limited",
+      "delivery": "unknown",
+      "summary": "FAQはスマホ・タブレットのブラウザ利用とアプリ不要を明記するが、利用者による看護師・希望休登録と、職員本人が個別に認証して希望を提出する機能は区別が必要。後者の手順・権限・追加費用はこの公開案内では未確認。",
+      "locator": "FAQ「スマートフォンでも使えますか？」 / 3ステップ「看護師を登録」",
+      "limitations": "スマホで作成者が使えることを、全職員の自己申請機能ありと分類しない。未記載は非対応ではない。登録・アプリ操作・職員権限試験はしていない。",
+      "scope": "2026-10-13公開資料の記載確認。顧客契約・実動作・制度適合・独立性能試験は未検証。"
+    },
+    {
+      "product": "JP07",
+      "criterion": "H02",
+      "source": "miramos",
+      "state": "not_found",
+      "support": "limited",
+      "delivery": "unknown",
+      "summary": "医療向け機能ページは夜勤と公休を先行配置し修正の連鎖を起きにくくすると説明する。既存表から変更セル数や影響職員数を最小化する目的設定は確認できず、この説明を変更最小化機能の確認根拠にはできない。",
+      "locator": "作業時間の大幅削減 / 夜勤と公休の先行配置",
+      "limitations": "介護向け機能ページも同じ骨組みの説明。これは公表された設計説明であり、変更最小化の目的関数・保証ではない。非対応とは断定せず、専用仕様又は対象デモが得られた時に再開。",
+      "scope": "2026-10-13公開資料の記載確認。顧客契約・実動作・制度適合・独立性能試験は未検証。"
+    },
+    {
+      "product": "US10",
+      "criterion": "N05",
+      "source": "risk",
+      "state": "known",
+      "support": "limited",
+      "delivery": "unknown",
+      "summary": "Timefold Cloud Platformのリスク文書は、入力データのPIIを匿名化または難読化する責任を顧客側に置き、PHIを扱う用途に使わないよう説明する。これは入力データの扱いで、生成AIの送信・学習利用を確認した説明ではない。",
+      "locator": "Sensitive data, PII, and PHI",
+      "limitations": "ホステッドPlatformの公開文書に限定。ユーザープロファイル等の個人情報とは区別。生成AIへの送信項目・学習利用・保持期間・停止設定は未確認。実装・契約への適用と法的適合の保証ではない。",
+      "scope": "2026-10-13公開資料の記載確認。顧客契約・実動作・制度適合・独立性能試験は未検証。"
+    },
+    {
+      "product": "US10",
+      "criterion": "N05",
+      "source": "terms",
+      "state": "known",
+      "support": "limited",
+      "delivery": "unknown",
+      "summary": "2026-04-21改定の公開DPAは、個人データを顧客の指示に従って処理し、契約終了後30日以内の削除と法定保持の例外を定める。付属書2にはホステッドPlatformの保存・認証・分析等の委託先を列挙する。",
+      "locator": "Schedule 1 §4.2 / §7.1 / Annex 2",
+      "limitations": "個人データ一般の公開契約文言。生成AIプロンプトの保持期限やモデル学習禁止を30日削除条項から推定しない。個別Order Formと生成AI機能別の送信・学習・停止条件は未確認。",
+      "scope": "2026-10-13公開資料の記載確認。顧客契約・実動作・制度適合・独立性能試験は未検証。"
+    },
+    {
+      "product": "US10",
+      "criterion": "N05",
+      "source": "risk",
+      "state": "not_disclosed",
+      "support": "limited",
+      "delivery": "unknown",
+      "summary": "公開リスク文書・2026-04-21改定DPA・Explainable AIガイドを限定照合したが、生成AI機能ごとの送信先と項目、学習利用、プロンプト保持期間、オプトアウト仕様は確定できない。",
+      "locator": "Risk profile / 関連するDPAとExplainable AIガイドへの限定照合",
+      "limitations": "最適化APIとLLMを同一視しない。ガイドの顧客によるAIエージェント活用例をTimefold標準機能の第三者送信ポリシーとして採用しない。正式な機能別データ取扱文書が得られた時に再開。",
+      "scope": "2026-10-13公開資料の記載確認。顧客契約・実動作・制度適合・独立性能試験は未検証。"
+    }
+  ],
+  "task_updates": [
+    {
+      "task_id": "TASK-RES00350",
+      "state": "done",
+      "priority": 3,
+      "method": "public_document",
+      "note": "{\"review_id\":\"Q02-TASK-RES00350\",\"task_id\":\"TASK-RES00350\",\"product\":\"シンクロシフト\",\"offering_id\":\"OF-JP08\",\"criterion_id\":\"P01\",\"original_task\":{\"priority\":3,\"required_method\":\"public_document\",\"last_checked_on\":\"2026-10-13\",\"task_id\":\"TASK-RES00350\",\"offering_id\":\"OF-JP08\",\"criterion_id\":\"P01\",\"task_state\":\"in_progress\",\"question\":\"料金方式・公開範囲：定義の未確認部分・現行条件を確認する。\",\"evidence_needed\":\"公式料金・個別見積・契約書\",\"owner\":\"Aqsh / 次の限定公開調査\",\"next_review_on\":null,\"block_reason\":null},\"q01_public_acceptance_atoms\":[\"固定/人数/施設/計算/買切り/見積の公開方式\",\"通貨/税/時点/対象プランの条件\"],\"scope\":\"シンクロシフトの公表有料料金・人数単位・税・契約周期を記録する（個別見積・適用は別確認）。\",\"reason\":\"通常表示の公式料金画像と本文の周期を直接照合。500円/人/月相当・税別・最低10名・5名単位・年払いを確認。\",\"evidence_observation_ids\":[\"B40-20261013-OBS0001\",\"B40-20261013-OBS0002\"],\"remaining_work\":[\"休職/兼務/管理者等の顧客別課金適用\",\"個別見積の最低総額・任意サポート費用と無料プラン機能内訳\"],\"primary_queue\":\"completed_public_check\",\"public_phase\":\"completed_bounded_document_question\",\"external_state\":\"deferred_until_adoption\",\"resume_condition\":\"対象の公式仕様更新/正式資料又は導入候補化で上記の限定条件が必要になった時。新根拠のない反復巡回はしない。\",\"after_task_state\":\"done\",\"factual_support_not_inferred\":true}",
+      "expected_task": {
+        "priority": 3,
+        "required_method": "public_document",
+        "last_checked_on": "2026-10-13",
+        "task_state": "in_progress",
+        "question": "料金方式・公開範囲：定義の未確認部分・現行条件を確認する。",
+        "evidence_needed": "公式料金・個別見積・契約書",
+        "owner": "Aqsh / 次の限定公開調査",
+        "next_review_on": null,
+        "block_reason": null
+      },
+      "changes": {
+        "owner": "公開資料確認終了 / 残条件は導入時に再開",
+        "block_reason": null,
+        "next_review_on": null,
+        "question": "シンクロシフトの公表有料料金・人数単位・税・契約周期を記録する（個別見積・適用は別確認）。",
+        "evidence_needed": "公式公開資料の該当記載とURL/取得日/対象条件。実契約・実測は残条件として別記。"
+      },
+      "public_completion": {
+        "scope": "シンクロシフトの公表有料料金・人数単位・税・契約周期を記録する（個別見積・適用は別確認）。",
+        "observation_ids": [
+          "B40-20261013-OBS0001",
+          "B40-20261013-OBS0002"
+        ],
+        "remaining_work": [
+          "休職/兼務/管理者等の顧客別課金適用",
+          "個別見積の最低総額・任意サポート費用と無料プラン機能内訳"
+        ]
+      }
+    },
+    {
+      "task_id": "TASK-RES00544",
+      "state": "done",
+      "priority": 3,
+      "method": "public_document",
+      "note": "{\"review_id\":\"Q02-TASK-RES00544\",\"task_id\":\"TASK-RES00544\",\"product\":\"ほすぴタッチ\",\"offering_id\":\"OF-JP13\",\"criterion_id\":\"B01\",\"original_task\":{\"priority\":3,\"required_method\":\"public_document\",\"last_checked_on\":\"2026-10-13\",\"task_id\":\"TASK-RES00544\",\"offering_id\":\"OF-JP13\",\"criterion_id\":\"B01\",\"task_state\":\"in_progress\",\"question\":\"勤務表の自動割当：定義の未確認部分・現行条件を確認する。\",\"evidence_needed\":\"機能仕様・プラン比較・利用規約・デモ\",\"owner\":\"Aqsh / 次の限定公開調査\",\"next_review_on\":null,\"block_reason\":null},\"q01_public_acceptance_atoms\":[\"勤務表そのものの自動割当の記載\",\"希望/人数/規則から割当する説明と転記/複製の区別\"],\"scope\":\"ほすぴタッチが勤務ルール・個人希望を処理する勤務表の自動編成を公開機能として案内するか確認する（現行BPO分担・精度は別確認）。\",\"reason\":\"機能一覧の希望/ルールと期間指定による計算を確認し、現行HOMEのBPO案内と区別。\",\"evidence_observation_ids\":[\"B40-20261013-OBS0006\"],\"remaining_work\":[\"現行BPO契約の操作分担・必要人数指定・hard制約の強制力\",\"対象施設の制度適合、生成精度・性能の実測\"],\"primary_queue\":\"completed_public_check\",\"public_phase\":\"completed_bounded_document_question\",\"external_state\":\"deferred_until_adoption\",\"resume_condition\":\"対象の公式仕様更新/正式資料又は導入候補化で上記の限定条件が必要になった時。新根拠のない反復巡回はしない。\",\"after_task_state\":\"done\",\"factual_support_not_inferred\":true}",
+      "expected_task": {
+        "priority": 3,
+        "required_method": "public_document",
+        "last_checked_on": "2026-10-13",
+        "task_state": "in_progress",
+        "question": "勤務表の自動割当：定義の未確認部分・現行条件を確認する。",
+        "evidence_needed": "機能仕様・プラン比較・利用規約・デモ",
+        "owner": "Aqsh / 次の限定公開調査",
+        "next_review_on": null,
+        "block_reason": null
+      },
+      "changes": {
+        "owner": "公開資料確認終了 / 残条件は導入時に再開",
+        "block_reason": null,
+        "next_review_on": null,
+        "question": "ほすぴタッチが勤務ルール・個人希望を処理する勤務表の自動編成を公開機能として案内するか確認する（現行BPO分担・精度は別確認）。",
+        "evidence_needed": "公式公開資料の該当記載とURL/取得日/対象条件。実契約・実測は残条件として別記。"
+      },
+      "public_completion": {
+        "scope": "ほすぴタッチが勤務ルール・個人希望を処理する勤務表の自動編成を公開機能として案内するか確認する（現行BPO分担・精度は別確認）。",
+        "observation_ids": [
+          "B40-20261013-OBS0006"
+        ],
+        "remaining_work": [
+          "現行BPO契約の操作分担・必要人数指定・hard制約の強制力",
+          "対象施設の制度適合、生成精度・性能の実測"
+        ]
+      }
+    },
+    {
+      "task_id": "TASK-RES00318",
+      "state": "done",
+      "priority": 3,
+      "method": "public_document",
+      "note": "{\"review_id\":\"Q02-TASK-RES00318\",\"task_id\":\"TASK-RES00318\",\"product\":\"シンクロシフト\",\"offering_id\":\"OF-JP08\",\"criterion_id\":\"A03\",\"original_task\":{\"priority\":3,\"required_method\":\"public_document\",\"last_checked_on\":\"2026-10-13\",\"task_id\":\"TASK-RES00318\",\"offering_id\":\"OF-JP08\",\"criterion_id\":\"A03\",\"task_state\":\"in_progress\",\"question\":\"提供・販売状態：定義の未確認部分・現行条件を確認する。\",\"evidence_needed\":\"公式会社情報・製品仕様・提供終了告知\",\"owner\":\"Aqsh / 次の限定公開調査\",\"next_review_on\":null,\"block_reason\":null},\"q01_public_acceptance_atoms\":[\"公式に案内される提供中/予定/終了の状態\",\"時点・地域・新規受付への留保\"],\"scope\":\"シンクロシフトの公式サイトが商用・試用を案内中であることを時点付きで確認する（新規契約受理は別確認）。\",\"reason\":\"有料本契約と1か月トライアルの現行本文による提供案内。フォーム存在だけで判断していない。\",\"evidence_observation_ids\":[\"B40-20261013-OBS0004\"],\"remaining_work\":[\"顧客の新規申込受理・提供枠・開始日\"],\"primary_queue\":\"completed_public_check\",\"public_phase\":\"completed_bounded_document_question\",\"external_state\":\"deferred_until_adoption\",\"resume_condition\":\"対象の公式仕様更新/正式資料又は導入候補化で上記の限定条件が必要になった時。新根拠のない反復巡回はしない。\",\"after_task_state\":\"done\",\"factual_support_not_inferred\":true}",
+      "expected_task": {
+        "priority": 3,
+        "required_method": "public_document",
+        "last_checked_on": "2026-10-13",
+        "task_state": "in_progress",
+        "question": "提供・販売状態：定義の未確認部分・現行条件を確認する。",
+        "evidence_needed": "公式会社情報・製品仕様・提供終了告知",
+        "owner": "Aqsh / 次の限定公開調査",
+        "next_review_on": null,
+        "block_reason": null
+      },
+      "changes": {
+        "owner": "公開資料確認終了 / 残条件は導入時に再開",
+        "block_reason": null,
+        "next_review_on": null,
+        "question": "シンクロシフトの公式サイトが商用・試用を案内中であることを時点付きで確認する（新規契約受理は別確認）。",
+        "evidence_needed": "公式公開資料の該当記載とURL/取得日/対象条件。実契約・実測は残条件として別記。"
+      },
+      "public_completion": {
+        "scope": "シンクロシフトの公式サイトが商用・試用を案内中であることを時点付きで確認する（新規契約受理は別確認）。",
+        "observation_ids": [
+          "B40-20261013-OBS0004"
+        ],
+        "remaining_work": [
+          "顧客の新規申込受理・提供枠・開始日"
+        ]
+      }
+    },
+    {
+      "task_id": "TASK-RES00540",
+      "state": "done",
+      "priority": 3,
+      "method": "public_document",
+      "note": "{\"review_id\":\"Q02-TASK-RES00540\",\"task_id\":\"TASK-RES00540\",\"product\":\"ほすぴタッチ\",\"offering_id\":\"OF-JP13\",\"criterion_id\":\"A03\",\"original_task\":{\"priority\":3,\"required_method\":\"public_document\",\"last_checked_on\":\"2026-10-13\",\"task_id\":\"TASK-RES00540\",\"offering_id\":\"OF-JP13\",\"criterion_id\":\"A03\",\"task_state\":\"in_progress\",\"question\":\"提供・販売状態：定義の未確認部分・現行条件を確認する。\",\"evidence_needed\":\"公式会社情報・製品仕様・提供終了告知\",\"owner\":\"Aqsh / 次の限定公開調査\",\"next_review_on\":null,\"block_reason\":null},\"q01_public_acceptance_atoms\":[\"公式に案内される提供中/予定/終了の状態\",\"時点・地域・新規受付への留保\"],\"scope\":\"ほすぴタッチがBPO型の商用勤務表作成サービスを公開案内することを時点付きで確認する（注文受理は別確認）。\",\"reason\":\"HOMEの作成代行・納品の現行サービス案内を確認。ログイン画面だけで判断していない。\",\"evidence_observation_ids\":[\"B40-20261013-OBS0005\"],\"remaining_work\":[\"新規注文受理と各顧客の納品・契約適用\"],\"primary_queue\":\"completed_public_check\",\"public_phase\":\"completed_bounded_document_question\",\"external_state\":\"deferred_until_adoption\",\"resume_condition\":\"対象の公式仕様更新/正式資料又は導入候補化で上記の限定条件が必要になった時。新根拠のない反復巡回はしない。\",\"after_task_state\":\"done\",\"factual_support_not_inferred\":true}",
+      "expected_task": {
+        "priority": 3,
+        "required_method": "public_document",
+        "last_checked_on": "2026-10-13",
+        "task_state": "in_progress",
+        "question": "提供・販売状態：定義の未確認部分・現行条件を確認する。",
+        "evidence_needed": "公式会社情報・製品仕様・提供終了告知",
+        "owner": "Aqsh / 次の限定公開調査",
+        "next_review_on": null,
+        "block_reason": null
+      },
+      "changes": {
+        "owner": "公開資料確認終了 / 残条件は導入時に再開",
+        "block_reason": null,
+        "next_review_on": null,
+        "question": "ほすぴタッチがBPO型の商用勤務表作成サービスを公開案内することを時点付きで確認する（注文受理は別確認）。",
+        "evidence_needed": "公式公開資料の該当記載とURL/取得日/対象条件。実契約・実測は残条件として別記。"
+      },
+      "public_completion": {
+        "scope": "ほすぴタッチがBPO型の商用勤務表作成サービスを公開案内することを時点付きで確認する（注文受理は別確認）。",
+        "observation_ids": [
+          "B40-20261013-OBS0005"
+        ],
+        "remaining_work": [
+          "新規注文受理と各顧客の納品・契約適用"
+        ]
+      }
+    },
+    {
+      "task_id": "TASK-RES00813",
+      "state": "blocked",
+      "priority": 3,
+      "method": "vendor_document",
+      "note": "{\"review_id\":\"Q02-TASK-RES00813\",\"task_id\":\"TASK-RES00813\",\"product\":\"勤夢表VX（V5/VX）\",\"offering_id\":\"OF-JP19\",\"criterion_id\":\"B01\",\"original_task\":{\"priority\":3,\"required_method\":\"public_document\",\"last_checked_on\":\"2026-10-13\",\"task_id\":\"TASK-RES00813\",\"offering_id\":\"OF-JP19\",\"criterion_id\":\"B01\",\"task_state\":\"in_progress\",\"question\":\"勤務表の自動割当：定義の未確認部分・現行条件を確認する。\",\"evidence_needed\":\"機能仕様・プラン比較・利用規約・デモ\",\"owner\":\"Aqsh / 次の限定公開調査\",\"next_review_on\":null,\"block_reason\":null},\"q01_public_acceptance_atoms\":[\"勤務表そのものの自動割当の記載\",\"希望/人数/規則から割当する説明と転記/複製の区別\"],\"scope\":\"公開資料に明記された「勤務表の自動割当」の範囲・対象条件を整理し、未記載/相違/実契約/実測を分ける。\",\"reason\":\"定例配置・転記・集計以外の全体自動割当を公開概要で特定できなかった。\",\"evidence_observation_ids\":[\"B40-20261013-OBS0007\"],\"remaining_work\":[\"VXの希望・人数・ルールによる全体割当を明記した現行仕様又は対象デモ\"],\"primary_queue\":\"external_confirmation_wait\",\"public_phase\":\"bounded_public_search_ended_unknown\",\"external_state\":\"waiting_for_document_or_demo\",\"resume_condition\":\"対象の公式仕様更新/正式資料又は導入候補化で上記の限定条件が必要になった時。新根拠のない反復巡回はしない。\",\"after_task_state\":\"blocked\",\"factual_support_not_inferred\":true}",
+      "expected_task": {
+        "priority": 3,
+        "required_method": "public_document",
+        "last_checked_on": "2026-10-13",
+        "task_state": "in_progress",
+        "question": "勤務表の自動割当：定義の未確認部分・現行条件を確認する。",
+        "evidence_needed": "機能仕様・プラン比較・利用規約・デモ",
+        "owner": "Aqsh / 次の限定公開調査",
+        "next_review_on": null,
+        "block_reason": null
+      },
+      "changes": {
+        "owner": "外部確認待ち / 担当未定",
+        "block_reason": "定例配置・転記・集計以外の全体自動割当を公開概要で特定できなかった。 再開：VXの希望・人数・ルールによる全体割当を明記した現行仕様又は対象デモ",
+        "next_review_on": null
+      }
+    },
+    {
+      "task_id": "TASK-RES00481",
+      "state": "blocked",
+      "priority": 3,
+      "method": "vendor_document",
+      "note": "{\"review_id\":\"Q02-TASK-RES00481\",\"task_id\":\"TASK-RES00481\",\"product\":\"ナースシフト\",\"offering_id\":\"OF-JP11\",\"criterion_id\":\"L01\",\"original_task\":{\"priority\":3,\"required_method\":\"public_document\",\"last_checked_on\":\"2026-10-13\",\"task_id\":\"TASK-RES00481\",\"offering_id\":\"OF-JP11\",\"criterion_id\":\"L01\",\"task_state\":\"in_progress\",\"question\":\"スマホでの希望提出：定義の未確認部分・現行条件を確認する。\",\"evidence_needed\":\"職員画面・利用手順・権限テスト\",\"owner\":\"Aqsh / 次の限定公開調査\",\"next_review_on\":null,\"block_reason\":null},\"q01_public_acceptance_atoms\":[\"職員本人のアプリ/ブラウザ提出の公開手順\",\"費用/認証/権限の記載範囲\"],\"scope\":\"公開資料に明記された「スマホでの希望提出」の範囲・対象条件を整理し、未記載/相違/実契約/実測を分ける。\",\"reason\":\"作成者のスマホ利用から職員自己申請は推定できない。\",\"evidence_observation_ids\":[\"B40-20261013-OBS0008\"],\"remaining_work\":[\"職員個別の希望提出手順・認証権限・追加費用を明記した公式資料又は対象デモ\"],\"primary_queue\":\"external_confirmation_wait\",\"public_phase\":\"bounded_public_search_ended_unknown\",\"external_state\":\"waiting_for_document_or_demo\",\"resume_condition\":\"対象の公式仕様更新/正式資料又は導入候補化で上記の限定条件が必要になった時。新根拠のない反復巡回はしない。\",\"after_task_state\":\"blocked\",\"factual_support_not_inferred\":true}",
+      "expected_task": {
+        "priority": 3,
+        "required_method": "public_document",
+        "last_checked_on": "2026-10-13",
+        "task_state": "in_progress",
+        "question": "スマホでの希望提出：定義の未確認部分・現行条件を確認する。",
+        "evidence_needed": "職員画面・利用手順・権限テスト",
+        "owner": "Aqsh / 次の限定公開調査",
+        "next_review_on": null,
+        "block_reason": null
+      },
+      "changes": {
+        "owner": "外部確認待ち / 担当未定",
+        "block_reason": "作成者のスマホ利用から職員自己申請は推定できない。 再開：職員個別の希望提出手順・認証権限・追加費用を明記した公式資料又は対象デモ",
+        "next_review_on": null
+      }
+    },
+    {
+      "task_id": "TASK-RES00295",
+      "state": "blocked",
+      "priority": 3,
+      "method": "vendor_document",
+      "note": "{\"review_id\":\"Q02-TASK-RES00295\",\"task_id\":\"TASK-RES00295\",\"product\":\"miramos\",\"offering_id\":\"OF-JP07\",\"criterion_id\":\"H02\",\"original_task\":{\"priority\":3,\"required_method\":\"public_document\",\"last_checked_on\":\"2026-10-13\",\"task_id\":\"TASK-RES00295\",\"offering_id\":\"OF-JP07\",\"criterion_id\":\"H02\",\"task_state\":\"in_progress\",\"question\":\"変更最小化の目的設定：定義の未確認部分・現行条件を確認する。\",\"evidence_needed\":\"既存シフトを使った変更デモ・承認仕様\",\"owner\":\"Aqsh / 次の限定公開調査\",\"next_review_on\":null,\"block_reason\":null},\"q01_public_acceptance_atoms\":[\"再計算範囲と変更最小化の目的の区別\",\"変更セル/人数等の評価の記載\"],\"scope\":\"公開資料に明記された「変更最小化の目的設定」の範囲・対象条件を整理し、未記載/相違/実契約/実測を分ける。\",\"reason\":\"修正連鎖を抑える先行配置は、変更数を最小化する目的設定の仕様ではない。\",\"evidence_observation_ids\":[\"B40-20261013-OBS0009\"],\"remaining_work\":[\"既存表との差分を最小化する目的関数・設定又は対象デモ\"],\"primary_queue\":\"external_confirmation_wait\",\"public_phase\":\"bounded_public_search_ended_unknown\",\"external_state\":\"waiting_for_document_or_demo\",\"resume_condition\":\"対象の公式仕様更新/正式資料又は導入候補化で上記の限定条件が必要になった時。新根拠のない反復巡回はしない。\",\"after_task_state\":\"blocked\",\"factual_support_not_inferred\":true}",
+      "expected_task": {
+        "priority": 3,
+        "required_method": "public_document",
+        "last_checked_on": "2026-10-13",
+        "task_state": "in_progress",
+        "question": "変更最小化の目的設定：定義の未確認部分・現行条件を確認する。",
+        "evidence_needed": "既存シフトを使った変更デモ・承認仕様",
+        "owner": "Aqsh / 次の限定公開調査",
+        "next_review_on": null,
+        "block_reason": null
+      },
+      "changes": {
+        "owner": "外部確認待ち / 担当未定",
+        "block_reason": "修正連鎖を抑える先行配置は、変更数を最小化する目的設定の仕様ではない。 再開：既存表との差分を最小化する目的関数・設定又は対象デモ",
+        "next_review_on": null
+      }
+    },
+    {
+      "task_id": "TASK-RES01295",
+      "state": "blocked",
+      "priority": 3,
+      "method": "vendor_document",
+      "note": "{\"review_id\":\"Q02-TASK-RES01295\",\"task_id\":\"TASK-RES01295\",\"product\":\"Timefold Employee Shift Scheduling API\",\"offering_id\":\"OF-US10\",\"criterion_id\":\"N05\",\"original_task\":{\"priority\":3,\"required_method\":\"public_document\",\"last_checked_on\":\"2026-10-13\",\"task_id\":\"TASK-RES01295\",\"offering_id\":\"OF-US10\",\"criterion_id\":\"N05\",\"task_state\":\"in_progress\",\"question\":\"生成AIへの送信・学習利用：定義の未確認部分・現行条件を確認する。\",\"evidence_needed\":\"約款・セキュリティ文書・第三者保証・権限試験\",\"owner\":\"Aqsh / 次の限定公開調査\",\"next_review_on\":null,\"block_reason\":null},\"q01_public_acceptance_atoms\":[\"送信項目/匿名化/保持/学習の公開説明\",\"機能ごとの停止と公表規約の適用範囲\"],\"scope\":\"公開資料に明記された「生成AIへの送信・学習利用」の範囲・対象条件を整理し、未記載/相違/実契約/実測を分ける。\",\"reason\":\"入力PII/PHIと一般DPAは確認。生成AIの機能別データ条件は非開示又は未特定。\",\"evidence_observation_ids\":[\"B40-20261013-OBS0010\",\"B40-20261013-OBS0011\",\"B40-20261013-OBS0012\"],\"remaining_work\":[\"機能名と提供方式を指定した送信項目/送信先/保持/学習/停止の正式データ取扱文書\"],\"primary_queue\":\"external_confirmation_wait\",\"public_phase\":\"bounded_public_search_ended_unknown\",\"external_state\":\"waiting_for_document_or_demo\",\"resume_condition\":\"対象の公式仕様更新/正式資料又は導入候補化で上記の限定条件が必要になった時。新根拠のない反復巡回はしない。\",\"after_task_state\":\"blocked\",\"factual_support_not_inferred\":true}",
+      "expected_task": {
+        "priority": 3,
+        "required_method": "public_document",
+        "last_checked_on": "2026-10-13",
+        "task_state": "in_progress",
+        "question": "生成AIへの送信・学習利用：定義の未確認部分・現行条件を確認する。",
+        "evidence_needed": "約款・セキュリティ文書・第三者保証・権限試験",
+        "owner": "Aqsh / 次の限定公開調査",
+        "next_review_on": null,
+        "block_reason": null
+      },
+      "changes": {
+        "owner": "外部確認待ち / 担当未定",
+        "block_reason": "入力PII/PHIと一般DPAは確認。生成AIの機能別データ条件は非開示又は未特定。 再開：機能名と提供方式を指定した送信項目/送信先/保持/学習/停止の正式データ取扱文書",
+        "next_review_on": null
+      }
+    }
+  ],
+  "prices": [
+    {
+      "product": "JP08",
+      "criterion": "P01",
+      "source": "syn-image",
+      "plan": "有料サブスクリプション（年契約・年払い）",
+      "commitment_months": 12,
+      "billing_period_months": 12,
+      "prepayment": "yes",
+      "min_billable_units": 10,
+      "charge_type": "subscription",
+      "currency": "JPY",
+      "tax_status": "exclusive",
+      "amount": "500",
+      "billable_unit": "人",
+      "quantity_definition": "勤務表に含まれる人数。10名以上5名単位。超過登録は追加契約。期間内の減数返金不可。",
+      "min_quantity": 10,
+      "recurrence_months": 1,
+      "requirement": "required",
+      "conditions": {
+        "price_basis": "monthly_equivalent_annual_payment",
+        "quantity_step": 5,
+        "notes": "月額表示500円/人（税別）、1年契約・年払い・利用開始前日までに前払い。最低10名・5名単位。契約中減数返金不可。個別適用/最低請求総額は未確認。無料プランは試用終了又は有料解約後に移行し、最初から選択できない。"
+      }
+    }
+  ]
+}

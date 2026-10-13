@@ -1,0 +1,133 @@
+{
+  "batch_id": "B51-20261013",
+  "prior_batch": "B50-20261013",
+  "as_of_date": "2026-10-13",
+  "resolution_policy_version": 2,
+  "description": "Q06 T04/5 Optamo for Taskとfor Shiftの公開機能差・カスタマイズ条件",
+  "method": "限定公式公開調査・ローカル反映。前回の既完/外部待ちを再完了しない。原要件・不明・資料不一致・既存価格119行を保持。Git/CI/本番/課金/登録/問い合わせなし。",
+  "sources": [
+    {
+      "key": "optamo-task",
+      "url": "https://www.optamo.jp/task/index.html",
+      "title": "Optamo for Task 製品機能・比較表",
+      "publisher": "株式会社モーション",
+      "retrieved_on": "2026-10-13",
+      "version_label": "公開/改定日不明。閲覧2026-10-13",
+      "method": "public_web_body",
+      "method_note": "公式本文・該当注記を照合。原本はQ06バックアップに保存、取得hashはsource-captures.json。入力・登録・課金・問い合わせ・独立製品試験なし。",
+      "scope_note": "Q01の限定公開質問終了基準に従う。原要件と未確認条件を個別台帳へ保持。"
+    },
+    {
+      "key": "optamo-shift",
+      "url": "https://www.optamo.jp/shift/index.html",
+      "title": "Optamo for Shift 製品機能・比較表",
+      "publisher": "株式会社モーション",
+      "retrieved_on": "2026-10-13",
+      "version_label": "公開/改定日不明。閲覧2026-10-13",
+      "method": "public_web_body",
+      "method_note": "公式本文・該当注記を照合。原本はQ06バックアップに保存、取得hashはsource-captures.json。入力・登録・課金・問い合わせ・独立製品試験なし。",
+      "scope_note": "Q01の限定公開質問終了基準に従う。原要件と未確認条件を個別台帳へ保持。"
+    },
+    {
+      "key": "optamo-main",
+      "url": "https://www.optamo.jp/",
+      "title": "Optamo 製品ラインナップ・導入案内",
+      "publisher": "株式会社モーション",
+      "retrieved_on": "2026-10-13",
+      "version_label": "公開/改定日不明。閲覧2026-10-13",
+      "method": "public_web_body",
+      "method_note": "公式本文・該当注記を照合。原本はQ06バックアップに保存、取得hashはsource-captures.json。入力・登録・課金・問い合わせ・独立製品試験なし。",
+      "scope_note": "Q01の限定公開質問終了基準に従う。原要件と未確認条件を個別台帳へ保持。"
+    }
+  ],
+  "findings": [
+    {
+      "product": "JP16",
+      "criterion": "B07",
+      "source": "optamo-task",
+      "state": "known",
+      "support": "limited",
+      "delivery": "unknown",
+      "summary": "2024年8月時点と注記された比較表は、Taskの多段階最適化、勤務シフトから日別タスク割当、日次複数タスク、熟練度設定を列挙し、Shiftとの機能差を示す。",
+      "locator": "機能比較表 / 2024年8月時点当社調べ",
+      "limitations": "現在閲覧できる表でも対象時点は2024年8月。最新の契約版の包含とは分ける。他社列は調査対象外。スタッフ無制限にはプランによる上限注記がある。",
+      "scope": "2026-10-13の公式公開資料照合。資料の対象国/版/用途に限定。個別契約・制度適合・実動作は未検証。"
+    },
+    {
+      "product": "JP16",
+      "criterion": "B07",
+      "source": "optamo-task",
+      "state": "known",
+      "support": "limited",
+      "delivery": "native",
+      "summary": "Task本文は、勤務するスタッフを先に決めて公開後に勤務当日のタスクを割当てる方法、タスク間インターバル/連続時間上限、熟練度を用いた業務割当を説明する。",
+      "locator": "Task製品本文 / 勤務シフト→日別タスク / インターバル",
+      "limitations": "Taskのタスク条件とShiftの勤務パターン条件を同じものにしない。公開製品機能でプラン別標準包含・料金・実動作は未確認。",
+      "scope": "2026-10-13の公式公開資料照合。資料の対象国/版/用途に限定。個別契約・制度適合・実動作は未検証。"
+    },
+    {
+      "product": "JP16",
+      "criterion": "B07",
+      "source": "optamo-task",
+      "state": "known",
+      "support": "limited",
+      "delivery": "unknown",
+      "summary": "Taskのカスタマイズは顧客専用環境の構築が必須で、個別ルール・認証セキュリティ・開発/連携の拡張を案内し、要望次第で対応できない場合もあると明記する。",
+      "locator": "貴社専用の環境 / カスタマイズの必須注記",
+      "limitations": "専用環境やカスタム作業を無償標準機能としない。料金・必須初期費・保守・個別開発範囲は正式見積待ち。トライアル中の無償支援と通常支援を分ける。",
+      "scope": "2026-10-13の公式公開資料照合。資料の対象国/版/用途に限定。個別契約・制度適合・実動作は未検証。"
+    },
+    {
+      "product": "JP16",
+      "criterion": "B07",
+      "source": "optamo-main",
+      "state": "known",
+      "support": "limited",
+      "delivery": "unknown",
+      "summary": "公式ラインナップはTaskを日別業務割当を含むハイエンド版、Shiftを1日単位の勤務割当のスタンダード版と説明する。",
+      "locator": "用途別2ラインナップ / 共通機能 / 選び方",
+      "limitations": "TaskとShiftは別提供単位として記録。共通機能の案内を全プラン/顧客契約の同一条件としない。",
+      "scope": "2026-10-13の公式公開資料照合。資料の対象国/版/用途に限定。個別契約・制度適合・実動作は未検証。"
+    }
+  ],
+  "task_updates": [
+    {
+      "task_id": "TASK-RES00679",
+      "state": "done",
+      "priority": 3,
+      "method": "public_document",
+      "expected_task": {
+        "priority": 3,
+        "required_method": "unknown",
+        "last_checked_on": "2026-10-11",
+        "task_state": "in_progress",
+        "question": "プラン・追加機能の境界：定義の未確認部分・現行条件を確認する。",
+        "evidence_needed": "機能仕様・プラン比較・利用規約・デモ",
+        "owner": "未割当",
+        "next_review_on": null,
+        "block_reason": null
+      },
+      "changes": {
+        "owner": "公開資料確認終了 / 残条件は導入時再開",
+        "block_reason": null,
+        "next_review_on": null,
+        "question": "Optamo for Taskの公開機能・2024年8月比較表のShiftとの差、および専用環境必須のカスタマイズ境界を照合する。",
+        "evidence_needed": "公式公開資料の該当箇所・日付・適用条件。原要件と個別契約/実測の残条件はQ06台帳へ保持。"
+      },
+      "note": "{\"review_id\":\"Q06T04-TASK-RES00679\",\"task_id\":\"TASK-RES00679\",\"product\":\"Optamo for Task\",\"offering_id\":\"OF-JP16\",\"criterion_id\":\"B07\",\"original_task\":{\"priority\":3,\"required_method\":\"unknown\",\"last_checked_on\":\"2026-10-11\",\"task_id\":\"TASK-RES00679\",\"offering_id\":\"OF-JP16\",\"criterion_id\":\"B07\",\"task_state\":\"in_progress\",\"question\":\"プラン・追加機能の境界：定義の未確認部分・現行条件を確認する。\",\"evidence_needed\":\"機能仕様・プラン比較・利用規約・デモ\",\"owner\":\"未割当\",\"next_review_on\":null,\"block_reason\":null},\"q01_public_acceptance_atoms\":[\"機能を使えるプラン/モジュールの公開対応\",\"追加契約/地域/βの留保\"],\"scope\":\"Optamo for Taskの公開機能・2024年8月比較表のShiftとの差、および専用環境必須のカスタマイズ境界を照合する。\",\"reason\":\"限定公開質問の該当する肯定記載を照合し、元要件・未記載・個別適用の残条件を別に保持した。\",\"evidence_observation_ids\":[\"B51-20261013-OBS0001\",\"B51-20261013-OBS0002\",\"B51-20261013-OBS0003\",\"B51-20261013-OBS0004\"],\"remaining_work\":[\"最新プラン名/包含/人数上限、専用環境・個別開発・支援費の見積、最新契約版の機能差・実動作\"],\"primary_queue\":\"completed_public_check\",\"public_phase\":\"completed_bounded_document_question\",\"external_state\":\"deferred_until_adoption\",\"resume_condition\":\"公式改定/正式資料/対象見積の取得又は導入判断に残条件が必要な時。新根拠なしの反復探索はしない。\",\"after_task_state\":\"done\",\"factual_support_not_inferred\":true,\"original_requirements_deleted\":false}",
+      "public_completion": {
+        "scope": "Optamo for Taskの公開機能・2024年8月比較表のShiftとの差、および専用環境必須のカスタマイズ境界を照合する。",
+        "observation_ids": [
+          "B51-20261013-OBS0001",
+          "B51-20261013-OBS0002",
+          "B51-20261013-OBS0003",
+          "B51-20261013-OBS0004"
+        ],
+        "remaining_work": [
+          "最新プラン名/包含/人数上限、専用環境・個別開発・支援費の見積、最新契約版の機能差・実動作"
+        ]
+      }
+    }
+  ],
+  "prices": []
+}

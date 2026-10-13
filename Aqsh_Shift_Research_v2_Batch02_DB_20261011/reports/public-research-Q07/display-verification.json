@@ -1,0 +1,77 @@
+{
+  "status": "passed",
+  "snapshot": "B57-20261013-pub2",
+  "services": 5,
+  "widths": [
+    1440,
+    390
+  ],
+  "checks": [
+    {
+      "product": "JP05",
+      "width": 1440,
+      "required_text": true,
+      "overflow": false
+    },
+    {
+      "product": "JP19",
+      "width": 1440,
+      "required_text": true,
+      "overflow": false
+    },
+    {
+      "product": "JP02",
+      "width": 1440,
+      "required_text": true,
+      "overflow": false
+    },
+    {
+      "product": "JP14",
+      "width": 1440,
+      "required_text": true,
+      "overflow": false
+    },
+    {
+      "product": "US05",
+      "width": 1440,
+      "required_text": true,
+      "overflow": false
+    },
+    {
+      "product": "JP05",
+      "width": 390,
+      "required_text": true,
+      "overflow": false
+    },
+    {
+      "product": "JP19",
+      "width": 390,
+      "required_text": true,
+      "overflow": false
+    },
+    {
+      "product": "JP02",
+      "width": 390,
+      "required_text": true,
+      "overflow": false
+    },
+    {
+      "product": "JP14",
+      "width": 390,
+      "required_text": true,
+      "overflow": false
+    },
+    {
+      "product": "US05",
+      "width": 390,
+      "required_text": true,
+      "overflow": false
+    }
+  ],
+  "overflow": false,
+  "pageErrors": [],
+  "external_DNS_blocked": true,
+  "statutory_and_user_config_distinguished": true,
+  "standard_and_addon_distinguished": true,
+  "table_disagreement_preserved": true
+}

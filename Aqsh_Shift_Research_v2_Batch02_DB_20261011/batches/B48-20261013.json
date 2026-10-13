@@ -1,0 +1,121 @@
+{
+  "batch_id": "B48-20261013",
+  "prior_batch": "B47-20261013",
+  "as_of_date": "2026-10-13",
+  "resolution_policy_version": 2,
+  "description": "Q06 T01/5 FIKAIGOの公開機能と無償/有償支援の境界",
+  "method": "限定公式公開調査・ローカル反映。前回の既完/外部待ちを再完了しない。原要件・不明・資料不一致・既存価格119行を保持。Git/CI/本番/課金/登録/問い合わせなし。",
+  "sources": [
+    {
+      "key": "fikaigo-price",
+      "url": "https://www.fikaigo.com/pricing",
+      "title": "FIKAIGO 料金体系・導入支援",
+      "publisher": "住友商事株式会社",
+      "retrieved_on": "2026-10-13",
+      "version_label": "公開/改定日不明。閲覧2026-10-13",
+      "method": "public_web_body",
+      "method_note": "公式本文・該当注記を照合。原本はQ06バックアップに保存、取得hashはsource-captures.json。入力・登録・課金・問い合わせ・独立製品試験なし。",
+      "scope_note": "Q01の限定公開質問終了基準に従う。原要件と未確認条件を個別台帳へ保持。"
+    },
+    {
+      "key": "fikaigo-product",
+      "url": "https://www.fikaigo.com/ja/product",
+      "title": "FIKAIGO 製品機能紹介",
+      "publisher": "住友商事株式会社",
+      "retrieved_on": "2026-10-13",
+      "version_label": "公開/改定日不明。閲覧2026-10-13",
+      "method": "public_web_body",
+      "method_note": "公式本文・該当注記を照合。原本はQ06バックアップに保存、取得hashはsource-captures.json。入力・登録・課金・問い合わせ・独立製品試験なし。",
+      "scope_note": "Q01の限定公開質問終了基準に従う。原要件と未確認条件を個別台帳へ保持。"
+    }
+  ],
+  "findings": [
+    {
+      "product": "JP03",
+      "criterion": "B07",
+      "source": "fikaigo-price",
+      "state": "known",
+      "support": "limited",
+      "delivery": "unknown",
+      "summary": "公式料金は1職員あたり年額8,400円税抜を標準単価とし、年間契約・自動更新・年利用料前払いを案内。導入支援欄はマニュアル/操作動画、問い合わせポータル/電話ヘルプデスクを無償対応と区別する。",
+      "locator": "料金プラン / 導入支援の無償対応",
+      "limitations": "料金表の標準単価の適用範囲。製品機能の標準料金への包含や契約例外、最低職員数は明記範囲外。",
+      "scope": "2026-10-13の公式公開資料照合。資料の対象国/版/用途に限定。個別契約・制度適合・実動作は未検証。"
+    },
+    {
+      "product": "JP03",
+      "criterion": "B07",
+      "source": "fikaigo-price",
+      "state": "known",
+      "support": "limited",
+      "delivery": "managed_service",
+      "summary": "シフト作成者の操作教育/作成コンサルティング、マスター設定代行、勤怠連携設定・マスター更新の運用設計、自動IF連携基盤構築は有償対応で、別途見積と明記する。",
+      "locator": "導入支援の有償対応・見積注記",
+      "limitations": "ヘルプデスク無償と操作教育/設定/連携基盤の追加費を混同しない。各項目の必須/任意・額・契約構成は未確認。",
+      "scope": "2026-10-13の公式公開資料照合。資料の対象国/版/用途に限定。個別契約・制度適合・実動作は未検証。"
+    },
+    {
+      "product": "JP03",
+      "criterion": "B07",
+      "source": "fikaigo-product",
+      "state": "known",
+      "support": "limited",
+      "delivery": "native",
+      "summary": "公開製品機能は自動作成、スマホ希望提出/勤務表参照、チャット、人員基準/加算チェック、勤務形態一覧表/参考計算書、勤怠予定・実績の連携を紹介する。",
+      "locator": "製品機能一覧 / 行政書類 / 勤怠連携",
+      "limitations": "機能紹介を全機能の年額単価への標準包含と断定しない。KING OF TIME等の接続設定/自動IF基盤は有償支援欄と照合。対象制度版や帳票の実測・指定権者受理は未確認。",
+      "scope": "2026-10-13の公式公開資料照合。資料の対象国/版/用途に限定。個別契約・制度適合・実動作は未検証。"
+    },
+    {
+      "product": "JP03",
+      "criterion": "B07",
+      "source": "fikaigo-price",
+      "state": "not_disclosed",
+      "support": "limited",
+      "delivery": "unknown",
+      "summary": "確認した料金/機能ページには、複数プラン名・プラン別機能表・全機能の標準包含と個別追加額を網羅する契約表は特定できない。",
+      "locator": "料金/製品ページの限定照合",
+      "limitations": "標準単価と公表製品機能、無償/有償支援は分けて記録。正式プラン仕様・支援見積を得た時に再開。",
+      "scope": "2026-10-13の公式公開資料照合。資料の対象国/版/用途に限定。個別契約・制度適合・実動作は未検証。"
+    }
+  ],
+  "task_updates": [
+    {
+      "task_id": "TASK-RES00103",
+      "state": "done",
+      "priority": 3,
+      "method": "public_document",
+      "expected_task": {
+        "priority": 3,
+        "required_method": "unknown",
+        "last_checked_on": "2026-10-13",
+        "task_state": "in_progress",
+        "question": "プラン・追加機能の境界：定義の未確認部分・現行条件を確認する。",
+        "evidence_needed": "機能仕様・プラン比較・利用規約・デモ",
+        "owner": "未割当",
+        "next_review_on": null,
+        "block_reason": null
+      },
+      "changes": {
+        "owner": "公開資料確認終了 / 残条件は導入時再開",
+        "block_reason": null,
+        "next_review_on": null,
+        "question": "FIKAIGOの公表製品機能と料金ページに明記された無償/有償支援の境界を照合する。",
+        "evidence_needed": "公式公開資料の該当箇所・日付・適用条件。原要件と個別契約/実測の残条件はQ06台帳へ保持。"
+      },
+      "note": "{\"review_id\":\"Q06T01-TASK-RES00103\",\"task_id\":\"TASK-RES00103\",\"product\":\"FIKAIGO\",\"offering_id\":\"OF-JP03\",\"criterion_id\":\"B07\",\"original_task\":{\"priority\":3,\"required_method\":\"unknown\",\"last_checked_on\":null,\"task_id\":\"TASK-RES00103\",\"offering_id\":\"OF-JP03\",\"criterion_id\":\"B07\",\"task_state\":\"not_started\",\"question\":\"プラン・追加機能の境界：定義の未確認部分・現行条件を確認する。\",\"evidence_needed\":\"機能仕様・プラン比較・利用規約・デモ\",\"owner\":\"未割当\",\"next_review_on\":null,\"block_reason\":null},\"q01_public_acceptance_atoms\":[\"機能を使えるプラン/モジュールの公開対応\",\"追加契約/地域/βの留保\"],\"scope\":\"FIKAIGOの公表製品機能と料金ページに明記された無償/有償支援の境界を照合する。\",\"reason\":\"限定公開質問の該当する肯定記載を照合し、元要件・未記載・個別適用の残条件を別に保持した。\",\"evidence_observation_ids\":[\"B48-20261013-OBS0001\",\"B48-20261013-OBS0002\",\"B48-20261013-OBS0003\"],\"remaining_work\":[\"全製品機能の標準包含/プラン名、支援項目の必須/任意・追加額、連携契約、制度版・実動作\"],\"primary_queue\":\"completed_public_check\",\"public_phase\":\"completed_bounded_document_question\",\"external_state\":\"deferred_until_adoption\",\"resume_condition\":\"公式改定/正式資料/対象見積の取得又は導入判断に残条件が必要な時。新根拠なしの反復探索はしない。\",\"after_task_state\":\"done\",\"factual_support_not_inferred\":true,\"original_requirements_deleted\":false}",
+      "public_completion": {
+        "scope": "FIKAIGOの公表製品機能と料金ページに明記された無償/有償支援の境界を照合する。",
+        "observation_ids": [
+          "B48-20261013-OBS0001",
+          "B48-20261013-OBS0002",
+          "B48-20261013-OBS0003"
+        ],
+        "remaining_work": [
+          "全製品機能の標準包含/プラン名、支援項目の必須/任意・追加額、連携契約、制度版・実動作"
+        ]
+      }
+    }
+  ],
+  "prices": []
+}

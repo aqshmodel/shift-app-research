@@ -1,0 +1,30 @@
+{
+  "status": "passed",
+  "batch": "B38-20261013",
+  "limit": 100000,
+  "split_products": [
+    {
+      "offering_id": "OF-US09",
+      "ordinary_statement_bytes": 118681,
+      "generated_statements": 6,
+      "largest_statement_bytes": 50176
+    },
+    {
+      "offering_id": "OF-US10",
+      "ordinary_statement_bytes": 119943,
+      "generated_statements": 6,
+      "largest_statement_bytes": 50176
+    }
+  ],
+  "new_connecteam_split_exercised": true,
+  "partial": {
+    "statements_applied": 3,
+    "provisional_rows": 1
+  },
+  "resume_all_fields_and_original_JSON_bytes_equal": true,
+  "replay_all50_products_unchanged": true,
+  "prior_B37_rows_preserved": true,
+  "final_provisional_rows": 0,
+  "source_or_generator_changed": false,
+  "scope": "In-memory SQLite rehearsal on B38 data, not remote D1"
+}

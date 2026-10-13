@@ -1,0 +1,87 @@
+{
+  "status": "passed",
+  "official_sources": 5,
+  "new_normalized_documents": 4,
+  "reused_documents_new_paragraphs": 1,
+  "sources": [
+    {
+      "key": "kb",
+      "url": "https://help.connecteam.com/en/articles/11112114-connecteam-s-knowledge-base-agent-your-company-s-ai-assistant",
+      "title": "Connecteam — Connecteam's Knowledge Base Agent: Your Company's AI Assistant",
+      "publisher": "Connecteam",
+      "reference": "Deactivating your AI Agent / FAQ external sharing / plan footer",
+      "retrieved_on": "2026-10-13",
+      "version_label": "Mutable help; Updated this week; exact update date not shown; Communications Expert+ / up to 20 / SBP excluded",
+      "method": "official_document_body",
+      "method_note": "Lines 137-160. Existing document reused for new data-policy and deactivate paragraphs; earlier F04/F05 response customization not duplicated. 要約・URL・版・取得日・locator/方法/留保を保存。全文/本文hash/原本画像未保存。製品試験/API/登録/外部連絡/設定/認証/課金/公開操作なし。"
+    },
+    {
+      "key": "ai",
+      "url": "https://connecteam.com/ai-terms/",
+      "title": "Connecteam — Special Terms for Generative AI Features",
+      "publisher": "Connecteam",
+      "reference": "Content Rights / Agentic Capabilities",
+      "retrieved_on": "2026-10-13",
+      "version_label": "Last updated 2026-09-15; public terms; customer executed terms/version unconfirmed",
+      "method": "official_document_body",
+      "method_note": "Lines 46-60,84. Public AI terms training wording and service-maintenance permission differ from provider-specific FAQ. 要約・URL・版・取得日・locator/方法/留保を保存。全文/本文hash/原本画像未保存。製品試験/API/登録/外部連絡/設定/認証/課金/公開操作なし。"
+    },
+    {
+      "key": "terms",
+      "url": "https://connecteam.com/terms-conditions/",
+      "title": "Connecteam — Terms of Service",
+      "publisher": "Connecteam",
+      "reference": "Section 1.7 AI Features / Account Owner opt out",
+      "retrieved_on": "2026-10-13",
+      "version_label": "Last updated 2026-09-15; public terms; individual customer order unconfirmed",
+      "method": "official_document_body",
+      "method_note": "Lines 68,210. Account Owner opt-out statement; actual settings/permission behavior untested. 要約・URL・版・取得日・locator/方法/留保を保存。全文/本文hash/原本画像未保存。製品試験/API/登録/外部連絡/設定/認証/課金/公開操作なし。"
+    },
+    {
+      "key": "processors",
+      "url": "https://connecteam.com/subprocessors/",
+      "title": "Connecteam — Subprocessors",
+      "publisher": "Connecteam",
+      "reference": "Microsoft / Google / OpenAI / Anthropic AI entries",
+      "retrieved_on": "2026-10-13",
+      "version_label": "Mutable public list; no exact update date shown; feature routing/customer region unconfirmed",
+      "method": "official_document_body",
+      "method_note": "Lines 64-81,98-117. Anthropic AI Agent listing absent from KB FAQ provider enumeration; no provider portal/contract accessed. 要約・URL・版・取得日・locator/方法/留保を保存。全文/本文hash/原本画像未保存。製品試験/API/登録/外部連絡/設定/認証/課金/公開操作なし。"
+    },
+    {
+      "key": "privacy",
+      "url": "https://connecteam.com/privacy/",
+      "title": "Connecteam — Privacy Notice",
+      "publisher": "Connecteam",
+      "reference": "Scope / Section 2 AI representative / Sections 10-11 roles and retention",
+      "retrieved_on": "2026-10-13",
+      "version_label": "Last updated 2026-09-15; controller scope / processor DPA distinction",
+      "method": "official_document_body",
+      "method_note": "Lines 49,91-95,104,197-208,220. Support/marketing AI representative separate from customer KB Agent; no private DPA investigation. 要約・URL・版・取得日・locator/方法/留保を保存。全文/本文hash/原本画像未保存。製品試験/API/登録/外部連絡/設定/認証/課金/公開操作なし。"
+    }
+  ],
+  "comparison_only": [
+    {
+      "url": "https://connecteam.com/ai-capabilities/",
+      "purpose": "Locate official footer terms/privacy/subprocessors; no separate record"
+    }
+  ],
+  "body_checked": true,
+  "full_text_archived": false,
+  "retrieval_caveats": [
+    {
+      "product": "US09",
+      "url": "https://connecteam.com/subprocessors/",
+      "result": "provider_scope_difference",
+      "notes": "委託先一覧Anthropic AI AgentとKB FAQの3系統列挙が異なる。顧客ごとのルート/資料対象差は未確認。"
+    },
+    {
+      "product": "US09",
+      "url": "https://connecteam.com/ai-terms/",
+      "result": "retention_and_training_scope_distinguished",
+      "notes": "FAQの処理後LLM保持なしとAI特約のサービス改善/保守利用、Privacyの顧客保持指示は主体/範囲が異なる。全AI一律のゼロ保持としない。"
+    }
+  ],
+  "independent_tests_performed": false,
+  "external_contact": false
+}

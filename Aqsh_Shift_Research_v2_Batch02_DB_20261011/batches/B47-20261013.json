@@ -1,0 +1,119 @@
+{
+  "batch_id": "B47-20261013",
+  "prior_batch": "B46-20261013",
+  "as_of_date": "2026-10-13",
+  "resolution_policy_version": 2,
+  "description": "Q05 T05/5 RosterLab AI：請求契約と導入費用の公開限界",
+  "method": "限定公式公開調査・ローカル反映。前回の既完/外部待ちを再完了しない。原要件・不明・資料不一致・既存価格119行を保持。Git/CI/本番/課金/登録/問い合わせなし。",
+  "sources": [
+    {
+      "key": "rosterlab-price",
+      "url": "https://rosterlab.com/us/pricing",
+      "title": "RosterLab 米国向けAIスケジューリング料金",
+      "publisher": "RosterLab",
+      "retrieved_on": "2026-10-13",
+      "version_label": "公開/改定日不明。閲覧2026-10-13",
+      "method": "public_web_body",
+      "method_note": "公式本文・該当注記を照合。原本はQ05バックアップに保存、取得hashはsource-captures.json。入力・登録・課金・問い合わせ・独立製品試験なし。",
+      "scope_note": "Q01の限定公開質問終了基準に従う。原要件と未確認条件を個別台帳へ保持。"
+    },
+    {
+      "key": "rosterlab-contact",
+      "url": "https://rosterlab.com/us/contact",
+      "title": "RosterLab 米国向け導入相談・支援FAQ",
+      "publisher": "RosterLab",
+      "retrieved_on": "2026-10-13",
+      "version_label": "公開/改定日不明。閲覧2026-10-13",
+      "method": "public_web_body",
+      "method_note": "公式本文・該当注記を照合。原本はQ05バックアップに保存、取得hashはsource-captures.json。入力・登録・課金・問い合わせ・独立製品試験なし。",
+      "scope_note": "Q01の限定公開質問終了基準に従う。原要件と未確認条件を個別台帳へ保持。"
+    }
+  ],
+  "findings": [
+    {
+      "product": "US01",
+      "criterion": "P03",
+      "source": "rosterlab-price",
+      "state": "not_disclosed",
+      "support": "limited",
+      "delivery": "unknown",
+      "summary": "米国料金カードはAIを15 USD/人/月と表示するが、請求周期・前払い・最低契約期間・解約・最低請求額の契約条件は公開料金ページに明示されていない。",
+      "locator": "米国料金カード / FAQ価格計算・対象プラン",
+      "limitations": "per monthという表示単位を月払い・1か月解約としない。30人以上への相談推奨を最低課金人数と読まない。15/20 USD不一致は既存B03正式見積待ちを維持し今回再完了しない。",
+      "scope": "2026-10-13の公式公開資料照合。資料の対象国/版/プランに限定。個別契約適用と実動作は未検証。"
+    },
+    {
+      "product": "US01",
+      "criterion": "P04",
+      "source": "rosterlab-price",
+      "state": "not_disclosed",
+      "support": "limited",
+      "delivery": "unknown",
+      "summary": "全プランのメール/ナレッジベースと有料/Enterpriseの支援差を案内するが、初期設定・移行・研修・連携開発の必須/任意、導入金額と標準包含は公開料金ページから確定できない。",
+      "locator": "Enterprise Solution / FAQ support",
+      "limitations": "サポート紹介を初期0円や無料移行の根拠にしない。税/追加費・地域/数量を指定した正式見積で再開。",
+      "scope": "2026-10-13の公式公開資料照合。資料の対象国/版/プランに限定。個別契約適用と実動作は未検証。"
+    },
+    {
+      "product": "US01",
+      "criterion": "P04",
+      "source": "rosterlab-contact",
+      "state": "known",
+      "support": "limited",
+      "delivery": "managed_service",
+      "summary": "米国向け問い合わせページのFAQは、初回勤務表の情報収集と作成支援、有料利用者への研修・引継ぎ・継続サポートを案内する。",
+      "locator": "FAQ get started / training",
+      "limitations": "サービス紹介の範囲で、初期費用0円や全作業がAI基本料金に含まれること、Enterpriseと同条件とは明記されていない。公開/改定日不明。",
+      "scope": "2026-10-13の公式公開資料照合。資料の対象国/版/プランに限定。個別契約適用と実動作は未検証。"
+    }
+  ],
+  "task_updates": [
+    {
+      "task_id": "TASK-RES00890",
+      "state": "blocked",
+      "priority": 3,
+      "method": "vendor_quote",
+      "expected_task": {
+        "priority": 3,
+        "required_method": "unknown",
+        "last_checked_on": "2026-10-13",
+        "task_state": "in_progress",
+        "question": "請求周期・最低契約：定義の未確認部分・現行条件を確認する。",
+        "evidence_needed": "公式料金・個別見積・契約書",
+        "owner": "未割当",
+        "next_review_on": null,
+        "block_reason": null
+      },
+      "changes": {
+        "owner": "外部確認待ち / 担当未定",
+        "block_reason": "公開ページの月単位単価から契約条件は確定できない。 再開：正式な請求周期/前払い/最低期間/最低数量/解約条件（料金の月単位表示とは別）",
+        "next_review_on": null
+      },
+      "note": "{\"review_id\":\"Q05T05-TASK-RES00890\",\"task_id\":\"TASK-RES00890\",\"product\":\"RosterLab AI\",\"offering_id\":\"OF-US01\",\"criterion_id\":\"P03\",\"original_task\":{\"priority\":3,\"required_method\":\"unknown\",\"last_checked_on\":null,\"task_id\":\"TASK-RES00890\",\"offering_id\":\"OF-US01\",\"criterion_id\":\"P03\",\"task_state\":\"not_started\",\"question\":\"請求周期・最低契約：定義の未確認部分・現行条件を確認する。\",\"evidence_needed\":\"公式料金・個別見積・契約書\",\"owner\":\"未割当\",\"next_review_on\":null,\"block_reason\":null},\"q01_public_acceptance_atoms\":[\"月/年の請求周期・前払い・最低期間\",\"最低人数/請求額の公表範囲\"],\"scope\":\"RosterLab AI米国の請求周期・前払い・最低契約を確認する。\",\"reason\":\"公開ページの月単位単価から契約条件は確定できない。\",\"evidence_observation_ids\":[\"B47-20261013-OBS0001\"],\"remaining_work\":[\"正式な請求周期/前払い/最低期間/最低数量/解約条件（料金の月単位表示とは別）\"],\"primary_queue\":\"external_confirmation_wait\",\"public_phase\":\"bounded_public_search_ended_unknown\",\"external_state\":\"waiting_for_formal_document\",\"resume_condition\":\"公式改定/正式資料/対象見積の取得又は導入判断に残条件が必要な時。新根拠なしの反復探索はしない。\",\"after_task_state\":\"blocked\",\"factual_support_not_inferred\":true,\"original_requirements_deleted\":false}"
+    },
+    {
+      "task_id": "TASK-RES00891",
+      "state": "blocked",
+      "priority": 3,
+      "method": "vendor_quote",
+      "expected_task": {
+        "priority": 3,
+        "required_method": "unknown",
+        "last_checked_on": "2026-10-13",
+        "task_state": "in_progress",
+        "question": "導入初期費用：定義の未確認部分・現行条件を確認する。",
+        "evidence_needed": "公式料金・個別見積・契約書",
+        "owner": "未割当",
+        "next_review_on": null,
+        "block_reason": null
+      },
+      "changes": {
+        "owner": "外部確認待ち / 担当未定",
+        "block_reason": "サポート階層の案内はあるが項目別初期費用は非公表。 再開：設定/移行/研修/連携開発の必須/任意、料金包含と追加額を示す正式見積",
+        "next_review_on": null
+      },
+      "note": "{\"review_id\":\"Q05T05-TASK-RES00891\",\"task_id\":\"TASK-RES00891\",\"product\":\"RosterLab AI\",\"offering_id\":\"OF-US01\",\"criterion_id\":\"P04\",\"original_task\":{\"priority\":3,\"required_method\":\"unknown\",\"last_checked_on\":null,\"task_id\":\"TASK-RES00891\",\"offering_id\":\"OF-US01\",\"criterion_id\":\"P04\",\"task_state\":\"not_started\",\"question\":\"導入初期費用：定義の未確認部分・現行条件を確認する。\",\"evidence_needed\":\"公式料金・個別見積・契約書\",\"owner\":\"未割当\",\"next_review_on\":null,\"block_reason\":null},\"q01_public_acceptance_atoms\":[\"公表された必須初期費用と任意追加費\",\"未公表額を0円としない\"],\"scope\":\"RosterLab AI米国の項目別導入費用と必須/任意を確認する。\",\"reason\":\"サポート階層の案内はあるが項目別初期費用は非公表。\",\"evidence_observation_ids\":[\"B47-20261013-OBS0002\"],\"remaining_work\":[\"設定/移行/研修/連携開発の必須/任意、料金包含と追加額を示す正式見積\"],\"primary_queue\":\"external_confirmation_wait\",\"public_phase\":\"bounded_public_search_ended_unknown\",\"external_state\":\"waiting_for_formal_document\",\"resume_condition\":\"公式改定/正式資料/対象見積の取得又は導入判断に残条件が必要な時。新根拠なしの反復探索はしない。\",\"after_task_state\":\"blocked\",\"factual_support_not_inferred\":true,\"original_requirements_deleted\":false}"
+    }
+  ],
+  "prices": []
+}

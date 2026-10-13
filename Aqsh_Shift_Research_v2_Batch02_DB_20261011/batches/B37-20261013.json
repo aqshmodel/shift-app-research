@@ -1,0 +1,160 @@
+{
+  "batch_id": "B37-20261013",
+  "prior_batch": "B36-20261013",
+  "as_of_date": "2026-10-13",
+  "resolution_policy_version": 2,
+  "description": "Connecteam D01/B06：Job適格者/募集人数と共有Job・複数表表示の範囲、一括最適化未知",
+  "method": "公式4新規文書から6記録（部分確認5・未確認参考1）。Job/Sub-job適格者と臨床資格人数、Open Shift枠と配置基準、共有Job設定/一元Jobs Tab/他表表示と共有職員同時最適化を分離。旧generic資格/重複警告/最大表数/応募制限/契約を反復しない。リダイレクト後canonical/版条件/プラン/未知を保存。全文/hash/原本画像未保存。価格/制度/課題完了/独立試験追加0。登録/問い合わせ/API/設定/認証/課金/公開/本番再監査なし。",
+  "sources": [
+    {
+      "key": "resources",
+      "url": "https://help.connecteam.com/en/articles/8529732-scheduler-understanding-resources-jobs-clients-projects-sites-vehicles-and-how-to-use-them",
+      "title": "Connecteam — Scheduler: Understanding Resources (Jobs, Clients, Projects, Sites, Vehicles) and How to Use Them",
+      "publisher": "Connecteam",
+      "reference": "Add Resources / Edit Jobs",
+      "retrieved_on": "2026-10-13",
+      "version_label": "Resources Tab accounts; mutable help; Updated over a week ago; exact date not shown",
+      "method": "official_document_body",
+      "method_note": "Web lines 45-63. Redirected from article 6111368; new canonical path saved; no administrative setup performed. URL/版条件/取得日/locator/方法/要約と留保を保存。全文/本文hash/公式原本画像未保存。登録/試用/API/設定/問い合わせ/課金/認証/公開操作なし。"
+    },
+    {
+      "key": "qualify",
+      "url": "https://help.connecteam.com/en/articles/10550418-qualifying-users-to-jobs",
+      "title": "Connecteam — Qualifying Users to Jobs",
+      "publisher": "Connecteam",
+      "reference": "Qualify via Scheduler / multiple clocks-schedules / Sub-jobs",
+      "retrieved_on": "2026-10-13",
+      "version_label": "Help dated 2026-08-03; mutable",
+      "method": "official_document_body",
+      "method_note": "Web lines 55-88. Redirected from 6440898; user/smart-group eligibility is distinct from verified credential coverage. URL/版条件/取得日/locator/方法/要約と留保を保存。全文/本文hash/公式原本画像未保存。登録/試用/API/設定/問い合わせ/課金/認証/公開操作なし。"
+    },
+    {
+      "key": "open",
+      "url": "https://help.connecteam.com/en/articles/6441778-how-to-create-open-shifts",
+      "title": "Connecteam — How to Create Open Shifts",
+      "publisher": "Connecteam",
+      "reference": "Create / available spots / qualified users / plan footer",
+      "retrieved_on": "2026-10-13",
+      "version_label": "Help dated 2025-03-18; mutable",
+      "method": "official_document_body",
+      "method_note": "Web lines 33-51,59,69-70. Open Shift counts/claim mechanism, not clinical required coverage test. URL/版条件/取得日/locator/方法/要約と留保を保存。全文/本文hash/公式原本画像未保存。登録/試用/API/設定/問い合わせ/課金/認証/公開操作なし。"
+    },
+    {
+      "key": "cross",
+      "url": "https://help.connecteam.com/en/articles/6081010-cross-schedule-issues",
+      "title": "Connecteam — Cross Schedule Issues",
+      "publisher": "Connecteam",
+      "reference": "Enable each scheduler / draft inclusion / Users view / manual override / plan",
+      "retrieved_on": "2026-10-13",
+      "version_label": "Help dated 2026-07-27; mutable",
+      "method": "official_document_body",
+      "method_note": "Web lines 25-42,45-53,80,96. Redirected from cross-schedule-conflicts; existing generic warning fact not re-added. URL/版条件/取得日/locator/方法/要約と留保を保存。全文/本文hash/公式原本画像未保存。登録/試用/API/設定/問い合わせ/課金/認証/公開操作なし。"
+    }
+  ],
+  "findings": [
+    {
+      "product": "US09",
+      "criterion": "D01",
+      "source": "qualify",
+      "summary": "JobのQualified欄で利用者・Smart Groupまたは両方を選ぶ。Sub-jobの適格者は既定で親Jobと同じで、Use same settings as parent jobを外すと別の利用者/群へ変えられる。",
+      "locator": "Qualify via Job Scheduler / Qualify Users for Sub-Jobs",
+      "limitations": "適格者の管理指定で、医療資格マスターとの照合・期限/失効の自動更新・資格AND/OR・職種組合せの必要人数/違反検出ではない。Smart Groupの所属変更反映時点、親設定変更/既存勤務への影響、顧客版/Expert権利・実拒否は未確認。既存自動割当の一般適格性を再登録しない。",
+      "state": "known",
+      "delivery": "native",
+      "support": "limited",
+      "scope": "Job/Sub-job qualified users or smart groups; help 2026-08-03; exact customer plan/version unconfirmed; documented limited or contextual scope; no independent product/credential test or customer contract/runtime confirmation"
+    },
+    {
+      "product": "US09",
+      "criterion": "D01",
+      "source": "open",
+      "summary": "Open Shiftは勤務のJobを指定してavailable spotsを設定し、未充足枠数を表示する。公開・応募はそのJobの適格者が対象で、通常は先着応募で本人の勤務表へ追加される。Open ShiftはOperations Basic以上、承認付きはAdvancedからと説明する。",
+      "locator": "Create Open Shift / available spots / qualified users / Basic-Advanced footer",
+      "limitations": "1つのJobに対する募集枠と適格者範囲の部分確認。枠数は臨床配置基準・資格別最低人数や同一勤務の資格構成比ではない。資格失効/兼務二重計上・未充足違反の独立検算、実応募/Expert個別契約/上限/顧客版は未確認。既存一般Open Shift承認やC05応募制限は反復しない。",
+      "state": "known",
+      "delivery": "native",
+      "support": "limited",
+      "scope": "Operations Basic+ open shifts; Advanced+ approval; qualifying Job required; help 2025-03-18; documented limited or contextual scope; no independent product/credential test or customer contract/runtime confirmation"
+    },
+    {
+      "product": "US09",
+      "criterion": "B06",
+      "source": "resources",
+      "summary": "Resource/Jobの作成時に、適格者と割り当てるTime Clock・Job Schedulerを選べる。同じJobを編集すると、そのJobを利用する他のTime Clock・Schedulerにも影響すると説明する。",
+      "locator": "How to Add Resources / Edit Jobs",
+      "limitations": "共有するのはJob設定オブジェクト。施設/職種名をResourceとして表すことと、共有職員を複数表同時に最適化することは別。編集反映の原子性・既存割当再計算・アクセス範囲/顧客版/プラン・実境界は未試験。医療施設間移動/合算人数を推測しない。",
+      "state": "known",
+      "delivery": "native",
+      "support": "limited",
+      "scope": "Resources Tab accounts; shared Job assignments across clocks/schedulers; plan/runtime unconfirmed; documented limited or contextual scope; no independent product/credential test or customer contract/runtime confirmation"
+    },
+    {
+      "product": "US09",
+      "criterion": "B06",
+      "source": "qualify",
+      "summary": "Time ClockまたはJob Schedulerが複数あるaccountでは、全Clock/SchedulerのJobを一元管理するJobs Tabを表示する。各1個だけのaccountでは独立Jobs Tabを表示せず、各機能内から管理する。",
+      "locator": "More Than One Time Clock and Job Scheduler / Jobs Tab",
+      "limitations": "一元管理はJob/適格者の設定場所で、一括勤務計画や同時ソルバー実行ではない。表をまたぐ職員需要の統合・同時更新・全施設最適性/不足充足は未確認。UI条件とライセンスの最大表数を混同せず、既存12スケジュールの根拠は追加しない。",
+      "state": "known",
+      "delivery": "native",
+      "support": "limited",
+      "scope": "Multiple-clock or multiple-scheduler accounts; centralized Job catalog only; help 2026-08-03; documented limited or contextual scope; no independent product/credential test or customer contract/runtime confirmation"
+    },
+    {
+      "product": "US09",
+      "criterion": "B06",
+      "source": "cross",
+      "summary": "他表データを含める設定は勤務表ごとに有効化し、他表の草案勤務を含めるかも選択する。Cross-schedule events表示はView by Usersでのみ現れ、View by Jobには現れない。Time Off表示にはSchedulerとTime Clockの同期条件がある。",
+      "locator": "Enable each schedule / draft shifts / Users vs Job / Time Off sync",
+      "limitations": "他表情報の可視化条件を確認しただけで、一括最適化の実行範囲ではない。表示OFF/草案除外と内部自動割当の考慮を同一視しない。複数表の休息/最大時間/移動・同時編集・time-off種類/同期遅延は未試験。Cross Schedule IssuesはOperations Expertから、顧客の現行版/契約は未確認。",
+      "state": "known",
+      "delivery": "native",
+      "support": "limited",
+      "scope": "Operations Expert+ Cross Schedule Issues; per-schedule toggle and Users view; help 2026-07-27; documented limited or contextual scope; no independent product/credential test or customer contract/runtime confirmation"
+    },
+    {
+      "product": "US09",
+      "criterion": "B06",
+      "source": "cross",
+      "summary": "Cross Schedule Issuesは他表の勤務/不可等を通知するが、通知にかかわらず管理者が配置しても阻止しないと明記する。この本文から共有職員を複数表で同時最適化する実行・結果は確認できない。",
+      "locator": "How Do Cross-Schedule Issues Look / manual assignment despite notification",
+      "limitations": "手動配置の通知は自動割当のhard条件/他表再配分の試験ではない。相互の未割当勤務をまとめて解くAPI/UI、全表共通目標/優先度、同時実行/更新競合、独立検算は未確認。既存の重複警告という一般事実を水増しせず、今回追加は明示的手動overrideと一括実行の留保。非対応とは断定しない。",
+      "state": "not_found",
+      "delivery": "unknown",
+      "support": "unknown",
+      "scope": "Operations Expert+ cross-schedule manual workflow; simultaneous optimization unconfirmed; documented limited or contextual scope; no independent product/credential test or customer contract/runtime confirmation"
+    }
+  ],
+  "prices": [],
+  "followups": [],
+  "task_updates": [
+    {
+      "task_id": "TASK-RES01221",
+      "state": "in_progress",
+      "priority": 3,
+      "method": "vendor_document",
+      "note": "B37：利用者/Smart Group指定、Sub-job親適格者継承/変更、Job適格者向けOpen Shift枠数/未充足表示・Basic/Advanced境界を部分確認。医療資格期限/資格別必要人数構成/違反検算/実応募は未確認。"
+    },
+    {
+      "task_id": "TASK-RES01215",
+      "state": "in_progress",
+      "priority": 3,
+      "method": "vendor_document",
+      "note": "B37：共有Job複数表反映と一元Jobs Tab、各表他表データ/草案選択・Users専用表示/休暇同期を部分確認。手動overrideは通知でも阻止なし。共有職員の同時最適化・需要統合/実境界は未確認。"
+    }
+  ],
+  "retrieval_checks": [
+    {
+      "product": "US09",
+      "url": "https://help.connecteam.com/en/articles/8529732-scheduler-understanding-resources-jobs-clients-projects-sites-vehicles-and-how-to-use-them",
+      "result": "resource_article_redirect_and_clock_wording",
+      "notes": "旧Job記事6111368がResources記事8529732へredirect。Scheduler文脈のunassigned job説明はthis time clockと記載し、機能名混在を留保。"
+    },
+    {
+      "product": "US09",
+      "url": "https://help.connecteam.com/en/articles/6081010-cross-schedule-issues",
+      "result": "manual_override_explicit_no_cross_schedule_hard_claim",
+      "notes": "本文は通知でも配置を阻止しないと明示。自動割当の多表一括実行/制御は未確認。1勤務表の他表表示と全表同時最適化を分ける。"
+    }
+  ]
+}

@@ -1,0 +1,144 @@
+{
+  "batch_id": "B54-20261013",
+  "prior_batch": "B53-20261013",
+  "as_of_date": "2026-10-13",
+  "resolution_policy_version": 2,
+  "description": "Q07 T02/5 勤夢表VXとV5 Lightの標準機能・帳票オプション境界",
+  "method": "限定公式公開調査・ローカル反映。前回の既完/外部待ちを再完了しない。原要件・不明・資料不一致・既存価格119行を保持。Git/CI/本番/課金/登録/問い合わせなし。",
+  "sources": [
+    {
+      "key": "vx-function",
+      "url": "https://my-sys.net/2021/?page_id=223",
+      "title": "勤夢表VXの機能 – マイシス(株)",
+      "publisher": "マイシス株式会社 / マイシスサポートセンター",
+      "retrieved_on": "2026-10-13",
+      "version_label": "公開/改定日不明。VX/V5と別製品excel勤夢表を区別。2014-07-18の配布注意は資料全体の改定日ではない。閲覧2026-10-13",
+      "method": "public_web_body",
+      "method_note": "公式本文と表の親項目/詳細行/注記を照合。原本・取得hashはQ07バックアップsource-capturesへ保存。フォーム入力/登録/課金/照会/独立製品試験なし。",
+      "scope_note": "Q01限定公開質問終了基準。原要件/未知/個別適用の残条件は個別台帳へ保持。"
+    },
+    {
+      "key": "vx-light",
+      "url": "https://my-sys.net/2021/?page_id=2036",
+      "title": "廉価版　勤夢表V5 Light　発売 – マイシス(株)",
+      "publisher": "マイシス株式会社 / マイシスサポートセンター",
+      "retrieved_on": "2026-10-13",
+      "version_label": "公開/改定日不明。VX/V5と別製品excel勤夢表を区別。2014-07-18の配布注意は資料全体の改定日ではない。閲覧2026-10-13",
+      "method": "public_web_body",
+      "method_note": "公式本文と表の親項目/詳細行/注記を照合。原本・取得hashはQ07バックアップsource-capturesへ保存。フォーム入力/登録/課金/照会/独立製品試験なし。",
+      "scope_note": "Q01限定公開質問終了基準。原要件/未知/個別適用の残条件は個別台帳へ保持。"
+    },
+    {
+      "key": "vx-developer",
+      "url": "https://ideanexsys.com/%E5%8B%A4%E5%A4%A2%E8%A1%A8vx%E3%81%AE%E6%A9%9F%E8%83%BD/",
+      "title": "勤夢表VXの機能 – マイシスサポートセンター",
+      "publisher": "マイシス株式会社 / マイシスサポートセンター",
+      "retrieved_on": "2026-10-13",
+      "version_label": "公開/改定日不明。VX/V5と別製品excel勤夢表を区別。2014-07-18の配布注意は資料全体の改定日ではない。閲覧2026-10-13",
+      "method": "public_web_body",
+      "method_note": "公式本文と表の親項目/詳細行/注記を照合。原本・取得hashはQ07バックアップsource-capturesへ保存。フォーム入力/登録/課金/照会/独立製品試験なし。",
+      "scope_note": "Q01限定公開質問終了基準。原要件/未知/個別適用の残条件は個別台帳へ保持。"
+    },
+    {
+      "key": "vx-cost",
+      "url": "https://my-sys.net/2021/?page_id=2067",
+      "title": "勤夢表の導入コスト比較 – マイシス(株)",
+      "publisher": "マイシス株式会社 / マイシスサポートセンター",
+      "retrieved_on": "2026-10-13",
+      "version_label": "公開/改定日不明。VX/V5と別製品excel勤夢表を区別。2014-07-18の配布注意は資料全体の改定日ではない。閲覧2026-10-13",
+      "method": "public_web_body",
+      "method_note": "公式本文と表の親項目/詳細行/注記を照合。原本・取得hashはQ07バックアップsource-capturesへ保存。フォーム入力/登録/課金/照会/独立製品試験なし。",
+      "scope_note": "Q01限定公開質問終了基準。原要件/未知/個別適用の残条件は個別台帳へ保持。"
+    }
+  ],
+  "findings": [
+    {
+      "product": "JP19",
+      "criterion": "B07",
+      "source": "vx-function",
+      "state": "known",
+      "support": "limited",
+      "delivery": "native",
+      "summary": "VXの機能ページは、勤怠システムへのデータ受渡しを標準装備とし、勤務コードは1記号4種類までと説明する。勤務表のExcel出力と、管理日誌・様式9への展開は別項目である。",
+      "locator": "マスター管理「勤怠システムへのデータ受け渡しも標準装備」 / いつでもEXCEL出力",
+      "limitations": "標準的な勤怠システムとのデータ受渡しの範囲。接続先の受入・微調整・自動API接続・費用・現行契約包含は未検証。",
+      "scope": "2026-10-13 UTCの公式公開資料照合。対象製品・用途・資料時点に限定。個別契約・制度適合・実動作は未検証。"
+    },
+    {
+      "product": "JP19",
+      "criterion": "B07",
+      "source": "vx-function",
+      "state": "known",
+      "support": "limited",
+      "delivery": "unknown",
+      "summary": "管理日誌のExcel出力と勤務実績から様式9への展開は、V5/VXのオプションと明記される。様式9のExcel書式は別途用意し、所定フォルダーへ配置する案内がある。",
+      "locator": "「管理日誌の印刷」「勤務実績印刷から様式9への展開」各オプション（V5/VX）注記",
+      "limitations": "オプション価格・必須/任意・最新版対応・契約適用は不明。外部書式の無償配布を製品オプション無料と読み替えない。算式/提出受理の実測なし。",
+      "scope": "2026-10-13 UTCの公式公開資料照合。対象製品・用途・資料時点に限定。個別契約・制度適合・実動作は未検証。"
+    },
+    {
+      "product": "JP19",
+      "criterion": "B07",
+      "source": "vx-light",
+      "state": "known",
+      "support": "limited",
+      "delivery": "unknown",
+      "summary": "V5 Lightは勤務記号30、行事記号10、休日記号10、禁止パターン60を記載し、VXを選ぶ案内と区別する。様式9への展開はLightでもオプションと記載する。",
+      "locator": "Light「勤務記号」「勤務配置条件」「勤務実績印刷から様式9への展開」",
+      "limitations": "Lightの制限をVXへ流用しない。「理論上1000の記号」と部署別の個別内訳の数え方や同時利用上限は未検証。ページ改定日不明。",
+      "scope": "2026-10-13 UTCの公式公開資料照合。対象製品・用途・資料時点に限定。個別契約・制度適合・実動作は未検証。"
+    },
+    {
+      "product": "JP19",
+      "criterion": "B07",
+      "source": "vx-developer",
+      "state": "known",
+      "support": "limited",
+      "delivery": "unknown",
+      "summary": "サポートセンターのVX機能ページも管理日誌と様式9への展開をV5/VXのオプションと表示する。書式配置位置の変更やExcel転記を説明する。",
+      "locator": "管理日誌の印刷 / 様式9への展開 / 2014-07-18の外部書式配布注意",
+      "limitations": "2014年の注意書きは現行制度版の証明ではない。別製品excel勤夢表の2026年度版告知やショップ価格をVXへ移さない。",
+      "scope": "2026-10-13 UTCの公式公開資料照合。対象製品・用途・資料時点に限定。個別契約・制度適合・実動作は未検証。"
+    }
+  ],
+  "task_updates": [
+    {
+      "task_id": "TASK-RES00815",
+      "state": "done",
+      "priority": 3,
+      "method": "public_document",
+      "expected_task": {
+        "priority": 3,
+        "required_method": "unknown",
+        "last_checked_on": "2026-10-12",
+        "task_state": "in_progress",
+        "question": "プラン・追加機能の境界：定義の未確認部分・現行条件を確認する。",
+        "evidence_needed": "機能仕様・プラン比較・利用規約・デモ",
+        "owner": "未割当",
+        "next_review_on": null,
+        "block_reason": null
+      },
+      "changes": {
+        "owner": "公開資料確認終了 / 残条件は導入時再開",
+        "block_reason": null,
+        "next_review_on": null,
+        "question": "勤夢表VXの標準データ受渡し/Excel出力とV5/VXの管理日誌・様式9オプション、Lightの機能制限を照合する。",
+        "evidence_needed": "公式公開資料の該当箇所・日付・適用条件。原要件と個別契約/実測の残条件はQ07台帳へ保持。"
+      },
+      "note": "{\"review_id\":\"Q07T02-TASK-RES00815\",\"task_id\":\"TASK-RES00815\",\"product\":\"勤夢表VX（V5/VX）\",\"offering_id\":\"OF-JP19\",\"criterion_id\":\"B07\",\"original_task\":{\"priority\":3,\"required_method\":\"unknown\",\"last_checked_on\":\"2026-10-12\",\"task_id\":\"TASK-RES00815\",\"offering_id\":\"OF-JP19\",\"criterion_id\":\"B07\",\"task_state\":\"in_progress\",\"question\":\"プラン・追加機能の境界：定義の未確認部分・現行条件を確認する。\",\"evidence_needed\":\"機能仕様・プラン比較・利用規約・デモ\",\"owner\":\"未割当\",\"next_review_on\":null,\"block_reason\":null},\"q01_public_acceptance_atoms\":[\"機能を使えるプラン/モジュールの公開対応\",\"追加契約/地域/βの留保\"],\"scope\":\"勤夢表VXの標準データ受渡し/Excel出力とV5/VXの管理日誌・様式9オプション、Lightの機能制限を照合する。\",\"reason\":\"対象の限定公開質問に該当する肯定記載を個別照合。原要件、未記載、契約・実動作の残条件を保持。\",\"evidence_observation_ids\":[\"B54-20261013-OBS0001\",\"B54-20261013-OBS0002\",\"B54-20261013-OBS0003\",\"B54-20261013-OBS0004\"],\"remaining_work\":[\"現行VX/Light別の見積・追加ライセンス数量・保守・オプション価格、税、対象帳票年度/算式、外部書式・Excelライセンスと実動作\"],\"primary_queue\":\"completed_public_check\",\"public_phase\":\"completed_bounded_document_question\",\"external_state\":\"deferred_until_adoption\",\"resume_condition\":\"公式改定/正式資料/対象見積の取得又は導入判断に残条件が必要な時。新根拠なしの反復探索はしない。\",\"after_task_state\":\"done\",\"factual_support_not_inferred\":true,\"original_requirements_deleted\":false}",
+      "public_completion": {
+        "scope": "勤夢表VXの標準データ受渡し/Excel出力とV5/VXの管理日誌・様式9オプション、Lightの機能制限を照合する。",
+        "observation_ids": [
+          "B54-20261013-OBS0001",
+          "B54-20261013-OBS0002",
+          "B54-20261013-OBS0003",
+          "B54-20261013-OBS0004"
+        ],
+        "remaining_work": [
+          "現行VX/Light別の見積・追加ライセンス数量・保守・オプション価格、税、対象帳票年度/算式、外部書式・Excelライセンスと実動作"
+        ]
+      }
+    }
+  ],
+  "prices": []
+}

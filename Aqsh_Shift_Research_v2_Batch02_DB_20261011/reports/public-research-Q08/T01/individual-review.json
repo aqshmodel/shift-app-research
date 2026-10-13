@@ -1,0 +1,67 @@
+[
+  {
+    "review_id": "Q08T01-TASK-RES01171",
+    "task_id": "TASK-RES01171",
+    "product": "Nursegrid Manager",
+    "offering_id": "OF-US08",
+    "criterion_id": "B07",
+    "original_task": {
+      "priority": 2,
+      "required_method": "vendor_document",
+      "last_checked_on": "2026-10-12",
+      "task_id": "TASK-RES01171",
+      "offering_id": "OF-US08",
+      "criterion_id": "B07",
+      "task_state": "in_progress",
+      "question": "プラン・追加機能の境界：定義の未確認部分・現行条件を確認する。",
+      "evidence_needed": "機能仕様・プラン比較・利用規約・デモ",
+      "owner": "未割当",
+      "next_review_on": null,
+      "block_reason": null
+    },
+    "q01_public_acceptance_atoms": [
+      "機能を使えるプラン/モジュールの公開対応",
+      "追加契約/地域/βの留保"
+    ],
+    "scope": "Nursegrid Managerの組織機能と個人向け無料App、役割/追加機能注意、Restricted Userの公開境界を照合する。",
+    "reason": "限定公開質問に該当する肯定記載を個別照合し、原要件・未記載・契約適用/実測の残条件を保存した。",
+    "evidence_observation_ids": [
+      "B58-20261013-OBS0001",
+      "B58-20261013-OBS0002",
+      "B58-20261013-OBS0003",
+      "B58-20261013-OBS0004"
+    ],
+    "remaining_work": [
+      "現在のManagerプラン別包含・オプション費/契約、対象役割の設定・自己申請の実測、組織規模/税/課金人数・最低契約"
+    ],
+    "primary_queue": "completed_public_check",
+    "public_phase": "completed_bounded_document_question",
+    "external_state": "deferred_until_adoption",
+    "resume_condition": "公式改定/正式資料/対象見積の取得又は導入判断に残条件が必要な時。新根拠なしの反復探索はしない。",
+    "after_task_state": "done",
+    "factual_support_not_inferred": true,
+    "original_requirements_deleted": false,
+    "acceptance_review": [
+      {
+        "atom": "機能を使えるプラン/モジュールの公開対応",
+        "state": "bounded_positive_document_match",
+        "observation_ids": [
+          "B58-20261013-OBS0001",
+          "B58-20261013-OBS0002",
+          "B58-20261013-OBS0003",
+          "B58-20261013-OBS0004"
+        ]
+      },
+      {
+        "atom": "追加契約/地域/βの留保",
+        "state": "bounded_positive_document_match",
+        "observation_ids": [
+          "B58-20261013-OBS0001",
+          "B58-20261013-OBS0002",
+          "B58-20261013-OBS0003",
+          "B58-20261013-OBS0004"
+        ]
+      }
+    ]
+  }
+]

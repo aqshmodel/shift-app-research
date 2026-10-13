@@ -1,0 +1,203 @@
+[
+  {
+    "review_id": "Q04-TASK-RES00277",
+    "task_id": "TASK-RES00277",
+    "product": "miramos",
+    "offering_id": "OF-JP07",
+    "criterion_id": "B07",
+    "original_task": {
+      "priority": 3,
+      "required_method": "unknown",
+      "last_checked_on": null,
+      "task_id": "TASK-RES00277",
+      "offering_id": "OF-JP07",
+      "criterion_id": "B07",
+      "task_state": "not_started",
+      "question": "プラン・追加機能の境界：定義の未確認部分・現行条件を確認する。",
+      "evidence_needed": "機能仕様・プラン比較・利用規約・デモ",
+      "owner": "未割当",
+      "next_review_on": null,
+      "block_reason": null
+    },
+    "q01_public_acceptance_atoms": [
+      "機能を使えるプラン/モジュールの公開対応",
+      "追加契約/地域/βの留保"
+    ],
+    "scope": "miramos医療/介護の公開製品機能・外部勤怠連携・クロノス側追加契約の明示境界を確認する（miramos側のプラン包含は別確認）。",
+    "reason": "機能ページと連携PDFの対象を個別照合し、クロノス側の別途オプション契約を肯定根拠で区別した。",
+    "evidence_observation_ids": [
+      "B42-20261013-OBS0001",
+      "B42-20261013-OBS0002",
+      "B42-20261013-OBS0003",
+      "B42-20261013-OBS0004",
+      "B42-20261013-OBS0005",
+      "B42-20261013-OBS0006"
+    ],
+    "remaining_work": [
+      "miramos自身のプラン名/標準包含/追加契約/費用、医療と介護の契約差、対応制度版と実動作"
+    ],
+    "primary_queue": "completed_public_check",
+    "public_phase": "completed_bounded_document_question",
+    "external_state": "deferred_until_adoption",
+    "resume_condition": "対象の公式仕様/価格改定、条件を指定した正式資料の取得、導入判断に残条件が必要になった時。新根拠がない反復探索はしない。",
+    "after_task_state": "done",
+    "factual_support_not_inferred": true
+  },
+  {
+    "review_id": "Q04-TASK-RES00309",
+    "task_id": "TASK-RES00309",
+    "product": "miramos",
+    "offering_id": "OF-JP07",
+    "criterion_id": "P01",
+    "original_task": {
+      "priority": 3,
+      "required_method": "unknown",
+      "last_checked_on": null,
+      "task_id": "TASK-RES00309",
+      "offering_id": "OF-JP07",
+      "criterion_id": "P01",
+      "task_state": "not_started",
+      "question": "料金方式・公開範囲：定義の未確認部分・現行条件を確認する。",
+      "evidence_needed": "公式料金・個別見積・契約書",
+      "owner": "未割当",
+      "next_review_on": null,
+      "block_reason": null
+    },
+    "q01_public_acceptance_atoms": [
+      "固定/人数/施設/計算/買切り/見積の公開方式",
+      "通貨/税/時点/対象プランの条件"
+    ],
+    "scope": "料金方式・公開範囲：定義の未確認部分・現行条件を確認する。",
+    "reason": "miramos通常利用の数値料金と料金方式、通貨/税/対象プランが公開資料から未特定。",
+    "evidence_observation_ids": [
+      "B42-20261013-OBS0008"
+    ],
+    "remaining_work": [
+      "通常料金・税・対象プラン・見積適用を明記した正式料金表/条件付き見積"
+    ],
+    "primary_queue": "external_confirmation_wait",
+    "public_phase": "bounded_public_search_ended_unknown",
+    "external_state": "waiting_for_formal_document",
+    "resume_condition": "対象の公式仕様/価格改定、条件を指定した正式資料の取得、導入判断に残条件が必要になった時。新根拠がない反復探索はしない。",
+    "after_task_state": "blocked",
+    "factual_support_not_inferred": true
+  },
+  {
+    "review_id": "Q04-TASK-RES00310",
+    "task_id": "TASK-RES00310",
+    "product": "miramos",
+    "offering_id": "OF-JP07",
+    "criterion_id": "P02",
+    "original_task": {
+      "priority": 3,
+      "required_method": "unknown",
+      "last_checked_on": null,
+      "task_id": "TASK-RES00310",
+      "offering_id": "OF-JP07",
+      "criterion_id": "P02",
+      "task_state": "not_started",
+      "question": "課金対象・単位：定義の未確認部分・現行条件を確認する。",
+      "evidence_needed": "公式料金・個別見積・契約書",
+      "owner": "未割当",
+      "next_review_on": null,
+      "block_reason": null
+    },
+    "q01_public_acceptance_atoms": [
+      "公開された課金対象と単位",
+      "管理者/休職/兼務/最低数量等の記載範囲"
+    ],
+    "scope": "課金対象・単位：定義の未確認部分・現行条件を確認する。",
+    "reason": "miramosの課金単位/人数算定/最低数量が公開資料から未特定。",
+    "evidence_observation_ids": [
+      "B42-20261013-OBS0009"
+    ],
+    "remaining_work": [
+      "施設/部署/人数・管理者/休職/兼務者の数え方と最低数量の正式仕様"
+    ],
+    "primary_queue": "external_confirmation_wait",
+    "public_phase": "bounded_public_search_ended_unknown",
+    "external_state": "waiting_for_formal_document",
+    "resume_condition": "対象の公式仕様/価格改定、条件を指定した正式資料の取得、導入判断に残条件が必要になった時。新根拠がない反復探索はしない。",
+    "after_task_state": "blocked",
+    "factual_support_not_inferred": true
+  },
+  {
+    "review_id": "Q04-TASK-RES00311",
+    "task_id": "TASK-RES00311",
+    "product": "miramos",
+    "offering_id": "OF-JP07",
+    "criterion_id": "P03",
+    "original_task": {
+      "priority": 3,
+      "required_method": "unknown",
+      "last_checked_on": null,
+      "task_id": "TASK-RES00311",
+      "offering_id": "OF-JP07",
+      "criterion_id": "P03",
+      "task_state": "not_started",
+      "question": "請求周期・最低契約：定義の未確認部分・現行条件を確認する。",
+      "evidence_needed": "公式料金・個別見積・契約書",
+      "owner": "未割当",
+      "next_review_on": null,
+      "block_reason": null
+    },
+    "q01_public_acceptance_atoms": [
+      "月/年の請求周期・前払い・最低期間",
+      "最低人数/請求額の公表範囲"
+    ],
+    "scope": "請求周期・最低契約：定義の未確認部分・現行条件を確認する。",
+    "reason": "月/年の請求周期・前払い・最低期間/総額が公開資料から未特定。",
+    "evidence_observation_ids": [
+      "B42-20261013-OBS0010"
+    ],
+    "remaining_work": [
+      "請求周期・最低契約・解約・試用から有料移行の現行契約条件"
+    ],
+    "primary_queue": "external_confirmation_wait",
+    "public_phase": "bounded_public_search_ended_unknown",
+    "external_state": "waiting_for_formal_document",
+    "resume_condition": "対象の公式仕様/価格改定、条件を指定した正式資料の取得、導入判断に残条件が必要になった時。新根拠がない反復探索はしない。",
+    "after_task_state": "blocked",
+    "factual_support_not_inferred": true
+  },
+  {
+    "review_id": "Q04-TASK-RES00312",
+    "task_id": "TASK-RES00312",
+    "product": "miramos",
+    "offering_id": "OF-JP07",
+    "criterion_id": "P04",
+    "original_task": {
+      "priority": 3,
+      "required_method": "unknown",
+      "last_checked_on": null,
+      "task_id": "TASK-RES00312",
+      "offering_id": "OF-JP07",
+      "criterion_id": "P04",
+      "task_state": "not_started",
+      "question": "導入初期費用：定義の未確認部分・現行条件を確認する。",
+      "evidence_needed": "公式料金・個別見積・契約書",
+      "owner": "未割当",
+      "next_review_on": null,
+      "block_reason": null
+    },
+    "q01_public_acceptance_atoms": [
+      "公表された必須初期費用と任意追加費",
+      "未公表額を0円としない"
+    ],
+    "scope": "導入初期費用：定義の未確認部分・現行条件を確認する。",
+    "reason": "初期登録/設定/移行/研修等の包含・必須/任意・金額が未特定。",
+    "evidence_observation_ids": [
+      "B42-20261013-OBS0011",
+      "B42-20261013-OBS0012"
+    ],
+    "remaining_work": [
+      "支援作業項目ごとの必須/任意・包含/追加額の正式見積/契約"
+    ],
+    "primary_queue": "external_confirmation_wait",
+    "public_phase": "bounded_public_search_ended_unknown",
+    "external_state": "waiting_for_formal_document",
+    "resume_condition": "対象の公式仕様/価格改定、条件を指定した正式資料の取得、導入判断に残条件が必要になった時。新根拠がない反復探索はしない。",
+    "after_task_state": "blocked",
+    "factual_support_not_inferred": true
+  }
+]

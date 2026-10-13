@@ -1,9 +1,9 @@
 {
   "tables": {
-    "assessment_resolutions": 2756,
+    "assessment_resolutions": 2811,
     "asset_evidence": 6,
     "audit_issues": 32,
-    "batch_product_membership": 172,
+    "batch_product_membership": 205,
     "benchmark_runs": 0,
     "benchmark_scenario_criteria": 45,
     "benchmark_scenarios": 14,
@@ -16,62 +16,63 @@
     "domains": 20,
     "legacy_feature_map": 86,
     "metric_catalog": 20,
-    "observation_evidence": 2185,
-    "observations": 3069,
+    "observation_evidence": 2308,
+    "observations": 3192,
     "offerings": 50,
-    "plans": 99,
-    "price_components": 118,
+    "plans": 100,
+    "price_components": 119,
     "product_aliases": 57,
     "products": 50,
     "regulation_support": 0,
     "regulations": 17,
     "research_assets": 6,
-    "research_batches": 36,
-    "research_task_updates": 121,
+    "research_batches": 62,
+    "research_task_updates": 243,
     "research_tasks": 980,
-    "resolution_evidence": 3842,
-    "retrieval_checks": 214,
+    "resolution_evidence": 4061,
+    "retrieval_checks": 223,
     "run_metrics": 0,
     "schema_info": 17,
-    "source_archives": 6,
-    "source_documents": 368,
-    "source_method_attributes": 462,
-    "source_revisions": 522,
-    "sources": 370,
+    "source_archives": 13,
+    "source_documents": 397,
+    "source_method_attributes": 563,
+    "source_revisions": 623,
+    "sources": 399,
     "vendors": 11
   },
   "products": 50,
   "offerings": 50,
-  "document_observations": 2151,
+  "document_observations": 2274,
   "document_states": {
-    "disputed": 38,
+    "disputed": 41,
     "inaccessible": 8,
-    "known": 1966,
-    "not_disclosed": 2,
-    "not_found": 136,
+    "known": 2062,
+    "not_disclosed": 22,
+    "not_found": 140,
     "not_researched": 1
   },
   "common_slots": 2000,
-  "documented_common_scopes": 619,
-  "research_documents": 352,
+  "documented_common_scopes": 640,
+  "research_documents": 379,
   "benchmark_runs": 0,
   "preferred_logos": {
     "company": 10,
     "service": 40
   },
-  "latest_batch": "B36-20261013",
+  "latest_batch": "B62-20261013",
   "latest_batch_details": {
-    "batch_id": "B36-20261013",
-    "new_document_findings": 4,
+    "batch_id": "B62-20261013",
+    "new_document_findings": 3,
     "editorial_corrections": 0,
     "new_price_components": 0,
     "reference_regulations": 0,
-    "source_retrievals": 2,
-    "functional_research_sources": 2,
+    "source_retrievals": 3,
+    "functional_research_sources": 3,
     "functional_research_products": 1,
     "products_including_classification_corrections": 1,
     "finding_states": {
-      "not_found": 4
+      "known": 2,
+      "not_disclosed": 1
     }
   },
   "schema_objects": {
@@ -79,16 +80,16 @@
     "view": 12
   },
   "research_task_states": {
-    "blocked": 78,
-    "done": 2,
-    "in_progress": 258,
-    "not_started": 642
+    "blocked": 123,
+    "done": 39,
+    "in_progress": 211,
+    "not_started": 607
   },
   "by_product": [
     {
-      "product_id": "US09",
-      "canonical_name": "Connecteam Operations Hub Expert",
-      "document_records": 4
+      "product_id": "US10",
+      "canonical_name": "Timefold Employee Shift Scheduling API",
+      "document_records": 3
     }
   ]
 }

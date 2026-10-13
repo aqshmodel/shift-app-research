@@ -1,0 +1,828 @@
+{
+  "status": "passed",
+  "checked_at": "2026-10-13T15:48:42.025Z",
+  "base": "https://shift.aqsh.co.jp",
+  "snapshot_id": "B62-20261013-pub2",
+  "offerings": 20,
+  "layouts": 80,
+  "widths": [
+    320,
+    390,
+    768,
+    1440
+  ],
+  "checks": [
+    {
+      "id": "OF-JP02",
+      "slug": "jp02",
+      "width": 320,
+      "status": 200,
+      "h1": "Optamo for Shift",
+      "scrollWidth": 320,
+      "paragraphs": 50,
+      "wrap": true
+    },
+    {
+      "id": "OF-JP02",
+      "slug": "jp02",
+      "width": 390,
+      "status": 200,
+      "h1": "Optamo for Shift",
+      "scrollWidth": 390,
+      "paragraphs": 50,
+      "wrap": true
+    },
+    {
+      "id": "OF-JP02",
+      "slug": "jp02",
+      "width": 768,
+      "status": 200,
+      "h1": "Optamo for Shift",
+      "scrollWidth": 768,
+      "paragraphs": 50,
+      "wrap": true
+    },
+    {
+      "id": "OF-JP02",
+      "slug": "jp02",
+      "width": 1440,
+      "status": 200,
+      "h1": "Optamo for Shift",
+      "scrollWidth": 1440,
+      "paragraphs": 50,
+      "wrap": true
+    },
+    {
+      "id": "OF-JP03",
+      "slug": "jp03",
+      "width": 320,
+      "status": 200,
+      "h1": "FIKAIGO",
+      "scrollWidth": 320,
+      "paragraphs": 50,
+      "wrap": true
+    },
+    {
+      "id": "OF-JP03",
+      "slug": "jp03",
+      "width": 390,
+      "status": 200,
+      "h1": "FIKAIGO",
+      "scrollWidth": 390,
+      "paragraphs": 50,
+      "wrap": true
+    },
+    {
+      "id": "OF-JP03",
+      "slug": "jp03",
+      "width": 768,
+      "status": 200,
+      "h1": "FIKAIGO",
+      "scrollWidth": 768,
+      "paragraphs": 50,
+      "wrap": true
+    },
+    {
+      "id": "OF-JP03",
+      "slug": "jp03",
+      "width": 1440,
+      "status": 200,
+      "h1": "FIKAIGO",
+      "scrollWidth": 1440,
+      "paragraphs": 50,
+      "wrap": true
+    },
+    {
+      "id": "OF-JP04",
+      "slug": "jp04",
+      "width": 320,
+      "status": 200,
+      "h1": "Nafty",
+      "scrollWidth": 320,
+      "paragraphs": 50,
+      "wrap": true
+    },
+    {
+      "id": "OF-JP04",
+      "slug": "jp04",
+      "width": 390,
+      "status": 200,
+      "h1": "Nafty",
+      "scrollWidth": 390,
+      "paragraphs": 50,
+      "wrap": true
+    },
+    {
+      "id": "OF-JP04",
+      "slug": "jp04",
+      "width": 768,
+      "status": 200,
+      "h1": "Nafty",
+      "scrollWidth": 768,
+      "paragraphs": 50,
+      "wrap": true
+    },
+    {
+      "id": "OF-JP04",
+      "slug": "jp04",
+      "width": 1440,
+      "status": 200,
+      "h1": "Nafty",
+      "scrollWidth": 1440,
+      "paragraphs": 50,
+      "wrap": true
+    },
+    {
+      "id": "OF-JP05",
+      "slug": "jp05",
+      "width": 320,
+      "status": 200,
+      "h1": "勤務シフト作成お助けマン Day",
+      "scrollWidth": 320,
+      "paragraphs": 50,
+      "wrap": true
+    },
+    {
+      "id": "OF-JP05",
+      "slug": "jp05",
+      "width": 390,
+      "status": 200,
+      "h1": "勤務シフト作成お助けマン Day",
+      "scrollWidth": 390,
+      "paragraphs": 50,
+      "wrap": true
+    },
+    {
+      "id": "OF-JP05",
+      "slug": "jp05",
+      "width": 768,
+      "status": 200,
+      "h1": "勤務シフト作成お助けマン Day",
+      "scrollWidth": 768,
+      "paragraphs": 50,
+      "wrap": true
+    },
+    {
+      "id": "OF-JP05",
+      "slug": "jp05",
+      "width": 1440,
+      "status": 200,
+      "h1": "勤務シフト作成お助けマン Day",
+      "scrollWidth": 1440,
+      "paragraphs": 50,
+      "wrap": true
+    },
+    {
+      "id": "OF-JP06",
+      "slug": "jp06",
+      "width": 320,
+      "status": 200,
+      "h1": "勤務シフト作成お助けマン Time",
+      "scrollWidth": 320,
+      "paragraphs": 50,
+      "wrap": true
+    },
+    {
+      "id": "OF-JP06",
+      "slug": "jp06",
+      "width": 390,
+      "status": 200,
+      "h1": "勤務シフト作成お助けマン Time",
+      "scrollWidth": 390,
+      "paragraphs": 50,
+      "wrap": true
+    },
+    {
+      "id": "OF-JP06",
+      "slug": "jp06",
+      "width": 768,
+      "status": 200,
+      "h1": "勤務シフト作成お助けマン Time",
+      "scrollWidth": 768,
+      "paragraphs": 50,
+      "wrap": true
+    },
+    {
+      "id": "OF-JP06",
+      "slug": "jp06",
+      "width": 1440,
+      "status": 200,
+      "h1": "勤務シフト作成お助けマン Time",
+      "scrollWidth": 1440,
+      "paragraphs": 50,
+      "wrap": true
+    },
+    {
+      "id": "OF-JP07",
+      "slug": "jp07",
+      "width": 320,
+      "status": 200,
+      "h1": "miramos",
+      "scrollWidth": 320,
+      "paragraphs": 50,
+      "wrap": true
+    },
+    {
+      "id": "OF-JP07",
+      "slug": "jp07",
+      "width": 390,
+      "status": 200,
+      "h1": "miramos",
+      "scrollWidth": 390,
+      "paragraphs": 50,
+      "wrap": true
+    },
+    {
+      "id": "OF-JP07",
+      "slug": "jp07",
+      "width": 768,
+      "status": 200,
+      "h1": "miramos",
+      "scrollWidth": 768,
+      "paragraphs": 50,
+      "wrap": true
+    },
+    {
+      "id": "OF-JP07",
+      "slug": "jp07",
+      "width": 1440,
+      "status": 200,
+      "h1": "miramos",
+      "scrollWidth": 1440,
+      "paragraphs": 50,
+      "wrap": true
+    },
+    {
+      "id": "OF-JP11",
+      "slug": "jp11",
+      "width": 320,
+      "status": 200,
+      "h1": "ナースシフト",
+      "scrollWidth": 320,
+      "paragraphs": 50,
+      "wrap": true
+    },
+    {
+      "id": "OF-JP11",
+      "slug": "jp11",
+      "width": 390,
+      "status": 200,
+      "h1": "ナースシフト",
+      "scrollWidth": 390,
+      "paragraphs": 50,
+      "wrap": true
+    },
+    {
+      "id": "OF-JP11",
+      "slug": "jp11",
+      "width": 768,
+      "status": 200,
+      "h1": "ナースシフト",
+      "scrollWidth": 768,
+      "paragraphs": 50,
+      "wrap": true
+    },
+    {
+      "id": "OF-JP11",
+      "slug": "jp11",
+      "width": 1440,
+      "status": 200,
+      "h1": "ナースシフト",
+      "scrollWidth": 1440,
+      "paragraphs": 50,
+      "wrap": true
+    },
+    {
+      "id": "OF-JP14",
+      "slug": "jp14",
+      "width": 320,
+      "status": 200,
+      "h1": "NTTデータ数理システム シフトスケジューリング",
+      "scrollWidth": 320,
+      "paragraphs": 50,
+      "wrap": true
+    },
+    {
+      "id": "OF-JP14",
+      "slug": "jp14",
+      "width": 390,
+      "status": 200,
+      "h1": "NTTデータ数理システム シフトスケジューリング",
+      "scrollWidth": 390,
+      "paragraphs": 50,
+      "wrap": true
+    },
+    {
+      "id": "OF-JP14",
+      "slug": "jp14",
+      "width": 768,
+      "status": 200,
+      "h1": "NTTデータ数理システム シフトスケジューリング",
+      "scrollWidth": 768,
+      "paragraphs": 50,
+      "wrap": true
+    },
+    {
+      "id": "OF-JP14",
+      "slug": "jp14",
+      "width": 1440,
+      "status": 200,
+      "h1": "NTTデータ数理システム シフトスケジューリング",
+      "scrollWidth": 1440,
+      "paragraphs": 50,
+      "wrap": true
+    },
+    {
+      "id": "OF-JP15",
+      "slug": "jp15",
+      "width": 320,
+      "status": 200,
+      "h1": "快決！シフト君NEO ウェルネス",
+      "scrollWidth": 320,
+      "paragraphs": 50,
+      "wrap": true
+    },
+    {
+      "id": "OF-JP15",
+      "slug": "jp15",
+      "width": 390,
+      "status": 200,
+      "h1": "快決！シフト君NEO ウェルネス",
+      "scrollWidth": 390,
+      "paragraphs": 50,
+      "wrap": true
+    },
+    {
+      "id": "OF-JP15",
+      "slug": "jp15",
+      "width": 768,
+      "status": 200,
+      "h1": "快決！シフト君NEO ウェルネス",
+      "scrollWidth": 768,
+      "paragraphs": 50,
+      "wrap": true
+    },
+    {
+      "id": "OF-JP15",
+      "slug": "jp15",
+      "width": 1440,
+      "status": 200,
+      "h1": "快決！シフト君NEO ウェルネス",
+      "scrollWidth": 1440,
+      "paragraphs": 50,
+      "wrap": true
+    },
+    {
+      "id": "OF-JP16",
+      "slug": "jp16",
+      "width": 320,
+      "status": 200,
+      "h1": "Optamo for Task",
+      "scrollWidth": 320,
+      "paragraphs": 50,
+      "wrap": true
+    },
+    {
+      "id": "OF-JP16",
+      "slug": "jp16",
+      "width": 390,
+      "status": 200,
+      "h1": "Optamo for Task",
+      "scrollWidth": 390,
+      "paragraphs": 50,
+      "wrap": true
+    },
+    {
+      "id": "OF-JP16",
+      "slug": "jp16",
+      "width": 768,
+      "status": 200,
+      "h1": "Optamo for Task",
+      "scrollWidth": 768,
+      "paragraphs": 50,
+      "wrap": true
+    },
+    {
+      "id": "OF-JP16",
+      "slug": "jp16",
+      "width": 1440,
+      "status": 200,
+      "h1": "Optamo for Task",
+      "scrollWidth": 1440,
+      "paragraphs": 50,
+      "wrap": true
+    },
+    {
+      "id": "OF-JP17",
+      "slug": "jp17",
+      "width": 320,
+      "status": 200,
+      "h1": "SHIFTEE",
+      "scrollWidth": 320,
+      "paragraphs": 50,
+      "wrap": true
+    },
+    {
+      "id": "OF-JP17",
+      "slug": "jp17",
+      "width": 390,
+      "status": 200,
+      "h1": "SHIFTEE",
+      "scrollWidth": 390,
+      "paragraphs": 50,
+      "wrap": true
+    },
+    {
+      "id": "OF-JP17",
+      "slug": "jp17",
+      "width": 768,
+      "status": 200,
+      "h1": "SHIFTEE",
+      "scrollWidth": 768,
+      "paragraphs": 50,
+      "wrap": true
+    },
+    {
+      "id": "OF-JP17",
+      "slug": "jp17",
+      "width": 1440,
+      "status": 200,
+      "h1": "SHIFTEE",
+      "scrollWidth": 1440,
+      "paragraphs": 50,
+      "wrap": true
+    },
+    {
+      "id": "OF-JP18",
+      "slug": "jp18",
+      "width": 320,
+      "status": 200,
+      "h1": "oplus",
+      "scrollWidth": 320,
+      "paragraphs": 50,
+      "wrap": true
+    },
+    {
+      "id": "OF-JP18",
+      "slug": "jp18",
+      "width": 390,
+      "status": 200,
+      "h1": "oplus",
+      "scrollWidth": 390,
+      "paragraphs": 50,
+      "wrap": true
+    },
+    {
+      "id": "OF-JP18",
+      "slug": "jp18",
+      "width": 768,
+      "status": 200,
+      "h1": "oplus",
+      "scrollWidth": 768,
+      "paragraphs": 50,
+      "wrap": true
+    },
+    {
+      "id": "OF-JP18",
+      "slug": "jp18",
+      "width": 1440,
+      "status": 200,
+      "h1": "oplus",
+      "scrollWidth": 1440,
+      "paragraphs": 50,
+      "wrap": true
+    },
+    {
+      "id": "OF-JP19",
+      "slug": "jp19",
+      "width": 320,
+      "status": 200,
+      "h1": "勤夢表VX（V5/VX）",
+      "scrollWidth": 320,
+      "paragraphs": 50,
+      "wrap": true
+    },
+    {
+      "id": "OF-JP19",
+      "slug": "jp19",
+      "width": 390,
+      "status": 200,
+      "h1": "勤夢表VX（V5/VX）",
+      "scrollWidth": 390,
+      "paragraphs": 50,
+      "wrap": true
+    },
+    {
+      "id": "OF-JP19",
+      "slug": "jp19",
+      "width": 768,
+      "status": 200,
+      "h1": "勤夢表VX（V5/VX）",
+      "scrollWidth": 768,
+      "paragraphs": 50,
+      "wrap": true
+    },
+    {
+      "id": "OF-JP19",
+      "slug": "jp19",
+      "width": 1440,
+      "status": 200,
+      "h1": "勤夢表VX（V5/VX）",
+      "scrollWidth": 1440,
+      "paragraphs": 50,
+      "wrap": true
+    },
+    {
+      "id": "OF-US01",
+      "slug": "us01",
+      "width": 320,
+      "status": 200,
+      "h1": "RosterLab AI",
+      "scrollWidth": 320,
+      "paragraphs": 50,
+      "wrap": true
+    },
+    {
+      "id": "OF-US01",
+      "slug": "us01",
+      "width": 390,
+      "status": 200,
+      "h1": "RosterLab AI",
+      "scrollWidth": 390,
+      "paragraphs": 50,
+      "wrap": true
+    },
+    {
+      "id": "OF-US01",
+      "slug": "us01",
+      "width": 768,
+      "status": 200,
+      "h1": "RosterLab AI",
+      "scrollWidth": 768,
+      "paragraphs": 50,
+      "wrap": true
+    },
+    {
+      "id": "OF-US01",
+      "slug": "us01",
+      "width": 1440,
+      "status": 200,
+      "h1": "RosterLab AI",
+      "scrollWidth": 1440,
+      "paragraphs": 50,
+      "wrap": true
+    },
+    {
+      "id": "OF-US04",
+      "slug": "us04",
+      "width": 320,
+      "status": 200,
+      "h1": "Smartlinx Scheduling",
+      "scrollWidth": 320,
+      "paragraphs": 50,
+      "wrap": true
+    },
+    {
+      "id": "OF-US04",
+      "slug": "us04",
+      "width": 390,
+      "status": 200,
+      "h1": "Smartlinx Scheduling",
+      "scrollWidth": 390,
+      "paragraphs": 50,
+      "wrap": true
+    },
+    {
+      "id": "OF-US04",
+      "slug": "us04",
+      "width": 768,
+      "status": 200,
+      "h1": "Smartlinx Scheduling",
+      "scrollWidth": 768,
+      "paragraphs": 50,
+      "wrap": true
+    },
+    {
+      "id": "OF-US04",
+      "slug": "us04",
+      "width": 1440,
+      "status": 200,
+      "h1": "Smartlinx Scheduling",
+      "scrollWidth": 1440,
+      "paragraphs": 50,
+      "wrap": true
+    },
+    {
+      "id": "OF-US05",
+      "slug": "us05",
+      "width": 320,
+      "status": 200,
+      "h1": "Rotageek",
+      "scrollWidth": 320,
+      "paragraphs": 50,
+      "wrap": true
+    },
+    {
+      "id": "OF-US05",
+      "slug": "us05",
+      "width": 390,
+      "status": 200,
+      "h1": "Rotageek",
+      "scrollWidth": 390,
+      "paragraphs": 50,
+      "wrap": true
+    },
+    {
+      "id": "OF-US05",
+      "slug": "us05",
+      "width": 768,
+      "status": 200,
+      "h1": "Rotageek",
+      "scrollWidth": 768,
+      "paragraphs": 50,
+      "wrap": true
+    },
+    {
+      "id": "OF-US05",
+      "slug": "us05",
+      "width": 1440,
+      "status": 200,
+      "h1": "Rotageek",
+      "scrollWidth": 1440,
+      "paragraphs": 50,
+      "wrap": true
+    },
+    {
+      "id": "OF-US06",
+      "slug": "us06",
+      "width": 320,
+      "status": 200,
+      "h1": "UKG Pro Workforce Management",
+      "scrollWidth": 320,
+      "paragraphs": 50,
+      "wrap": true
+    },
+    {
+      "id": "OF-US06",
+      "slug": "us06",
+      "width": 390,
+      "status": 200,
+      "h1": "UKG Pro Workforce Management",
+      "scrollWidth": 390,
+      "paragraphs": 50,
+      "wrap": true
+    },
+    {
+      "id": "OF-US06",
+      "slug": "us06",
+      "width": 768,
+      "status": 200,
+      "h1": "UKG Pro Workforce Management",
+      "scrollWidth": 768,
+      "paragraphs": 50,
+      "wrap": true
+    },
+    {
+      "id": "OF-US06",
+      "slug": "us06",
+      "width": 1440,
+      "status": 200,
+      "h1": "UKG Pro Workforce Management",
+      "scrollWidth": 1440,
+      "paragraphs": 50,
+      "wrap": true
+    },
+    {
+      "id": "OF-US08",
+      "slug": "us08",
+      "width": 320,
+      "status": 200,
+      "h1": "Nursegrid Manager",
+      "scrollWidth": 320,
+      "paragraphs": 50,
+      "wrap": true
+    },
+    {
+      "id": "OF-US08",
+      "slug": "us08",
+      "width": 390,
+      "status": 200,
+      "h1": "Nursegrid Manager",
+      "scrollWidth": 390,
+      "paragraphs": 50,
+      "wrap": true
+    },
+    {
+      "id": "OF-US08",
+      "slug": "us08",
+      "width": 768,
+      "status": 200,
+      "h1": "Nursegrid Manager",
+      "scrollWidth": 768,
+      "paragraphs": 50,
+      "wrap": true
+    },
+    {
+      "id": "OF-US08",
+      "slug": "us08",
+      "width": 1440,
+      "status": 200,
+      "h1": "Nursegrid Manager",
+      "scrollWidth": 1440,
+      "paragraphs": 50,
+      "wrap": true
+    },
+    {
+      "id": "OF-US10",
+      "slug": "us10",
+      "width": 320,
+      "status": 200,
+      "h1": "Timefold Employee Shift Scheduling API",
+      "scrollWidth": 320,
+      "paragraphs": 50,
+      "wrap": true
+    },
+    {
+      "id": "OF-US10",
+      "slug": "us10",
+      "width": 390,
+      "status": 200,
+      "h1": "Timefold Employee Shift Scheduling API",
+      "scrollWidth": 390,
+      "paragraphs": 50,
+      "wrap": true
+    },
+    {
+      "id": "OF-US10",
+      "slug": "us10",
+      "width": 768,
+      "status": 200,
+      "h1": "Timefold Employee Shift Scheduling API",
+      "scrollWidth": 768,
+      "paragraphs": 50,
+      "wrap": true
+    },
+    {
+      "id": "OF-US10",
+      "slug": "us10",
+      "width": 1440,
+      "status": 200,
+      "h1": "Timefold Employee Shift Scheduling API",
+      "scrollWidth": 1440,
+      "paragraphs": 50,
+      "wrap": true
+    },
+    {
+      "id": "OF-US21",
+      "slug": "us21",
+      "width": 320,
+      "status": 200,
+      "h1": "RosterElf",
+      "scrollWidth": 320,
+      "paragraphs": 50,
+      "wrap": true
+    },
+    {
+      "id": "OF-US21",
+      "slug": "us21",
+      "width": 390,
+      "status": 200,
+      "h1": "RosterElf",
+      "scrollWidth": 390,
+      "paragraphs": 50,
+      "wrap": true
+    },
+    {
+      "id": "OF-US21",
+      "slug": "us21",
+      "width": 768,
+      "status": 200,
+      "h1": "RosterElf",
+      "scrollWidth": 768,
+      "paragraphs": 50,
+      "wrap": true
+    },
+    {
+      "id": "OF-US21",
+      "slug": "us21",
+      "width": 1440,
+      "status": 200,
+      "h1": "RosterElf",
+      "scrollWidth": 1440,
+      "paragraphs": 50,
+      "wrap": true
+    }
+  ],
+  "screenshots": [
+    "docs/research-b62-of-us04-390-20261014.png",
+    "docs/research-b62-of-us04-1440-20261014.png",
+    "docs/research-b62-of-us06-390-20261014.png",
+    "docs/research-b62-of-us06-1440-20261014.png",
+    "docs/research-b62-of-us08-390-20261014.png",
+    "docs/research-b62-of-us08-1440-20261014.png",
+    "docs/research-b62-of-us10-390-20261014.png",
+    "docs/research-b62-of-us10-1440-20261014.png",
+    "docs/research-b62-of-us21-390-20261014.png",
+    "docs/research-b62-of-us21-1440-20261014.png"
+  ]
+}

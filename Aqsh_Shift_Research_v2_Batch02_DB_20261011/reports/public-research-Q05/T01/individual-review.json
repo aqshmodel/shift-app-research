@@ -1,0 +1,84 @@
+[
+  {
+    "review_id": "Q05T01-TASK-RES00800",
+    "task_id": "TASK-RES00800",
+    "product": "oplus",
+    "offering_id": "OF-JP18",
+    "criterion_id": "P01",
+    "original_task": {
+      "priority": 2,
+      "required_method": "vendor_quote",
+      "last_checked_on": "2026-10-12",
+      "task_id": "TASK-RES00800",
+      "offering_id": "OF-JP18",
+      "criterion_id": "P01",
+      "task_state": "in_progress",
+      "question": "料金方式・公開範囲：定義の未確認部分・現行条件を確認する。",
+      "evidence_needed": "公式料金・個別見積・契約書",
+      "owner": "未割当",
+      "next_review_on": null,
+      "block_reason": null
+    },
+    "q01_public_acceptance_atoms": [
+      "固定/人数/施設/計算/買切り/見積の公開方式",
+      "通貨/税/時点/対象プランの条件"
+    ],
+    "scope": "oplusの公開基本料金・別オプション表示と一般税方針を照合し、自動作成の資料不一致を分離する。",
+    "reason": "該当する公式公開記載を照合し、限定公開質問の肯定根拠と未記載/個別契約の残条件を分離した。",
+    "evidence_observation_ids": [
+      "B43-20261013-OBS0001",
+      "B43-20261013-OBS0002"
+    ],
+    "remaining_work": [
+      "自動作成300円とROI換算250円の適用差、Proへの包含のFAQ相違、全オプションの請求周期、個別契約税・額・組合せ"
+    ],
+    "primary_queue": "completed_public_check",
+    "public_phase": "completed_bounded_document_question",
+    "external_state": "deferred_until_adoption",
+    "resume_condition": "公式改定/正式資料/対象見積の取得又は導入判断に残条件が必要な時。新根拠なしの反復探索はしない。",
+    "after_task_state": "done",
+    "factual_support_not_inferred": true,
+    "original_requirements_deleted": false
+  },
+  {
+    "review_id": "Q05T01-TASK-RES00801",
+    "task_id": "TASK-RES00801",
+    "product": "oplus",
+    "offering_id": "OF-JP18",
+    "criterion_id": "P02",
+    "original_task": {
+      "priority": 3,
+      "required_method": "unknown",
+      "last_checked_on": null,
+      "task_id": "TASK-RES00801",
+      "offering_id": "OF-JP18",
+      "criterion_id": "P02",
+      "task_state": "not_started",
+      "question": "課金対象・単位：定義の未確認部分・現行条件を確認する。",
+      "evidence_needed": "公式料金・個別見積・契約書",
+      "owner": "未割当",
+      "next_review_on": null,
+      "block_reason": null
+    },
+    "q01_public_acceptance_atoms": [
+      "公開された課金対象と単位",
+      "管理者/休職/兼務/最低数量等の記載範囲"
+    ],
+    "scope": "oplusの公開ユーザー単位と無料100人上限、有料切替条件を照合する。",
+    "reason": "該当する公式公開記載を照合し、限定公開質問の肯定根拠と未記載/個別契約の残条件を分離した。",
+    "evidence_observation_ids": [
+      "B43-20261013-OBS0004",
+      "B43-20261013-OBS0005"
+    ],
+    "remaining_work": [
+      "管理者/休職/兼務の算定、最低有料人数/請求額、拠点をまたぐ重複、アカウント登録者と課金対象の差"
+    ],
+    "primary_queue": "completed_public_check",
+    "public_phase": "completed_bounded_document_question",
+    "external_state": "deferred_until_adoption",
+    "resume_condition": "公式改定/正式資料/対象見積の取得又は導入判断に残条件が必要な時。新根拠なしの反復探索はしない。",
+    "after_task_state": "done",
+    "factual_support_not_inferred": true,
+    "original_requirements_deleted": false
+  }
+]

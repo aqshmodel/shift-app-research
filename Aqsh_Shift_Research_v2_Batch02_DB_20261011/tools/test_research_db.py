@@ -19,6 +19,50 @@ class ResearchDBTests(unittest.TestCase):
     def tearDown(self):
         self.c.close()
 
+    def review_batch(self, update):
+        return dict(batch_id='TEST-QUEUE-REVIEW',as_of_date='2026-10-13',sources=[],findings=[],task_updates=[update])
+
+    def test_task_review_stale_baseline_rolls_back(self):
+        task = dict(self.c.execute("SELECT * FROM research_tasks WHERE task_id='TASK-RES00321'").fetchone())
+        before = fingerprint(self.c)
+        update = dict(task_id=task['task_id'],state='done',priority=3,method='public_document',
+            note='test',expected_task={'question':'stale question'},changes={'block_reason':None})
+        with tempfile.TemporaryDirectory() as tmp:
+            path=Path(tmp)/'review.json';path.write_text(json.dumps(self.review_batch(update)))
+            with self.assertRaisesRegex(ValueError,'changed before review'):
+                ingest(self.c,path)
+        self.assertEqual(fingerprint(self.c),before)
+
+    def test_task_public_completion_rejects_wrong_evidence_scope(self):
+        task = dict(self.c.execute("SELECT * FROM research_tasks WHERE task_id='TASK-RES00321'").fetchone())
+        wrong=self.c.execute("SELECT observation_id FROM observations WHERE offering_id='OF-US10' AND value_state='known' LIMIT 1").fetchone()[0]
+        before=fingerprint(self.c)
+        update=dict(task_id=task['task_id'],state='done',priority=3,method='public_document',note='test',
+            public_completion={'scope':'public-document-only','observation_ids':[wrong],'remaining_work':[]})
+        with tempfile.TemporaryDirectory() as tmp:
+            path=Path(tmp)/'review.json';path.write_text(json.dumps(self.review_batch(update)))
+            with self.assertRaisesRegex(ValueError,'outside task scope'):
+                ingest(self.c,path)
+        self.assertEqual(fingerprint(self.c),before)
+
+    def test_task_public_completion_keeps_factual_assessments_and_replays(self):
+        task=dict(self.c.execute("SELECT * FROM research_tasks WHERE task_id='TASK-RES00321'").fetchone())
+        factual_before={table:[tuple(r) for r in self.c.execute('SELECT * FROM '+table)]
+            for table in ['observations','observation_evidence','assessment_resolutions','resolution_evidence','price_components']}
+        update=dict(task_id=task['task_id'],state='done',priority=3,method='public_document',note='public phase only',
+            expected_task={'task_state':task['task_state'],'question':task['question']},
+            changes={'question':'公開資料の提供形態確認','evidence_needed':'本文・取得日・該当箇所','block_reason':None},
+            public_completion={'scope':'公開資料のみ','observation_ids':['B04-20261011-OBS0306'],
+                'remaining_work':['個別契約は未確認']})
+        with tempfile.TemporaryDirectory() as tmp:
+            path=Path(tmp)/'review.json';path.write_text(json.dumps(self.review_batch(update)))
+            self.assertEqual(ingest(self.c,path)['status'],'applied')
+            after=fingerprint(self.c)
+            self.assertEqual(ingest(self.c,path)['status'],'already_applied')
+            self.assertEqual(fingerprint(self.c),after)
+        self.assertEqual(self.c.execute('SELECT task_state,block_reason FROM research_tasks WHERE task_id=?',(task['task_id'],)).fetchone()[:],('done',None))
+        self.assertEqual(factual_before,{table:[tuple(r) for r in self.c.execute('SELECT * FROM '+table)] for table in factual_before})
+
     def add_resolution(self, offering, criterion, date='2026-10-11'):
         n=self.c.execute('SELECT MAX(resolution_order)+1 FROM assessment_resolutions').fetchone()[0]
         rid=f'TEST-R{n}'

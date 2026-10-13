@@ -1,0 +1,77 @@
+{
+  "status": "passed",
+  "snapshot": "B52-20261013-pub2",
+  "services": 5,
+  "widths": [
+    1440,
+    390
+  ],
+  "checks": [
+    {
+      "product": "JP03",
+      "width": 1440,
+      "required_text": true,
+      "overflow": false
+    },
+    {
+      "product": "JP04",
+      "width": 1440,
+      "required_text": true,
+      "overflow": false
+    },
+    {
+      "product": "JP17",
+      "width": 1440,
+      "required_text": true,
+      "overflow": false
+    },
+    {
+      "product": "JP16",
+      "width": 1440,
+      "required_text": true,
+      "overflow": false
+    },
+    {
+      "product": "JP15",
+      "width": 1440,
+      "required_text": true,
+      "overflow": false
+    },
+    {
+      "product": "JP03",
+      "width": 390,
+      "required_text": true,
+      "overflow": false
+    },
+    {
+      "product": "JP04",
+      "width": 390,
+      "required_text": true,
+      "overflow": false
+    },
+    {
+      "product": "JP17",
+      "width": 390,
+      "required_text": true,
+      "overflow": false
+    },
+    {
+      "product": "JP16",
+      "width": 390,
+      "required_text": true,
+      "overflow": false
+    },
+    {
+      "product": "JP15",
+      "width": 390,
+      "required_text": true,
+      "overflow": false
+    }
+  ],
+  "overflow": false,
+  "pageErrors": [],
+  "external_DNS_blocked": true,
+  "case_uses_distinguished": true,
+  "dates_preserved": true,
+  "unknowns_not_support": true
+}

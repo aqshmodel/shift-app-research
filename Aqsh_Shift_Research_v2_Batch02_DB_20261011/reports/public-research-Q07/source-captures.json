@@ -1,0 +1,175 @@
+{
+  "captures": [
+    {
+      "key": "day-main",
+      "url": "https://www.otasukeman.jp/day",
+      "final_url": "https://www.otasukeman.jp/day",
+      "status": 200,
+      "bytes": 131704,
+      "sha256": "44de4ad82122caa9dec9ecc47928359b42f6d24cfb4b788aa41a26ac3b4bcfba",
+      "retrieved_at": "2026-10-13T13:14:07.026773+00:00",
+      "path": "/Users/tsukadatakahiro/Python/app/shift-app/.local/research-backups/Q07-20261013/source-captures/day-main.html"
+    },
+    {
+      "key": "day-care",
+      "url": "https://www.otasukeman.jp/nursing-home",
+      "final_url": "https://www.otasukeman.jp/nursing-home",
+      "status": 200,
+      "bytes": 56544,
+      "sha256": "874e8105390a9cf700a8de1f3688d4ee4c8da38090e53db7a9509360cba61eef",
+      "retrieved_at": "2026-10-13T13:14:06.521732+00:00",
+      "path": "/Users/tsukadatakahiro/Python/app/shift-app/.local/research-backups/Q07-20261013/source-captures/day-care.html"
+    },
+    {
+      "key": "day-faq",
+      "url": "https://www.otasukeman.jp/faq",
+      "final_url": "https://www.otasukeman.jp/faq",
+      "status": 200,
+      "bytes": 73420,
+      "sha256": "b69457e56b6a98f5186d78fd48ecfc6b21069ae300a8c86cb9c826457cbeeca4",
+      "retrieved_at": "2026-10-13T13:14:06.589390+00:00",
+      "path": "/Users/tsukadatakahiro/Python/app/shift-app/.local/research-backups/Q07-20261013/source-captures/day-faq.html"
+    },
+    {
+      "key": "vx-function",
+      "url": "https://my-sys.net/2021/?page_id=223",
+      "final_url": "https://my-sys.net/2021/?page_id=223",
+      "status": 200,
+      "bytes": 125121,
+      "sha256": "c0611a67d1e3580b81bb2b2f7f3b2161dc458350cc139bb3e387bbda28874303",
+      "retrieved_at": "2026-10-13T13:14:06.614352+00:00",
+      "path": "/Users/tsukadatakahiro/Python/app/shift-app/.local/research-backups/Q07-20261013/source-captures/vx-function.html"
+    },
+    {
+      "key": "vx-light",
+      "url": "https://my-sys.net/2021/?page_id=2036",
+      "final_url": "https://my-sys.net/2021/?page_id=2036",
+      "status": 200,
+      "bytes": 106576,
+      "sha256": "527ee3bb3e8bf06991f0ccfc608c0bc4f445cf88a372ea918a4854bcdce2e125",
+      "retrieved_at": "2026-10-13T13:14:06.980011+00:00",
+      "path": "/Users/tsukadatakahiro/Python/app/shift-app/.local/research-backups/Q07-20261013/source-captures/vx-light.html"
+    },
+    {
+      "key": "vx-cost",
+      "url": "https://my-sys.net/2021/?page_id=2067",
+      "final_url": "https://my-sys.net/2021/?page_id=2067",
+      "status": 200,
+      "bytes": 102295,
+      "sha256": "45e08776086da2752b4bc110305b933a8939fc474cd08be6dda1b14232bf4adb",
+      "retrieved_at": "2026-10-13T13:14:07.256507+00:00",
+      "path": "/Users/tsukadatakahiro/Python/app/shift-app/.local/research-backups/Q07-20261013/source-captures/vx-cost.html"
+    },
+    {
+      "key": "vx-developer",
+      "url": "https://ideanexsys.com/%E5%8B%A4%E5%A4%A2%E8%A1%A8vx%E3%81%AE%E6%A9%9F%E8%83%BD/",
+      "final_url": "https://ideanexsys.com/%E5%8B%A4%E5%A4%A2%E8%A1%A8vx%E3%81%AE%E6%A9%9F%E8%83%BD/",
+      "status": 200,
+      "bytes": 71332,
+      "sha256": "ee20a7475760e8d0f872aa542e3f0b5ef7e997e1bfa5d1ffde34e18fd96d1c2f",
+      "retrieved_at": "2026-10-13T13:14:09.944046+00:00",
+      "path": "/Users/tsukadatakahiro/Python/app/shift-app/.local/research-backups/Q07-20261013/source-captures/vx-developer.html"
+    },
+    {
+      "key": "optamo-shift",
+      "url": "https://www.optamo.jp/shift/index.html",
+      "final_url": "https://www.optamo.jp/shift/index.html",
+      "status": 200,
+      "bytes": 45837,
+      "sha256": "0b7fdd530b9d9a4b9d600c64b12823ac358d3f68382589cfa73ae3fcf6fd133c",
+      "retrieved_at": "2026-10-13T13:14:07.197931+00:00",
+      "path": "/Users/tsukadatakahiro/Python/app/shift-app/.local/research-backups/Q07-20261013/source-captures/optamo-shift.html"
+    },
+    {
+      "key": "optamo-main",
+      "url": "https://www.optamo.jp/",
+      "final_url": "https://www.optamo.jp/",
+      "status": 200,
+      "bytes": 41401,
+      "sha256": "b8a28eb55494c9d31c750d0c76cda97f677d1be65acd54fa4d995ec969508f92",
+      "retrieved_at": "2026-10-13T13:14:07.235267+00:00",
+      "path": "/Users/tsukadatakahiro/Python/app/shift-app/.local/research-backups/Q07-20261013/source-captures/optamo-main.html"
+    },
+    {
+      "key": "optamo-contact",
+      "url": "https://www.optamo.jp/contact/",
+      "final_url": "https://www.optamo.jp/contact/",
+      "status": 200,
+      "bytes": 6866,
+      "sha256": "5ebacc7743a484ff2d2cc0c076c899ccdbe54547e8e8dfca1a3569af0f1b963c",
+      "retrieved_at": "2026-10-13T13:14:07.342177+00:00",
+      "path": "/Users/tsukadatakahiro/Python/app/shift-app/.local/research-backups/Q07-20261013/source-captures/optamo-contact.html"
+    },
+    {
+      "key": "msi-scheduling",
+      "url": "https://www.msi.co.jp/solution/scheduling.html",
+      "final_url": "https://www.msi.co.jp/solution/scheduling.html",
+      "status": 200,
+      "bytes": 43205,
+      "sha256": "40c45d8ef30180939fa6a6857ece3ffb49a6ed50b056c437a78d84041b0df752",
+      "retrieved_at": "2026-10-13T13:14:07.625703+00:00",
+      "path": "/Users/tsukadatakahiro/Python/app/shift-app/.local/research-backups/Q07-20261013/source-captures/msi-scheduling.html"
+    },
+    {
+      "key": "msi-consulting",
+      "url": "https://www.msi.co.jp/solution/consulting.html",
+      "final_url": "https://www.msi.co.jp/solution/consulting.html",
+      "status": 200,
+      "bytes": 35321,
+      "sha256": "06a06efd8a55398d4696566d2d52e672e347dbbbbdeb128de205284c057d5725",
+      "retrieved_at": "2026-10-13T13:14:07.608362+00:00",
+      "path": "/Users/tsukadatakahiro/Python/app/shift-app/.local/research-backups/Q07-20261013/source-captures/msi-consulting.html"
+    },
+    {
+      "key": "msi-aimodel",
+      "url": "https://www.msi.co.jp/solution/aimodel.html",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "key": "rotageek-health",
+      "url": "https://www.rotageek.com/industries/healthcare",
+      "final_url": "https://www.rotageek.com/industries/healthcare",
+      "status": 200,
+      "bytes": 403819,
+      "sha256": "bf9bd78683ca8999b71344b977dbbbd121b48266cbd8cc955b21da4b7cdcece2",
+      "retrieved_at": "2026-10-13T13:14:08.149991+00:00",
+      "path": "/Users/tsukadatakahiro/Python/app/shift-app/.local/research-backups/Q07-20261013/source-captures/rotageek-health.html"
+    },
+    {
+      "key": "rotageek-digital",
+      "url": "https://www.rotageek.com/solutions/digital-rotas-schedules/",
+      "final_url": "https://www.rotageek.com/solutions/digital-rotas-schedules/",
+      "status": 200,
+      "bytes": 103332,
+      "sha256": "d02b66c200b347c89c39d1f67d8cb551563c9d6e63c854715233245718c3b2bd",
+      "retrieved_at": "2026-10-13T13:14:08.161967+00:00",
+      "path": "/Users/tsukadatakahiro/Python/app/shift-app/.local/research-backups/Q07-20261013/source-captures/rotageek-digital.html"
+    },
+    {
+      "key": "rotageek-auto",
+      "url": "https://www.rotageek.com/solutions/rota-auto-scheduling/",
+      "final_url": "https://www.rotageek.com/solutions/rota-auto-scheduling/",
+      "status": 200,
+      "bytes": 97190,
+      "sha256": "d771b8348f543adc8042c92fb52b3bfe8a2dc2d60abe502c307e6794d5922cea",
+      "retrieved_at": "2026-10-13T13:14:08.207760+00:00",
+      "path": "/Users/tsukadatakahiro/Python/app/shift-app/.local/research-backups/Q07-20261013/source-captures/rotageek-auto.html"
+    },
+    {
+      "key": "msi-aimodel",
+      "url": "https://www.msi.co.jp/solution/ai-model-development.html",
+      "final_url": "https://www.msi.co.jp/solution/ai-model-development.html",
+      "status": 200,
+      "bytes": 36940,
+      "sha256": "f45aad51fe3b8f3dab4333d7d3898af4fae20a7e209f9cfa572784aeabeb2a55",
+      "retrieved_at": "2026-10-13T13:17:27.371843+00:00",
+      "path": "/Users/tsukadatakahiro/Python/app/shift-app/.local/research-backups/Q07-20261013/source-captures/msi-aimodel.html"
+    }
+  ],
+  "HTML_originals": "Q07バックアップsource-capturesに保管",
+  "PDF_originals": "PDFなし。公開HTML本文と表・注記・表示を照合",
+  "published_dates": {
+    "other": "公開/改定日不明。閲覧日は2026-10-13 UTC。copyright年/旧注意日/URLの2021を改定日にしない。"
+  },
+  "reviewed_at": "2026-10-13T13:21:36.853878+00:00"
+}

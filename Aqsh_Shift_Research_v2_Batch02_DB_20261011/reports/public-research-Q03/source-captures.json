@@ -1,0 +1,131 @@
+{
+  "captures": [
+    {
+      "key": "neo-system",
+      "url": "https://products.ndis.jp/shift-neo/system.html",
+      "final_url": "https://products.ndis.jp/shift-neo/system.html",
+      "status": 200,
+      "bytes": 40786,
+      "sha256": "623bd0e13c9b6469d6e0c746b6cff071d18aacc1b06180900237eb52ae9a6c87",
+      "retrieved_at": "2026-10-13T10:06:07.808376+00:00",
+      "path": "/Users/tsukadatakahiro/Python/app/shift-app/.local/research-backups/Q03-20261013/source-captures/neo-system.html"
+    },
+    {
+      "key": "neo-sales",
+      "url": "https://products.ndis.jp/shift-neo/sales/",
+      "final_url": "https://products.ndis.jp/shift-neo/sales/",
+      "status": 200,
+      "bytes": 16680,
+      "sha256": "4f23a15be9fe2a92b6014f285ab177395eb680913e2d625357be0a34a9f0040f",
+      "retrieved_at": "2026-10-13T10:06:07.787195+00:00",
+      "path": "/Users/tsukadatakahiro/Python/app/shift-app/.local/research-backups/Q03-20261013/source-captures/neo-sales.html"
+    },
+    {
+      "key": "neo-medical",
+      "url": "https://products.ndis.jp/shift-neo/medical/",
+      "final_url": "https://products.ndis.jp/shift-neo/medical/",
+      "status": 200,
+      "bytes": 23065,
+      "sha256": "532e9f3e2a182a33fc96e28fb617a80a2fcfe348f6bf9c6308a2eefb88f34d29",
+      "retrieved_at": "2026-10-13T10:06:07.792953+00:00",
+      "path": "/Users/tsukadatakahiro/Python/app/shift-app/.local/research-backups/Q03-20261013/source-captures/neo-medical.html"
+    },
+    {
+      "key": "neo-support",
+      "url": "https://products.ndis.jp/shift-neo/support.html",
+      "final_url": "https://products.ndis.jp/shift-neo/support.html",
+      "status": 200,
+      "bytes": 15569,
+      "sha256": "9f8286b27d3bb48b2096987cdcefc13a2c6854c5d5808ac0e5a926d509ef7c2c",
+      "retrieved_at": "2026-10-13T10:06:07.766211+00:00",
+      "path": "/Users/tsukadatakahiro/Python/app/shift-app/.local/research-backups/Q03-20261013/source-captures/neo-support.html"
+    },
+    {
+      "key": "neo-documents",
+      "url": "https://products.ndis.jp/shift-neo/users.html",
+      "final_url": "https://products.ndis.jp/shift-neo/users.html",
+      "status": 200,
+      "bytes": 14386,
+      "sha256": "71cb66c1a2e29fc2edf8464ee5406eb283ed780457c90eccc461ff3c2e58df7f",
+      "retrieved_at": "2026-10-13T10:06:07.898795+00:00",
+      "path": "/Users/tsukadatakahiro/Python/app/shift-app/.local/research-backups/Q03-20261013/source-captures/neo-documents.html"
+    },
+    {
+      "key": "neo-license-image",
+      "url": "https://products.ndis.jp/shift-neo/user/media/shift/page/system/img01.jpg",
+      "final_url": "https://products.ndis.jp/shift-neo/user/media/shift/page/system/img01.jpg",
+      "status": 200,
+      "bytes": 39498,
+      "sha256": "7dcdce2745ec460ec76eb01f5443bb37d586b2186a278658775a36a47d69c46d",
+      "retrieved_at": "2026-10-13T10:06:07.975765+00:00",
+      "path": "/Users/tsukadatakahiro/Python/app/shift-app/.local/research-backups/Q03-20261013/source-captures/neo-license-image.jpg"
+    },
+    {
+      "key": "neo-type-image",
+      "url": "https://products.ndis.jp/shift-neo/user/media/shift/page/system/img02.png",
+      "final_url": "https://products.ndis.jp/shift-neo/user/media/shift/page/system/img02.png",
+      "status": 200,
+      "bytes": 76316,
+      "sha256": "a9ee0ee1ccdf611fb9d738ef308dd46d79993a84b487e46ab7533edd037627aa",
+      "retrieved_at": "2026-10-13T10:06:07.998498+00:00",
+      "path": "/Users/tsukadatakahiro/Python/app/shift-app/.local/research-backups/Q03-20261013/source-captures/neo-type-image.png"
+    },
+    {
+      "key": "aishift",
+      "url": "https://aishift.com/",
+      "final_url": "https://aishift.com/",
+      "status": 200,
+      "bytes": 101520,
+      "sha256": "7d68392754281e83ad4650520009984c4b5c4c3387512b9aeb9aacb78f43a868",
+      "retrieved_at": "2026-10-13T10:06:07.978551+00:00",
+      "path": "/Users/tsukadatakahiro/Python/app/shift-app/.local/research-backups/Q03-20261013/source-captures/aishift.html"
+    },
+    {
+      "key": "ams-legal",
+      "url": "https://www.ams.jp/tokushoho",
+      "final_url": "https://www.ams.jp/tokushoho",
+      "status": 200,
+      "bytes": 25839,
+      "sha256": "a9fb182f73d4571e13b3fca0ebab30716f43a8ae646c661a07daef2314a9d136",
+      "retrieved_at": "2026-10-13T10:06:08.140991+00:00",
+      "path": "/Users/tsukadatakahiro/Python/app/shift-app/.local/research-backups/Q03-20261013/source-captures/ams-legal.html"
+    },
+    {
+      "key": "pitat-lp",
+      "url": "https://www.pitat-shift.jp/lp.html",
+      "final_url": "https://www.pitat-shift.jp/lp.html",
+      "status": 200,
+      "bytes": 33374,
+      "sha256": "329d6816cdbf733110d5eebbff532bd0bd3d88707c1648c1a80869fbc7156935",
+      "retrieved_at": "2026-10-13T10:06:08.223815+00:00",
+      "path": "/Users/tsukadatakahiro/Python/app/shift-app/.local/research-backups/Q03-20261013/source-captures/pitat-lp.html"
+    },
+    {
+      "key": "pitat-terms",
+      "url": "https://www.pitat-shift.jp/terms.html",
+      "final_url": "https://www.pitat-shift.jp/terms.html",
+      "status": 200,
+      "bytes": 12331,
+      "sha256": "6cc133c472d682ce79f4805a407516fe57835564730bb784598292d13534210d",
+      "retrieved_at": "2026-10-13T10:06:08.204359+00:00",
+      "path": "/Users/tsukadatakahiro/Python/app/shift-app/.local/research-backups/Q03-20261013/source-captures/pitat-terms.html"
+    },
+    {
+      "key": "pitat-legal",
+      "url": "https://www.pitat-shift.jp/tokusho.html",
+      "final_url": "https://www.pitat-shift.jp/tokusho.html",
+      "status": 200,
+      "bytes": 7485,
+      "sha256": "1ca65d4853c20a3ea6c524b22937795f701607e1025955a6befc7a452a5c8e11",
+      "retrieved_at": "2026-10-13T10:06:08.195054+00:00",
+      "path": "/Users/tsukadatakahiro/Python/app/shift-app/.local/research-backups/Q03-20261013/source-captures/pitat-legal.html"
+    }
+  ],
+  "neo_images": {
+    "normal_browser_render_reviewed": true,
+    "license_sha256": "7dcdce2745ec460ec76eb01f5443bb37d586b2186a278658775a36a47d69c46d",
+    "type_sha256": "a9ee0ee1ccdf611fb9d738ef308dd46d79993a84b487e46ab7533edd037627aa"
+  },
+  "PDF_scope": "NEO公式資料はパスワード案内のため未取得。登録/問い合わせなし。",
+  "known_snapshot_recheck": "Pitat月/年/Setup/Premiumとシフトラ250円/初期0は変更なし、既存119料金明細を保持。"
+}

@@ -1,0 +1,214 @@
+{
+  "captures": [
+    {
+      "key": "nursegrid-manager",
+      "url": "https://nursegrid.com/for-organizations/nursegrid-manager/",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "key": "nursegrid-mobile",
+      "url": "https://nursegrid.com/for-nurses/nursegrid-app/",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "key": "nursegrid-restricted",
+      "url": "https://healthstreamhelp.mcoutput.com/nursegridmanager/Content/NG_Manager/User_Management/Restricted_Users.htm",
+      "final_url": "https://healthstreamhelp.mcoutput.com/nursegridmanager/Content/NG_Manager/User_Management/Restricted_Users.htm",
+      "status": 200,
+      "bytes": 15158,
+      "sha256": "369050a34c895f366cafb48118ae609db21ee1647e6759e3177a4db149ce2200",
+      "retrieved_at": "2026-10-13T14:38:21.361672+00:00",
+      "path": "/Users/tsukadatakahiro/Python/app/shift-app/.local/research-backups/Q08-20261013/source-captures/nursegrid-restricted.html"
+    },
+    {
+      "key": "nursegrid-builder",
+      "url": "https://healthstreamhelp.mcoutput.com/nursegridmanager/Content/NG_Manager/Schedule_Mgmt/Creating_a_Draft_Schedule_with_the_Schedule_Builder.htm",
+      "final_url": "https://healthstreamhelp.mcoutput.com/nursegridmanager/Content/NG_Manager/Schedule_Mgmt/Creating_a_Draft_Schedule_with_the_Schedule_Builder.htm",
+      "status": 200,
+      "bytes": 26836,
+      "sha256": "18e2ad2f12a28b00a680d5c6e068d10cfd0a7e738d9eabc71df445d13f5bf11c",
+      "retrieved_at": "2026-10-13T14:38:21.920252+00:00",
+      "path": "/Users/tsukadatakahiro/Python/app/shift-app/.local/research-backups/Q08-20261013/source-captures/nursegrid-builder.html"
+    },
+    {
+      "key": "ukg-sow",
+      "url": "https://www.ukg.com/sites/default/files/2026-02/UKG-Pro-Suite-Standard-SOW-2026-02-05.pdf",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "key": "ukg-wfm",
+      "url": "https://www.ukg.com/products/ukg-pro-workforce-management",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "key": "smartlinx-go",
+      "url": "https://www.smartlinx.com/solutions/smartlinx-go/",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "key": "smartlinx-scheduling",
+      "url": "https://www.smartlinx.com/solutions/scheduling/",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "key": "smartlinx-appstore",
+      "url": "https://apps.apple.com/us/app/smartlinx-go/id1446077536",
+      "final_url": "https://apps.apple.com/us/app/smartlinx-go/id1446077536",
+      "status": 200,
+      "bytes": 569438,
+      "sha256": "882c84d39ef67845a97b3db33cd21e80540b205c5c3d390bca20783a1a087a69",
+      "retrieved_at": "2026-10-13T14:38:21.726155+00:00",
+      "path": "/Users/tsukadatakahiro/Python/app/shift-app/.local/research-backups/Q08-20261013/source-captures/smartlinx-appstore.html"
+    },
+    {
+      "key": "rosterelf-minimum",
+      "url": "https://www.rosterelf.com/support/knowledge-base/billing-and-subscription/minimum-monthly-fee",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "key": "rosterelf-price",
+      "url": "https://www.rosterelf.com/pricing",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "key": "rosterelf-accountant",
+      "url": "https://www.rosterelf.com/support/knowledge-base/account-setup-and-admin/assigning-accountant-bookkeeper-advisor-permission",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "key": "timefold-plans",
+      "url": "https://docs.timefold.ai/timefold-platform/latest/plans",
+      "final_url": "https://docs.timefold.ai/timefold-platform/latest/plans",
+      "status": 200,
+      "bytes": 58435,
+      "sha256": "eaa4b745968454f65e666b6b8bf89339fe7a66aaaeaa939f45b4ab7cd5027a4a",
+      "retrieved_at": "2026-10-13T14:38:22.230856+00:00",
+      "path": "/Users/tsukadatakahiro/Python/app/shift-app/.local/research-backups/Q08-20261013/source-captures/timefold-plans.html"
+    },
+    {
+      "key": "timefold-terms",
+      "url": "https://timefold.ai/terms",
+      "final_url": "https://timefold.ai/terms",
+      "status": 200,
+      "bytes": 238815,
+      "sha256": "43864cfedc0686475d17f001850a2b6b2c8426cd690bee86a3133ce2f27d8fb8",
+      "retrieved_at": "2026-10-13T14:38:22.254970+00:00",
+      "path": "/Users/tsukadatakahiro/Python/app/shift-app/.local/research-backups/Q08-20261013/source-captures/timefold-terms.html"
+    },
+    {
+      "key": "ukg-sow",
+      "url": "https://www.ukg.com/sites/default/files/2026-02/UKG-Pro-Suite-Standard-SOW-2026-02-05.pdf",
+      "status": "browser_download_available",
+      "retrieved_at": "2026-10-13T14:46:56.742778+00:00",
+      "path": ".local/research-backups/Q08-20261013/source-captures/ukg-sow.pdf",
+      "sha256": "76e5a9a7862de64fb8c46af7abff2153df59687d3e7b6bda27bc991360e4ddb1",
+      "method": "Chrome official PDF download; raw HTTP403 preserved"
+    },
+    {
+      "key": "nursegrid-manager",
+      "url": "https://nursegrid.com/for-organizations/nursegrid-manager/",
+      "status": "web_tool_available",
+      "http_status": null,
+      "retrieved_at": "2026-10-13T14:46:56.744963+00:00",
+      "path": ".local/research-backups/Q08-20261013/source-captures/nursegrid-manager.web.txt",
+      "sha256": "47d44de8a759ee5bac853b0136df95bdf52191a21b05e1a143cfafa659d5b74d",
+      "method": "Official page readable by web tool; raw HTML not archived"
+    },
+    {
+      "key": "nursegrid-mobile",
+      "url": "https://nursegrid.com/for-nurses/nursegrid-app/",
+      "status": "web_tool_available",
+      "http_status": null,
+      "retrieved_at": "2026-10-13T14:46:56.746352+00:00",
+      "path": ".local/research-backups/Q08-20261013/source-captures/nursegrid-mobile.web.txt",
+      "sha256": "b95686a12f30c0fd4a9b63fd53a50e5a75a7a963380b58e13d46ccb605111855",
+      "method": "Official page readable by web tool; raw HTML not archived"
+    },
+    {
+      "key": "smartlinx-go",
+      "url": "https://www.smartlinx.com/solutions/smartlinx-go/",
+      "status": "web_tool_available",
+      "http_status": null,
+      "retrieved_at": "2026-10-13T14:46:56.747481+00:00",
+      "path": ".local/research-backups/Q08-20261013/source-captures/smartlinx-go.web.txt",
+      "sha256": "b1feea8cd9826f25c55d3b8c6fe5228b78563c6ef3648cda4749e2f1b5db8f5a",
+      "method": "Official page readable by web tool; raw HTML not archived"
+    },
+    {
+      "key": "smartlinx-scheduling",
+      "url": "https://www.smartlinx.com/solutions/scheduling/",
+      "status": "web_tool_available",
+      "http_status": null,
+      "retrieved_at": "2026-10-13T14:46:56.748714+00:00",
+      "path": ".local/research-backups/Q08-20261013/source-captures/smartlinx-scheduling.web.txt",
+      "sha256": "6bc9f6594c13e3ccc952fa3166fc9a02134fa1c668b9e3a5aa3e38194a10d64f",
+      "method": "Official page readable by web tool; raw HTML not archived"
+    },
+    {
+      "key": "rosterelf-price",
+      "url": "https://www.rosterelf.com/pricing",
+      "status": "web_tool_available",
+      "http_status": null,
+      "retrieved_at": "2026-10-13T14:46:56.753913+00:00",
+      "path": ".local/research-backups/Q08-20261013/source-captures/rosterelf-price.web.txt",
+      "sha256": "504d753f5a9e6941a9fd615c1076039f8a833637c1dc95ebd8c5cd834f2694b5",
+      "method": "Official page readable by web tool; raw HTML not archived"
+    },
+    {
+      "key": "rosterelf-minimum",
+      "url": "https://www.rosterelf.com/support/knowledge-base/billing-and-subscription/minimum-monthly-fee",
+      "status": "web_tool_available",
+      "http_status": null,
+      "retrieved_at": "2026-10-13T14:46:56.756293+00:00",
+      "path": ".local/research-backups/Q08-20261013/source-captures/rosterelf-minimum.web.txt",
+      "sha256": "762443038efa803fca79ddda80ba641faada71f4c8fa0984f4ef94f8ddbad507",
+      "method": "Official page readable by web tool; raw HTML not archived"
+    },
+    {
+      "key": "rosterelf-accountant",
+      "url": "https://www.rosterelf.com/support/knowledge-base/account-setup-and-admin/assigning-accountant-bookkeeper-advisor-permission",
+      "status": "web_tool_available",
+      "http_status": null,
+      "retrieved_at": "2026-10-13T14:46:56.758447+00:00",
+      "path": ".local/research-backups/Q08-20261013/source-captures/rosterelf-accountant.web.txt",
+      "sha256": "a4367b0dea30c4297580ac69b60dca134866729e486432ce27f6389c43d8eb70",
+      "method": "Official page readable by web tool; raw HTML not archived"
+    },
+    {
+      "key": "rosterelf-seats",
+      "url": "https://www.rosterelf.com/support/knowledge-base/billing-and-subscription/update-annual-plan-seats",
+      "status": "web_tool_available",
+      "http_status": null,
+      "retrieved_at": "2026-10-13T14:46:56.760252+00:00",
+      "path": ".local/research-backups/Q08-20261013/source-captures/rosterelf-seats.web.txt",
+      "sha256": "7d0f4f88fd2bc486494cb2da39855b0f23a5d3d46202eae596080e80d4668fda",
+      "method": "Official page readable by web tool; raw HTML not archived"
+    },
+    {
+      "key": "ukg-wfm",
+      "url": "https://www.ukg.com/products/ukg-pro-workforce-management",
+      "status": "web_tool_available",
+      "http_status": null,
+      "retrieved_at": "2026-10-13T14:46:56.761887+00:00",
+      "path": ".local/research-backups/Q08-20261013/source-captures/ukg-wfm.web.txt",
+      "sha256": "290af7f9be55b59e7c67417bab5fc46f8e7f93d29622c4eacbac7cfaa81dd3d5",
+      "method": "Official page readable by web tool; raw HTML not archived"
+    },
+    {
+      "key": "timefold-price",
+      "url": "https://timefold.ai/pricing",
+      "status": "web_tool_available",
+      "http_status": null,
+      "retrieved_at": "2026-10-13T14:46:56.762854+00:00",
+      "path": ".local/research-backups/Q08-20261013/source-captures/timefold-price.web.txt",
+      "sha256": "ed67ce4dda3dc606354523c2a96d90641d1552148082ce130d7c1e4e82bd435a",
+      "method": "Official page readable by web tool; raw HTML not archived"
+    }
+  ],
+  "HTML_originals": "Q08バックアップsource-capturesに保管",
+  "PDF_originals": "UKG公開SOW9頁をブラウザから取得、sources/ukg-pro-suite-standard-sow-20260205.pdfへ保存。全頁抽出・p.1/2/5/7を画像照合。",
+  "published_dates": {
+    "other": "公開/改定日不明。閲覧日は2026-10-13 UTC。copyright年/旧注意日/URLの2021を改定日にしない。"
+  },
+  "reviewed_at": "2026-10-13T14:54:12.837285+00:00"
+}

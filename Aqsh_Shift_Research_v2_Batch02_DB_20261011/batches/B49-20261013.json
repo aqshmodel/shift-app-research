@@ -1,0 +1,84 @@
+{
+  "batch_id": "B49-20261013",
+  "prior_batch": "B48-20261013",
+  "as_of_date": "2026-10-13",
+  "resolution_policy_version": 2,
+  "description": "Q06 T02/5 Naftyの月額表示・試用と請求契約の公開限界",
+  "method": "限定公式公開調査・ローカル反映。前回の既完/外部待ちを再完了しない。原要件・不明・資料不一致・既存価格119行を保持。Git/CI/本番/課金/登録/問い合わせなし。",
+  "sources": [
+    {
+      "key": "nafty-main",
+      "url": "https://nafty.app/",
+      "title": "Nafty 公式料金・導入手順・FAQ",
+      "publisher": "株式会社KakuKaku",
+      "retrieved_on": "2026-10-13",
+      "version_label": "公開/改定日不明。閲覧2026-10-13",
+      "method": "public_web_body",
+      "method_note": "公式本文・該当注記を照合。原本はQ06バックアップに保存、取得hashはsource-captures.json。入力・登録・課金・問い合わせ・独立製品試験なし。",
+      "scope_note": "Q01の限定公開質問終了基準に従う。原要件と未確認条件を個別台帳へ保持。"
+    },
+    {
+      "key": "nafty-terms",
+      "url": "https://nafty.app/terms/",
+      "title": "Nafty 利用規約",
+      "publisher": "株式会社KakuKaku",
+      "retrieved_on": "2026-10-13",
+      "version_label": "制定2026-07-30。公開/改定日不明、閲覧2026-10-13",
+      "method": "public_web_body",
+      "method_note": "公式本文・該当注記を照合。原本はQ06バックアップに保存、取得hashはsource-captures.json。入力・登録・課金・問い合わせ・独立製品試験なし。",
+      "scope_note": "Q01の限定公開質問終了基準に従う。原要件と未確認条件を個別台帳へ保持。"
+    }
+  ],
+  "findings": [
+    {
+      "product": "JP04",
+      "criterion": "P03",
+      "source": "nafty-main",
+      "state": "known",
+      "support": "limited",
+      "delivery": "unknown",
+      "summary": "料金はStandard/Premiumの基本額とメンバー単価を円/月で表示し、2か月無料トライアルと試用期間中に解約した場合は料金が発生しないことを案内する。有料導入手順はトライアル後に契約可否判断を置く。",
+      "locator": "料金の計算例 / 2か月試用 / 有料導入の流れ",
+      "limitations": "表示単位と試用条件のみ。月払い/年払い、前払い、最低利用期間、月途中請求、解約予告/返金、自動移行の仕様は別確認。公開額の税区分は未確認。",
+      "scope": "2026-10-13の公式公開資料照合。資料の対象国/版/用途に限定。個別契約・制度適合・実動作は未検証。"
+    },
+    {
+      "product": "JP04",
+      "criterion": "P03",
+      "source": "nafty-terms",
+      "state": "not_disclosed",
+      "support": "limited",
+      "delivery": "unknown",
+      "summary": "公開利用規約は施設/リーダー/メンバーのアカウントとサービス利用条件を定義するが、請求周期・前払い・最低契約期間・解約精算の条項を確認範囲から確定できない。",
+      "locator": "規約第1〜14条 / 制定日2026-07-30",
+      "limitations": "月額単価表示を1か月契約/随時解約に変えない。試用の2か月を最低契約としない。制定日と公開/改定日を区別。施設ごとの契約書・料金適用の正式資料で再開。",
+      "scope": "2026-10-13の公式公開資料照合。資料の対象国/版/用途に限定。個別契約・制度適合・実動作は未検証。"
+    }
+  ],
+  "task_updates": [
+    {
+      "task_id": "TASK-RES00181",
+      "state": "blocked",
+      "priority": 3,
+      "method": "vendor_quote",
+      "expected_task": {
+        "priority": 3,
+        "required_method": "unknown",
+        "last_checked_on": "2026-10-13",
+        "task_state": "in_progress",
+        "question": "請求周期・最低契約：定義の未確認部分・現行条件を確認する。",
+        "evidence_needed": "公式料金・個別見積・契約書",
+        "owner": "未割当",
+        "next_review_on": null,
+        "block_reason": null
+      },
+      "changes": {
+        "owner": "外部確認待ち / 担当未定",
+        "block_reason": "料金単位と試用条件は明記されるが、通常利用の請求契約・最低期間は公式公開規約/料金/FAQから確定できない。 再開：請求周期・前払・最低期間/数量/請求額、解約期限/精算/更新、有料移行条件を指定した正式契約資料",
+        "next_review_on": null
+      },
+      "note": "{\"review_id\":\"Q06T02-TASK-RES00181\",\"task_id\":\"TASK-RES00181\",\"product\":\"Nafty\",\"offering_id\":\"OF-JP04\",\"criterion_id\":\"P03\",\"original_task\":{\"priority\":3,\"required_method\":\"unknown\",\"last_checked_on\":null,\"task_id\":\"TASK-RES00181\",\"offering_id\":\"OF-JP04\",\"criterion_id\":\"P03\",\"task_state\":\"not_started\",\"question\":\"請求周期・最低契約：定義の未確認部分・現行条件を確認する。\",\"evidence_needed\":\"公式料金・個別見積・契約書\",\"owner\":\"未割当\",\"next_review_on\":null,\"block_reason\":null},\"q01_public_acceptance_atoms\":[\"月/年の請求周期・前払い・最低期間\",\"最低人数/請求額の公表範囲\"],\"scope\":\"Naftyの月額表示・試用条件と通常利用の請求周期/最低契約を照合する。\",\"reason\":\"料金単位と試用条件は明記されるが、通常利用の請求契約・最低期間は公式公開規約/料金/FAQから確定できない。\",\"evidence_observation_ids\":[\"B49-20261013-OBS0001\",\"B49-20261013-OBS0002\"],\"remaining_work\":[\"請求周期・前払・最低期間/数量/請求額、解約期限/精算/更新、有料移行条件を指定した正式契約資料\"],\"primary_queue\":\"external_confirmation_wait\",\"public_phase\":\"bounded_public_search_ended_unknown\",\"external_state\":\"waiting_for_formal_document\",\"resume_condition\":\"公式改定/正式資料/対象見積の取得又は導入判断に残条件が必要な時。新根拠なしの反復探索はしない。\",\"after_task_state\":\"blocked\",\"factual_support_not_inferred\":true,\"original_requirements_deleted\":false}"
+    }
+  ],
+  "prices": []
+}

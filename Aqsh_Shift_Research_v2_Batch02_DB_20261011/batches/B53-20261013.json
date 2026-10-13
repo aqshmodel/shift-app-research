@@ -1,0 +1,107 @@
+{
+  "batch_id": "B53-20261013",
+  "prior_batch": "B52-20261013",
+  "as_of_date": "2026-10-13",
+  "resolution_policy_version": 2,
+  "description": "Q07 T01/5 お助けマンDayの介護配置・帳票の公開境界",
+  "method": "限定公式公開調査・ローカル反映。前回の既完/外部待ちを再完了しない。原要件・不明・資料不一致・既存価格119行を保持。Git/CI/本番/課金/登録/問い合わせなし。",
+  "sources": [
+    {
+      "key": "day-main",
+      "url": "https://www.otasukeman.jp/day",
+      "title": "勤務シフト作成お助けマンDay サービス紹介  | 勤務シフト作成お助けマン | JRシステム",
+      "publisher": "鉄道情報システム株式会社",
+      "retrieved_on": "2026-10-13",
+      "version_label": "公開/改定日不明。閲覧2026-10-13 UTC",
+      "method": "public_web_body",
+      "method_note": "公式本文と表の親項目/詳細行/注記を照合。原本・取得hashはQ07バックアップsource-capturesへ保存。フォーム入力/登録/課金/照会/独立製品試験なし。",
+      "scope_note": "Q01限定公開質問終了基準。原要件/未知/個別適用の残条件は個別台帳へ保持。"
+    },
+    {
+      "key": "day-care",
+      "url": "https://www.otasukeman.jp/nursing-home",
+      "title": "介護業界に特化したシフト作成ツール！AIによる自動で最適なシフト作成を！勤務シフト作成お助けマン",
+      "publisher": "鉄道情報システム株式会社",
+      "retrieved_on": "2026-10-13",
+      "version_label": "公開/改定日不明。閲覧2026-10-13 UTC",
+      "method": "public_web_body",
+      "method_note": "公式本文と表の親項目/詳細行/注記を照合。原本・取得hashはQ07バックアップsource-capturesへ保存。フォーム入力/登録/課金/照会/独立製品試験なし。",
+      "scope_note": "Q01限定公開質問終了基準。原要件/未知/個別適用の残条件は個別台帳へ保持。"
+    },
+    {
+      "key": "day-faq",
+      "url": "https://www.otasukeman.jp/faq",
+      "title": "よくあるご質問 | 勤務シフト作成お助けマン | JRシステム",
+      "publisher": "鉄道情報システム株式会社",
+      "retrieved_on": "2026-10-13",
+      "version_label": "公開/改定日不明。閲覧2026-10-13 UTC",
+      "method": "public_web_body",
+      "method_note": "公式本文と表の親項目/詳細行/注記を照合。原本・取得hashはQ07バックアップsource-capturesへ保存。フォーム入力/登録/課金/照会/独立製品試験なし。",
+      "scope_note": "Q01限定公開質問終了基準。原要件/未知/個別適用の残条件は個別台帳へ保持。"
+    }
+  ],
+  "findings": [
+    {
+      "product": "JP05",
+      "criterion": "J06",
+      "source": "day-care",
+      "state": "known",
+      "support": "limited",
+      "delivery": "native",
+      "summary": "介護向けページはDayを対象とし、資格別スタッフグループと勤務帯別の必要人数を利用者が設定する方法を説明する。特養・障害者支援施設・老健の利用を紹介する。",
+      "locator": "介護施設で設定できる条件の例 / 介護向けFAQ",
+      "limitations": "導入業態の紹介と制度適合は別。3:1という課題説明だけから常勤換算、加算や全サービス種別への自動判定を認定しない。",
+      "scope": "2026-10-13 UTCの公式公開資料照合。対象製品・用途・資料時点に限定。個別契約・制度適合・実動作は未検証。"
+    },
+    {
+      "product": "JP05",
+      "criterion": "J06",
+      "source": "day-care",
+      "state": "known",
+      "support": "limited",
+      "delivery": "unknown",
+      "summary": "介護向けFAQは、不足条件をアラートで示し確認・手直しが必要になること、配置基準自体の判断は各施設が行うことを明示する。",
+      "locator": "FAQ「人員配置基準を満たす勤務表になりますか？」",
+      "limitations": "条件設定の支援と法定基準の判定を区別。自動生成の終了を配置基準充足の証明と扱わない。制度版・算式・実人数/常勤換算の実測は未確認。",
+      "scope": "2026-10-13 UTCの公式公開資料照合。対象製品・用途・資料時点に限定。個別契約・制度適合・実動作は未検証。"
+    },
+    {
+      "product": "JP05",
+      "criterion": "J06",
+      "source": "day-main",
+      "state": "not_disclosed",
+      "support": "limited",
+      "delivery": "unknown",
+      "summary": "Dayの公開出力一覧は勤務表、タイムスケジュール、CSV連携を案内する。介護の勤務形態一覧表・常勤換算計算について対象様式・制度版・算式を特定できない。",
+      "locator": "Dayの機能一覧「出力をする」 / 介護向けFAQ / 共通FAQ",
+      "limitations": "一般のExcel出力を介護法定帳票や様式9への標準対応としない。未記載は非対応の根拠ではない。正式仕様で再開。",
+      "scope": "2026-10-13 UTCの公式公開資料照合。対象製品・用途・資料時点に限定。個別契約・制度適合・実動作は未検証。"
+    }
+  ],
+  "task_updates": [
+    {
+      "task_id": "TASK-RES00213",
+      "state": "blocked",
+      "priority": 3,
+      "method": "vendor_document",
+      "expected_task": {
+        "priority": 3,
+        "required_method": "unknown",
+        "last_checked_on": "2026-10-13",
+        "task_state": "in_progress",
+        "question": "介護・福祉の配置基準：定義の未確認部分・現行条件を確認する。",
+        "evidence_needed": "行政一次資料・専門団体・更新履歴・算式",
+        "owner": "未割当",
+        "next_review_on": null,
+        "block_reason": null
+      },
+      "changes": {
+        "owner": "外部確認待ち / 担当未定",
+        "block_reason": "資格別必要人数と不足表示は公表されるが、配置基準判断を施設に委ねており、制度固有の算式・帳票は公開資料で確定できない。 再開：対象サービス種別・制度版の正式仕様、実人数/常勤換算/時間帯配置と加算の算式、対象帳票・契約包含、境界試験",
+        "next_review_on": null
+      },
+      "note": "{\"review_id\":\"Q07T01-TASK-RES00213\",\"task_id\":\"TASK-RES00213\",\"product\":\"勤務シフト作成お助けマン Day\",\"offering_id\":\"OF-JP05\",\"criterion_id\":\"J06\",\"original_task\":{\"priority\":3,\"required_method\":\"unknown\",\"last_checked_on\":null,\"task_id\":\"TASK-RES00213\",\"offering_id\":\"OF-JP05\",\"criterion_id\":\"J06\",\"task_state\":\"not_started\",\"question\":\"介護・福祉の配置基準：定義の未確認部分・現行条件を確認する。\",\"evidence_needed\":\"行政一次資料・専門団体・更新履歴・算式\",\"owner\":\"未割当\",\"next_review_on\":null,\"block_reason\":null},\"q01_public_acceptance_atoms\":[\"対象サービス種別/制度版/予定か提供済みか\",\"実人数/常勤換算/時間帯の算式説明の範囲\"],\"scope\":\"お助けマンDayの介護配置基準について、利用者設定・不足表示と制度固有の算式/帳票の公開範囲を照合する。\",\"reason\":\"資格別必要人数と不足表示は公表されるが、配置基準判断を施設に委ねており、制度固有の算式・帳票は公開資料で確定できない。\",\"evidence_observation_ids\":[\"B53-20261013-OBS0001\",\"B53-20261013-OBS0002\",\"B53-20261013-OBS0003\"],\"remaining_work\":[\"対象サービス種別・制度版の正式仕様、実人数/常勤換算/時間帯配置と加算の算式、対象帳票・契約包含、境界試験\"],\"primary_queue\":\"external_confirmation_wait\",\"public_phase\":\"bounded_public_search_ended_unknown\",\"external_state\":\"waiting_for_formal_document\",\"resume_condition\":\"公式改定/正式資料/対象見積の取得又は導入判断に残条件が必要な時。新根拠なしの反復探索はしない。\",\"after_task_state\":\"blocked\",\"factual_support_not_inferred\":true,\"original_requirements_deleted\":false}"
+    }
+  ],
+  "prices": []
+}

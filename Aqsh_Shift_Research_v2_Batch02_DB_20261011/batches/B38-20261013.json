@@ -1,0 +1,164 @@
+{
+  "batch_id": "B38-20261013",
+  "prior_batch": "B37-20261013",
+  "as_of_date": "2026-10-13",
+  "resolution_policy_version": 2,
+  "description": "Connecteam N05：KB Agent外部送信/保持/学習・個別停止とAI特約/Owner停止/委託先差/Privacy範囲",
+  "method": "公式5資料（新規4・KB再利用1の新段落）から6部分確認記録。対象Hub/プラン/版と処理主体を分離し、FAQ・公開AI規約・委託先列挙差・controller/processor保持を照合。F04/F05の既存カスタマイズ/marketing/非公開契約は反復しない。具体項目/匿名化/保持期間/停止実測/締結契約/保証は未知。全文/hash/原本画像未保存。価格/制度/課題完了/独立試験追加0。外部連絡/API/製品設定/認証/課金/公開/本番再監査なし。",
+  "sources": [
+    {
+      "key": "kb",
+      "url": "https://help.connecteam.com/en/articles/11112114-connecteam-s-knowledge-base-agent-your-company-s-ai-assistant",
+      "title": "Connecteam — Connecteam's Knowledge Base Agent: Your Company's AI Assistant",
+      "publisher": "Connecteam",
+      "reference": "Deactivating your AI Agent / FAQ external sharing / plan footer",
+      "retrieved_on": "2026-10-13",
+      "version_label": "Mutable help; Updated this week; exact update date not shown; Communications Expert+ / up to 20 / SBP excluded",
+      "method": "official_document_body",
+      "method_note": "Lines 137-160. Existing document reused for new data-policy and deactivate paragraphs; earlier F04/F05 response customization not duplicated. 要約・URL・版・取得日・locator/方法/留保を保存。全文/本文hash/原本画像未保存。製品試験/API/登録/外部連絡/設定/認証/課金/公開操作なし。"
+    },
+    {
+      "key": "ai",
+      "url": "https://connecteam.com/ai-terms/",
+      "title": "Connecteam — Special Terms for Generative AI Features",
+      "publisher": "Connecteam",
+      "reference": "Content Rights / Agentic Capabilities",
+      "retrieved_on": "2026-10-13",
+      "version_label": "Last updated 2026-09-15; public terms; customer executed terms/version unconfirmed",
+      "method": "official_document_body",
+      "method_note": "Lines 46-60,84. Public AI terms training wording and service-maintenance permission differ from provider-specific FAQ. 要約・URL・版・取得日・locator/方法/留保を保存。全文/本文hash/原本画像未保存。製品試験/API/登録/外部連絡/設定/認証/課金/公開操作なし。"
+    },
+    {
+      "key": "terms",
+      "url": "https://connecteam.com/terms-conditions/",
+      "title": "Connecteam — Terms of Service",
+      "publisher": "Connecteam",
+      "reference": "Section 1.7 AI Features / Account Owner opt out",
+      "retrieved_on": "2026-10-13",
+      "version_label": "Last updated 2026-09-15; public terms; individual customer order unconfirmed",
+      "method": "official_document_body",
+      "method_note": "Lines 68,210. Account Owner opt-out statement; actual settings/permission behavior untested. 要約・URL・版・取得日・locator/方法/留保を保存。全文/本文hash/原本画像未保存。製品試験/API/登録/外部連絡/設定/認証/課金/公開操作なし。"
+    },
+    {
+      "key": "processors",
+      "url": "https://connecteam.com/subprocessors/",
+      "title": "Connecteam — Subprocessors",
+      "publisher": "Connecteam",
+      "reference": "Microsoft / Google / OpenAI / Anthropic AI entries",
+      "retrieved_on": "2026-10-13",
+      "version_label": "Mutable public list; no exact update date shown; feature routing/customer region unconfirmed",
+      "method": "official_document_body",
+      "method_note": "Lines 64-81,98-117. Anthropic AI Agent listing absent from KB FAQ provider enumeration; no provider portal/contract accessed. 要約・URL・版・取得日・locator/方法/留保を保存。全文/本文hash/原本画像未保存。製品試験/API/登録/外部連絡/設定/認証/課金/公開操作なし。"
+    },
+    {
+      "key": "privacy",
+      "url": "https://connecteam.com/privacy/",
+      "title": "Connecteam — Privacy Notice",
+      "publisher": "Connecteam",
+      "reference": "Scope / Section 2 AI representative / Sections 10-11 roles and retention",
+      "retrieved_on": "2026-10-13",
+      "version_label": "Last updated 2026-09-15; controller scope / processor DPA distinction",
+      "method": "official_document_body",
+      "method_note": "Lines 49,91-95,104,197-208,220. Support/marketing AI representative separate from customer KB Agent; no private DPA investigation. 要約・URL・版・取得日・locator/方法/留保を保存。全文/本文hash/原本画像未保存。製品試験/API/登録/外部連絡/設定/認証/課金/公開操作なし。"
+    }
+  ],
+  "findings": [
+    {
+      "product": "US09",
+      "criterion": "N05",
+      "source": "kb",
+      "summary": "KB Agent FAQは回答処理に必要な最小限の関連データをAzure OpenAI/Gemini/OpenAIへ送信し、処理後のLLM基盤で保持せず、モデル学習/改善にも利用しないと説明する。",
+      "locator": "FAQ: external sharing / zero retention / no model training",
+      "limitations": "対象はCommunications Expert以上のKB Agent（20まで、SBP対象外）。送信フィールド一覧/自動匿名化/実プロンプト・provider別ルート/例外・ログ/Connecteam側履歴保持・顧客契約適用は未確認。Operations Expertの全AI/自動割当へ拡張しない。委託先一覧のAnthropicとの差は別記録へ保存。",
+      "state": "known",
+      "delivery": "native",
+      "support": "limited",
+      "scope": "Communications KB Agent FAQ; provider-side processing claims only; public vendor statement only; no independent data-flow/permission test or executed customer contract confirmation"
+    },
+    {
+      "product": "US09",
+      "criterion": "N05",
+      "source": "kb",
+      "summary": "KB Agentは対象Agentの三点メニューからDeactivateでInactiveにし、Activateで再有効化すると説明する。",
+      "locator": "Deactivating your AI Agent steps 1-5",
+      "limitations": "個別KB Agentの状態操作であり、全AI/全外部送信の一括停止、既存データ削除/保持終了、Account Ownerの権限試験やスケジュールAI停止ではない。管理画面/送信停止の実観測/顧客版/復帰時挙動は未確認。",
+      "state": "known",
+      "delivery": "native",
+      "support": "limited",
+      "scope": "Individual Communications KB Agent lifecycle; global opt-out untested; public vendor statement only; no independent data-flow/permission test or executed customer contract confirmation"
+    },
+    {
+      "product": "US09",
+      "criterion": "N05",
+      "source": "ai",
+      "summary": "AI特約のContent Rightsは、ConnecteamによるUser ContentでのAI Features横断学習/改善を禁じ、AI委託先のモデル学習/改善を積極的に許可しない一方、User Content/Outputをサービス提供・改善・保守等へ用い得ると記載する。",
+      "locator": "Content Rights: training and service-use paragraph",
+      "limitations": "公開2026-09-15版の文言で、独立した学習停止保証・全AIのzero retention・改善用途の保存期間を確定しない。FAQのLLM基盤保持とConnecteam内保持は別。対象顧客の締結版/付属契約、匿名化、具体送信項目/委託先別実装/第三者保証は未確認。",
+      "state": "known",
+      "delivery": "native",
+      "support": "limited",
+      "scope": "Public Special AI Terms 2026-09-15; training wording and permitted service use distinguished; public vendor statement only; no independent data-flow/permission test or executed customer contract confirmation"
+    },
+    {
+      "product": "US09",
+      "criterion": "N05",
+      "source": "terms",
+      "summary": "利用規約1.7はAI機能がopt-inまたは既定有効になり、既定有効の場合Account Ownerがユーザー設定からopt outできると記載し、AI特約も適用すると説明する。",
+      "locator": "Section 1.7: AI Features defaults / Account Owner settings / AI Terms link",
+      "limitations": "設定名/入口/各Hub・機能への反映範囲・権限差/送信停止実測は未確認。AI特約のAgentic機能の既定有効/Administrator権限内実行と、KB個別Deactivateを同一UI/同一機能としない。顧客のOperations Expert提供権利や利用停止によるデータ削除を推測しない。",
+      "state": "known",
+      "delivery": "native",
+      "support": "limited",
+      "scope": "Public Terms 2026-09-15; Account Owner opt out claim; feature-specific behavior untested; public vendor statement only; no independent data-flow/permission test or executed customer contract confirmation"
+    },
+    {
+      "product": "US09",
+      "criterion": "N05",
+      "source": "processors",
+      "summary": "公式委託先一覧はAzure OpenAIのSweden Central、生成AI用途のGoogle（米国）、AI機能用途のOpenAI（米国）に加え、AI Agent用途のAnthropic（米国）を載せる。",
+      "locator": "AI entries Microsoft / Google / OpenAI / Anthropic",
+      "limitations": "KB FAQのAzure OpenAI/Gemini/OpenAI列挙にはAnthropicがなく、資料の対象/版/機能差は未解消。Google会社一覧を全機能のGemini実行と断定せず、顧客ごとのprovider選択/region固定/越境・データ項目/学習・保持条件や第三者保証は未確認。一覧だけで全AI経路/契約を確定しない。",
+      "state": "known",
+      "delivery": "native",
+      "support": "limited",
+      "scope": "Public subprocessor list; listed locations only; mismatch with KB FAQ preserved; public vendor statement only; no independent data-flow/permission test or executed customer contract confirmation"
+    },
+    {
+      "product": "US09",
+      "criterion": "N05",
+      "source": "privacy",
+      "summary": "Privacy Noticeは顧客のUser Content等をprocessor/DPAの範囲に分け、processorデータは顧客指示の期間保持すると説明する。サポート等の通信記録による自社AI代表の改善は別のcontroller用途として記載する。",
+      "locator": "Scope exclusion / Data Uses AI representative / 10.2-10.3 / 11.3 retention",
+      "limitations": "2026-09-15公開版。自社問い合わせAIの改善用途を顧客KB学習と同一視しない。顧客指示保持はLLM基盤zero retentionとは異なる。KB会話/ログ/埋込/バックアップ等の具体期間・AI送信項目/匿名化、契約版/削除検証/第三者保証は未確認でN05完了にしない。",
+      "state": "known",
+      "delivery": "native",
+      "support": "limited",
+      "scope": "Privacy controller/processor roles 2026-09-15; customer retention and support AI distinct; public vendor statement only; no independent data-flow/permission test or executed customer contract confirmation"
+    }
+  ],
+  "prices": [],
+  "followups": [],
+  "task_updates": [
+    {
+      "task_id": "TASK-RES01244",
+      "state": "in_progress",
+      "priority": 3,
+      "method": "vendor_document",
+      "note": "B38：公開LLM処理/学習利用、KB個別Deactivate、AI特約/Owner opt-out、委託先地域・Anthropic列挙差、Privacyのprocessor保持/自社問い合わせAIを部分確認。具体送信項目/匿名化/会話ログ保持/全機能停止実測/締結契約/第三者保証は未確認。"
+    }
+  ],
+  "retrieval_checks": [
+    {
+      "product": "US09",
+      "url": "https://connecteam.com/subprocessors/",
+      "result": "provider_scope_difference",
+      "notes": "委託先一覧Anthropic AI AgentとKB FAQの3系統列挙が異なる。顧客ごとのルート/資料対象差は未確認。"
+    },
+    {
+      "product": "US09",
+      "url": "https://connecteam.com/ai-terms/",
+      "result": "retention_and_training_scope_distinguished",
+      "notes": "FAQの処理後LLM保持なしとAI特約のサービス改善/保守利用、Privacyの顧客保持指示は主体/範囲が異なる。全AI一律のゼロ保持としない。"
+    }
+  ]
+}

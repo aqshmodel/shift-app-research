@@ -371,10 +371,31 @@ def ingest(c, path):
                 task_state='in_progress', question=task['question'], evidence_needed=task['method'], owner='未割当',
                 priority=task['priority'], required_method=task['method'], last_checked_on=p['as_of_date']))
         for task in p.get('task_updates', []):
-            c.execute('UPDATE research_tasks SET task_state=?,priority=?,required_method=?,last_checked_on=? WHERE task_id=?',
-                (task.get('state','in_progress'),task.get('priority',1),task['method'],p['as_of_date'],task['task_id']))
-            if c.execute('SELECT changes()').fetchone()[0] != 1:
+            current = c.execute('SELECT * FROM research_tasks WHERE task_id=?', (task['task_id'],)).fetchone()
+            if current is None:
                 raise ValueError(f"missing task: {task['task_id']}")
+            for key, expected in task.get('expected_task', {}).items():
+                if key not in current.keys() or current[key] != expected:
+                    raise ValueError(f"task changed before review apply: {task['task_id']} / {key}")
+            changes = task.get('changes', {})
+            editable = {'question','evidence_needed','owner','next_review_on','block_reason'}
+            if set(changes) - editable:
+                raise ValueError('unsupported task review field')
+            if task.get('state') == 'done' and 'public_completion' in task:
+                review = task['public_completion']
+                evidence = review.get('observation_ids', [])
+                if not review.get('scope') or not evidence or not isinstance(review.get('remaining_work'), list):
+                    raise ValueError('public completion needs scope, evidence and remaining work')
+                for oid in evidence:
+                    if not c.execute("""SELECT 1 FROM observations o JOIN observation_evidence e USING(observation_id)
+                        WHERE o.observation_id=? AND o.offering_id=? AND o.criterion_id=?
+                        AND o.value_state='known' AND o.verification_stage='documented'""",
+                        (oid, current['offering_id'], current['criterion_id'])).fetchone():
+                        raise ValueError('public completion evidence missing or outside task scope')
+            changes.update(task_state=task.get('state','in_progress'),priority=task.get('priority',1),
+                required_method=task['method'],last_checked_on=p['as_of_date'])
+            c.execute('UPDATE research_tasks SET '+','.join(ident(key)+'=?' for key in changes)+' WHERE task_id=?',
+                [*changes.values(), task['task_id']])
             insert(c, 'research_task_updates', dict(update_id=batch+'-'+task['task_id'], task_id=task['task_id'],
                 batch_id=batch,note=task['note'],recorded_on=p['as_of_date']))
         c.execute("INSERT OR REPLACE INTO schema_info VALUES ('latest_batch',?)", (batch,))

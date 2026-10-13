@@ -1,0 +1,130 @@
+{
+  "batch_id": "B50-20261013",
+  "prior_batch": "B49-20261013",
+  "as_of_date": "2026-10-13",
+  "resolution_policy_version": 2,
+  "description": "Q06 T03/5 SHIFTEEの介護配置基準と導入事例の適用境界",
+  "method": "限定公式公開調査・ローカル反映。前回の既完/外部待ちを再完了しない。原要件・不明・資料不一致・既存価格119行を保持。Git/CI/本番/課金/登録/問い合わせなし。",
+  "sources": [
+    {
+      "key": "shiftee-school",
+      "url": "https://www.shifteeapp.jp/case/%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%E5%9C%9F%E5%B1%8B%EF%BC%8F%E5%9C%9F%E5%B1%8B%E3%82%B1%E3%82%A2%E3%82%AB%E3%83%AC%E3%83%83%E3%82%B8/",
+      "title": "SHIFTEE 土屋ケアカレッジ導入事例",
+      "publisher": "株式会社システムサポート",
+      "retrieved_on": "2026-10-13",
+      "version_label": "公開/改定日不明。閲覧2026-10-13",
+      "method": "public_web_body",
+      "method_note": "公式本文・該当注記を照合。原本はQ06バックアップに保存、取得hashはsource-captures.json。入力・登録・課金・問い合わせ・独立製品試験なし。",
+      "scope_note": "Q01の限定公開質問終了基準に従う。原要件と未確認条件を個別台帳へ保持。"
+    },
+    {
+      "key": "shiftee-hospital",
+      "url": "https://www.shifteeapp.jp/case/%E6%97%A5%E6%9C%AC%E8%B5%A4%E5%8D%81%E5%AD%97%E7%A4%BE%E3%80%80%E5%8F%A4%E6%B2%B3%E8%B5%A4%E5%8D%81%E5%AD%97%E7%97%85%E9%99%A2/",
+      "title": "SHIFTEE 古河赤十字病院導入事例",
+      "publisher": "株式会社システムサポート",
+      "retrieved_on": "2026-10-13",
+      "version_label": "公開/改定日不明。閲覧2026-10-13",
+      "method": "public_web_body",
+      "method_note": "公式本文・該当注記を照合。原本はQ06バックアップに保存、取得hashはsource-captures.json。入力・登録・課金・問い合わせ・独立製品試験なし。",
+      "scope_note": "Q01の限定公開質問終了基準に従う。原要件と未確認条件を個別台帳へ保持。"
+    },
+    {
+      "key": "shiftee-function",
+      "url": "https://www.shifteeapp.jp/function/",
+      "title": "SHIFTEE 機能紹介",
+      "publisher": "株式会社システムサポート",
+      "retrieved_on": "2026-10-13",
+      "version_label": "公開/改定日不明。閲覧2026-10-13",
+      "method": "public_web_body",
+      "method_note": "公式本文・該当注記を照合。原本はQ06バックアップに保存、取得hashはsource-captures.json。入力・登録・課金・問い合わせ・独立製品試験なし。",
+      "scope_note": "Q01の限定公開質問終了基準に従う。原要件と未確認条件を個別台帳へ保持。"
+    },
+    {
+      "key": "shiftee-faq",
+      "url": "https://www.shifteeapp.jp/faq/",
+      "title": "SHIFTEE よくあるご質問",
+      "publisher": "株式会社システムサポート",
+      "retrieved_on": "2026-10-13",
+      "version_label": "公開/改定日不明。閲覧2026-10-13",
+      "method": "public_web_body",
+      "method_note": "公式本文・該当注記を照合。原本はQ06バックアップに保存、取得hashはsource-captures.json。入力・登録・課金・問い合わせ・独立製品試験なし。",
+      "scope_note": "Q01の限定公開質問終了基準に従う。原要件と未確認条件を個別台帳へ保持。"
+    }
+  ],
+  "findings": [
+    {
+      "product": "JP17",
+      "criterion": "Q04",
+      "source": "shiftee-school",
+      "state": "known",
+      "support": "limited",
+      "delivery": "unknown",
+      "summary": "土屋ケアカレッジ事例は、介護資格取得スクールを運営する企業による講師の講座シフトで、機能の組合せと柔軟なカスタマイズを利用して実装・運用開始したとの利用者コメントを掲載する。",
+      "locator": "利用者コメント / 課題・ニーズ",
+      "limitations": "介護施設の利用者ケアを担う職員配置の事例と読まない。標準Lightのみの実績とも断定しない。人数/部署数/勤務体系/導入期間/有償額/計測分母は未記載。提供元掲載のコメントで独立聞き取りではない。",
+      "scope": "2026-10-13の公式公開資料照合。資料の対象国/版/用途に限定。個別契約・制度適合・実動作は未検証。"
+    },
+    {
+      "product": "JP17",
+      "criterion": "Q04",
+      "source": "shiftee-hospital",
+      "state": "known",
+      "support": "limited",
+      "delivery": "unknown",
+      "summary": "古河赤十字病院事例は医師の日当直の作成を対象とし、AIが希望を認識して作成すること、医師個人へ当直表をメール送信して急な変更に役立つとの利用者コメントを示す。",
+      "locator": "病院事例の本文 / 希望休・配布の課題",
+      "limitations": "看護師病棟シフト/様式9/介護配置基準の導入事例へ拡張しない。医師数/科数/日当直時間/導入期間/契約版/有償額は未記載。独立性能/制度試験ではない。",
+      "scope": "2026-10-13の公式公開資料照合。資料の対象国/版/用途に限定。個別契約・制度適合・実動作は未検証。"
+    },
+    {
+      "product": "JP17",
+      "criterion": "Q04",
+      "source": "shiftee-hospital",
+      "state": "not_disclosed",
+      "support": "limited",
+      "delivery": "unknown",
+      "summary": "両事例には実際の利用を示すコメントがあるが、本番運用の開始日、職員/部署の数量、契約プラン・費用、時間削減の数値や測定範囲は確認できない。",
+      "locator": "2導入事例の公開範囲",
+      "limitations": "提供元の導入事例として扱い、全院運用・全職種適用・数値効果の独立検証を主張しない。掲載公開/改定日不明。",
+      "scope": "2026-10-13の公式公開資料照合。資料の対象国/版/用途に限定。個別契約・制度適合・実動作は未検証。"
+    },
+    {
+      "product": "JP17",
+      "criterion": "J06",
+      "source": "shiftee-function",
+      "state": "not_disclosed",
+      "support": "limited",
+      "delivery": "unknown",
+      "summary": "公開機能とFAQはシフト管理・人数/労働時間の管理を案内するが、介護サービス種別/制度版に対応した人員配置、実人数/常勤換算/時間帯配置の算式は確認資料で特定できない。",
+      "locator": "機能紹介・FAQ / 2導入事例との用途照合",
+      "limitations": "医師の日当直や講師シフトの利用を介護配置基準対応の根拠にしない。明示非対応とは判定しない。導入事例の事業者・職種・対象業務を区別する。",
+      "scope": "2026-10-13の公式公開資料照合。資料の対象国/版/用途に限定。個別契約・制度適合・実動作は未検証。"
+    }
+  ],
+  "task_updates": [
+    {
+      "task_id": "TASK-RES00745",
+      "state": "blocked",
+      "priority": 3,
+      "method": "vendor_document",
+      "expected_task": {
+        "priority": 3,
+        "required_method": "unknown",
+        "last_checked_on": "2026-10-13",
+        "task_state": "in_progress",
+        "question": "介護・福祉の配置基準：定義の未確認部分・現行条件を確認する。",
+        "evidence_needed": "行政一次資料・専門団体・更新履歴・算式",
+        "owner": "未割当",
+        "next_review_on": null,
+        "block_reason": null
+      },
+      "changes": {
+        "owner": "外部確認待ち / 担当未定",
+        "block_reason": "医療/介護関連の利用事例と一般シフト機能は公表されるが、介護固有の配置基準対象・算式は確定できない。 再開：対応する介護種別/制度版、実人数/常勤換算/時間帯配置の算式、実測資料を示す正式仕様",
+        "next_review_on": null
+      },
+      "note": "{\"review_id\":\"Q06T03-TASK-RES00745\",\"task_id\":\"TASK-RES00745\",\"product\":\"SHIFTEE\",\"offering_id\":\"OF-JP17\",\"criterion_id\":\"J06\",\"original_task\":{\"priority\":3,\"required_method\":\"unknown\",\"last_checked_on\":null,\"task_id\":\"TASK-RES00745\",\"offering_id\":\"OF-JP17\",\"criterion_id\":\"J06\",\"task_state\":\"not_started\",\"question\":\"介護・福祉の配置基準：定義の未確認部分・現行条件を確認する。\",\"evidence_needed\":\"行政一次資料・専門団体・更新履歴・算式\",\"owner\":\"未割当\",\"next_review_on\":null,\"block_reason\":null},\"q01_public_acceptance_atoms\":[\"対象サービス種別/制度版/予定か提供済みか\",\"実人数/常勤換算/時間帯の算式説明の範囲\"],\"scope\":\"SHIFTEEの介護配置基準の対象サービス/制度版と算式の公開範囲を、公開機能・FAQ・導入事例から照合する。\",\"reason\":\"医療/介護関連の利用事例と一般シフト機能は公表されるが、介護固有の配置基準対象・算式は確定できない。\",\"evidence_observation_ids\":[\"B50-20261013-OBS0004\"],\"remaining_work\":[\"対応する介護種別/制度版、実人数/常勤換算/時間帯配置の算式、実測資料を示す正式仕様\"],\"primary_queue\":\"external_confirmation_wait\",\"public_phase\":\"bounded_public_search_ended_unknown\",\"external_state\":\"waiting_for_formal_document\",\"resume_condition\":\"公式改定/正式資料/対象見積の取得又は導入判断に残条件が必要な時。新根拠なしの反復探索はしない。\",\"after_task_state\":\"blocked\",\"factual_support_not_inferred\":true,\"original_requirements_deleted\":false}"
+    }
+  ],
+  "prices": []
+}

@@ -1,0 +1,17 @@
+{
+  "status": "passed",
+  "snapshot": "B41-20261013-pub2",
+  "services": 3,
+  "widths": [
+    1440,
+    390
+  ],
+  "overflow": false,
+  "pageErrors": [],
+  "NEO_quote_and_2021_conditions_preserved": true,
+  "NEO_unknown_period_and_setup_preserved": true,
+  "shiftla_tax_disputed_and_price_tax_unknown": true,
+  "shared_staff_not_inferred": true,
+  "Pitat_subscription_vs_optional_services": true,
+  "external_DNS_blocked": true
+}

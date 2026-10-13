@@ -1,0 +1,117 @@
+[
+  {
+    "review_id": "Q07T03-TASK-RES00089",
+    "task_id": "TASK-RES00089",
+    "product": "Optamo for Shift",
+    "offering_id": "OF-JP02",
+    "criterion_id": "P01",
+    "original_task": {
+      "priority": 3,
+      "required_method": "unknown",
+      "last_checked_on": "2026-10-12",
+      "task_id": "TASK-RES00089",
+      "offering_id": "OF-JP02",
+      "criterion_id": "P01",
+      "task_state": "in_progress",
+      "question": "料金方式・公開範囲：定義の未確認部分・現行条件を確認する。",
+      "evidence_needed": "公式料金・個別見積・契約書",
+      "owner": "未割当",
+      "next_review_on": null,
+      "block_reason": null
+    },
+    "q01_public_acceptance_atoms": [
+      "固定/人数/施設/計算/買切り/見積の公開方式",
+      "通貨/税/時点/対象プランの条件"
+    ],
+    "scope": "Optamo for Shiftに関する共通の人数料金説明と、通常料金の数値/プラン詳細を相談で案内する公開範囲を照合する。",
+    "reason": "対象の限定公開質問に該当する肯定記載を個別照合。原要件、未記載、契約・実動作の残条件を保持。",
+    "evidence_observation_ids": [
+      "B55-20261013-OBS0001",
+      "B55-20261013-OBS0002"
+    ],
+    "remaining_work": [
+      "正式なShift料金表/見積、通貨・税・初期費・最低期間/数量・請求周期、パートナー条件"
+    ],
+    "primary_queue": "completed_public_check",
+    "public_phase": "completed_bounded_document_question",
+    "external_state": "deferred_until_adoption",
+    "resume_condition": "公式改定/正式資料/対象見積の取得又は導入判断に残条件が必要な時。新根拠なしの反復探索はしない。",
+    "after_task_state": "done",
+    "factual_support_not_inferred": true,
+    "original_requirements_deleted": false,
+    "acceptance_review": [
+      {
+        "atom": "固定/人数/施設/計算/買切り/見積の公開方式",
+        "state": "bounded_positive_document_match",
+        "observation_ids": [
+          "B55-20261013-OBS0001",
+          "B55-20261013-OBS0002"
+        ]
+      },
+      {
+        "atom": "通貨/税/時点/対象プランの条件",
+        "state": "bounded_positive_document_match",
+        "observation_ids": [
+          "B55-20261013-OBS0001",
+          "B55-20261013-OBS0002"
+        ]
+      }
+    ]
+  },
+  {
+    "review_id": "Q07T03-TASK-RES00090",
+    "task_id": "TASK-RES00090",
+    "product": "Optamo for Shift",
+    "offering_id": "OF-JP02",
+    "criterion_id": "P02",
+    "original_task": {
+      "priority": 3,
+      "required_method": "unknown",
+      "last_checked_on": null,
+      "task_id": "TASK-RES00090",
+      "offering_id": "OF-JP02",
+      "criterion_id": "P02",
+      "task_state": "not_started",
+      "question": "課金対象・単位：定義の未確認部分・現行条件を確認する。",
+      "evidence_needed": "公式料金・個別見積・契約書",
+      "owner": "未割当",
+      "next_review_on": null,
+      "block_reason": null
+    },
+    "q01_public_acceptance_atoms": [
+      "公開された課金対象と単位",
+      "管理者/休職/兼務/最低数量等の記載範囲"
+    ],
+    "scope": "Optamo for Shiftの公開説明にあるスタッフ人数単位と、課金対象の詳細定義が未記載である範囲を照合する。",
+    "reason": "対象の限定公開質問に該当する肯定記載を個別照合。原要件、未記載、契約・実動作の残条件を保持。",
+    "evidence_observation_ids": [
+      "B55-20261013-OBS0003"
+    ],
+    "remaining_work": [
+      "正式契約上の登録/稼働/休職/管理者/兼務者の数え方、人数段階、最低人数・拠点・請求周期"
+    ],
+    "primary_queue": "completed_public_check",
+    "public_phase": "completed_bounded_document_question",
+    "external_state": "deferred_until_adoption",
+    "resume_condition": "公式改定/正式資料/対象見積の取得又は導入判断に残条件が必要な時。新根拠なしの反復探索はしない。",
+    "after_task_state": "done",
+    "factual_support_not_inferred": true,
+    "original_requirements_deleted": false,
+    "acceptance_review": [
+      {
+        "atom": "公開された課金対象と単位",
+        "state": "bounded_positive_document_match",
+        "observation_ids": [
+          "B55-20261013-OBS0003"
+        ]
+      },
+      {
+        "atom": "管理者/休職/兼務/最低数量等の記載範囲",
+        "state": "bounded_positive_document_match",
+        "observation_ids": [
+          "B55-20261013-OBS0003"
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,77 @@
+{
+  "status": "passed",
+  "snapshot": "B62-20261013-pub2",
+  "services": 5,
+  "widths": [
+    1440,
+    390
+  ],
+  "checks": [
+    {
+      "product": "US08",
+      "width": 1440,
+      "required_text": true,
+      "overflow": false
+    },
+    {
+      "product": "US06",
+      "width": 1440,
+      "required_text": true,
+      "overflow": false
+    },
+    {
+      "product": "US04",
+      "width": 1440,
+      "required_text": true,
+      "overflow": false
+    },
+    {
+      "product": "US21",
+      "width": 1440,
+      "required_text": true,
+      "overflow": false
+    },
+    {
+      "product": "US10",
+      "width": 1440,
+      "required_text": true,
+      "overflow": false
+    },
+    {
+      "product": "US08",
+      "width": 390,
+      "required_text": true,
+      "overflow": false
+    },
+    {
+      "product": "US06",
+      "width": 390,
+      "required_text": true,
+      "overflow": false
+    },
+    {
+      "product": "US04",
+      "width": 390,
+      "required_text": true,
+      "overflow": false
+    },
+    {
+      "product": "US21",
+      "width": 390,
+      "required_text": true,
+      "overflow": false
+    },
+    {
+      "product": "US10",
+      "width": 390,
+      "required_text": true,
+      "overflow": false
+    }
+  ],
+  "overflow": false,
+  "pageErrors": [],
+  "external_DNS_blocked": true,
+  "role_contract_boundaries_preserved": true,
+  "implementation_and_product_limits_distinguished": true,
+  "pricing_units_unknowns_preserved": true
+}

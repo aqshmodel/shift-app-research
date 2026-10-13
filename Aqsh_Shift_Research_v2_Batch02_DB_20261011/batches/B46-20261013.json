@@ -1,0 +1,179 @@
+{
+  "batch_id": "B46-20261013",
+  "prior_batch": "B45-20261013",
+  "as_of_date": "2026-10-13",
+  "resolution_policy_version": 2,
+  "description": "Q05 T04/5 ナースシフト：個人プランの機能と月次解約条件",
+  "method": "限定公式公開調査・ローカル反映。前回の既完/外部待ちを再完了しない。原要件・不明・資料不一致・既存価格119行を保持。Git/CI/本番/課金/登録/問い合わせなし。",
+  "sources": [
+    {
+      "key": "nurse-main",
+      "url": "https://nurse-shift.com/",
+      "title": "ナースシフト 公式機能・料金・利用規約・特商法表示",
+      "publisher": "ナースシフト運営者",
+      "retrieved_on": "2026-10-13",
+      "version_label": "公開/改定日不明。閲覧2026-10-13",
+      "method": "public_web_body",
+      "method_note": "公式本文・該当注記を照合。原本はQ05バックアップに保存、取得hashはsource-captures.json。入力・登録・課金・問い合わせ・独立製品試験なし。",
+      "scope_note": "Q01の限定公開質問終了基準に従う。原要件と未確認条件を個別台帳へ保持。"
+    }
+  ],
+  "findings": [
+    {
+      "product": "JP11",
+      "criterion": "B07",
+      "source": "nurse-main",
+      "state": "known",
+      "support": "limited",
+      "delivery": "unknown",
+      "summary": "個人向け税込月5,500円のプランは1アカウント最大100名、作成回数無制限、PDF/CSV/Excel出力・自動保存を案内する。施設契約は相談と明記され同じ条件の適用を保証しない。",
+      "locator": "シンプルな料金プラン / FAQ100名 / 施設契約",
+      "limitations": "個人契約のアカウント貸与/共有禁止を施設全体ライセンスと混同しない。施設契約価格・機能・支援は別確認。",
+      "scope": "2026-10-13の公式公開資料照合。資料の対象国/版/プランに限定。個別契約適用と実動作は未検証。"
+    },
+    {
+      "product": "JP11",
+      "criterion": "B07",
+      "source": "nurse-main",
+      "state": "known",
+      "support": "limited",
+      "delivery": "native",
+      "summary": "FAQは2交代夜勤の運用に合う固定6勤務区分で、準夜/深夜を分ける3交代と様式9届出帳票には対応していないと明記する。",
+      "locator": "FAQ 2交代/3交代・様式9",
+      "limitations": "一般PDF/CSV/Excel出力を様式9に読み替えない。製品説明の照合で独立試験は未実施。",
+      "scope": "2026-10-13の公式公開資料照合。資料の対象国/版/プランに限定。個別契約適用と実動作は未検証。"
+    },
+    {
+      "product": "JP11",
+      "criterion": "P03",
+      "source": "nurse-main",
+      "state": "known",
+      "support": "limited",
+      "delivery": "unknown",
+      "summary": "特商法表示は有料申込時に初回決済し、1か月ごとに自動更新・更新日に課金。次回更新日の前日までに設定から解約でき、満了日までは利用可能、日割返金なしと記す。",
+      "locator": "公開HTML内の特定商取引法表示・支払時期/解約",
+      "limitations": "個人有料契約の公開条件。年契約・施設契約・個別例外は未確認。特商法表示の改定日は不明。取得日は2026-10-13。",
+      "scope": "2026-10-13の公式公開資料照合。資料の対象国/版/プランに限定。個別契約適用と実動作は未検証。"
+    },
+    {
+      "product": "JP11",
+      "criterion": "P03",
+      "source": "nurse-main",
+      "state": "known",
+      "support": "limited",
+      "delivery": "unknown",
+      "summary": "初回30日トライアルはカード不要で終了後自動課金なし。規約は購読解約と退会を分け、解約だけではデータを保持、退会では即時解約手続とデータ削除・日割返金なしを案内する。",
+      "locator": "FAQ無料試用 / 設定 / 規約第5・7・12条",
+      "limitations": "規約制定2026-01-10・最終改定2026-08-04。12か月以内の再登録は過去の有料利用有無で試用再付与が異なる。解約操作や再登録の実試験なし。",
+      "scope": "2026-10-13の公式公開資料照合。資料の対象国/版/プランに限定。個別契約適用と実動作は未検証。"
+    },
+    {
+      "product": "JP11",
+      "criterion": "P04",
+      "source": "nurse-main",
+      "state": "not_disclosed",
+      "support": "limited",
+      "delivery": "unknown",
+      "summary": "個人プランの表示は月額料金を示し、特商法表示は通信料金等を利用者負担とする。設定/移行/研修/開発の項目別初期費用・施設導入支援費用は確認資料から確定できない。",
+      "locator": "料金 / 個人開発の説明 / 特商法の商品代金以外",
+      "limitations": "登録後すぐ使用可能や大手のような導入支援なしを、必須初期費0円・すべて無料の根拠にしない。",
+      "scope": "2026-10-13の公式公開資料照合。資料の対象国/版/プランに限定。個別契約適用と実動作は未検証。"
+    }
+  ],
+  "task_updates": [
+    {
+      "task_id": "TASK-RES00454",
+      "state": "done",
+      "priority": 3,
+      "method": "public_document",
+      "expected_task": {
+        "priority": 3,
+        "required_method": "unknown",
+        "last_checked_on": "2026-10-13",
+        "task_state": "in_progress",
+        "question": "プラン・追加機能の境界：定義の未確認部分・現行条件を確認する。",
+        "evidence_needed": "機能仕様・プラン比較・利用規約・デモ",
+        "owner": "未割当",
+        "next_review_on": null,
+        "block_reason": null
+      },
+      "changes": {
+        "owner": "公開資料確認終了 / 残条件は導入時再開",
+        "block_reason": null,
+        "next_review_on": null,
+        "question": "ナースシフトの個人プラン機能・100名上限、3交代/様式9の明示非対応と施設契約の境界を照合する。",
+        "evidence_needed": "公式公開資料の該当箇所・日付・適用条件。原要件と個別契約/実測の残条件はQ05台帳へ保持。"
+      },
+      "note": "{\"review_id\":\"Q05T04-TASK-RES00454\",\"task_id\":\"TASK-RES00454\",\"product\":\"ナースシフト\",\"offering_id\":\"OF-JP11\",\"criterion_id\":\"B07\",\"original_task\":{\"priority\":3,\"required_method\":\"unknown\",\"last_checked_on\":null,\"task_id\":\"TASK-RES00454\",\"offering_id\":\"OF-JP11\",\"criterion_id\":\"B07\",\"task_state\":\"not_started\",\"question\":\"プラン・追加機能の境界：定義の未確認部分・現行条件を確認する。\",\"evidence_needed\":\"機能仕様・プラン比較・利用規約・デモ\",\"owner\":\"未割当\",\"next_review_on\":null,\"block_reason\":null},\"q01_public_acceptance_atoms\":[\"機能を使えるプラン/モジュールの公開対応\",\"追加契約/地域/βの留保\"],\"scope\":\"ナースシフトの個人プラン機能・100名上限、3交代/様式9の明示非対応と施設契約の境界を照合する。\",\"reason\":\"該当する公式公開記載を照合し、限定公開質問の肯定根拠と未記載/個別契約の残条件を分離した。\",\"evidence_observation_ids\":[\"B46-20261013-OBS0001\",\"B46-20261013-OBS0002\"],\"remaining_work\":[\"施設契約の価格/機能/人数/支援、複数アカウント共有許諾、制度対応・動作の個別検証\"],\"primary_queue\":\"completed_public_check\",\"public_phase\":\"completed_bounded_document_question\",\"external_state\":\"deferred_until_adoption\",\"resume_condition\":\"公式改定/正式資料/対象見積の取得又は導入判断に残条件が必要な時。新根拠なしの反復探索はしない。\",\"after_task_state\":\"done\",\"factual_support_not_inferred\":true,\"original_requirements_deleted\":false}",
+      "public_completion": {
+        "scope": "ナースシフトの個人プラン機能・100名上限、3交代/様式9の明示非対応と施設契約の境界を照合する。",
+        "observation_ids": [
+          "B46-20261013-OBS0001",
+          "B46-20261013-OBS0002"
+        ],
+        "remaining_work": [
+          "施設契約の価格/機能/人数/支援、複数アカウント共有許諾、制度対応・動作の個別検証"
+        ]
+      }
+    },
+    {
+      "task_id": "TASK-RES00491",
+      "state": "done",
+      "priority": 3,
+      "method": "public_document",
+      "expected_task": {
+        "priority": 3,
+        "required_method": "unknown",
+        "last_checked_on": "2026-10-12",
+        "task_state": "in_progress",
+        "question": "請求周期・最低契約：定義の未確認部分・現行条件を確認する。",
+        "evidence_needed": "公式料金・個別見積・契約書",
+        "owner": "未割当",
+        "next_review_on": null,
+        "block_reason": null
+      },
+      "changes": {
+        "owner": "公開資料確認終了 / 残条件は導入時再開",
+        "block_reason": null,
+        "next_review_on": null,
+        "question": "個人プランの月次更新・解約締切・返金・初回試用と退会の公開条件を照合する。",
+        "evidence_needed": "公式公開資料の該当箇所・日付・適用条件。原要件と個別契約/実測の残条件はQ05台帳へ保持。"
+      },
+      "note": "{\"review_id\":\"Q05T04-TASK-RES00491\",\"task_id\":\"TASK-RES00491\",\"product\":\"ナースシフト\",\"offering_id\":\"OF-JP11\",\"criterion_id\":\"P03\",\"original_task\":{\"priority\":3,\"required_method\":\"unknown\",\"last_checked_on\":\"2026-10-12\",\"task_id\":\"TASK-RES00491\",\"offering_id\":\"OF-JP11\",\"criterion_id\":\"P03\",\"task_state\":\"in_progress\",\"question\":\"請求周期・最低契約：定義の未確認部分・現行条件を確認する。\",\"evidence_needed\":\"公式料金・個別見積・契約書\",\"owner\":\"未割当\",\"next_review_on\":null,\"block_reason\":null},\"q01_public_acceptance_atoms\":[\"月/年の請求周期・前払い・最低期間\",\"最低人数/請求額の公表範囲\"],\"scope\":\"個人プランの月次更新・解約締切・返金・初回試用と退会の公開条件を照合する。\",\"reason\":\"該当する公式公開記載を照合し、限定公開質問の肯定根拠と未記載/個別契約の残条件を分離した。\",\"evidence_observation_ids\":[\"B46-20261013-OBS0003\",\"B46-20261013-OBS0004\"],\"remaining_work\":[\"施設契約条件と例外合意、実際の決済/データ復元/退会挙動は未試験\"],\"primary_queue\":\"completed_public_check\",\"public_phase\":\"completed_bounded_document_question\",\"external_state\":\"deferred_until_adoption\",\"resume_condition\":\"公式改定/正式資料/対象見積の取得又は導入判断に残条件が必要な時。新根拠なしの反復探索はしない。\",\"after_task_state\":\"done\",\"factual_support_not_inferred\":true,\"original_requirements_deleted\":false}",
+      "public_completion": {
+        "scope": "個人プランの月次更新・解約締切・返金・初回試用と退会の公開条件を照合する。",
+        "observation_ids": [
+          "B46-20261013-OBS0003",
+          "B46-20261013-OBS0004"
+        ],
+        "remaining_work": [
+          "施設契約条件と例外合意、実際の決済/データ復元/退会挙動は未試験"
+        ]
+      }
+    },
+    {
+      "task_id": "TASK-RES00492",
+      "state": "blocked",
+      "priority": 3,
+      "method": "vendor_quote",
+      "expected_task": {
+        "priority": 3,
+        "required_method": "unknown",
+        "last_checked_on": "2026-10-13",
+        "task_state": "in_progress",
+        "question": "導入初期費用：定義の未確認部分・現行条件を確認する。",
+        "evidence_needed": "公式料金・個別見積・契約書",
+        "owner": "未割当",
+        "next_review_on": null,
+        "block_reason": null
+      },
+      "changes": {
+        "owner": "外部確認待ち / 担当未定",
+        "block_reason": "個人月額と通信費以外の項目別導入費用を公式公開資料で確定できない。 再開：設定/移行/研修/施設導入費の有無・金額・必須/任意を示す正式資料",
+        "next_review_on": null
+      },
+      "note": "{\"review_id\":\"Q05T04-TASK-RES00492\",\"task_id\":\"TASK-RES00492\",\"product\":\"ナースシフト\",\"offering_id\":\"OF-JP11\",\"criterion_id\":\"P04\",\"original_task\":{\"priority\":3,\"required_method\":\"unknown\",\"last_checked_on\":null,\"task_id\":\"TASK-RES00492\",\"offering_id\":\"OF-JP11\",\"criterion_id\":\"P04\",\"task_state\":\"not_started\",\"question\":\"導入初期費用：定義の未確認部分・現行条件を確認する。\",\"evidence_needed\":\"公式料金・個別見積・契約書\",\"owner\":\"未割当\",\"next_review_on\":null,\"block_reason\":null},\"q01_public_acceptance_atoms\":[\"公表された必須初期費用と任意追加費\",\"未公表額を0円としない\"],\"scope\":\"ナースシフトの項目別初期/移行/研修費用を公開資料で確認する。\",\"reason\":\"個人月額と通信費以外の項目別導入費用を公式公開資料で確定できない。\",\"evidence_observation_ids\":[\"B46-20261013-OBS0005\"],\"remaining_work\":[\"設定/移行/研修/施設導入費の有無・金額・必須/任意を示す正式資料\"],\"primary_queue\":\"external_confirmation_wait\",\"public_phase\":\"bounded_public_search_ended_unknown\",\"external_state\":\"waiting_for_formal_document\",\"resume_condition\":\"公式改定/正式資料/対象見積の取得又は導入判断に残条件が必要な時。新根拠なしの反復探索はしない。\",\"after_task_state\":\"blocked\",\"factual_support_not_inferred\":true,\"original_requirements_deleted\":false}"
+    }
+  ],
+  "prices": []
+}

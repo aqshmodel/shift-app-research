@@ -1,0 +1,93 @@
+{
+  "source": "https://www.rotageek.com/industries/healthcare",
+  "retrieved_on": "2026-10-13",
+  "sha256": "bf9bd78683ca8999b71344b977dbbbd121b48266cbd8cc955b21da4b7cdcece2",
+  "columns": [
+    "Digital Scheduling",
+    "+Auto Scheduling"
+  ],
+  "rows": [
+    [
+      {
+        "class": "",
+        "text": "Integration & access management"
+      },
+      {
+        "class": "included",
+        "text": ""
+      },
+      {
+        "class": "included",
+        "text": ""
+      }
+    ],
+    [
+      {
+        "class": "",
+        "text": "Other integration via public APIs or flat file via SFTP"
+      },
+      {
+        "class": "included",
+        "text": ""
+      },
+      {
+        "class": "included",
+        "text": ""
+      }
+    ],
+    [
+      {
+        "class": "",
+        "text": "Single Sign On (SSO) supported"
+      },
+      {
+        "class": "included",
+        "text": ""
+      },
+      {
+        "class": "included",
+        "text": ""
+      }
+    ],
+    [
+      {
+        "class": "",
+        "text": "Roster optimisation"
+      },
+      {
+        "class": "excluded",
+        "text": ""
+      },
+      {
+        "class": "included",
+        "text": ""
+      }
+    ],
+    [
+      {
+        "class": "",
+        "text": "1-click roster creation for 1 or more weeks"
+      },
+      {
+        "class": "included",
+        "text": ""
+      },
+      {
+        "class": "included",
+        "text": ""
+      }
+    ]
+  ],
+  "visible_browser_review": {
+    "browser": "Chrome via cua_repl",
+    "date": "2026-10-13 UTC",
+    "expand_rows": [
+      "Integration & access management",
+      "Roster optimisation"
+    ],
+    "checks_confirmed": true,
+    "parent_child_disagreement": true,
+    "screenshots": "Visible in research session tool output; original HTML retained locally"
+  },
+  "contract_inclusion_confirmed": false
+}

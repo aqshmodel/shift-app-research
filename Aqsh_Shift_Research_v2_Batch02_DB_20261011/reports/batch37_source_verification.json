@@ -1,0 +1,71 @@
+{
+  "status": "passed",
+  "official_sources": 4,
+  "new_normalized_documents": 4,
+  "sources": [
+    {
+      "key": "resources",
+      "url": "https://help.connecteam.com/en/articles/8529732-scheduler-understanding-resources-jobs-clients-projects-sites-vehicles-and-how-to-use-them",
+      "title": "Connecteam — Scheduler: Understanding Resources (Jobs, Clients, Projects, Sites, Vehicles) and How to Use Them",
+      "publisher": "Connecteam",
+      "reference": "Add Resources / Edit Jobs",
+      "retrieved_on": "2026-10-13",
+      "version_label": "Resources Tab accounts; mutable help; Updated over a week ago; exact date not shown",
+      "method": "official_document_body",
+      "method_note": "Web lines 45-63. Redirected from article 6111368; new canonical path saved; no administrative setup performed. URL/版条件/取得日/locator/方法/要約と留保を保存。全文/本文hash/公式原本画像未保存。登録/試用/API/設定/問い合わせ/課金/認証/公開操作なし。"
+    },
+    {
+      "key": "qualify",
+      "url": "https://help.connecteam.com/en/articles/10550418-qualifying-users-to-jobs",
+      "title": "Connecteam — Qualifying Users to Jobs",
+      "publisher": "Connecteam",
+      "reference": "Qualify via Scheduler / multiple clocks-schedules / Sub-jobs",
+      "retrieved_on": "2026-10-13",
+      "version_label": "Help dated 2026-08-03; mutable",
+      "method": "official_document_body",
+      "method_note": "Web lines 55-88. Redirected from 6440898; user/smart-group eligibility is distinct from verified credential coverage. URL/版条件/取得日/locator/方法/要約と留保を保存。全文/本文hash/公式原本画像未保存。登録/試用/API/設定/問い合わせ/課金/認証/公開操作なし。"
+    },
+    {
+      "key": "open",
+      "url": "https://help.connecteam.com/en/articles/6441778-how-to-create-open-shifts",
+      "title": "Connecteam — How to Create Open Shifts",
+      "publisher": "Connecteam",
+      "reference": "Create / available spots / qualified users / plan footer",
+      "retrieved_on": "2026-10-13",
+      "version_label": "Help dated 2025-03-18; mutable",
+      "method": "official_document_body",
+      "method_note": "Web lines 33-51,59,69-70. Open Shift counts/claim mechanism, not clinical required coverage test. URL/版条件/取得日/locator/方法/要約と留保を保存。全文/本文hash/公式原本画像未保存。登録/試用/API/設定/問い合わせ/課金/認証/公開操作なし。"
+    },
+    {
+      "key": "cross",
+      "url": "https://help.connecteam.com/en/articles/6081010-cross-schedule-issues",
+      "title": "Connecteam — Cross Schedule Issues",
+      "publisher": "Connecteam",
+      "reference": "Enable each scheduler / draft inclusion / Users view / manual override / plan",
+      "retrieved_on": "2026-10-13",
+      "version_label": "Help dated 2026-07-27; mutable",
+      "method": "official_document_body",
+      "method_note": "Web lines 25-42,45-53,80,96. Redirected from cross-schedule-conflicts; existing generic warning fact not re-added. URL/版条件/取得日/locator/方法/要約と留保を保存。全文/本文hash/公式原本画像未保存。登録/試用/API/設定/問い合わせ/課金/認証/公開操作なし。"
+    }
+  ],
+  "comparison_only": [],
+  "body_checked": true,
+  "full_text_archived": false,
+  "exact_Resources_update_date_unconfirmed": true,
+  "retrieval_caveats": [
+    {
+      "product": "US09",
+      "url": "https://help.connecteam.com/en/articles/8529732-scheduler-understanding-resources-jobs-clients-projects-sites-vehicles-and-how-to-use-them",
+      "result": "resource_article_redirect_and_clock_wording",
+      "notes": "旧Job記事6111368がResources記事8529732へredirect。Scheduler文脈のunassigned job説明はthis time clockと記載し、機能名混在を留保。"
+    },
+    {
+      "product": "US09",
+      "url": "https://help.connecteam.com/en/articles/6081010-cross-schedule-issues",
+      "result": "manual_override_explicit_no_cross_schedule_hard_claim",
+      "notes": "本文は通知でも配置を阻止しないと明示。自動割当の多表一括実行/制御は未確認。1勤務表の他表表示と全表同時最適化を分ける。"
+    }
+  ],
+  "independent_tests_performed": false,
+  "external_contact": false
+}

@@ -1,0 +1,144 @@
+{
+  "batch_id": "B52-20261013",
+  "prior_batch": "B51-20261013",
+  "as_of_date": "2026-10-13",
+  "resolution_policy_version": 2,
+  "description": "Q06 T05/5 NEOウェルネスの介護本体機能・クラウド利用権境界",
+  "method": "限定公式公開調査・ローカル反映。前回の既完/外部待ちを再完了しない。原要件・不明・資料不一致・既存価格119行を保持。Git/CI/本番/課金/登録/問い合わせなし。",
+  "sources": [
+    {
+      "key": "neo-wellness",
+      "url": "https://products.ndis.jp/shift-neo/wellness/",
+      "title": "快決！シフト君NEO ウェルネス 機能紹介",
+      "publisher": "株式会社NTTデータセキスイシステムズ",
+      "retrieved_on": "2026-10-13",
+      "version_label": "公開/改定日不明。閲覧2026-10-13",
+      "method": "public_web_body",
+      "method_note": "公式本文・該当注記を照合。原本はQ06バックアップに保存、取得hashはsource-captures.json。入力・登録・課金・問い合わせ・独立製品試験なし。",
+      "scope_note": "Q01の限定公開質問終了基準に従う。原要件と未確認条件を個別台帳へ保持。"
+    },
+    {
+      "key": "neo-system",
+      "url": "https://products.ndis.jp/shift-neo/system.html",
+      "title": "快決！シフト君NEO 製品仕様",
+      "publisher": "株式会社NTTデータセキスイシステムズ",
+      "retrieved_on": "2026-10-13",
+      "version_label": "公開/改定日不明。閲覧2026-10-13",
+      "method": "public_web_body",
+      "method_note": "公式本文・該当注記を照合。原本はQ06バックアップに保存、取得hashはsource-captures.json。入力・登録・課金・問い合わせ・独立製品試験なし。",
+      "scope_note": "Q01の限定公開質問終了基準に従う。原要件と未確認条件を個別台帳へ保持。"
+    },
+    {
+      "key": "neo-mobile",
+      "url": "https://products.ndis.jp/shift-neo/tsutawaru/",
+      "title": "快決！シフト君NEO スマートデバイス連携",
+      "publisher": "株式会社NTTデータセキスイシステムズ",
+      "retrieved_on": "2026-10-13",
+      "version_label": "公開/改定日不明。閲覧2026-10-13",
+      "method": "public_web_body",
+      "method_note": "公式本文・該当注記を照合。原本はQ06バックアップに保存、取得hashはsource-captures.json。入力・登録・課金・問い合わせ・独立製品試験なし。",
+      "scope_note": "Q01の限定公開質問終了基準に従う。原要件と未確認条件を個別台帳へ保持。"
+    },
+    {
+      "key": "neo-sales",
+      "url": "https://products.ndis.jp/shift-neo/sales/",
+      "title": "快決！シフト君NEO 購入案内",
+      "publisher": "株式会社NTTデータセキスイシステムズ",
+      "retrieved_on": "2026-10-13",
+      "version_label": "公開/改定日不明。閲覧2026-10-13",
+      "method": "public_web_body",
+      "method_note": "公式本文・該当注記を照合。原本はQ06バックアップに保存、取得hashはsource-captures.json。入力・登録・課金・問い合わせ・独立製品試験なし。",
+      "scope_note": "Q01の限定公開質問終了基準に従う。原要件と未確認条件を個別台帳へ保持。"
+    }
+  ],
+  "findings": [
+    {
+      "product": "JP15",
+      "criterion": "B07",
+      "source": "neo-wellness",
+      "state": "known",
+      "support": "limited",
+      "delivery": "native",
+      "summary": "ウェルネスは介護業界向けとして、希望/勤務条件を考慮した原案自動作成、勤務形態一覧表（独自形式）/夜勤職員配置加算等の介護帳票、ユニット等の勤務表出力を案内する。",
+      "locator": "ウェルネス製品のつくる/つながる",
+      "limitations": "メディカル版の様式9をウェルネス本体へ流用しない。対象介護サービス/制度版/帳票の受理・個別プラン包含・計算実測は未確認。",
+      "scope": "2026-10-13の公式公開資料照合。資料の対象国/版/用途に限定。個別契約・制度適合・実動作は未検証。"
+    },
+    {
+      "product": "JP15",
+      "criterion": "B07",
+      "source": "neo-system",
+      "state": "known",
+      "support": "limited",
+      "delivery": "unknown",
+      "summary": "共通仕様の注7は、クラウドリンク/オンライン保守は保守・サービス利用権の加入者に限定とする。機能列挙は2021年5月現在で、milQ連携、クラウド帳票、勤務負担チェック等を示す。",
+      "locator": "クラウドリンク/オンライン保守の注意事項 ※7",
+      "limitations": "閲覧2026-10-13と機能列挙2021年5月を分ける。ウェルネスを含む共通仕様の契約条件で、現在の個別契約包含/対象版/追加額は未確認。",
+      "scope": "2026-10-13の公式公開資料照合。資料の対象国/版/用途に限定。個別契約・制度適合・実動作は未検証。"
+    },
+    {
+      "product": "JP15",
+      "criterion": "B07",
+      "source": "neo-system",
+      "state": "known",
+      "support": "limited",
+      "delivery": "third_party",
+      "summary": "帳票作成にはデスクトップ版Excelの要件があり、ストアアプリ版ExcelとOffice Web Appsは保証対象外。SQL Server 2022 Expressはバンドル、他Editionは利用者の別途用意と説明する。",
+      "locator": "ソフトウェア注意事項 ※5 / DB注意事項 ※6",
+      "limitations": "Excelライセンス料金が本体に含まれるとは明記されない。バンドルDBと第三者ソフトのライセンス・費用を分離。個別環境での動作未検証。",
+      "scope": "2026-10-13の公式公開資料照合。資料の対象国/版/用途に限定。個別契約・制度適合・実動作は未検証。"
+    },
+    {
+      "product": "JP15",
+      "criterion": "B07",
+      "source": "neo-mobile",
+      "state": "known",
+      "support": "limited",
+      "delivery": "unknown",
+      "summary": "スマートデバイス連携はシフト希望収集、確定表配付/既読確認、業務連絡を説明する。",
+      "locator": "スマートデバイス紹介 / 希望申請・勤務表確認・業務連絡",
+      "limitations": "milQの公開機能と保守利用権条件を合わせて読む。インストールや連携試験なし。本体/保守/milQ/帳票/第三者ソフトの金額・周期・標準包含は不明。",
+      "scope": "2026-10-13の公式公開資料照合。資料の対象国/版/用途に限定。個別契約・制度適合・実動作は未検証。"
+    }
+  ],
+  "task_updates": [
+    {
+      "task_id": "TASK-RES00631",
+      "state": "done",
+      "priority": 3,
+      "method": "public_document",
+      "expected_task": {
+        "priority": 3,
+        "required_method": "unknown",
+        "last_checked_on": "2026-10-12",
+        "task_state": "in_progress",
+        "question": "プラン・追加機能の境界：定義の未確認部分・現行条件を確認する。",
+        "evidence_needed": "機能仕様・プラン比較・利用規約・デモ",
+        "owner": "未割当",
+        "next_review_on": null,
+        "block_reason": null
+      },
+      "changes": {
+        "owner": "公開資料確認終了 / 残条件は導入時再開",
+        "block_reason": null,
+        "next_review_on": null,
+        "question": "NEOウェルネスの介護向け公表機能、共通仕様の保守利用権条件、第三者ソフト要件の境界を照合する。",
+        "evidence_needed": "公式公開資料の該当箇所・日付・適用条件。原要件と個別契約/実測の残条件はQ06台帳へ保持。"
+      },
+      "note": "{\"review_id\":\"Q06T05-TASK-RES00631\",\"task_id\":\"TASK-RES00631\",\"product\":\"快決！シフト君NEO ウェルネス\",\"offering_id\":\"OF-JP15\",\"criterion_id\":\"B07\",\"original_task\":{\"priority\":3,\"required_method\":\"unknown\",\"last_checked_on\":\"2026-10-12\",\"task_id\":\"TASK-RES00631\",\"offering_id\":\"OF-JP15\",\"criterion_id\":\"B07\",\"task_state\":\"in_progress\",\"question\":\"プラン・追加機能の境界：定義の未確認部分・現行条件を確認する。\",\"evidence_needed\":\"機能仕様・プラン比較・利用規約・デモ\",\"owner\":\"未割当\",\"next_review_on\":null,\"block_reason\":null},\"q01_public_acceptance_atoms\":[\"機能を使えるプラン/モジュールの公開対応\",\"追加契約/地域/βの留保\"],\"scope\":\"NEOウェルネスの介護向け公表機能、共通仕様の保守利用権条件、第三者ソフト要件の境界を照合する。\",\"reason\":\"限定公開質問の該当する肯定記載を照合し、元要件・未記載・個別適用の残条件を別に保持した。\",\"evidence_observation_ids\":[\"B52-20261013-OBS0001\",\"B52-20261013-OBS0002\",\"B52-20261013-OBS0003\",\"B52-20261013-OBS0004\"],\"remaining_work\":[\"ウェルネスの現行本体/保守/milQ/クラウド帳票の包含・追加額/周期/人数、2021機能一覧の最新対応、制度版と実動作\"],\"primary_queue\":\"completed_public_check\",\"public_phase\":\"completed_bounded_document_question\",\"external_state\":\"deferred_until_adoption\",\"resume_condition\":\"公式改定/正式資料/対象見積の取得又は導入判断に残条件が必要な時。新根拠なしの反復探索はしない。\",\"after_task_state\":\"done\",\"factual_support_not_inferred\":true,\"original_requirements_deleted\":false}",
+      "public_completion": {
+        "scope": "NEOウェルネスの介護向け公表機能、共通仕様の保守利用権条件、第三者ソフト要件の境界を照合する。",
+        "observation_ids": [
+          "B52-20261013-OBS0001",
+          "B52-20261013-OBS0002",
+          "B52-20261013-OBS0003",
+          "B52-20261013-OBS0004"
+        ],
+        "remaining_work": [
+          "ウェルネスの現行本体/保守/milQ/クラウド帳票の包含・追加額/周期/人数、2021機能一覧の最新対応、制度版と実動作"
+        ]
+      }
+    }
+  ],
+  "prices": []
+}

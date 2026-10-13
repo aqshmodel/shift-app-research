@@ -1,0 +1,120 @@
+{
+  "batch_id": "B60-20261013",
+  "prior_batch": "B59-20261013",
+  "as_of_date": "2026-10-13",
+  "resolution_policy_version": 2,
+  "description": "Q08 T03/5 Smartlinx SchedulingとGoの機能・モバイル打刻権限",
+  "method": "限定公式公開調査・ローカル反映。前回の既完/外部待ちを再完了しない。原要件・不明・資料不一致・既存価格119行を保持。Git/CI/本番/課金/登録/問い合わせなし。",
+  "sources": [
+    {
+      "key": "smartlinx-go",
+      "url": "https://www.smartlinx.com/solutions/smartlinx-go/",
+      "title": "Mobile Employee Self-Service App for Senior Care | Smartlinx Go",
+      "publisher": "Smartlinx Solutions LLC",
+      "retrieved_on": "2026-10-13",
+      "version_label": "公開/改定日不明。閲覧2026-10-13 UTC",
+      "method": "public_web_body",
+      "method_note": "公式ページのweb閲覧結果・該当本文を保存。直接HTTP取得の403と、原本HTML未保存を取得台帳で区別。公式本文と対象プラン/役割/料金単位を照合。取得原本・hashをQ08バックアップsource-capturesへ保存。フォーム送信/登録/課金/問い合わせ/独立製品試験なし。",
+      "scope_note": "Q01限定公開終了基準。原要件・契約適用/実測の残条件を個別台帳へ保持。"
+    },
+    {
+      "key": "smartlinx-scheduling",
+      "url": "https://www.smartlinx.com/solutions/scheduling/",
+      "title": "Senior Care Scheduling Software with Real-Time Visibility",
+      "publisher": "Smartlinx Solutions LLC",
+      "retrieved_on": "2026-10-13",
+      "version_label": "公開/改定日不明。閲覧2026-10-13 UTC",
+      "method": "public_web_body",
+      "method_note": "公式ページのweb閲覧結果・該当本文を保存。直接HTTP取得の403と、原本HTML未保存を取得台帳で区別。公式本文と対象プラン/役割/料金単位を照合。取得原本・hashをQ08バックアップsource-capturesへ保存。フォーム送信/登録/課金/問い合わせ/独立製品試験なし。",
+      "scope_note": "Q01限定公開終了基準。原要件・契約適用/実測の残条件を個別台帳へ保持。"
+    },
+    {
+      "key": "smartlinx-appstore",
+      "url": "https://apps.apple.com/us/app/smartlinx-go/id1446077536",
+      "title": "‎SmartLinx Go App - App Store",
+      "publisher": "Smartlinx Solutions LLC",
+      "retrieved_on": "2026-10-13",
+      "version_label": "公開/改定日不明。閲覧2026-10-13 UTC",
+      "method": "public_web_body",
+      "method_note": "公式本文と対象プラン/役割/料金単位を照合。取得原本・hashをQ08バックアップsource-capturesへ保存。フォーム送信/登録/課金/問い合わせ/独立製品試験なし。",
+      "scope_note": "Q01限定公開終了基準。原要件・契約適用/実測の残条件を個別台帳へ保持。"
+    }
+  ],
+  "findings": [
+    {
+      "product": "US04",
+      "criterion": "B07",
+      "source": "smartlinx-go",
+      "state": "known",
+      "support": "limited",
+      "delivery": "native",
+      "summary": "Goは勤務表参照、空き/部分シフトへの申請、交代、休暇申請、通知、打刻、給与明細などをスタッフ用モバイル機能として紹介する。",
+      "locator": "Go機能・Automated Open Shift Notifications and Management",
+      "limitations": "一つのアプリから見える機能と、Scheduling/Time and Attendance/Payrollの契約包含は別。米国向けW-2やHPPDの表記を日本帳票/介護基準へ広げない。",
+      "scope": "公式公開資料の対象製品・役割・契約条件に限定。閲覧2026-10-13 UTC。製品動作・個別契約・日本の制度適合は未検証。"
+    },
+    {
+      "product": "US04",
+      "criterion": "B07",
+      "source": "smartlinx-appstore",
+      "state": "known",
+      "support": "limited",
+      "delivery": "unknown",
+      "summary": "提供元のApp Store説明は、Goのモバイル打刻を許可された場合に利用できると明記する。アプリ入手価格はFreeと表示される。",
+      "locator": "開発元SmartLinx Solutions LLCの説明 / Punch in and out if authorized / Free",
+      "limitations": "アプリ入手無料を企業のSchedulingや給与/勤怠サービス無料に読み替えない。購入/導入・権限操作なし。レビューや評価は機能根拠に採用しない。",
+      "scope": "公式公開資料の対象製品・役割・契約条件に限定。閲覧2026-10-13 UTC。製品動作・個別契約・日本の制度適合は未検証。"
+    },
+    {
+      "product": "US04",
+      "criterion": "B07",
+      "source": "smartlinx-scheduling",
+      "state": "known",
+      "support": "limited",
+      "delivery": "unknown",
+      "summary": "Schedulingページは管理者の作成/調整と、Goでの勤務参照・PTO/交代/空き申請を管理者承認付きで利用する流れを説明する。",
+      "locator": "Mobile Scheduling App / managers oversight and approval",
+      "limitations": "Schedulingから利用するGo連携の公表範囲。プラン別機能表や給与/前払/打刻の包含・追加額は未確認。正式契約で再開。",
+      "scope": "公式公開資料の対象製品・役割・契約条件に限定。閲覧2026-10-13 UTC。製品動作・個別契約・日本の制度適合は未検証。"
+    }
+  ],
+  "task_updates": [
+    {
+      "task_id": "TASK-RES00994",
+      "state": "done",
+      "priority": 3,
+      "method": "public_document",
+      "expected_task": {
+        "priority": 3,
+        "required_method": "vendor_document",
+        "last_checked_on": "2026-10-12",
+        "task_state": "in_progress",
+        "question": "プラン・追加機能の境界：定義の未確認部分・現行条件を確認する。",
+        "evidence_needed": "機能仕様・プラン比較・利用規約・デモ",
+        "owner": "未割当",
+        "next_review_on": null,
+        "block_reason": null
+      },
+      "changes": {
+        "owner": "公開資料確認終了 / 残条件は導入時再開",
+        "block_reason": null,
+        "next_review_on": null,
+        "question": "Smartlinx Schedulingの管理側とGoの従業員側の公表機能、無料アプリ入手と打刻許可/承認の境界を照合する。",
+        "evidence_needed": "公式公開資料の該当箇所・日付・適用条件。原要件と個別契約/実測の残条件はQ08台帳へ保持。"
+      },
+      "note": "{\"review_id\":\"Q08T03-TASK-RES00994\",\"task_id\":\"TASK-RES00994\",\"product\":\"Smartlinx Scheduling\",\"offering_id\":\"OF-US04\",\"criterion_id\":\"B07\",\"original_task\":{\"priority\":3,\"required_method\":\"vendor_document\",\"last_checked_on\":\"2026-10-12\",\"task_id\":\"TASK-RES00994\",\"offering_id\":\"OF-US04\",\"criterion_id\":\"B07\",\"task_state\":\"in_progress\",\"question\":\"プラン・追加機能の境界：定義の未確認部分・現行条件を確認する。\",\"evidence_needed\":\"機能仕様・プラン比較・利用規約・デモ\",\"owner\":\"未割当\",\"next_review_on\":null,\"block_reason\":null},\"q01_public_acceptance_atoms\":[\"機能を使えるプラン/モジュールの公開対応\",\"追加契約/地域/βの留保\"],\"scope\":\"Smartlinx Schedulingの管理側とGoの従業員側の公表機能、無料アプリ入手と打刻許可/承認の境界を照合する。\",\"reason\":\"限定公開質問に該当する肯定記載を個別照合し、原要件・未記載・契約適用/実測の残条件を保存した。\",\"evidence_observation_ids\":[\"B60-20261013-OBS0001\",\"B60-20261013-OBS0002\",\"B60-20261013-OBS0003\"],\"remaining_work\":[\"Scheduling/Go/Time and Attendance/Payroll/EWAの現行契約包含・追加費、雇用者による有効化/権限、地域・制度・実測\"],\"primary_queue\":\"completed_public_check\",\"public_phase\":\"completed_bounded_document_question\",\"external_state\":\"deferred_until_adoption\",\"resume_condition\":\"公式改定/正式資料/対象見積の取得又は導入判断に残条件が必要な時。新根拠なしの反復探索はしない。\",\"after_task_state\":\"done\",\"factual_support_not_inferred\":true,\"original_requirements_deleted\":false}",
+      "public_completion": {
+        "scope": "Smartlinx Schedulingの管理側とGoの従業員側の公表機能、無料アプリ入手と打刻許可/承認の境界を照合する。",
+        "observation_ids": [
+          "B60-20261013-OBS0001",
+          "B60-20261013-OBS0002",
+          "B60-20261013-OBS0003"
+        ],
+        "remaining_work": [
+          "Scheduling/Go/Time and Attendance/Payroll/EWAの現行契約包含・追加費、雇用者による有効化/権限、地域・制度・実測"
+        ]
+      }
+    }
+  ],
+  "prices": []
+}

@@ -1,0 +1,132 @@
+{
+  "batch_id": "B61-20261013",
+  "prior_batch": "B60-20261013",
+  "as_of_date": "2026-10-13",
+  "resolution_policy_version": 2,
+  "description": "Q08 T04/5 RosterElfの一般プラン課金人数とFlexの未確認条件",
+  "method": "限定公式公開調査・ローカル反映。前回の既完/外部待ちを再完了しない。原要件・不明・資料不一致・既存価格119行を保持。Git/CI/本番/課金/登録/問い合わせなし。",
+  "sources": [
+    {
+      "key": "rosterelf-minimum",
+      "url": "https://www.rosterelf.com/support/knowledge-base/billing-and-subscription/minimum-monthly-fee",
+      "title": "Understanding RosterElf's minimum staff policy | RosterElf",
+      "publisher": "Roster Elf Pty Ltd",
+      "retrieved_on": "2026-10-13",
+      "version_label": "ページ更新表示2026-09-07。閲覧2026-10-13",
+      "method": "public_web_body",
+      "method_note": "公式ページのweb閲覧結果・該当本文を保存。直接HTTP取得の403と、原本HTML未保存を取得台帳で区別。公式本文と対象プラン/役割/料金単位を照合。取得原本・hashをQ08バックアップsource-capturesへ保存。フォーム送信/登録/課金/問い合わせ/独立製品試験なし。",
+      "scope_note": "Q01限定公開終了基準。原要件・契約適用/実測の残条件を個別台帳へ保持。",
+      "updated_on": "2026-09-07"
+    },
+    {
+      "key": "rosterelf-price",
+      "url": "https://www.rosterelf.com/pricing",
+      "title": "Pricing | Simple, transparent pricing | RosterElf",
+      "publisher": "Roster Elf Pty Ltd",
+      "retrieved_on": "2026-10-13",
+      "version_label": "公開/改定日不明。閲覧2026-10-13 UTC",
+      "method": "public_web_body",
+      "method_note": "公式ページのweb閲覧結果・該当本文を保存。直接HTTP取得の403と、原本HTML未保存を取得台帳で区別。公式本文と対象プラン/役割/料金単位を照合。取得原本・hashをQ08バックアップsource-capturesへ保存。フォーム送信/登録/課金/問い合わせ/独立製品試験なし。",
+      "scope_note": "Q01限定公開終了基準。原要件・契約適用/実測の残条件を個別台帳へ保持。"
+    },
+    {
+      "key": "rosterelf-accountant",
+      "url": "https://www.rosterelf.com/support/knowledge-base/account-setup-and-admin/assigning-accountant-bookkeeper-advisor-permission",
+      "title": "Add accountant or bookkeeper access to RosterElf | RosterElf",
+      "publisher": "Roster Elf Pty Ltd",
+      "retrieved_on": "2026-10-13",
+      "version_label": "公開/改定日不明。閲覧2026-10-13 UTC",
+      "method": "public_web_body",
+      "method_note": "公式ページのweb閲覧結果・該当本文を保存。直接HTTP取得の403と、原本HTML未保存を取得台帳で区別。公式本文と対象プラン/役割/料金単位を照合。取得原本・hashをQ08バックアップsource-capturesへ保存。フォーム送信/登録/課金/問い合わせ/独立製品試験なし。",
+      "scope_note": "Q01限定公開終了基準。原要件・契約適用/実測の残条件を個別台帳へ保持。"
+    },
+    {
+      "key": "rosterelf-seats",
+      "url": "https://www.rosterelf.com/support/knowledge-base/billing-and-subscription/update-annual-plan-seats",
+      "title": "Update annual plan seats | RosterElf",
+      "publisher": "Roster Elf Pty Ltd",
+      "retrieved_on": "2026-10-13",
+      "version_label": "ページ更新表示2026-09-16。閲覧2026-10-13",
+      "method": "public_web_body",
+      "method_note": "公式ページのweb閲覧結果・該当本文を保存。直接HTTP取得の403と、原本HTML未保存を取得台帳で区別。公式本文と対象プラン/役割/料金単位を照合。取得原本・hashをQ08バックアップsource-capturesへ保存。フォーム送信/登録/課金/問い合わせ/独立製品試験なし。",
+      "scope_note": "Q01限定公開終了基準。原要件・契約適用/実測の残条件を個別台帳へ保持。",
+      "updated_on": "2026-09-16"
+    }
+  ],
+  "findings": [
+    {
+      "product": "US21",
+      "criterion": "P02",
+      "source": "rosterelf-minimum",
+      "state": "known",
+      "support": "limited",
+      "delivery": "unknown",
+      "summary": "通常の月払いは最低3 active staff、年払いは最低10 seats。管理者/マネージャーも課金人数に含み、My Accountantから追加した1人の会計/助言者は除外する。",
+      "locator": "minimum staff policy / FAQ admins and managers / 更新2026-09-07",
+      "limitations": "最低席数と実利用者数は別。Flex固有の契約最低人数に一般プランの閾値を自動適用しない。",
+      "scope": "公式公開資料の対象製品・役割・契約条件に限定。閲覧2026-10-13 UTC。製品動作・個別契約・日本の制度適合は未検証。"
+    },
+    {
+      "product": "US21",
+      "criterion": "P02",
+      "source": "rosterelf-price",
+      "state": "known",
+      "support": "limited",
+      "delivery": "unknown",
+      "summary": "料金FAQはログイン有無ではなくactive profileを数え、長期休暇・退職・inactiveを除外する。Flexは当月1シフト以上の職員を月10.60 AUD税別相当で課金し、SMS使用料を別とする。",
+      "locator": "価格ページAUD/GST表示 / What counts as a user? / Flex FAQ",
+      "limitations": "Flexの最低人数・SMS単価・課金契約周期は未公表。既存の料金行を保持し同じ単価行を重複追加しない。長期休暇の判定操作・兼務/複数拠点の数え方は実測なし。",
+      "scope": "公式公開資料の対象製品・役割・契約条件に限定。閲覧2026-10-13 UTC。製品動作・個別契約・日本の制度適合は未検証。"
+    },
+    {
+      "product": "US21",
+      "criterion": "P02",
+      "source": "rosterelf-seats",
+      "state": "known",
+      "support": "limited",
+      "delivery": "unknown",
+      "summary": "年契約の設定画面で増席すると即時に課金される。先に席を買わず職員をactiveにした場合は5日後に照合し、残っていれば追加席を年契約残期間に比例して請求する。減席は次回請求日から適用される。",
+      "locator": "Update annual plan seats / 手動増席・5日後照合・減席 / 更新2026-09-16",
+      "limitations": "手動増席の即時請求とactive職員追加後の猶予を混同しない。個別の端数/時刻/実請求例は未確認。",
+      "scope": "公式公開資料の対象製品・役割・契約条件に限定。閲覧2026-10-13 UTC。製品動作・個別契約・日本の制度適合は未検証。"
+    },
+    {
+      "product": "US21",
+      "criterion": "P02",
+      "source": "rosterelf-price",
+      "state": "not_disclosed",
+      "support": "limited",
+      "delivery": "unknown",
+      "summary": "Flexは料金表外の問い合わせ契約として説明され、通常月/年契約の最低人数をFlexへ適用する条項とSMS単価は確認した公開資料から確定できない。",
+      "locator": "Flex FAQ / 最低人数・年席変更・会計アクセスの4資料照合",
+      "limitations": "SMS別課金という公表事実と単価不明を区別。正式Flex契約・SMS料金資料・請求例で再開。",
+      "scope": "公式公開資料の対象製品・役割・契約条件に限定。閲覧2026-10-13 UTC。製品動作・個別契約・日本の制度適合は未検証。"
+    }
+  ],
+  "task_updates": [
+    {
+      "task_id": "B04-20261011-TASK005",
+      "state": "blocked",
+      "priority": 2,
+      "method": "vendor_document",
+      "expected_task": {
+        "priority": 2,
+        "required_method": "vendor_document",
+        "last_checked_on": "2026-10-12",
+        "task_state": "in_progress",
+        "question": "Flexの最低人数、SMS単価、年契約席数の計数と途中増員の請求例を確認する。",
+        "evidence_needed": "vendor_document",
+        "owner": "未割当",
+        "next_review_on": null,
+        "block_reason": null
+      },
+      "changes": {
+        "owner": "外部確認待ち / 担当未定",
+        "block_reason": "一般プランの人数と年席変更条件は確認できるが、元課題のFlex最低人数・SMS単価は未確定。通常プランの条件を流用しない。 再開：正式Flex契約の最低人数/周期・SMS単価/単位/税、兼務/休暇の計数、年増席の端数・具体的な請求例",
+        "next_review_on": null
+      },
+      "note": "{\"review_id\":\"Q08T04-B04-20261011-TASK005\",\"task_id\":\"B04-20261011-TASK005\",\"product\":\"RosterElf\",\"offering_id\":\"OF-US21\",\"criterion_id\":\"P02\",\"original_task\":{\"priority\":2,\"required_method\":\"vendor_document\",\"last_checked_on\":\"2026-10-12\",\"task_id\":\"B04-20261011-TASK005\",\"offering_id\":\"OF-US21\",\"criterion_id\":\"P02\",\"task_state\":\"in_progress\",\"question\":\"Flexの最低人数、SMS単価、年契約席数の計数と途中増員の請求例を確認する。\",\"evidence_needed\":\"vendor_document\",\"owner\":\"未割当\",\"next_review_on\":null,\"block_reason\":null},\"q01_public_acceptance_atoms\":[\"公開された課金対象と単位\",\"管理者/休職/兼務/最低数量等の記載範囲\"],\"scope\":\"RosterElfの一般プランの最低/課金人数・年増席と、Flex固有の最低人数/SMS単価を区別して照合する。\",\"reason\":\"一般プランの人数と年席変更条件は確認できるが、元課題のFlex最低人数・SMS単価は未確定。通常プランの条件を流用しない。\",\"evidence_observation_ids\":[\"B61-20261013-OBS0001\",\"B61-20261013-OBS0002\",\"B61-20261013-OBS0003\",\"B61-20261013-OBS0004\"],\"remaining_work\":[\"正式Flex契約の最低人数/周期・SMS単価/単位/税、兼務/休暇の計数、年増席の端数・具体的な請求例\"],\"primary_queue\":\"external_confirmation_wait\",\"public_phase\":\"bounded_public_search_ended_unknown\",\"external_state\":\"waiting_for_formal_document\",\"resume_condition\":\"公式改定/正式資料/対象見積の取得又は導入判断に残条件が必要な時。新根拠なしの反復探索はしない。\",\"after_task_state\":\"blocked\",\"factual_support_not_inferred\":true,\"original_requirements_deleted\":false}"
+    }
+  ],
+  "prices": []
+}

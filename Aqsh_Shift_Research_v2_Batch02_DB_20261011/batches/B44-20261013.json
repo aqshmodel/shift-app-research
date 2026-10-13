@@ -1,0 +1,206 @@
+{
+  "batch_id": "B44-20261013",
+  "prior_batch": "B43-20261013",
+  "as_of_date": "2026-10-13",
+  "resolution_policy_version": 2,
+  "description": "Q05 T02/5 SHIFTEE：課金対象と2026-10-05改定の契約期間",
+  "method": "限定公式公開調査・ローカル反映。前回の既完/外部待ちを再完了しない。原要件・不明・資料不一致・既存価格119行を保持。Git/CI/本番/課金/登録/問い合わせなし。",
+  "sources": [
+    {
+      "key": "shiftee-charge",
+      "url": "https://www.shifteeapp.jp/charge/",
+      "title": "SHIFTEE ご利用料金",
+      "publisher": "株式会社システムサポート",
+      "retrieved_on": "2026-10-13",
+      "version_label": "公開/改定日不明。閲覧2026-10-13",
+      "method": "public_web_body",
+      "method_note": "公式本文・該当注記を照合。原本はQ05バックアップに保存、取得hashはsource-captures.json。入力・登録・課金・問い合わせ・独立製品試験なし。",
+      "scope_note": "Q01の限定公開質問終了基準に従う。原要件と未確認条件を個別台帳へ保持。"
+    },
+    {
+      "key": "shiftee-faq",
+      "url": "https://www.shifteeapp.jp/faq/",
+      "title": "SHIFTEE よくあるご質問",
+      "publisher": "株式会社システムサポート",
+      "retrieved_on": "2026-10-13",
+      "version_label": "公開/改定日不明。閲覧2026-10-13",
+      "method": "public_web_body",
+      "method_note": "公式本文・該当注記を照合。原本はQ05バックアップに保存、取得hashはsource-captures.json。入力・登録・課金・問い合わせ・独立製品試験なし。",
+      "scope_note": "Q01の限定公開質問終了基準に従う。原要件と未確認条件を個別台帳へ保持。"
+    },
+    {
+      "key": "shifteecloud_public",
+      "url": "https://www.shifteeapp.jp/shifteecloud_public.pdf",
+      "title": "SHIFTEE 利用約款（2026年10月5日改定）",
+      "publisher": "株式会社システムサポート",
+      "retrieved_on": "2026-10-13",
+      "version_label": "制定2015-09-01。改定/発効2026-10-05。閲覧2026-10-13",
+      "method": "public_pdf_body",
+      "method_note": "全ページ文字抽出、利用約款は物理p.1/2/3/6/14を画像でも照合。導入約款は対象を確認する資料として保存。",
+      "scope_note": "Q01の限定公開質問終了基準に従う。原要件と未確認条件を個別台帳へ保持。",
+      "updated_on": "2026-10-05",
+      "archive_path": "reports/public-research-Q05/sources/shifteecloud_public.pdf",
+      "page_count": 14
+    },
+    {
+      "key": "shifteecustom_public",
+      "url": "https://www.shifteeapp.jp/shifteecustom_public.pdf",
+      "title": "SHIFTEE 導入・カスタマイズサービス約款",
+      "publisher": "株式会社システムサポート",
+      "retrieved_on": "2026-10-13",
+      "version_label": "公開/改定日不明。閲覧2026-10-13",
+      "method": "public_pdf_body",
+      "method_note": "全ページ文字抽出、利用約款は物理p.1/2/3/6/14を画像でも照合。導入約款は対象を確認する資料として保存。",
+      "scope_note": "Q01の限定公開質問終了基準に従う。原要件と未確認条件を個別台帳へ保持。",
+      "archive_path": "reports/public-research-Q05/sources/shifteecustom_public.pdf",
+      "page_count": 9
+    },
+    {
+      "key": "shiftee-terms-news",
+      "url": "https://www.shifteeapp.jp/%E3%80%8Eshiftee%E3%80%8F%E3%82%AF%E3%83%A9%E3%82%A6%E3%83%89%E3%82%B5%E3%83%BC%E3%83%93%E3%82%B9%E5%88%A9%E7%94%A8%E7%B4%84%E6%AC%BE%E3%82%92%E5%A4%89%E6%9B%B4%E8%87%B4%E3%81%97%E3%81%BE%E3%81%99/",
+      "title": "SHIFTEE 利用約款の変更案内（2019年9月30日）",
+      "publisher": "株式会社システムサポート",
+      "retrieved_on": "2026-10-13",
+      "version_label": "公開2019-09-30。本文は2019-11-01改定案内、リンク先は2026-10-05版",
+      "method": "public_web_body",
+      "method_note": "公式本文・該当注記を照合。原本はQ05バックアップに保存、取得hashはsource-captures.json。入力・登録・課金・問い合わせ・独立製品試験なし。",
+      "scope_note": "Q01の限定公開質問終了基準に従う。原要件と未確認条件を個別台帳へ保持。",
+      "published_on": "2019-09-30"
+    }
+  ],
+  "findings": [
+    {
+      "product": "JP17",
+      "criterion": "P02",
+      "source": "shiftee-charge",
+      "state": "known",
+      "support": "limited",
+      "delivery": "unknown",
+      "summary": "Lightは税抜月額250円〜/ユーザー。約500名規模は別途見積で、FAQの利用人数制限なしは製品上限の説明である。",
+      "locator": "PRICE / 大規模500名目安 / FAQ利用人数",
+      "limitations": "利用上限なしを最低請求人数なしとは読まない。管理者・休職者・兼務者、実利用/登録/契約席数の算定は正式資料待ち。",
+      "scope": "2026-10-13の公式公開資料照合。資料の対象国/版/プランに限定。個別契約適用と実動作は未検証。"
+    },
+    {
+      "product": "JP17",
+      "criterion": "P02",
+      "source": "shifteecloud_public",
+      "state": "known",
+      "support": "limited",
+      "delivery": "unknown",
+      "summary": "約款第2条は契約プラン・ユーザー数等の申込条件の範囲で利用し、第16条は人数/ライセンス/店舗の増加を承諾制、契約期間中の削減を原則不可（承諾例外）とする。",
+      "locator": "物理p.1 第2条 / p.6 第16条2〜3項",
+      "limitations": "2026-10-05改定版。登録/削除の製品操作が随時可能でも契約席数の減額を保証しない。課金算定・最低数量は未公表。",
+      "scope": "2026-10-13の公式公開資料照合。資料の対象国/版/プランに限定。個別契約適用と実動作は未検証。"
+    },
+    {
+      "product": "JP17",
+      "criterion": "P03",
+      "source": "shifteecloud_public",
+      "state": "known",
+      "support": "limited",
+      "delivery": "unknown",
+      "summary": "公開約款は原則利用開始日から1年間。別途合意書面の期間が優先され、満了月の前月20日までに所定の更新拒絶通知がなければ1年ごとに自動更新する。",
+      "locator": "物理p.1〜2 第4条 / p.14 第32条・改正履歴",
+      "limitations": "2026-10-05発効。月額料金表示と最低契約期間を区別。個別契約の例外・販売代理店条件の適用は別照合。",
+      "scope": "2026-10-13の公式公開資料照合。資料の対象国/版/プランに限定。個別契約適用と実動作は未検証。"
+    },
+    {
+      "product": "JP17",
+      "criterion": "P03",
+      "source": "shifteecloud_public",
+      "state": "known",
+      "support": "limited",
+      "delivery": "unknown",
+      "summary": "月額契約の料金算定日は毎月1日で、月途中の開始/終了も日割りせず1か月全額。期間中の解約は原則不可で、承諾例外時も残期間の未払利用料一括払い・既払返金なしと記す。",
+      "locator": "物理p.3 第7条 / p.6〜7 第16条",
+      "limitations": "料金の支払期日/前払い・年額の額は個別契約等による。中途解約と更新拒絶を区別。条項の公表確認であり法的助言・個別契約解釈ではない。",
+      "scope": "2026-10-13の公式公開資料照合。資料の対象国/版/プランに限定。個別契約適用と実動作は未検証。"
+    },
+    {
+      "product": "JP17",
+      "criterion": "P03",
+      "source": "shiftee-terms-news",
+      "state": "known",
+      "support": "limited",
+      "delivery": "unknown",
+      "summary": "2019-09-30の改定ニュースは旧第7条を引用するが、リンク先PDFは2026-10-05版へ更新されている。現行条件の根拠はPDF本文の発効日を使用する。",
+      "locator": "改定ニュースの2019-11-01 / リンク先PDF発効期日",
+      "limitations": "ニュース公開日とPDF改定日・閲覧日を混同しない。旧版本文は上書きせず既存履歴を保持。",
+      "scope": "2026-10-13の公式公開資料照合。資料の対象国/版/プランに限定。個別契約適用と実動作は未検証。"
+    }
+  ],
+  "task_updates": [
+    {
+      "task_id": "TASK-RES00757",
+      "state": "done",
+      "priority": 3,
+      "method": "public_document",
+      "expected_task": {
+        "priority": 3,
+        "required_method": "unknown",
+        "last_checked_on": "2026-10-13",
+        "task_state": "in_progress",
+        "question": "課金対象・単位：定義の未確認部分・現行条件を確認する。",
+        "evidence_needed": "公式料金・個別見積・契約書",
+        "owner": "未割当",
+        "next_review_on": null,
+        "block_reason": null
+      },
+      "changes": {
+        "owner": "公開資料確認終了 / 残条件は導入時再開",
+        "block_reason": null,
+        "next_review_on": null,
+        "question": "SHIFTEE Lightの公開ユーザー単位と契約席数の増減条件を照合する。",
+        "evidence_needed": "公式公開資料の該当箇所・日付・適用条件。原要件と個別契約/実測の残条件はQ05台帳へ保持。"
+      },
+      "note": "{\"review_id\":\"Q05T02-TASK-RES00757\",\"task_id\":\"TASK-RES00757\",\"product\":\"SHIFTEE\",\"offering_id\":\"OF-JP17\",\"criterion_id\":\"P02\",\"original_task\":{\"priority\":3,\"required_method\":\"unknown\",\"last_checked_on\":null,\"task_id\":\"TASK-RES00757\",\"offering_id\":\"OF-JP17\",\"criterion_id\":\"P02\",\"task_state\":\"not_started\",\"question\":\"課金対象・単位：定義の未確認部分・現行条件を確認する。\",\"evidence_needed\":\"公式料金・個別見積・契約書\",\"owner\":\"未割当\",\"next_review_on\":null,\"block_reason\":null},\"q01_public_acceptance_atoms\":[\"公開された課金対象と単位\",\"管理者/休職/兼務/最低数量等の記載範囲\"],\"scope\":\"SHIFTEE Lightの公開ユーザー単位と契約席数の増減条件を照合する。\",\"reason\":\"該当する公式公開記載を照合し、限定公開質問の肯定根拠と未記載/個別契約の残条件を分離した。\",\"evidence_observation_ids\":[\"B44-20261013-OBS0001\",\"B44-20261013-OBS0002\"],\"remaining_work\":[\"管理者/休職/兼務の人数算定、最低請求人数/最低料金、Full/自動作成の課金構成\"],\"primary_queue\":\"completed_public_check\",\"public_phase\":\"completed_bounded_document_question\",\"external_state\":\"deferred_until_adoption\",\"resume_condition\":\"公式改定/正式資料/対象見積の取得又は導入判断に残条件が必要な時。新根拠なしの反復探索はしない。\",\"after_task_state\":\"done\",\"factual_support_not_inferred\":true,\"original_requirements_deleted\":false}",
+      "public_completion": {
+        "scope": "SHIFTEE Lightの公開ユーザー単位と契約席数の増減条件を照合する。",
+        "observation_ids": [
+          "B44-20261013-OBS0001",
+          "B44-20261013-OBS0002"
+        ],
+        "remaining_work": [
+          "管理者/休職/兼務の人数算定、最低請求人数/最低料金、Full/自動作成の課金構成"
+        ]
+      }
+    },
+    {
+      "task_id": "TASK-RES00758",
+      "state": "done",
+      "priority": 3,
+      "method": "public_document",
+      "expected_task": {
+        "priority": 3,
+        "required_method": "unknown",
+        "last_checked_on": "2026-10-13",
+        "task_state": "in_progress",
+        "question": "請求周期・最低契約：定義の未確認部分・現行条件を確認する。",
+        "evidence_needed": "公式料金・個別見積・契約書",
+        "owner": "未割当",
+        "next_review_on": null,
+        "block_reason": null
+      },
+      "changes": {
+        "owner": "公開資料確認終了 / 残条件は導入時再開",
+        "block_reason": null,
+        "next_review_on": null,
+        "question": "SHIFTEE公開約款の利用期間・更新・月途中請求・中途解約条件を照合する。",
+        "evidence_needed": "公式公開資料の該当箇所・日付・適用条件。原要件と個別契約/実測の残条件はQ05台帳へ保持。"
+      },
+      "note": "{\"review_id\":\"Q05T02-TASK-RES00758\",\"task_id\":\"TASK-RES00758\",\"product\":\"SHIFTEE\",\"offering_id\":\"OF-JP17\",\"criterion_id\":\"P03\",\"original_task\":{\"priority\":3,\"required_method\":\"unknown\",\"last_checked_on\":null,\"task_id\":\"TASK-RES00758\",\"offering_id\":\"OF-JP17\",\"criterion_id\":\"P03\",\"task_state\":\"not_started\",\"question\":\"請求周期・最低契約：定義の未確認部分・現行条件を確認する。\",\"evidence_needed\":\"公式料金・個別見積・契約書\",\"owner\":\"未割当\",\"next_review_on\":null,\"block_reason\":null},\"q01_public_acceptance_atoms\":[\"月/年の請求周期・前払い・最低期間\",\"最低人数/請求額の公表範囲\"],\"scope\":\"SHIFTEE公開約款の利用期間・更新・月途中請求・中途解約条件を照合する。\",\"reason\":\"該当する公式公開記載を照合し、限定公開質問の肯定根拠と未記載/個別契約の残条件を分離した。\",\"evidence_observation_ids\":[\"B44-20261013-OBS0003\",\"B44-20261013-OBS0004\"],\"remaining_work\":[\"個別書面で合意された例外期間・請求期日・前払条件、Full/AIの正式料金・代理店契約適用\"],\"primary_queue\":\"completed_public_check\",\"public_phase\":\"completed_bounded_document_question\",\"external_state\":\"deferred_until_adoption\",\"resume_condition\":\"公式改定/正式資料/対象見積の取得又は導入判断に残条件が必要な時。新根拠なしの反復探索はしない。\",\"after_task_state\":\"done\",\"factual_support_not_inferred\":true,\"original_requirements_deleted\":false}",
+      "public_completion": {
+        "scope": "SHIFTEE公開約款の利用期間・更新・月途中請求・中途解約条件を照合する。",
+        "observation_ids": [
+          "B44-20261013-OBS0003",
+          "B44-20261013-OBS0004"
+        ],
+        "remaining_work": [
+          "個別書面で合意された例外期間・請求期日・前払条件、Full/AIの正式料金・代理店契約適用"
+        ]
+      }
+    }
+  ],
+  "prices": []
+}

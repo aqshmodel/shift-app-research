@@ -1,0 +1,15 @@
+{
+  "status": "passed",
+  "only_source_titles_and_batch_ingest_hash_changed": true,
+  "changed_fields": {
+    "sources": [
+      "title"
+    ],
+    "source_revisions": [
+      "title_at_retrieval"
+    ],
+    "research_batches": [
+      "ingest_sha256"
+    ]
+  }
+}

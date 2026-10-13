@@ -1,0 +1,17 @@
+{
+  "status": "passed",
+  "snapshot": "B42-20261013-pub2",
+  "services": 1,
+  "widths": [
+    1440,
+    390
+  ],
+  "overflow": false,
+  "pageErrors": [],
+  "miramos_no_fabricated_price_or_plan": true,
+  "care_medical_outputs_distinguished": true,
+  "xronos_third_party_option_condition": true,
+  "miramos_inclusion_and_setup_unknowns_preserved": true,
+  "roster_period_not_contract_period": true,
+  "external_DNS_blocked": true
+}

@@ -1,0 +1,67 @@
+[
+  {
+    "review_id": "Q08T04-B04-20261011-TASK005",
+    "task_id": "B04-20261011-TASK005",
+    "product": "RosterElf",
+    "offering_id": "OF-US21",
+    "criterion_id": "P02",
+    "original_task": {
+      "priority": 2,
+      "required_method": "vendor_document",
+      "last_checked_on": "2026-10-12",
+      "task_id": "B04-20261011-TASK005",
+      "offering_id": "OF-US21",
+      "criterion_id": "P02",
+      "task_state": "in_progress",
+      "question": "Flexの最低人数、SMS単価、年契約席数の計数と途中増員の請求例を確認する。",
+      "evidence_needed": "vendor_document",
+      "owner": "未割当",
+      "next_review_on": null,
+      "block_reason": null
+    },
+    "q01_public_acceptance_atoms": [
+      "公開された課金対象と単位",
+      "管理者/休職/兼務/最低数量等の記載範囲"
+    ],
+    "scope": "RosterElfの一般プランの最低/課金人数・年増席と、Flex固有の最低人数/SMS単価を区別して照合する。",
+    "reason": "一般プランの人数と年席変更条件は確認できるが、元課題のFlex最低人数・SMS単価は未確定。通常プランの条件を流用しない。",
+    "evidence_observation_ids": [
+      "B61-20261013-OBS0001",
+      "B61-20261013-OBS0002",
+      "B61-20261013-OBS0003",
+      "B61-20261013-OBS0004"
+    ],
+    "remaining_work": [
+      "正式Flex契約の最低人数/周期・SMS単価/単位/税、兼務/休暇の計数、年増席の端数・具体的な請求例"
+    ],
+    "primary_queue": "external_confirmation_wait",
+    "public_phase": "bounded_public_search_ended_unknown",
+    "external_state": "waiting_for_formal_document",
+    "resume_condition": "公式改定/正式資料/対象見積の取得又は導入判断に残条件が必要な時。新根拠なしの反復探索はしない。",
+    "after_task_state": "blocked",
+    "factual_support_not_inferred": true,
+    "original_requirements_deleted": false,
+    "acceptance_review": [
+      {
+        "atom": "公開された課金対象と単位",
+        "state": "partial_or_unconfirmed",
+        "observation_ids": [
+          "B61-20261013-OBS0001",
+          "B61-20261013-OBS0002",
+          "B61-20261013-OBS0003",
+          "B61-20261013-OBS0004"
+        ]
+      },
+      {
+        "atom": "管理者/休職/兼務/最低数量等の記載範囲",
+        "state": "partial_or_unconfirmed",
+        "observation_ids": [
+          "B61-20261013-OBS0001",
+          "B61-20261013-OBS0002",
+          "B61-20261013-OBS0003",
+          "B61-20261013-OBS0004"
+        ]
+      }
+    ]
+  }
+]

@@ -1,9 +1,23 @@
 {
   "status": "passed",
-  "batch_id": "B36-20261013",
-  "method": "CUA Chrome on isolated static viewer; DOM and screenshot visual review",
-  "scope": "Connecteam F04/F05 four unknown contextual observations; B35 history/prices",
-  "viewports": [
+  "batch_id": "B38-20261013",
+  "method": "CUA Chrome on isolated built Worker and static comparison, DOM and screenshot review; 38 automated browser cases",
+  "built_viewports": [
+    {
+      "width": 1440,
+      "height": 1000,
+      "document_scroll_width": 1440,
+      "main_scroll_width": 1440
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "document_scroll_width": 390,
+      "main_scroll_width": 390,
+      "N05_heading_top": 466.2734375
+    }
+  ],
+  "static_viewports": [
     {
       "width": 1440,
       "height": 1000,
@@ -20,30 +34,40 @@
     }
   ],
   "checks": {
-    "new4_ids_present": true,
-    "new_source_links": 4,
-    "new_distinct_source_urls": 2,
-    "reference_and_unconfirmed_labels": true,
-    "Operations_Communications_distinction": true,
-    "optimizer_transform_unconfirmed": true,
-    "settings_summary_not_parse_approval": true,
-    "post_answer_sources_not_preexecution_approval": true,
-    "prior_history_and_prices_visible": true,
+    "new6_ids_present": true,
+    "new6_source_links": true,
+    "new5_unique_source_urls": true,
+    "limited_and_context_labels": true,
+    "Communications_KB_vs_Operations_scope": true,
+    "provider_retention_vs_Connecteam_retention": true,
+    "Anthropic_list_difference_preserved": true,
+    "global_stop_and_customer_contract_unconfirmed": true,
+    "prior_F04_F05_unknown_and_B37_context_retained": true,
+    "prior_prices_and_history_visible": true,
     "console_errors_and_warnings": 0
   },
-  "screenshots": "Reviewed in CUA output; original images not archived",
+  "screenshots": "CUA output reviewed; originals not archived. Existing browser test screenshots archived in durable runtime evidence",
   "html_dataset": {
     "products": 50,
-    "observations": 2151,
+    "observations": 2163,
     "duplicate_ids": 0
   },
   "viewport_reset": true,
-  "agent_tab_closed": true,
-  "local_server": {
+  "agent_tabs_closed": true,
+  "worker_server": {
+    "base": "http://127.0.0.1:64074",
     "host": "127.0.0.1",
-    "port": 52253,
-    "stopped": true,
-    "escalation_review": "approved; isolated loopback only"
+    "port": 64074,
+    "isolated": true,
+    "started": true,
+    "stopped": true
   },
-  "external_logo_availability": "not independently tested"
+  "static_server": {
+    "host": "127.0.0.1",
+    "port": 52255,
+    "stopped": true,
+    "missing_favicon_request_404": true
+  },
+  "external_logos": "Not independently verified",
+  "UI_probe_note": "New static tab initially inherited normal 1792 width; explicit viewport reapplied. Exact ID text locator did not match composite node; current DOM inspected and substring ID click succeeded. No source/data/UI changes."
 }

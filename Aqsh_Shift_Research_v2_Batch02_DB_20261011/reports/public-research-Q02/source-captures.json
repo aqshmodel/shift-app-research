@@ -1,0 +1,87 @@
+{
+  "captures": [
+    {
+      "key": "hospi-home",
+      "url": "https://hospi.ai/",
+      "final_url": "https://hospi.ai/",
+      "status": 200,
+      "bytes": 72737,
+      "sha256": "916abac155eaf4205d5ded26f244300bc108eff17d00e4797d578e8904c34188",
+      "retrieved_at": "2026-10-13T09:25:56.421592+00:00",
+      "path": "/Users/tsukadatakahiro/Python/app/shift-app/.local/research-backups/Q02-20261013/source-captures/hospi-home.html"
+    },
+    {
+      "key": "hospi-functions",
+      "url": "https://hospi.ai/Strengths/FunctionOverview",
+      "final_url": "https://hospi.ai/Strengths/FunctionOverview",
+      "status": 200,
+      "bytes": 73609,
+      "sha256": "79f1d5bd404ddb6d1505cdb6e1254be2a744178a2c3fe83dfafb4e1ed8675939",
+      "retrieved_at": "2026-10-13T09:25:56.436280+00:00",
+      "path": "/Users/tsukadatakahiro/Python/app/shift-app/.local/research-backups/Q02-20261013/source-captures/hospi-functions.html"
+    },
+    {
+      "key": "mysys-overview",
+      "url": "https://ideanexsys.com/%E7%9C%8B%E8%AD%B7%E4%BB%8B%E8%AD%B7%E3%81%AE%E5%8B%A4%E5%8B%99%E8%A1%A8%E6%A6%82%E8%A6%81/",
+      "final_url": "https://ideanexsys.com/%E7%9C%8B%E8%AD%B7%E4%BB%8B%E8%AD%B7%E3%81%AE%E5%8B%A4%E5%8B%99%E8%A1%A8%E6%A6%82%E8%A6%81/",
+      "status": 200,
+      "bytes": 72472,
+      "sha256": "cd8620e66f5f31505b783666f7d507ec8fd3a9db8254351b756c886ed65b5239",
+      "retrieved_at": "2026-10-13T09:25:59.048607+00:00",
+      "path": "/Users/tsukadatakahiro/Python/app/shift-app/.local/research-backups/Q02-20261013/source-captures/mysys-overview.html"
+    },
+    {
+      "key": "nurse-home",
+      "url": "https://nurse-shift.com/",
+      "final_url": "https://nurse-shift.com/",
+      "status": 200,
+      "bytes": 86140,
+      "sha256": "0bd1b48faa7b43f90621d847b2c19660d717603c5618c4d4f4410c90eba0fe0d",
+      "retrieved_at": "2026-10-13T09:25:56.397034+00:00",
+      "path": "/Users/tsukadatakahiro/Python/app/shift-app/.local/research-backups/Q02-20261013/source-captures/nurse-home.html"
+    },
+    {
+      "key": "miramos-medical",
+      "url": "https://www.konicaminolta.com/jp-ja/miramos/function/medical-care.html",
+      "final_url": "https://www.konicaminolta.com/jp-ja/miramos/function/medical-care.html",
+      "status": 200,
+      "bytes": 19324,
+      "sha256": "294abd5261db3ead777e2f54a8a6e3e2ea24ba09a2086172b8db6d09fbdcf374",
+      "retrieved_at": "2026-10-13T09:25:56.933198+00:00",
+      "path": "/Users/tsukadatakahiro/Python/app/shift-app/.local/research-backups/Q02-20261013/source-captures/miramos-medical.html"
+    },
+    {
+      "key": "miramos-care",
+      "url": "https://www.konicaminolta.com/jp-ja/miramos/function/nursing-care.html",
+      "final_url": "https://www.konicaminolta.com/jp-ja/miramos/function/nursing-care.html",
+      "status": 200,
+      "bytes": 19337,
+      "sha256": "705357a9911fc888a1b92f98b63111feceef7e42e46c265b922d7bba87f010bd",
+      "retrieved_at": "2026-10-13T09:25:56.943506+00:00",
+      "path": "/Users/tsukadatakahiro/Python/app/shift-app/.local/research-backups/Q02-20261013/source-captures/miramos-care.html"
+    },
+    {
+      "key": "timefold-risk",
+      "url": "https://docs.timefold.ai/timefold-platform/latest/trust/risk-profile",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "key": "timefold-terms",
+      "url": "https://timefold.ai/terms",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "key": "timefold-explainability",
+      "url": "https://docs.timefold.ai/timefold-platform/latest/guides/validating-an-optimized-plan-with-explainable-ai",
+      "error": "HTTP Error 403: Forbidden"
+    }
+  ],
+  "pricing_image": {
+    "url": "https://storage.googleapis.com/studio-design-asset-files/projects/Jgqen72mak/s-1705x1424_v-fms_webp_bb63d3e5-903d-4fb4-97ac-2e26d045a7d6.webp",
+    "page": "https://synchroseries.jp/#plan",
+    "sha256": "4477894b56eff828668b84270b8a0a4a50f036f4c89fdaf9a5f83f6e56b2d623",
+    "path": "synchro-pricing.webp",
+    "normal_browser_render_reviewed": true
+  },
+  "note": "HTML原本はバックアップ内。上記のファイルパスは取得記録。本文要約・出典はDBへ保存。"
+}

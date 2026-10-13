@@ -1,0 +1,19 @@
+{
+  "status": "passed",
+  "full_task_population": 980,
+  "unfinished_export_rows": 978,
+  "task_ids_unique": true,
+  "all_counts_reconciled": true,
+  "csv_rows_reconciled": true,
+  "history_notes": 124,
+  "tasks_with_notes": 100,
+  "product_rows": 50,
+  "c01_c05_new_records": 150,
+  "c01_c05_new_documents": 94,
+  "c01_c05_tasks_started": 57,
+  "c01_c05_tasks_completed": 0,
+  "existing_protected_files": 717,
+  "existing_file_changes": [],
+  "application_tests_run": false,
+  "reason": "Read-only diagnosis; no app/data/code mutation."
+}

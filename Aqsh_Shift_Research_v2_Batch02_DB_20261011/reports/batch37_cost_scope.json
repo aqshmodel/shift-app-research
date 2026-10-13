@@ -1,0 +1,14 @@
+{
+  "status": "passed",
+  "scope": "Prior saved cost record/user B18 awareness only",
+  "prior_record": "docs/research-cost-check-20261012.json",
+  "current_account_cost_usage_recheck": false,
+  "paid_api_used": false,
+  "installations": false,
+  "plan_budget_auth_permission_changes": false,
+  "commit_push_CI_deploy_remote_DB": false,
+  "current_production_reaudited": false,
+  "publication_by_user": true,
+  "local_loopback_escalation": "approved",
+  "future_cost_guarantee": false
+}

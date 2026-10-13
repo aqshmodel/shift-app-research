@@ -1,0 +1,45 @@
+[
+  {
+    "review_id": "Q06T04-TASK-RES00679",
+    "task_id": "TASK-RES00679",
+    "product": "Optamo for Task",
+    "offering_id": "OF-JP16",
+    "criterion_id": "B07",
+    "original_task": {
+      "priority": 3,
+      "required_method": "unknown",
+      "last_checked_on": "2026-10-11",
+      "task_id": "TASK-RES00679",
+      "offering_id": "OF-JP16",
+      "criterion_id": "B07",
+      "task_state": "in_progress",
+      "question": "プラン・追加機能の境界：定義の未確認部分・現行条件を確認する。",
+      "evidence_needed": "機能仕様・プラン比較・利用規約・デモ",
+      "owner": "未割当",
+      "next_review_on": null,
+      "block_reason": null
+    },
+    "q01_public_acceptance_atoms": [
+      "機能を使えるプラン/モジュールの公開対応",
+      "追加契約/地域/βの留保"
+    ],
+    "scope": "Optamo for Taskの公開機能・2024年8月比較表のShiftとの差、および専用環境必須のカスタマイズ境界を照合する。",
+    "reason": "限定公開質問の該当する肯定記載を照合し、元要件・未記載・個別適用の残条件を別に保持した。",
+    "evidence_observation_ids": [
+      "B51-20261013-OBS0001",
+      "B51-20261013-OBS0002",
+      "B51-20261013-OBS0003",
+      "B51-20261013-OBS0004"
+    ],
+    "remaining_work": [
+      "最新プラン名/包含/人数上限、専用環境・個別開発・支援費の見積、最新契約版の機能差・実動作"
+    ],
+    "primary_queue": "completed_public_check",
+    "public_phase": "completed_bounded_document_question",
+    "external_state": "deferred_until_adoption",
+    "resume_condition": "公式改定/正式資料/対象見積の取得又は導入判断に残条件が必要な時。新根拠なしの反復探索はしない。",
+    "after_task_state": "done",
+    "factual_support_not_inferred": true,
+    "original_requirements_deleted": false
+  }
+]

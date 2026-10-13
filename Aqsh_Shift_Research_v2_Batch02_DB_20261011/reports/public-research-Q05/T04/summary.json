@@ -1,0 +1,100 @@
+{
+  "work_id": "Q05",
+  "unit": 4,
+  "total_units": 5,
+  "canonical_batch": "B46-20261013",
+  "completed_units": 4,
+  "status": "work_copy_validated",
+  "reviewed": 3,
+  "new_public_completions": 2,
+  "new_external_waits": 1,
+  "done_total": 29,
+  "unfinished": 951,
+  "operational_queues": {
+    "public": 803,
+    "external": 65,
+    "conditional_deferred": 83
+  },
+  "queue": {
+    "blocked": 114,
+    "done": 29,
+    "in_progress": 222,
+    "not_started": 615
+  },
+  "new_document_records": 5,
+  "stats": {
+    "tables": {
+      "assessment_resolutions": 2792,
+      "asset_evidence": 6,
+      "audit_issues": 32,
+      "batch_product_membership": 189,
+      "benchmark_runs": 0,
+      "benchmark_scenario_criteria": 45,
+      "benchmark_scenarios": 14,
+      "brand_assets": 51,
+      "classification_corrections": 12,
+      "cost_requirements": 36,
+      "cost_scenarios": 8,
+      "criteria": 164,
+      "current_assessments": 2123,
+      "domains": 20,
+      "legacy_feature_map": 86,
+      "metric_catalog": 20,
+      "observation_evidence": 2253,
+      "observations": 3137,
+      "offerings": 50,
+      "plans": 100,
+      "price_components": 119,
+      "product_aliases": 57,
+      "products": 50,
+      "regulation_support": 0,
+      "regulations": 17,
+      "research_assets": 6,
+      "research_batches": 46,
+      "research_task_updates": 224,
+      "research_tasks": 980,
+      "resolution_evidence": 3962,
+      "retrieval_checks": 223,
+      "run_metrics": 0,
+      "schema_info": 17,
+      "source_archives": 12,
+      "source_documents": 386,
+      "source_method_attributes": 514,
+      "source_revisions": 574,
+      "sources": 388,
+      "vendors": 11
+    },
+    "products": 50,
+    "offerings": 50,
+    "document_observations": 2219,
+    "document_states": {
+      "disputed": 40,
+      "inaccessible": 8,
+      "known": 2018,
+      "not_disclosed": 12,
+      "not_found": 140,
+      "not_researched": 1
+    },
+    "common_slots": 2000,
+    "documented_common_scopes": 634,
+    "research_documents": 368,
+    "benchmark_runs": 0,
+    "preferred_logos": {
+      "company": 10,
+      "service": 40
+    },
+    "latest_batch": "B46-20261013"
+  },
+  "research_sha256": "84d69280bedc5a492ab06deb8ccbd9ac6c05772a2205e31867c7a7a7f225c558",
+  "price_changes": 0,
+  "production_deployed": false,
+  "independent_tests": 0,
+  "completed_task_ids": [
+    "TASK-RES00454",
+    "TASK-RES00491"
+  ],
+  "wait_task_ids": [
+    "TASK-RES00492"
+  ],
+  "resume": "T05"
+}

@@ -1,0 +1,238 @@
+{
+  "captures": [
+    {
+      "key": "main",
+      "url": "https://www.konicaminolta.com/jp-ja/miramos/",
+      "final_url": "https://www.konicaminolta.com/jp-ja/miramos/",
+      "status": 200,
+      "bytes": 25392,
+      "sha256": "f83b0c64c731689a5c77eff314694ee728e0dd82e64b4f278bb94e44b3495710",
+      "retrieved_at": "2026-10-13T10:43:55.694959+00:00",
+      "path": "/Users/tsukadatakahiro/Python/app/shift-app/.local/research-backups/Q04-20261013/source-captures/main.html"
+    },
+    {
+      "key": "care",
+      "url": "https://www.konicaminolta.com/jp-ja/miramos/function/nursing-care.html",
+      "final_url": "https://www.konicaminolta.com/jp-ja/miramos/function/nursing-care.html",
+      "status": 200,
+      "bytes": 19337,
+      "sha256": "705357a9911fc888a1b92f98b63111feceef7e42e46c265b922d7bba87f010bd",
+      "retrieved_at": "2026-10-13T10:43:55.694160+00:00",
+      "path": "/Users/tsukadatakahiro/Python/app/shift-app/.local/research-backups/Q04-20261013/source-captures/care.html"
+    },
+    {
+      "key": "medical",
+      "url": "https://www.konicaminolta.com/jp-ja/miramos/function/medical-care.html",
+      "final_url": "https://www.konicaminolta.com/jp-ja/miramos/function/medical-care.html",
+      "status": 200,
+      "bytes": 19324,
+      "sha256": "294abd5261db3ead777e2f54a8a6e3e2ea24ba09a2086172b8db6d09fbdcf374",
+      "retrieved_at": "2026-10-13T10:43:55.691828+00:00",
+      "path": "/Users/tsukadatakahiro/Python/app/shift-app/.local/research-backups/Q04-20261013/source-captures/medical.html"
+    },
+    {
+      "key": "news",
+      "url": "https://www.konicaminolta.com/jp-ja/care-support/company/news/20251118.html",
+      "final_url": "https://www.konicaminolta.com/jp-ja/care-support/company/news/20251118.html",
+      "status": 200,
+      "bytes": 39433,
+      "sha256": "1736dbb0f5d5ed983590a29011ab76cc48f43431a57daa157249e456260b5a2f",
+      "retrieved_at": "2026-10-13T10:43:55.701857+00:00",
+      "path": "/Users/tsukadatakahiro/Python/app/shift-app/.local/research-backups/Q04-20261013/source-captures/news.html"
+    },
+    {
+      "key": "news-pdf",
+      "url": "https://www.konicaminolta.com/jp-ja/care-support/company/news/pdf/251118.pdf",
+      "final_url": "https://www.konicaminolta.com/jp-ja/care-support/company/news/pdf/251118.pdf",
+      "status": 200,
+      "bytes": 925854,
+      "sha256": "698554c97829a1301ff95815c6ddf280f512e62dbe4940c586b1f939f657341d",
+      "retrieved_at": "2026-10-13T10:43:55.908779+00:00",
+      "path": "/Users/tsukadatakahiro/Python/app/shift-app/.local/research-backups/Q04-20261013/source-captures/news-pdf.pdf"
+    },
+    {
+      "key": "mf",
+      "url": "https://www.konicaminolta.com/jp-ja/miramos/partner/moneyforward/pdf/miramos_MF.pdf",
+      "final_url": "https://www.konicaminolta.com/jp-ja/miramos/partner/moneyforward/pdf/miramos_MF.pdf",
+      "status": 200,
+      "bytes": 1651596,
+      "sha256": "d2853b8c4462c9cc611556c5c702ff42f41bfd95d76491f0c306c7dbf7a1c67a",
+      "retrieved_at": "2026-10-13T10:43:56.036444+00:00",
+      "path": "/Users/tsukadatakahiro/Python/app/shift-app/.local/research-backups/Q04-20261013/source-captures/mf.pdf"
+    },
+    {
+      "key": "freee",
+      "url": "https://www.konicaminolta.com/jp-ja/miramos/partner/freee/pdf/miramos_freee.pdf",
+      "final_url": "https://www.konicaminolta.com/jp-ja/miramos/partner/freee/pdf/miramos_freee.pdf",
+      "status": 200,
+      "bytes": 1591433,
+      "sha256": "fce2ec0e277492162fc358718de14496af57136228000349ffde3dc7ada2df0d",
+      "retrieved_at": "2026-10-13T10:43:56.051408+00:00",
+      "path": "/Users/tsukadatakahiro/Python/app/shift-app/.local/research-backups/Q04-20261013/source-captures/freee.pdf"
+    },
+    {
+      "key": "xronos",
+      "url": "https://www.konicaminolta.com/jp-ja/miramos/partner/xronos/pdf/miramos_xronos_1.pdf",
+      "final_url": "https://www.konicaminolta.com/jp-ja/miramos/partner/xronos/pdf/miramos_xronos_1.pdf",
+      "status": 200,
+      "bytes": 2011383,
+      "sha256": "92e032965919fc7dc067966409ab733fdc63552c2ca05746aaf79204b5386d20",
+      "retrieved_at": "2026-10-13T10:43:56.073497+00:00",
+      "path": "/Users/tsukadatakahiro/Python/app/shift-app/.local/research-backups/Q04-20261013/source-captures/xronos.pdf"
+    },
+    {
+      "key": "case",
+      "url": "https://www.konicaminolta.com/jp-ja/miramos/case/pearldaikanyama/index.html",
+      "final_url": "https://www.konicaminolta.com/jp-ja/miramos/case/pearldaikanyama/index.html",
+      "status": 200,
+      "bytes": 22146,
+      "sha256": "82431b6bda6ad74ceee54f442bd71cad2f191657eb6079d1d8983477ad1e0788",
+      "retrieved_at": "2026-10-13T10:43:56.020140+00:00",
+      "path": "/Users/tsukadatakahiro/Python/app/shift-app/.local/research-backups/Q04-20261013/source-captures/case.html"
+    },
+    {
+      "key": "contact",
+      "url": "https://enq.konicaminolta.com/n/form/yjlb/N-vUDbUz9WSw-bY7Lsa9-",
+      "final_url": "https://enq.konicaminolta.com/n/form/yjlb/N-vUDbUz9WSw-bY7Lsa9-",
+      "status": 200,
+      "bytes": 3687,
+      "sha256": "4f83eebde7ec384dd735df167265449683f32b2be4a12da885b00bb3cc6163e5",
+      "retrieved_at": "2026-10-13T10:43:56.194078+00:00",
+      "path": "/Users/tsukadatakahiro/Python/app/shift-app/.local/research-backups/Q04-20261013/source-captures/contact.html"
+    }
+  ],
+  "pdf_review": {
+    "mf.pdf": {
+      "pages": 31,
+      "cover": "miramos\n MFクラウド勤怠連携手順\n© KONICA MINOLTA",
+      "relevant_terms": [
+        {
+          "page": 18,
+          "line": "※CSVファイルによるシフトデータの一括更新の方法を参照"
+        },
+        {
+          "page": 26,
+          "line": "職員情報一括更新"
+        },
+        {
+          "page": 27,
+          "line": "職員情報一括更新(miramos)"
+        },
+        {
+          "page": 27,
+          "line": "• 職員情報一括更新"
+        },
+        {
+          "page": 27,
+          "line": "miramosに登録されている職員の情報をcsvを使って一括で更新することができます"
+        },
+        {
+          "page": 28,
+          "line": "職員情報一括更新(miramos)"
+        },
+        {
+          "page": 28,
+          "line": "• 職員情報一括更新"
+        },
+        {
+          "page": 28,
+          "line": "miramosに登録されている職員の情報をcsvを使って一括で更新することができます"
+        },
+        {
+          "page": 29,
+          "line": "勤務時間帯一括更新"
+        },
+        {
+          "page": 30,
+          "line": "勤務時間帯一括更新(miramos)"
+        },
+        {
+          "page": 30,
+          "line": "• 勤務時間帯一括更新"
+        },
+        {
+          "page": 30,
+          "line": "miramosに登録されている勤務時間帯をcsvを使って一括で更新することができます"
+        },
+        {
+          "page": 31,
+          "line": "勤務時間帯一括更新(miramos)"
+        },
+        {
+          "page": 31,
+          "line": "• 勤務時間帯一括更新"
+        },
+        {
+          "page": 31,
+          "line": "miramosに登録されている勤務時間帯をcsvを使って一括で更新することができます"
+        }
+      ]
+    },
+    "news-pdf.pdf": {
+      "pages": 3,
+      "cover": " \n \n \n \nNews Release \n \n病院向けAI搭載シフト自動作成サービス「miramos」を提供開始 \n～スマートフォンで収集したスタッフの希望休日をはじめとするさまざまな条件を \nもとにAIが高精度でシフトを自動生成、医療現場でのシフト作成負担を軽減～ \n \n2025年 11月 18日 \nコニカミノルタQOLソリューションズ株式会社 \n \nコニカミノルタQOLソリューションズ株式会社（本社：東京都千代田区、社長：野田 篤広、以\n下、コニカミノルタQOLソリューションズ）は、AI搭載シフト自動作成サービス「miramos（ミ\nラモス）」を、病院向けに提供開始いたします。 \nmiramosは、スマートフォンで収集したスタッフの希望休日や組み合わせ、夜勤などの勤務形\n態、 人員基準や加算の要件などの複雑かつ多岐にわたる条件をもとに、 特許出願中の技術を用い、\nAIがシフトを作成するクラウドサービスです。 \n自社独自のAI技術により、 手直しの作業を最小限に抑えた、 高い精度のシフトを自動作成します。\n何度も作り直す必要がなく、シフト作成を担当するスタッフの作業時間を約8割削減します。 \n \n \nmiramosはスタッフ登録の代行や細かなルール設定をお客様と相談しながら進めるため、簡単\nに始められます。導入後も専用のお問い合わせ窓口やWeb面談による打ち合わせなど、充実した\nサポート体制を整えており、安心してご利用いただけます。無料トライアルをご用意しているた\nめ、気軽に体験してから導入することもできます。 \n \nmiramosでは今回、病院向けの改良を施したことにより",
+      "relevant_terms": []
+    },
+    "freee.pdf": {
+      "pages": 14,
+      "cover": "勤怠管理ソフト「freee 勤怠管理 Plus」との連携方法 \n～miramos→freee 勤怠管理 Plus へのシフト連携～ \n目次 \n⚫ 連携概要 \n⚫ 事前準備 \n➢ 【miramos】職員設定 \n➢ 【miramos】勤務時間帯設定 \n➢ 【miramos】csv 入力/出力設定 \n➢ 【freee 勤怠管理 Plus】パターン設定 \n➢ 【freee 勤怠管理 Plus】入力レイアウトの作成 \n⚫ 連携手順 \n➢ 1. 【miramos】miramos でのシフト自動作成後、miramos から freee 勤怠管理 Plus へイン\nポートする CSV ファイルをエクスポートする \n➢ 2. 【freee 勤怠管理 Plus】miramos からエクスポートした CSV ファイルを freee 勤怠管理\nPlus へインポートする \n⚫ 連携項目 \n⚫ その他注意事項 \n➢ 各種コードの設定について \n➢ 1 回あたりにインポート可能なシフトスケジュール（パターン）数について \n \n連携概要 \n「miramos」のシフトデータを「freee 勤怠管理 Plus」のスケジュール管理に連携することができま\nす。 \nこれによって、配置基準や加算要件に則したシフト作成は「miramos」で行いつつ、 「freee 勤怠管理\nPlus」上でスケジュール管理・勤怠打刻することができます。 \nまた、 「freee 勤怠管理 Plus」で集計した実績を「miramos」へ連携することで、その後の\n「miramos」上での常勤換算表や勤務形態一覧表のエクスポートがスムーズになりま",
+      "relevant_terms": []
+    },
+    "xronos.pdf": {
+      "pages": 15,
+      "cover": " \n \n \n \n \n \n \n \n「miramos」連携 手順書 \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n  \n",
+      "relevant_terms": [
+        {
+          "page": 3,
+          "line": "・ 「シフトデータ連動キット」を使用した連携(※別途、オプションのご契約が必要です)"
+        },
+        {
+          "page": 3,
+          "line": "・ 「シフトExcel 貼付」を使用した連携(※別途、オプションのご契約が必要です)"
+        },
+        {
+          "page": 4,
+          "line": "※「シフトデータ連動キット」のご利用には、別途オプションのご契約が必要です。"
+        },
+        {
+          "page": 10,
+          "line": "※「シフト Excel 貼付」のご利用には、別途オプションのご契約が必要です。"
+        },
+        {
+          "page": 11,
+          "line": "Performance の「シフト Excel 貼付オプション」を利用します。"
+        },
+        {
+          "page": 11,
+          "line": "「シフト Excel 貼付オプション」の機能や詳細は、クロノス株式会社までお問い合わせく"
+        },
+        {
+          "page": 11,
+          "line": "※初期設定の注意点(クロノス Performance)は、本手順書の P8-9 をご確認ください。"
+        },
+        {
+          "page": 11,
+          "line": "ション」のご契約が必要です。"
+        },
+        {
+          "page": 13,
+          "line": "初期設定時の注意点(クロノス Performance)"
+        }
+      ]
+    }
+  },
+  "PDF_scope": "公式公開PDF4件を保存・全ページ文字照合。公開資料請求の保護資料は未取得。",
+  "public_form_read_only": true,
+  "form_public_sections": [
+    "先行トライアルの相談",
+    "サービス内容",
+    "導入検討の相談",
+    "その他の相談"
+  ],
+  "source_dates": {
+    "news": "2025-11-18",
+    "case": "2026年7月（日付不明）",
+    "other_pages_and_integration_PDFs": "公開/改定日不明"
+  },
+  "trial_limits": "2026年7月事例は評価/意見を返す施設への無償試用。通常契約無料・期間・現在の全施設への適用は認定しない。"
+}

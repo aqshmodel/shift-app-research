@@ -1,0 +1,4996 @@
+[
+  {
+    "review_id": "Q01-B03-20261011-TASK001",
+    "task_id": "B03-20261011-TASK001",
+    "offering_id": "OF-US07",
+    "product": "Deputy Core",
+    "criterion_id": "C03",
+    "original_task": {
+      "task_state": "in_progress",
+      "priority": 1,
+      "required_method": "vendor_document",
+      "question": "Deputyの日最大労働時間の窓が暦日か連続24時間か、通常版とEnterpriseの範囲を確認する。",
+      "evidence_needed": "vendor_document",
+      "owner": "未割当",
+      "next_review_on": null,
+      "block_reason": null,
+      "last_checked_on": "2026-10-12"
+    },
+    "original_definition": "前月末の夜勤・連勤・休息を翌月へ引き継ぐ。閏日、月の日数、週起点をテストする。",
+    "original_required_evidence": "仕様・ルール設定画面・境界条件テスト",
+    "public_question": "公開資料に明記された「月・週・年度境界」の範囲・対象条件を整理し、未記載/相違/実契約/実測を分ける。",
+    "public_acceptance_atoms": [
+      "月・週・年度境界について原仕様に明記された範囲",
+      "対象条件・時点・未記載を分け、実契約/実測は別段階"
+    ],
+    "policy_id": "Q01-public-review-v1",
+    "individually_reviewed": true,
+    "public_phase": "bounded_search_ended_disputed",
+    "primary_queue": "external_confirmation_wait",
+    "reason": "個別に保存資料を照合。B08の課題ID対応を訂正。このIDはDeputyの日最大時間の課題。一般向け記事は冒頭で暦日、詳細で任意の24時間、Enterprise記事は24時間窓と説明する。Coreの現行仕様・契約範囲と日跨ぎ結果は未確定。B08でこのIDへ記録したRosterLabの進捗メモは誤対応であり、採用しない。",
+    "evidence_observation_ids": [
+      "B03-20261011-OBS0130",
+      "B08-20261012-OBS0027",
+      "B08-20261012-OBS0028"
+    ],
+    "source_urls": [
+      "https://help.deputy.com/hc/en-au/articles/4658226793999-Set-up-stress-profiles-and-fatigue-management",
+      "https://help.deputy.com/hc/en-au/articles/4755140064911-Enterprise-Stress-profiles-and-employee-set-up"
+    ],
+    "completion_evidence_ids": [],
+    "remaining_work": [
+      "対象プラン/版を明示した販売元の正式回答/現行契約仕様",
+      "公開資料に記載された機能・条件の確認。提供プラン・契約への適用や実動作、性能は未検証。 / 公開文書に記載された範囲の確認。実動作・独立性能試験・個別契約への適用は未検証。"
+    ],
+    "external_state": "awaiting_external_input",
+    "resume_condition": "対象仕様/料金/契約の更新又は正式回答を得た時、あるいは導入/自社仕様の判断に必要になった時。",
+    "after_task": {
+      "task_state": "blocked",
+      "priority": 1,
+      "required_method": "vendor_document",
+      "question": "Deputyの日最大労働時間の窓が暦日か連続24時間か、通常版とEnterpriseの範囲を確認する。",
+      "evidence_needed": "vendor_document",
+      "owner": "外部確認待ち / 担当未定",
+      "next_review_on": null,
+      "block_reason": "公開資料の限定確認を終了。対象プラン/版を明示した販売元の正式回答/現行契約仕様が未取得。再開：正式回答/現行契約又は対象試験の結果が得られた時。",
+      "last_checked_on": "2026-10-13"
+    },
+    "factual_state_changed": false,
+    "original_requirements_deleted": false,
+    "acceptance_review": [
+      {
+        "atom": "月・週・年度境界について原仕様に明記された範囲",
+        "state": "partial_or_unconfirmed",
+        "observation_ids": []
+      },
+      {
+        "atom": "対象条件・時点・未記載を分け、実契約/実測は別段階",
+        "state": "partial_or_unconfirmed",
+        "observation_ids": []
+      }
+    ]
+  },
+  {
+    "review_id": "Q01-B03-20261011-TASK002",
+    "task_id": "B03-20261011-TASK002",
+    "offering_id": "OF-US20",
+    "product": "Planday",
+    "criterion_id": "B07",
+    "original_task": {
+      "task_state": "in_progress",
+      "priority": 1,
+      "required_method": "vendor_document",
+      "question": "Planday Plus/Proの新自動作成βについて、地域・顧客の対象条件と本提供時期を確認する。",
+      "evidence_needed": "vendor_document",
+      "owner": "未割当",
+      "next_review_on": null,
+      "block_reason": null,
+      "last_checked_on": "2026-10-11"
+    },
+    "original_definition": "機能を利用できるエディション、モジュール、追加契約、標準範囲を記録する。",
+    "original_required_evidence": "機能仕様・プラン比較・利用規約・デモ",
+    "public_question": "公開資料に明記された「プラン・追加機能の境界」の範囲・対象条件を整理し、未記載/相違/実契約/実測を分ける。",
+    "public_acceptance_atoms": [
+      "機能を使えるプラン/モジュールの公開対応",
+      "追加契約/地域/βの留保"
+    ],
+    "policy_id": "Q01-public-review-v1",
+    "individually_reviewed": true,
+    "public_phase": "bounded_search_ended_disputed",
+    "primary_queue": "external_confirmation_wait",
+    "reason": "個別に保存資料を照合。地域展開順序は取得。対象プラン欄は言語別・記事内で差があり、契約適用を継続確認。",
+    "evidence_observation_ids": [
+      "B02-O00251",
+      "B03-20261011-OBS0035",
+      "B05-20261011-OBS0057",
+      "B05-20261011-OBS0147",
+      "B07-20261011-OBS0009",
+      "B07-20261011-OBS0010",
+      "B07-20261011-OBS0011",
+      "B07-20261011-OBS0013"
+    ],
+    "source_urls": [
+      "https://help.planday.com/da/articles/760172-sadan-opretter-du-en-vagtplan-automatisk-med-den-nye-auto-vagtplan-beta-plus-pro",
+      "https://help.planday.com/de/articles/760172-so-erstellen-sie-automatisch-einen-dienstplan-mit-dem-neuen-auto-dienstplaner-beta-plus-pro",
+      "https://help.planday.com/en/articles/30402-how-to-use-open-api-to-integrate-with-planday",
+      "https://help.planday.com/en/articles/760172-how-to-generate-a-schedule-automatically-with-the-new-auto-schedule-beta-plus-pro",
+      "https://help.planday.com/nb/articles/760172-slik-genererer-du-en-vaktplan-automatisk-med-nye-planlegg-automatisk-beta-plus-pro",
+      "https://openapi.planday.com/gettingstarted/release_notes/",
+      "https://www.planday.com/pricing"
+    ],
+    "completion_evidence_ids": [],
+    "remaining_work": [
+      "対象プラン/版を明示した販売元の正式回答/現行契約仕様",
+      "掲載された範囲の確認。設問の全要件・契約範囲・実動作は未検証。 / 公開資料に記載された範囲の確認。設問全体の仕様確定や実動作の検証は未実施。 / 公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。 / 公開文書の確認。機能の実動作・個別契約・性能は未検証。国別契約への適用や翻訳更新順序は未確認。 / 公開文書の確認。機能の実動作・個別契約・性能は未検証。"
+    ],
+    "external_state": "awaiting_external_input",
+    "resume_condition": "対象仕様/料金/契約の更新又は正式回答を得た時、あるいは導入/自社仕様の判断に必要になった時。",
+    "after_task": {
+      "task_state": "blocked",
+      "priority": 1,
+      "required_method": "vendor_document",
+      "question": "Planday Plus/Proの新自動作成βについて、地域・顧客の対象条件と本提供時期を確認する。",
+      "evidence_needed": "vendor_document",
+      "owner": "外部確認待ち / 担当未定",
+      "next_review_on": null,
+      "block_reason": "公開資料の限定確認を終了。対象プラン/版を明示した販売元の正式回答/現行契約仕様が未取得。再開：正式回答/現行契約又は対象試験の結果が得られた時。",
+      "last_checked_on": "2026-10-13"
+    },
+    "factual_state_changed": false,
+    "original_requirements_deleted": false,
+    "acceptance_review": [
+      {
+        "atom": "機能を使えるプラン/モジュールの公開対応",
+        "state": "partial_or_unconfirmed",
+        "observation_ids": []
+      },
+      {
+        "atom": "追加契約/地域/βの留保",
+        "state": "partial_or_unconfirmed",
+        "observation_ids": []
+      }
+    ]
+  },
+  {
+    "review_id": "Q01-B03-20261011-TASK003",
+    "task_id": "B03-20261011-TASK003",
+    "offering_id": "OF-US01",
+    "product": "RosterLab AI",
+    "criterion_id": "P01",
+    "original_task": {
+      "task_state": "in_progress",
+      "priority": 1,
+      "required_method": "vendor_quote",
+      "question": "RosterLab米国料金ページの15ドルと比較表20ドルの不一致、地域・請求周期を照合する。",
+      "evidence_needed": "vendor_quote",
+      "owner": "未割当",
+      "next_review_on": null,
+      "block_reason": null,
+      "last_checked_on": "2026-10-12"
+    },
+    "original_definition": "固定、人数従量、施設課金、計算従量、買切り、見積制を区別し、価格非公開を0円としない。",
+    "original_required_evidence": "公式料金・個別見積・契約書",
+    "public_question": "公開資料に明記された「料金方式・公開範囲」の範囲・対象条件を整理し、未記載/相違/実契約/実測を分ける。",
+    "public_acceptance_atoms": [
+      "固定/人数/施設/計算/買切り/見積の公開方式",
+      "通貨/税/時点/対象プランの条件"
+    ],
+    "policy_id": "Q01-public-review-v1",
+    "individually_reviewed": true,
+    "public_phase": "bounded_search_ended_disputed",
+    "primary_queue": "external_confirmation_wait",
+    "reason": "個別に保存資料を照合。B08の課題ID対応を訂正。このIDはRosterLab料金の課題。米国向けページ内の15 USDカードと20 USD比較表は未解消。課金対象職員・勤務表に含まれない管理者の無料条件は確認できた。地域・請求周期・現行適用額を揃えた見積が必要。B08でこのIDへ記録したDeputyの進捗メモは誤対応であり、採用しない。",
+    "evidence_observation_ids": [
+      "B01-O00256",
+      "B01-O00463",
+      "B01-O00465",
+      "B02-O00026",
+      "B03-20261011-OBS0050",
+      "B07-20261011-OBS0036",
+      "B08-20261012-OBS0040"
+    ],
+    "source_urls": [
+      "https://rosterlab.com/us/pricing"
+    ],
+    "completion_evidence_ids": [],
+    "remaining_work": [
+      "条件を指定した正式見積/注文書",
+      "掲載された範囲の確認。設問の全要件・契約範囲・実動作は未検証。 / 公開資料に記載された範囲の確認。設問全体の仕様確定や実動作の検証は未実施。 / 公開文書の確認。機能の実動作・個別契約・性能は未検証。新しい正式見積の取得ではない。古い価格証拠を削除しない。 / 公開文書に記載された範囲の確認。実動作・独立性能試験・個別契約への適用は未検証。"
+    ],
+    "external_state": "awaiting_external_input",
+    "resume_condition": "対象仕様/料金/契約の更新又は正式回答を得た時、あるいは導入/自社仕様の判断に必要になった時。",
+    "after_task": {
+      "task_state": "blocked",
+      "priority": 1,
+      "required_method": "vendor_quote",
+      "question": "RosterLab米国料金ページの15ドルと比較表20ドルの不一致、地域・請求周期を照合する。",
+      "evidence_needed": "vendor_quote",
+      "owner": "外部確認待ち / 担当未定",
+      "next_review_on": null,
+      "block_reason": "公開資料の限定確認を終了。条件を指定した正式見積/注文書が未取得。再開：正式回答/現行契約又は対象試験の結果が得られた時。",
+      "last_checked_on": "2026-10-13"
+    },
+    "factual_state_changed": false,
+    "original_requirements_deleted": false,
+    "acceptance_review": [
+      {
+        "atom": "固定/人数/施設/計算/買切り/見積の公開方式",
+        "state": "partial_or_unconfirmed",
+        "observation_ids": []
+      },
+      {
+        "atom": "通貨/税/時点/対象プランの条件",
+        "state": "partial_or_unconfirmed",
+        "observation_ids": []
+      }
+    ]
+  },
+  {
+    "review_id": "Q01-B03-20261011-TASK004",
+    "task_id": "B03-20261011-TASK004",
+    "offering_id": "OF-US09",
+    "product": "Connecteam Operations Hub Expert",
+    "criterion_id": "N02",
+    "original_task": {
+      "task_state": "in_progress",
+      "priority": 1,
+      "required_method": "vendor_document",
+      "question": "Connecteam Operations Expertの認証方式とEnterpriseのSSO/2FAの契約範囲を確認する。",
+      "evidence_needed": "vendor_document",
+      "owner": "未割当",
+      "next_review_on": null,
+      "block_reason": null,
+      "last_checked_on": "2026-10-12"
+    },
+    "original_definition": "提供方式、必須化、管理者保護、プラン制限を確認する。",
+    "original_required_evidence": "約款・セキュリティ文書・第三者保証・権限試験",
+    "public_question": "公開資料に明記された「SSO・多要素認証」の範囲・対象条件を整理し、未記載/相違/実契約/実測を分ける。",
+    "public_acceptance_atoms": [
+      "SSO・多要素認証について原仕様に明記された範囲",
+      "対象条件・時点・未記載を分け、実契約/実測は別段階"
+    ],
+    "policy_id": "Q01-public-review-v1",
+    "individually_reviewed": true,
+    "public_phase": "bounded_search_ended_disputed",
+    "primary_queue": "external_confirmation_wait",
+    "reason": "個別に保存資料を照合。2つの公式ヘルプは全管理者のSMS 2FA設定を案内するが、Basic利用可能という説明と料金表のEnterprise欄は不一致のまま。Expert契約への適用は確定しない。",
+    "evidence_observation_ids": [
+      "B03-20261011-OBS0153",
+      "B06-20261011-OBS0018",
+      "B06-20261011-OBS0019",
+      "B06-20261011-OBS0020",
+      "B06-20261011-OBS0021",
+      "B06-20261011-OBS0022",
+      "B06-20261011-OBS0023",
+      "B07-20261011-OBS0030",
+      "B07-20261011-OBS0031",
+      "B08-20261012-OBS0043",
+      "B08-20261012-OBS0044",
+      "B08-20261012-OBS0045"
+    ],
+    "source_urls": [
+      "https://connecteam.com/pricing/",
+      "https://help.connecteam.com/en/articles/3112479-two-factor-authentication-2fa",
+      "https://help.connecteam.com/en/articles/6141378-the-enterprise-plan",
+      "https://help.connecteam.com/en/articles/6435553-set-your-app-s-security-settings",
+      "https://help.connecteam.com/en/articles/6502702-microsoft-azure-active-directory-single-sign-on-sso-integration"
+    ],
+    "completion_evidence_ids": [],
+    "remaining_work": [
+      "対象プラン/版を明示した販売元の正式回答/現行契約仕様",
+      "公開資料に記載された機能・条件の確認。提供プラン・契約への適用や実動作、性能は未検証。 / 公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。 / 公開文書の確認。機能の実動作・個別契約・性能は未検証。 / 公開文書に記載された範囲の確認。実動作・独立性能試験・個別契約への適用は未検証。無効化権限、復旧、モバイル・既存セッション・SSOとの関係は未確認。 / 公開文書に記載された範囲の確認。実動作・独立性能試験・個別契約への適用は未検証。プラン適用・設定解除・復旧の保証ではない。 / 公開文書に記載された範囲の確認。実動作・独立性能試験・個別契約への適用は未検証。"
+    ],
+    "external_state": "awaiting_external_input",
+    "resume_condition": "対象仕様/料金/契約の更新又は正式回答を得た時、あるいは導入/自社仕様の判断に必要になった時。",
+    "after_task": {
+      "task_state": "blocked",
+      "priority": 1,
+      "required_method": "vendor_document",
+      "question": "Connecteam Operations Expertの認証方式とEnterpriseのSSO/2FAの契約範囲を確認する。",
+      "evidence_needed": "vendor_document",
+      "owner": "外部確認待ち / 担当未定",
+      "next_review_on": null,
+      "block_reason": "公開資料の限定確認を終了。対象プラン/版を明示した販売元の正式回答/現行契約仕様が未取得。再開：正式回答/現行契約又は対象試験の結果が得られた時。",
+      "last_checked_on": "2026-10-13"
+    },
+    "factual_state_changed": false,
+    "original_requirements_deleted": false,
+    "acceptance_review": [
+      {
+        "atom": "SSO・多要素認証について原仕様に明記された範囲",
+        "state": "partial_or_unconfirmed",
+        "observation_ids": []
+      },
+      {
+        "atom": "対象条件・時点・未記載を分け、実契約/実測は別段階",
+        "state": "partial_or_unconfirmed",
+        "observation_ids": []
+      }
+    ]
+  },
+  {
+    "review_id": "Q01-B03-20261011-TASK005",
+    "task_id": "B03-20261011-TASK005",
+    "offering_id": "OF-JP04",
+    "product": "Nafty",
+    "criterion_id": "J06",
+    "original_task": {
+      "task_state": "in_progress",
+      "priority": 1,
+      "required_method": "public_document",
+      "question": "Nafty介護常勤換算の公開日と、様式9アドオンとの提供範囲の違いを確認する。",
+      "evidence_needed": "public_document",
+      "owner": "未割当",
+      "next_review_on": null,
+      "block_reason": null,
+      "last_checked_on": "2026-10-12"
+    },
+    "original_definition": "サービス種別ごとの対応範囲と、実人数・常勤換算・時間帯配置の算式を確認する。",
+    "original_required_evidence": "行政一次資料・専門団体・更新履歴・算式",
+    "public_question": "公開資料に明記された「介護・福祉の配置基準」の範囲・対象条件を整理し、未記載/相違/実契約/実測を分ける。",
+    "public_acceptance_atoms": [
+      "対象サービス種別/制度版/予定か提供済みか",
+      "実人数/常勤換算/時間帯の算式説明の範囲"
+    ],
+    "policy_id": "Q01-public-review-v1",
+    "individually_reviewed": true,
+    "public_phase": "bounded_search_ended_partial",
+    "primary_queue": "external_confirmation_wait",
+    "reason": "個別に保存資料を照合。2026-10-12にブラウザで公式本文を確認。常勤換算は提供前で具体的公開日は引き続き不明。予定の判定対象は特養・老健の2種別、既定の常勤1.0と勤務時間方式の切替を追加確認。医療様式9との別制度・別提供範囲は維持。",
+    "evidence_observation_ids": [
+      "B03-20261011-OBS0229",
+      "B07-20261011-OBS0003",
+      "B07-20261011-OBS0004",
+      "B07-20261011-OBS0005",
+      "B07-20261011-OBS0006",
+      "B07-20261011-OBS0007",
+      "B09-20261012-OBS0002",
+      "B09-20261012-OBS0003"
+    ],
+    "source_urls": [
+      "https://nafty.app/care/",
+      "https://nafty.app/fte/"
+    ],
+    "completion_evidence_ids": [],
+    "remaining_work": [
+      "対象提供単位の現行正式仕様/契約適用の回答",
+      "提供元の機能案内の確認。計算結果・届出の適合・契約適用・実動作は未検証。 / 公開文書の確認。機能の実動作・個別契約・性能は未検証。令和6年度介護基準の予定機能の説明で、令和8年度医療様式9の検証ではない。 / 提供予定の仕様説明。既定値と勤務時間方式の切替画面・結果・届出への適用は未検証。制度一般の法的判断として採用しない。 / 介護向け予定機能の対象範囲。グループホーム等を含むシフト作成全体の対象業態と、配置基準の判定対象を分ける。令和8年度の医療様式9の検算は未実施。"
+    ],
+    "external_state": "awaiting_external_input",
+    "resume_condition": "対象仕様/料金/契約の更新又は正式回答を得た時、あるいは導入/自社仕様の判断に必要になった時。",
+    "after_task": {
+      "task_state": "blocked",
+      "priority": 1,
+      "required_method": "vendor_document",
+      "question": "Nafty介護常勤換算の公開日と、様式9アドオンとの提供範囲の違いを確認する。",
+      "evidence_needed": "public_document",
+      "owner": "外部確認待ち / 担当未定",
+      "next_review_on": null,
+      "block_reason": "公開資料の限定確認を終了。対象提供単位の現行正式仕様/契約適用の回答が未取得。再開：正式回答/現行契約又は対象試験の結果が得られた時。",
+      "last_checked_on": "2026-10-13"
+    },
+    "factual_state_changed": false,
+    "original_requirements_deleted": false,
+    "acceptance_review": [
+      {
+        "atom": "対象サービス種別/制度版/予定か提供済みか",
+        "state": "partial_or_unconfirmed",
+        "observation_ids": []
+      },
+      {
+        "atom": "実人数/常勤換算/時間帯の算式説明の範囲",
+        "state": "partial_or_unconfirmed",
+        "observation_ids": []
+      }
+    ]
+  },
+  {
+    "review_id": "Q01-B03-20261011-TASK008",
+    "task_id": "B03-20261011-TASK008",
+    "offering_id": "OF-JP10",
+    "product": "Pitat-Shift",
+    "criterion_id": "G06",
+    "original_task": {
+      "task_state": "in_progress",
+      "priority": 1,
+      "required_method": "synthetic_test",
+      "question": "Pitat-Shiftの制約違反照合が最適化器と独立しているか、生成ファイルと検算仕様を確認する。",
+      "evidence_needed": "synthetic_test",
+      "owner": "未割当",
+      "next_review_on": null,
+      "block_reason": null,
+      "last_checked_on": "2026-10-12"
+    },
+    "original_definition": "生成結果を独立した検査で確認するか。手修正後・公開前にも検査が働くかを確認する。",
+    "original_required_evidence": "公式技術仕様・ソルバー出力・独立検証",
+    "public_question": "公開資料に明記された「別ロジックによる検証」の範囲・対象条件を整理し、未記載/相違/実契約/実測を分ける。",
+    "public_acceptance_atoms": [
+      "最適化とは別の検査ロジックの明示",
+      "手修正後/公開前の検査の説明"
+    ],
+    "policy_id": "Q01-public-review-v1",
+    "individually_reviewed": true,
+    "public_phase": "bounded_search_ended_unknown",
+    "primary_queue": "external_confirmation_wait",
+    "reason": "個別に保存資料を照合。規約・重要事項は人間による確定を要求。別ロジックの独立検査を証明しないため実検算課題を継続。",
+    "evidence_observation_ids": [
+      "B03-20261011-OBS0105",
+      "B13-20261012-OBS0013"
+    ],
+    "source_urls": [
+      "https://www.pitat-shift.jp/disclaimer.html",
+      "https://www.pitat-shift.jp/lp.html"
+    ],
+    "completion_evidence_ids": [],
+    "remaining_work": [
+      "対象製品の合成データ/境界値/検算/搬出再構成の試験結果",
+      "公開資料の該当記述を確認。設問の全要件・実動作・契約適用は未検証。 / 人間の確認を独立ロジックの合格や法定必須条件の保証へ置き換えない。"
+    ],
+    "external_state": "awaiting_external_input",
+    "resume_condition": "対象仕様/料金/契約の更新又は正式回答を得た時、あるいは導入/自社仕様の判断に必要になった時。",
+    "after_task": {
+      "task_state": "blocked",
+      "priority": 1,
+      "required_method": "synthetic_test",
+      "question": "Pitat-Shiftの制約違反照合が最適化器と独立しているか、生成ファイルと検算仕様を確認する。",
+      "evidence_needed": "synthetic_test",
+      "owner": "外部確認待ち / 担当未定",
+      "next_review_on": null,
+      "block_reason": "公開資料の限定確認を終了。対象製品の合成データ/境界値/検算/搬出再構成の試験結果が未取得。再開：正式回答/現行契約又は対象試験の結果が得られた時。",
+      "last_checked_on": "2026-10-13"
+    },
+    "factual_state_changed": false,
+    "original_requirements_deleted": false,
+    "acceptance_review": [
+      {
+        "atom": "最適化とは別の検査ロジックの明示",
+        "state": "partial_or_unconfirmed",
+        "observation_ids": []
+      },
+      {
+        "atom": "手修正後/公開前の検査の説明",
+        "state": "partial_or_unconfirmed",
+        "observation_ids": []
+      }
+    ]
+  },
+  {
+    "review_id": "Q01-B04-20261011-TASK001",
+    "task_id": "B04-20261011-TASK001",
+    "offering_id": "OF-JP13",
+    "product": "ほすぴタッチ",
+    "criterion_id": "K03",
+    "original_task": {
+      "task_state": "in_progress",
+      "priority": 1,
+      "required_method": "vendor_document",
+      "question": "現行BPO契約と2025年SLAで入力・保守・代行の分担はどちらが適用されるか。",
+      "evidence_needed": "vendor_document",
+      "owner": "未割当",
+      "next_review_on": null,
+      "block_reason": null,
+      "last_checked_on": "2026-10-11"
+    },
+    "original_definition": "顧客自力、ベンダー代行、共同設定、個別開発のどれか、作業分担を記録する。",
+    "original_required_evidence": "導入手順・実画面・タイムスタディ",
+    "public_question": "公開資料に明記された「初期設定の主体」の範囲・対象条件を整理し、未記載/相違/実契約/実測を分ける。",
+    "public_acceptance_atoms": [
+      "顧客/ベンダー/共同/個別開発の公開分担",
+      "標準と有償支援の別"
+    ],
+    "policy_id": "Q01-public-review-v1",
+    "individually_reviewed": true,
+    "public_phase": "bounded_search_ended_disputed",
+    "primary_queue": "external_confirmation_wait",
+    "reason": "個別に保存資料を照合。顧客のヒアリング・条件整理から完成勤務表まで提供者が代行する流れを案内。 / SLA v3.0はマスター入力・変更・保守を顧客が担当、入力代行は有償と規定。現行サイトのBPO案内とは操作分担が異なり、契約適用を確定できない。",
+    "evidence_observation_ids": [
+      "B04-20261011-OBS0283",
+      "B04-20261011-OBS0345"
+    ],
+    "source_urls": [
+      "https://hospi.ai/",
+      "https://tayori.com/faq/b2a0a742cee383e5f35bbdaf83de37388c1e8019/part-file-acquisition/?file_hash=aa1805687b0b4ceae9434b77b8af380661c3ac42.pdf"
+    ],
+    "completion_evidence_ids": [],
+    "remaining_work": [
+      "対象プラン/版を明示した販売元の正式回答/現行契約仕様",
+      "ブラウザに表示された公式本文を確認。BPOの契約範囲・成果・実動作は未検証。 / 2025年7月5日更新のSLA原本。現行個別契約との適用関係、達成状況は未確認。"
+    ],
+    "external_state": "awaiting_external_input",
+    "resume_condition": "対象仕様/料金/契約の更新又は正式回答を得た時、あるいは導入/自社仕様の判断に必要になった時。",
+    "after_task": {
+      "task_state": "blocked",
+      "priority": 1,
+      "required_method": "vendor_document",
+      "question": "現行BPO契約と2025年SLAで入力・保守・代行の分担はどちらが適用されるか。",
+      "evidence_needed": "vendor_document",
+      "owner": "外部確認待ち / 担当未定",
+      "next_review_on": null,
+      "block_reason": "公開資料の限定確認を終了。対象プラン/版を明示した販売元の正式回答/現行契約仕様が未取得。再開：正式回答/現行契約又は対象試験の結果が得られた時。",
+      "last_checked_on": "2026-10-13"
+    },
+    "factual_state_changed": false,
+    "original_requirements_deleted": false,
+    "acceptance_review": [
+      {
+        "atom": "顧客/ベンダー/共同/個別開発の公開分担",
+        "state": "partial_or_unconfirmed",
+        "observation_ids": []
+      },
+      {
+        "atom": "標準と有償支援の別",
+        "state": "partial_or_unconfirmed",
+        "observation_ids": []
+      }
+    ]
+  },
+  {
+    "review_id": "Q01-B04-20261011-TASK002",
+    "task_id": "B04-20261011-TASK002",
+    "offering_id": "OF-JP13",
+    "product": "ほすぴタッチ",
+    "criterion_id": "O01",
+    "original_task": {
+      "task_state": "in_progress",
+      "priority": 1,
+      "required_method": "vendor_document",
+      "question": "SLAの年間稼働目標、対象停止時間、応答目標、補償の現行条項を照合する。",
+      "evidence_needed": "vendor_document",
+      "owner": "未割当",
+      "next_review_on": null,
+      "block_reason": null,
+      "last_checked_on": "2026-10-11"
+    },
+    "original_definition": "保証対象、計算機能の除外、計測単位、補償条件を記録する。",
+    "original_required_evidence": "SLA・障害対応規程・契約・運用テスト",
+    "public_question": "公開資料に明記された「稼働率・サービス保証」の範囲・対象条件を整理し、未記載/相違/実契約/実測を分ける。",
+    "public_acceptance_atoms": [
+      "稼働率・サービス保証について原仕様に明記された範囲",
+      "対象条件・時点・未記載を分け、実契約/実測は別段階"
+    ],
+    "policy_id": "Q01-public-review-v1",
+    "individually_reviewed": true,
+    "public_phase": "bounded_search_ended_partial",
+    "primary_queue": "external_confirmation_wait",
+    "reason": "個別に保存資料を照合。利用規約上の例外を除き24時間365日利用。年間48時間以上の停止を避ける、稼働率99.45%を努力目標として記載。達成保証・返金条項は確認していない。",
+    "evidence_observation_ids": [
+      "B04-20261011-OBS0334"
+    ],
+    "source_urls": [
+      "https://tayori.com/faq/b2a0a742cee383e5f35bbdaf83de37388c1e8019/part-file-acquisition/?file_hash=aa1805687b0b4ceae9434b77b8af380661c3ac42.pdf"
+    ],
+    "completion_evidence_ids": [],
+    "remaining_work": [
+      "対象プラン/版を明示した販売元の正式回答/現行契約仕様",
+      "2025年7月5日更新のSLA原本。現行個別契約との適用関係、達成状況は未確認。"
+    ],
+    "external_state": "awaiting_external_input",
+    "resume_condition": "対象仕様/料金/契約の更新又は正式回答を得た時、あるいは導入/自社仕様の判断に必要になった時。",
+    "after_task": {
+      "task_state": "blocked",
+      "priority": 1,
+      "required_method": "vendor_document",
+      "question": "SLAの年間稼働目標、対象停止時間、応答目標、補償の現行条項を照合する。",
+      "evidence_needed": "vendor_document",
+      "owner": "外部確認待ち / 担当未定",
+      "next_review_on": null,
+      "block_reason": "公開資料の限定確認を終了。対象プラン/版を明示した販売元の正式回答/現行契約仕様が未取得。再開：正式回答/現行契約又は対象試験の結果が得られた時。",
+      "last_checked_on": "2026-10-13"
+    },
+    "factual_state_changed": false,
+    "original_requirements_deleted": false,
+    "acceptance_review": [
+      {
+        "atom": "稼働率・サービス保証について原仕様に明記された範囲",
+        "state": "partial_or_unconfirmed",
+        "observation_ids": []
+      },
+      {
+        "atom": "対象条件・時点・未記載を分け、実契約/実測は別段階",
+        "state": "partial_or_unconfirmed",
+        "observation_ids": []
+      }
+    ]
+  },
+  {
+    "review_id": "Q01-B04-20261011-TASK003",
+    "task_id": "B04-20261011-TASK003",
+    "offering_id": "OF-JP13",
+    "product": "ほすぴタッチ",
+    "criterion_id": "M08",
+    "original_task": {
+      "task_state": "in_progress",
+      "priority": 1,
+      "required_method": "vendor_quote",
+      "question": "解約時に入力・条件・履歴を全量搬出できるか、形式・日程・有償条件を確定する。",
+      "evidence_needed": "vendor_quote",
+      "owner": "未割当",
+      "next_review_on": null,
+      "block_reason": null,
+      "last_checked_on": "2026-10-11"
+    },
+    "original_definition": "勤務表だけでなく希望、ルール、設定、履歴を機械可読で持ち出せるか、費用と期限を確認する。",
+    "original_required_evidence": "入出力仕様・API文書・実接続・契約",
+    "public_question": "公開資料に明記された「解約時の全量出力」の範囲・対象条件を整理し、未記載/相違/実契約/実測を分ける。",
+    "public_acceptance_atoms": [
+      "勤務表/希望/規則/設定/履歴の公開出力範囲",
+      "機械可読形式・期限・費用の公表範囲"
+    ],
+    "policy_id": "Q01-public-review-v1",
+    "individually_reviewed": true,
+    "public_phase": "bounded_search_ended_partial",
+    "primary_queue": "external_confirmation_wait",
+    "reason": "個別に保存資料を照合。終了時のバックアップデータ提供は例外的な有償見積で、媒体・形式・提供日・料金を協議。標準の全量エクスポート保証ではない。",
+    "evidence_observation_ids": [
+      "B04-20261011-OBS0337"
+    ],
+    "source_urls": [
+      "https://tayori.com/faq/b2a0a742cee383e5f35bbdaf83de37388c1e8019/part-file-acquisition/?file_hash=aa1805687b0b4ceae9434b77b8af380661c3ac42.pdf"
+    ],
+    "completion_evidence_ids": [],
+    "remaining_work": [
+      "条件を指定した正式見積/注文書",
+      "2025年7月5日更新のSLA原本。現行個別契約との適用関係、達成状況は未確認。"
+    ],
+    "external_state": "awaiting_external_input",
+    "resume_condition": "対象仕様/料金/契約の更新又は正式回答を得た時、あるいは導入/自社仕様の判断に必要になった時。",
+    "after_task": {
+      "task_state": "blocked",
+      "priority": 1,
+      "required_method": "vendor_quote",
+      "question": "解約時に入力・条件・履歴を全量搬出できるか、形式・日程・有償条件を確定する。",
+      "evidence_needed": "vendor_quote",
+      "owner": "外部確認待ち / 担当未定",
+      "next_review_on": null,
+      "block_reason": "公開資料の限定確認を終了。条件を指定した正式見積/注文書が未取得。再開：正式回答/現行契約又は対象試験の結果が得られた時。",
+      "last_checked_on": "2026-10-13"
+    },
+    "factual_state_changed": false,
+    "original_requirements_deleted": false,
+    "acceptance_review": [
+      {
+        "atom": "勤務表/希望/規則/設定/履歴の公開出力範囲",
+        "state": "partial_or_unconfirmed",
+        "observation_ids": []
+      },
+      {
+        "atom": "機械可読形式・期限・費用の公表範囲",
+        "state": "partial_or_unconfirmed",
+        "observation_ids": []
+      }
+    ]
+  },
+  {
+    "review_id": "Q01-B05-20261011-TASK007",
+    "task_id": "B05-20261011-TASK007",
+    "offering_id": "OF-JP25",
+    "product": "アールシフト",
+    "criterion_id": "P01",
+    "original_task": {
+      "task_state": "in_progress",
+      "priority": 1,
+      "required_method": "vendor_quote",
+      "question": "公式料金欄は2024年2月参考値。医療・福祉で必要な機能と登録人数、初期費用、税、最低期間を指定した現行見積を取得する。",
+      "evidence_needed": "vendor_quote",
+      "owner": "未割当",
+      "next_review_on": null,
+      "block_reason": null,
+      "last_checked_on": "2026-10-11"
+    },
+    "original_definition": "固定、人数従量、施設課金、計算従量、買切り、見積制を区別し、価格非公開を0円としない。",
+    "original_required_evidence": "公式料金・個別見積・契約書",
+    "public_question": "公開資料に明記された「料金方式・公開範囲」の範囲・対象条件を整理し、未記載/相違/実契約/実測を分ける。",
+    "public_acceptance_atoms": [
+      "固定/人数/施設/計算/買切り/見積の公開方式",
+      "通貨/税/時点/対象プランの条件"
+    ],
+    "policy_id": "Q01-public-review-v1",
+    "individually_reviewed": true,
+    "public_phase": "bounded_search_ended_partial",
+    "primary_queue": "external_confirmation_wait",
+    "reason": "個別に保存資料を照合。月額10万円からと掲載するが、欄内の参考時点は2024年2月。現在の個別契約額とは扱わない。",
+    "evidence_observation_ids": [
+      "B05-20261011-OBS0170"
+    ],
+    "source_urls": [
+      "https://www.rshift.jp/"
+    ],
+    "completion_evidence_ids": [],
+    "remaining_work": [
+      "条件を指定した正式見積/注文書",
+      "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。"
+    ],
+    "external_state": "awaiting_external_input",
+    "resume_condition": "対象仕様/料金/契約の更新又は正式回答を得た時、あるいは導入/自社仕様の判断に必要になった時。",
+    "after_task": {
+      "task_state": "blocked",
+      "priority": 1,
+      "required_method": "vendor_quote",
+      "question": "公式料金欄は2024年2月参考値。医療・福祉で必要な機能と登録人数、初期費用、税、最低期間を指定した現行見積を取得する。",
+      "evidence_needed": "vendor_quote",
+      "owner": "外部確認待ち / 担当未定",
+      "next_review_on": null,
+      "block_reason": "公開資料の限定確認を終了。条件を指定した正式見積/注文書が未取得。再開：正式回答/現行契約又は対象試験の結果が得られた時。",
+      "last_checked_on": "2026-10-13"
+    },
+    "factual_state_changed": false,
+    "original_requirements_deleted": false,
+    "acceptance_review": [
+      {
+        "atom": "固定/人数/施設/計算/買切り/見積の公開方式",
+        "state": "partial_or_unconfirmed",
+        "observation_ids": []
+      },
+      {
+        "atom": "通貨/税/時点/対象プランの条件",
+        "state": "partial_or_unconfirmed",
+        "observation_ids": []
+      }
+    ]
+  },
+  {
+    "review_id": "Q01-B06-20261011-TASK001",
+    "task_id": "B06-20261011-TASK001",
+    "offering_id": "OF-JP04",
+    "product": "Nafty",
+    "criterion_id": "J05",
+    "original_task": {
+      "task_state": "in_progress",
+      "priority": 1,
+      "required_method": "synthetic_test",
+      "question": "令和8年度の実Excel／製品結果で8・12・16時間の未満／ちょうど、夜専、兼務、研修1時間、丸めを行政式と照合する。非暦月集計の届出用途も区別する。",
+      "evidence_needed": "synthetic_test",
+      "owner": "未割当",
+      "next_review_on": null,
+      "block_reason": null,
+      "last_checked_on": "2026-10-11"
+    },
+    "original_definition": "計算対象職員・勤務時間・休暇・除外条件を追跡できるか。予定と実績の別を記録する。",
+    "original_required_evidence": "行政一次資料・専門団体・更新履歴・算式",
+    "public_question": "公開資料に明記された「様式9等の計算根拠」の範囲・対象条件を整理し、未記載/相違/実契約/実測を分ける。",
+    "public_acceptance_atoms": [
+      "様式9等の計算根拠について原仕様に明記された範囲",
+      "対象条件・時点・未記載を分け、実契約/実測は別段階"
+    ],
+    "policy_id": "Q01-public-review-v1",
+    "individually_reviewed": true,
+    "public_phase": "bounded_search_ended_disputed",
+    "primary_queue": "external_confirmation_wait",
+    "reason": "個別に保存資料を照合。夜勤除外を「月16時間以下」と説明。行政様式の16時間未満・短時間正職員12時間未満・その他病棟8時間未満との照合が必要。 / 2病棟兼務は勤務割合で計上と説明するが、分子・分母、丸め、ゼロ除算の詳細は未開示。 / 日勤・夜勤を施設の夜勤時間帯で分け、打刻を優先して遅刻早退・会議等を控除する。例外的に算入できる研修等への対応は不明。 / 行政様式は月平均夜勤時間=(D-E)/B。Bは夜勤専従・所定の時間未満者を除き、病棟外兼務では夜勤割合で数える。",
+    "evidence_observation_ids": [
+      "B03-20261011-OBS0231",
+      "B04-20261011-CORR007",
+      "B06-20261011-OBS0001",
+      "B06-20261011-OBS0002",
+      "B06-20261011-OBS0003",
+      "B06-20261011-OBS0008"
+    ],
+    "source_urls": [
+      "https://kouseikyoku.mhlw.go.jp/kinki/r8-k09.pdf",
+      "https://nafty.app/youshiki9/"
+    ],
+    "completion_evidence_ids": [],
+    "remaining_work": [
+      "対象製品の合成データ/境界値/検算/搬出再構成の試験結果",
+      "提供元の機能案内の確認。計算結果・届出の適合・契約適用・実動作は未検証。 / ベンダー説明と行政資料の文書比較のみ。サービスの計算結果・Excel数式は取得／検算していない。説明の差を実装不具合と断定しない。 / 行政ルールの参照でありNaftyの実装証明ではない。Nafty説明の16時間以下と行政の16時間未満に差がある。"
+    ],
+    "external_state": "awaiting_external_input",
+    "resume_condition": "対象仕様/料金/契約の更新又は正式回答を得た時、あるいは導入/自社仕様の判断に必要になった時。",
+    "after_task": {
+      "task_state": "blocked",
+      "priority": 1,
+      "required_method": "synthetic_test",
+      "question": "令和8年度の実Excel／製品結果で8・12・16時間の未満／ちょうど、夜専、兼務、研修1時間、丸めを行政式と照合する。非暦月集計の届出用途も区別する。",
+      "evidence_needed": "synthetic_test",
+      "owner": "外部確認待ち / 担当未定",
+      "next_review_on": null,
+      "block_reason": "公開資料の限定確認を終了。対象製品の合成データ/境界値/検算/搬出再構成の試験結果が未取得。再開：正式回答/現行契約又は対象試験の結果が得られた時。",
+      "last_checked_on": "2026-10-13"
+    },
+    "factual_state_changed": false,
+    "original_requirements_deleted": false,
+    "acceptance_review": [
+      {
+        "atom": "様式9等の計算根拠について原仕様に明記された範囲",
+        "state": "partial_or_unconfirmed",
+        "observation_ids": []
+      },
+      {
+        "atom": "対象条件・時点・未記載を分け、実契約/実測は別段階",
+        "state": "partial_or_unconfirmed",
+        "observation_ids": []
+      }
+    ]
+  },
+  {
+    "review_id": "Q01-B06-20261011-TASK002",
+    "task_id": "B06-20261011-TASK002",
+    "offering_id": "OF-US09",
+    "product": "Connecteam Operations Hub Expert",
+    "criterion_id": "N02",
+    "original_task": {
+      "task_state": "in_progress",
+      "priority": 1,
+      "required_method": "vendor_document",
+      "question": "全管理者2FAの現行Basic利用条件を2026-08ヘルプ・旧Enterprise説明・料金表と照合し、Expert契約の可否を確定する。",
+      "evidence_needed": "vendor_document",
+      "owner": "未割当",
+      "next_review_on": null,
+      "block_reason": null,
+      "last_checked_on": "2026-10-12"
+    },
+    "original_definition": "提供方式、必須化、管理者保護、プラン制限を確認する。",
+    "original_required_evidence": "約款・セキュリティ文書・第三者保証・権限試験",
+    "public_question": "公開資料に明記された「SSO・多要素認証」の範囲・対象条件を整理し、未記載/相違/実契約/実測を分ける。",
+    "public_acceptance_atoms": [
+      "SSO・多要素認証について原仕様に明記された範囲",
+      "対象条件・時点・未記載を分け、実契約/実測は別段階"
+    ],
+    "policy_id": "Q01-public-review-v1",
+    "individually_reviewed": true,
+    "public_phase": "bounded_search_ended_disputed",
+    "primary_queue": "external_confirmation_wait",
+    "reason": "個別に保存資料を照合。全管理者対象の設定文言を2つのヘルプで確認。料金表のEnterprise表示との矛盾、解除権限・既存セッション・モバイル・復旧を含む現行契約は未取得。",
+    "evidence_observation_ids": [
+      "B03-20261011-OBS0153",
+      "B06-20261011-OBS0018",
+      "B06-20261011-OBS0019",
+      "B06-20261011-OBS0020",
+      "B06-20261011-OBS0021",
+      "B06-20261011-OBS0022",
+      "B06-20261011-OBS0023",
+      "B07-20261011-OBS0030",
+      "B07-20261011-OBS0031",
+      "B08-20261012-OBS0043",
+      "B08-20261012-OBS0044",
+      "B08-20261012-OBS0045"
+    ],
+    "source_urls": [
+      "https://connecteam.com/pricing/",
+      "https://help.connecteam.com/en/articles/3112479-two-factor-authentication-2fa",
+      "https://help.connecteam.com/en/articles/6141378-the-enterprise-plan",
+      "https://help.connecteam.com/en/articles/6435553-set-your-app-s-security-settings",
+      "https://help.connecteam.com/en/articles/6502702-microsoft-azure-active-directory-single-sign-on-sso-integration"
+    ],
+    "completion_evidence_ids": [],
+    "remaining_work": [
+      "対象プラン/版を明示した販売元の正式回答/現行契約仕様",
+      "公開資料に記載された機能・条件の確認。提供プラン・契約への適用や実動作、性能は未検証。 / 公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。 / 公開文書の確認。機能の実動作・個別契約・性能は未検証。 / 公開文書に記載された範囲の確認。実動作・独立性能試験・個別契約への適用は未検証。無効化権限、復旧、モバイル・既存セッション・SSOとの関係は未確認。 / 公開文書に記載された範囲の確認。実動作・独立性能試験・個別契約への適用は未検証。プラン適用・設定解除・復旧の保証ではない。 / 公開文書に記載された範囲の確認。実動作・独立性能試験・個別契約への適用は未検証。"
+    ],
+    "external_state": "awaiting_external_input",
+    "resume_condition": "対象仕様/料金/契約の更新又は正式回答を得た時、あるいは導入/自社仕様の判断に必要になった時。",
+    "after_task": {
+      "task_state": "blocked",
+      "priority": 1,
+      "required_method": "vendor_document",
+      "question": "全管理者2FAの現行Basic利用条件を2026-08ヘルプ・旧Enterprise説明・料金表と照合し、Expert契約の可否を確定する。",
+      "evidence_needed": "vendor_document",
+      "owner": "外部確認待ち / 担当未定",
+      "next_review_on": null,
+      "block_reason": "公開資料の限定確認を終了。対象プラン/版を明示した販売元の正式回答/現行契約仕様が未取得。再開：正式回答/現行契約又は対象試験の結果が得られた時。",
+      "last_checked_on": "2026-10-13"
+    },
+    "factual_state_changed": false,
+    "original_requirements_deleted": false,
+    "acceptance_review": [
+      {
+        "atom": "SSO・多要素認証について原仕様に明記された範囲",
+        "state": "partial_or_unconfirmed",
+        "observation_ids": []
+      },
+      {
+        "atom": "対象条件・時点・未記載を分け、実契約/実測は別段階",
+        "state": "partial_or_unconfirmed",
+        "observation_ids": []
+      }
+    ]
+  },
+  {
+    "review_id": "Q01-B06-20261011-TASK003",
+    "task_id": "B06-20261011-TASK003",
+    "offering_id": "OF-US18",
+    "product": "Quinyx",
+    "criterion_id": "N02",
+    "original_task": {
+      "task_state": "in_progress",
+      "priority": 1,
+      "required_method": "vendor_document",
+      "question": "Quinyxの管理者MFA対象・免除・5回失敗ロック解除・全管理者ロック時の復旧とSMS追加費を契約資料で確認する。",
+      "evidence_needed": "vendor_document",
+      "owner": "未割当",
+      "next_review_on": null,
+      "block_reason": null,
+      "last_checked_on": "2026-10-11"
+    },
+    "original_definition": "提供方式、必須化、管理者保護、プラン制限を確認する。",
+    "original_required_evidence": "約款・セキュリティ文書・第三者保証・権限試験",
+    "public_question": "公開資料に明記された「SSO・多要素認証」の範囲・対象条件を整理し、未記載/相違/実契約/実測を分ける。",
+    "public_acceptance_atoms": [
+      "SSO・多要素認証について原仕様に明記された範囲",
+      "対象条件・時点・未記載を分け、実契約/実測は別段階"
+    ],
+    "policy_id": "Q01-public-review-v1",
+    "individually_reviewed": true,
+    "public_phase": "bounded_search_ended_partial",
+    "primary_queue": "external_confirmation_wait",
+    "reason": "個別に保存資料を照合。MFAは任意の追加機能で、署名済み契約と請求書により有効化し、設定変更はQuinyxのみが行う。顧客の自己設定ではない。 / SMSの6桁コードに有効期限を設け、5回失敗するとアカウントをロックする。 / 認証頻度は毎回または7・30・60日ごとを選ぶと説明。全管理者のみの強制範囲・免除・復旧手順は本文にない。 / SMS用電話番号は国際形式E.164、最大15桁を要求する。",
+    "evidence_observation_ids": [
+      "B06-20261011-OBS0100",
+      "B06-20261011-OBS0101",
+      "B06-20261011-OBS0102",
+      "B06-20261011-OBS0104"
+    ],
+    "source_urls": [
+      "https://help.quinyx.com/help-centre/docs/multifactor-authentication"
+    ],
+    "completion_evidence_ids": [],
+    "remaining_work": [
+      "対象プラン/版を明示した販売元の正式回答/現行契約仕様",
+      "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。"
+    ],
+    "external_state": "awaiting_external_input",
+    "resume_condition": "対象仕様/料金/契約の更新又は正式回答を得た時、あるいは導入/自社仕様の判断に必要になった時。",
+    "after_task": {
+      "task_state": "blocked",
+      "priority": 1,
+      "required_method": "vendor_document",
+      "question": "Quinyxの管理者MFA対象・免除・5回失敗ロック解除・全管理者ロック時の復旧とSMS追加費を契約資料で確認する。",
+      "evidence_needed": "vendor_document",
+      "owner": "外部確認待ち / 担当未定",
+      "next_review_on": null,
+      "block_reason": "公開資料の限定確認を終了。対象プラン/版を明示した販売元の正式回答/現行契約仕様が未取得。再開：正式回答/現行契約又は対象試験の結果が得られた時。",
+      "last_checked_on": "2026-10-13"
+    },
+    "factual_state_changed": false,
+    "original_requirements_deleted": false,
+    "acceptance_review": [
+      {
+        "atom": "SSO・多要素認証について原仕様に明記された範囲",
+        "state": "partial_or_unconfirmed",
+        "observation_ids": []
+      },
+      {
+        "atom": "対象条件・時点・未記載を分け、実契約/実測は別段階",
+        "state": "partial_or_unconfirmed",
+        "observation_ids": []
+      }
+    ]
+  },
+  {
+    "review_id": "Q01-B06-20261011-TASK004",
+    "task_id": "B06-20261011-TASK004",
+    "offering_id": "OF-US20",
+    "product": "Planday",
+    "criterion_id": "M08",
+    "original_task": {
+      "task_state": "in_progress",
+      "priority": 1,
+      "required_method": "vendor_document",
+      "question": "Planday解約出口に全設定・shift history・全添付・給与履歴を含む機械可読dumpがあるか、120日削除の起算日と費用も確認する。",
+      "evidence_needed": "vendor_document",
+      "owner": "未割当",
+      "next_review_on": null,
+      "block_reason": null,
+      "last_checked_on": "2026-10-12"
+    },
+    "original_definition": "勤務表だけでなく希望、ルール、設定、履歴を機械可読で持ち出せるか、費用と期限を確認する。",
+    "original_required_evidence": "入出力仕様・API文書・実接続・契約",
+    "public_question": "公開資料に明記された「解約時の全量出力」の範囲・対象条件を整理し、未記載/相違/実契約/実測を分ける。",
+    "public_acceptance_atoms": [
+      "勤務表/希望/規則/設定/履歴の公開出力範囲",
+      "機械可読形式・期限・費用の公表範囲"
+    ],
+    "policy_id": "Q01-public-review-v1",
+    "individually_reviewed": true,
+    "public_phase": "bounded_search_ended_partial",
+    "primary_queue": "external_confirmation_wait",
+    "reason": "個別に保存資料を照合。契約書は1件ずつ、添付は一覧のみ、シフト履歴は画面閲覧という出力境界を確認。全履歴・添付・設定のdump、120日起算日、出力費用・アクセス期限は未確定。",
+    "evidence_observation_ids": [
+      "B06-20261011-OBS0096",
+      "B06-20261011-OBS0097",
+      "B06-20261011-OBS0099",
+      "B08-20261012-OBS0046",
+      "B08-20261012-OBS0047",
+      "B08-20261012-OBS0048",
+      "B08-20261012-OBS0049",
+      "B08-20261012-OBS0051"
+    ],
+    "source_urls": [
+      "https://help.planday.com/en/articles/30211-how-to-cancel-your-planday-subscription",
+      "https://help.planday.com/en/articles/30428-how-to-access-and-export-your-data"
+    ],
+    "completion_evidence_ids": [],
+    "remaining_work": [
+      "対象プラン/版を明示した販売元の正式回答/現行契約仕様",
+      "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。 / 公開文書に記載された範囲の確認。実動作・独立性能試験・個別契約への適用は未検証。全設定・シフト監査履歴の一括dumpを意味しない。 / 公開文書に記載された範囲の確認。実動作・独立性能試験・個別契約への適用は未検証。全添付の一括搬出と再構成は未検証。 / 公開文書に記載された範囲の確認。実動作・独立性能試験・個別契約への適用は未検証。閲覧可能という説明を履歴全量出力の確認へ置換しない。 / 公開文書に記載された範囲の確認。実動作・独立性能試験・個別契約への適用は未検証。フィルタ漏れと給与・ルール・履歴全体の再構成は未検証。 / 公開文書に記載された範囲の確認。実動作・独立性能試験・個別契約への適用は未検証。120日間のアクセス保証・出力猶予を意味しない。"
+    ],
+    "external_state": "awaiting_external_input",
+    "resume_condition": "対象仕様/料金/契約の更新又は正式回答を得た時、あるいは導入/自社仕様の判断に必要になった時。",
+    "after_task": {
+      "task_state": "blocked",
+      "priority": 1,
+      "required_method": "vendor_document",
+      "question": "Planday解約出口に全設定・shift history・全添付・給与履歴を含む機械可読dumpがあるか、120日削除の起算日と費用も確認する。",
+      "evidence_needed": "vendor_document",
+      "owner": "外部確認待ち / 担当未定",
+      "next_review_on": null,
+      "block_reason": "公開資料の限定確認を終了。対象プラン/版を明示した販売元の正式回答/現行契約仕様が未取得。再開：正式回答/現行契約又は対象試験の結果が得られた時。",
+      "last_checked_on": "2026-10-13"
+    },
+    "factual_state_changed": false,
+    "original_requirements_deleted": false,
+    "acceptance_review": [
+      {
+        "atom": "勤務表/希望/規則/設定/履歴の公開出力範囲",
+        "state": "partial_or_unconfirmed",
+        "observation_ids": []
+      },
+      {
+        "atom": "機械可読形式・期限・費用の公表範囲",
+        "state": "partial_or_unconfirmed",
+        "observation_ids": []
+      }
+    ]
+  },
+  {
+    "review_id": "Q01-B06-20261011-TASK005",
+    "task_id": "B06-20261011-TASK005",
+    "offering_id": "OF-US11",
+    "product": "Allocate Optima",
+    "criterion_id": "M08",
+    "original_task": {
+      "task_state": "in_progress",
+      "priority": 1,
+      "required_method": "synthetic_test",
+      "question": "OptimaのSQL返却対象にルール・希望・添付・監査履歴が含まれるか、識別子と時刻を保持して別DBへ再構成できるか確認する。",
+      "evidence_needed": "synthetic_test",
+      "owner": "未割当",
+      "next_review_on": null,
+      "block_reason": null,
+      "last_checked_on": "2026-10-11"
+    },
+    "original_definition": "勤務表だけでなく希望、ルール、設定、履歴を機械可読で持ち出せるか、費用と期限を確認する。",
+    "original_required_evidence": "入出力仕様・API文書・実接続・契約",
+    "public_question": "公開資料に明記された「解約時の全量出力」の範囲・対象条件を整理し、未記載/相違/実契約/実測を分ける。",
+    "public_acceptance_atoms": [
+      "勤務表/希望/規則/設定/履歴の公開出力範囲",
+      "機械可読形式・期限・費用の公表範囲"
+    ],
+    "policy_id": "Q01-public-review-v1",
+    "individually_reviewed": true,
+    "public_phase": "bounded_search_ended_partial",
+    "primary_queue": "external_confirmation_wait",
+    "reason": "個別に保存資料を照合。システム内の全データを顧客所有とし、要請に応じSQL等の標準形式で返却すると申告。全テーブル・添付・監査の具体的範囲は未開示。 / 顧客が契約終了前／終了時に用意されたツールで抽出する責任を持ち、抽出しなかった損失には責任を負わないと記載。",
+    "evidence_observation_ids": [
+      "B02-O00157",
+      "B06-20261011-OBS0046",
+      "B06-20261011-OBS0047"
+    ],
+    "source_urls": [
+      "https://www.applytosupply.digitalmarketplace.service.gov.uk/g-cloud/services/889593993251086"
+    ],
+    "completion_evidence_ids": [],
+    "remaining_work": [
+      "対象製品の合成データ/境界値/検算/搬出再構成の試験結果",
+      "SQLデータの抽出ツールは利用者責任。一般契約に転用しない。 / 公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。"
+    ],
+    "external_state": "awaiting_external_input",
+    "resume_condition": "対象仕様/料金/契約の更新又は正式回答を得た時、あるいは導入/自社仕様の判断に必要になった時。",
+    "after_task": {
+      "task_state": "blocked",
+      "priority": 1,
+      "required_method": "synthetic_test",
+      "question": "OptimaのSQL返却対象にルール・希望・添付・監査履歴が含まれるか、識別子と時刻を保持して別DBへ再構成できるか確認する。",
+      "evidence_needed": "synthetic_test",
+      "owner": "外部確認待ち / 担当未定",
+      "next_review_on": null,
+      "block_reason": "公開資料の限定確認を終了。対象製品の合成データ/境界値/検算/搬出再構成の試験結果が未取得。再開：正式回答/現行契約又は対象試験の結果が得られた時。",
+      "last_checked_on": "2026-10-13"
+    },
+    "factual_state_changed": false,
+    "original_requirements_deleted": false,
+    "acceptance_review": [
+      {
+        "atom": "勤務表/希望/規則/設定/履歴の公開出力範囲",
+        "state": "partial_or_unconfirmed",
+        "observation_ids": []
+      },
+      {
+        "atom": "機械可読形式・期限・費用の公表範囲",
+        "state": "partial_or_unconfirmed",
+        "observation_ids": []
+      }
+    ]
+  },
+  {
+    "review_id": "Q01-B06-20261011-TASK006",
+    "task_id": "B06-20261011-TASK006",
+    "offering_id": "OF-US07",
+    "product": "Deputy Core",
+    "criterion_id": "M08",
+    "original_task": {
+      "task_state": "in_progress",
+      "priority": 1,
+      "required_method": "synthetic_test",
+      "question": "Deputy Data Exporter全種別・version履歴と別保存添付を合わせ、欠落・期間フィルタ漏れ・件数整合・再取込形式差を確認する。",
+      "evidence_needed": "synthetic_test",
+      "owner": "未割当",
+      "next_review_on": null,
+      "block_reason": null,
+      "last_checked_on": "2026-10-11"
+    },
+    "original_definition": "勤務表だけでなく希望、ルール、設定、履歴を機械可読で持ち出せるか、費用と期限を確認する。",
+    "original_required_evidence": "入出力仕様・API文書・実接続・契約",
+    "public_question": "公開資料に明記された「解約時の全量出力」の範囲・対象条件を整理し、未記載/相違/実契約/実測を分ける。",
+    "public_acceptance_atoms": [
+      "勤務表/希望/規則/設定/履歴の公開出力範囲",
+      "機械可読形式・期限・費用の公表範囲"
+    ],
+    "policy_id": "Q01-public-review-v1",
+    "individually_reviewed": true,
+    "public_phase": "bounded_search_ended_partial",
+    "primary_queue": "external_confirmation_wait",
+    "reason": "個別に保存資料を照合。解約前に履歴をData Exporterで出力し、News・Training等のアップロードファイルは別に保存するよう案内。 / System Administratorがデータ種別を選んでCSV抽出。従業員・契約履歴・勤務・休暇ルール・給与ルール・SMSログ等を列挙する。 / 期間、全／特定職員、全／特定拠点、version付き履歴の有無を選べ、対象件数を表示し管理者へダウンロード通知する。 / 退去用CSVは一括更新・再取込用の形式と一致しないと注意。全設定・添付・監査ログの欠落なく再構成できるかは未検証。",
+    "evidence_observation_ids": [
+      "B06-20261011-OBS0082",
+      "B06-20261011-OBS0085",
+      "B06-20261011-OBS0086",
+      "B06-20261011-OBS0087"
+    ],
+    "source_urls": [
+      "https://help.deputy.com/hc/en-au/articles/4755408081167-How-to-export-or-download-your-data",
+      "https://help.deputy.com/hc/en-au/articles/4755583313295-How-to-cancel-your-Deputy-subscription"
+    ],
+    "completion_evidence_ids": [],
+    "remaining_work": [
+      "対象製品の合成データ/境界値/検算/搬出再構成の試験結果",
+      "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。"
+    ],
+    "external_state": "awaiting_external_input",
+    "resume_condition": "対象仕様/料金/契約の更新又は正式回答を得た時、あるいは導入/自社仕様の判断に必要になった時。",
+    "after_task": {
+      "task_state": "blocked",
+      "priority": 1,
+      "required_method": "synthetic_test",
+      "question": "Deputy Data Exporter全種別・version履歴と別保存添付を合わせ、欠落・期間フィルタ漏れ・件数整合・再取込形式差を確認する。",
+      "evidence_needed": "synthetic_test",
+      "owner": "外部確認待ち / 担当未定",
+      "next_review_on": null,
+      "block_reason": "公開資料の限定確認を終了。対象製品の合成データ/境界値/検算/搬出再構成の試験結果が未取得。再開：正式回答/現行契約又は対象試験の結果が得られた時。",
+      "last_checked_on": "2026-10-13"
+    },
+    "factual_state_changed": false,
+    "original_requirements_deleted": false,
+    "acceptance_review": [
+      {
+        "atom": "勤務表/希望/規則/設定/履歴の公開出力範囲",
+        "state": "partial_or_unconfirmed",
+        "observation_ids": []
+      },
+      {
+        "atom": "機械可読形式・期限・費用の公表範囲",
+        "state": "partial_or_unconfirmed",
+        "observation_ids": []
+      }
+    ]
+  },
+  {
+    "review_id": "Q01-B06-20261011-TASK007",
+    "task_id": "B06-20261011-TASK007",
+    "offering_id": "OF-US22",
+    "product": "Sona",
+    "criterion_id": "M08",
+    "original_task": {
+      "task_state": "in_progress",
+      "priority": 1,
+      "required_method": "vendor_document",
+      "question": "Sonaの出力欄で取込を説明する不一致を解消し、現行契約の全量形式・未払時の返却制限・削除証明を確認する。",
+      "evidence_needed": "vendor_document",
+      "owner": "未割当",
+      "next_review_on": null,
+      "block_reason": null,
+      "last_checked_on": "2026-10-11"
+    },
+    "original_definition": "勤務表だけでなく希望、ルール、設定、履歴を機械可読で持ち出せるか、費用と期限を確認する。",
+    "original_required_evidence": "入出力仕様・API文書・実接続・契約",
+    "public_question": "公開資料に明記された「解約時の全量出力」の範囲・対象条件を整理し、未記載/相違/実契約/実測を分ける。",
+    "public_acceptance_atoms": [
+      "勤務表/希望/規則/設定/履歴の公開出力範囲",
+      "機械可読形式・期限・費用の公表範囲"
+    ],
+    "policy_id": "Q01-public-review-v1",
+    "individually_reviewed": true,
+    "public_phase": "bounded_search_ended_partial",
+    "primary_queue": "external_confirmation_wait",
+    "reason": "個別に保存資料を照合。終了時は画面・レポートへのアクセスとデータ抽出協力を案内。全設定・履歴・添付の一括提供、期限、費用は確認できない。 / 終了時は書面指示により個人データと複製を返却／削除する。ただし法令上必要な保持を除外し、全DBの形式・納期は明記しない。 / 終了後の合理的期間内に秘密情報の返却／破棄を要請できるが、未払料金がある場合は非個人データの返却義務を免れる。",
+    "evidence_observation_ids": [
+      "B06-20261011-OBS0052",
+      "B06-20261011-OBS0058",
+      "B06-20261011-OBS0060"
+    ],
+    "source_urls": [
+      "https://assets.applytosupply.digitalmarketplace.service.gov.uk/g-cloud-14/documents/721491/196631126822513-terms-and-conditions-2024-05-07-1059.pdf",
+      "https://www.applytosupply.digitalmarketplace.service.gov.uk/g-cloud/services/196631126822513"
+    ],
+    "completion_evidence_ids": [],
+    "remaining_work": [
+      "対象プラン/版を明示した販売元の正式回答/現行契約仕様",
+      "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。 / 2024-02版G-Cloud 14資料の条文確認。現在の個別契約の適用条件と返却実行は未確認。"
+    ],
+    "external_state": "awaiting_external_input",
+    "resume_condition": "対象仕様/料金/契約の更新又は正式回答を得た時、あるいは導入/自社仕様の判断に必要になった時。",
+    "after_task": {
+      "task_state": "blocked",
+      "priority": 1,
+      "required_method": "vendor_document",
+      "question": "Sonaの出力欄で取込を説明する不一致を解消し、現行契約の全量形式・未払時の返却制限・削除証明を確認する。",
+      "evidence_needed": "vendor_document",
+      "owner": "外部確認待ち / 担当未定",
+      "next_review_on": null,
+      "block_reason": "公開資料の限定確認を終了。対象プラン/版を明示した販売元の正式回答/現行契約仕様が未取得。再開：正式回答/現行契約又は対象試験の結果が得られた時。",
+      "last_checked_on": "2026-10-13"
+    },
+    "factual_state_changed": false,
+    "original_requirements_deleted": false,
+    "acceptance_review": [
+      {
+        "atom": "勤務表/希望/規則/設定/履歴の公開出力範囲",
+        "state": "partial_or_unconfirmed",
+        "observation_ids": []
+      },
+      {
+        "atom": "機械可読形式・期限・費用の公表範囲",
+        "state": "partial_or_unconfirmed",
+        "observation_ids": []
+      }
+    ]
+  },
+  {
+    "review_id": "Q01-B06-20261011-TASK008",
+    "task_id": "B06-20261011-TASK008",
+    "offering_id": "OF-JP09",
+    "product": "快決！シフト君NEO メディカル",
+    "criterion_id": "J03",
+    "original_task": {
+      "task_state": "in_progress",
+      "priority": 1,
+      "required_method": "vendor_document",
+      "question": "NEO医療版の現行算式版と共同Excelの2026-10-06公開停止ファイルの採用有無・修正反映を確認する。",
+      "evidence_needed": "vendor_document",
+      "owner": "未割当",
+      "next_review_on": null,
+      "block_reason": null,
+      "last_checked_on": "2026-10-12"
+    },
+    "original_definition": "規程版、施行日、経過措置、旧版保存、更新担当と費用を確認する。",
+    "original_required_evidence": "行政一次資料・専門団体・更新履歴・算式",
+    "public_question": "公開資料に明記された「制度版・施行日・更新責任」の範囲・対象条件を整理し、未記載/相違/実契約/実測を分ける。",
+    "public_acceptance_atoms": [
+      "制度版・施行日・更新責任について原仕様に明記された範囲",
+      "対象条件・時点・未記載を分け、実契約/実測は別段階"
+    ],
+    "policy_id": "Q01-public-review-v1",
+    "individually_reviewed": true,
+    "public_phase": "bounded_search_ended_partial",
+    "primary_queue": "external_confirmation_wait",
+    "reason": "個別に保存資料を照合。公式利用者向けページで2026年6月のR8様式9帳票追加を確認。ただし更新ファイルはパスワード保護で未取得。10月6日に共同提供元が停止した26_9chiiki_ryoyo_hojokasan.xlsの製品内採用・修正反映を証明しないため、課題を未完了で保持。",
+    "evidence_observation_ids": [
+      "B06-20261011-OBS0072",
+      "B06-20261011-OBS0107"
+    ],
+    "source_urls": [
+      "https://products.ndis.jp/shift-neo/medical/",
+      "https://youshiki9.doc-net.or.jp/"
+    ],
+    "completion_evidence_ids": [],
+    "remaining_work": [
+      "対象プラン/版を明示した販売元の正式回答/現行契約仕様",
+      "共同Excelへの参照は算式の実装・検算の証明ではない。共同提供元のファイル不整合を製品不具合とは断定しない。 / 共同Excel提供元の注意であり、NEO製品の不具合・非対応を示す資料ではない。製品内の使用版と結果は未検証。"
+    ],
+    "external_state": "awaiting_external_input",
+    "resume_condition": "対象仕様/料金/契約の更新又は正式回答を得た時、あるいは導入/自社仕様の判断に必要になった時。",
+    "after_task": {
+      "task_state": "blocked",
+      "priority": 1,
+      "required_method": "vendor_document",
+      "question": "NEO医療版の現行算式版と共同Excelの2026-10-06公開停止ファイルの採用有無・修正反映を確認する。",
+      "evidence_needed": "vendor_document",
+      "owner": "外部確認待ち / 担当未定",
+      "next_review_on": null,
+      "block_reason": "公開資料の限定確認を終了。対象プラン/版を明示した販売元の正式回答/現行契約仕様が未取得。再開：正式回答/現行契約又は対象試験の結果が得られた時。",
+      "last_checked_on": "2026-10-13"
+    },
+    "factual_state_changed": false,
+    "original_requirements_deleted": false,
+    "acceptance_review": [
+      {
+        "atom": "制度版・施行日・更新責任について原仕様に明記された範囲",
+        "state": "partial_or_unconfirmed",
+        "observation_ids": []
+      },
+      {
+        "atom": "対象条件・時点・未記載を分け、実契約/実測は別段階",
+        "state": "partial_or_unconfirmed",
+        "observation_ids": []
+      }
+    ]
+  },
+  {
+    "review_id": "Q01-TASK-B02-001",
+    "task_id": "TASK-B02-001",
+    "offering_id": "OF-JP28",
+    "product": "シフト屋さん Public API / MCP",
+    "criterion_id": "G09",
+    "original_task": {
+      "task_state": "not_started",
+      "priority": 3,
+      "required_method": "unknown",
+      "question": "不足を残す場合の状態・スラック・自動公開禁止を確認",
+      "evidence_needed": "公開API仕様と合成データでの独立検証",
+      "owner": "未割当",
+      "next_review_on": null,
+      "block_reason": null,
+      "last_checked_on": null
+    },
+    "original_definition": "未指定でも働く規則、緩和や仮想要員、未充足枠、正常終了と配置充足の関係を確認する。返却結果を公開してよいか別に判定する。",
+    "original_required_evidence": "原仕様・適用契約・資料の作成主体及び表示の文脈",
+    "public_question": "公開資料に明記された「暗黙の既定条件・不足を残す返却」の範囲・対象条件を整理し、未記載/相違/実契約/実測を分ける。",
+    "public_acceptance_atoms": [
+      "暗黙の既定条件・不足を残す返却について原仕様に明記された範囲",
+      "対象条件・時点・未記載を分け、実契約/実測は別段階"
+    ],
+    "policy_id": "Q01-public-review-v1",
+    "individually_reviewed": true,
+    "public_phase": "bounded_search_ended_partial",
+    "primary_queue": "external_confirmation_wait",
+    "reason": "個別に保存資料を照合。未指定でも連勤上限6日・ソフト5日が働く。",
+    "evidence_observation_ids": [
+      "B02-O00142"
+    ],
+    "source_urls": [
+      "https://platform.shiftyasan.com/"
+    ],
+    "completion_evidence_ids": [],
+    "remaining_work": [
+      "対象提供単位の現行正式仕様/契約適用の回答",
+      "既定値を除外したつもりの比較をしない。"
+    ],
+    "external_state": "awaiting_external_input",
+    "resume_condition": "対象仕様/料金/契約の更新又は正式回答を得た時、あるいは導入/自社仕様の判断に必要になった時。",
+    "after_task": {
+      "task_state": "blocked",
+      "priority": 3,
+      "required_method": "vendor_document",
+      "question": "不足を残す場合の状態・スラック・自動公開禁止を確認",
+      "evidence_needed": "公開API仕様と合成データでの独立検証",
+      "owner": "外部確認待ち / 担当未定",
+      "next_review_on": null,
+      "block_reason": "公開資料の限定確認を終了。対象提供単位の現行正式仕様/契約適用の回答が未取得。再開：正式回答/現行契約又は対象試験の結果が得られた時。",
+      "last_checked_on": "2026-10-13"
+    },
+    "factual_state_changed": false,
+    "original_requirements_deleted": false,
+    "acceptance_review": [
+      {
+        "atom": "暗黙の既定条件・不足を残す返却について原仕様に明記された範囲",
+        "state": "partial_or_unconfirmed",
+        "observation_ids": []
+      },
+      {
+        "atom": "対象条件・時点・未記載を分け、実契約/実測は別段階",
+        "state": "partial_or_unconfirmed",
+        "observation_ids": []
+      }
+    ]
+  },
+  {
+    "review_id": "Q01-TASK-B02-002",
+    "task_id": "TASK-B02-002",
+    "offering_id": "OF-JP28",
+    "product": "シフト屋さん Public API / MCP",
+    "criterion_id": "R09",
+    "original_task": {
+      "task_state": "in_progress",
+      "priority": 1,
+      "required_method": "vendor_document",
+      "question": "商用再提供権、API価格移行、β終了時データを確認",
+      "evidence_needed": "利用規約・正式契約",
+      "owner": "未割当",
+      "next_review_on": null,
+      "block_reason": null,
+      "last_checked_on": "2026-10-12"
+    },
+    "original_definition": "MCP接続コードやSDKが公開されても、最適化本体の利用・複製・商用再提供権を得たとはみなさない。βと正式版を分ける。",
+    "original_required_evidence": "原仕様・適用契約・資料の作成主体及び表示の文脈",
+    "public_question": "公開資料に明記された「本体・API・接続部品の権利境界」の範囲・対象条件を整理し、未記載/相違/実契約/実測を分ける。",
+    "public_acceptance_atoms": [
+      "本体・API・接続部品の権利境界について原仕様に明記された範囲",
+      "対象条件・時点・未記載を分け、実契約/実測は別段階"
+    ],
+    "policy_id": "Q01-public-review-v1",
+    "individually_reviewed": true,
+    "public_phase": "bounded_search_ended_partial",
+    "primary_queue": "external_confirmation_wait",
+    "reason": "個別に保存資料を照合。無料β・units・正式料金準備中、一般規約の個別条件優先・会員利用権の第三者処分禁止、MCPクライアントのMIT表示を照合。APIの商用組込・再提供許諾、正式移行、β終了時の搬出条件は個別資料が必要。",
+    "evidence_observation_ids": [
+      "B02-O00148",
+      "B08-20261012-OBS0024",
+      "B08-20261012-OBS0025"
+    ],
+    "source_urls": [
+      "https://platform.shiftyasan.com/",
+      "https://shiftyasan.com/terms"
+    ],
+    "completion_evidence_ids": [],
+    "remaining_work": [
+      "対象プラン/版を明示した販売元の正式回答/現行契約仕様",
+      "最適化本体のソース公開・商用再提供許諾は確認できていない。 / 公開文書に記載された範囲の確認。実動作・独立性能試験・個別契約への適用は未検証。第三者向けAPI組込の可否を法律判断として確定していない。個別条件の取得が必要。 / 公開文書に記載された範囲の確認。実動作・独立性能試験・個別契約への適用は未検証。"
+    ],
+    "external_state": "awaiting_external_input",
+    "resume_condition": "対象仕様/料金/契約の更新又は正式回答を得た時、あるいは導入/自社仕様の判断に必要になった時。",
+    "after_task": {
+      "task_state": "blocked",
+      "priority": 1,
+      "required_method": "vendor_document",
+      "question": "商用再提供権、API価格移行、β終了時データを確認",
+      "evidence_needed": "利用規約・正式契約",
+      "owner": "外部確認待ち / 担当未定",
+      "next_review_on": null,
+      "block_reason": "公開資料の限定確認を終了。対象プラン/版を明示した販売元の正式回答/現行契約仕様が未取得。再開：正式回答/現行契約又は対象試験の結果が得られた時。",
+      "last_checked_on": "2026-10-13"
+    },
+    "factual_state_changed": false,
+    "original_requirements_deleted": false,
+    "acceptance_review": [
+      {
+        "atom": "本体・API・接続部品の権利境界について原仕様に明記された範囲",
+        "state": "partial_or_unconfirmed",
+        "observation_ids": []
+      },
+      {
+        "atom": "対象条件・時点・未記載を分け、実契約/実測は別段階",
+        "state": "partial_or_unconfirmed",
+        "observation_ids": []
+      }
+    ]
+  },
+  {
+    "review_id": "Q01-TASK-B02-004",
+    "task_id": "TASK-B02-004",
+    "offering_id": "OF-US11",
+    "product": "Allocate Optima",
+    "criterion_id": "P02",
+    "original_task": {
+      "task_state": "not_started",
+      "priority": 3,
+      "required_method": "unknown",
+      "question": "200人帯の請求周期と現行適用条件を確認",
+      "evidence_needed": "現行見積・調達契約",
+      "owner": "未割当",
+      "next_review_on": null,
+      "block_reason": null,
+      "last_checked_on": null
+    },
+    "original_definition": "登録人数・利用人数・休職者・管理者・兼務者・拠点の数え方と段階料金を確認する。",
+    "original_required_evidence": "公式料金・個別見積・契約書",
+    "public_question": "公開資料に明記された「課金対象・単位」の範囲・対象条件を整理し、未記載/相違/実契約/実測を分ける。",
+    "public_acceptance_atoms": [
+      "公開された課金対象と単位",
+      "管理者/休職/兼務/最低数量等の記載範囲"
+    ],
+    "policy_id": "Q01-public-review-v1",
+    "individually_reviewed": true,
+    "public_phase": "bounded_search_ended_partial",
+    "primary_queue": "external_confirmation_wait",
+    "reason": "個別に保存資料を照合。1〜200人帯は28,578.84ポンド。帯の上限数量を購入。",
+    "evidence_observation_ids": [
+      "B02-O00165"
+    ],
+    "source_urls": [
+      "https://assets.applytosupply.digitalmarketplace.service.gov.uk/g-cloud-14/documents/93135/889593993251086-pricing-document-2024-05-02-1530.pdf"
+    ],
+    "completion_evidence_ids": [],
+    "remaining_work": [
+      "対象提供単位の現行正式仕様/契約適用の回答",
+      "2024年調達資料。課金期間と現行条件は契約で再確認。"
+    ],
+    "external_state": "awaiting_external_input",
+    "resume_condition": "対象仕様/料金/契約の更新又は正式回答を得た時、あるいは導入/自社仕様の判断に必要になった時。",
+    "after_task": {
+      "task_state": "blocked",
+      "priority": 3,
+      "required_method": "vendor_document",
+      "question": "200人帯の請求周期と現行適用条件を確認",
+      "evidence_needed": "現行見積・調達契約",
+      "owner": "外部確認待ち / 担当未定",
+      "next_review_on": null,
+      "block_reason": "公開資料の限定確認を終了。対象提供単位の現行正式仕様/契約適用の回答が未取得。再開：正式回答/現行契約又は対象試験の結果が得られた時。",
+      "last_checked_on": "2026-10-13"
+    },
+    "factual_state_changed": false,
+    "original_requirements_deleted": false,
+    "acceptance_review": [
+      {
+        "atom": "公開された課金対象と単位",
+        "state": "partial_or_unconfirmed",
+        "observation_ids": []
+      },
+      {
+        "atom": "管理者/休職/兼務/最低数量等の記載範囲",
+        "state": "partial_or_unconfirmed",
+        "observation_ids": []
+      }
+    ]
+  },
+  {
+    "review_id": "Q01-TASK-B02-005",
+    "task_id": "TASK-B02-005",
+    "offering_id": "OF-US19",
+    "product": "When I Work",
+    "criterion_id": "B07",
+    "original_task": {
+      "task_state": "in_progress",
+      "priority": 1,
+      "required_method": "vendor_document",
+      "question": "複数拠点と勤怠含有のカード・FAQ差を確認",
+      "evidence_needed": "地域・支払周期付き正式プラン",
+      "owner": "未割当",
+      "next_review_on": null,
+      "block_reason": null,
+      "last_checked_on": "2026-10-12"
+    },
+    "original_definition": "機能を利用できるエディション、モジュール、追加契約、標準範囲を記録する。",
+    "original_required_evidence": "機能仕様・プラン比較・利用規約・デモ",
+    "public_question": "公開資料に明記された「プラン・追加機能の境界」の範囲・対象条件を整理し、未記載/相違/実契約/実測を分ける。",
+    "public_acceptance_atoms": [
+      "機能を使えるプラン/モジュールの公開対応",
+      "追加契約/地域/βの留保"
+    ],
+    "policy_id": "Q01-public-review-v1",
+    "individually_reviewed": true,
+    "public_phase": "bounded_search_ended_disputed",
+    "primary_queue": "external_confirmation_wait",
+    "reason": "個別に保存資料を照合。管理者を含む課金人数とPremiumのAPI/Webhook/SAMLを追加確認。Essentialsの複数拠点・勤怠追加表示とFAQの単複拠点料金・全プラン勤怠込みの差は未解消。",
+    "evidence_observation_ids": [
+      "B02-O00246",
+      "B02-O00248",
+      "B03-20261011-OBS0042",
+      "B07-20261011-OBS0032",
+      "B08-20261012-OBS0036",
+      "B08-20261012-OBS0038"
+    ],
+    "source_urls": [
+      "https://wheniwork.com/pricing"
+    ],
+    "completion_evidence_ids": [],
+    "remaining_work": [
+      "対象プラン/版を明示した販売元の正式回答/現行契約仕様",
+      "下位プランの機能として扱わない。 / 掲載された範囲の確認。設問の全要件・契約範囲・実動作は未検証。 / 公開資料に記載された範囲の確認。設問全体の仕様確定や実動作の検証は未実施。 / 公開文書の確認。機能の実動作・個別契約・性能は未検証。 / 公開文書に記載された範囲の確認。実動作・独立性能試験・個別契約への適用は未検証。 / 公開文書に記載された範囲の確認。実動作・独立性能試験・個別契約への適用は未検証。調査対象When I Workの下位プランへの内包を示すものではない。"
+    ],
+    "external_state": "awaiting_external_input",
+    "resume_condition": "対象仕様/料金/契約の更新又は正式回答を得た時、あるいは導入/自社仕様の判断に必要になった時。",
+    "after_task": {
+      "task_state": "blocked",
+      "priority": 1,
+      "required_method": "vendor_document",
+      "question": "複数拠点と勤怠含有のカード・FAQ差を確認",
+      "evidence_needed": "地域・支払周期付き正式プラン",
+      "owner": "外部確認待ち / 担当未定",
+      "next_review_on": null,
+      "block_reason": "公開資料の限定確認を終了。対象プラン/版を明示した販売元の正式回答/現行契約仕様が未取得。再開：正式回答/現行契約又は対象試験の結果が得られた時。",
+      "last_checked_on": "2026-10-13"
+    },
+    "factual_state_changed": false,
+    "original_requirements_deleted": false,
+    "acceptance_review": [
+      {
+        "atom": "機能を使えるプラン/モジュールの公開対応",
+        "state": "partial_or_unconfirmed",
+        "observation_ids": []
+      },
+      {
+        "atom": "追加契約/地域/βの留保",
+        "state": "partial_or_unconfirmed",
+        "observation_ids": []
+      }
+    ]
+  },
+  {
+    "review_id": "Q01-TASK-B02-006",
+    "task_id": "TASK-B02-006",
+    "offering_id": "OF-US20",
+    "product": "Planday",
+    "criterion_id": "P01",
+    "original_task": {
+      "task_state": "in_progress",
+      "priority": 1,
+      "required_method": "vendor_quote",
+      "question": "自動作成を含むProの価格・最低人数を確認",
+      "evidence_needed": "正式料金・見積",
+      "owner": "未割当",
+      "next_review_on": null,
+      "block_reason": null,
+      "last_checked_on": "2026-10-11"
+    },
+    "original_definition": "固定、人数従量、施設課金、計算従量、買切り、見積制を区別し、価格非公開を0円としない。",
+    "original_required_evidence": "公式料金・個別見積・契約書",
+    "public_question": "公開資料に明記された「料金方式・公開範囲」の範囲・対象条件を整理し、未記載/相違/実契約/実測を分ける。",
+    "public_acceptance_atoms": [
+      "固定/人数/施設/計算/買切り/見積の公開方式",
+      "通貨/税/時点/対象プランの条件"
+    ],
+    "policy_id": "Q01-public-review-v1",
+    "individually_reviewed": true,
+    "public_phase": "bounded_search_ended_partial",
+    "primary_queue": "external_confirmation_wait",
+    "reason": "個別に保存資料を照合。Planday Proは見積、最低料金未確定。新β自動作成はPlus/Pro一部地域・顧客にも提供され、旧Pro専用機能と区別が必要。",
+    "evidence_observation_ids": [
+      "B02-O00252",
+      "B03-20261011-OBS0057"
+    ],
+    "source_urls": [
+      "https://www.planday.com/pricing"
+    ],
+    "completion_evidence_ids": [],
+    "remaining_work": [
+      "条件を指定した正式見積/注文書",
+      "ページ見出しの最低価格はProの確定額ではない。 / 公開資料に記載された範囲の確認。設問全体の仕様確定や実動作の検証は未実施。"
+    ],
+    "external_state": "awaiting_external_input",
+    "resume_condition": "対象仕様/料金/契約の更新又は正式回答を得た時、あるいは導入/自社仕様の判断に必要になった時。",
+    "after_task": {
+      "task_state": "blocked",
+      "priority": 1,
+      "required_method": "vendor_quote",
+      "question": "自動作成を含むProの価格・最低人数を確認",
+      "evidence_needed": "正式料金・見積",
+      "owner": "外部確認待ち / 担当未定",
+      "next_review_on": null,
+      "block_reason": "公開資料の限定確認を終了。条件を指定した正式見積/注文書が未取得。再開：正式回答/現行契約又は対象試験の結果が得られた時。",
+      "last_checked_on": "2026-10-13"
+    },
+    "factual_state_changed": false,
+    "original_requirements_deleted": false,
+    "acceptance_review": [
+      {
+        "atom": "固定/人数/施設/計算/買切り/見積の公開方式",
+        "state": "partial_or_unconfirmed",
+        "observation_ids": []
+      },
+      {
+        "atom": "通貨/税/時点/対象プランの条件",
+        "state": "partial_or_unconfirmed",
+        "observation_ids": []
+      }
+    ]
+  },
+  {
+    "review_id": "Q01-TASK-B02-007",
+    "task_id": "TASK-B02-007",
+    "offering_id": "OF-JP08",
+    "product": "シンクロシフト",
+    "criterion_id": "N02",
+    "original_task": {
+      "task_state": "in_progress",
+      "priority": 1,
+      "required_method": "demo",
+      "question": "管理者の認証解除の可否を確認",
+      "evidence_needed": "権限別デモ・セキュリティ仕様",
+      "owner": "未割当",
+      "next_review_on": null,
+      "block_reason": null,
+      "last_checked_on": "2026-10-12"
+    },
+    "original_definition": "提供方式、必須化、管理者保護、プラン制限を確認する。",
+    "original_required_evidence": "約款・セキュリティ文書・第三者保証・権限試験",
+    "public_question": "公開資料に明記された「SSO・多要素認証」の範囲・対象条件を整理し、未記載/相違/実契約/実測を分ける。",
+    "public_acceptance_atoms": [
+      "SSO・多要素認証について原仕様に明記された範囲",
+      "対象条件・時点・未記載を分け、実契約/実測は別段階"
+    ],
+    "policy_id": "Q01-public-review-v1",
+    "individually_reviewed": true,
+    "public_phase": "bounded_search_ended_disputed",
+    "primary_queue": "external_confirmation_wait",
+    "reason": "個別に保存資料を照合。システム管理者必須化と30日間の信頼済みデバイスを確認。PC記事のメール削除説明とアプリの解除操作の権限適用は未確定。権限別の解除可否と復旧を実画面で照合する。",
+    "evidence_observation_ids": [
+      "B02-O00007",
+      "B06-20261011-OBS0013",
+      "B06-20261011-OBS0014",
+      "B06-20261011-OBS0015",
+      "B06-20261011-OBS0016",
+      "B06-20261011-OBS0017",
+      "B08-20261012-OBS0006",
+      "B08-20261012-OBS0007",
+      "B08-20261012-OBS0008",
+      "B08-20261012-OBS0009"
+    ],
+    "source_urls": [
+      "https://support.synchroshift.jp/portal/ja/kb/articles/1008",
+      "https://support.synchroshift.jp/portal/ja/kb/articles/1009"
+    ],
+    "completion_evidence_ids": [],
+    "remaining_work": [
+      "役割別の実機デモと権限制御の結果",
+      "同頁の解除手順が必須対象者に適用されるか未確認。 / 公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。 / 公開文書に記載された範囲の確認。実動作・独立性能試験・個別契約への適用は未検証。 / 公開文書に記載された範囲の確認。実動作・独立性能試験・個別契約への適用は未検証。管理者が期間や登録可否を強制変更できるかは未確認。 / 公開文書に記載された範囲の確認。実動作・独立性能試験・個別契約への適用は未検証。メール削除やアプリ操作を実際に行えることを確認したものではない。"
+    ],
+    "external_state": "awaiting_external_input",
+    "resume_condition": "対象仕様/料金/契約の更新又は正式回答を得た時、あるいは導入/自社仕様の判断に必要になった時。",
+    "after_task": {
+      "task_state": "blocked",
+      "priority": 1,
+      "required_method": "demo",
+      "question": "管理者の認証解除の可否を確認",
+      "evidence_needed": "権限別デモ・セキュリティ仕様",
+      "owner": "外部確認待ち / 担当未定",
+      "next_review_on": null,
+      "block_reason": "公開資料の限定確認を終了。役割別の実機デモと権限制御の結果が未取得。再開：正式回答/現行契約又は対象試験の結果が得られた時。",
+      "last_checked_on": "2026-10-13"
+    },
+    "factual_state_changed": false,
+    "original_requirements_deleted": false,
+    "acceptance_review": [
+      {
+        "atom": "SSO・多要素認証について原仕様に明記された範囲",
+        "state": "partial_or_unconfirmed",
+        "observation_ids": []
+      },
+      {
+        "atom": "対象条件・時点・未記載を分け、実契約/実測は別段階",
+        "state": "partial_or_unconfirmed",
+        "observation_ids": []
+      }
+    ]
+  },
+  {
+    "review_id": "Q01-TASK-B02-008",
+    "task_id": "TASK-B02-008",
+    "offering_id": "OF-JP08",
+    "product": "シンクロシフト",
+    "criterion_id": "H07",
+    "original_task": {
+      "task_state": "in_progress",
+      "priority": 1,
+      "required_method": "demo",
+      "question": "修正後の再公開・通知・確認履歴を確認",
+      "evidence_needed": "職員アプリと管理画面",
+      "owner": "未割当",
+      "next_review_on": null,
+      "block_reason": null,
+      "last_checked_on": "2026-10-12"
+    },
+    "original_definition": "草案と公開版を分け、影響を受ける職員へ変更内容を通知し、確認状況を残すかを確認する。",
+    "original_required_evidence": "既存シフトを使った変更デモ・承認仕様",
+    "public_question": "公開資料に明記された「承認・公開・差分通知」の範囲・対象条件を整理し、未記載/相違/実契約/実測を分ける。",
+    "public_acceptance_atoms": [
+      "承認・公開・差分通知について原仕様に明記された範囲",
+      "対象条件・時点・未記載を分け、実契約/実測は別段階"
+    ],
+    "policy_id": "Q01-public-review-v1",
+    "individually_reviewed": true,
+    "public_phase": "bounded_search_ended_partial",
+    "primary_queue": "external_confirmation_wait",
+    "reason": "個別に保存資料を照合。再展開が必要なこと、チーム・兼務先の選択を公式本文で確認。差分通知・既読・確認履歴は未確認で、修正→再公開→職員通知のデモが引き続き必要。",
+    "evidence_observation_ids": [
+      "B02-O00005",
+      "B08-20261012-OBS0001",
+      "B08-20261012-OBS0002",
+      "B08-20261012-OBS0003"
+    ],
+    "source_urls": [
+      "https://support.synchroshift.jp/portal/ja/kb/articles/1076"
+    ],
+    "completion_evidence_ids": [],
+    "remaining_work": [
+      "役割別の実機デモと権限制御の結果",
+      "修正と公開版の同期が自動ではない。通知確認の全手順は未検証。 / 公開文書に記載された範囲の確認。実動作・独立性能試験・個別契約への適用は未検証。 / 公開文書に記載された範囲の確認。実動作・独立性能試験・個別契約への適用は未検証。確認できない部分を非対応と断定しない。"
+    ],
+    "external_state": "awaiting_external_input",
+    "resume_condition": "対象仕様/料金/契約の更新又は正式回答を得た時、あるいは導入/自社仕様の判断に必要になった時。",
+    "after_task": {
+      "task_state": "blocked",
+      "priority": 1,
+      "required_method": "demo",
+      "question": "修正後の再公開・通知・確認履歴を確認",
+      "evidence_needed": "職員アプリと管理画面",
+      "owner": "外部確認待ち / 担当未定",
+      "next_review_on": null,
+      "block_reason": "公開資料の限定確認を終了。役割別の実機デモと権限制御の結果が未取得。再開：正式回答/現行契約又は対象試験の結果が得られた時。",
+      "last_checked_on": "2026-10-13"
+    },
+    "factual_state_changed": false,
+    "original_requirements_deleted": false,
+    "acceptance_review": [
+      {
+        "atom": "承認・公開・差分通知について原仕様に明記された範囲",
+        "state": "partial_or_unconfirmed",
+        "observation_ids": []
+      },
+      {
+        "atom": "対象条件・時点・未記載を分け、実契約/実測は別段階",
+        "state": "partial_or_unconfirmed",
+        "observation_ids": []
+      }
+    ]
+  },
+  {
+    "review_id": "Q01-TASK-B02-009",
+    "task_id": "TASK-B02-009",
+    "offering_id": "OF-JP04",
+    "product": "Nafty",
+    "criterion_id": "M08",
+    "original_task": {
+      "task_state": "in_progress",
+      "priority": 1,
+      "required_method": "vendor_document",
+      "question": "施設解約時の全設定・履歴搬出と削除権限を確認",
+      "evidence_needed": "規約・出力仕様",
+      "owner": "未割当",
+      "next_review_on": null,
+      "block_reason": null,
+      "last_checked_on": "2026-10-11"
+    },
+    "original_definition": "勤務表だけでなく希望、ルール、設定、履歴を機械可読で持ち出せるか、費用と期限を確認する。",
+    "original_required_evidence": "入出力仕様・API文書・実接続・契約",
+    "public_question": "公開資料に明記された「解約時の全量出力」の範囲・対象条件を整理し、未記載/相違/実契約/実測を分ける。",
+    "public_acceptance_atoms": [
+      "勤務表/希望/規則/設定/履歴の公開出力範囲",
+      "機械可読形式・期限・費用の公表範囲"
+    ],
+    "policy_id": "Q01-public-review-v1",
+    "individually_reviewed": true,
+    "public_phase": "bounded_search_ended_unknown",
+    "primary_queue": "external_confirmation_wait",
+    "reason": "個別に保存資料を照合。Naftyの規約・通常出力・職員退会後保持を確認。後者はM08からN06/M02へ分類訂正。施設解約の全設定・監査履歴搬出はなお未開示。",
+    "evidence_observation_ids": [
+      "B02-O00015",
+      "B03-20261011-OBS0223",
+      "B06-20261011-OBS0009"
+    ],
+    "source_urls": [
+      "https://nafty.app/",
+      "https://nafty.app/privacy/",
+      "https://nafty.app/terms/"
+    ],
+    "completion_evidence_ids": [],
+    "remaining_work": [
+      "対象プラン/版を明示した販売元の正式回答/現行契約仕様",
+      "公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。"
+    ],
+    "external_state": "awaiting_external_input",
+    "resume_condition": "対象仕様/料金/契約の更新又は正式回答を得た時、あるいは導入/自社仕様の判断に必要になった時。",
+    "after_task": {
+      "task_state": "blocked",
+      "priority": 1,
+      "required_method": "vendor_document",
+      "question": "施設解約時の全設定・履歴搬出と削除権限を確認",
+      "evidence_needed": "規約・出力仕様",
+      "owner": "外部確認待ち / 担当未定",
+      "next_review_on": null,
+      "block_reason": "公開資料の限定確認を終了。対象プラン/版を明示した販売元の正式回答/現行契約仕様が未取得。再開：正式回答/現行契約又は対象試験の結果が得られた時。",
+      "last_checked_on": "2026-10-13"
+    },
+    "factual_state_changed": false,
+    "original_requirements_deleted": false,
+    "acceptance_review": [
+      {
+        "atom": "勤務表/希望/規則/設定/履歴の公開出力範囲",
+        "state": "partial_or_unconfirmed",
+        "observation_ids": []
+      },
+      {
+        "atom": "機械可読形式・期限・費用の公表範囲",
+        "state": "partial_or_unconfirmed",
+        "observation_ids": []
+      }
+    ]
+  },
+  {
+    "review_id": "Q01-TASK-B02-010",
+    "task_id": "TASK-B02-010",
+    "offering_id": "OF-JP22",
+    "product": "セルヴィスEX",
+    "criterion_id": "F01",
+    "original_task": {
+      "task_state": "in_progress",
+      "priority": 1,
+      "required_method": "demo",
+      "question": "違反許容の対象と法令必須条件を区別できるか確認",
+      "evidence_needed": "具体的勤務ルールとデモ",
+      "owner": "未割当",
+      "next_review_on": null,
+      "block_reason": null,
+      "last_checked_on": "2026-10-12"
+    },
+    "original_definition": "必須・希望の設定権限、強制力、例外承認を確認する。違反をスコアだけで相殺しない。",
+    "original_required_evidence": "設定仕様・解釈プレビュー・失敗例・デモ",
+    "public_question": "公開資料に明記された「必須条件と希望条件」の範囲・対象条件を整理し、未記載/相違/実契約/実測を分ける。",
+    "public_acceptance_atoms": [
+      "必須/希望/警告の公開区別",
+      "強制力・設定権限・例外の記載範囲"
+    ],
+    "policy_id": "Q01-public-review-v1",
+    "individually_reviewed": true,
+    "public_phase": "bounded_search_ended_partial",
+    "primary_queue": "external_confirmation_wait",
+    "reason": "個別に保存資料を照合。公式比較表の「優先して解消する絶対条件」とFAQの違反n回許容を照合。名称からhard制約の強制・法定条件の緩和禁止を確定せず、デモ課題を維持する。",
+    "evidence_observation_ids": [
+      "B04-20261011-OBS0141",
+      "B15-20261012-OBS0019",
+      "B15-20261012-OBS0020"
+    ],
+    "source_urls": [
+      "https://www.sbn.co.jp/servis/faq/",
+      "https://www.sbn.co.jp/servis/systems/"
+    ],
+    "completion_evidence_ids": [],
+    "remaining_work": [
+      "役割別の実機デモと権限制御の結果",
+      "法定必須条件への誤適用防止は未確認。 / 名称だけで違反不可の数学的hard制約と判断しない。違反許容との関係と法令必須条件への設定権限は未確認。 / 既存の違反許容の確認を保持。絶対条件との優先順位、法令必須条件の緩和禁止はデモ・資料確認が残る。"
+    ],
+    "external_state": "awaiting_external_input",
+    "resume_condition": "対象仕様/料金/契約の更新又は正式回答を得た時、あるいは導入/自社仕様の判断に必要になった時。",
+    "after_task": {
+      "task_state": "blocked",
+      "priority": 1,
+      "required_method": "demo",
+      "question": "違反許容の対象と法令必須条件を区別できるか確認",
+      "evidence_needed": "具体的勤務ルールとデモ",
+      "owner": "外部確認待ち / 担当未定",
+      "next_review_on": null,
+      "block_reason": "公開資料の限定確認を終了。役割別の実機デモと権限制御の結果が未取得。再開：正式回答/現行契約又は対象試験の結果が得られた時。",
+      "last_checked_on": "2026-10-13"
+    },
+    "factual_state_changed": false,
+    "original_requirements_deleted": false,
+    "acceptance_review": [
+      {
+        "atom": "必須/希望/警告の公開区別",
+        "state": "partial_or_unconfirmed",
+        "observation_ids": []
+      },
+      {
+        "atom": "強制力・設定権限・例外の記載範囲",
+        "state": "partial_or_unconfirmed",
+        "observation_ids": []
+      }
+    ]
+  },
+  {
+    "review_id": "Q01-TASK-B02-011",
+    "task_id": "TASK-B02-011",
+    "offering_id": "OF-JP20",
+    "product": "エピタルHR",
+    "criterion_id": "J05",
+    "original_task": {
+      "task_state": "in_progress",
+      "priority": 1,
+      "required_method": "vendor_document",
+      "question": "様式9の対象版・計算根拠を照合",
+      "evidence_needed": "現行版の算式・行政資料",
+      "owner": "未割当",
+      "next_review_on": null,
+      "block_reason": null,
+      "last_checked_on": "2026-10-11"
+    },
+    "original_definition": "計算対象職員・勤務時間・休暇・除外条件を追跡できるか。予定と実績の別を記録する。",
+    "original_required_evidence": "行政一次資料・専門団体・更新履歴・算式",
+    "public_question": "公開資料に明記された「様式9等の計算根拠」の範囲・対象条件を整理し、未記載/相違/実契約/実測を分ける。",
+    "public_acceptance_atoms": [
+      "様式9等の計算根拠について原仕様に明記された範囲",
+      "対象条件・時点・未記載を分け、実契約/実測は別段階"
+    ],
+    "policy_id": "Q01-public-review-v1",
+    "individually_reviewed": true,
+    "public_phase": "bounded_search_ended_partial",
+    "primary_queue": "external_confirmation_wait",
+    "reason": "個別に保存資料を照合。エピタルHR FAQの改定追従説明と規約を再確認。令和8年度の除外・按分・端数の実算式は未公開。",
+    "evidence_observation_ids": [
+      "B02-O00034",
+      "B04-20261011-OBS0070",
+      "B06-20261011-OBS0078"
+    ],
+    "source_urls": [
+      "https://epigno.jp/epitalhr/",
+      "https://epigno.jp/epitalhr/faq/"
+    ],
+    "completion_evidence_ids": [],
+    "remaining_work": [
+      "対象プラン/版を明示した販売元の正式回答/現行契約仕様",
+      "予定と実績の取り扱いの全条件は未確認。 / 対象時間の定義・算式・現行行政版との照合は未実施。 / 公開仕様の記載確認。対象契約・実動作・医療福祉の制度適合は未検証。"
+    ],
+    "external_state": "awaiting_external_input",
+    "resume_condition": "対象仕様/料金/契約の更新又は正式回答を得た時、あるいは導入/自社仕様の判断に必要になった時。",
+    "after_task": {
+      "task_state": "blocked",
+      "priority": 1,
+      "required_method": "vendor_document",
+      "question": "様式9の対象版・計算根拠を照合",
+      "evidence_needed": "現行版の算式・行政資料",
+      "owner": "外部確認待ち / 担当未定",
+      "next_review_on": null,
+      "block_reason": "公開資料の限定確認を終了。対象プラン/版を明示した販売元の正式回答/現行契約仕様が未取得。再開：正式回答/現行契約又は対象試験の結果が得られた時。",
+      "last_checked_on": "2026-10-13"
+    },
+    "factual_state_changed": false,
+    "original_requirements_deleted": false,
+    "acceptance_review": [
+      {
+        "atom": "様式9等の計算根拠について原仕様に明記された範囲",
+        "state": "partial_or_unconfirmed",
+        "observation_ids": []
+      },
+      {
+        "atom": "対象条件・時点・未記載を分け、実契約/実測は別段階",
+        "state": "partial_or_unconfirmed",
+        "observation_ids": []
+      }
+    ]
+  },
+  {
+    "review_id": "Q01-TASK-B02-012",
+    "task_id": "TASK-B02-012",
+    "offering_id": "OF-US15",
+    "product": "Clairvia",
+    "criterion_id": "A03",
+    "original_task": {
+      "task_state": "in_progress",
+      "priority": 1,
+      "required_method": "vendor_document",
+      "question": "Clairviaの現行販売版・契約提供者を確認",
+      "evidence_needed": "Oracle又は正式販売元の現行資料",
+      "owner": "未割当",
+      "next_review_on": null,
+      "block_reason": null,
+      "last_checked_on": "2026-10-12"
+    },
+    "original_definition": "商用提供中、試験提供、提供予定、新規受付終了、終了を区別し、対象日を記録する。",
+    "original_required_evidence": "公式会社情報・製品仕様・提供終了告知",
+    "public_question": "公開資料に明記された「提供・販売状態」の範囲・対象条件を整理し、未記載/相違/実契約/実測を分ける。",
+    "public_acceptance_atoms": [
+      "公式に案内される提供中/予定/終了の状態",
+      "時点・地域・新規受付への留保"
+    ],
+    "policy_id": "Q01-public-review-v1",
+    "individually_reviewed": true,
+    "public_phase": "bounded_search_ended_partial",
+    "primary_queue": "external_confirmation_wait",
+    "reason": "個別に保存資料を照合。Oracle公式の関連採用ページはWeb本文0行、ブラウザでは求人期限切れ。検索抜粋の名称は新しい機能根拠に採用しなかった。求人終了をClairviaの販売終了と扱わない。現行販売版・契約主体の公式資料が引き続き必要。",
+    "evidence_observation_ids": [
+      "B02-O00208",
+      "B03-20261011-OBS0218",
+      "B07-20261011-OBS0035"
+    ],
+    "source_urls": [
+      "https://docs.oracle.com/cd/G48964_01/hcm92pbr54/eng/hcm/hhaf/UnderstandingIntegrationwithClairvia-49765f.html",
+      "https://docs.oracle.com/cd/G48964_01/hcm92pbr54/eng/hcm/hhaf/UnderstandingIntegrationwithClairvia-49765f.html?pli=ul_d400e544_hhaf",
+      "https://hi.northernlighthealth.org/Flyers/Non-Providers/Hospital-Nurse/Clairvia.aspx"
+    ],
+    "completion_evidence_ids": [],
+    "remaining_work": [
+      "対象プラン/版を明示した販売元の正式回答/現行契約仕様",
+      "掲載された範囲の確認。設問の全要件・契約範囲・実動作は未検証。 / 確認対象はPeopleSoft HCM 9.2の連携仕様。Clairviaの現行販売版・契約提供範囲の証拠にはしない。 / 公開文書の確認。機能の実動作・個別契約・性能は未検証。"
+    ],
+    "external_state": "awaiting_external_input",
+    "resume_condition": "対象仕様/料金/契約の更新又は正式回答を得た時、あるいは導入/自社仕様の判断に必要になった時。",
+    "after_task": {
+      "task_state": "blocked",
+      "priority": 1,
+      "required_method": "vendor_document",
+      "question": "Clairviaの現行販売版・契約提供者を確認",
+      "evidence_needed": "Oracle又は正式販売元の現行資料",
+      "owner": "外部確認待ち / 担当未定",
+      "next_review_on": null,
+      "block_reason": "公開資料の限定確認を終了。対象プラン/版を明示した販売元の正式回答/現行契約仕様が未取得。再開：正式回答/現行契約又は対象試験の結果が得られた時。",
+      "last_checked_on": "2026-10-13"
+    },
+    "factual_state_changed": false,
+    "original_requirements_deleted": false,
+    "acceptance_review": [
+      {
+        "atom": "公式に案内される提供中/予定/終了の状態",
+        "state": "partial_or_unconfirmed",
+        "observation_ids": []
+      },
+      {
+        "atom": "時点・地域・新規受付への留保",
+        "state": "partial_or_unconfirmed",
+        "observation_ids": []
+      }
+    ]
+  },
+  {
+    "review_id": "Q01-TASK-B02-013",
+    "task_id": "TASK-B02-013",
+    "offering_id": "OF-US13",
+    "product": "Lantum In-Genius Rota",
+    "criterion_id": "Q04",
+    "original_task": {
+      "task_state": "in_progress",
+      "priority": 1,
+      "required_method": "independent_source",
+      "question": "医師向け導入事例の期間・対象費用と希望分母を確認",
+      "evidence_needed": "利用医療機関側の一次データ",
+      "owner": "未割当",
+      "next_review_on": null,
+      "block_reason": null,
+      "last_checked_on": "2026-10-12"
+    },
+    "original_definition": "施設種別、職員数、部署数、勤務体系、導入期間、本番か実証か、有償か不明かを記録する。",
+    "original_required_evidence": "利用施設の一次発信・導入事例・許可された聞き取り",
+    "public_question": "公開資料に明記された「導入事例の条件」の範囲・対象条件を整理し、未記載/相違/実契約/実測を分ける。",
+    "public_acceptance_atoms": [
+      "事例の施設/人数/部署/勤務体系/期間",
+      "本番/実証/有償と効果の分母の記載"
+    ],
+    "policy_id": "Q01-public-review-v1",
+    "individually_reviewed": true,
+    "public_phase": "bounded_search_ended_partial",
+    "primary_queue": "external_confirmation_wait",
+    "reason": "個別に保存資料を照合。Whittington Health自身の試行報告を追加。小児科7月・3施設2 on-call拠点・休暇希望平均90%・臨時職員費用65,000削減の記載を確認。試行年・対象人数・希望分母・通貨・料金控除は未確定で、販売元の別病院・別期間の事例と合算しない。",
+    "evidence_observation_ids": [
+      "B02-O00190",
+      "B04-20261011-OBS0248",
+      "B08-20261012-OBS0032",
+      "B08-20261012-OBS0035"
+    ],
+    "source_urls": [
+      "https://www.lantum.com/case-studies-sc",
+      "https://www.whittington.nhs.uk/default.asp?c=45969"
+    ],
+    "completion_evidence_ids": [],
+    "remaining_work": [
+      "対象利用施設等の一次資料と評価分母",
+      "提供者掲載の導入前後事例。無作為比較ではない。 / 提供者が掲載した事例。顧客自身の原資料、評価分母、効果の独立検証は未確認。 / 公開文書に記載された範囲の確認。実動作・独立性能試験・個別契約への適用は未検証。導入病院の自己報告で、比較サイトによる独立試験ではない。更新日は2025-05-14だが、試行したJulyの年・医師人数・希望件数分母は本文にない。"
+    ],
+    "external_state": "awaiting_external_input",
+    "resume_condition": "対象仕様/料金/契約の更新又は正式回答を得た時、あるいは導入/自社仕様の判断に必要になった時。",
+    "after_task": {
+      "task_state": "blocked",
+      "priority": 1,
+      "required_method": "independent_source",
+      "question": "医師向け導入事例の期間・対象費用と希望分母を確認",
+      "evidence_needed": "利用医療機関側の一次データ",
+      "owner": "外部確認待ち / 担当未定",
+      "next_review_on": null,
+      "block_reason": "公開資料の限定確認を終了。対象利用施設等の一次資料と評価分母が未取得。再開：正式回答/現行契約又は対象試験の結果が得られた時。",
+      "last_checked_on": "2026-10-13"
+    },
+    "factual_state_changed": false,
+    "original_requirements_deleted": false,
+    "acceptance_review": [
+      {
+        "atom": "事例の施設/人数/部署/勤務体系/期間",
+        "state": "partial_or_unconfirmed",
+        "observation_ids": []
+      },
+      {
+        "atom": "本番/実証/有償と効果の分母の記載",
+        "state": "partial_or_unconfirmed",
+        "observation_ids": []
+      }
+    ]
+  },
+  {
+    "review_id": "Q01-TASK-B02-015",
+    "task_id": "TASK-B02-015",
+    "offering_id": "OF-JP27",
+    "product": "Airシフト",
+    "criterion_id": "B01",
+    "original_task": {
+      "task_state": "in_progress",
+      "priority": 1,
+      "required_method": "vendor_document",
+      "question": "手動調整と自動作成の機能境界を確認",
+      "evidence_needed": "現行仕様",
+      "owner": "未割当",
+      "next_review_on": null,
+      "block_reason": null,
+      "last_checked_on": "2026-10-12"
+    },
+    "original_definition": "希望・必要人数・ルールから職員を勤務枠へ割り当てる。共有、転記、固定パターン複製だけは区別する。",
+    "original_required_evidence": "機能仕様・プラン比較・利用規約・デモ",
+    "public_question": "公開資料に明記された「勤務表の自動割当」の範囲・対象条件を整理し、未記載/相違/実契約/実測を分ける。",
+    "public_acceptance_atoms": [
+      "勤務表そのものの自動割当の記載",
+      "希望/人数/規則から割当する説明と転記/複製の区別"
+    ],
+    "policy_id": "Q01-public-review-v1",
+    "individually_reviewed": true,
+    "public_phase": "bounded_search_ended_unknown",
+    "primary_queue": "external_confirmation_wait",
+    "reason": "個別に保存資料を照合。公式ヘルプで希望の自動下書き化、固定パターンの下書き、手動作成・依頼・確定を分離。B07の業務割当観測をB04へ訂正。勤務表全体の自動最適化の有無は未確定のまま。",
+    "evidence_observation_ids": [
+      "B02-O00136",
+      "B07-20261011-OBS0024",
+      "B07-20261011-OBS0029",
+      "B08-20261012-OBS0019"
+    ],
+    "source_urls": [
+      "https://airregi.jp/shift/function/",
+      "https://airregi.jp/shift/function/management/",
+      "https://airregi.jp/shift/function/workschedule/",
+      "https://faq.airshift.jp/hc/ja/articles/50609646888857-%E5%B8%8C%E6%9C%9B%E3%82%B7%E3%83%95%E3%83%88%E3%82%92%E8%87%AA%E5%8B%95%E3%81%A7%E4%B8%8B%E6%9B%B8%E3%81%8D%E3%82%B7%E3%83%95%E3%83%88%E3%81%AB%E3%81%99%E3%82%8B-%E3%81%97%E3%81%AA%E3%81%84"
+    ],
+    "completion_evidence_ids": [],
+    "remaining_work": [
+      "対象プラン/版を明示した販売元の正式回答/現行契約仕様",
+      "掲載された範囲の確認。設問の全要件・契約範囲・実動作は未検証。 / 公開文書の確認。機能の実動作・個別契約・性能は未検証。 / 公開文書に記載された範囲の確認。実動作・独立性能試験・個別契約への適用は未検証。未記載だけで機能が存在しないとは断定しない。"
+    ],
+    "external_state": "awaiting_external_input",
+    "resume_condition": "対象仕様/料金/契約の更新又は正式回答を得た時、あるいは導入/自社仕様の判断に必要になった時。",
+    "after_task": {
+      "task_state": "blocked",
+      "priority": 1,
+      "required_method": "vendor_document",
+      "question": "手動調整と自動作成の機能境界を確認",
+      "evidence_needed": "現行仕様",
+      "owner": "外部確認待ち / 担当未定",
+      "next_review_on": null,
+      "block_reason": "公開資料の限定確認を終了。対象プラン/版を明示した販売元の正式回答/現行契約仕様が未取得。再開：正式回答/現行契約又は対象試験の結果が得られた時。",
+      "last_checked_on": "2026-10-13"
+    },
+    "factual_state_changed": false,
+    "original_requirements_deleted": false,
+    "acceptance_review": [
+      {
+        "atom": "勤務表そのものの自動割当の記載",
+        "state": "partial_or_unconfirmed",
+        "observation_ids": []
+      },
+      {
+        "atom": "希望/人数/規則から割当する説明と転記/複製の区別",
+        "state": "partial_or_unconfirmed",
+        "observation_ids": []
+      }
+    ]
+  },
+  {
+    "review_id": "Q01-TASK-RES00051",
+    "task_id": "TASK-RES00051",
+    "offering_id": "OF-JP02",
+    "product": "Optamo for Shift",
+    "criterion_id": "A06",
+    "original_task": {
+      "task_state": "not_started",
+      "priority": 3,
+      "required_method": "unknown",
+      "question": "対象規模：定義の未確認部分・現行条件を確認する。",
+      "evidence_needed": "公式会社情報・製品仕様・提供終了告知",
+      "owner": "未割当",
+      "next_review_on": null,
+      "block_reason": null,
+      "last_checked_on": null
+    },
+    "original_definition": "登録人数上限と同時最適化人数を分け、部署・施設数・計画期間を条件付き数値で記録する。",
+    "original_required_evidence": "公式会社情報・製品仕様・提供終了告知",
+    "public_question": "公開資料に明記された「対象規模」の範囲・対象条件を整理し、未記載/相違/実契約/実測を分ける。",
+    "public_acceptance_atoms": [
+      "登録上限と同時計算規模の別",
+      "規模の数値に付く条件/未公表の区別"
+    ],
+    "policy_id": "Q01-public-review-v1",
+    "individually_reviewed": true,
+    "public_phase": "bounded_search_ended_partial",
+    "primary_queue": "external_confirmation_wait",
+    "reason": "個別に保存資料を照合。職員登録上限は無制限と掲載。同時計算規模の実測値ではない。",
+    "evidence_observation_ids": [
+      "B01-O00021"
+    ],
+    "source_urls": [
+      "https://www.optamo.jp/shift/"
+    ],
+    "completion_evidence_ids": [],
+    "remaining_work": [
+      "対象提供単位の現行正式仕様/契約適用の回答",
+      "公式記載の範囲のみ。設問の全要件・実動作・対象プランの詳細は未検証。 比較表基準日2024-08。現行未確定。"
+    ],
+    "external_state": "awaiting_external_input",
+    "resume_condition": "対象仕様/料金/契約の更新又は正式回答を得た時、あるいは導入/自社仕様の判断に必要になった時。",
+    "after_task": {
+      "task_state": "blocked",
+      "priority": 3,
+      "required_method": "vendor_document",
+      "question": "対象規模：定義の未確認部分・現行条件を確認する。",
+      "evidence_needed": "公式会社情報・製品仕様・提供終了告知",
+      "owner": "外部確認待ち / 担当未定",
+      "next_review_on": null,
+      "block_reason": "公開資料の限定確認を終了。対象提供単位の現行正式仕様/契約適用の回答が未取得。再開：正式回答/現行契約又は対象試験の結果が得られた時。",
+      "last_checked_on": "2026-10-13"
+    },
+    "factual_state_changed": false,
+    "original_requirements_deleted": false,
+    "acceptance_review": [
+      {
+        "atom": "登録上限と同時計算規模の別",
+        "state": "partial_or_unconfirmed",
+        "observation_ids": []
+      },
+      {
+        "atom": "規模の数値に付く条件/未公表の区別",
+        "state": "partial_or_unconfirmed",
+        "observation_ids": []
+      }
+    ]
+  },
+  {
+    "review_id": "Q01-TASK-RES00054",
+    "task_id": "TASK-RES00054",
+    "offering_id": "OF-JP02",
+    "product": "Optamo for Shift",
+    "criterion_id": "B04",
+    "original_task": {
+      "task_state": "not_started",
+      "priority": 3,
+      "required_method": "unknown",
+      "question": "勤務内の業務・担当割当：定義の未確認部分・現行条件を確認する。",
+      "evidence_needed": "機能仕様・プラン比較・利用規約・デモ",
+      "owner": "未割当",
+      "next_review_on": null,
+      "block_reason": null,
+      "last_checked_on": null
+    },
+    "original_definition": "勤務表と、担当患者・係・処置・業務時刻の割当を別機能として記録する。別製品は紐付け直す。",
+    "original_required_evidence": "機能仕様・プラン比較・利用規約・デモ",
+    "public_question": "公開資料に明記された「勤務内の業務・担当割当」の範囲・対象条件を整理し、未記載/相違/実契約/実測を分ける。",
+    "public_acceptance_atoms": [
+      "勤務内の業務・担当割当について原仕様に明記された範囲",
+      "対象条件・時点・未記載を分け、実契約/実測は別段階"
+    ],
+    "policy_id": "Q01-public-review-v1",
+    "individually_reviewed": true,
+    "public_phase": "bounded_search_ended_partial",
+    "primary_queue": "external_confirmation_wait",
+    "reason": "個別に保存資料を照合。勤務シフト生成から日別タスクへ自動展開する機能はfor Shiftでは非対応。 掲載比較表の基準日は2024年8月であり、現行仕様の最終確認が必要。",
+    "evidence_observation_ids": [
+      "B01-O00034"
+    ],
+    "source_urls": [
+      "https://www.optamo.jp/shift/"
+    ],
+    "completion_evidence_ids": [],
+    "remaining_work": [
+      "対象提供単位の現行正式仕様/契約適用の回答",
+      "公式ページ掲載表（2024年8月基準）の判定。現行版の契約・動作未確認。 比較表基準日2024-08。現行未確定。"
+    ],
+    "external_state": "awaiting_external_input",
+    "resume_condition": "対象仕様/料金/契約の更新又は正式回答を得た時、あるいは導入/自社仕様の判断に必要になった時。",
+    "after_task": {
+      "task_state": "blocked",
+      "priority": 3,
+      "required_method": "vendor_document",
+      "question": "勤務内の業務・担当割当：定義の未確認部分・現行条件を確認する。",
+      "evidence_needed": "機能仕様・プラン比較・利用規約・デモ",
+      "owner": "外部確認待ち / 担当未定",
+      "next_review_on": null,
+      "block_reason": "公開資料の限定確認を終了。対象提供単位の現行正式仕様/契約適用の回答が未取得。再開：正式回答/現行契約又は対象試験の結果が得られた時。",
+      "last_checked_on": "2026-10-13"
+    },
+    "factual_state_changed": false,
+    "original_requirements_deleted": false,
+    "acceptance_review": [
+      {
+        "atom": "勤務内の業務・担当割当について原仕様に明記された範囲",
+        "state": "partial_or_unconfirmed",
+        "observation_ids": []
+      },
+      {
+        "atom": "対象条件・時点・未記載を分け、実契約/実測は別段階",
+        "state": "partial_or_unconfirmed",
+        "observation_ids": []
+      }
+    ]
+  },
+  {
+    "review_id": "Q01-TASK-RES00063",
+    "task_id": "TASK-RES00063",
+    "offering_id": "OF-JP02",
+    "product": "Optamo for Shift",
+    "criterion_id": "D03",
+    "original_task": {
+      "task_state": "not_started",
+      "priority": 3,
+      "required_method": "unknown",
+      "question": "熟練度・スキルミックス：定義の未確認部分・現行条件を確認する。",
+      "evidence_needed": "仕様・資格マスター・テスト結果",
+      "owner": "未割当",
+      "next_review_on": null,
+      "block_reason": null,
+      "last_checked_on": null
+    },
+    "original_definition": "資格の有無とは別に、熟練度や処置技能の組合せ・最低水準を扱えるかを確認する。",
+    "original_required_evidence": "仕様・資格マスター・テスト結果",
+    "public_question": "公開資料に明記された「熟練度・スキルミックス」の範囲・対象条件を整理し、未記載/相違/実契約/実測を分ける。",
+    "public_acceptance_atoms": [
+      "資格と熟練度の区別",
+      "組合せ/最低水準の公開設定"
+    ],
+    "policy_id": "Q01-public-review-v1",
+    "individually_reviewed": true,
+    "public_phase": "bounded_search_ended_partial",
+    "primary_queue": "external_confirmation_wait",
+    "reason": "個別に保存資料を照合。熟練度を設定するスキル（能力）欄はfor Shiftでは×。役割・業務のスキル欄とは別。 掲載比較表の基準日は2024年8月であり、現行仕様の最終確認が必要。",
+    "evidence_observation_ids": [
+      "B01-O00035"
+    ],
+    "source_urls": [
+      "https://www.optamo.jp/shift/"
+    ],
+    "completion_evidence_ids": [],
+    "remaining_work": [
+      "対象提供単位の現行正式仕様/契約適用の回答",
+      "公式ページ掲載表（2024年8月基準）の判定。現行版の契約・動作未確認。 比較表基準日2024-08。現行未確定。"
+    ],
+    "external_state": "awaiting_external_input",
+    "resume_condition": "対象仕様/料金/契約の更新又は正式回答を得た時、あるいは導入/自社仕様の判断に必要になった時。",
+    "after_task": {
+      "task_state": "blocked",
+      "priority": 3,
+      "required_method": "vendor_document",
+      "question": "熟練度・スキルミックス：定義の未確認部分・現行条件を確認する。",
+      "evidence_needed": "仕様・資格マスター・テスト結果",
+      "owner": "外部確認待ち / 担当未定",
+      "next_review_on": null,
+      "block_reason": "公開資料の限定確認を終了。対象提供単位の現行正式仕様/契約適用の回答が未取得。再開：正式回答/現行契約又は対象試験の結果が得られた時。",
+      "last_checked_on": "2026-10-13"
+    },
+    "factual_state_changed": false,
+    "original_requirements_deleted": false,
+    "acceptance_review": [
+      {
+        "atom": "資格と熟練度の区別",
+        "state": "partial_or_unconfirmed",
+        "observation_ids": []
+      },
+      {
+        "atom": "組合せ/最低水準の公開設定",
+        "state": "partial_or_unconfirmed",
+        "observation_ids": []
+      }
+    ]
+  },
+  {
+    "review_id": "Q01-TASK-RES00177",
+    "task_id": "TASK-RES00177",
+    "offering_id": "OF-JP04",
+    "product": "Nafty",
+    "criterion_id": "N05",
+    "original_task": {
+      "task_state": "not_started",
+      "priority": 3,
+      "required_method": "unknown",
+      "question": "生成AIへの送信・学習利用：定義の未確認部分・現行条件を確認する。",
+      "evidence_needed": "約款・セキュリティ文書・第三者保証・権限試験",
+      "owner": "未割当",
+      "next_review_on": null,
+      "block_reason": null,
+      "last_checked_on": null
+    },
+    "original_definition": "送信項目、匿名化、保持期間、学習利用、利用停止設定、契約範囲を確認する。",
+    "original_required_evidence": "約款・セキュリティ文書・第三者保証・権限試験",
+    "public_question": "公開資料に明記された「生成AIへの送信・学習利用」の範囲・対象条件を整理し、未記載/相違/実契約/実測を分ける。",
+    "public_acceptance_atoms": [
+      "送信項目/匿名化/保持/学習の公開説明",
+      "機能ごとの停止と公表規約の適用範囲"
+    ],
+    "policy_id": "Q01-public-review-v1",
+    "individually_reviewed": true,
+    "public_phase": "bounded_search_ended_partial",
+    "primary_queue": "external_confirmation_wait",
+    "reason": "個別に保存資料を照合。公開記述を追加。未確認の契約範囲・実測要件が残るため元の調査課題は自動完了しない。",
+    "evidence_observation_ids": [
+      "B02-O00013"
+    ],
+    "source_urls": [
+      "https://nafty.app/privacy/"
+    ],
+    "completion_evidence_ids": [],
+    "remaining_work": [
+      "対象提供単位の現行正式仕様/契約適用の回答",
+      "提供者の方針を確認。契約優先関係・技術実装は未検証。"
+    ],
+    "external_state": "awaiting_external_input",
+    "resume_condition": "対象仕様/料金/契約の更新又は正式回答を得た時、あるいは導入/自社仕様の判断に必要になった時。",
+    "after_task": {
+      "task_state": "blocked",
+      "priority": 3,
+      "required_method": "vendor_document",
+      "question": "生成AIへの送信・学習利用：定義の未確認部分・現行条件を確認する。",
+      "evidence_needed": "約款・セキュリティ文書・第三者保証・権限試験",
+      "owner": "外部確認待ち / 担当未定",
+      "next_review_on": null,
+      "block_reason": "公開資料の限定確認を終了。対象提供単位の現行正式仕様/契約適用の回答が未取得。再開：正式回答/現行契約又は対象試験の結果が得られた時。",
+      "last_checked_on": "2026-10-13"
+    },
+    "factual_state_changed": false,
+    "original_requirements_deleted": false,
+    "acceptance_review": [
+      {
+        "atom": "送信項目/匿名化/保持/学習の公開説明",
+        "state": "partial_or_unconfirmed",
+        "observation_ids": []
+      },
+      {
+        "atom": "機能ごとの停止と公表規約の適用範囲",
+        "state": "partial_or_unconfirmed",
+        "observation_ids": []
+      }
+    ]
+  },
+  {
+    "review_id": "Q01-TASK-RES00295",
+    "task_id": "TASK-RES00295",
+    "offering_id": "OF-JP07",
+    "product": "miramos",
+    "criterion_id": "H02",
+    "original_task": {
+      "task_state": "not_started",
+      "priority": 3,
+      "required_method": "unknown",
+      "question": "変更最小化の目的設定：定義の未確認部分・現行条件を確認する。",
+      "evidence_needed": "既存シフトを使った変更デモ・承認仕様",
+      "owner": "未割当",
+      "next_review_on": null,
+      "block_reason": null,
+      "last_checked_on": null
+    },
+    "original_definition": "一部範囲の再計算と、変更セル・影響人数等を最小化する目的設定を区別する。",
+    "original_required_evidence": "既存シフトを使った変更デモ・承認仕様",
+    "public_question": "公開資料に明記された「変更最小化の目的設定」の範囲・対象条件を整理し、未記載/相違/実契約/実測を分ける。",
+    "public_acceptance_atoms": [
+      "再計算範囲と変更最小化の目的の区別",
+      "変更セル/人数等の評価の記載"
+    ],
+    "policy_id": "Q01-public-review-v1",
+    "individually_reviewed": true,
+    "public_phase": "needs_targeted_public_followup",
+    "primary_queue": "public_research_remaining",
+    "reason": "miramosの一部再計算と変更数最小化の目的が同じか、目的関数の専用仕様を限定照合する。",
+    "evidence_observation_ids": [
+      "B01-O00100"
+    ],
+    "source_urls": [
+      "https://www.konicaminolta.com/jp-ja/miramos/function/medical-care.html"
+    ],
+    "completion_evidence_ids": [],
+    "remaining_work": [],
+    "external_state": "not_individually_assessed",
+    "resume_condition": "次回は公開確認項目を1問に限定して探索。新根拠がなければ探索範囲と未確認を保存して止める。",
+    "after_task": {
+      "task_state": "in_progress",
+      "priority": 3,
+      "required_method": "public_document",
+      "question": "変更最小化の目的設定：定義の未確認部分・現行条件を確認する。",
+      "evidence_needed": "既存シフトを使った変更デモ・承認仕様",
+      "owner": "Aqsh / 次の限定公開調査",
+      "next_review_on": null,
+      "block_reason": null,
+      "last_checked_on": "2026-10-13"
+    },
+    "factual_state_changed": false,
+    "original_requirements_deleted": false,
+    "acceptance_review": [
+      {
+        "atom": "再計算範囲と変更最小化の目的の区別",
+        "state": "partial_or_unconfirmed",
+        "observation_ids": []
+      },
+      {
+        "atom": "変更セル/人数等の評価の記載",
+        "state": "partial_or_unconfirmed",
+        "observation_ids": []
+      }
+    ]
+  },
+  {
+    "review_id": "Q01-TASK-RES00317",
+    "task_id": "TASK-RES00317",
+    "offering_id": "OF-JP08",
+    "product": "シンクロシフト",
+    "criterion_id": "A02",
+    "original_task": {
+      "task_state": "blocked",
+      "priority": 3,
+      "required_method": "unknown",
+      "question": "提供法人：定義の未確認部分・現行条件を確認する。",
+      "evidence_needed": "公式会社情報・製品仕様・提供終了告知",
+      "owner": "未割当",
+      "next_review_on": null,
+      "block_reason": "今回の取得環境で公式本文を取得できない。",
+      "last_checked_on": null
+    },
+    "original_definition": "開発元・販売元・契約主体を区別し、正式法人名を確認する。",
+    "original_required_evidence": "公式会社情報・製品仕様・提供終了告知",
+    "public_question": "公開資料に記載されたシンクロシフトの開発・提供法人名を確認する（販売代理店・個別契約主体は別確認）。",
+    "public_acceptance_atoms": [
+      "公開資料に記載されたシンクロシフトの開発・提供法人名を確認する（販売代理店・個別契約主体は別確認）。",
+      "対応する本文根拠/取得日/locatorの確認",
+      "原設問の残条件と再開条件を削除せず別段階に保存"
+    ],
+    "policy_id": "Q01-public-review-v1",
+    "individually_reviewed": true,
+    "public_phase": "closed_documented",
+    "primary_queue": "completed_public_check",
+    "reason": "株式会社サインキューブの開発・提供の記載を確認。 公開資料の確認という限定質問を終了。元の広い要件と残条件は本台帳に保存。",
+    "evidence_observation_ids": [
+      "B04-20261011-OBS0305"
+    ],
+    "source_urls": [
+      "https://synchroseries.jp/"
+    ],
+    "completion_evidence_ids": [
+      "B04-20261011-OBS0305"
+    ],
+    "remaining_work": [
+      "代理店経由を含む個別の契約主体は未確認"
+    ],
+    "external_state": "deferred_until_adoption",
+    "resume_condition": "公表対象の変更/新しい相反資料が出た時。残る契約/実機要件は採用候補化した時。",
+    "after_task": {
+      "task_state": "done",
+      "priority": 3,
+      "required_method": "public_document",
+      "question": "公開資料に記載されたシンクロシフトの開発・提供法人名を確認する（販売代理店・個別契約主体は別確認）。",
+      "evidence_needed": "公開文書の本文・取得日・該当箇所。契約適用/実測の残条件はqueue-review-Q01/ledger.jsonを参照。",
+      "owner": "Aqsh / 公開資料整理Q01",
+      "next_review_on": null,
+      "block_reason": null,
+      "last_checked_on": "2026-10-13"
+    },
+    "factual_state_changed": false,
+    "original_requirements_deleted": false,
+    "original_public_atoms": [
+      "開発・運営・販売元の公式の法人名と役割",
+      "契約主体が公表される範囲"
+    ],
+    "acceptance_review": [
+      {
+        "atom": "公開資料に記載されたシンクロシフトの開発・提供法人名を確認する（販売代理店・個別契約主体は別確認）。",
+        "state": "confirmed_documented",
+        "observation_ids": [
+          "B04-20261011-OBS0305"
+        ]
+      },
+      {
+        "atom": "対応する本文根拠/取得日/locatorの確認",
+        "state": "confirmed_documented",
+        "observation_ids": [
+          "B04-20261011-OBS0305"
+        ]
+      },
+      {
+        "atom": "原設問の残条件と再開条件を削除せず別段階に保存",
+        "state": "confirmed_documented",
+        "observation_ids": [
+          "B04-20261011-OBS0305"
+        ]
+      }
+    ]
+  },
+  {
+    "review_id": "Q01-TASK-RES00318",
+    "task_id": "TASK-RES00318",
+    "offering_id": "OF-JP08",
+    "product": "シンクロシフト",
+    "criterion_id": "A03",
+    "original_task": {
+      "task_state": "blocked",
+      "priority": 3,
+      "required_method": "unknown",
+      "question": "提供・販売状態：定義の未確認部分・現行条件を確認する。",
+      "evidence_needed": "公式会社情報・製品仕様・提供終了告知",
+      "owner": "未割当",
+      "next_review_on": null,
+      "block_reason": "今回の取得環境で公式本文を取得できない。",
+      "last_checked_on": null
+    },
+    "original_definition": "商用提供中、試験提供、提供予定、新規受付終了、終了を区別し、対象日を記録する。",
+    "original_required_evidence": "公式会社情報・製品仕様・提供終了告知",
+    "public_question": "公開資料に明記された「提供・販売状態」の範囲・対象条件を整理し、未記載/相違/実契約/実測を分ける。",
+    "public_acceptance_atoms": [
+      "公式に案内される提供中/予定/終了の状態",
+      "時点・地域・新規受付への留保"
+    ],
+    "policy_id": "Q01-public-review-v1",
+    "individually_reviewed": true,
+    "public_phase": "needs_targeted_public_followup",
+    "primary_queue": "public_research_remaining",
+    "reason": "公式の商用/試用/無料の案内と新規提供状態を時点付きで照合する。フォーム存在だけで新規契約可を保証しない。",
+    "evidence_observation_ids": [
+      "B01-O00403",
+      "B02-O00010"
+    ],
+    "source_urls": [
+      "https://support.synchroshift.jp/portal/ja/kb/articles/1025",
+      "https://synchroseries.jp/"
+    ],
+    "completion_evidence_ids": [],
+    "remaining_work": [],
+    "external_state": "not_individually_assessed",
+    "resume_condition": "次回は公開確認項目を1問に限定して探索。新根拠がなければ探索範囲と未確認を保存して止める。",
+    "after_task": {
+      "task_state": "in_progress",
+      "priority": 3,
+      "required_method": "public_document",
+      "question": "提供・販売状態：定義の未確認部分・現行条件を確認する。",
+      "evidence_needed": "公式会社情報・製品仕様・提供終了告知",
+      "owner": "Aqsh / 次の限定公開調査",
+      "next_review_on": null,
+      "block_reason": null,
+      "last_checked_on": "2026-10-13"
+    },
+    "factual_state_changed": false,
+    "original_requirements_deleted": false,
+    "acceptance_review": [
+      {
+        "atom": "公式に案内される提供中/予定/終了の状態",
+        "state": "partial_or_unconfirmed",
+        "observation_ids": []
+      },
+      {
+        "atom": "時点・地域・新規受付への留保",
+        "state": "partial_or_unconfirmed",
+        "observation_ids": []
+      }
+    ]
+  },
+  {
+    "review_id": "Q01-TASK-RES00321",
+    "task_id": "TASK-RES00321",
+    "offering_id": "OF-JP08",
+    "product": "シンクロシフト",
+    "criterion_id": "A07",
+    "original_task": {
+      "task_state": "blocked",
+      "priority": 3,
+      "required_method": "unknown",
+      "question": "提供形態：定義の未確認部分・現行条件を確認する。",
+      "evidence_needed": "公式会社情報・製品仕様・提供終了告知",
+      "owner": "未割当",
+      "next_review_on": null,
+      "block_reason": "今回の取得環境で公式本文を取得できない。",
+      "last_checked_on": null
+    },
+    "original_definition": "SaaS、オンプレミス、Excel拡張、API、ライブラリ、受託開発、作成代行を分ける。",
+    "original_required_evidence": "公式会社情報・製品仕様・提供終了告知",
+    "public_question": "シンクロシフトがクラウドサービスとして公開案内されることを確認する（個別プランの実装・契約適用は別確認）。",
+    "public_acceptance_atoms": [
+      "シンクロシフトがクラウドサービスとして公開案内されることを確認する（個別プランの実装・契約適用は別確認）。",
+      "対応する本文根拠/取得日/locatorの確認",
+      "原設問の残条件と再開条件を削除せず別段階に保存"
+    ],
+    "policy_id": "Q01-public-review-v1",
+    "individually_reviewed": true,
+    "public_phase": "closed_documented",
+    "primary_queue": "completed_public_check",
+    "reason": "介護・医療向けクラウドサービスという提供形態を確認。 公開資料の確認という限定質問を終了。元の広い要件と残条件は本台帳に保存。",
+    "evidence_observation_ids": [
+      "B04-20261011-OBS0306"
+    ],
+    "source_urls": [
+      "https://synchroseries.jp/"
+    ],
+    "completion_evidence_ids": [
+      "B04-20261011-OBS0306"
+    ],
+    "remaining_work": [
+      "顧客の契約版に対する適用と実動作は未検証"
+    ],
+    "external_state": "deferred_until_adoption",
+    "resume_condition": "公表対象の変更/新しい相反資料が出た時。残る契約/実機要件は採用候補化した時。",
+    "after_task": {
+      "task_state": "done",
+      "priority": 3,
+      "required_method": "public_document",
+      "question": "シンクロシフトがクラウドサービスとして公開案内されることを確認する（個別プランの実装・契約適用は別確認）。",
+      "evidence_needed": "公開文書の本文・取得日・該当箇所。契約適用/実測の残条件はqueue-review-Q01/ledger.jsonを参照。",
+      "owner": "Aqsh / 公開資料整理Q01",
+      "next_review_on": null,
+      "block_reason": null,
+      "last_checked_on": "2026-10-13"
+    },
+    "factual_state_changed": false,
+    "original_requirements_deleted": false,
+    "original_public_atoms": [
+      "SaaS/オンプレ/拡張/API/受託/代行の公式分類",
+      "別方式を同一提供範囲に混ぜない"
+    ],
+    "acceptance_review": [
+      {
+        "atom": "シンクロシフトがクラウドサービスとして公開案内されることを確認する（個別プランの実装・契約適用は別確認）。",
+        "state": "confirmed_documented",
+        "observation_ids": [
+          "B04-20261011-OBS0306"
+        ]
+      },
+      {
+        "atom": "対応する本文根拠/取得日/locatorの確認",
+        "state": "confirmed_documented",
+        "observation_ids": [
+          "B04-20261011-OBS0306"
+        ]
+      },
+      {
+        "atom": "原設問の残条件と再開条件を削除せず別段階に保存",
+        "state": "confirmed_documented",
+        "observation_ids": [
+          "B04-20261011-OBS0306"
+        ]
+      }
+    ]
+  },
+  {
+    "review_id": "Q01-TASK-RES00322",
+    "task_id": "TASK-RES00322",
+    "offering_id": "OF-JP08",
+    "product": "シンクロシフト",
+    "criterion_id": "B01",
+    "original_task": {
+      "task_state": "blocked",
+      "priority": 3,
+      "required_method": "unknown",
+      "question": "勤務表の自動割当：定義の未確認部分・現行条件を確認する。",
+      "evidence_needed": "機能仕様・プラン比較・利用規約・デモ",
+      "owner": "未割当",
+      "next_review_on": null,
+      "block_reason": "今回の取得環境で公式本文を取得できない。",
+      "last_checked_on": null
+    },
+    "original_definition": "希望・必要人数・ルールから職員を勤務枠へ割り当てる。共有、転記、固定パターン複製だけは区別する。",
+    "original_required_evidence": "機能仕様・プラン比較・利用規約・デモ",
+    "public_question": "シンクロシフトが勤務表の自動作成を公開機能として案内するか確認する（精度・医療適合・hard制御は別試験）。",
+    "public_acceptance_atoms": [
+      "シンクロシフトが勤務表の自動作成を公開機能として案内するか確認する（精度・医療適合・hard制御は別試験）。",
+      "対応する本文根拠/取得日/locatorの確認",
+      "原設問の残条件と再開条件を削除せず別段階に保存"
+    ],
+    "policy_id": "Q01-public-review-v1",
+    "individually_reviewed": true,
+    "public_phase": "closed_documented",
+    "primary_queue": "completed_public_check",
+    "reason": "勤務表の自動作成と条件設定の公開案内を確認。 公開資料の確認という限定質問を終了。元の広い要件と残条件は本台帳に保存。",
+    "evidence_observation_ids": [
+      "B01-O00231",
+      "B02-O00002",
+      "B04-20261011-OBS0307"
+    ],
+    "source_urls": [
+      "https://support.synchroshift.jp/portal/ja/kb/articles/1025",
+      "https://synchroseries.jp/"
+    ],
+    "completion_evidence_ids": [
+      "B04-20261011-OBS0307"
+    ],
+    "remaining_work": [
+      "生成結果の精度/制約の実際の強制力/顧客プランは未確認"
+    ],
+    "external_state": "deferred_until_adoption",
+    "resume_condition": "公表対象の変更/新しい相反資料が出た時。残る契約/実機要件は採用候補化した時。",
+    "after_task": {
+      "task_state": "done",
+      "priority": 3,
+      "required_method": "public_document",
+      "question": "シンクロシフトが勤務表の自動作成を公開機能として案内するか確認する（精度・医療適合・hard制御は別試験）。",
+      "evidence_needed": "公開文書の本文・取得日・該当箇所。契約適用/実測の残条件はqueue-review-Q01/ledger.jsonを参照。",
+      "owner": "Aqsh / 公開資料整理Q01",
+      "next_review_on": null,
+      "block_reason": null,
+      "last_checked_on": "2026-10-13"
+    },
+    "factual_state_changed": false,
+    "original_requirements_deleted": false,
+    "original_public_atoms": [
+      "勤務表そのものの自動割当の記載",
+      "希望/人数/規則から割当する説明と転記/複製の区別"
+    ],
+    "acceptance_review": [
+      {
+        "atom": "シンクロシフトが勤務表の自動作成を公開機能として案内するか確認する（精度・医療適合・hard制御は別試験）。",
+        "state": "confirmed_documented",
+        "observation_ids": [
+          "B04-20261011-OBS0307"
+        ]
+      },
+      {
+        "atom": "対応する本文根拠/取得日/locatorの確認",
+        "state": "confirmed_documented",
+        "observation_ids": [
+          "B04-20261011-OBS0307"
+        ]
+      },
+      {
+        "atom": "原設問の残条件と再開条件を削除せず別段階に保存",
+        "state": "confirmed_documented",
+        "observation_ids": [
+          "B04-20261011-OBS0307"
+        ]
+      }
+    ]
+  },
+  {
+    "review_id": "Q01-TASK-RES00324",
+    "task_id": "TASK-RES00324",
+    "offering_id": "OF-JP08",
+    "product": "シンクロシフト",
+    "criterion_id": "B07",
+    "original_task": {
+      "task_state": "blocked",
+      "priority": 3,
+      "required_method": "unknown",
+      "question": "プラン・追加機能の境界：定義の未確認部分・現行条件を確認する。",
+      "evidence_needed": "機能仕様・プラン比較・利用規約・デモ",
+      "owner": "未割当",
+      "next_review_on": null,
+      "block_reason": "今回の取得環境で公式本文を取得できない。",
+      "last_checked_on": null
+    },
+    "original_definition": "機能を利用できるエディション、モジュール、追加契約、標準範囲を記録する。",
+    "original_required_evidence": "機能仕様・プラン比較・利用規約・デモ",
+    "public_question": "公開資料に明記された「プラン・追加機能の境界」の範囲・対象条件を整理し、未記載/相違/実契約/実測を分ける。",
+    "public_acceptance_atoms": [
+      "機能を使えるプラン/モジュールの公開対応",
+      "追加契約/地域/βの留保"
+    ],
+    "policy_id": "Q01-public-review-v1",
+    "individually_reviewed": true,
+    "public_phase": "bounded_search_ended_partial",
+    "primary_queue": "external_confirmation_wait",
+    "reason": "個別に保存資料を照合。限定無料プランは試用・解約後の移行先として案内。開始時の直接選択、無料で使える機能は未確定。 / プランにより利用機能を制限する旨を規定。全プランの機能が同じとは判断しない。 Q01の本文照合で無料プランの最初からの利用不可を追加確認。機能表/価格/契約適用は未確認。",
+    "evidence_observation_ids": [
+      "B04-20261011-OBS0317",
+      "B04-20261011-OBS0326",
+      "B39-20261013-OBS0001"
+    ],
+    "source_urls": [
+      "https://synchroseries.jp/",
+      "https://synchroseries.jp/synchroshift/terms"
+    ],
+    "completion_evidence_ids": [],
+    "remaining_work": [
+      "対象提供単位の現行正式仕様/契約適用の回答",
+      "ブラウザ表示本文の確認。料金画像、効果を示す共同研究の論文本文、契約版ごとの機能包含は未確認。 / ブラウザ表示の利用規約。個別契約との優先関係、現行プランの具体額・実装は未確認。"
+    ],
+    "external_state": "awaiting_external_input",
+    "resume_condition": "対象仕様/料金/契約の更新又は正式回答を得た時、あるいは導入/自社仕様の判断に必要になった時。",
+    "after_task": {
+      "task_state": "blocked",
+      "priority": 3,
+      "required_method": "vendor_document",
+      "question": "プラン・追加機能の境界：定義の未確認部分・現行条件を確認する。",
+      "evidence_needed": "機能仕様・プラン比較・利用規約・デモ",
+      "owner": "外部確認待ち / 担当未定",
+      "next_review_on": null,
+      "block_reason": "公開資料の限定確認を終了。対象提供単位の現行正式仕様/契約適用の回答が未取得。再開：正式回答/現行契約又は対象試験の結果が得られた時。",
+      "last_checked_on": "2026-10-13"
+    },
+    "factual_state_changed": true,
+    "original_requirements_deleted": false,
+    "acceptance_review": [
+      {
+        "atom": "機能を使えるプラン/モジュールの公開対応",
+        "state": "partial_or_unconfirmed",
+        "observation_ids": []
+      },
+      {
+        "atom": "追加契約/地域/βの留保",
+        "state": "partial_or_unconfirmed",
+        "observation_ids": []
+      }
+    ]
+  },
+  {
+    "review_id": "Q01-TASK-RES00326",
+    "task_id": "TASK-RES00326",
+    "offering_id": "OF-JP08",
+    "product": "シンクロシフト",
+    "criterion_id": "C02",
+    "original_task": {
+      "task_state": "blocked",
+      "priority": 3,
+      "required_method": "unknown",
+      "question": "日跨ぎ夜勤と明け：定義の未確認部分・現行条件を確認する。",
+      "evidence_needed": "仕様・ルール設定画面・境界条件テスト",
+      "owner": "未割当",
+      "next_review_on": null,
+      "block_reason": "今回の取得環境で公式本文を取得できない。",
+      "last_checked_on": null
+    },
+    "original_definition": "実際の開始終了日時、勤務の所属日、夜勤明けと休日の区別を確認する。",
+    "original_required_evidence": "仕様・ルール設定画面・境界条件テスト",
+    "public_question": "公開資料に明記された「日跨ぎ夜勤と明け」の範囲・対象条件を整理し、未記載/相違/実契約/実測を分ける。",
+    "public_acceptance_atoms": [
+      "開始終了の実時刻と所属日の公開仕様",
+      "夜勤明けと休日の別"
+    ],
+    "policy_id": "Q01-public-review-v1",
+    "individually_reviewed": true,
+    "public_phase": "bounded_search_ended_partial",
+    "primary_queue": "external_confirmation_wait",
+    "reason": "個別に保存資料を照合。KING OF TIMEへの夜勤出力は、連続1勤務と夜勤・明けの別勤務の設定を選ぶ。",
+    "evidence_observation_ids": [
+      "B04-20261011-OBS0333"
+    ],
+    "source_urls": [
+      "https://support.synchroshift.jp/portal/ja/kb/articles/1063"
+    ],
+    "completion_evidence_ids": [],
+    "remaining_work": [
+      "対象提供単位の現行正式仕様/契約適用の回答",
+      "公式ヘルプの方式別説明。顧客環境での送受信、トークン作成、アカウント操作は未実施。"
+    ],
+    "external_state": "awaiting_external_input",
+    "resume_condition": "対象仕様/料金/契約の更新又は正式回答を得た時、あるいは導入/自社仕様の判断に必要になった時。",
+    "after_task": {
+      "task_state": "blocked",
+      "priority": 3,
+      "required_method": "vendor_document",
+      "question": "日跨ぎ夜勤と明け：定義の未確認部分・現行条件を確認する。",
+      "evidence_needed": "仕様・ルール設定画面・境界条件テスト",
+      "owner": "外部確認待ち / 担当未定",
+      "next_review_on": null,
+      "block_reason": "公開資料の限定確認を終了。対象提供単位の現行正式仕様/契約適用の回答が未取得。再開：正式回答/現行契約又は対象試験の結果が得られた時。",
+      "last_checked_on": "2026-10-13"
+    },
+    "factual_state_changed": false,
+    "original_requirements_deleted": false,
+    "acceptance_review": [
+      {
+        "atom": "開始終了の実時刻と所属日の公開仕様",
+        "state": "partial_or_unconfirmed",
+        "observation_ids": []
+      },
+      {
+        "atom": "夜勤明けと休日の別",
+        "state": "partial_or_unconfirmed",
+        "observation_ids": []
+      }
+    ]
+  },
+  {
+    "review_id": "Q01-TASK-RES00342",
+    "task_id": "TASK-RES00342",
+    "offering_id": "OF-JP08",
+    "product": "シンクロシフト",
+    "criterion_id": "J06",
+    "original_task": {
+      "task_state": "blocked",
+      "priority": 3,
+      "required_method": "unknown",
+      "question": "介護・福祉の配置基準：定義の未確認部分・現行条件を確認する。",
+      "evidence_needed": "行政一次資料・専門団体・更新履歴・算式",
+      "owner": "未割当",
+      "next_review_on": null,
+      "block_reason": "今回の取得環境で公式本文を取得できない。",
+      "last_checked_on": null
+    },
+    "original_definition": "サービス種別ごとの対応範囲と、実人数・常勤換算・時間帯配置の算式を確認する。",
+    "original_required_evidence": "行政一次資料・専門団体・更新履歴・算式",
+    "public_question": "公開資料に明記された「介護・福祉の配置基準」の範囲・対象条件を整理し、未記載/相違/実契約/実測を分ける。",
+    "public_acceptance_atoms": [
+      "対象サービス種別/制度版/予定か提供済みか",
+      "実人数/常勤換算/時間帯の算式説明の範囲"
+    ],
+    "policy_id": "Q01-public-review-v1",
+    "individually_reviewed": true,
+    "public_phase": "bounded_search_ended_partial",
+    "primary_queue": "external_confirmation_wait",
+    "reason": "個別に保存資料を照合。必要配置と常勤換算表の作成を案内。施設種別と算式の適用は未検証。",
+    "evidence_observation_ids": [
+      "B04-20261011-OBS0310"
+    ],
+    "source_urls": [
+      "https://synchroseries.jp/"
+    ],
+    "completion_evidence_ids": [],
+    "remaining_work": [
+      "対象提供単位の現行正式仕様/契約適用の回答",
+      "ブラウザ表示本文の確認。料金画像、効果を示す共同研究の論文本文、契約版ごとの機能包含は未確認。"
+    ],
+    "external_state": "awaiting_external_input",
+    "resume_condition": "対象仕様/料金/契約の更新又は正式回答を得た時、あるいは導入/自社仕様の判断に必要になった時。",
+    "after_task": {
+      "task_state": "blocked",
+      "priority": 3,
+      "required_method": "vendor_document",
+      "question": "介護・福祉の配置基準：定義の未確認部分・現行条件を確認する。",
+      "evidence_needed": "行政一次資料・専門団体・更新履歴・算式",
+      "owner": "外部確認待ち / 担当未定",
+      "next_review_on": null,
+      "block_reason": "公開資料の限定確認を終了。対象提供単位の現行正式仕様/契約適用の回答が未取得。再開：正式回答/現行契約又は対象試験の結果が得られた時。",
+      "last_checked_on": "2026-10-13"
+    },
+    "factual_state_changed": false,
+    "original_requirements_deleted": false,
+    "acceptance_review": [
+      {
+        "atom": "対象サービス種別/制度版/予定か提供済みか",
+        "state": "partial_or_unconfirmed",
+        "observation_ids": []
+      },
+      {
+        "atom": "実人数/常勤換算/時間帯の算式説明の範囲",
+        "state": "partial_or_unconfirmed",
+        "observation_ids": []
+      }
+    ]
+  },
+  {
+    "review_id": "Q01-TASK-RES00344",
+    "task_id": "TASK-RES00344",
+    "offering_id": "OF-JP08",
+    "product": "シンクロシフト",
+    "criterion_id": "K03",
+    "original_task": {
+      "task_state": "blocked",
+      "priority": 3,
+      "required_method": "unknown",
+      "question": "初期設定の主体：定義の未確認部分・現行条件を確認する。",
+      "evidence_needed": "導入手順・実画面・タイムスタディ",
+      "owner": "未割当",
+      "next_review_on": null,
+      "block_reason": "今回の取得環境で公式本文を取得できない。",
+      "last_checked_on": null
+    },
+    "original_definition": "顧客自力、ベンダー代行、共同設定、個別開発のどれか、作業分担を記録する。",
+    "original_required_evidence": "導入手順・実画面・タイムスタディ",
+    "public_question": "公開資料に明記された「初期設定の主体」の範囲・対象条件を整理し、未記載/相違/実契約/実測を分ける。",
+    "public_acceptance_atoms": [
+      "顧客/ベンダー/共同/個別開発の公開分担",
+      "標準と有償支援の別"
+    ],
+    "policy_id": "Q01-public-review-v1",
+    "individually_reviewed": true,
+    "public_phase": "bounded_search_ended_partial",
+    "primary_queue": "external_confirmation_wait",
+    "reason": "個別に保存資料を照合。アカウント登録とオンライン約2時間のレッスンを導入手順として案内。有償の設定代行もある。",
+    "evidence_observation_ids": [
+      "B04-20261011-OBS0313"
+    ],
+    "source_urls": [
+      "https://synchroseries.jp/"
+    ],
+    "completion_evidence_ids": [],
+    "remaining_work": [
+      "対象提供単位の現行正式仕様/契約適用の回答",
+      "ブラウザ表示本文の確認。料金画像、効果を示す共同研究の論文本文、契約版ごとの機能包含は未確認。"
+    ],
+    "external_state": "awaiting_external_input",
+    "resume_condition": "対象仕様/料金/契約の更新又は正式回答を得た時、あるいは導入/自社仕様の判断に必要になった時。",
+    "after_task": {
+      "task_state": "blocked",
+      "priority": 3,
+      "required_method": "vendor_document",
+      "question": "初期設定の主体：定義の未確認部分・現行条件を確認する。",
+      "evidence_needed": "導入手順・実画面・タイムスタディ",
+      "owner": "外部確認待ち / 担当未定",
+      "next_review_on": null,
+      "block_reason": "公開資料の限定確認を終了。対象提供単位の現行正式仕様/契約適用の回答が未取得。再開：正式回答/現行契約又は対象試験の結果が得られた時。",
+      "last_checked_on": "2026-10-13"
+    },
+    "factual_state_changed": false,
+    "original_requirements_deleted": false,
+    "acceptance_review": [
+      {
+        "atom": "顧客/ベンダー/共同/個別開発の公開分担",
+        "state": "partial_or_unconfirmed",
+        "observation_ids": []
+      },
+      {
+        "atom": "標準と有償支援の別",
+        "state": "partial_or_unconfirmed",
+        "observation_ids": []
+      }
+    ]
+  },
+  {
+    "review_id": "Q01-TASK-RES00345",
+    "task_id": "TASK-RES00345",
+    "offering_id": "OF-JP08",
+    "product": "シンクロシフト",
+    "criterion_id": "L01",
+    "original_task": {
+      "task_state": "blocked",
+      "priority": 3,
+      "required_method": "unknown",
+      "question": "スマホでの希望提出：定義の未確認部分・現行条件を確認する。",
+      "evidence_needed": "職員画面・利用手順・権限テスト",
+      "owner": "未割当",
+      "next_review_on": null,
+      "block_reason": "今回の取得環境で公式本文を取得できない。",
+      "last_checked_on": null
+    },
+    "original_definition": "アプリ・ブラウザの別、操作範囲、追加費用、本人認証を確認する。",
+    "original_required_evidence": "職員画面・利用手順・権限テスト",
+    "public_question": "公開資料に明記された「スマホでの希望提出」の範囲・対象条件を整理し、未記載/相違/実契約/実測を分ける。",
+    "public_acceptance_atoms": [
+      "職員本人のアプリ/ブラウザ提出の公開手順",
+      "費用/認証/権限の記載範囲"
+    ],
+    "policy_id": "Q01-public-review-v1",
+    "individually_reviewed": true,
+    "public_phase": "bounded_search_ended_partial",
+    "primary_queue": "external_confirmation_wait",
+    "reason": "個別に保存資料を照合。希望休の申請一覧には申請済・承認・否認を表示するが、申請ステータス変更時の通知機能はないと明記する。",
+    "evidence_observation_ids": [
+      "B04-20261011-OBS0311",
+      "B08-20261012-OBS0004"
+    ],
+    "source_urls": [
+      "https://support.synchroshift.jp/portal/ja/kb/articles/1037",
+      "https://synchroseries.jp/"
+    ],
+    "completion_evidence_ids": [],
+    "remaining_work": [
+      "対象提供単位の現行正式仕様/契約適用の回答",
+      "ブラウザ表示本文の確認。料金画像、効果を示す共同研究の論文本文、契約版ごとの機能包含は未確認。 / 公開文書に記載された範囲の確認。実動作・独立性能試験・個別契約への適用は未検証。シフト再公開時の通知全般とは別の範囲。"
+    ],
+    "external_state": "awaiting_external_input",
+    "resume_condition": "対象仕様/料金/契約の更新又は正式回答を得た時、あるいは導入/自社仕様の判断に必要になった時。",
+    "after_task": {
+      "task_state": "blocked",
+      "priority": 3,
+      "required_method": "vendor_document",
+      "question": "スマホでの希望提出：定義の未確認部分・現行条件を確認する。",
+      "evidence_needed": "職員画面・利用手順・権限テスト",
+      "owner": "外部確認待ち / 担当未定",
+      "next_review_on": null,
+      "block_reason": "公開資料の限定確認を終了。対象提供単位の現行正式仕様/契約適用の回答が未取得。再開：正式回答/現行契約又は対象試験の結果が得られた時。",
+      "last_checked_on": "2026-10-13"
+    },
+    "factual_state_changed": false,
+    "original_requirements_deleted": false,
+    "acceptance_review": [
+      {
+        "atom": "職員本人のアプリ/ブラウザ提出の公開手順",
+        "state": "partial_or_unconfirmed",
+        "observation_ids": []
+      },
+      {
+        "atom": "費用/認証/権限の記載範囲",
+        "state": "partial_or_unconfirmed",
+        "observation_ids": []
+      }
+    ]
+  },
+  {
+    "review_id": "Q01-TASK-RES00346",
+    "task_id": "TASK-RES00346",
+    "offering_id": "OF-JP08",
+    "product": "シンクロシフト",
+    "criterion_id": "M08",
+    "original_task": {
+      "task_state": "blocked",
+      "priority": 3,
+      "required_method": "unknown",
+      "question": "解約時の全量出力：定義の未確認部分・現行条件を確認する。",
+      "evidence_needed": "入出力仕様・API文書・実接続・契約",
+      "owner": "未割当",
+      "next_review_on": null,
+      "block_reason": "今回の取得環境で公式本文を取得できない。",
+      "last_checked_on": null
+    },
+    "original_definition": "勤務表だけでなく希望、ルール、設定、履歴を機械可読で持ち出せるか、費用と期限を確認する。",
+    "original_required_evidence": "入出力仕様・API文書・実接続・契約",
+    "public_question": "公開資料に明記された「解約時の全量出力」の範囲・対象条件を整理し、未記載/相違/実契約/実測を分ける。",
+    "public_acceptance_atoms": [
+      "勤務表/希望/規則/設定/履歴の公開出力範囲",
+      "機械可読形式・期限・費用の公表範囲"
+    ],
+    "policy_id": "Q01-public-review-v1",
+    "individually_reviewed": true,
+    "public_phase": "bounded_search_ended_partial",
+    "primary_queue": "external_confirmation_wait",
+    "reason": "個別に保存資料を照合。必要な情報は契約終了前にダウンロードすること、終了後の提供はしない旨を規定。設定・履歴を含む全量出口を保証する記述ではない。",
+    "evidence_observation_ids": [
+      "B04-20261011-OBS0321"
+    ],
+    "source_urls": [
+      "https://synchroseries.jp/synchroshift/terms"
+    ],
+    "completion_evidence_ids": [],
+    "remaining_work": [
+      "対象提供単位の現行正式仕様/契約適用の回答",
+      "ブラウザ表示の利用規約。個別契約との優先関係、現行プランの具体額・実装は未確認。"
+    ],
+    "external_state": "awaiting_external_input",
+    "resume_condition": "対象仕様/料金/契約の更新又は正式回答を得た時、あるいは導入/自社仕様の判断に必要になった時。",
+    "after_task": {
+      "task_state": "blocked",
+      "priority": 3,
+      "required_method": "vendor_document",
+      "question": "解約時の全量出力：定義の未確認部分・現行条件を確認する。",
+      "evidence_needed": "入出力仕様・API文書・実接続・契約",
+      "owner": "外部確認待ち / 担当未定",
+      "next_review_on": null,
+      "block_reason": "公開資料の限定確認を終了。対象提供単位の現行正式仕様/契約適用の回答が未取得。再開：正式回答/現行契約又は対象試験の結果が得られた時。",
+      "last_checked_on": "2026-10-13"
+    },
+    "factual_state_changed": false,
+    "original_requirements_deleted": false,
+    "acceptance_review": [
+      {
+        "atom": "勤務表/希望/規則/設定/履歴の公開出力範囲",
+        "state": "partial_or_unconfirmed",
+        "observation_ids": []
+      },
+      {
+        "atom": "機械可読形式・期限・費用の公表範囲",
+        "state": "partial_or_unconfirmed",
+        "observation_ids": []
+      }
+    ]
+  },
+  {
+    "review_id": "Q01-TASK-RES00347",
+    "task_id": "TASK-RES00347",
+    "offering_id": "OF-JP08",
+    "product": "シンクロシフト",
+    "criterion_id": "N01",
+    "original_task": {
+      "task_state": "blocked",
+      "priority": 3,
+      "required_method": "unknown",
+      "question": "テナント分離・アクセス権限：定義の未確認部分・現行条件を確認する。",
+      "evidence_needed": "約款・セキュリティ文書・第三者保証・権限試験",
+      "owner": "未割当",
+      "next_review_on": null,
+      "block_reason": "今回の取得環境で公式本文を取得できない。",
+      "last_checked_on": null
+    },
+    "original_definition": "法人、施設、部署、本人、運用担当者のアクセス範囲と横断アクセスの制御を確認する。",
+    "original_required_evidence": "約款・セキュリティ文書・第三者保証・権限試験",
+    "public_question": "公開資料に明記された「テナント分離・アクセス権限」の範囲・対象条件を整理し、未記載/相違/実契約/実測を分ける。",
+    "public_acceptance_atoms": [
+      "法人/施設/部署/本人/運用担当の公開権限",
+      "テナント分離と行単位の制御の別"
+    ],
+    "policy_id": "Q01-public-review-v1",
+    "individually_reviewed": true,
+    "public_phase": "bounded_search_ended_partial",
+    "primary_queue": "external_confirmation_wait",
+    "reason": "個別に保存資料を照合。公開記述を追加。未確認の契約範囲・実測要件が残るため元の調査課題は自動完了しない。",
+    "evidence_observation_ids": [
+      "B02-O00001",
+      "B04-20261011-OBS0327"
+    ],
+    "source_urls": [
+      "https://support.synchroshift.jp/portal/ja/kb/articles/1025",
+      "https://support.synchroshift.jp/portal/ja/kb/articles/1063"
+    ],
+    "completion_evidence_ids": [],
+    "remaining_work": [
+      "対象提供単位の現行正式仕様/契約適用の回答",
+      "権限表を確認しただけでテナント分離を試験したものではない。 / 公式ヘルプの方式別説明。顧客環境での送受信、トークン作成、アカウント操作は未実施。"
+    ],
+    "external_state": "awaiting_external_input",
+    "resume_condition": "対象仕様/料金/契約の更新又は正式回答を得た時、あるいは導入/自社仕様の判断に必要になった時。",
+    "after_task": {
+      "task_state": "blocked",
+      "priority": 3,
+      "required_method": "vendor_document",
+      "question": "テナント分離・アクセス権限：定義の未確認部分・現行条件を確認する。",
+      "evidence_needed": "約款・セキュリティ文書・第三者保証・権限試験",
+      "owner": "外部確認待ち / 担当未定",
+      "next_review_on": null,
+      "block_reason": "公開資料の限定確認を終了。対象提供単位の現行正式仕様/契約適用の回答が未取得。再開：正式回答/現行契約又は対象試験の結果が得られた時。",
+      "last_checked_on": "2026-10-13"
+    },
+    "factual_state_changed": false,
+    "original_requirements_deleted": false,
+    "acceptance_review": [
+      {
+        "atom": "法人/施設/部署/本人/運用担当の公開権限",
+        "state": "partial_or_unconfirmed",
+        "observation_ids": []
+      },
+      {
+        "atom": "テナント分離と行単位の制御の別",
+        "state": "partial_or_unconfirmed",
+        "observation_ids": []
+      }
+    ]
+  },
+  {
+    "review_id": "Q01-TASK-RES00350",
+    "task_id": "TASK-RES00350",
+    "offering_id": "OF-JP08",
+    "product": "シンクロシフト",
+    "criterion_id": "P01",
+    "original_task": {
+      "task_state": "blocked",
+      "priority": 3,
+      "required_method": "unknown",
+      "question": "料金方式・公開範囲：定義の未確認部分・現行条件を確認する。",
+      "evidence_needed": "公式料金・個別見積・契約書",
+      "owner": "未割当",
+      "next_review_on": null,
+      "block_reason": "今回の取得環境で公式本文を取得できない。",
+      "last_checked_on": null
+    },
+    "original_definition": "固定、人数従量、施設課金、計算従量、買切り、見積制を区別し、価格非公開を0円としない。",
+    "original_required_evidence": "公式料金・個別見積・契約書",
+    "public_question": "公開資料に明記された「料金方式・公開範囲」の範囲・対象条件を整理し、未記載/相違/実契約/実測を分ける。",
+    "public_acceptance_atoms": [
+      "固定/人数/施設/計算/買切り/見積の公開方式",
+      "通貨/税/時点/対象プランの条件"
+    ],
+    "policy_id": "Q01-public-review-v1",
+    "individually_reviewed": true,
+    "public_phase": "needs_targeted_public_followup",
+    "primary_queue": "public_research_remaining",
+    "reason": "シンクロシフト公式料金画像を通常表示で読み、金額・人数単位・税・周期を限定照合する。画像未読のまま公開価格を非公開/外部見積待ちと扱わない。個別契約は別確認。",
+    "evidence_observation_ids": [
+      "B01-O00232",
+      "B04-20261011-OBS0316"
+    ],
+    "source_urls": [
+      "https://synchroseries.jp/"
+    ],
+    "completion_evidence_ids": [],
+    "remaining_work": [],
+    "external_state": "not_individually_assessed",
+    "resume_condition": "次回は公開確認項目を1問に限定して探索。新根拠がなければ探索範囲と未確認を保存して止める。",
+    "after_task": {
+      "task_state": "in_progress",
+      "priority": 3,
+      "required_method": "public_document",
+      "question": "料金方式・公開範囲：定義の未確認部分・現行条件を確認する。",
+      "evidence_needed": "公式料金・個別見積・契約書",
+      "owner": "Aqsh / 次の限定公開調査",
+      "next_review_on": null,
+      "block_reason": null,
+      "last_checked_on": "2026-10-13"
+    },
+    "factual_state_changed": false,
+    "original_requirements_deleted": false,
+    "acceptance_review": [
+      {
+        "atom": "固定/人数/施設/計算/買切り/見積の公開方式",
+        "state": "partial_or_unconfirmed",
+        "observation_ids": []
+      },
+      {
+        "atom": "通貨/税/時点/対象プランの条件",
+        "state": "partial_or_unconfirmed",
+        "observation_ids": []
+      }
+    ]
+  },
+  {
+    "review_id": "Q01-TASK-RES00351",
+    "task_id": "TASK-RES00351",
+    "offering_id": "OF-JP08",
+    "product": "シンクロシフト",
+    "criterion_id": "P02",
+    "original_task": {
+      "task_state": "blocked",
+      "priority": 3,
+      "required_method": "unknown",
+      "question": "課金対象・単位：定義の未確認部分・現行条件を確認する。",
+      "evidence_needed": "公式料金・個別見積・契約書",
+      "owner": "未割当",
+      "next_review_on": null,
+      "block_reason": "今回の取得環境で公式本文を取得できない。",
+      "last_checked_on": null
+    },
+    "original_definition": "登録人数・利用人数・休職者・管理者・兼務者・拠点の数え方と段階料金を確認する。",
+    "original_required_evidence": "公式料金・個別見積・契約書",
+    "public_question": "公開資料に明記された「課金対象・単位」の範囲・対象条件を整理し、未記載/相違/実契約/実測を分ける。",
+    "public_acceptance_atoms": [
+      "公開された課金対象と単位",
+      "管理者/休職/兼務/最低数量等の記載範囲"
+    ],
+    "policy_id": "Q01-public-review-v1",
+    "individually_reviewed": true,
+    "public_phase": "bounded_search_ended_partial",
+    "primary_queue": "external_confirmation_wait",
+    "reason": "個別に保存資料を照合。契約人数は最低10人、5人刻み。契約途中の増員は残期間の差額を請求し、減員・返金は行わない。",
+    "evidence_observation_ids": [
+      "B04-20261011-OBS0318"
+    ],
+    "source_urls": [
+      "https://synchroseries.jp/synchroshift/terms"
+    ],
+    "completion_evidence_ids": [],
+    "remaining_work": [
+      "対象提供単位の現行正式仕様/契約適用の回答",
+      "ブラウザ表示の利用規約。個別契約との優先関係、現行プランの具体額・実装は未確認。"
+    ],
+    "external_state": "awaiting_external_input",
+    "resume_condition": "対象仕様/料金/契約の更新又は正式回答を得た時、あるいは導入/自社仕様の判断に必要になった時。",
+    "after_task": {
+      "task_state": "blocked",
+      "priority": 3,
+      "required_method": "vendor_document",
+      "question": "課金対象・単位：定義の未確認部分・現行条件を確認する。",
+      "evidence_needed": "公式料金・個別見積・契約書",
+      "owner": "外部確認待ち / 担当未定",
+      "next_review_on": null,
+      "block_reason": "公開資料の限定確認を終了。対象提供単位の現行正式仕様/契約適用の回答が未取得。再開：正式回答/現行契約又は対象試験の結果が得られた時。",
+      "last_checked_on": "2026-10-13"
+    },
+    "factual_state_changed": false,
+    "original_requirements_deleted": false,
+    "acceptance_review": [
+      {
+        "atom": "公開された課金対象と単位",
+        "state": "partial_or_unconfirmed",
+        "observation_ids": []
+      },
+      {
+        "atom": "管理者/休職/兼務/最低数量等の記載範囲",
+        "state": "partial_or_unconfirmed",
+        "observation_ids": []
+      }
+    ]
+  },
+  {
+    "review_id": "Q01-TASK-RES00352",
+    "task_id": "TASK-RES00352",
+    "offering_id": "OF-JP08",
+    "product": "シンクロシフト",
+    "criterion_id": "P03",
+    "original_task": {
+      "task_state": "blocked",
+      "priority": 3,
+      "required_method": "unknown",
+      "question": "請求周期・最低契約：定義の未確認部分・現行条件を確認する。",
+      "evidence_needed": "公式料金・個別見積・契約書",
+      "owner": "未割当",
+      "next_review_on": null,
+      "block_reason": "今回の取得環境で公式本文を取得できない。",
+      "last_checked_on": null
+    },
+    "original_definition": "月払と年払を別に記録し、前払、最低利用期間、人数下限、最低請求額を確認する。",
+    "original_required_evidence": "公式料金・個別見積・契約書",
+    "public_question": "シンクロシフトの公表された有料契約の期間・請求周期・前払いを確認する（個別契約と最低請求額は別確認）。",
+    "public_acceptance_atoms": [
+      "シンクロシフトの公表された有料契約の期間・請求周期・前払いを確認する（個別契約と最低請求額は別確認）。",
+      "対応する本文根拠/取得日/locatorの確認",
+      "原設問の残条件と再開条件を削除せず別段階に保存"
+    ],
+    "policy_id": "Q01-public-review-v1",
+    "individually_reviewed": true,
+    "public_phase": "closed_documented",
+    "primary_queue": "completed_public_check",
+    "reason": "1年単位・年額前払い・自動更新という公開条項を確認。 公開資料の確認という限定質問を終了。元の広い要件と残条件は本台帳に保存。",
+    "evidence_observation_ids": [
+      "B04-20261011-OBS0314",
+      "B04-20261011-OBS0319"
+    ],
+    "source_urls": [
+      "https://synchroseries.jp/",
+      "https://synchroseries.jp/synchroshift/terms"
+    ],
+    "completion_evidence_ids": [
+      "B04-20261011-OBS0314",
+      "B04-20261011-OBS0319"
+    ],
+    "remaining_work": [
+      "最低請求総額と個別注文の適用は未確認"
+    ],
+    "external_state": "deferred_until_adoption",
+    "resume_condition": "公表対象の変更/新しい相反資料が出た時。残る契約/実機要件は採用候補化した時。",
+    "after_task": {
+      "task_state": "done",
+      "priority": 3,
+      "required_method": "public_document",
+      "question": "シンクロシフトの公表された有料契約の期間・請求周期・前払いを確認する（個別契約と最低請求額は別確認）。",
+      "evidence_needed": "公開文書の本文・取得日・該当箇所。契約適用/実測の残条件はqueue-review-Q01/ledger.jsonを参照。",
+      "owner": "Aqsh / 公開資料整理Q01",
+      "next_review_on": null,
+      "block_reason": null,
+      "last_checked_on": "2026-10-13"
+    },
+    "factual_state_changed": false,
+    "original_requirements_deleted": false,
+    "original_public_atoms": [
+      "月/年の請求周期・前払い・最低期間",
+      "最低人数/請求額の公表範囲"
+    ],
+    "acceptance_review": [
+      {
+        "atom": "シンクロシフトの公表された有料契約の期間・請求周期・前払いを確認する（個別契約と最低請求額は別確認）。",
+        "state": "confirmed_documented",
+        "observation_ids": [
+          "B04-20261011-OBS0314",
+          "B04-20261011-OBS0319"
+        ]
+      },
+      {
+        "atom": "対応する本文根拠/取得日/locatorの確認",
+        "state": "confirmed_documented",
+        "observation_ids": [
+          "B04-20261011-OBS0314",
+          "B04-20261011-OBS0319"
+        ]
+      },
+      {
+        "atom": "原設問の残条件と再開条件を削除せず別段階に保存",
+        "state": "confirmed_documented",
+        "observation_ids": [
+          "B04-20261011-OBS0314",
+          "B04-20261011-OBS0319"
+        ]
+      }
+    ]
+  },
+  {
+    "review_id": "Q01-TASK-RES00481",
+    "task_id": "TASK-RES00481",
+    "offering_id": "OF-JP11",
+    "product": "ナースシフト",
+    "criterion_id": "L01",
+    "original_task": {
+      "task_state": "not_started",
+      "priority": 3,
+      "required_method": "unknown",
+      "question": "スマホでの希望提出：定義の未確認部分・現行条件を確認する。",
+      "evidence_needed": "職員画面・利用手順・権限テスト",
+      "owner": "未割当",
+      "next_review_on": null,
+      "block_reason": null,
+      "last_checked_on": null
+    },
+    "original_definition": "アプリ・ブラウザの別、操作範囲、追加費用、本人認証を確認する。",
+    "original_required_evidence": "職員画面・利用手順・権限テスト",
+    "public_question": "公開資料に明記された「スマホでの希望提出」の範囲・対象条件を整理し、未記載/相違/実契約/実測を分ける。",
+    "public_acceptance_atoms": [
+      "職員本人のアプリ/ブラウザ提出の公開手順",
+      "費用/認証/権限の記載範囲"
+    ],
+    "policy_id": "Q01-public-review-v1",
+    "individually_reviewed": true,
+    "public_phase": "needs_targeted_public_followup",
+    "primary_queue": "public_research_remaining",
+    "reason": "管理者のスマホブラウザ操作と、職員本人の希望提出を分ける専用仕様を限定照合する。",
+    "evidence_observation_ids": [
+      "B01-O00161"
+    ],
+    "source_urls": [
+      "https://nurse-shift.com/"
+    ],
+    "completion_evidence_ids": [],
+    "remaining_work": [],
+    "external_state": "not_individually_assessed",
+    "resume_condition": "次回は公開確認項目を1問に限定して探索。新根拠がなければ探索範囲と未確認を保存して止める。",
+    "after_task": {
+      "task_state": "in_progress",
+      "priority": 3,
+      "required_method": "public_document",
+      "question": "スマホでの希望提出：定義の未確認部分・現行条件を確認する。",
+      "evidence_needed": "職員画面・利用手順・権限テスト",
+      "owner": "Aqsh / 次の限定公開調査",
+      "next_review_on": null,
+      "block_reason": null,
+      "last_checked_on": "2026-10-13"
+    },
+    "factual_state_changed": false,
+    "original_requirements_deleted": false,
+    "acceptance_review": [
+      {
+        "atom": "職員本人のアプリ/ブラウザ提出の公開手順",
+        "state": "partial_or_unconfirmed",
+        "observation_ids": []
+      },
+      {
+        "atom": "費用/認証/権限の記載範囲",
+        "state": "partial_or_unconfirmed",
+        "observation_ids": []
+      }
+    ]
+  },
+  {
+    "review_id": "Q01-TASK-RES00539",
+    "task_id": "TASK-RES00539",
+    "offering_id": "OF-JP13",
+    "product": "ほすぴタッチ",
+    "criterion_id": "A02",
+    "original_task": {
+      "task_state": "blocked",
+      "priority": 3,
+      "required_method": "unknown",
+      "question": "提供法人：定義の未確認部分・現行条件を確認する。",
+      "evidence_needed": "公式会社情報・製品仕様・提供終了告知",
+      "owner": "未割当",
+      "next_review_on": null,
+      "block_reason": "今回の取得環境で公式本文を取得できない。",
+      "last_checked_on": null
+    },
+    "original_definition": "開発元・販売元・契約主体を区別し、正式法人名を確認する。",
+    "original_required_evidence": "公式会社情報・製品仕様・提供終了告知",
+    "public_question": "ほすぴタッチの公表された開発・運営法人名を確認する（個別契約主体は別確認）。",
+    "public_acceptance_atoms": [
+      "ほすぴタッチの公表された開発・運営法人名を確認する（個別契約主体は別確認）。",
+      "対応する本文根拠/取得日/locatorの確認",
+      "原設問の残条件と再開条件を削除せず別段階に保存"
+    ],
+    "policy_id": "Q01-public-review-v1",
+    "individually_reviewed": true,
+    "public_phase": "closed_documented",
+    "primary_queue": "completed_public_check",
+    "reason": "シーライヴ株式会社の運営・知的財産帰属の記載を確認。 公開資料の確認という限定質問を終了。元の広い要件と残条件は本台帳に保存。",
+    "evidence_observation_ids": [
+      "B04-20261011-OBS0279"
+    ],
+    "source_urls": [
+      "https://hospi.ai/"
+    ],
+    "completion_evidence_ids": [
+      "B04-20261011-OBS0279"
+    ],
+    "remaining_work": [
+      "顧客の締結契約主体は未確認"
+    ],
+    "external_state": "deferred_until_adoption",
+    "resume_condition": "公表対象の変更/新しい相反資料が出た時。残る契約/実機要件は採用候補化した時。",
+    "after_task": {
+      "task_state": "done",
+      "priority": 3,
+      "required_method": "public_document",
+      "question": "ほすぴタッチの公表された開発・運営法人名を確認する（個別契約主体は別確認）。",
+      "evidence_needed": "公開文書の本文・取得日・該当箇所。契約適用/実測の残条件はqueue-review-Q01/ledger.jsonを参照。",
+      "owner": "Aqsh / 公開資料整理Q01",
+      "next_review_on": null,
+      "block_reason": null,
+      "last_checked_on": "2026-10-13"
+    },
+    "factual_state_changed": false,
+    "original_requirements_deleted": false,
+    "original_public_atoms": [
+      "開発・運営・販売元の公式の法人名と役割",
+      "契約主体が公表される範囲"
+    ],
+    "acceptance_review": [
+      {
+        "atom": "ほすぴタッチの公表された開発・運営法人名を確認する（個別契約主体は別確認）。",
+        "state": "confirmed_documented",
+        "observation_ids": [
+          "B04-20261011-OBS0279"
+        ]
+      },
+      {
+        "atom": "対応する本文根拠/取得日/locatorの確認",
+        "state": "confirmed_documented",
+        "observation_ids": [
+          "B04-20261011-OBS0279"
+        ]
+      },
+      {
+        "atom": "原設問の残条件と再開条件を削除せず別段階に保存",
+        "state": "confirmed_documented",
+        "observation_ids": [
+          "B04-20261011-OBS0279"
+        ]
+      }
+    ]
+  },
+  {
+    "review_id": "Q01-TASK-RES00540",
+    "task_id": "TASK-RES00540",
+    "offering_id": "OF-JP13",
+    "product": "ほすぴタッチ",
+    "criterion_id": "A03",
+    "original_task": {
+      "task_state": "blocked",
+      "priority": 3,
+      "required_method": "unknown",
+      "question": "提供・販売状態：定義の未確認部分・現行条件を確認する。",
+      "evidence_needed": "公式会社情報・製品仕様・提供終了告知",
+      "owner": "未割当",
+      "next_review_on": null,
+      "block_reason": "今回の取得環境で公式本文を取得できない。",
+      "last_checked_on": null
+    },
+    "original_definition": "商用提供中、試験提供、提供予定、新規受付終了、終了を区別し、対象日を記録する。",
+    "original_required_evidence": "公式会社情報・製品仕様・提供終了告知",
+    "public_question": "公開資料に明記された「提供・販売状態」の範囲・対象条件を整理し、未記載/相違/実契約/実測を分ける。",
+    "public_acceptance_atoms": [
+      "公式に案内される提供中/予定/終了の状態",
+      "時点・地域・新規受付への留保"
+    ],
+    "policy_id": "Q01-public-review-v1",
+    "individually_reviewed": true,
+    "public_phase": "needs_targeted_public_followup",
+    "primary_queue": "public_research_remaining",
+    "reason": "ほすぴタッチの提供・受付状態を公式の現行案内で限定照合する。ログイン画面や過去SLAだけで確定しない。",
+    "evidence_observation_ids": [
+      "B01-O00404"
+    ],
+    "source_urls": [
+      "https://hospi.ai/"
+    ],
+    "completion_evidence_ids": [],
+    "remaining_work": [],
+    "external_state": "not_individually_assessed",
+    "resume_condition": "次回は公開確認項目を1問に限定して探索。新根拠がなければ探索範囲と未確認を保存して止める。",
+    "after_task": {
+      "task_state": "in_progress",
+      "priority": 3,
+      "required_method": "public_document",
+      "question": "提供・販売状態：定義の未確認部分・現行条件を確認する。",
+      "evidence_needed": "公式会社情報・製品仕様・提供終了告知",
+      "owner": "Aqsh / 次の限定公開調査",
+      "next_review_on": null,
+      "block_reason": null,
+      "last_checked_on": "2026-10-13"
+    },
+    "factual_state_changed": false,
+    "original_requirements_deleted": false,
+    "acceptance_review": [
+      {
+        "atom": "公式に案内される提供中/予定/終了の状態",
+        "state": "partial_or_unconfirmed",
+        "observation_ids": []
+      },
+      {
+        "atom": "時点・地域・新規受付への留保",
+        "state": "partial_or_unconfirmed",
+        "observation_ids": []
+      }
+    ]
+  },
+  {
+    "review_id": "Q01-TASK-RES00541",
+    "task_id": "TASK-RES00541",
+    "offering_id": "OF-JP13",
+    "product": "ほすぴタッチ",
+    "criterion_id": "A04",
+    "original_task": {
+      "task_state": "blocked",
+      "priority": 3,
+      "required_method": "unknown",
+      "question": "対象業態：定義の未確認部分・現行条件を確認する。",
+      "evidence_needed": "公式会社情報・製品仕様・提供終了告知",
+      "owner": "未割当",
+      "next_review_on": null,
+      "block_reason": "今回の取得環境で公式本文を取得できない。",
+      "last_checked_on": null
+    },
+    "original_definition": "病棟、外来、介護、障害福祉、訪問、他業種を明示し、単なる導入事例から全業態対応を推定しない。",
+    "original_required_evidence": "公式会社情報・製品仕様・提供終了告知",
+    "public_question": "ほすぴタッチが用途として公開明示する業種を確認する（各施設種別への制度適合は別確認）。",
+    "public_acceptance_atoms": [
+      "ほすぴタッチが用途として公開明示する業種を確認する（各施設種別への制度適合は別確認）。",
+      "対応する本文根拠/取得日/locatorの確認",
+      "原設問の残条件と再開条件を削除せず別段階に保存"
+    ],
+    "policy_id": "Q01-public-review-v1",
+    "individually_reviewed": true,
+    "public_phase": "closed_documented",
+    "primary_queue": "completed_public_check",
+    "reason": "医療・介護および工場/倉庫/警備/放送等の公表用途を確認。 公開資料の確認という限定質問を終了。元の広い要件と残条件は本台帳に保存。",
+    "evidence_observation_ids": [
+      "B04-20261011-OBS0281"
+    ],
+    "source_urls": [
+      "https://hospi.ai/"
+    ],
+    "completion_evidence_ids": [
+      "B04-20261011-OBS0281"
+    ],
+    "remaining_work": [
+      "各施設種別への制度適合・顧客導入の結果は未検証"
+    ],
+    "external_state": "deferred_until_adoption",
+    "resume_condition": "公表対象の変更/新しい相反資料が出た時。残る契約/実機要件は採用候補化した時。",
+    "after_task": {
+      "task_state": "done",
+      "priority": 3,
+      "required_method": "public_document",
+      "question": "ほすぴタッチが用途として公開明示する業種を確認する（各施設種別への制度適合は別確認）。",
+      "evidence_needed": "公開文書の本文・取得日・該当箇所。契約適用/実測の残条件はqueue-review-Q01/ledger.jsonを参照。",
+      "owner": "Aqsh / 公開資料整理Q01",
+      "next_review_on": null,
+      "block_reason": null,
+      "last_checked_on": "2026-10-13"
+    },
+    "factual_state_changed": false,
+    "original_requirements_deleted": false,
+    "original_public_atoms": [
+      "提供者が明示する対象業態",
+      "事例だけに基づく推定を除く"
+    ],
+    "acceptance_review": [
+      {
+        "atom": "ほすぴタッチが用途として公開明示する業種を確認する（各施設種別への制度適合は別確認）。",
+        "state": "confirmed_documented",
+        "observation_ids": [
+          "B04-20261011-OBS0281"
+        ]
+      },
+      {
+        "atom": "対応する本文根拠/取得日/locatorの確認",
+        "state": "confirmed_documented",
+        "observation_ids": [
+          "B04-20261011-OBS0281"
+        ]
+      },
+      {
+        "atom": "原設問の残条件と再開条件を削除せず別段階に保存",
+        "state": "confirmed_documented",
+        "observation_ids": [
+          "B04-20261011-OBS0281"
+        ]
+      }
+    ]
+  },
+  {
+    "review_id": "Q01-TASK-RES00542",
+    "task_id": "TASK-RES00542",
+    "offering_id": "OF-JP13",
+    "product": "ほすぴタッチ",
+    "criterion_id": "A06",
+    "original_task": {
+      "task_state": "blocked",
+      "priority": 3,
+      "required_method": "unknown",
+      "question": "対象規模：定義の未確認部分・現行条件を確認する。",
+      "evidence_needed": "公式会社情報・製品仕様・提供終了告知",
+      "owner": "未割当",
+      "next_review_on": null,
+      "block_reason": "今回の取得環境で公式本文を取得できない。",
+      "last_checked_on": null
+    },
+    "original_definition": "登録人数上限と同時最適化人数を分け、部署・施設数・計画期間を条件付き数値で記録する。",
+    "original_required_evidence": "公式会社情報・製品仕様・提供終了告知",
+    "public_question": "公開資料に明記された「対象規模」の範囲・対象条件を整理し、未記載/相違/実契約/実測を分ける。",
+    "public_acceptance_atoms": [
+      "登録上限と同時計算規模の別",
+      "規模の数値に付く条件/未公表の区別"
+    ],
+    "policy_id": "Q01-public-review-v1",
+    "individually_reviewed": true,
+    "public_phase": "bounded_search_ended_partial",
+    "primary_queue": "external_confirmation_wait",
+    "reason": "個別に保存資料を照合。2万人規模の実績を自社表示。計算時間、条件、顧客数を含む独立検証は未確認。",
+    "evidence_observation_ids": [
+      "B04-20261011-OBS0282"
+    ],
+    "source_urls": [
+      "https://hospi.ai/"
+    ],
+    "completion_evidence_ids": [],
+    "remaining_work": [
+      "対象提供単位の現行正式仕様/契約適用の回答",
+      "ブラウザに表示された公式本文を確認。BPOの契約範囲・成果・実動作は未検証。"
+    ],
+    "external_state": "awaiting_external_input",
+    "resume_condition": "対象仕様/料金/契約の更新又は正式回答を得た時、あるいは導入/自社仕様の判断に必要になった時。",
+    "after_task": {
+      "task_state": "blocked",
+      "priority": 3,
+      "required_method": "vendor_document",
+      "question": "対象規模：定義の未確認部分・現行条件を確認する。",
+      "evidence_needed": "公式会社情報・製品仕様・提供終了告知",
+      "owner": "外部確認待ち / 担当未定",
+      "next_review_on": null,
+      "block_reason": "公開資料の限定確認を終了。対象提供単位の現行正式仕様/契約適用の回答が未取得。再開：正式回答/現行契約又は対象試験の結果が得られた時。",
+      "last_checked_on": "2026-10-13"
+    },
+    "factual_state_changed": false,
+    "original_requirements_deleted": false,
+    "acceptance_review": [
+      {
+        "atom": "登録上限と同時計算規模の別",
+        "state": "partial_or_unconfirmed",
+        "observation_ids": []
+      },
+      {
+        "atom": "規模の数値に付く条件/未公表の区別",
+        "state": "partial_or_unconfirmed",
+        "observation_ids": []
+      }
+    ]
+  },
+  {
+    "review_id": "Q01-TASK-RES00543",
+    "task_id": "TASK-RES00543",
+    "offering_id": "OF-JP13",
+    "product": "ほすぴタッチ",
+    "criterion_id": "A07",
+    "original_task": {
+      "task_state": "blocked",
+      "priority": 3,
+      "required_method": "unknown",
+      "question": "提供形態：定義の未確認部分・現行条件を確認する。",
+      "evidence_needed": "公式会社情報・製品仕様・提供終了告知",
+      "owner": "未割当",
+      "next_review_on": null,
+      "block_reason": "今回の取得環境で公式本文を取得できない。",
+      "last_checked_on": null
+    },
+    "original_definition": "SaaS、オンプレミス、Excel拡張、API、ライブラリ、受託開発、作成代行を分ける。",
+    "original_required_evidence": "公式会社情報・製品仕様・提供終了告知",
+    "public_question": "ほすぴタッチの公表されたクラウド/BPOとオンプレミス・ライセンス販売の扱いを区別する（現行注文の適用は別確認）。",
+    "public_acceptance_atoms": [
+      "ほすぴタッチの公表されたクラウド/BPOとオンプレミス・ライセンス販売の扱いを区別する（現行注文の適用は別確認）。",
+      "対応する本文根拠/取得日/locatorの確認",
+      "原設問の残条件と再開条件を削除せず別段階に保存"
+    ],
+    "policy_id": "Q01-public-review-v1",
+    "individually_reviewed": true,
+    "public_phase": "closed_documented",
+    "primary_queue": "completed_public_check",
+    "reason": "クラウド/BPOの案内と2025-07-05 SLAのAWS/オンプレ・ライセンス販売なしという記載を確認。 公開資料の確認という限定質問を終了。元の広い要件と残条件は本台帳に保存。",
+    "evidence_observation_ids": [
+      "B04-20261011-OBS0280",
+      "B04-20261011-OBS0340"
+    ],
+    "source_urls": [
+      "https://hospi.ai/",
+      "https://tayori.com/faq/b2a0a742cee383e5f35bbdaf83de37388c1e8019/part-file-acquisition/?file_hash=aa1805687b0b4ceae9434b77b8af380661c3ac42.pdf"
+    ],
+    "completion_evidence_ids": [
+      "B04-20261011-OBS0280",
+      "B04-20261011-OBS0340"
+    ],
+    "remaining_work": [
+      "BPOとSLAの作業分担/個別現行契約との関係は未確定"
+    ],
+    "external_state": "deferred_until_adoption",
+    "resume_condition": "公表対象の変更/新しい相反資料が出た時。残る契約/実機要件は採用候補化した時。",
+    "after_task": {
+      "task_state": "done",
+      "priority": 3,
+      "required_method": "public_document",
+      "question": "ほすぴタッチの公表されたクラウド/BPOとオンプレミス・ライセンス販売の扱いを区別する（現行注文の適用は別確認）。",
+      "evidence_needed": "公開文書の本文・取得日・該当箇所。契約適用/実測の残条件はqueue-review-Q01/ledger.jsonを参照。",
+      "owner": "Aqsh / 公開資料整理Q01",
+      "next_review_on": null,
+      "block_reason": null,
+      "last_checked_on": "2026-10-13"
+    },
+    "factual_state_changed": false,
+    "original_requirements_deleted": false,
+    "original_public_atoms": [
+      "SaaS/オンプレ/拡張/API/受託/代行の公式分類",
+      "別方式を同一提供範囲に混ぜない"
+    ],
+    "acceptance_review": [
+      {
+        "atom": "ほすぴタッチの公表されたクラウド/BPOとオンプレミス・ライセンス販売の扱いを区別する（現行注文の適用は別確認）。",
+        "state": "confirmed_documented",
+        "observation_ids": [
+          "B04-20261011-OBS0280",
+          "B04-20261011-OBS0340"
+        ]
+      },
+      {
+        "atom": "対応する本文根拠/取得日/locatorの確認",
+        "state": "confirmed_documented",
+        "observation_ids": [
+          "B04-20261011-OBS0280",
+          "B04-20261011-OBS0340"
+        ]
+      },
+      {
+        "atom": "原設問の残条件と再開条件を削除せず別段階に保存",
+        "state": "confirmed_documented",
+        "observation_ids": [
+          "B04-20261011-OBS0280",
+          "B04-20261011-OBS0340"
+        ]
+      }
+    ]
+  },
+  {
+    "review_id": "Q01-TASK-RES00544",
+    "task_id": "TASK-RES00544",
+    "offering_id": "OF-JP13",
+    "product": "ほすぴタッチ",
+    "criterion_id": "B01",
+    "original_task": {
+      "task_state": "blocked",
+      "priority": 3,
+      "required_method": "unknown",
+      "question": "勤務表の自動割当：定義の未確認部分・現行条件を確認する。",
+      "evidence_needed": "機能仕様・プラン比較・利用規約・デモ",
+      "owner": "未割当",
+      "next_review_on": null,
+      "block_reason": "今回の取得環境で公式本文を取得できない。",
+      "last_checked_on": null
+    },
+    "original_definition": "希望・必要人数・ルールから職員を勤務枠へ割り当てる。共有、転記、固定パターン複製だけは区別する。",
+    "original_required_evidence": "機能仕様・プラン比較・利用規約・デモ",
+    "public_question": "公開資料に明記された「勤務表の自動割当」の範囲・対象条件を整理し、未記載/相違/実契約/実測を分ける。",
+    "public_acceptance_atoms": [
+      "勤務表そのものの自動割当の記載",
+      "希望/人数/規則から割当する説明と転記/複製の区別"
+    ],
+    "policy_id": "Q01-public-review-v1",
+    "individually_reviewed": true,
+    "public_phase": "needs_targeted_public_followup",
+    "primary_queue": "public_research_remaining",
+    "reason": "ほすぴタッチの作成代行と勤務割当の計算機能を分け、対象条件の公開仕様を限定照合する。",
+    "evidence_observation_ids": [
+      "B01-O00234"
+    ],
+    "source_urls": [
+      "https://hospi.ai/"
+    ],
+    "completion_evidence_ids": [],
+    "remaining_work": [],
+    "external_state": "not_individually_assessed",
+    "resume_condition": "次回は公開確認項目を1問に限定して探索。新根拠がなければ探索範囲と未確認を保存して止める。",
+    "after_task": {
+      "task_state": "in_progress",
+      "priority": 3,
+      "required_method": "public_document",
+      "question": "勤務表の自動割当：定義の未確認部分・現行条件を確認する。",
+      "evidence_needed": "機能仕様・プラン比較・利用規約・デモ",
+      "owner": "Aqsh / 次の限定公開調査",
+      "next_review_on": null,
+      "block_reason": null,
+      "last_checked_on": "2026-10-13"
+    },
+    "factual_state_changed": false,
+    "original_requirements_deleted": false,
+    "acceptance_review": [
+      {
+        "atom": "勤務表そのものの自動割当の記載",
+        "state": "partial_or_unconfirmed",
+        "observation_ids": []
+      },
+      {
+        "atom": "希望/人数/規則から割当する説明と転記/複製の区別",
+        "state": "partial_or_unconfirmed",
+        "observation_ids": []
+      }
+    ]
+  },
+  {
+    "review_id": "Q01-TASK-RES00566",
+    "task_id": "TASK-RES00566",
+    "offering_id": "OF-JP13",
+    "product": "ほすぴタッチ",
+    "criterion_id": "K03",
+    "original_task": {
+      "task_state": "blocked",
+      "priority": 3,
+      "required_method": "unknown",
+      "question": "初期設定の主体：定義の未確認部分・現行条件を確認する。",
+      "evidence_needed": "導入手順・実画面・タイムスタディ",
+      "owner": "未割当",
+      "next_review_on": null,
+      "block_reason": "今回の取得環境で公式本文を取得できない。",
+      "last_checked_on": null
+    },
+    "original_definition": "顧客自力、ベンダー代行、共同設定、個別開発のどれか、作業分担を記録する。",
+    "original_required_evidence": "導入手順・実画面・タイムスタディ",
+    "public_question": "公開資料に明記された「初期設定の主体」の範囲・対象条件を整理し、未記載/相違/実契約/実測を分ける。",
+    "public_acceptance_atoms": [
+      "顧客/ベンダー/共同/個別開発の公開分担",
+      "標準と有償支援の別"
+    ],
+    "policy_id": "Q01-public-review-v1",
+    "individually_reviewed": true,
+    "public_phase": "bounded_search_ended_disputed",
+    "primary_queue": "external_confirmation_wait",
+    "reason": "個別に保存資料を照合。顧客のヒアリング・条件整理から完成勤務表まで提供者が代行する流れを案内。 / SLA v3.0はマスター入力・変更・保守を顧客が担当、入力代行は有償と規定。現行サイトのBPO案内とは操作分担が異なり、契約適用を確定できない。",
+    "evidence_observation_ids": [
+      "B04-20261011-OBS0283",
+      "B04-20261011-OBS0345"
+    ],
+    "source_urls": [
+      "https://hospi.ai/",
+      "https://tayori.com/faq/b2a0a742cee383e5f35bbdaf83de37388c1e8019/part-file-acquisition/?file_hash=aa1805687b0b4ceae9434b77b8af380661c3ac42.pdf"
+    ],
+    "completion_evidence_ids": [],
+    "remaining_work": [
+      "対象提供単位の現行正式仕様/契約適用の回答",
+      "ブラウザに表示された公式本文を確認。BPOの契約範囲・成果・実動作は未検証。 / 2025年7月5日更新のSLA原本。現行個別契約との適用関係、達成状況は未確認。"
+    ],
+    "external_state": "awaiting_external_input",
+    "resume_condition": "対象仕様/料金/契約の更新又は正式回答を得た時、あるいは導入/自社仕様の判断に必要になった時。",
+    "after_task": {
+      "task_state": "blocked",
+      "priority": 3,
+      "required_method": "vendor_document",
+      "question": "初期設定の主体：定義の未確認部分・現行条件を確認する。",
+      "evidence_needed": "導入手順・実画面・タイムスタディ",
+      "owner": "外部確認待ち / 担当未定",
+      "next_review_on": null,
+      "block_reason": "公開資料の限定確認を終了。対象提供単位の現行正式仕様/契約適用の回答が未取得。再開：正式回答/現行契約又は対象試験の結果が得られた時。",
+      "last_checked_on": "2026-10-13"
+    },
+    "factual_state_changed": false,
+    "original_requirements_deleted": false,
+    "acceptance_review": [
+      {
+        "atom": "顧客/ベンダー/共同/個別開発の公開分担",
+        "state": "partial_or_unconfirmed",
+        "observation_ids": []
+      },
+      {
+        "atom": "標準と有償支援の別",
+        "state": "partial_or_unconfirmed",
+        "observation_ids": []
+      }
+    ]
+  },
+  {
+    "review_id": "Q01-TASK-RES00568",
+    "task_id": "TASK-RES00568",
+    "offering_id": "OF-JP13",
+    "product": "ほすぴタッチ",
+    "criterion_id": "M08",
+    "original_task": {
+      "task_state": "blocked",
+      "priority": 3,
+      "required_method": "unknown",
+      "question": "解約時の全量出力：定義の未確認部分・現行条件を確認する。",
+      "evidence_needed": "入出力仕様・API文書・実接続・契約",
+      "owner": "未割当",
+      "next_review_on": null,
+      "block_reason": "今回の取得環境で公式本文を取得できない。",
+      "last_checked_on": null
+    },
+    "original_definition": "勤務表だけでなく希望、ルール、設定、履歴を機械可読で持ち出せるか、費用と期限を確認する。",
+    "original_required_evidence": "入出力仕様・API文書・実接続・契約",
+    "public_question": "公開資料に明記された「解約時の全量出力」の範囲・対象条件を整理し、未記載/相違/実契約/実測を分ける。",
+    "public_acceptance_atoms": [
+      "勤務表/希望/規則/設定/履歴の公開出力範囲",
+      "機械可読形式・期限・費用の公表範囲"
+    ],
+    "policy_id": "Q01-public-review-v1",
+    "individually_reviewed": true,
+    "public_phase": "bounded_search_ended_partial",
+    "primary_queue": "external_confirmation_wait",
+    "reason": "個別に保存資料を照合。終了時のバックアップデータ提供は例外的な有償見積で、媒体・形式・提供日・料金を協議。標準の全量エクスポート保証ではない。",
+    "evidence_observation_ids": [
+      "B04-20261011-OBS0337"
+    ],
+    "source_urls": [
+      "https://tayori.com/faq/b2a0a742cee383e5f35bbdaf83de37388c1e8019/part-file-acquisition/?file_hash=aa1805687b0b4ceae9434b77b8af380661c3ac42.pdf"
+    ],
+    "completion_evidence_ids": [],
+    "remaining_work": [
+      "対象提供単位の現行正式仕様/契約適用の回答",
+      "2025年7月5日更新のSLA原本。現行個別契約との適用関係、達成状況は未確認。"
+    ],
+    "external_state": "awaiting_external_input",
+    "resume_condition": "対象仕様/料金/契約の更新又は正式回答を得た時、あるいは導入/自社仕様の判断に必要になった時。",
+    "after_task": {
+      "task_state": "blocked",
+      "priority": 3,
+      "required_method": "vendor_document",
+      "question": "解約時の全量出力：定義の未確認部分・現行条件を確認する。",
+      "evidence_needed": "入出力仕様・API文書・実接続・契約",
+      "owner": "外部確認待ち / 担当未定",
+      "next_review_on": null,
+      "block_reason": "公開資料の限定確認を終了。対象提供単位の現行正式仕様/契約適用の回答が未取得。再開：正式回答/現行契約又は対象試験の結果が得られた時。",
+      "last_checked_on": "2026-10-13"
+    },
+    "factual_state_changed": false,
+    "original_requirements_deleted": false,
+    "acceptance_review": [
+      {
+        "atom": "勤務表/希望/規則/設定/履歴の公開出力範囲",
+        "state": "partial_or_unconfirmed",
+        "observation_ids": []
+      },
+      {
+        "atom": "機械可読形式・期限・費用の公表範囲",
+        "state": "partial_or_unconfirmed",
+        "observation_ids": []
+      }
+    ]
+  },
+  {
+    "review_id": "Q01-TASK-RES00569",
+    "task_id": "TASK-RES00569",
+    "offering_id": "OF-JP13",
+    "product": "ほすぴタッチ",
+    "criterion_id": "N01",
+    "original_task": {
+      "task_state": "blocked",
+      "priority": 3,
+      "required_method": "unknown",
+      "question": "テナント分離・アクセス権限：定義の未確認部分・現行条件を確認する。",
+      "evidence_needed": "約款・セキュリティ文書・第三者保証・権限試験",
+      "owner": "未割当",
+      "next_review_on": null,
+      "block_reason": "今回の取得環境で公式本文を取得できない。",
+      "last_checked_on": null
+    },
+    "original_definition": "法人、施設、部署、本人、運用担当者のアクセス範囲と横断アクセスの制御を確認する。",
+    "original_required_evidence": "約款・セキュリティ文書・第三者保証・権限試験",
+    "public_question": "公開資料に明記された「テナント分離・アクセス権限」の範囲・対象条件を整理し、未記載/相違/実契約/実測を分ける。",
+    "public_acceptance_atoms": [
+      "法人/施設/部署/本人/運用担当の公開権限",
+      "テナント分離と行単位の制御の別"
+    ],
+    "policy_id": "Q01-public-review-v1",
+    "individually_reviewed": true,
+    "public_phase": "bounded_search_ended_partial",
+    "primary_queue": "external_confirmation_wait",
+    "reason": "個別に保存資料を照合。1ユーザー1アカウント、最小権限に基づくアカウント管理を記載。詳細の役割一覧は未確認。",
+    "evidence_observation_ids": [
+      "B04-20261011-OBS0297"
+    ],
+    "source_urls": [
+      "https://tayori.com/q/hospi/detail/1372437/"
+    ],
+    "completion_evidence_ids": [],
+    "remaining_work": [
+      "対象提供単位の現行正式仕様/契約適用の回答",
+      "2026年9月7日更新の提供者公開仕様。運用監査・実機での設定確認は未実施。"
+    ],
+    "external_state": "awaiting_external_input",
+    "resume_condition": "対象仕様/料金/契約の更新又は正式回答を得た時、あるいは導入/自社仕様の判断に必要になった時。",
+    "after_task": {
+      "task_state": "blocked",
+      "priority": 3,
+      "required_method": "vendor_document",
+      "question": "テナント分離・アクセス権限：定義の未確認部分・現行条件を確認する。",
+      "evidence_needed": "約款・セキュリティ文書・第三者保証・権限試験",
+      "owner": "外部確認待ち / 担当未定",
+      "next_review_on": null,
+      "block_reason": "公開資料の限定確認を終了。対象提供単位の現行正式仕様/契約適用の回答が未取得。再開：正式回答/現行契約又は対象試験の結果が得られた時。",
+      "last_checked_on": "2026-10-13"
+    },
+    "factual_state_changed": false,
+    "original_requirements_deleted": false,
+    "acceptance_review": [
+      {
+        "atom": "法人/施設/部署/本人/運用担当の公開権限",
+        "state": "partial_or_unconfirmed",
+        "observation_ids": []
+      },
+      {
+        "atom": "テナント分離と行単位の制御の別",
+        "state": "partial_or_unconfirmed",
+        "observation_ids": []
+      }
+    ]
+  },
+  {
+    "review_id": "Q01-TASK-RES00570",
+    "task_id": "TASK-RES00570",
+    "offering_id": "OF-JP13",
+    "product": "ほすぴタッチ",
+    "criterion_id": "N05",
+    "original_task": {
+      "task_state": "blocked",
+      "priority": 3,
+      "required_method": "unknown",
+      "question": "生成AIへの送信・学習利用：定義の未確認部分・現行条件を確認する。",
+      "evidence_needed": "約款・セキュリティ文書・第三者保証・権限試験",
+      "owner": "未割当",
+      "next_review_on": null,
+      "block_reason": "今回の取得環境で公式本文を取得できない。",
+      "last_checked_on": null
+    },
+    "original_definition": "送信項目、匿名化、保持期間、学習利用、利用停止設定、契約範囲を確認する。",
+    "original_required_evidence": "約款・セキュリティ文書・第三者保証・権限試験",
+    "public_question": "公開資料に明記された「生成AIへの送信・学習利用」の範囲・対象条件を整理し、未記載/相違/実契約/実測を分ける。",
+    "public_acceptance_atoms": [
+      "送信項目/匿名化/保持/学習の公開説明",
+      "機能ごとの停止と公表規約の適用範囲"
+    ],
+    "policy_id": "Q01-public-review-v1",
+    "individually_reviewed": true,
+    "public_phase": "bounded_search_ended_partial",
+    "primary_queue": "external_confirmation_wait",
+    "reason": "個別に保存資料を照合。生成AIへの入力を最小限とし、学習に使わせない保護を記載。モデル名と契約根拠は未確認。",
+    "evidence_observation_ids": [
+      "B04-20261011-OBS0301"
+    ],
+    "source_urls": [
+      "https://tayori.com/q/hospi/detail/1372437/"
+    ],
+    "completion_evidence_ids": [],
+    "remaining_work": [
+      "対象提供単位の現行正式仕様/契約適用の回答",
+      "2026年9月7日更新の提供者公開仕様。運用監査・実機での設定確認は未実施。"
+    ],
+    "external_state": "awaiting_external_input",
+    "resume_condition": "対象仕様/料金/契約の更新又は正式回答を得た時、あるいは導入/自社仕様の判断に必要になった時。",
+    "after_task": {
+      "task_state": "blocked",
+      "priority": 3,
+      "required_method": "vendor_document",
+      "question": "生成AIへの送信・学習利用：定義の未確認部分・現行条件を確認する。",
+      "evidence_needed": "約款・セキュリティ文書・第三者保証・権限試験",
+      "owner": "外部確認待ち / 担当未定",
+      "next_review_on": null,
+      "block_reason": "公開資料の限定確認を終了。対象提供単位の現行正式仕様/契約適用の回答が未取得。再開：正式回答/現行契約又は対象試験の結果が得られた時。",
+      "last_checked_on": "2026-10-13"
+    },
+    "factual_state_changed": false,
+    "original_requirements_deleted": false,
+    "acceptance_review": [
+      {
+        "atom": "送信項目/匿名化/保持/学習の公開説明",
+        "state": "partial_or_unconfirmed",
+        "observation_ids": []
+      },
+      {
+        "atom": "機能ごとの停止と公表規約の適用範囲",
+        "state": "partial_or_unconfirmed",
+        "observation_ids": []
+      }
+    ]
+  },
+  {
+    "review_id": "Q01-TASK-RES00571",
+    "task_id": "TASK-RES00571",
+    "offering_id": "OF-JP13",
+    "product": "ほすぴタッチ",
+    "criterion_id": "O04",
+    "original_task": {
+      "task_state": "blocked",
+      "priority": 3,
+      "required_method": "unknown",
+      "question": "サポート窓口・時間：定義の未確認部分・現行条件を確認する。",
+      "evidence_needed": "SLA・障害対応規程・契約・運用テスト",
+      "owner": "未割当",
+      "next_review_on": null,
+      "block_reason": "今回の取得環境で公式本文を取得できない。",
+      "last_checked_on": null
+    },
+    "original_definition": "連絡手段、曜日時間帯、言語、応答目標、初期設定支援の範囲を確認する。",
+    "original_required_evidence": "SLA・障害対応規程・契約・運用テスト",
+    "public_question": "公開資料に明記された「サポート窓口・時間」の範囲・対象条件を整理し、未記載/相違/実契約/実測を分ける。",
+    "public_acceptance_atoms": [
+      "窓口/曜日時間/言語の公開案内",
+      "応答目標と初期設定支援/SLAの別"
+    ],
+    "policy_id": "Q01-public-review-v1",
+    "individually_reviewed": true,
+    "public_phase": "bounded_search_ended_partial",
+    "primary_queue": "external_confirmation_wait",
+    "reason": "個別に保存資料を照合。専門担当による相談は平日10〜22時、祝日を除く。障害の応答SLAとは区別する。 / メール・電話・Teamsでの連絡手段を記載。対応優先度と応答時間は未確認。 / 有人の操作サポートは平日10〜18時、土日祝・お盆・年末年始を除く。問い合わせ回答を4営業日以上待たせない努力目標。ホームページの相談時間とは対象を分ける。",
+    "evidence_observation_ids": [
+      "B04-20261011-OBS0288",
+      "B04-20261011-OBS0304",
+      "B04-20261011-OBS0335"
+    ],
+    "source_urls": [
+      "https://hospi.ai/",
+      "https://tayori.com/faq/b2a0a742cee383e5f35bbdaf83de37388c1e8019/part-file-acquisition/?file_hash=aa1805687b0b4ceae9434b77b8af380661c3ac42.pdf",
+      "https://tayori.com/q/hospi/detail/1372437/"
+    ],
+    "completion_evidence_ids": [],
+    "remaining_work": [
+      "対象提供単位の現行正式仕様/契約適用の回答",
+      "ブラウザに表示された公式本文を確認。BPOの契約範囲・成果・実動作は未検証。 / 2026年9月7日更新の提供者公開仕様。運用監査・実機での設定確認は未実施。 / 2025年7月5日更新のSLA原本。現行個別契約との適用関係、達成状況は未確認。"
+    ],
+    "external_state": "awaiting_external_input",
+    "resume_condition": "対象仕様/料金/契約の更新又は正式回答を得た時、あるいは導入/自社仕様の判断に必要になった時。",
+    "after_task": {
+      "task_state": "blocked",
+      "priority": 3,
+      "required_method": "vendor_document",
+      "question": "サポート窓口・時間：定義の未確認部分・現行条件を確認する。",
+      "evidence_needed": "SLA・障害対応規程・契約・運用テスト",
+      "owner": "外部確認待ち / 担当未定",
+      "next_review_on": null,
+      "block_reason": "公開資料の限定確認を終了。対象提供単位の現行正式仕様/契約適用の回答が未取得。再開：正式回答/現行契約又は対象試験の結果が得られた時。",
+      "last_checked_on": "2026-10-13"
+    },
+    "factual_state_changed": false,
+    "original_requirements_deleted": false,
+    "acceptance_review": [
+      {
+        "atom": "窓口/曜日時間/言語の公開案内",
+        "state": "partial_or_unconfirmed",
+        "observation_ids": []
+      },
+      {
+        "atom": "応答目標と初期設定支援/SLAの別",
+        "state": "partial_or_unconfirmed",
+        "observation_ids": []
+      }
+    ]
+  },
+  {
+    "review_id": "Q01-TASK-RES00572",
+    "task_id": "TASK-RES00572",
+    "offering_id": "OF-JP13",
+    "product": "ほすぴタッチ",
+    "criterion_id": "P01",
+    "original_task": {
+      "task_state": "blocked",
+      "priority": 3,
+      "required_method": "unknown",
+      "question": "料金方式・公開範囲：定義の未確認部分・現行条件を確認する。",
+      "evidence_needed": "公式料金・個別見積・契約書",
+      "owner": "未割当",
+      "next_review_on": null,
+      "block_reason": "今回の取得環境で公式本文を取得できない。",
+      "last_checked_on": null
+    },
+    "original_definition": "固定、人数従量、施設課金、計算従量、買切り、見積制を区別し、価格非公開を0円としない。",
+    "original_required_evidence": "公式料金・個別見積・契約書",
+    "public_question": "ほすぴタッチの公表月額の課金方式・税・チーム人数条件・見積範囲を記録する（顧客の正式見積は別確認）。",
+    "public_acceptance_atoms": [
+      "ほすぴタッチの公表月額の課金方式・税・チーム人数条件・見積範囲を記録する（顧客の正式見積は別確認）。",
+      "対応する本文根拠/取得日/locatorの確認",
+      "原設問の残条件と再開条件を削除せず別段階に保存"
+    ],
+    "policy_id": "Q01-public-review-v1",
+    "individually_reviewed": true,
+    "public_phase": "closed_documented",
+    "primary_queue": "completed_public_check",
+    "reason": "通常利用1人月1,000円税別・1チーム30人以内、超過/複数チームは見積という公開表示を確認。 公開資料の確認という限定質問を終了。元の広い要件と残条件は本台帳に保存。",
+    "evidence_observation_ids": [
+      "B01-O00235",
+      "B04-20261011-OBS0290"
+    ],
+    "source_urls": [
+      "https://hospi.ai/",
+      "https://hospi.ai/Fees"
+    ],
+    "completion_evidence_ids": [
+      "B04-20261011-OBS0290"
+    ],
+    "remaining_work": [
+      "正式見積/契約適用/休職・兼務等の課金定義は未確定"
+    ],
+    "external_state": "deferred_until_adoption",
+    "resume_condition": "公表対象の変更/新しい相反資料が出た時。残る契約/実機要件は採用候補化した時。",
+    "after_task": {
+      "task_state": "done",
+      "priority": 3,
+      "required_method": "public_document",
+      "question": "ほすぴタッチの公表月額の課金方式・税・チーム人数条件・見積範囲を記録する（顧客の正式見積は別確認）。",
+      "evidence_needed": "公開文書の本文・取得日・該当箇所。契約適用/実測の残条件はqueue-review-Q01/ledger.jsonを参照。",
+      "owner": "Aqsh / 公開資料整理Q01",
+      "next_review_on": null,
+      "block_reason": null,
+      "last_checked_on": "2026-10-13"
+    },
+    "factual_state_changed": false,
+    "original_requirements_deleted": false,
+    "original_public_atoms": [
+      "固定/人数/施設/計算/買切り/見積の公開方式",
+      "通貨/税/時点/対象プランの条件"
+    ],
+    "acceptance_review": [
+      {
+        "atom": "ほすぴタッチの公表月額の課金方式・税・チーム人数条件・見積範囲を記録する（顧客の正式見積は別確認）。",
+        "state": "confirmed_documented",
+        "observation_ids": [
+          "B04-20261011-OBS0290"
+        ]
+      },
+      {
+        "atom": "対応する本文根拠/取得日/locatorの確認",
+        "state": "confirmed_documented",
+        "observation_ids": [
+          "B04-20261011-OBS0290"
+        ]
+      },
+      {
+        "atom": "原設問の残条件と再開条件を削除せず別段階に保存",
+        "state": "confirmed_documented",
+        "observation_ids": [
+          "B04-20261011-OBS0290"
+        ]
+      }
+    ]
+  },
+  {
+    "review_id": "Q01-TASK-RES00573",
+    "task_id": "TASK-RES00573",
+    "offering_id": "OF-JP13",
+    "product": "ほすぴタッチ",
+    "criterion_id": "P02",
+    "original_task": {
+      "task_state": "blocked",
+      "priority": 3,
+      "required_method": "unknown",
+      "question": "課金対象・単位：定義の未確認部分・現行条件を確認する。",
+      "evidence_needed": "公式料金・個別見積・契約書",
+      "owner": "未割当",
+      "next_review_on": null,
+      "block_reason": "今回の取得環境で公式本文を取得できない。",
+      "last_checked_on": null
+    },
+    "original_definition": "登録人数・利用人数・休職者・管理者・兼務者・拠点の数え方と段階料金を確認する。",
+    "original_required_evidence": "公式料金・個別見積・契約書",
+    "public_question": "公開資料に明記された「課金対象・単位」の範囲・対象条件を整理し、未記載/相違/実契約/実測を分ける。",
+    "public_acceptance_atoms": [
+      "公開された課金対象と単位",
+      "管理者/休職/兼務/最低数量等の記載範囲"
+    ],
+    "policy_id": "Q01-public-review-v1",
+    "individually_reviewed": true,
+    "public_phase": "bounded_search_ended_partial",
+    "primary_queue": "external_confirmation_wait",
+    "reason": "個別に保存資料を照合。前月の利用人数を翌月1日に請求し、同月末支払い。請求の職員定義と休職者の除外は未確定。 / 月額費用の利用者数をシフト管理対象スタッフの数と定義。",
+    "evidence_observation_ids": [
+      "B04-20261011-OBS0291",
+      "B04-20261011-OBS0342"
+    ],
+    "source_urls": [
+      "https://hospi.ai/Fees",
+      "https://tayori.com/faq/b2a0a742cee383e5f35bbdaf83de37388c1e8019/part-file-acquisition/?file_hash=aa1805687b0b4ceae9434b77b8af380661c3ac42.pdf"
+    ],
+    "completion_evidence_ids": [],
+    "remaining_work": [
+      "対象提供単位の現行正式仕様/契約適用の回答",
+      "現行のブラウザ表示本文を確認。旧PDFの料金を現行額に混ぜない。見積対象・契約適用は個別確認が必要。 / 2025年7月5日更新のSLA原本。現行個別契約との適用関係、達成状況は未確認。"
+    ],
+    "external_state": "awaiting_external_input",
+    "resume_condition": "対象仕様/料金/契約の更新又は正式回答を得た時、あるいは導入/自社仕様の判断に必要になった時。",
+    "after_task": {
+      "task_state": "blocked",
+      "priority": 3,
+      "required_method": "vendor_document",
+      "question": "課金対象・単位：定義の未確認部分・現行条件を確認する。",
+      "evidence_needed": "公式料金・個別見積・契約書",
+      "owner": "外部確認待ち / 担当未定",
+      "next_review_on": null,
+      "block_reason": "公開資料の限定確認を終了。対象提供単位の現行正式仕様/契約適用の回答が未取得。再開：正式回答/現行契約又は対象試験の結果が得られた時。",
+      "last_checked_on": "2026-10-13"
+    },
+    "factual_state_changed": false,
+    "original_requirements_deleted": false,
+    "acceptance_review": [
+      {
+        "atom": "公開された課金対象と単位",
+        "state": "partial_or_unconfirmed",
+        "observation_ids": []
+      },
+      {
+        "atom": "管理者/休職/兼務/最低数量等の記載範囲",
+        "state": "partial_or_unconfirmed",
+        "observation_ids": []
+      }
+    ]
+  },
+  {
+    "review_id": "Q01-TASK-RES00574",
+    "task_id": "TASK-RES00574",
+    "offering_id": "OF-JP13",
+    "product": "ほすぴタッチ",
+    "criterion_id": "P03",
+    "original_task": {
+      "task_state": "blocked",
+      "priority": 3,
+      "required_method": "unknown",
+      "question": "請求周期・最低契約：定義の未確認部分・現行条件を確認する。",
+      "evidence_needed": "公式料金・個別見積・契約書",
+      "owner": "未割当",
+      "next_review_on": null,
+      "block_reason": "今回の取得環境で公式本文を取得できない。",
+      "last_checked_on": null
+    },
+    "original_definition": "月払と年払を別に記録し、前払、最低利用期間、人数下限、最低請求額を確認する。",
+    "original_required_evidence": "公式料金・個別見積・契約書",
+    "public_question": "公開資料に明記された「請求周期・最低契約」の範囲・対象条件を整理し、未記載/相違/実契約/実測を分ける。",
+    "public_acceptance_atoms": [
+      "月/年の請求周期・前払い・最低期間",
+      "最低人数/請求額の公表範囲"
+    ],
+    "policy_id": "Q01-public-review-v1",
+    "individually_reviewed": true,
+    "public_phase": "bounded_search_ended_partial",
+    "primary_queue": "external_confirmation_wait",
+    "reason": "個別に保存資料を照合。月額利用は前月人数を翌月請求、トライアルは開始月の前払い。通常利用の最低契約期間は本文で確定しない。",
+    "evidence_observation_ids": [
+      "B04-20261011-OBS0296"
+    ],
+    "source_urls": [
+      "https://hospi.ai/Fees"
+    ],
+    "completion_evidence_ids": [],
+    "remaining_work": [
+      "対象提供単位の現行正式仕様/契約適用の回答",
+      "現行のブラウザ表示本文を確認。旧PDFの料金を現行額に混ぜない。見積対象・契約適用は個別確認が必要。"
+    ],
+    "external_state": "awaiting_external_input",
+    "resume_condition": "対象仕様/料金/契約の更新又は正式回答を得た時、あるいは導入/自社仕様の判断に必要になった時。",
+    "after_task": {
+      "task_state": "blocked",
+      "priority": 3,
+      "required_method": "vendor_document",
+      "question": "請求周期・最低契約：定義の未確認部分・現行条件を確認する。",
+      "evidence_needed": "公式料金・個別見積・契約書",
+      "owner": "外部確認待ち / 担当未定",
+      "next_review_on": null,
+      "block_reason": "公開資料の限定確認を終了。対象提供単位の現行正式仕様/契約適用の回答が未取得。再開：正式回答/現行契約又は対象試験の結果が得られた時。",
+      "last_checked_on": "2026-10-13"
+    },
+    "factual_state_changed": false,
+    "original_requirements_deleted": false,
+    "acceptance_review": [
+      {
+        "atom": "月/年の請求周期・前払い・最低期間",
+        "state": "partial_or_unconfirmed",
+        "observation_ids": []
+      },
+      {
+        "atom": "最低人数/請求額の公表範囲",
+        "state": "partial_or_unconfirmed",
+        "observation_ids": []
+      }
+    ]
+  },
+  {
+    "review_id": "Q01-TASK-RES00575",
+    "task_id": "TASK-RES00575",
+    "offering_id": "OF-JP13",
+    "product": "ほすぴタッチ",
+    "criterion_id": "P04",
+    "original_task": {
+      "task_state": "blocked",
+      "priority": 3,
+      "required_method": "unknown",
+      "question": "導入初期費用：定義の未確認部分・現行条件を確認する。",
+      "evidence_needed": "公式料金・個別見積・契約書",
+      "owner": "未割当",
+      "next_review_on": null,
+      "block_reason": "今回の取得環境で公式本文を取得できない。",
+      "last_checked_on": null
+    },
+    "original_definition": "必須・任意の設定、移行、研修、個別開発を項目別に記録する。不明はnull。",
+    "original_required_evidence": "公式料金・個別見積・契約書",
+    "public_question": "ほすぴタッチの公表初期費用・発生単位・人数範囲・カスタマイズ見積の条件を記録する（移行/研修等の個別工数は別確認）。",
+    "public_acceptance_atoms": [
+      "ほすぴタッチの公表初期費用・発生単位・人数範囲・カスタマイズ見積の条件を記録する（移行/研修等の個別工数は別確認）。",
+      "対応する本文根拠/取得日/locatorの確認",
+      "原設問の残条件と再開条件を削除せず別段階に保存"
+    ],
+    "policy_id": "Q01-public-review-v1",
+    "individually_reviewed": true,
+    "public_phase": "closed_documented",
+    "primary_queue": "completed_public_check",
+    "reason": "1チーム30人以内の初期30万円税別、人数超過/複数チーム/個別開発は見積という公開表示を確認。 公開資料の確認という限定質問を終了。元の広い要件と残条件は本台帳に保存。",
+    "evidence_observation_ids": [
+      "B04-20261011-OBS0292"
+    ],
+    "source_urls": [
+      "https://hospi.ai/Fees"
+    ],
+    "completion_evidence_ids": [
+      "B04-20261011-OBS0292"
+    ],
+    "remaining_work": [
+      "顧客別移行/研修/追加設定の必須・任意と工数/見積は未確定"
+    ],
+    "external_state": "deferred_until_adoption",
+    "resume_condition": "公表対象の変更/新しい相反資料が出た時。残る契約/実機要件は採用候補化した時。",
+    "after_task": {
+      "task_state": "done",
+      "priority": 3,
+      "required_method": "public_document",
+      "question": "ほすぴタッチの公表初期費用・発生単位・人数範囲・カスタマイズ見積の条件を記録する（移行/研修等の個別工数は別確認）。",
+      "evidence_needed": "公開文書の本文・取得日・該当箇所。契約適用/実測の残条件はqueue-review-Q01/ledger.jsonを参照。",
+      "owner": "Aqsh / 公開資料整理Q01",
+      "next_review_on": null,
+      "block_reason": null,
+      "last_checked_on": "2026-10-13"
+    },
+    "factual_state_changed": false,
+    "original_requirements_deleted": false,
+    "original_public_atoms": [
+      "公表された必須初期費用と任意追加費",
+      "未公表額を0円としない"
+    ],
+    "acceptance_review": [
+      {
+        "atom": "ほすぴタッチの公表初期費用・発生単位・人数範囲・カスタマイズ見積の条件を記録する（移行/研修等の個別工数は別確認）。",
+        "state": "confirmed_documented",
+        "observation_ids": [
+          "B04-20261011-OBS0292"
+        ]
+      },
+      {
+        "atom": "対応する本文根拠/取得日/locatorの確認",
+        "state": "confirmed_documented",
+        "observation_ids": [
+          "B04-20261011-OBS0292"
+        ]
+      },
+      {
+        "atom": "原設問の残条件と再開条件を削除せず別段階に保存",
+        "state": "confirmed_documented",
+        "observation_ids": [
+          "B04-20261011-OBS0292"
+        ]
+      }
+    ]
+  },
+  {
+    "review_id": "Q01-TASK-RES00685",
+    "task_id": "TASK-RES00685",
+    "offering_id": "OF-JP16",
+    "product": "Optamo for Task",
+    "criterion_id": "D06",
+    "original_task": {
+      "task_state": "not_started",
+      "priority": 3,
+      "required_method": "unknown",
+      "question": "同時勤務・組合せ条件：定義の未確認部分・現行条件を確認する。",
+      "evidence_needed": "仕様・資格マスター・テスト結果",
+      "owner": "未割当",
+      "next_review_on": null,
+      "block_reason": null,
+      "last_checked_on": null
+    },
+    "original_definition": "組合せ禁止、同時勤務希望を分け、必須か希望か、設定理由の権限・承認を確認する。",
+    "original_required_evidence": "仕様・資格マスター・テスト結果",
+    "public_question": "公開資料に明記された「同時勤務・組合せ条件」の範囲・対象条件を整理し、未記載/相違/実契約/実測を分ける。",
+    "public_acceptance_atoms": [
+      "同時勤務・組合せ条件について原仕様に明記された範囲",
+      "対象条件・時点・未記載を分け、実契約/実測は別段階"
+    ],
+    "policy_id": "Q01-public-review-v1",
+    "individually_reviewed": true,
+    "public_phase": "bounded_search_ended_partial",
+    "primary_queue": "external_confirmation_wait",
+    "reason": "個別に保存資料を照合。2024年8月時点の掲載比較表で、相性回避はTask×・Shift○。現行プランは要再確認。",
+    "evidence_observation_ids": [
+      "B01-O00195"
+    ],
+    "source_urls": [
+      "https://www.optamo.jp/task/index.html"
+    ],
+    "completion_evidence_ids": [],
+    "remaining_work": [
+      "対象提供単位の現行正式仕様/契約適用の回答",
+      "掲載比較表の基準時点は2024年8月。2026年の機能変更は未確認。 比較表基準日2024-08。現行未確定。"
+    ],
+    "external_state": "awaiting_external_input",
+    "resume_condition": "対象仕様/料金/契約の更新又は正式回答を得た時、あるいは導入/自社仕様の判断に必要になった時。",
+    "after_task": {
+      "task_state": "blocked",
+      "priority": 3,
+      "required_method": "vendor_document",
+      "question": "同時勤務・組合せ条件：定義の未確認部分・現行条件を確認する。",
+      "evidence_needed": "仕様・資格マスター・テスト結果",
+      "owner": "外部確認待ち / 担当未定",
+      "next_review_on": null,
+      "block_reason": "公開資料の限定確認を終了。対象提供単位の現行正式仕様/契約適用の回答が未取得。再開：正式回答/現行契約又は対象試験の結果が得られた時。",
+      "last_checked_on": "2026-10-13"
+    },
+    "factual_state_changed": false,
+    "original_requirements_deleted": false,
+    "acceptance_review": [
+      {
+        "atom": "同時勤務・組合せ条件について原仕様に明記された範囲",
+        "state": "partial_or_unconfirmed",
+        "observation_ids": []
+      },
+      {
+        "atom": "対象条件・時点・未記載を分け、実契約/実測は別段階",
+        "state": "partial_or_unconfirmed",
+        "observation_ids": []
+      }
+    ]
+  },
+  {
+    "review_id": "Q01-TASK-RES00813",
+    "task_id": "TASK-RES00813",
+    "offering_id": "OF-JP19",
+    "product": "勤夢表VX（V5/VX）",
+    "criterion_id": "B01",
+    "original_task": {
+      "task_state": "not_started",
+      "priority": 3,
+      "required_method": "unknown",
+      "question": "勤務表の自動割当：定義の未確認部分・現行条件を確認する。",
+      "evidence_needed": "機能仕様・プラン比較・利用規約・デモ",
+      "owner": "未割当",
+      "next_review_on": null,
+      "block_reason": null,
+      "last_checked_on": null
+    },
+    "original_definition": "希望・必要人数・ルールから職員を勤務枠へ割り当てる。共有、転記、固定パターン複製だけは区別する。",
+    "original_required_evidence": "機能仕様・プラン比較・利用規約・デモ",
+    "public_question": "公開資料に明記された「勤務表の自動割当」の範囲・対象条件を整理し、未記載/相違/実契約/実測を分ける。",
+    "public_acceptance_atoms": [
+      "勤務表そのものの自動割当の記載",
+      "希望/人数/規則から割当する説明と転記/複製の区別"
+    ],
+    "policy_id": "Q01-public-review-v1",
+    "individually_reviewed": true,
+    "public_phase": "needs_targeted_public_followup",
+    "primary_queue": "public_research_remaining",
+    "reason": "勤夢表VXの編集/集計/シミュレーションと、希望・人数からの全体自動割当を分ける公式仕様を限定照合する。",
+    "evidence_observation_ids": [
+      "B01-O00229"
+    ],
+    "source_urls": [
+      "https://ideanexsys.com/看護介護の勤務表概要/"
+    ],
+    "completion_evidence_ids": [],
+    "remaining_work": [],
+    "external_state": "not_individually_assessed",
+    "resume_condition": "次回は公開確認項目を1問に限定して探索。新根拠がなければ探索範囲と未確認を保存して止める。",
+    "after_task": {
+      "task_state": "in_progress",
+      "priority": 3,
+      "required_method": "public_document",
+      "question": "勤務表の自動割当：定義の未確認部分・現行条件を確認する。",
+      "evidence_needed": "機能仕様・プラン比較・利用規約・デモ",
+      "owner": "Aqsh / 次の限定公開調査",
+      "next_review_on": null,
+      "block_reason": null,
+      "last_checked_on": "2026-10-13"
+    },
+    "factual_state_changed": false,
+    "original_requirements_deleted": false,
+    "acceptance_review": [
+      {
+        "atom": "勤務表そのものの自動割当の記載",
+        "state": "partial_or_unconfirmed",
+        "observation_ids": []
+      },
+      {
+        "atom": "希望/人数/規則から割当する説明と転記/複製の区別",
+        "state": "partial_or_unconfirmed",
+        "observation_ids": []
+      }
+    ]
+  },
+  {
+    "review_id": "Q01-TASK-RES01295",
+    "task_id": "TASK-RES01295",
+    "offering_id": "OF-US10",
+    "product": "Timefold Employee Shift Scheduling API",
+    "criterion_id": "N05",
+    "original_task": {
+      "task_state": "not_started",
+      "priority": 3,
+      "required_method": "unknown",
+      "question": "生成AIへの送信・学習利用：定義の未確認部分・現行条件を確認する。",
+      "evidence_needed": "約款・セキュリティ文書・第三者保証・権限試験",
+      "owner": "未割当",
+      "next_review_on": null,
+      "block_reason": null,
+      "last_checked_on": null
+    },
+    "original_definition": "送信項目、匿名化、保持期間、学習利用、利用停止設定、契約範囲を確認する。",
+    "original_required_evidence": "約款・セキュリティ文書・第三者保証・権限試験",
+    "public_question": "公開資料に明記された「生成AIへの送信・学習利用」の範囲・対象条件を整理し、未記載/相違/実契約/実測を分ける。",
+    "public_acceptance_atoms": [
+      "送信項目/匿名化/保持/学習の公開説明",
+      "機能ごとの停止と公表規約の適用範囲"
+    ],
+    "policy_id": "Q01-public-review-v1",
+    "individually_reviewed": true,
+    "public_phase": "needs_targeted_public_followup",
+    "primary_queue": "public_research_remaining",
+    "reason": "TimefoldのAI送信/学習/保持に直接関係する公開ポリシーを限定照合する。権限説明を代用しない。",
+    "evidence_observation_ids": [
+      "B01-O00363"
+    ],
+    "source_urls": [
+      "https://docs.timefold.ai/timefold-platform/latest/trust/risk-profile"
+    ],
+    "completion_evidence_ids": [],
+    "remaining_work": [],
+    "external_state": "not_individually_assessed",
+    "resume_condition": "次回は公開確認項目を1問に限定して探索。新根拠がなければ探索範囲と未確認を保存して止める。",
+    "after_task": {
+      "task_state": "in_progress",
+      "priority": 3,
+      "required_method": "public_document",
+      "question": "生成AIへの送信・学習利用：定義の未確認部分・現行条件を確認する。",
+      "evidence_needed": "約款・セキュリティ文書・第三者保証・権限試験",
+      "owner": "Aqsh / 次の限定公開調査",
+      "next_review_on": null,
+      "block_reason": null,
+      "last_checked_on": "2026-10-13"
+    },
+    "factual_state_changed": false,
+    "original_requirements_deleted": false,
+    "acceptance_review": [
+      {
+        "atom": "送信項目/匿名化/保持/学習の公開説明",
+        "state": "partial_or_unconfirmed",
+        "observation_ids": []
+      },
+      {
+        "atom": "機能ごとの停止と公表規約の適用範囲",
+        "state": "partial_or_unconfirmed",
+        "observation_ids": []
+      }
+    ]
+  }
+]

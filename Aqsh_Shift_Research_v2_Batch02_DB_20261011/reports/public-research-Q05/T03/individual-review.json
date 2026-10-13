@@ -1,0 +1,44 @@
+[
+  {
+    "review_id": "Q05T03-TASK-RES00236",
+    "task_id": "TASK-RES00236",
+    "product": "勤務シフト作成お助けマン Time",
+    "offering_id": "OF-JP06",
+    "criterion_id": "B07",
+    "original_task": {
+      "priority": 3,
+      "required_method": "unknown",
+      "last_checked_on": "2026-10-12",
+      "task_id": "TASK-RES00236",
+      "offering_id": "OF-JP06",
+      "criterion_id": "B07",
+      "task_state": "in_progress",
+      "question": "プラン・追加機能の境界：定義の未確認部分・現行条件を確認する。",
+      "evidence_needed": "機能仕様・プラン比較・利用規約・デモ",
+      "owner": "未割当",
+      "next_review_on": null,
+      "block_reason": null
+    },
+    "q01_public_acceptance_atoms": [
+      "機能を使えるプラン/モジュールの公開対応",
+      "追加契約/地域/βの留保"
+    ],
+    "scope": "Timeの自動作成料金包含・公開標準機能と、独自追加開発/別サービスの境界を照合する。",
+    "reason": "該当する公式公開記載を照合し、限定公開質問の肯定根拠と未記載/個別契約の残条件を分離した。",
+    "evidence_observation_ids": [
+      "B45-20261013-OBS0001",
+      "B45-20261013-OBS0002",
+      "B45-20261013-OBS0003"
+    ],
+    "remaining_work": [
+      "個別開発の作業範囲/追加額、支援の必須/任意、販売店合意、機能の実動作・医療介護制度適合"
+    ],
+    "primary_queue": "completed_public_check",
+    "public_phase": "completed_bounded_document_question",
+    "external_state": "deferred_until_adoption",
+    "resume_condition": "公式改定/正式資料/対象見積の取得又は導入判断に残条件が必要な時。新根拠なしの反復探索はしない。",
+    "after_task_state": "done",
+    "factual_support_not_inferred": true,
+    "original_requirements_deleted": false
+  }
+]

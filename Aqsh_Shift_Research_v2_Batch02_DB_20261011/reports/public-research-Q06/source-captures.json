@@ -1,0 +1,163 @@
+{
+  "captures": [
+    {
+      "key": "fikaigo-price",
+      "url": "https://www.fikaigo.com/pricing",
+      "final_url": "https://www.fikaigo.com/pricing",
+      "status": 200,
+      "bytes": 124503,
+      "sha256": "62ffca6f14ce08d280c990f94487c456ec20d386970d6f5d1186f063acf4e3a3",
+      "retrieved_at": "2026-10-13T12:31:43.149471+00:00",
+      "path": "/Users/tsukadatakahiro/Python/app/shift-app/.local/research-backups/Q06-20261013/source-captures/fikaigo-price.html"
+    },
+    {
+      "key": "fikaigo-product",
+      "url": "https://www.fikaigo.com/ja/product",
+      "final_url": "https://www.fikaigo.com/ja/product",
+      "status": 200,
+      "bytes": 201264,
+      "sha256": "e86e74d54e4dc5f2c1c0a0e991ae0ce3fae33be75978495f65c5c204ffcb0992",
+      "retrieved_at": "2026-10-13T12:31:43.160811+00:00",
+      "path": "/Users/tsukadatakahiro/Python/app/shift-app/.local/research-backups/Q06-20261013/source-captures/fikaigo-product.html"
+    },
+    {
+      "key": "nafty-main",
+      "url": "https://nafty.app/",
+      "final_url": "https://nafty.app/",
+      "status": 200,
+      "bytes": 109161,
+      "sha256": "56837d493f4cfa63c43f4b59980379cad8ab93fbfa4a163dbce64b4661ddf500",
+      "retrieved_at": "2026-10-13T12:31:42.819209+00:00",
+      "path": "/Users/tsukadatakahiro/Python/app/shift-app/.local/research-backups/Q06-20261013/source-captures/nafty-main.html"
+    },
+    {
+      "key": "nafty-terms",
+      "url": "https://nafty.app/terms/",
+      "final_url": "https://nafty.app/terms/",
+      "status": 200,
+      "bytes": 25736,
+      "sha256": "7e8135937029d29ff51ff1ccf15f821f15ebd6c9bd97ccb0236f36f50778b9b5",
+      "retrieved_at": "2026-10-13T12:31:42.849496+00:00",
+      "path": "/Users/tsukadatakahiro/Python/app/shift-app/.local/research-backups/Q06-20261013/source-captures/nafty-terms.html"
+    },
+    {
+      "key": "shiftee-school",
+      "url": "https://www.shifteeapp.jp/case/%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%E5%9C%9F%E5%B1%8B%EF%BC%8F%E5%9C%9F%E5%B1%8B%E3%82%B1%E3%82%A2%E3%82%AB%E3%83%AC%E3%83%83%E3%82%B8/",
+      "final_url": "https://www.shifteeapp.jp/case/%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%E5%9C%9F%E5%B1%8B%EF%BC%8F%E5%9C%9F%E5%B1%8B%E3%82%B1%E3%82%A2%E3%82%AB%E3%83%AC%E3%83%83%E3%82%B8/",
+      "status": 200,
+      "bytes": 43860,
+      "sha256": "90337ab96e5860ea12c2c9c7f815395e5c11fb819ecbe1fab1d541d843b144d3",
+      "retrieved_at": "2026-10-13T12:31:43.672048+00:00",
+      "path": "/Users/tsukadatakahiro/Python/app/shift-app/.local/research-backups/Q06-20261013/source-captures/shiftee-school.html"
+    },
+    {
+      "key": "shiftee-hospital",
+      "url": "https://www.shifteeapp.jp/case/%E6%97%A5%E6%9C%AC%E8%B5%A4%E5%8D%81%E5%AD%97%E7%A4%BE%E3%80%80%E5%8F%A4%E6%B2%B3%E8%B5%A4%E5%8D%81%E5%AD%97%E7%97%85%E9%99%A2/",
+      "final_url": "https://www.shifteeapp.jp/case/%E6%97%A5%E6%9C%AC%E8%B5%A4%E5%8D%81%E5%AD%97%E7%A4%BE%E3%80%80%E5%8F%A4%E6%B2%B3%E8%B5%A4%E5%8D%81%E5%AD%97%E7%97%85%E9%99%A2/",
+      "status": 200,
+      "bytes": 43370,
+      "sha256": "090ff604de4a82122f1dc3a8ef92c729c996e9e4a1dcdc1c4e3613f4bfe0772e",
+      "retrieved_at": "2026-10-13T12:31:43.643992+00:00",
+      "path": "/Users/tsukadatakahiro/Python/app/shift-app/.local/research-backups/Q06-20261013/source-captures/shiftee-hospital.html"
+    },
+    {
+      "key": "optamo-task",
+      "url": "https://www.optamo.jp/task/index.html",
+      "final_url": "https://www.optamo.jp/task/index.html",
+      "status": 200,
+      "bytes": 45252,
+      "sha256": "f29c4dfcc7a782ff9042fcdc5eaf156b00aaf1b28028ec892604ce798302e123",
+      "retrieved_at": "2026-10-13T12:31:43.433080+00:00",
+      "path": "/Users/tsukadatakahiro/Python/app/shift-app/.local/research-backups/Q06-20261013/source-captures/optamo-task.html"
+    },
+    {
+      "key": "optamo-shift",
+      "url": "https://www.optamo.jp/shift/index.html",
+      "final_url": "https://www.optamo.jp/shift/index.html",
+      "status": 200,
+      "bytes": 45837,
+      "sha256": "0b7fdd530b9d9a4b9d600c64b12823ac358d3f68382589cfa73ae3fcf6fd133c",
+      "retrieved_at": "2026-10-13T12:31:43.433270+00:00",
+      "path": "/Users/tsukadatakahiro/Python/app/shift-app/.local/research-backups/Q06-20261013/source-captures/optamo-shift.html"
+    },
+    {
+      "key": "optamo-main",
+      "url": "https://www.optamo.jp/",
+      "final_url": "https://www.optamo.jp/",
+      "status": 200,
+      "bytes": 41401,
+      "sha256": "b8a28eb55494c9d31c750d0c76cda97f677d1be65acd54fa4d995ec969508f92",
+      "retrieved_at": "2026-10-13T12:31:43.664894+00:00",
+      "path": "/Users/tsukadatakahiro/Python/app/shift-app/.local/research-backups/Q06-20261013/source-captures/optamo-main.html"
+    },
+    {
+      "key": "neo-wellness",
+      "url": "https://products.ndis.jp/shift-neo/wellness/",
+      "final_url": "https://products.ndis.jp/shift-neo/wellness/",
+      "status": 200,
+      "bytes": 23061,
+      "sha256": "64057602a78258efa3d4b95d6016bf2f3ef51a3afd8434a62409db0ff04f861b",
+      "retrieved_at": "2026-10-13T12:31:43.655621+00:00",
+      "path": "/Users/tsukadatakahiro/Python/app/shift-app/.local/research-backups/Q06-20261013/source-captures/neo-wellness.html"
+    },
+    {
+      "key": "neo-system",
+      "url": "https://products.ndis.jp/shift-neo/system.html",
+      "final_url": "https://products.ndis.jp/shift-neo/system.html",
+      "status": 200,
+      "bytes": 40786,
+      "sha256": "623bd0e13c9b6469d6e0c746b6cff071d18aacc1b06180900237eb52ae9a6c87",
+      "retrieved_at": "2026-10-13T12:31:43.896632+00:00",
+      "path": "/Users/tsukadatakahiro/Python/app/shift-app/.local/research-backups/Q06-20261013/source-captures/neo-system.html"
+    },
+    {
+      "key": "neo-mobile",
+      "url": "https://products.ndis.jp/shift-neo/tsutawaru/",
+      "final_url": "https://products.ndis.jp/shift-neo/tsutawaru/",
+      "status": 200,
+      "bytes": 22237,
+      "sha256": "66a23e6e462f78c55f0fb2c6cb1c18409d96b1191bd9b2861c5a44fe21657fba",
+      "retrieved_at": "2026-10-13T12:31:43.907609+00:00",
+      "path": "/Users/tsukadatakahiro/Python/app/shift-app/.local/research-backups/Q06-20261013/source-captures/neo-mobile.html"
+    },
+    {
+      "key": "neo-sales",
+      "url": "https://products.ndis.jp/shift-neo/sales/",
+      "final_url": "https://products.ndis.jp/shift-neo/sales/",
+      "status": 200,
+      "bytes": 16680,
+      "sha256": "4f23a15be9fe2a92b6014f285ab177395eb680913e2d625357be0a34a9f0040f",
+      "retrieved_at": "2026-10-13T12:31:43.935718+00:00",
+      "path": "/Users/tsukadatakahiro/Python/app/shift-app/.local/research-backups/Q06-20261013/source-captures/neo-sales.html"
+    },
+    {
+      "key": "shiftee-function",
+      "url": "https://www.shifteeapp.jp/function/",
+      "final_url": "https://www.shifteeapp.jp/function/",
+      "status": 200,
+      "bytes": 76659,
+      "sha256": "5c3415f4cc5fff39d505e0e2d0706b19d8dfa1d8cd4c047ec637772490021f5c",
+      "retrieved_at": "2026-10-13T12:41:08.964771+00:00",
+      "path": "/Users/tsukadatakahiro/Python/app/shift-app/.local/research-backups/Q06-20261013/source-captures/shiftee-function.html"
+    },
+    {
+      "key": "shiftee-faq",
+      "url": "https://www.shifteeapp.jp/faq/",
+      "final_url": "https://www.shifteeapp.jp/faq/",
+      "status": 200,
+      "bytes": 63565,
+      "sha256": "cc2b1466927e03a06d28ea78bfa2d79c301b5dc77ce6a25bbc7c1fcc4f256cf1",
+      "retrieved_at": "2026-10-13T12:41:08.869415+00:00",
+      "path": "/Users/tsukadatakahiro/Python/app/shift-app/.local/research-backups/Q06-20261013/source-captures/shiftee-faq.html"
+    }
+  ],
+  "HTML_originals": "Q06バックアップsource-capturesに保管",
+  "PDF_originals": "今回添付PDFなし。公式HTML本文/表/注記を照合。",
+  "published_dates": {
+    "neo_functions": "2021年5月現在の注記",
+    "optamo_comparison": "2024年8月時点当社調べ",
+    "nafty_terms": "制定2026-07-30、公開/改定日不明",
+    "other": "公開/改定日不明"
+  },
+  "reviewed_at": "2026-10-13T12:53:22.515188+00:00"
+}

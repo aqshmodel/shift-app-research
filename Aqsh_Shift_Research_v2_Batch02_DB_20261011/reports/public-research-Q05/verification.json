@@ -1,0 +1,205 @@
+{
+  "status": "passed",
+  "work_id": "Q05",
+  "completed_units": 5,
+  "canonical_batch": "B47-20261013",
+  "checked_at": "2026-10-13T12:23:19.161739+00:00",
+  "research_sha256": "2abeb2653b1cd9361a38f1e57e5e91e791a0a41a92177654230d1ad2a09c4ce4",
+  "content_sha256": "16b648ab10457ad7ab6eb9381ae621766236c9ca8c54dcb44b07113166b9f57d",
+  "regression": {
+    "total": 75,
+    "research_python": 17,
+    "web_python": 36,
+    "node": 22,
+    "final_research_rechecked": true
+  },
+  "types": {
+    "errors": 0,
+    "warnings": 0,
+    "hints": 0
+  },
+  "builds": {
+    "production": true,
+    "staging": true,
+    "environment_separation": true,
+    "application_code_changed": false,
+    "existing_warning": "stagingにGA4設定を継承しない構成のWrangler警告。既存通り、ビルド成功/外部DNS遮断で検証。"
+  },
+  "DB": {
+    "tables": 39,
+    "integrity": true,
+    "foreign_keys": true,
+    "SQL_roundtrip": true,
+    "replay_idempotent_all5": true,
+    "old_rows_preserved": true,
+    "old_price_rows_preserved": 119,
+    "new_price_rows": 0
+  },
+  "local_D1": {
+    "isolated_local_only": true,
+    "all39_tables_equal": true,
+    "post_runtime_equal": true
+  },
+  "API": {
+    "products": 50,
+    "prices": 50,
+    "hashes": true,
+    "unaffected45_details_preserved": true
+  },
+  "browser": {
+    "cases": 38,
+    "skips": 0,
+    "unexpected": 0,
+    "flaky": 0,
+    "external_DNS_blocked": true,
+    "final_all38_saved": true
+  },
+  "SEO": {
+    "status": "passed",
+    "pages": 62,
+    "unexpected_issues": 0,
+    "expected_local_noindex": 62,
+    "transport": "127.0.0.1 only; production not fetched"
+  },
+  "visual": {
+    "status": "passed",
+    "snapshot": "B47-20261013-pub2",
+    "services": 5,
+    "widths": [
+      1440,
+      390
+    ],
+    "checks": [
+      {
+        "product": "JP18",
+        "width": 1440,
+        "required_text": true,
+        "overflow": false
+      },
+      {
+        "product": "JP17",
+        "width": 1440,
+        "required_text": true,
+        "overflow": false
+      },
+      {
+        "product": "JP06",
+        "width": 1440,
+        "required_text": true,
+        "overflow": false
+      },
+      {
+        "product": "JP11",
+        "width": 1440,
+        "required_text": true,
+        "overflow": false
+      },
+      {
+        "product": "US01",
+        "width": 1440,
+        "required_text": true,
+        "overflow": false
+      },
+      {
+        "product": "JP18",
+        "width": 390,
+        "required_text": true,
+        "overflow": false
+      },
+      {
+        "product": "JP17",
+        "width": 390,
+        "required_text": true,
+        "overflow": false
+      },
+      {
+        "product": "JP06",
+        "width": 390,
+        "required_text": true,
+        "overflow": false
+      },
+      {
+        "product": "JP11",
+        "width": 390,
+        "required_text": true,
+        "overflow": false
+      },
+      {
+        "product": "US01",
+        "width": 390,
+        "required_text": true,
+        "overflow": false
+      }
+    ],
+    "overflow": false,
+    "pageErrors": [],
+    "no_fabricated_price": true,
+    "external_DNS_blocked": true
+  },
+  "static_viewer": {
+    "browser": "Google Chrome via Playwright",
+    "batch": "B47-20261013",
+    "cards": 50,
+    "enriched": 1,
+    "domestic": 28,
+    "overseas": 22,
+    "comparisonRows": 40,
+    "comparisonColumns": 5,
+    "uniqueDocumentObservations": 2222,
+    "logos": 50,
+    "serviceLogos": 40,
+    "companyLogos": 10,
+    "logoFailureFallback": "passed",
+    "classificationHistory": "passed",
+    "pageErrors": [],
+    "viewports": [
+      1440,
+      390
+    ],
+    "status": "passed"
+  },
+  "SQL": {
+    "baseline": "isolated local B42; not live production",
+    "delta_roundtrip": true,
+    "maximum_statement_bytes": 87926,
+    "prior_publication_rows_preserved": true
+  },
+  "queue": {
+    "blocked": 116,
+    "done": 29,
+    "in_progress": 222,
+    "not_started": 613
+  },
+  "unfinished": 951,
+  "operational_queues": {
+    "public": 801,
+    "external": 67,
+    "conditional_deferred": 83
+  },
+  "task_review": {
+    "reviewed": 10,
+    "new_public_completions": 7,
+    "new_external_waits": 3,
+    "original_requirements_retained": true,
+    "known_positive_evidence_required": true,
+    "old_external_waits_not_recompleted": true
+  },
+  "factual_changes": {
+    "new_document_records": 21,
+    "new_source_revisions": 16,
+    "price_changes": 0,
+    "independent_tests": 0
+  },
+  "logs_directory": "/Users/tsukadatakahiro/Python/app/shift-app/.local/research-backups/Q05-20261013/logs",
+  "runtime_repairs": "Read-only public source fetch and localhost tests required auto-review-approved network/socket access. No rejection. The final D1 export was first pointed at the prior local state; Wrangler export does not support persist-to; after Worker stopped, only isolated work state directories were renamed to the default path while preserving prior state, and final39-table equality was rechecked. Initial browser run had a single evidence-save ENOENT due cwd; it passed from correct cwd, then a full38 run saved the final machine report. Display verifier was adapted to API compact2 and omitted unknown UI rows; full evidence API and documented rows were checked. Source headings were cleaned before canonical apply by rebuilding the unpublished candidate from B42; exact comparison proved only titles and batch ingest hashes changed. Final runtime/display checks ran on the rebuilt candidate. No application logic repair or production connection.",
+  "limitations": [
+    "限定質問7の終了を元要件全体/個別契約/制度適合/独立動作試験の合格としない。",
+    "ナースシフト初期費とRosterLab契約/初期費3は正式資料待ち。",
+    "oplus/RosterLab資料不一致と未確認数量/包含を保持、119旧料金行不変。",
+    "公開801は未照合を含み全件重要/解決可能の認定ではない。",
+    "HTML公開日不明を取得日で補わない。SHIFTEE PDF発効2026-10-05と2019ニュースを区別。"
+  ],
+  "production_deployed": false,
+  "git_or_CI_mutations": false,
+  "paid_or_external_contact_actions": false
+}

@@ -1,0 +1,13 @@
+{
+  "status": "passed",
+  "maximum_statement_bytes": 86116,
+  "limit": 100000,
+  "new_connecteam_ordinary_statement_bytes": 109549,
+  "split_statements": 6,
+  "new_connecteam_max_statement_bytes": 50176,
+  "split_resume_and_replay": "batch37_sql_split.json",
+  "reapply_products": 50,
+  "reapply_provisional_products": 0,
+  "all50_details_readable": true,
+  "split_generator_unchanged": true
+}

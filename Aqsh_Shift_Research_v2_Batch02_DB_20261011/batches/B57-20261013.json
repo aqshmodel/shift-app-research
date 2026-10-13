@@ -1,0 +1,142 @@
+{
+  "batch_id": "B57-20261013",
+  "prior_batch": "B56-20261013",
+  "as_of_date": "2026-10-13",
+  "resolution_policy_version": 2,
+  "description": "Q07 T05/5 Rotageek基本/追加機能とHealthcare比較表の不一致",
+  "method": "限定公式公開調査・ローカル反映。前回の既完/外部待ちを再完了しない。原要件・不明・資料不一致・既存価格119行を保持。Git/CI/本番/課金/登録/問い合わせなし。",
+  "sources": [
+    {
+      "key": "rotageek-health",
+      "url": "https://www.rotageek.com/industries/healthcare",
+      "title": "Healthcare Rota Software | NHS Rostering App | Rotageek",
+      "publisher": "Rota Geek Limited",
+      "retrieved_on": "2026-10-13",
+      "version_label": "公開/改定日不明。閲覧2026-10-13 UTC",
+      "method": "public_web_body",
+      "method_note": "公式本文と表の親項目/詳細行/注記を照合。原本・取得hashはQ07バックアップsource-capturesへ保存。フォーム入力/登録/課金/照会/独立製品試験なし。Chrome表示で親項目と詳細行のチェックを実見。HTMLのincluded/excludedクラスでも照合。",
+      "scope_note": "Q01限定公開質問終了基準。原要件/未知/個別適用の残条件は個別台帳へ保持。"
+    },
+    {
+      "key": "rotageek-digital",
+      "url": "https://www.rotageek.com/solutions/digital-rotas-schedules/",
+      "title": "Staff Rota Software | App for Shift Scheduling | Rotageek",
+      "publisher": "Rota Geek Limited",
+      "retrieved_on": "2026-10-13",
+      "version_label": "公開/改定日不明。閲覧2026-10-13 UTC",
+      "method": "public_web_body",
+      "method_note": "公式本文と表の親項目/詳細行/注記を照合。原本・取得hashはQ07バックアップsource-capturesへ保存。フォーム入力/登録/課金/照会/独立製品試験なし。",
+      "scope_note": "Q01限定公開質問終了基準。原要件/未知/個別適用の残条件は個別台帳へ保持。"
+    },
+    {
+      "key": "rotageek-auto",
+      "url": "https://www.rotageek.com/solutions/rota-auto-scheduling/",
+      "title": "Auto Scheduling Software | AI Powered Automated Scheduler | Rotageek",
+      "publisher": "Rota Geek Limited",
+      "retrieved_on": "2026-10-13",
+      "version_label": "公開/改定日不明。閲覧2026-10-13 UTC",
+      "method": "public_web_body",
+      "method_note": "公式本文と表の親項目/詳細行/注記を照合。原本・取得hashはQ07バックアップsource-capturesへ保存。フォーム入力/登録/課金/照会/独立製品試験なし。",
+      "scope_note": "Q01限定公開質問終了基準。原要件/未知/個別適用の残条件は個別台帳へ保持。"
+    }
+  ],
+  "findings": [
+    {
+      "product": "US05",
+      "criterion": "B07",
+      "source": "rotageek-digital",
+      "state": "known",
+      "support": "limited",
+      "delivery": "unknown",
+      "summary": "現行サイトはDigital Schedulingを基本の勤務管理として紹介し、Auto Schedulingを追加機能のナビゲーションへ置く。基本側の本文はドラッグ/複製、勤務表共有、アプリ・休暇申請等を説明する。",
+      "locator": "SolutionsナビのAdd-Ons / Digital Schedulingの本文",
+      "limitations": "製品の位置付けと個別契約の包含を区別。Healthcareの旧/新契約版や追加料金は未確認。日本の様式9/介護制度対応へ広げない。",
+      "scope": "2026-10-13 UTCの公式公開資料照合。対象製品・用途・資料時点に限定。個別契約・制度適合・実動作は未検証。"
+    },
+    {
+      "product": "US05",
+      "criterion": "B07",
+      "source": "rotageek-health",
+      "state": "known",
+      "support": "limited",
+      "delivery": "unknown",
+      "summary": "Healthcareの比較表はDigital Schedulingと+Auto Schedulingの2列。SSOとpublic APIs/SFTPの行は、ブラウザ表示とHTMLの両方で両列にチェックがある。",
+      "locator": "Integration & access managementを展開 / SSO・Other integration via public APIs or flat file via SFTP",
+      "limitations": "公開比較表の記号のみ。APIの対象/制限/費用・顧客契約/地域・SSO方式・設定実測は未確定。個別契約への標準包含を認定しない。",
+      "scope": "2026-10-13 UTCの公式公開資料照合。対象製品・用途・資料時点に限定。個別契約・制度適合・実動作は未検証。"
+    },
+    {
+      "product": "US05",
+      "criterion": "B07",
+      "source": "rotageek-health",
+      "state": "disputed",
+      "support": "limited",
+      "delivery": "unknown",
+      "summary": "Roster optimisationの親行は基本列が非対応、追加列が対応。一方、展開した1クリック作成などの詳細10行は両列が対応であり、親子の記号が一致しない。",
+      "locator": "Roster optimisation親行と展開詳細10行 / included・excludedクラス / Chrome表示",
+      "limitations": "表示不一致を保持。詳細行だけから基本プランに自動最適化が標準包含とは断定しない。正式機能表/対象契約版が必要。",
+      "scope": "2026-10-13 UTCの公式公開資料照合。対象製品・用途・資料時点に限定。個別契約・制度適合・実動作は未検証。"
+    },
+    {
+      "product": "US05",
+      "criterion": "B07",
+      "source": "rotageek-auto",
+      "state": "not_disclosed",
+      "support": "limited",
+      "delivery": "unknown",
+      "summary": "Auto Scheduling本文はDigital Schedulingへ追加して自動最適化する説明だが、Healthcare表の親子記号の不一致を解消する契約版情報を確認できない。",
+      "locator": "Auto Scheduling本文 / Healthcare表との照合",
+      "limitations": "製品説明だけで不一致を優先順位付けして解消しない。公開/改定日不明、英国医療の記述。正式契約版の表と追加料金を待つ。",
+      "scope": "2026-10-13 UTCの公式公開資料照合。対象製品・用途・資料時点に限定。個別契約・制度適合・実動作は未検証。"
+    }
+  ],
+  "task_updates": [
+    {
+      "task_id": "B04-20261011-TASK006",
+      "state": "blocked",
+      "priority": 2,
+      "method": "vendor_document",
+      "expected_task": {
+        "priority": 2,
+        "required_method": "vendor_document",
+        "last_checked_on": "2026-10-12",
+        "task_state": "in_progress",
+        "question": "Healthcare比較表のチェック欄を契約版別に確認し、SSO・API・自動作成の包含を確定する。",
+        "evidence_needed": "vendor_document",
+        "owner": "未割当",
+        "next_review_on": null,
+        "block_reason": null
+      },
+      "changes": {
+        "owner": "外部確認待ち / 担当未定",
+        "block_reason": "SSO/APIの公開記号は確認できるが、自動最適化の親行と詳細行が矛盾し、対象契約版への包含を確定できない。 再開：対象地域・Healthcare契約版を指定した正式機能表、親子チェック不一致の解消、SSO/API/自動作成の包含・追加費・実測",
+        "next_review_on": null
+      },
+      "note": "{\"review_id\":\"Q07T05-B04-20261011-TASK006\",\"task_id\":\"B04-20261011-TASK006\",\"product\":\"Rotageek\",\"offering_id\":\"OF-US05\",\"criterion_id\":\"B07\",\"original_task\":{\"priority\":2,\"required_method\":\"vendor_document\",\"last_checked_on\":\"2026-10-12\",\"task_id\":\"B04-20261011-TASK006\",\"offering_id\":\"OF-US05\",\"criterion_id\":\"B07\",\"task_state\":\"in_progress\",\"question\":\"Healthcare比較表のチェック欄を契約版別に確認し、SSO・API・自動作成の包含を確定する。\",\"evidence_needed\":\"vendor_document\",\"owner\":\"未割当\",\"next_review_on\":null,\"block_reason\":null},\"q01_public_acceptance_atoms\":[\"機能を使えるプラン/モジュールの公開対応\",\"追加契約/地域/βの留保\"],\"scope\":\"RotageekのDigital/+Autoの位置付けとHealthcare表のSSO/API/自動作成欄を、親子の記号と公開本文で照合する。\",\"reason\":\"SSO/APIの公開記号は確認できるが、自動最適化の親行と詳細行が矛盾し、対象契約版への包含を確定できない。\",\"evidence_observation_ids\":[\"B57-20261013-OBS0001\",\"B57-20261013-OBS0002\",\"B57-20261013-OBS0003\",\"B57-20261013-OBS0004\"],\"remaining_work\":[\"対象地域・Healthcare契約版を指定した正式機能表、親子チェック不一致の解消、SSO/API/自動作成の包含・追加費・実測\"],\"primary_queue\":\"external_confirmation_wait\",\"public_phase\":\"bounded_public_search_ended_unknown\",\"external_state\":\"waiting_for_formal_document\",\"resume_condition\":\"公式改定/正式資料/対象見積の取得又は導入判断に残条件が必要な時。新根拠なしの反復探索はしない。\",\"after_task_state\":\"blocked\",\"factual_support_not_inferred\":true,\"original_requirements_deleted\":false}"
+    },
+    {
+      "task_id": "TASK-RES01040",
+      "state": "blocked",
+      "priority": 3,
+      "method": "vendor_document",
+      "expected_task": {
+        "priority": 3,
+        "required_method": "vendor_document",
+        "last_checked_on": "2026-10-12",
+        "task_state": "in_progress",
+        "question": "プラン・追加機能の境界：定義の未確認部分・現行条件を確認する。",
+        "evidence_needed": "機能仕様・プラン比較・利用規約・デモ",
+        "owner": "未割当",
+        "next_review_on": null,
+        "block_reason": null
+      },
+      "changes": {
+        "owner": "外部確認待ち / 担当未定",
+        "block_reason": "SSO/APIの公開記号は確認できるが、自動最適化の親行と詳細行が矛盾し、対象契約版への包含を確定できない。 再開：対象地域・Healthcare契約版を指定した正式機能表、親子チェック不一致の解消、SSO/API/自動作成の包含・追加費・実測",
+        "next_review_on": null
+      },
+      "note": "{\"review_id\":\"Q07T05-TASK-RES01040\",\"task_id\":\"TASK-RES01040\",\"product\":\"Rotageek\",\"offering_id\":\"OF-US05\",\"criterion_id\":\"B07\",\"original_task\":{\"priority\":3,\"required_method\":\"vendor_document\",\"last_checked_on\":\"2026-10-12\",\"task_id\":\"TASK-RES01040\",\"offering_id\":\"OF-US05\",\"criterion_id\":\"B07\",\"task_state\":\"in_progress\",\"question\":\"プラン・追加機能の境界：定義の未確認部分・現行条件を確認する。\",\"evidence_needed\":\"機能仕様・プラン比較・利用規約・デモ\",\"owner\":\"未割当\",\"next_review_on\":null,\"block_reason\":null},\"q01_public_acceptance_atoms\":[\"機能を使えるプラン/モジュールの公開対応\",\"追加契約/地域/βの留保\"],\"scope\":\"RotageekのDigital/+Autoの位置付けとHealthcare表のSSO/API/自動作成欄を、親子の記号と公開本文で照合する。\",\"reason\":\"SSO/APIの公開記号は確認できるが、自動最適化の親行と詳細行が矛盾し、対象契約版への包含を確定できない。\",\"evidence_observation_ids\":[\"B57-20261013-OBS0001\",\"B57-20261013-OBS0002\",\"B57-20261013-OBS0003\",\"B57-20261013-OBS0004\"],\"remaining_work\":[\"対象地域・Healthcare契約版を指定した正式機能表、親子チェック不一致の解消、SSO/API/自動作成の包含・追加費・実測\"],\"primary_queue\":\"external_confirmation_wait\",\"public_phase\":\"bounded_public_search_ended_unknown\",\"external_state\":\"waiting_for_formal_document\",\"resume_condition\":\"公式改定/正式資料/対象見積の取得又は導入判断に残条件が必要な時。新根拠なしの反復探索はしない。\",\"after_task_state\":\"blocked\",\"factual_support_not_inferred\":true,\"original_requirements_deleted\":false}"
+    }
+  ],
+  "prices": []
+}

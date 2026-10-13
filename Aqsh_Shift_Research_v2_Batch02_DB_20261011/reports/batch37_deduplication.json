@@ -1,0 +1,12 @@
+{
+  "status": "passed",
+  "new_findings": 6,
+  "known_partial": 5,
+  "not_found": 1,
+  "exact_summary_duplicates": 0,
+  "new_distinct_research_documents": 4,
+  "comparison_only_retrievals": 0,
+  "semantic_review": "New Job/user-group/Subjob settings and Open Shift slots; shared catalog assignments, multi-clock UI conditions, per-schedule draft/User-view/sync behavior. Generic eligibility/warnings/max-count/claim limitations not repeated. One explicit manual override observation remains context for unconfirmed simultaneous optimization.",
+  "new_price_components": 0,
+  "existing_price_components": 118
+}

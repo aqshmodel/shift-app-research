@@ -1,0 +1,44 @@
+[
+  {
+    "review_id": "Q06T01-TASK-RES00103",
+    "task_id": "TASK-RES00103",
+    "product": "FIKAIGO",
+    "offering_id": "OF-JP03",
+    "criterion_id": "B07",
+    "original_task": {
+      "priority": 3,
+      "required_method": "unknown",
+      "last_checked_on": null,
+      "task_id": "TASK-RES00103",
+      "offering_id": "OF-JP03",
+      "criterion_id": "B07",
+      "task_state": "not_started",
+      "question": "プラン・追加機能の境界：定義の未確認部分・現行条件を確認する。",
+      "evidence_needed": "機能仕様・プラン比較・利用規約・デモ",
+      "owner": "未割当",
+      "next_review_on": null,
+      "block_reason": null
+    },
+    "q01_public_acceptance_atoms": [
+      "機能を使えるプラン/モジュールの公開対応",
+      "追加契約/地域/βの留保"
+    ],
+    "scope": "FIKAIGOの公表製品機能と料金ページに明記された無償/有償支援の境界を照合する。",
+    "reason": "限定公開質問の該当する肯定記載を照合し、元要件・未記載・個別適用の残条件を別に保持した。",
+    "evidence_observation_ids": [
+      "B48-20261013-OBS0001",
+      "B48-20261013-OBS0002",
+      "B48-20261013-OBS0003"
+    ],
+    "remaining_work": [
+      "全製品機能の標準包含/プラン名、支援項目の必須/任意・追加額、連携契約、制度版・実動作"
+    ],
+    "primary_queue": "completed_public_check",
+    "public_phase": "completed_bounded_document_question",
+    "external_state": "deferred_until_adoption",
+    "resume_condition": "公式改定/正式資料/対象見積の取得又は導入判断に残条件が必要な時。新根拠なしの反復探索はしない。",
+    "after_task_state": "done",
+    "factual_support_not_inferred": true,
+    "original_requirements_deleted": false
+  }
+]

@@ -1,0 +1,746 @@
+{
+  "status": "passed",
+  "checked_at": "2026-10-13T15:49:11.047841+00:00",
+  "snapshot_id": "B62-20261013-pub2",
+  "research_sha256": "56c23d376788093772b1c0d1b65841ce7c9395875708a653dc485521493b47b8",
+  "content_sha256": "b8aeee7725b43da0d795715d28ce35c31b4828feab3964ac6a587d971b774412",
+  "scope": {
+    "snapshot_id": "B62-20261013-pub2",
+    "as_of_date": "2026-10-13",
+    "research_sha256": "56c23d376788093772b1c0d1b65841ce7c9395875708a653dc485521493b47b8",
+    "products": 50,
+    "offerings": 50,
+    "document_observations": 2274,
+    "research_documents": 379,
+    "price_components": 119,
+    "logos": 51,
+    "reference_regulations": 17,
+    "benchmark_runs": 0,
+    "independent_tests_performed": false,
+    "priority_open": 29,
+    "limitations": [
+      "公開資料の確認で、実動作・性能・個別契約の保証ではありません。",
+      "記載未確認は非対応を意味しません。",
+      "医療制度の参照と各製品の実装確認は別です。"
+    ],
+    "criteria": [
+      {
+        "criterion_id": "A01",
+        "label_ja": "正式製品名・別名"
+      },
+      {
+        "criterion_id": "A02",
+        "label_ja": "提供法人"
+      },
+      {
+        "criterion_id": "A03",
+        "label_ja": "提供・販売状態"
+      },
+      {
+        "criterion_id": "A04",
+        "label_ja": "対象業態"
+      },
+      {
+        "criterion_id": "A06",
+        "label_ja": "対象規模"
+      },
+      {
+        "criterion_id": "A07",
+        "label_ja": "提供形態"
+      },
+      {
+        "criterion_id": "B01",
+        "label_ja": "勤務表の自動割当"
+      },
+      {
+        "criterion_id": "B06",
+        "label_ja": "複数部署・施設の一括計画"
+      },
+      {
+        "criterion_id": "B07",
+        "label_ja": "プラン・追加機能の境界"
+      },
+      {
+        "criterion_id": "C01",
+        "label_ja": "二交代・三交代・混在勤務"
+      },
+      {
+        "criterion_id": "C02",
+        "label_ja": "日跨ぎ夜勤と明け"
+      },
+      {
+        "criterion_id": "C05",
+        "label_ja": "勤務間の休息時間"
+      },
+      {
+        "criterion_id": "D01",
+        "label_ja": "資格・職種別の必要人数"
+      },
+      {
+        "criterion_id": "D03",
+        "label_ja": "熟練度・スキルミックス"
+      },
+      {
+        "criterion_id": "E01",
+        "label_ja": "希望と確定休暇の区別"
+      },
+      {
+        "criterion_id": "E03",
+        "label_ja": "契約勤務量を考慮した公平性"
+      },
+      {
+        "criterion_id": "F01",
+        "label_ja": "必須条件と希望条件"
+      },
+      {
+        "criterion_id": "F04",
+        "label_ja": "自然言語からの条件入力"
+      },
+      {
+        "criterion_id": "F05",
+        "label_ja": "解釈内容の事前確認"
+      },
+      {
+        "criterion_id": "G02",
+        "label_ja": "可解・解なし・未判定の区別"
+      },
+      {
+        "criterion_id": "G04",
+        "label_ja": "矛盾原因の根拠提示"
+      },
+      {
+        "criterion_id": "G06",
+        "label_ja": "別ロジックによる検証"
+      },
+      {
+        "criterion_id": "H01",
+        "label_ja": "固定した割当の保持"
+      },
+      {
+        "criterion_id": "H02",
+        "label_ja": "変更最小化の目的設定"
+      },
+      {
+        "criterion_id": "I06",
+        "label_ja": "採用・応援の条件比較"
+      },
+      {
+        "criterion_id": "J04",
+        "label_ja": "様式9の出力"
+      },
+      {
+        "criterion_id": "J06",
+        "label_ja": "介護・福祉の配置基準"
+      },
+      {
+        "criterion_id": "K01",
+        "label_ja": "既存Excel勤務表の取込"
+      },
+      {
+        "criterion_id": "K03",
+        "label_ja": "初期設定の主体"
+      },
+      {
+        "criterion_id": "L01",
+        "label_ja": "スマホでの希望提出"
+      },
+      {
+        "criterion_id": "M08",
+        "label_ja": "解約時の全量出力"
+      },
+      {
+        "criterion_id": "N01",
+        "label_ja": "テナント分離・アクセス権限"
+      },
+      {
+        "criterion_id": "N05",
+        "label_ja": "生成AIへの送信・学習利用"
+      },
+      {
+        "criterion_id": "O04",
+        "label_ja": "サポート窓口・時間"
+      },
+      {
+        "criterion_id": "P01",
+        "label_ja": "料金方式・公開範囲"
+      },
+      {
+        "criterion_id": "P02",
+        "label_ja": "課金対象・単位"
+      },
+      {
+        "criterion_id": "P03",
+        "label_ja": "請求周期・最低契約"
+      },
+      {
+        "criterion_id": "P04",
+        "label_ja": "導入初期費用"
+      },
+      {
+        "criterion_id": "Q01",
+        "label_ja": "決裁者・予算の出所"
+      },
+      {
+        "criterion_id": "Q04",
+        "label_ja": "導入事例の条件"
+      }
+    ],
+    "regulations": [
+      {
+        "regulation_id": "REG-JP-R8-ADMIN-ASSISTANT",
+        "title": "事務的看護補助者の数と上限",
+        "version_label": "令和8年度",
+        "applicability_json": "{\"eligibility\":{\"administrative_duty_fraction\":0.5,\"operator\":\">=\"},\"formula\":\"F/(days*8)\",\"limit_formula\":\"(A/200)*3\",\"limitations\":\"資料の参照情報。正式通知・届出区分と施設条件の照合が必要。計算エンジン／制度適合の認定ではない。\",\"locator\":\"p.2 §3⑩／p.3 ※3\",\"metric\":\"administrative_nursing_assistants\",\"rounding\":\"この様式では明記なし\",\"schema_version\":1,\"summary_ja\":\"事務業務が延べ時間の5割以上の職員を区分。実績F/(日数×8)、上限(A/200)×3。\",\"vendor_implementation_verified\":false,\"verification_stage\":\"documented\"}",
+        "retrieval_url": "https://kouseikyoku.mhlw.go.jp/kinki/r8-k09.pdf",
+        "retrieved_on": "2026-10-11"
+      },
+      {
+        "regulation_id": "REG-JP-R8-ASSISTANT-NIGHT",
+        "title": "夜間看護補助者の必要数",
+        "version_label": "令和8年度",
+        "applicability_json": "{\"formula\":\"A/staffing_ratio\",\"limitations\":\"資料の参照情報。正式通知・届出区分と施設条件の照合が必要。計算エンジン／制度適合の認定ではない。\",\"locator\":\"p.2 §3⑨参考\",\"metric\":\"required_night_assistants\",\"rounding_reference_id\":\"REG-JP-R8-ROUND-REQUIRED\",\"schema_version\":1,\"summary_ja\":\"夜間の必要数はA／配置区分の数。\",\"vendor_implementation_verified\":false,\"verification_stage\":\"documented\"}",
+        "retrieval_url": "https://kouseikyoku.mhlw.go.jp/kinki/r8-k09.pdf",
+        "retrieved_on": "2026-10-11"
+      },
+      {
+        "regulation_id": "REG-JP-R8-ATTACHMENTS",
+        "title": "様式9に添付する実績と夜間配置",
+        "version_label": "令和8年度",
+        "applicability_json": "{\"conditions\":\"対象入院料・加算ごとに様式9の2等を確認\",\"limitations\":\"資料の参照情報。正式通知・届出区分と施設条件の照合が必要。計算エンジン／制度適合の認定ではない。\",\"locator\":\"p.4 届出上の注意1・2・5\",\"metric\":\"filing_attachments\",\"schema_version\":1,\"summary_ja\":\"直前1か月の実績と勤務体制・申し送りを添付。対象夜間加算は日別患者数・配置を示す資料も必要。\",\"vendor_implementation_verified\":false,\"verification_stage\":\"documented\"}",
+        "retrieval_url": "https://kouseikyoku.mhlw.go.jp/kinki/r8-k09.pdf",
+        "retrieved_on": "2026-10-11"
+      },
+      {
+        "regulation_id": "REG-JP-R8-EMERGENCY",
+        "title": "例外的な短時間対応の算入",
+        "version_label": "令和8年度",
+        "applicability_json": "{\"conditions\":[\"院内緊急対応等・日常診療の延長・短時間\",\"当該病棟入院患者への一時的な病棟外看護\",\"状態変化への短時間対応は30分程度と例示\"],\"limitations\":\"資料の参照情報。正式通知・届出区分と施設条件の照合が必要。計算エンジン／制度適合の認定ではない。\",\"locator\":\"p.15 施設基準キ・ク／別紙5抜粋\",\"metric\":\"exceptional_off_ward_hours_inclusion\",\"schema_version\":1,\"summary_ja\":\"院内緊急時の他患者対応、入院患者の病棟外付き添い、状態変化への短時間対応を条件付きで算入可能。\",\"vendor_implementation_verified\":false,\"verification_stage\":\"documented\"}",
+        "retrieval_url": "https://www.mhlw.go.jp/content/12400000/001703849.pdf",
+        "retrieved_on": "2026-10-11"
+      },
+      {
+        "regulation_id": "REG-JP-R8-EXTRA-REQUIRED",
+        "title": "最小必要数以上の看護職員必要数",
+        "version_label": "令和8年度",
+        "applicability_json": "{\"formula\":\"(A/50)*3\",\"limitations\":\"資料の参照情報。正式通知・届出区分と施設条件の照合が必要。計算エンジン／制度適合の認定ではない。\",\"locator\":\"p.2 §3⑦参考\",\"metric\":\"required_extra_nurses\",\"rounding\":\"この様式では明記なし\",\"schema_version\":1,\"summary_ja\":\"追加の必要配置数はA／50×3。\",\"vendor_implementation_verified\":false,\"verification_stage\":\"documented\"}",
+        "retrieval_url": "https://kouseikyoku.mhlw.go.jp/kinki/r8-k09.pdf",
+        "retrieved_on": "2026-10-11"
+      },
+      {
+        "regulation_id": "REG-JP-R8-FOUR-WEEK",
+        "title": "手引き：4週間と暦月の区別",
+        "version_label": "2026診療報酬改定対応版",
+        "applicability_json": "{\"allowed_night_periods\":[\"calendar_month\",\"28_contiguous_days\"],\"authority_note\":\"専門団体手引き。行政通知による最終照合は別途必要。\",\"limitations\":\"資料の参照情報。正式通知・届出区分と施設条件の照合が必要。計算エンジン／制度適合の認定ではない。\",\"locator\":\"p.7\",\"metric\":\"night_average_period_choice\",\"schema_version\":1,\"staffing_period\":\"calendar_month\",\"summary_ja\":\"4週間を用いるのは月平均夜勤時間のみ。配置数は暦月で、両実績表と空白のない連続期間を要する。\",\"vendor_implementation_verified\":false,\"verification_stage\":\"documented\"}",
+        "retrieval_url": "https://youshiki9.doc-net.or.jp/manual/youshiki9_tebiki260527.pdf",
+        "retrieved_on": "2026-10-11"
+      },
+      {
+        "regulation_id": "REG-JP-R8-MULTI-PROFESSIONAL",
+        "title": "多職種協働の必要配置数",
+        "version_label": "令和8年度",
+        "applicability_json": "{\"formulas\":{\"general\":\"((A/10)+(A/25))*3\",\"psychiatric\":\"(A/staffing_ratio)*3\"},\"limitations\":\"資料の参照情報。正式通知・届出区分と施設条件の照合が必要。計算エンジン／制度適合の認定ではない。\",\"locator\":\"p.2 §3⑪-⑫\",\"metric\":\"required_multi_professional_staffing\",\"rounding\":\"この様式では明記なし\",\"schema_version\":1,\"summary_ja\":\"精神科対象は(A/配置区分)×3、一般対象は{A/10+A/25}×3。職種・対象加算を分ける。\",\"vendor_implementation_verified\":false,\"verification_stage\":\"documented\"}",
+        "retrieval_url": "https://kouseikyoku.mhlw.go.jp/kinki/r8-k09.pdf",
+        "retrieved_on": "2026-10-11"
+      },
+      {
+        "regulation_id": "REG-JP-R8-NIGHT-COUNT",
+        "title": "夜勤従事者数の兼務按分",
+        "version_label": "令和8年度",
+        "applicability_json": "{\"formula\":\"ward_night_hours / total_night_hours\",\"limitations\":\"資料の参照情報。正式通知・届出区分と施設条件の照合が必要。計算エンジン／制度適合の認定ではない。\",\"locator\":\"p.3 ※4-5\",\"metric\":\"eligible_night_staff_count\",\"schema_version\":1,\"summary_ja\":\"対象の交代制勤務者は通常1。病棟外兼務は当該病棟の夜勤時間／総夜勤時間で計上する。\",\"total_night_hours_includes\":\"病棟と病棟以外\",\"vendor_implementation_verified\":false,\"verification_stage\":\"documented\",\"zero_division_policy\":\"未確認\"}",
+        "retrieval_url": "https://kouseikyoku.mhlw.go.jp/kinki/r8-k09.pdf",
+        "retrieved_on": "2026-10-11"
+      },
+      {
+        "regulation_id": "REG-JP-R8-NIGHT-EXCLUSION",
+        "title": "夜勤平均の除外条件と境界",
+        "version_label": "令和8年度",
+        "applicability_json": "{\"boundary\":\"閾値ちょうどは時間未満の除外に該当しない\",\"conditions\":[{\"employment\":\"短時間正職員以外\",\"operator\":\"<\",\"threshold_hours\":16,\"ward_scope\":\"急性期病院一般・急性期一般・7対1・10対1\"},{\"employment\":\"短時間正職員\",\"operator\":\"<\",\"threshold_hours\":12,\"ward_scope\":\"同上\"},{\"operator\":\"<\",\"threshold_hours\":8,\"ward_scope\":\"それ以外\"}],\"limitations\":\"資料の参照情報。正式通知・届出区分と施設条件の照合が必要。計算エンジン／制度適合の認定ではない。\",\"locator\":\"pp.3-4 ※4・7\",\"metric\":\"night_average_exclusions\",\"night_exclusive_staff\":\"excluded\",\"schema_version\":1,\"summary_ja\":\"夜勤専従者、所定時間未満の者をBと夜勤時間の平均から除外する。\",\"vendor_implementation_verified\":false,\"verification_stage\":\"documented\"}",
+        "retrieval_url": "https://kouseikyoku.mhlw.go.jp/kinki/r8-k09.pdf",
+        "retrieved_on": "2026-10-11"
+      },
+      {
+        "regulation_id": "REG-JP-R8-NIGHT-MEAN",
+        "title": "様式9 月平均夜勤時間",
+        "version_label": "令和8年度",
+        "applicability_json": "{\"formula\":\"(D-E)/B\",\"inputs\":{\"B\":\"対象夜勤従事職員数（兼務按分後）\",\"D\":\"当該病棟の月延べ夜勤時間\",\"E\":\"算定から除外する職員の夜勤時間\"},\"limitations\":\"資料の参照情報。正式通知・届出区分と施設条件の照合が必要。計算エンジン／制度適合の認定ではない。\",\"locator\":\"p.2 §3⑥\",\"metric\":\"monthly_mean_night_hours\",\"rounding\":\"この様式では明記なし\",\"schema_version\":1,\"summary_ja\":\"月平均夜勤時間は(D-E)/B。\",\"vendor_implementation_verified\":false,\"verification_stage\":\"documented\",\"zero_division_policy\":\"未確認\"}",
+        "retrieval_url": "https://kouseikyoku.mhlw.go.jp/kinki/r8-k09.pdf",
+        "retrieved_on": "2026-10-11"
+      },
+      {
+        "regulation_id": "REG-JP-R8-ROUND-PATIENT",
+        "title": "令和8年度 患者数の端数処理",
+        "version_label": "令和8年度",
+        "applicability_json": "{\"example\":{\"input\":\"12.34\",\"output\":\"12.4\"},\"limitations\":\"資料の参照情報。正式通知・届出区分と施設条件の照合が必要。計算エンジン／制度適合の認定ではない。\",\"locator\":\"p.15 改定後\",\"metric\":\"daily_mean_patients_rounding\",\"rounding\":{\"decimal_places\":1,\"mode\":\"ceiling\"},\"schema_version\":1,\"summary_ja\":\"Aは小数第1位まで切り上げ。12.34→12.4。\",\"vendor_implementation_verified\":false,\"verification_stage\":\"documented\"}",
+        "retrieval_url": "https://www.mhlw.go.jp/content/12400000/001703849.pdf",
+        "retrieved_on": "2026-10-11"
+      },
+      {
+        "regulation_id": "REG-JP-R8-ROUND-REQUIRED",
+        "title": "令和8年度 必要数の端数処理",
+        "version_label": "令和8年度",
+        "applicability_json": "{\"applies_to\":[\"required_daily_nurse_staffing\",\"required_night_assistants\"],\"limitations\":\"資料の参照情報。正式通知・届出区分と施設条件の照合が必要。計算エンジン／制度適合の認定ではない。\",\"locator\":\"p.15 改定後\",\"metric\":\"required_staffing_rounding\",\"rounding\":{\"decimal_places\":1,\"mode\":\"ceiling\"},\"schema_version\":1,\"summary_ja\":\"1日看護職員必要数・夜間看護補助者必要数を小数第1位まで切り上げ。\",\"vendor_implementation_verified\":false,\"verification_stage\":\"documented\"}",
+        "retrieval_url": "https://www.mhlw.go.jp/content/12400000/001703849.pdf",
+        "retrieved_on": "2026-10-11"
+      },
+      {
+        "regulation_id": "REG-JP-R8-ROUND-STAFF",
+        "title": "令和8年度 実績配置数の端数処理",
+        "version_label": "令和8年度",
+        "applicability_json": "{\"limitations\":\"資料の参照情報。正式通知・届出区分と施設条件の照合が必要。計算エンジン／制度適合の認定ではない。\",\"locator\":\"p.15 改定後\",\"metric\":\"daily_mean_nurse_staffing_rounding\",\"rounding\":{\"decimal_places\":1,\"mode\":\"truncate\"},\"schema_version\":1,\"summary_ja\":\"月平均配置数は小数第2位以下切捨て。\",\"vendor_implementation_verified\":false,\"verification_stage\":\"documented\"}",
+        "retrieval_url": "https://www.mhlw.go.jp/content/12400000/001703849.pdf",
+        "retrieved_on": "2026-10-11"
+      },
+      {
+        "regulation_id": "REG-JP-R8-SHIFT-GRID",
+        "title": "勤務実績の三段と集計値",
+        "version_label": "令和8年度",
+        "applicability_json": "{\"formula\":\"C=sum(ward_day_hours+ward_night_hours); D=sum(ward_night_hours)\",\"limitations\":\"資料の参照情報。正式通知・届出区分と施設条件の照合が必要。計算エンジン／制度適合の認定ではない。\",\"locator\":\"pp.3-4 ※6\",\"metric\":\"working_hours_grid\",\"row_roles\":[\"ward_day_hours\",\"ward_night_hours\",\"total_night_hours\"],\"schema_version\":1,\"summary_ja\":\"上段は病棟日勤、中段は病棟夜勤、下段は病棟外を含む総夜勤。Cは上段＋中段、Dは中段。\",\"vendor_implementation_verified\":false,\"verification_stage\":\"documented\"}",
+        "retrieval_url": "https://kouseikyoku.mhlw.go.jp/kinki/r8-k09.pdf",
+        "retrieved_on": "2026-10-11"
+      },
+      {
+        "regulation_id": "REG-JP-R8-STAFF-ACTUAL",
+        "title": "月平均1日看護職員配置数",
+        "version_label": "令和8年度",
+        "applicability_json": "{\"formula\":\"C/(days*8)\",\"limitations\":\"資料の参照情報。正式通知・届出区分と施設条件の照合が必要。計算エンジン／制度適合の認定ではない。\",\"locator\":\"p.2 §3②\",\"metric\":\"daily_mean_nurse_staffing\",\"rounding_reference_id\":\"REG-JP-R8-ROUND-STAFF\",\"schema_version\":1,\"summary_ja\":\"月延べ勤務時間Cを日数×8で除す。\",\"vendor_implementation_verified\":false,\"verification_stage\":\"documented\"}",
+        "retrieval_url": "https://kouseikyoku.mhlw.go.jp/kinki/r8-k09.pdf",
+        "retrieved_on": "2026-10-11"
+      },
+      {
+        "regulation_id": "REG-JP-R8-STAFF-REQUIRED",
+        "title": "1日看護職員の必要配置数",
+        "version_label": "令和8年度",
+        "applicability_json": "{\"formula\":\"(A/staffing_ratio)*3\",\"inputs\":{\"A\":\"1日平均入院患者数\",\"staffing_ratio\":\"届出区分の配置比の数\"},\"limitations\":\"資料の参照情報。正式通知・届出区分と施設条件の照合が必要。計算エンジン／制度適合の認定ではない。\",\"locator\":\"p.2 §3②参考\",\"metric\":\"required_daily_nurse_staffing\",\"rounding_reference_id\":\"REG-JP-R8-ROUND-REQUIRED\",\"schema_version\":1,\"summary_ja\":\"必要配置数は患者数A／配置区分の数×3。\",\"vendor_implementation_verified\":false,\"verification_stage\":\"documented\"}",
+        "retrieval_url": "https://kouseikyoku.mhlw.go.jp/kinki/r8-k09.pdf",
+        "retrieved_on": "2026-10-11"
+      },
+      {
+        "regulation_id": "REG-JP-R8-TRAINING",
+        "title": "病棟勤務に算入できる院内研修",
+        "version_label": "令和8年度",
+        "applicability_json": "{\"conditions\":[\"施設が業務の質向上のため受講を指示\",\"保険医療機関内\",\"当該病棟のオンライン／病棟外の集合研修を含む\"],\"limitations\":\"資料の参照情報。正式通知・届出区分と施設条件の照合が必要。計算エンジン／制度適合の認定ではない。\",\"locator\":\"p.15 別紙5抜粋\",\"metric\":\"training_hours_inclusion\",\"monthly_cap_hours_per_staff\":1,\"schema_version\":1,\"summary_ja\":\"施設が指示した院内研修は、主に当該病棟に従事する職員1名につき月1時間まで算入可能。\",\"vendor_implementation_verified\":false,\"verification_stage\":\"documented\"}",
+        "retrieval_url": "https://www.mhlw.go.jp/content/12400000/001703849.pdf",
+        "retrieved_on": "2026-10-11"
+      }
+    ],
+    "content_sha256": "b8aeee7725b43da0d795715d28ce35c31b4828feab3964ac6a587d971b774412"
+  },
+  "changes_from_live": {
+    "prior_snapshot": "B41-20261013-pub2",
+    "target_snapshot": "B62-20261013-pub2",
+    "new_observations": 85,
+    "added_documents": 16,
+    "new_price_components": 0,
+    "affected_offerings": [
+      "OF-JP02",
+      "OF-JP03",
+      "OF-JP04",
+      "OF-JP05",
+      "OF-JP06",
+      "OF-JP07",
+      "OF-JP11",
+      "OF-JP14",
+      "OF-JP15",
+      "OF-JP16",
+      "OF-JP17",
+      "OF-JP18",
+      "OF-JP19",
+      "OF-US01",
+      "OF-US04",
+      "OF-US05",
+      "OF-US06",
+      "OF-US08",
+      "OF-US10",
+      "OF-US21"
+    ]
+  },
+  "source_git_baseline": "ecab424de94ba05ff057c72d6d2b053aabd554c8",
+  "source_git_baseline_snapshot": "B36-20261013-pub2",
+  "local_tests": {
+    "total": 75,
+    "research_python": 17,
+    "web_python": 36,
+    "node": 22,
+    "astro_files": 58,
+    "diagnostics": 0,
+    "build": "passed",
+    "projection_rebuild": "byte-identical"
+  },
+  "staging": {
+    "research_tables": 39,
+    "prices": 50,
+    "details": 50,
+    "browser_cases": 38
+  },
+  "production": {
+    "research_tables": 39,
+    "prices": 50,
+    "details": 50,
+    "browser_cases": 38,
+    "seo_pages": 62,
+    "seo_issues": 0,
+    "affected_offerings": 20,
+    "layout_checks": 80
+  },
+  "delta": {
+    "prior_batch": "B41-20261013",
+    "target_batch": "B62-20261013",
+    "baseline_snapshot": "B41-20261013-pub2",
+    "target_snapshot": "B62-20261013-pub2",
+    "baseline_research_sha256": "426dedf246bb3853397dd99339a338899f7690a4c22458c9914954d33e7247fe",
+    "target_research_sha256": "56c23d376788093772b1c0d1b65841ce7c9395875708a653dc485521493b47b8",
+    "content_sha256": "b8aeee7725b43da0d795715d28ce35c31b4828feab3964ac6a587d971b774412",
+    "tables": [
+      {
+        "table": "audit_issues",
+        "baseline": 32,
+        "target": 32,
+        "inserted": 0,
+        "updated": 0
+      },
+      {
+        "table": "benchmark_scenarios",
+        "baseline": 14,
+        "target": 14,
+        "inserted": 0,
+        "updated": 0
+      },
+      {
+        "table": "cost_scenarios",
+        "baseline": 8,
+        "target": 8,
+        "inserted": 0,
+        "updated": 0
+      },
+      {
+        "table": "domains",
+        "baseline": 20,
+        "target": 20,
+        "inserted": 0,
+        "updated": 0
+      },
+      {
+        "table": "metric_catalog",
+        "baseline": 20,
+        "target": 20,
+        "inserted": 0,
+        "updated": 0
+      },
+      {
+        "table": "research_assets",
+        "baseline": 6,
+        "target": 6,
+        "inserted": 0,
+        "updated": 0
+      },
+      {
+        "table": "research_batches",
+        "baseline": 41,
+        "target": 62,
+        "inserted": 21,
+        "updated": 0
+      },
+      {
+        "table": "schema_info",
+        "baseline": 17,
+        "target": 17,
+        "inserted": 0,
+        "updated": 1
+      },
+      {
+        "table": "source_documents",
+        "baseline": 379,
+        "target": 397,
+        "inserted": 18,
+        "updated": 0
+      },
+      {
+        "table": "vendors",
+        "baseline": 11,
+        "target": 11,
+        "inserted": 0,
+        "updated": 0
+      },
+      {
+        "table": "criteria",
+        "baseline": 164,
+        "target": 164,
+        "inserted": 0,
+        "updated": 0
+      },
+      {
+        "table": "products",
+        "baseline": 50,
+        "target": 50,
+        "inserted": 0,
+        "updated": 0
+      },
+      {
+        "table": "sources",
+        "baseline": 381,
+        "target": 399,
+        "inserted": 18,
+        "updated": 0
+      },
+      {
+        "table": "batch_product_membership",
+        "baseline": 184,
+        "target": 205,
+        "inserted": 21,
+        "updated": 0
+      },
+      {
+        "table": "benchmark_scenario_criteria",
+        "baseline": 45,
+        "target": 45,
+        "inserted": 0,
+        "updated": 0
+      },
+      {
+        "table": "cost_requirements",
+        "baseline": 36,
+        "target": 36,
+        "inserted": 0,
+        "updated": 0
+      },
+      {
+        "table": "legacy_feature_map",
+        "baseline": 86,
+        "target": 86,
+        "inserted": 0,
+        "updated": 0
+      },
+      {
+        "table": "offerings",
+        "baseline": 50,
+        "target": 50,
+        "inserted": 0,
+        "updated": 0
+      },
+      {
+        "table": "product_aliases",
+        "baseline": 57,
+        "target": 57,
+        "inserted": 0,
+        "updated": 0
+      },
+      {
+        "table": "retrieval_checks",
+        "baseline": 223,
+        "target": 223,
+        "inserted": 0,
+        "updated": 0
+      },
+      {
+        "table": "source_revisions",
+        "baseline": 550,
+        "target": 623,
+        "inserted": 73,
+        "updated": 0
+      },
+      {
+        "table": "assessment_resolutions",
+        "baseline": 2779,
+        "target": 2811,
+        "inserted": 32,
+        "updated": 0
+      },
+      {
+        "table": "asset_evidence",
+        "baseline": 6,
+        "target": 6,
+        "inserted": 0,
+        "updated": 0
+      },
+      {
+        "table": "benchmark_runs",
+        "baseline": 0,
+        "target": 0,
+        "inserted": 0,
+        "updated": 0
+      },
+      {
+        "table": "brand_assets",
+        "baseline": 51,
+        "target": 51,
+        "inserted": 0,
+        "updated": 0
+      },
+      {
+        "table": "observations",
+        "baseline": 3107,
+        "target": 3192,
+        "inserted": 85,
+        "updated": 0
+      },
+      {
+        "table": "plans",
+        "baseline": 100,
+        "target": 100,
+        "inserted": 0,
+        "updated": 0
+      },
+      {
+        "table": "regulations",
+        "baseline": 17,
+        "target": 17,
+        "inserted": 0,
+        "updated": 0
+      },
+      {
+        "table": "research_tasks",
+        "baseline": 980,
+        "target": 980,
+        "inserted": 0,
+        "updated": 32
+      },
+      {
+        "table": "source_archives",
+        "baseline": 6,
+        "target": 13,
+        "inserted": 7,
+        "updated": 0
+      },
+      {
+        "table": "source_method_attributes",
+        "baseline": 490,
+        "target": 563,
+        "inserted": 73,
+        "updated": 0
+      },
+      {
+        "table": "classification_corrections",
+        "baseline": 12,
+        "target": 12,
+        "inserted": 0,
+        "updated": 0
+      },
+      {
+        "table": "current_assessments",
+        "baseline": 2123,
+        "target": 2123,
+        "inserted": 0,
+        "updated": 32
+      },
+      {
+        "table": "observation_evidence",
+        "baseline": 2223,
+        "target": 2308,
+        "inserted": 85,
+        "updated": 0
+      },
+      {
+        "table": "price_components",
+        "baseline": 119,
+        "target": 119,
+        "inserted": 0,
+        "updated": 0
+      },
+      {
+        "table": "regulation_support",
+        "baseline": 0,
+        "target": 0,
+        "inserted": 0,
+        "updated": 0
+      },
+      {
+        "table": "research_task_updates",
+        "baseline": 211,
+        "target": 243,
+        "inserted": 32,
+        "updated": 0
+      },
+      {
+        "table": "resolution_evidence",
+        "baseline": 3914,
+        "target": 4061,
+        "inserted": 147,
+        "updated": 0
+      },
+      {
+        "table": "run_metrics",
+        "baseline": 0,
+        "target": 0,
+        "inserted": 0,
+        "updated": 0
+      }
+    ],
+    "statement_count": 808,
+    "maximum_statement_bytes": 87926,
+    "sql_sha256": "cdd50e6d480c6b51af9570d63a8953d24d9bb58b04b248052537d1f8da6416e9",
+    "local_sql_roundtrip": "passed",
+    "prior_publication_rows_preserved": true,
+    "foreign_key_errors": 0
+  },
+  "d1_actual_usage": {
+    "staging": {
+      "served_by": "v3-prod",
+      "served_by_region": "APAC",
+      "served_by_colo": "HKG",
+      "served_by_primary": true,
+      "timings": {
+        "sql_duration_ms": 485.3677
+      },
+      "duration": 485.3677,
+      "changes": 809,
+      "last_row_id": 549,
+      "changed_db": true,
+      "size_after": 29716480,
+      "rows_read": 39307,
+      "rows_written": 2486,
+      "num_tables": 43,
+      "total_attempts": 1
+    },
+    "production": {
+      "served_by": "v3-prod",
+      "served_by_region": "APAC",
+      "served_by_colo": "NRT",
+      "served_by_primary": true,
+      "timings": {
+        "sql_duration_ms": 781.7105
+      },
+      "duration": 781.7105,
+      "changes": 809,
+      "last_row_id": 549,
+      "changed_db": true,
+      "size_after": 29716480,
+      "rows_read": 39307,
+      "rows_written": 2486,
+      "num_tables": 43,
+      "total_attempts": 1
+    }
+  },
+  "worker_versions_unchanged": {
+    "staging": [
+      {
+        "version_id": "f5d81634-2c81-4cc7-8500-608ac6b79c5a",
+        "percentage": 100
+      }
+    ],
+    "production": [
+      {
+        "version_id": "8c9b350a-538f-4d33-9bf3-721083efac82",
+        "percentage": 100
+      }
+    ]
+  },
+  "worker_deploy_required": false,
+  "cost": {
+    "existing_monthly_base_usd": 5,
+    "observed_usage_cost_usd": 0,
+    "incremental_release": "within_existing_allowances",
+    "github_repository_public": true,
+    "github_runner": "ubuntu-latest",
+    "plan_changes": false,
+    "automatic_cloudflare_git_builds": false,
+    "sources": [
+      "https://developers.cloudflare.com/workers/platform/pricing/",
+      "https://developers.cloudflare.com/d1/platform/pricing/",
+      "https://docs.github.com/en/billing/concepts/product-billing/github-actions"
+    ]
+  },
+  "limitations": [
+    "公開資料の記載確認と製品の実動作・独立試験・個別契約は別。",
+    "料金画面の使用量表示には遅延があり、将来の利用量に対する無料保証ではない。"
+  ]
+}

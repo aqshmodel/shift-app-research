@@ -1,0 +1,12 @@
+{
+  "status": "passed",
+  "new_findings": 6,
+  "known_partial": 6,
+  "not_found": 0,
+  "exact_summary_duplicates": 0,
+  "new_distinct_research_documents": 4,
+  "reused_documents_new_paragraphs": 1,
+  "semantic_review": "公式5資料（新規4・KB再利用1の新段落）から6部分確認記録。対象Hub/プラン/版と処理主体を分離し、FAQ・公開AI規約・委託先列挙差・controller/processor保持を照合。F04/F05の既存カスタマイズ/marketing/非公開契約は反復しない。具体項目/匿名化/保持期間/停止実測/締結契約/保証は未知。全文/hash/原本画像未保存。価格/制度/課題完了/独立試験追加0。外部連絡/API/製品設定/認証/課金/公開/本番再監査なし。",
+  "new_price_components": 0,
+  "existing_price_components": 118
+}

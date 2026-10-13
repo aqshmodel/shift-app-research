@@ -1,0 +1,124 @@
+[
+  {
+    "review_id": "Q05T04-TASK-RES00454",
+    "task_id": "TASK-RES00454",
+    "product": "ナースシフト",
+    "offering_id": "OF-JP11",
+    "criterion_id": "B07",
+    "original_task": {
+      "priority": 3,
+      "required_method": "unknown",
+      "last_checked_on": null,
+      "task_id": "TASK-RES00454",
+      "offering_id": "OF-JP11",
+      "criterion_id": "B07",
+      "task_state": "not_started",
+      "question": "プラン・追加機能の境界：定義の未確認部分・現行条件を確認する。",
+      "evidence_needed": "機能仕様・プラン比較・利用規約・デモ",
+      "owner": "未割当",
+      "next_review_on": null,
+      "block_reason": null
+    },
+    "q01_public_acceptance_atoms": [
+      "機能を使えるプラン/モジュールの公開対応",
+      "追加契約/地域/βの留保"
+    ],
+    "scope": "ナースシフトの個人プラン機能・100名上限、3交代/様式9の明示非対応と施設契約の境界を照合する。",
+    "reason": "該当する公式公開記載を照合し、限定公開質問の肯定根拠と未記載/個別契約の残条件を分離した。",
+    "evidence_observation_ids": [
+      "B46-20261013-OBS0001",
+      "B46-20261013-OBS0002"
+    ],
+    "remaining_work": [
+      "施設契約の価格/機能/人数/支援、複数アカウント共有許諾、制度対応・動作の個別検証"
+    ],
+    "primary_queue": "completed_public_check",
+    "public_phase": "completed_bounded_document_question",
+    "external_state": "deferred_until_adoption",
+    "resume_condition": "公式改定/正式資料/対象見積の取得又は導入判断に残条件が必要な時。新根拠なしの反復探索はしない。",
+    "after_task_state": "done",
+    "factual_support_not_inferred": true,
+    "original_requirements_deleted": false
+  },
+  {
+    "review_id": "Q05T04-TASK-RES00491",
+    "task_id": "TASK-RES00491",
+    "product": "ナースシフト",
+    "offering_id": "OF-JP11",
+    "criterion_id": "P03",
+    "original_task": {
+      "priority": 3,
+      "required_method": "unknown",
+      "last_checked_on": "2026-10-12",
+      "task_id": "TASK-RES00491",
+      "offering_id": "OF-JP11",
+      "criterion_id": "P03",
+      "task_state": "in_progress",
+      "question": "請求周期・最低契約：定義の未確認部分・現行条件を確認する。",
+      "evidence_needed": "公式料金・個別見積・契約書",
+      "owner": "未割当",
+      "next_review_on": null,
+      "block_reason": null
+    },
+    "q01_public_acceptance_atoms": [
+      "月/年の請求周期・前払い・最低期間",
+      "最低人数/請求額の公表範囲"
+    ],
+    "scope": "個人プランの月次更新・解約締切・返金・初回試用と退会の公開条件を照合する。",
+    "reason": "該当する公式公開記載を照合し、限定公開質問の肯定根拠と未記載/個別契約の残条件を分離した。",
+    "evidence_observation_ids": [
+      "B46-20261013-OBS0003",
+      "B46-20261013-OBS0004"
+    ],
+    "remaining_work": [
+      "施設契約条件と例外合意、実際の決済/データ復元/退会挙動は未試験"
+    ],
+    "primary_queue": "completed_public_check",
+    "public_phase": "completed_bounded_document_question",
+    "external_state": "deferred_until_adoption",
+    "resume_condition": "公式改定/正式資料/対象見積の取得又は導入判断に残条件が必要な時。新根拠なしの反復探索はしない。",
+    "after_task_state": "done",
+    "factual_support_not_inferred": true,
+    "original_requirements_deleted": false
+  },
+  {
+    "review_id": "Q05T04-TASK-RES00492",
+    "task_id": "TASK-RES00492",
+    "product": "ナースシフト",
+    "offering_id": "OF-JP11",
+    "criterion_id": "P04",
+    "original_task": {
+      "priority": 3,
+      "required_method": "unknown",
+      "last_checked_on": null,
+      "task_id": "TASK-RES00492",
+      "offering_id": "OF-JP11",
+      "criterion_id": "P04",
+      "task_state": "not_started",
+      "question": "導入初期費用：定義の未確認部分・現行条件を確認する。",
+      "evidence_needed": "公式料金・個別見積・契約書",
+      "owner": "未割当",
+      "next_review_on": null,
+      "block_reason": null
+    },
+    "q01_public_acceptance_atoms": [
+      "公表された必須初期費用と任意追加費",
+      "未公表額を0円としない"
+    ],
+    "scope": "ナースシフトの項目別初期/移行/研修費用を公開資料で確認する。",
+    "reason": "個人月額と通信費以外の項目別導入費用を公式公開資料で確定できない。",
+    "evidence_observation_ids": [
+      "B46-20261013-OBS0005"
+    ],
+    "remaining_work": [
+      "設定/移行/研修/施設導入費の有無・金額・必須/任意を示す正式資料"
+    ],
+    "primary_queue": "external_confirmation_wait",
+    "public_phase": "bounded_public_search_ended_unknown",
+    "external_state": "waiting_for_formal_document",
+    "resume_condition": "公式改定/正式資料/対象見積の取得又は導入判断に残条件が必要な時。新根拠なしの反復探索はしない。",
+    "after_task_state": "blocked",
+    "factual_support_not_inferred": true,
+    "original_requirements_deleted": false
+  }
+]

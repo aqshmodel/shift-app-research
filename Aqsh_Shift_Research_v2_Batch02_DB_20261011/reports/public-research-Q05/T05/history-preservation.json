@@ -1,0 +1,256 @@
+{
+  "assessment_resolutions": {
+    "before": 2792,
+    "after": 2794,
+    "removed": 0,
+    "changed_keys": []
+  },
+  "asset_evidence": {
+    "before": 6,
+    "after": 6,
+    "removed": 0,
+    "changed_keys": []
+  },
+  "audit_issues": {
+    "before": 32,
+    "after": 32,
+    "removed": 0,
+    "changed_keys": []
+  },
+  "batch_product_membership": {
+    "before": 189,
+    "after": 190,
+    "removed": 0,
+    "changed_keys": []
+  },
+  "benchmark_runs": {
+    "before": 0,
+    "after": 0,
+    "removed": 0,
+    "changed_keys": []
+  },
+  "benchmark_scenario_criteria": {
+    "before": 45,
+    "after": 45,
+    "removed": 0,
+    "changed_keys": []
+  },
+  "benchmark_scenarios": {
+    "before": 14,
+    "after": 14,
+    "removed": 0,
+    "changed_keys": []
+  },
+  "brand_assets": {
+    "before": 51,
+    "after": 51,
+    "removed": 0,
+    "changed_keys": []
+  },
+  "classification_corrections": {
+    "before": 12,
+    "after": 12,
+    "removed": 0,
+    "changed_keys": []
+  },
+  "cost_requirements": {
+    "before": 36,
+    "after": 36,
+    "removed": 0,
+    "changed_keys": []
+  },
+  "cost_scenarios": {
+    "before": 8,
+    "after": 8,
+    "removed": 0,
+    "changed_keys": []
+  },
+  "criteria": {
+    "before": 164,
+    "after": 164,
+    "removed": 0,
+    "changed_keys": []
+  },
+  "current_assessments": {
+    "before": 2123,
+    "after": 2123,
+    "removed": 0,
+    "changed_keys": [
+      [
+        "OF-US01",
+        "P03"
+      ],
+      [
+        "OF-US01",
+        "P04"
+      ]
+    ]
+  },
+  "domains": {
+    "before": 20,
+    "after": 20,
+    "removed": 0,
+    "changed_keys": []
+  },
+  "legacy_feature_map": {
+    "before": 86,
+    "after": 86,
+    "removed": 0,
+    "changed_keys": []
+  },
+  "metric_catalog": {
+    "before": 20,
+    "after": 20,
+    "removed": 0,
+    "changed_keys": []
+  },
+  "observation_evidence": {
+    "before": 2253,
+    "after": 2256,
+    "removed": 0,
+    "changed_keys": []
+  },
+  "observations": {
+    "before": 3137,
+    "after": 3140,
+    "removed": 0,
+    "changed_keys": []
+  },
+  "offerings": {
+    "before": 50,
+    "after": 50,
+    "removed": 0,
+    "changed_keys": []
+  },
+  "plans": {
+    "before": 100,
+    "after": 100,
+    "removed": 0,
+    "changed_keys": []
+  },
+  "price_components": {
+    "before": 119,
+    "after": 119,
+    "removed": 0,
+    "changed_keys": []
+  },
+  "product_aliases": {
+    "before": 57,
+    "after": 57,
+    "removed": 0,
+    "changed_keys": []
+  },
+  "products": {
+    "before": 50,
+    "after": 50,
+    "removed": 0,
+    "changed_keys": []
+  },
+  "regulation_support": {
+    "before": 0,
+    "after": 0,
+    "removed": 0,
+    "changed_keys": []
+  },
+  "regulations": {
+    "before": 17,
+    "after": 17,
+    "removed": 0,
+    "changed_keys": []
+  },
+  "research_assets": {
+    "before": 6,
+    "after": 6,
+    "removed": 0,
+    "changed_keys": []
+  },
+  "research_batches": {
+    "before": 46,
+    "after": 47,
+    "removed": 0,
+    "changed_keys": []
+  },
+  "research_task_updates": {
+    "before": 224,
+    "after": 226,
+    "removed": 0,
+    "changed_keys": []
+  },
+  "research_tasks": {
+    "before": 980,
+    "after": 980,
+    "removed": 0,
+    "changed_keys": [
+      [
+        "TASK-RES00890"
+      ],
+      [
+        "TASK-RES00891"
+      ]
+    ]
+  },
+  "resolution_evidence": {
+    "before": 3962,
+    "after": 3967,
+    "removed": 0,
+    "changed_keys": []
+  },
+  "retrieval_checks": {
+    "before": 223,
+    "after": 223,
+    "removed": 0,
+    "changed_keys": []
+  },
+  "run_metrics": {
+    "before": 0,
+    "after": 0,
+    "removed": 0,
+    "changed_keys": []
+  },
+  "schema_info": {
+    "before": 17,
+    "after": 17,
+    "removed": 0,
+    "changed_keys": [
+      [
+        "latest_batch"
+      ]
+    ]
+  },
+  "source_archives": {
+    "before": 12,
+    "after": 12,
+    "removed": 0,
+    "changed_keys": []
+  },
+  "source_documents": {
+    "before": 386,
+    "after": 387,
+    "removed": 0,
+    "changed_keys": []
+  },
+  "source_method_attributes": {
+    "before": 514,
+    "after": 516,
+    "removed": 0,
+    "changed_keys": []
+  },
+  "source_revisions": {
+    "before": 574,
+    "after": 576,
+    "removed": 0,
+    "changed_keys": []
+  },
+  "sources": {
+    "before": 388,
+    "after": 389,
+    "removed": 0,
+    "changed_keys": []
+  },
+  "vendors": {
+    "before": 11,
+    "after": 11,
+    "removed": 0,
+    "changed_keys": []
+  }
+}

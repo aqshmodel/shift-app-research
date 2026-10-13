@@ -1,0 +1,42 @@
+[
+  {
+    "review_id": "Q06T03-TASK-RES00745",
+    "task_id": "TASK-RES00745",
+    "product": "SHIFTEE",
+    "offering_id": "OF-JP17",
+    "criterion_id": "J06",
+    "original_task": {
+      "priority": 3,
+      "required_method": "unknown",
+      "last_checked_on": null,
+      "task_id": "TASK-RES00745",
+      "offering_id": "OF-JP17",
+      "criterion_id": "J06",
+      "task_state": "not_started",
+      "question": "介護・福祉の配置基準：定義の未確認部分・現行条件を確認する。",
+      "evidence_needed": "行政一次資料・専門団体・更新履歴・算式",
+      "owner": "未割当",
+      "next_review_on": null,
+      "block_reason": null
+    },
+    "q01_public_acceptance_atoms": [
+      "対象サービス種別/制度版/予定か提供済みか",
+      "実人数/常勤換算/時間帯の算式説明の範囲"
+    ],
+    "scope": "SHIFTEEの介護配置基準の対象サービス/制度版と算式の公開範囲を、公開機能・FAQ・導入事例から照合する。",
+    "reason": "医療/介護関連の利用事例と一般シフト機能は公表されるが、介護固有の配置基準対象・算式は確定できない。",
+    "evidence_observation_ids": [
+      "B50-20261013-OBS0004"
+    ],
+    "remaining_work": [
+      "対応する介護種別/制度版、実人数/常勤換算/時間帯配置の算式、実測資料を示す正式仕様"
+    ],
+    "primary_queue": "external_confirmation_wait",
+    "public_phase": "bounded_public_search_ended_unknown",
+    "external_state": "waiting_for_formal_document",
+    "resume_condition": "公式改定/正式資料/対象見積の取得又は導入判断に残条件が必要な時。新根拠なしの反復探索はしない。",
+    "after_task_state": "blocked",
+    "factual_support_not_inferred": true,
+    "original_requirements_deleted": false
+  }
+]

@@ -1,0 +1,144 @@
+{
+  "status": "passed",
+  "scope": "work copy and isolated local Worker/D1, before canonical apply",
+  "checked_at": "2026-10-13T08:52:22.297390+00:00",
+  "regression": {
+    "total": 75,
+    "research_python": 17,
+    "web_python": 36,
+    "node": 22,
+    "new_guard_tests": 3
+  },
+  "types": {
+    "files": 58,
+    "errors": 0,
+    "warnings": 0,
+    "hints": 0
+  },
+  "builds": {
+    "production": true,
+    "staging": true,
+    "environment_separation": true
+  },
+  "db": {
+    "research_tables": 39,
+    "integrity": true,
+    "foreign_keys": true,
+    "roundtrip": true,
+    "old_rows_preserved": true,
+    "price_rows_unchanged": 118,
+    "data_sha256": "331e9f0a9f17357a1a6593119ce144723ea3493fc846c227af36fb94522cca0d",
+    "history_record": "/Users/tsukadatakahiro/Python/app/shift-app/.local/research-backups/Q01-20261013/logs/history-preservation.json"
+  },
+  "local_D1": {
+    "empty_isolated_database_only": true,
+    "all_39_tables_match": true,
+    "readback_match": true
+  },
+  "API": {
+    "all_50_prices": true,
+    "all_50_details": true,
+    "version_and_hashes": true
+  },
+  "browser": {
+    "cases": 38,
+    "retries": 0,
+    "skips": 0,
+    "flaky": 0,
+    "external_DNS_blocked": true,
+    "tested_revision_note": "Full38 passed before a classification-only correction. Final all50 product summaries/details are byte-identical; final DB/75 regressions/D1/API/SEO rechecked."
+  },
+  "SEO": {
+    "pages": 62,
+    "unexpected_issues": 0,
+    "expected_local_noindex": 62
+  },
+  "visual": {
+    "CUA_built": true,
+    "widths": [
+      1440,
+      390
+    ],
+    "overflow": false,
+    "new_plan_condition_visible": true,
+    "limitations_visible": true,
+    "viewport_reset": true,
+    "agent_tabs_closed": true,
+    "screenshot_note": "CUA screenshots reviewed in conversation; original CUA images not saved. Existing Playwright screenshots/traces are in this run backup.",
+    "static_comparison": {
+      "browser": "Google Chrome via Playwright",
+      "batch": "B39-20261013",
+      "cards": 50,
+      "enriched": 1,
+      "domestic": 28,
+      "overseas": 22,
+      "comparisonRows": 40,
+      "comparisonColumns": 5,
+      "uniqueDocumentObservations": 2164,
+      "logos": 50,
+      "serviceLogos": 40,
+      "companyLogos": 10,
+      "logoFailureFallback": "passed",
+      "classificationHistory": "passed",
+      "pageErrors": [],
+      "viewports": [
+        1440,
+        390
+      ],
+      "status": "passed"
+    }
+  },
+  "SQL": {
+    "B38_to_B39_roundtrip": true,
+    "old_publication_rows_preserved": true,
+    "max_statement_bytes": 86116,
+    "limit": 100000
+  },
+  "factual_changes": {
+    "document_observations_added": 1,
+    "price_changes": 0,
+    "independent_product_tests": 0,
+    "existing_factual_rows_deleted": 0
+  },
+  "task_review": {
+    "individual_tasks": 69,
+    "public_confirmations_completed": 9,
+    "complete_task_ids": [
+      "TASK-RES00317",
+      "TASK-RES00321",
+      "TASK-RES00322",
+      "TASK-RES00352",
+      "TASK-RES00539",
+      "TASK-RES00541",
+      "TASK-RES00543",
+      "TASK-RES00572",
+      "TASK-RES00575"
+    ],
+    "all_original_978_rows_have_policy": true,
+    "original_questions_and_requirements_retained": true,
+    "unreviewed_semantic_rows": 909,
+    "unsupported_or_unknown_not_promoted": true
+  },
+  "limitations": [
+    "完了9は限定された公開資料の質問の終了。原設問の全要件・個別契約・実機の合格ではない。",
+    "834には未照合の課題が含まれ、全件が重要・調査可能と認定した件数ではない。",
+    "外部待ち52はこの個別照合パスで抽出した件数。未照合909件に外部依存がないとは判断していない。",
+    "83の保留は用途条件付き。中核の比較軸や自社仕様に必要になれば再開する。"
+  ],
+  "runtime_note": "Initial isolated proxy-test copy lacked sibling files and was repaired. Local D1/API socket restrictions were retried with auto-review-approved localhost-only execution. No approval rejection or permission bypass.",
+  "logs_directory": "/Users/tsukadatakahiro/Python/app/shift-app/.local/research-backups/Q01-20261013/logs",
+  "publication_deployed": false,
+  "git_or_CI_mutations": false,
+  "paid_or_external_contact_actions": false,
+  "final_classification_correction": {
+    "final_queues": {
+      "public": 834,
+      "external": 52,
+      "deferred": 83
+    },
+    "all50_product_summaries_and_details_identical_to_browser_tested_revision": true,
+    "fact_changes_since_first_validation": 0,
+    "classification_only_changed_task": "TASK-RES00350",
+    "final_research_sha256": "331e9f0a9f17357a1a6593119ce144723ea3493fc846c227af36fb94522cca0d"
+  }
+}

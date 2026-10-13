@@ -1,0 +1,72 @@
+{
+  "status": "passed",
+  "type_files": 58,
+  "errors": 0,
+  "warnings": 0,
+  "hints": 0,
+  "types": {
+    "status": "passed",
+    "checks": [
+      {
+        "check": "wrangler-types",
+        "exit_code": 0,
+        "duration_seconds": 4.735,
+        "command": [
+          "/Users/tsukadatakahiro/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node",
+          "node_modules/wrangler/bin/wrangler.js",
+          "types",
+          "worker-configuration.d.ts"
+        ],
+        "log": "/tmp/shift-C05T05/logs/wrangler-types.log"
+      },
+      {
+        "check": "astro-check",
+        "exit_code": 0,
+        "duration_seconds": 11.846,
+        "command": [
+          "/Users/tsukadatakahiro/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node",
+          "node_modules/astro/bin/astro.mjs",
+          "check"
+        ],
+        "log": "/tmp/shift-C05T05/logs/astro-check.log"
+      }
+    ],
+    "execution": "isolated dependencies and work copy; no installation/deployment/remote D1",
+    "telemetry_disabled": true
+  },
+  "builds": {
+    "status": "passed",
+    "checks": [
+      {
+        "check": "build-staging",
+        "exit_code": 0,
+        "duration_seconds": 4.201,
+        "command": [
+          "/Users/tsukadatakahiro/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node",
+          "node_modules/astro/bin/astro.mjs",
+          "build"
+        ],
+        "log": "/tmp/shift-C05T05/logs/build-staging.log",
+        "target_configuration_verified": true
+      },
+      {
+        "check": "build-production",
+        "exit_code": 0,
+        "duration_seconds": 2.67,
+        "command": [
+          "/Users/tsukadatakahiro/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node",
+          "node_modules/astro/bin/astro.mjs",
+          "build"
+        ],
+        "log": "/tmp/shift-C05T05/logs/build-production.log",
+        "target_configuration_verified": true
+      }
+    ],
+    "execution": "isolated dependencies and work copy; no installation/deployment/remote D1",
+    "telemetry_disabled": true
+  },
+  "deployments": 0,
+  "installed_dependencies": false,
+  "bundled_node_runtime": true,
+  "isolated_runtime_evidence": "/Users/tsukadatakahiro/Python/app/shift-app/.local/research-backups/C05T05/runtime-evidence"
+}

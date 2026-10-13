@@ -1,5 +1,5 @@
 {
-  "snapshot": "B36-20261013-pub2",
+  "snapshot": "B62-20261013-pub2",
   "products": [
     {
       "id": "OF-JP27",
@@ -284,9 +284,9 @@
     {
       "id": "OF-JP08",
       "name": "シンクロシフト",
-      "label": "非公開",
-      "note": "",
-      "kind": "unpublished"
+      "label": "月額500円 / 人",
+      "note": "有料サブスクリプション（年契約・年払い） · 税別 · 年契約（月額換算） · 年額前払い · 最低10人",
+      "kind": "published"
     },
     {
       "id": "OF-JP22",

@@ -1,0 +1,21 @@
+{
+  "status": "passed",
+  "unique_cases": 38,
+  "stats": {
+    "startTime": "2026-10-13T06:59:23.966Z",
+    "duration": 134644.21000000002,
+    "expected": 38,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "retries": 0,
+  "skipped": 0,
+  "flaky": 0,
+  "external_DNS_blocked": true,
+  "production_style_telemetry_mocked": true,
+  "scope": "Existing automated tests against isolated local Worker; JS-disabled, comparison/history/price, WebMCP/cancellation, consent/WCAG checks",
+  "full_results": "/Users/tsukadatakahiro/Python/app/shift-app/.local/research-backups/C05T05/browser-results.json",
+  "screenshots_and_traces": "/Users/tsukadatakahiro/Python/app/shift-app/.local/research-backups/C05T05/runtime-evidence",
+  "all_tests_passed": true
+}

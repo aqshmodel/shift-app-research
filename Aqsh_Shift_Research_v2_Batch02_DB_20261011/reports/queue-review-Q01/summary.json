@@ -1,0 +1,45 @@
+{
+  "before_unfinished": 978,
+  "new_public_completions": 9,
+  "remaining_unfinished": 969,
+  "queues": {
+    "external_confirmation_wait": 52,
+    "public_research_remaining": 834,
+    "deferred_optional_depth": 83,
+    "completed_public_check": 9
+  },
+  "public_phases": {
+    "bounded_search_ended_disputed": 10,
+    "bounded_search_ended_partial": 39,
+    "not_individually_reviewed": 231,
+    "bounded_search_ended_unknown": 3,
+    "not_started": 678,
+    "needs_targeted_public_followup": 8,
+    "closed_documented": 9
+  },
+  "individual_reviewed": 69,
+  "remaining_public_checks": 834,
+  "external_wait": 52,
+  "deferred_optional": 83,
+  "new_factual_observations": 1,
+  "closed_task_ids": [
+    "TASK-RES00317",
+    "TASK-RES00321",
+    "TASK-RES00322",
+    "TASK-RES00352",
+    "TASK-RES00539",
+    "TASK-RES00541",
+    "TASK-RES00543",
+    "TASK-RES00572",
+    "TASK-RES00575"
+  ],
+  "incomplete_semantic_reviews": 909,
+  "primary_queue_note": "Exclusive operational queues over the original 978 rows. Done9 retains conditional unresolved obligations. Remaining public tasks are not all urgent; unreviewed rows are not claimed satisfied.",
+  "original_done_models": [
+    "B03-20261011-TASK007",
+    "TASK-B02-014"
+  ],
+  "criteria_policies": 61,
+  "local_only": true,
+  "publication_deployed": false
+}

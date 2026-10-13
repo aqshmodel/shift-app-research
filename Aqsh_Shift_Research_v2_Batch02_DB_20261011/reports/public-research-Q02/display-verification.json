@@ -1,0 +1,20 @@
+{
+  "status": "passed",
+  "snapshot": "B40-20261013-pub2",
+  "widths": [
+    1440,
+    390
+  ],
+  "overflow": false,
+  "pageErrors": [],
+  "structured_price_conditions": true,
+  "paid_vs_free_preserved": true,
+  "BPO_scope_retained": true,
+  "unknowns_retained": [
+    "OF-JP19/B01",
+    "OF-JP11/L01",
+    "OF-JP07/H02"
+  ],
+  "Timefold_generation_AI_policy_unconfirmed": true,
+  "external_DNS_blocked": true
+}

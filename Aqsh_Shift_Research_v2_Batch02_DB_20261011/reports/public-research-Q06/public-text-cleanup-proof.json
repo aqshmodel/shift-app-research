@@ -1,0 +1,12 @@
+{
+  "status": "passed",
+  "change": "内部記録名の言及を利用者向け留保へ変更。新事実/単価/条件/課題状態/出典変更なし。",
+  "changed_fields": {
+    "observations": [
+      "limitations"
+    ],
+    "research_batches": [
+      "ingest_sha256"
+    ]
+  }
+}

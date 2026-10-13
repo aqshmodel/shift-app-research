@@ -1,0 +1,815 @@
+[
+  {
+    "offering_id": "OF-JP01",
+    "product_id": "JP01",
+    "canonical_name": "Shiftmation",
+    "total_tasks": 24,
+    "unfinished": 24,
+    "states": {
+      "in_progress": 1,
+      "not_started": 23
+    },
+    "priority": {
+      "2": 1,
+      "3": 23
+    },
+    "has_scoped_source": 0,
+    "has_accepted_documented_scope": 0
+  },
+  {
+    "offering_id": "OF-JP02",
+    "product_id": "JP02",
+    "canonical_name": "Optamo for Shift",
+    "total_tasks": 33,
+    "unfinished": 33,
+    "states": {
+      "in_progress": 3,
+      "not_started": 30
+    },
+    "priority": {
+      "3": 33
+    },
+    "has_scoped_source": 6,
+    "has_accepted_documented_scope": 1
+  },
+  {
+    "offering_id": "OF-JP03",
+    "product_id": "JP03",
+    "canonical_name": "FIKAIGO",
+    "total_tasks": 28,
+    "unfinished": 28,
+    "states": {
+      "in_progress": 6,
+      "not_started": 22
+    },
+    "priority": {
+      "2": 1,
+      "3": 27
+    },
+    "has_scoped_source": 6,
+    "has_accepted_documented_scope": 3
+  },
+  {
+    "offering_id": "OF-JP04",
+    "product_id": "JP04",
+    "canonical_name": "Nafty",
+    "total_tasks": 23,
+    "unfinished": 23,
+    "states": {
+      "in_progress": 7,
+      "not_started": 16
+    },
+    "priority": {
+      "1": 3,
+      "3": 20
+    },
+    "has_scoped_source": 8,
+    "has_accepted_documented_scope": 5
+  },
+  {
+    "offering_id": "OF-JP05",
+    "product_id": "JP05",
+    "canonical_name": "勤務シフト作成お助けマン Day",
+    "total_tasks": 31,
+    "unfinished": 31,
+    "states": {
+      "in_progress": 9,
+      "not_started": 22
+    },
+    "priority": {
+      "2": 2,
+      "3": 29
+    },
+    "has_scoped_source": 9,
+    "has_accepted_documented_scope": 4
+  },
+  {
+    "offering_id": "OF-JP06",
+    "product_id": "JP06",
+    "canonical_name": "勤務シフト作成お助けマン Time",
+    "total_tasks": 32,
+    "unfinished": 32,
+    "states": {
+      "in_progress": 9,
+      "not_started": 23
+    },
+    "priority": {
+      "2": 1,
+      "3": 31
+    },
+    "has_scoped_source": 9,
+    "has_accepted_documented_scope": 5
+  },
+  {
+    "offering_id": "OF-JP07",
+    "product_id": "JP07",
+    "canonical_name": "miramos",
+    "total_tasks": 32,
+    "unfinished": 32,
+    "states": {
+      "in_progress": 3,
+      "not_started": 29
+    },
+    "priority": {
+      "3": 32
+    },
+    "has_scoped_source": 4,
+    "has_accepted_documented_scope": 2
+  },
+  {
+    "offering_id": "OF-JP08",
+    "product_id": "JP08",
+    "canonical_name": "シンクロシフト",
+    "total_tasks": 42,
+    "unfinished": 42,
+    "states": {
+      "blocked": 39,
+      "in_progress": 3
+    },
+    "priority": {
+      "1": 2,
+      "2": 1,
+      "3": 39
+    },
+    "has_scoped_source": 17,
+    "has_accepted_documented_scope": 13
+  },
+  {
+    "offering_id": "OF-JP09",
+    "product_id": "JP09",
+    "canonical_name": "快決！シフト君NEO メディカル",
+    "total_tasks": 34,
+    "unfinished": 34,
+    "states": {
+      "in_progress": 9,
+      "not_started": 25
+    },
+    "priority": {
+      "1": 1,
+      "2": 1,
+      "3": 32
+    },
+    "has_scoped_source": 9,
+    "has_accepted_documented_scope": 8
+  },
+  {
+    "offering_id": "OF-JP10",
+    "product_id": "JP10",
+    "canonical_name": "Pitat-Shift",
+    "total_tasks": 28,
+    "unfinished": 28,
+    "states": {
+      "in_progress": 10,
+      "not_started": 18
+    },
+    "priority": {
+      "1": 1,
+      "2": 2,
+      "3": 25
+    },
+    "has_scoped_source": 10,
+    "has_accepted_documented_scope": 3
+  },
+  {
+    "offering_id": "OF-JP11",
+    "product_id": "JP11",
+    "canonical_name": "ナースシフト",
+    "total_tasks": 29,
+    "unfinished": 29,
+    "states": {
+      "in_progress": 5,
+      "not_started": 24
+    },
+    "priority": {
+      "2": 1,
+      "3": 28
+    },
+    "has_scoped_source": 6,
+    "has_accepted_documented_scope": 3
+  },
+  {
+    "offering_id": "OF-JP12",
+    "product_id": "JP12",
+    "canonical_name": "シフトラ",
+    "total_tasks": 32,
+    "unfinished": 32,
+    "states": {
+      "in_progress": 13,
+      "not_started": 19
+    },
+    "priority": {
+      "2": 2,
+      "3": 30
+    },
+    "has_scoped_source": 13,
+    "has_accepted_documented_scope": 9
+  },
+  {
+    "offering_id": "OF-JP13",
+    "product_id": "JP13",
+    "canonical_name": "ほすぴタッチ",
+    "total_tasks": 42,
+    "unfinished": 42,
+    "states": {
+      "blocked": 39,
+      "in_progress": 3
+    },
+    "priority": {
+      "1": 3,
+      "3": 39
+    },
+    "has_scoped_source": 18,
+    "has_accepted_documented_scope": 14
+  },
+  {
+    "offering_id": "OF-JP14",
+    "product_id": "JP14",
+    "canonical_name": "NTTデータ数理システム シフトスケジューリング",
+    "total_tasks": 35,
+    "unfinished": 35,
+    "states": {
+      "in_progress": 6,
+      "not_started": 29
+    },
+    "priority": {
+      "2": 1,
+      "3": 34
+    },
+    "has_scoped_source": 6,
+    "has_accepted_documented_scope": 2
+  },
+  {
+    "offering_id": "OF-JP15",
+    "product_id": "JP15",
+    "canonical_name": "快決！シフト君NEO ウェルネス",
+    "total_tasks": 32,
+    "unfinished": 32,
+    "states": {
+      "in_progress": 7,
+      "not_started": 25
+    },
+    "priority": {
+      "3": 32
+    },
+    "has_scoped_source": 7,
+    "has_accepted_documented_scope": 6
+  },
+  {
+    "offering_id": "OF-JP16",
+    "product_id": "JP16",
+    "canonical_name": "Optamo for Task",
+    "total_tasks": 32,
+    "unfinished": 32,
+    "states": {
+      "in_progress": 5,
+      "not_started": 27
+    },
+    "priority": {
+      "3": 32
+    },
+    "has_scoped_source": 6,
+    "has_accepted_documented_scope": 4
+  },
+  {
+    "offering_id": "OF-JP17",
+    "product_id": "JP17",
+    "canonical_name": "SHIFTEE",
+    "total_tasks": 33,
+    "unfinished": 33,
+    "states": {
+      "in_progress": 11,
+      "not_started": 22
+    },
+    "priority": {
+      "2": 1,
+      "3": 32
+    },
+    "has_scoped_source": 11,
+    "has_accepted_documented_scope": 9
+  },
+  {
+    "offering_id": "OF-JP18",
+    "product_id": "JP18",
+    "canonical_name": "oplus",
+    "total_tasks": 28,
+    "unfinished": 28,
+    "states": {
+      "in_progress": 7,
+      "not_started": 21
+    },
+    "priority": {
+      "2": 1,
+      "3": 27
+    },
+    "has_scoped_source": 7,
+    "has_accepted_documented_scope": 3
+  },
+  {
+    "offering_id": "OF-JP19",
+    "product_id": "JP19",
+    "canonical_name": "勤夢表VX（V5/VX）",
+    "total_tasks": 35,
+    "unfinished": 35,
+    "states": {
+      "in_progress": 8,
+      "not_started": 27
+    },
+    "priority": {
+      "2": 1,
+      "3": 34
+    },
+    "has_scoped_source": 9,
+    "has_accepted_documented_scope": 7
+  },
+  {
+    "offering_id": "OF-JP20",
+    "product_id": "JP20",
+    "canonical_name": "エピタルHR",
+    "total_tasks": 1,
+    "unfinished": 1,
+    "states": {
+      "in_progress": 1
+    },
+    "priority": {
+      "1": 1
+    },
+    "has_scoped_source": 1,
+    "has_accepted_documented_scope": 1
+  },
+  {
+    "offering_id": "OF-JP21",
+    "product_id": "JP21",
+    "canonical_name": "Ramanas",
+    "total_tasks": 0,
+    "unfinished": 0,
+    "states": {},
+    "priority": {},
+    "has_scoped_source": 0,
+    "has_accepted_documented_scope": 0
+  },
+  {
+    "offering_id": "OF-JP22",
+    "product_id": "JP22",
+    "canonical_name": "セルヴィスEX",
+    "total_tasks": 2,
+    "unfinished": 2,
+    "states": {
+      "in_progress": 2
+    },
+    "priority": {
+      "1": 1,
+      "2": 1
+    },
+    "has_scoped_source": 2,
+    "has_accepted_documented_scope": 2
+  },
+  {
+    "offering_id": "OF-JP23",
+    "product_id": "JP23",
+    "canonical_name": "シフッタ",
+    "total_tasks": 2,
+    "unfinished": 2,
+    "states": {
+      "in_progress": 2
+    },
+    "priority": {
+      "2": 2
+    },
+    "has_scoped_source": 2,
+    "has_accepted_documented_scope": 2
+  },
+  {
+    "offering_id": "OF-JP24",
+    "product_id": "JP24",
+    "canonical_name": "シフト屋さん",
+    "total_tasks": 3,
+    "unfinished": 3,
+    "states": {
+      "in_progress": 3
+    },
+    "priority": {
+      "2": 2,
+      "3": 1
+    },
+    "has_scoped_source": 3,
+    "has_accepted_documented_scope": 3
+  },
+  {
+    "offering_id": "OF-JP25",
+    "product_id": "JP25",
+    "canonical_name": "アールシフト",
+    "total_tasks": 2,
+    "unfinished": 2,
+    "states": {
+      "in_progress": 2
+    },
+    "priority": {
+      "1": 1,
+      "2": 1
+    },
+    "has_scoped_source": 2,
+    "has_accepted_documented_scope": 1
+  },
+  {
+    "offering_id": "OF-JP26",
+    "product_id": "JP26",
+    "canonical_name": "らくしふ",
+    "total_tasks": 2,
+    "unfinished": 1,
+    "states": {
+      "done": 1,
+      "in_progress": 1
+    },
+    "priority": {
+      "2": 1
+    },
+    "has_scoped_source": 1,
+    "has_accepted_documented_scope": 0
+  },
+  {
+    "offering_id": "OF-JP27",
+    "product_id": "JP27",
+    "canonical_name": "Airシフト",
+    "total_tasks": 1,
+    "unfinished": 1,
+    "states": {
+      "in_progress": 1
+    },
+    "priority": {
+      "1": 1
+    },
+    "has_scoped_source": 1,
+    "has_accepted_documented_scope": 0
+  },
+  {
+    "offering_id": "OF-JP28",
+    "product_id": "JP28",
+    "canonical_name": "シフト屋さん Public API / MCP",
+    "total_tasks": 3,
+    "unfinished": 3,
+    "states": {
+      "in_progress": 2,
+      "not_started": 1
+    },
+    "priority": {
+      "1": 1,
+      "2": 1,
+      "3": 1
+    },
+    "has_scoped_source": 3,
+    "has_accepted_documented_scope": 3
+  },
+  {
+    "offering_id": "OF-US01",
+    "product_id": "US01",
+    "canonical_name": "RosterLab AI",
+    "total_tasks": 29,
+    "unfinished": 29,
+    "states": {
+      "in_progress": 2,
+      "not_started": 27
+    },
+    "priority": {
+      "1": 1,
+      "3": 28
+    },
+    "has_scoped_source": 2,
+    "has_accepted_documented_scope": 0
+  },
+  {
+    "offering_id": "OF-US02",
+    "product_id": "US02",
+    "canonical_name": "QGenda Nurse & Staff Scheduling",
+    "total_tasks": 34,
+    "unfinished": 34,
+    "states": {
+      "in_progress": 8,
+      "not_started": 26
+    },
+    "priority": {
+      "2": 7,
+      "3": 27
+    },
+    "has_scoped_source": 8,
+    "has_accepted_documented_scope": 3
+  },
+  {
+    "offering_id": "OF-US03",
+    "product_id": "US03",
+    "canonical_name": "Smart Square（symplr）",
+    "total_tasks": 35,
+    "unfinished": 35,
+    "states": {
+      "in_progress": 9,
+      "not_started": 26
+    },
+    "priority": {
+      "2": 8,
+      "3": 27
+    },
+    "has_scoped_source": 9,
+    "has_accepted_documented_scope": 4
+  },
+  {
+    "offering_id": "OF-US04",
+    "product_id": "US04",
+    "canonical_name": "Smartlinx Scheduling",
+    "total_tasks": 38,
+    "unfinished": 38,
+    "states": {
+      "in_progress": 11,
+      "not_started": 27
+    },
+    "priority": {
+      "2": 2,
+      "3": 36
+    },
+    "has_scoped_source": 11,
+    "has_accepted_documented_scope": 5
+  },
+  {
+    "offering_id": "OF-US05",
+    "product_id": "US05",
+    "canonical_name": "Rotageek",
+    "total_tasks": 38,
+    "unfinished": 38,
+    "states": {
+      "in_progress": 11,
+      "not_started": 27
+    },
+    "priority": {
+      "2": 3,
+      "3": 35
+    },
+    "has_scoped_source": 11,
+    "has_accepted_documented_scope": 5
+  },
+  {
+    "offering_id": "OF-US06",
+    "product_id": "US06",
+    "canonical_name": "UKG Pro Workforce Management",
+    "total_tasks": 32,
+    "unfinished": 32,
+    "states": {
+      "in_progress": 9,
+      "not_started": 23
+    },
+    "priority": {
+      "2": 1,
+      "3": 31
+    },
+    "has_scoped_source": 9,
+    "has_accepted_documented_scope": 7
+  },
+  {
+    "offering_id": "OF-US07",
+    "product_id": "US07",
+    "canonical_name": "Deputy Core",
+    "total_tasks": 33,
+    "unfinished": 33,
+    "states": {
+      "in_progress": 5,
+      "not_started": 28
+    },
+    "priority": {
+      "1": 2,
+      "3": 31
+    },
+    "has_scoped_source": 5,
+    "has_accepted_documented_scope": 4
+  },
+  {
+    "offering_id": "OF-US08",
+    "product_id": "US08",
+    "canonical_name": "Nursegrid Manager",
+    "total_tasks": 35,
+    "unfinished": 35,
+    "states": {
+      "in_progress": 7,
+      "not_started": 28
+    },
+    "priority": {
+      "2": 4,
+      "3": 31
+    },
+    "has_scoped_source": 7,
+    "has_accepted_documented_scope": 5
+  },
+  {
+    "offering_id": "OF-US09",
+    "product_id": "US09",
+    "canonical_name": "Connecteam Operations Hub Expert",
+    "total_tasks": 35,
+    "unfinished": 35,
+    "states": {
+      "in_progress": 20,
+      "not_started": 15
+    },
+    "priority": {
+      "1": 2,
+      "2": 1,
+      "3": 32
+    },
+    "has_scoped_source": 20,
+    "has_accepted_documented_scope": 16
+  },
+  {
+    "offering_id": "OF-US10",
+    "product_id": "US10",
+    "canonical_name": "Timefold Employee Shift Scheduling API",
+    "total_tasks": 27,
+    "unfinished": 27,
+    "states": {
+      "in_progress": 19,
+      "not_started": 8
+    },
+    "priority": {
+      "3": 27
+    },
+    "has_scoped_source": 20,
+    "has_accepted_documented_scope": 15
+  },
+  {
+    "offering_id": "OF-US11",
+    "product_id": "US11",
+    "canonical_name": "Allocate Optima",
+    "total_tasks": 2,
+    "unfinished": 2,
+    "states": {
+      "in_progress": 1,
+      "not_started": 1
+    },
+    "priority": {
+      "1": 1,
+      "3": 1
+    },
+    "has_scoped_source": 2,
+    "has_accepted_documented_scope": 2
+  },
+  {
+    "offering_id": "OF-US12",
+    "product_id": "US12",
+    "canonical_name": "ShiftWizard",
+    "total_tasks": 3,
+    "unfinished": 3,
+    "states": {
+      "in_progress": 3
+    },
+    "priority": {
+      "2": 3
+    },
+    "has_scoped_source": 3,
+    "has_accepted_documented_scope": 2
+  },
+  {
+    "offering_id": "OF-US13",
+    "product_id": "US13",
+    "canonical_name": "Lantum In-Genius Rota",
+    "total_tasks": 2,
+    "unfinished": 2,
+    "states": {
+      "in_progress": 2
+    },
+    "priority": {
+      "1": 1,
+      "2": 1
+    },
+    "has_scoped_source": 2,
+    "has_accepted_documented_scope": 2
+  },
+  {
+    "offering_id": "OF-US14",
+    "product_id": "US14",
+    "canonical_name": "Patchwork Rota",
+    "total_tasks": 0,
+    "unfinished": 0,
+    "states": {},
+    "priority": {},
+    "has_scoped_source": 0,
+    "has_accepted_documented_scope": 0
+  },
+  {
+    "offering_id": "OF-US15",
+    "product_id": "US15",
+    "canonical_name": "Clairvia",
+    "total_tasks": 1,
+    "unfinished": 1,
+    "states": {
+      "in_progress": 1
+    },
+    "priority": {
+      "1": 1
+    },
+    "has_scoped_source": 1,
+    "has_accepted_documented_scope": 1
+  },
+  {
+    "offering_id": "OF-US16",
+    "product_id": "US16",
+    "canonical_name": "PerfectServe Lightning Bolt",
+    "total_tasks": 2,
+    "unfinished": 2,
+    "states": {
+      "in_progress": 2
+    },
+    "priority": {
+      "2": 2
+    },
+    "has_scoped_source": 2,
+    "has_accepted_documented_scope": 1
+  },
+  {
+    "offering_id": "OF-US17",
+    "product_id": "US17",
+    "canonical_name": "Humanity Schedule",
+    "total_tasks": 1,
+    "unfinished": 1,
+    "states": {
+      "in_progress": 1
+    },
+    "priority": {
+      "2": 1
+    },
+    "has_scoped_source": 1,
+    "has_accepted_documented_scope": 1
+  },
+  {
+    "offering_id": "OF-US18",
+    "product_id": "US18",
+    "canonical_name": "Quinyx",
+    "total_tasks": 4,
+    "unfinished": 3,
+    "states": {
+      "done": 1,
+      "in_progress": 3
+    },
+    "priority": {
+      "1": 1,
+      "2": 2
+    },
+    "has_scoped_source": 3,
+    "has_accepted_documented_scope": 3
+  },
+  {
+    "offering_id": "OF-US19",
+    "product_id": "US19",
+    "canonical_name": "When I Work",
+    "total_tasks": 2,
+    "unfinished": 2,
+    "states": {
+      "in_progress": 2
+    },
+    "priority": {
+      "1": 1,
+      "2": 1
+    },
+    "has_scoped_source": 2,
+    "has_accepted_documented_scope": 1
+  },
+  {
+    "offering_id": "OF-US20",
+    "product_id": "US20",
+    "canonical_name": "Planday",
+    "total_tasks": 4,
+    "unfinished": 4,
+    "states": {
+      "in_progress": 4
+    },
+    "priority": {
+      "1": 3,
+      "2": 1
+    },
+    "has_scoped_source": 4,
+    "has_accepted_documented_scope": 3
+  },
+  {
+    "offering_id": "OF-US21",
+    "product_id": "US21",
+    "canonical_name": "RosterElf",
+    "total_tasks": 1,
+    "unfinished": 1,
+    "states": {
+      "in_progress": 1
+    },
+    "priority": {
+      "2": 1
+    },
+    "has_scoped_source": 1,
+    "has_accepted_documented_scope": 1
+  },
+  {
+    "offering_id": "OF-US22",
+    "product_id": "US22",
+    "canonical_name": "Sona",
+    "total_tasks": 1,
+    "unfinished": 1,
+    "states": {
+      "in_progress": 1
+    },
+    "priority": {
+      "1": 1
+    },
+    "has_scoped_source": 1,
+    "has_accepted_documented_scope": 1
+  }
+]

@@ -1,0 +1,144 @@
+{
+  "status": "passed",
+  "work_id": "Q03",
+  "canonical_batch": "B41-20261013",
+  "checked_at": "2026-10-13T10:28:40.170166+00:00",
+  "research_sha256": "426dedf246bb3853397dd99339a338899f7690a4c22458c9914954d33e7247fe",
+  "content_sha256": "aa6eb0acf39dd5f5e54dfd573e542de21ee2d1951acb8eabf0b55e4009f30f08",
+  "regression": {
+    "total": 75,
+    "research_python": 17,
+    "web_python": 36,
+    "node": 22,
+    "research_rechecked_on_final_batch": true
+  },
+  "types": {
+    "files": 57,
+    "errors": 0,
+    "warnings": 0,
+    "hints": 0
+  },
+  "builds": {
+    "production": true,
+    "staging": true,
+    "environment_separation": true,
+    "application_code_changed": false
+  },
+  "DB": {
+    "tables": 39,
+    "integrity": true,
+    "foreign_keys": true,
+    "SQL_roundtrip": true,
+    "replay_idempotent": true,
+    "old_rows_preserved": true,
+    "old_price_rows_preserved": 119,
+    "new_price_rows": 0
+  },
+  "local_D1": {
+    "isolated_local_only": true,
+    "all_39_tables_equal": true,
+    "post_runtime_equal": true
+  },
+  "API": {
+    "products": 50,
+    "prices": 50,
+    "version_hashes_matched": true
+  },
+  "browser": {
+    "cases": 38,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0,
+    "external_DNS_blocked": true,
+    "final_batch_tested": true
+  },
+  "SEO": {
+    "pages": 62,
+    "unexpected_issues": 0,
+    "expected_local_noindex": 62
+  },
+  "visual": {
+    "status": "passed",
+    "snapshot": "B41-20261013-pub2",
+    "services": 3,
+    "widths": [
+      1440,
+      390
+    ],
+    "overflow": false,
+    "pageErrors": [],
+    "NEO_quote_and_2021_conditions_preserved": true,
+    "NEO_unknown_period_and_setup_preserved": true,
+    "shiftla_tax_disputed_and_price_tax_unknown": true,
+    "shared_staff_not_inferred": true,
+    "Pitat_subscription_vs_optional_services": true,
+    "external_DNS_blocked": true
+  },
+  "static_viewer": {
+    "browser": "Google Chrome via Playwright",
+    "batch": "B41-20261013",
+    "cards": 50,
+    "enriched": 3,
+    "domestic": 28,
+    "overseas": 22,
+    "comparisonRows": 40,
+    "comparisonColumns": 5,
+    "uniqueDocumentObservations": 2189,
+    "logos": 50,
+    "serviceLogos": 40,
+    "companyLogos": 10,
+    "logoFailureFallback": "passed",
+    "classificationHistory": "passed",
+    "pageErrors": [],
+    "viewports": [
+      1440,
+      390
+    ],
+    "status": "passed"
+  },
+  "SQL": {
+    "baseline": "isolated local B40, not live production",
+    "delta_roundtrip": true,
+    "maximum_statement_bytes": 86116,
+    "prior_publication_rows_preserved": true
+  },
+  "queue": {
+    "blocked": 109,
+    "done": 21,
+    "in_progress": 225,
+    "not_started": 625
+  },
+  "unfinished": 959,
+  "operational_queues": {
+    "public": 816,
+    "external": 60,
+    "conditional_deferred": 83
+  },
+  "task_review": {
+    "reviewed": 10,
+    "completed_public": 6,
+    "external_wait": 4,
+    "original_conditions_preserved": true,
+    "unknowns_not_promoted_to_support": true
+  },
+  "factual_changes": {
+    "new_document_records": 13,
+    "source_revisions": 9,
+    "new_price_components": 0,
+    "all_119_price_rows_unchanged": true,
+    "all50_price_summaries_identical_to_B40": true,
+    "independent_product_tests": 0
+  },
+  "logs_directory": "/Users/tsukadatakahiro/Python/app/shift-app/.local/research-backups/Q03-20261013/logs",
+  "runtime_repairs": "Local-only D1/Worker/browser socket use was auto-review-approved. Final prepared canonical source identity was checked against existing URLs; all final data validations passed. No approval rejection or production connection.",
+  "limitations": [
+    "6完了は限定公開質問の終了。契約・実測・制度適合の認定ではない。",
+    "未確認4は非対応へ変えず、正式資料/デモ又は導入判断時に再開。",
+    "公開816は未照合を含み、全件重要/調査可能という認定ではない。",
+    "NEOのカタログは申込/パスワードが必要で未取得。公式画像とHTML原本の保存範囲はsource-captures.json参照。",
+    "外部DNSを遮断した検証のため一部外部ロゴはalt表示。既存ロゴデータは変更なし。"
+  ],
+  "production_deployed": false,
+  "git_or_CI_mutations": false,
+  "paid_or_external_contact_actions": false
+}

@@ -1,0 +1,84 @@
+[
+  {
+    "review_id": "Q05T02-TASK-RES00757",
+    "task_id": "TASK-RES00757",
+    "product": "SHIFTEE",
+    "offering_id": "OF-JP17",
+    "criterion_id": "P02",
+    "original_task": {
+      "priority": 3,
+      "required_method": "unknown",
+      "last_checked_on": null,
+      "task_id": "TASK-RES00757",
+      "offering_id": "OF-JP17",
+      "criterion_id": "P02",
+      "task_state": "not_started",
+      "question": "課金対象・単位：定義の未確認部分・現行条件を確認する。",
+      "evidence_needed": "公式料金・個別見積・契約書",
+      "owner": "未割当",
+      "next_review_on": null,
+      "block_reason": null
+    },
+    "q01_public_acceptance_atoms": [
+      "公開された課金対象と単位",
+      "管理者/休職/兼務/最低数量等の記載範囲"
+    ],
+    "scope": "SHIFTEE Lightの公開ユーザー単位と契約席数の増減条件を照合する。",
+    "reason": "該当する公式公開記載を照合し、限定公開質問の肯定根拠と未記載/個別契約の残条件を分離した。",
+    "evidence_observation_ids": [
+      "B44-20261013-OBS0001",
+      "B44-20261013-OBS0002"
+    ],
+    "remaining_work": [
+      "管理者/休職/兼務の人数算定、最低請求人数/最低料金、Full/自動作成の課金構成"
+    ],
+    "primary_queue": "completed_public_check",
+    "public_phase": "completed_bounded_document_question",
+    "external_state": "deferred_until_adoption",
+    "resume_condition": "公式改定/正式資料/対象見積の取得又は導入判断に残条件が必要な時。新根拠なしの反復探索はしない。",
+    "after_task_state": "done",
+    "factual_support_not_inferred": true,
+    "original_requirements_deleted": false
+  },
+  {
+    "review_id": "Q05T02-TASK-RES00758",
+    "task_id": "TASK-RES00758",
+    "product": "SHIFTEE",
+    "offering_id": "OF-JP17",
+    "criterion_id": "P03",
+    "original_task": {
+      "priority": 3,
+      "required_method": "unknown",
+      "last_checked_on": null,
+      "task_id": "TASK-RES00758",
+      "offering_id": "OF-JP17",
+      "criterion_id": "P03",
+      "task_state": "not_started",
+      "question": "請求周期・最低契約：定義の未確認部分・現行条件を確認する。",
+      "evidence_needed": "公式料金・個別見積・契約書",
+      "owner": "未割当",
+      "next_review_on": null,
+      "block_reason": null
+    },
+    "q01_public_acceptance_atoms": [
+      "月/年の請求周期・前払い・最低期間",
+      "最低人数/請求額の公表範囲"
+    ],
+    "scope": "SHIFTEE公開約款の利用期間・更新・月途中請求・中途解約条件を照合する。",
+    "reason": "該当する公式公開記載を照合し、限定公開質問の肯定根拠と未記載/個別契約の残条件を分離した。",
+    "evidence_observation_ids": [
+      "B44-20261013-OBS0003",
+      "B44-20261013-OBS0004"
+    ],
+    "remaining_work": [
+      "個別書面で合意された例外期間・請求期日・前払条件、Full/AIの正式料金・代理店契約適用"
+    ],
+    "primary_queue": "completed_public_check",
+    "public_phase": "completed_bounded_document_question",
+    "external_state": "deferred_until_adoption",
+    "resume_condition": "公式改定/正式資料/対象見積の取得又は導入判断に残条件が必要な時。新根拠なしの反復探索はしない。",
+    "after_task_state": "done",
+    "factual_support_not_inferred": true,
+    "original_requirements_deleted": false
+  }
+]

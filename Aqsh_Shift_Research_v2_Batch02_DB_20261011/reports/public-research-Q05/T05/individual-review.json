@@ -1,0 +1,82 @@
+[
+  {
+    "review_id": "Q05T05-TASK-RES00890",
+    "task_id": "TASK-RES00890",
+    "product": "RosterLab AI",
+    "offering_id": "OF-US01",
+    "criterion_id": "P03",
+    "original_task": {
+      "priority": 3,
+      "required_method": "unknown",
+      "last_checked_on": null,
+      "task_id": "TASK-RES00890",
+      "offering_id": "OF-US01",
+      "criterion_id": "P03",
+      "task_state": "not_started",
+      "question": "請求周期・最低契約：定義の未確認部分・現行条件を確認する。",
+      "evidence_needed": "公式料金・個別見積・契約書",
+      "owner": "未割当",
+      "next_review_on": null,
+      "block_reason": null
+    },
+    "q01_public_acceptance_atoms": [
+      "月/年の請求周期・前払い・最低期間",
+      "最低人数/請求額の公表範囲"
+    ],
+    "scope": "RosterLab AI米国の請求周期・前払い・最低契約を確認する。",
+    "reason": "公開ページの月単位単価から契約条件は確定できない。",
+    "evidence_observation_ids": [
+      "B47-20261013-OBS0001"
+    ],
+    "remaining_work": [
+      "正式な請求周期/前払い/最低期間/最低数量/解約条件（料金の月単位表示とは別）"
+    ],
+    "primary_queue": "external_confirmation_wait",
+    "public_phase": "bounded_public_search_ended_unknown",
+    "external_state": "waiting_for_formal_document",
+    "resume_condition": "公式改定/正式資料/対象見積の取得又は導入判断に残条件が必要な時。新根拠なしの反復探索はしない。",
+    "after_task_state": "blocked",
+    "factual_support_not_inferred": true,
+    "original_requirements_deleted": false
+  },
+  {
+    "review_id": "Q05T05-TASK-RES00891",
+    "task_id": "TASK-RES00891",
+    "product": "RosterLab AI",
+    "offering_id": "OF-US01",
+    "criterion_id": "P04",
+    "original_task": {
+      "priority": 3,
+      "required_method": "unknown",
+      "last_checked_on": null,
+      "task_id": "TASK-RES00891",
+      "offering_id": "OF-US01",
+      "criterion_id": "P04",
+      "task_state": "not_started",
+      "question": "導入初期費用：定義の未確認部分・現行条件を確認する。",
+      "evidence_needed": "公式料金・個別見積・契約書",
+      "owner": "未割当",
+      "next_review_on": null,
+      "block_reason": null
+    },
+    "q01_public_acceptance_atoms": [
+      "公表された必須初期費用と任意追加費",
+      "未公表額を0円としない"
+    ],
+    "scope": "RosterLab AI米国の項目別導入費用と必須/任意を確認する。",
+    "reason": "サポート階層の案内はあるが項目別初期費用は非公表。",
+    "evidence_observation_ids": [
+      "B47-20261013-OBS0002"
+    ],
+    "remaining_work": [
+      "設定/移行/研修/連携開発の必須/任意、料金包含と追加額を示す正式見積"
+    ],
+    "primary_queue": "external_confirmation_wait",
+    "public_phase": "bounded_public_search_ended_unknown",
+    "external_state": "waiting_for_formal_document",
+    "resume_condition": "公式改定/正式資料/対象見積の取得又は導入判断に残条件が必要な時。新根拠なしの反復探索はしない。",
+    "after_task_state": "blocked",
+    "factual_support_not_inferred": true,
+    "original_requirements_deleted": false
+  }
+]

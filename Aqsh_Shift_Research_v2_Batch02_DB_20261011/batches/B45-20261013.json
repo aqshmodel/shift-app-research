@@ -1,0 +1,120 @@
+{
+  "batch_id": "B45-20261013",
+  "prior_batch": "B44-20261013",
+  "as_of_date": "2026-10-13",
+  "resolution_policy_version": 2,
+  "description": "Q05 T03/5 お助けマン Time：標準自動作成と追加開発の境界",
+  "method": "限定公式公開調査・ローカル反映。前回の既完/外部待ちを再完了しない。原要件・不明・資料不一致・既存価格119行を保持。Git/CI/本番/課金/登録/問い合わせなし。",
+  "sources": [
+    {
+      "key": "time-price",
+      "url": "https://www.otasukeman.jp/price",
+      "title": "勤務シフト作成お助けマン 料金プラン",
+      "publisher": "鉄道情報システム株式会社",
+      "retrieved_on": "2026-10-13",
+      "version_label": "公開/改定日不明。閲覧2026-10-13",
+      "method": "public_web_body",
+      "method_note": "公式本文・該当注記を照合。原本はQ05バックアップに保存、取得hashはsource-captures.json。入力・登録・課金・問い合わせ・独立製品試験なし。",
+      "scope_note": "Q01の限定公開質問終了基準に従う。原要件と未確認条件を個別台帳へ保持。"
+    },
+    {
+      "key": "time-main",
+      "url": "https://www.otasukeman.jp/time",
+      "title": "勤務シフト作成お助けマン Time サービス紹介",
+      "publisher": "鉄道情報システム株式会社",
+      "retrieved_on": "2026-10-13",
+      "version_label": "公開/改定日不明。閲覧2026-10-13",
+      "method": "public_web_body",
+      "method_note": "公式本文・該当注記を照合。原本はQ05バックアップに保存、取得hashはsource-captures.json。入力・登録・課金・問い合わせ・独立製品試験なし。",
+      "scope_note": "Q01の限定公開質問終了基準に従う。原要件と未確認条件を個別台帳へ保持。"
+    },
+    {
+      "key": "time-faq",
+      "url": "https://www.otasukeman.jp/faq",
+      "title": "勤務シフト作成お助けマン よくあるご質問",
+      "publisher": "鉄道情報システム株式会社",
+      "retrieved_on": "2026-10-13",
+      "version_label": "公開/改定日不明。閲覧2026-10-13",
+      "method": "public_web_body",
+      "method_note": "公式本文・該当注記を照合。原本はQ05バックアップに保存、取得hashはsource-captures.json。入力・登録・課金・問い合わせ・独立製品試験なし。",
+      "scope_note": "Q01の限定公開質問終了基準に従う。原要件と未確認条件を個別台帳へ保持。"
+    }
+  ],
+  "findings": [
+    {
+      "product": "JP06",
+      "criterion": "B07",
+      "source": "time-price",
+      "state": "known",
+      "support": "limited",
+      "delivery": "unknown",
+      "summary": "Timeの1箇所ごとの税抜利用料金には自動作成機能が含まれる。Dayの別記スマートフォン利用オプションとTimeの料金表を区別する。",
+      "locator": "料金ページTimeの表・自動作成包含の注記 / Dayのスマホ注記",
+      "limitations": "Time月6,000〜15,000円/年60,000〜150,000円の既存明細と一致し重複追加しない。51人以上は見積。TimeへDayの3,000円/30,000円を加算しない。",
+      "scope": "2026-10-13の公式公開資料照合。資料の対象国/版/プランに限定。個別契約適用と実動作は未検証。"
+    },
+    {
+      "product": "JP06",
+      "criterion": "B07",
+      "source": "time-main",
+      "state": "known",
+      "support": "limited",
+      "delivery": "native",
+      "summary": "Timeはスマホ希望登録・完成シフト確認、メール/LINE通知・ヘルプ応答、複数店舗の確認/応援調整、タブレット対応を製品機能として紹介する。",
+      "locator": "サービス利用イメージ1〜5 / 機能一覧",
+      "limitations": "公表機能と個別契約包含を区別。実機・通知到達・外部連携条件は未検証。Day、Crew、シフトデザイナーの機能をTimeへ流用しない。",
+      "scope": "2026-10-13の公式公開資料照合。資料の対象国/版/プランに限定。個別契約適用と実動作は未検証。"
+    },
+    {
+      "product": "JP06",
+      "criterion": "B07",
+      "source": "time-faq",
+      "state": "known",
+      "support": "limited",
+      "delivery": "unknown",
+      "summary": "汎用機能の定期バージョンアップ費用は毎月の利用料金に含む一方、独自機能はオプションとして開発する場合があり、大規模/複雑業務は別サービスのシフトデザイナーを案内する。",
+      "locator": "バージョンアップ / カスタマイズのFAQ",
+      "limitations": "要望採用・無償個別開発・全外部連携込みを保証しない。追加開発/設定作業支援/訪問等の構成と金額は見積による。",
+      "scope": "2026-10-13の公式公開資料照合。資料の対象国/版/プランに限定。個別契約適用と実動作は未検証。"
+    }
+  ],
+  "task_updates": [
+    {
+      "task_id": "TASK-RES00236",
+      "state": "done",
+      "priority": 3,
+      "method": "public_document",
+      "expected_task": {
+        "priority": 3,
+        "required_method": "unknown",
+        "last_checked_on": "2026-10-12",
+        "task_state": "in_progress",
+        "question": "プラン・追加機能の境界：定義の未確認部分・現行条件を確認する。",
+        "evidence_needed": "機能仕様・プラン比較・利用規約・デモ",
+        "owner": "未割当",
+        "next_review_on": null,
+        "block_reason": null
+      },
+      "changes": {
+        "owner": "公開資料確認終了 / 残条件は導入時再開",
+        "block_reason": null,
+        "next_review_on": null,
+        "question": "Timeの自動作成料金包含・公開標準機能と、独自追加開発/別サービスの境界を照合する。",
+        "evidence_needed": "公式公開資料の該当箇所・日付・適用条件。原要件と個別契約/実測の残条件はQ05台帳へ保持。"
+      },
+      "note": "{\"review_id\":\"Q05T03-TASK-RES00236\",\"task_id\":\"TASK-RES00236\",\"product\":\"勤務シフト作成お助けマン Time\",\"offering_id\":\"OF-JP06\",\"criterion_id\":\"B07\",\"original_task\":{\"priority\":3,\"required_method\":\"unknown\",\"last_checked_on\":\"2026-10-12\",\"task_id\":\"TASK-RES00236\",\"offering_id\":\"OF-JP06\",\"criterion_id\":\"B07\",\"task_state\":\"in_progress\",\"question\":\"プラン・追加機能の境界：定義の未確認部分・現行条件を確認する。\",\"evidence_needed\":\"機能仕様・プラン比較・利用規約・デモ\",\"owner\":\"未割当\",\"next_review_on\":null,\"block_reason\":null},\"q01_public_acceptance_atoms\":[\"機能を使えるプラン/モジュールの公開対応\",\"追加契約/地域/βの留保\"],\"scope\":\"Timeの自動作成料金包含・公開標準機能と、独自追加開発/別サービスの境界を照合する。\",\"reason\":\"該当する公式公開記載を照合し、限定公開質問の肯定根拠と未記載/個別契約の残条件を分離した。\",\"evidence_observation_ids\":[\"B45-20261013-OBS0001\",\"B45-20261013-OBS0002\",\"B45-20261013-OBS0003\"],\"remaining_work\":[\"個別開発の作業範囲/追加額、支援の必須/任意、販売店合意、機能の実動作・医療介護制度適合\"],\"primary_queue\":\"completed_public_check\",\"public_phase\":\"completed_bounded_document_question\",\"external_state\":\"deferred_until_adoption\",\"resume_condition\":\"公式改定/正式資料/対象見積の取得又は導入判断に残条件が必要な時。新根拠なしの反復探索はしない。\",\"after_task_state\":\"done\",\"factual_support_not_inferred\":true,\"original_requirements_deleted\":false}",
+      "public_completion": {
+        "scope": "Timeの自動作成料金包含・公開標準機能と、独自追加開発/別サービスの境界を照合する。",
+        "observation_ids": [
+          "B45-20261013-OBS0001",
+          "B45-20261013-OBS0002",
+          "B45-20261013-OBS0003"
+        ],
+        "remaining_work": [
+          "個別開発の作業範囲/追加額、支援の必須/任意、販売店合意、機能の実動作・医療介護制度適合"
+        ]
+      }
+    }
+  ],
+  "prices": []
+}

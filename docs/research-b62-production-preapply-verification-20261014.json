@@ -1,0 +1,9 @@
+{
+  "status": "passed",
+  "checked_at": "2026-10-13T15:44:06.558648+00:00",
+  "unchanged_tables": 43,
+  "prior_snapshot": "B41-20261013-pub2",
+  "target_snapshot": "B62-20261013-pub2",
+  "fresh_cost_observed_usd": 0,
+  "forecast_cost_usd": 0
+}

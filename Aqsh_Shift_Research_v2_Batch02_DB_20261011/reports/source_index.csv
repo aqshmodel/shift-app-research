@@ -1,3 +1,4 @@
 ﻿revision_id,document_id,publisher,title,retrieval_url,retrieved_on,published_on,updated_on,origin_kind,full_text_archived,relative_path,sha256
-B36-20261013-REV001,DOC-149e6b9d5549aa08f5f3a6a7,Connecteam,Connecteam — Connecteam official home — Schedule the week in minutes,https://connecteam.com/,2026-10-13,,,official_document_body,0,,
-B36-20261013-REV002,DOC-db1a31f2ff5a6cf04ddf1410,Connecteam,Connecteam — Connecteam's Knowledge Base Agent: Your Company's AI Assistant,https://help.connecteam.com/en/articles/11112114-connecteam-s-knowledge-base-agent-your-company-s-ai-assistant,2026-10-13,,,official_document_body,0,,
+B62-20261013-REV001,DOC-4028ed9735488ffd7693716f,Timefold BV,Pricing plans and capabilities |,https://docs.timefold.ai/timefold-platform/latest/plans,2026-10-13,,,public_web_body,0,,
+B62-20261013-REV002,DOC-b31565468bf47e6f1e4d2f6b,Timefold BV,Read Our Terms of Use | Timefold,https://timefold.ai/terms,2026-10-13,,,public_web_body,0,,
+B62-20261013-REV003,DOC-814b0f8f488a307db1b6bd98,,Pricing for Scheduling Optimization APIs & Solver | Timefold,https://timefold.ai/pricing,2026-10-13,,,public_web_body,0,,

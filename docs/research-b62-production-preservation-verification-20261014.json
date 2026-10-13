@@ -1,0 +1,23 @@
+{
+  "status": "passed",
+  "prior_snapshot": "B41-20261013-pub2",
+  "target_snapshot": "B62-20261013-pub2",
+  "publication_tables": {
+    "web_snapshots": {
+      "before": 8,
+      "after": 9,
+      "old_rows_preserved": true
+    },
+    "web_products": {
+      "before": 400,
+      "after": 450,
+      "old_rows_preserved": true
+    },
+    "web_categories": {
+      "before": 488,
+      "after": 549,
+      "old_rows_preserved": true
+    }
+  },
+  "research_immutable_rows_preserved_by_delta": true
+}

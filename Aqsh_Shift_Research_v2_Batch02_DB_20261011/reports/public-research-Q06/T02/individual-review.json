@@ -1,0 +1,43 @@
+[
+  {
+    "review_id": "Q06T02-TASK-RES00181",
+    "task_id": "TASK-RES00181",
+    "product": "Nafty",
+    "offering_id": "OF-JP04",
+    "criterion_id": "P03",
+    "original_task": {
+      "priority": 3,
+      "required_method": "unknown",
+      "last_checked_on": null,
+      "task_id": "TASK-RES00181",
+      "offering_id": "OF-JP04",
+      "criterion_id": "P03",
+      "task_state": "not_started",
+      "question": "請求周期・最低契約：定義の未確認部分・現行条件を確認する。",
+      "evidence_needed": "公式料金・個別見積・契約書",
+      "owner": "未割当",
+      "next_review_on": null,
+      "block_reason": null
+    },
+    "q01_public_acceptance_atoms": [
+      "月/年の請求周期・前払い・最低期間",
+      "最低人数/請求額の公表範囲"
+    ],
+    "scope": "Naftyの月額表示・試用条件と通常利用の請求周期/最低契約を照合する。",
+    "reason": "料金単位と試用条件は明記されるが、通常利用の請求契約・最低期間は公式公開規約/料金/FAQから確定できない。",
+    "evidence_observation_ids": [
+      "B49-20261013-OBS0001",
+      "B49-20261013-OBS0002"
+    ],
+    "remaining_work": [
+      "請求周期・前払・最低期間/数量/請求額、解約期限/精算/更新、有料移行条件を指定した正式契約資料"
+    ],
+    "primary_queue": "external_confirmation_wait",
+    "public_phase": "bounded_public_search_ended_unknown",
+    "external_state": "waiting_for_formal_document",
+    "resume_condition": "公式改定/正式資料/対象見積の取得又は導入判断に残条件が必要な時。新根拠なしの反復探索はしない。",
+    "after_task_state": "blocked",
+    "factual_support_not_inferred": true,
+    "original_requirements_deleted": false
+  }
+]

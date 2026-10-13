@@ -1,6 +1,8 @@
-# Aqsh シフト競合調査 — 第36バッチまで / 未完了課題の継続調査
+# Aqsh シフト競合調査 — 第62バッチ / Q08 5単位完了
 
-2026年10月13日UTC、**50提供単位、2,151文書記録、352調査文書、118料金明細、制度17件**。第36バッチ（C05T03）はConnecteam F04/F05を新規2公式資料から4未確認参考記録、2課題開始・完了0。AI宣伝/KB回答指示/設定summary/回答後出典は任意勤務規則変換・事前承認の証拠とせず公開評価もunknown。対照4資料は新規文書へ数えない。未着手642・確認中258・停止78、未完978、優先度1未完29、部分採用619/2,000不変。72回帰/39表履歴/50価格・詳細投影/manifest/PCスマホ合格。新Connecteam行100,871バイトは6文へ分割し中断再開/内容保持/再適用/旧行保持を確認。2026年10月13日、第36バッチまで本番反映し、全件照合を完了した。
+50提供単位、2,274文書記録、379調査文書、119料金明細。Nursegrid/UKG/Smartlinx/RosterElf/Timefoldの5公開課題を個別照合、3限定公開質問完了・2正式仕様待ち。未完941＝公開784（未照合含む）＋外部74＋条件付き保留83。無料アプリと組織契約、SOW導入設定数と製品上限、通常人数とFlex条件、solver資源と職員課金を区別。5/5で調査を終了。2026年10月14日にB62まで本番・検証環境へ反映済み。
+
+[Q08結果](reports/public-research-Q08/report.md) · [公開終了基準](reports/queue-review-Q01/policy.json) · [B62本番反映](../docs/research-b62-publication-20261014.md)
 
 ## 最初に見るファイル
 
@@ -8,6 +10,8 @@
 |---|---|
 | [comparison.html](comparison.html) | ブラウザで開く比較・検索画面。今回追加調査のみの絞り込み、出典、最大4対象の比較 |
 | [research.sqlite3](research.sqlite3) | 最新の正本DB。39テーブル・12ビュー |
+| [第38バッチ調査報告](reports/Batch38_research_report.md) | Connecteam AIデータ取扱範囲・C05最終検証 |
+| [第37バッチ調査報告](reports/Batch37_research_report.md) | Connecteam Job枠/共有カタログと同時最適化未知 |
 | [第36バッチ調査報告](reports/Batch36_research_report.md) | Connecteam F04/F05未確認境界と新データSQL分割 |
 | [第35バッチ調査報告](reports/Batch35_research_report.md) | Connecteam本人希望/Pro設定分担とC05T02検証 |
 | [第34バッチ調査報告](reports/Batch34_research_report.md) | Connecteam休息ルール/CSV取込境界とC05T01検証 |
@@ -73,7 +77,7 @@
 
 ## D1へ登録する
 
-初回登録には、生のSQLiteファイルではなく`d1/import.sql`を使います。既存D1はこのSQLを再投入せず、直前のエクスポートから生成した差分SQLで更新します。第12バッチまでの本番・検証D1は全39調査テーブルを正本と照合しました。最新の反映状況は [本番反映記録](../docs/research-b12-publication-20261012.md)、研究作成時点の検証は [B12検証記録](reports/batch12_validation.json) を参照してください。
+初回登録には、生のSQLiteファイルではなく`d1/import.sql`を使います。既存D1はこのSQLを再投入せず、直前のエクスポートから生成した差分SQLで更新します。第12バッチまでの本番・検証D1は全39調査テーブルを正本と照合しました。最新の反映状況は [本番反映記録](../docs/research-b62-publication-20261014.md)、研究作成時点の検証は [B12検証記録](reports/batch12_validation.json) を参照してください。
 
 既存のデータがないD1を作り、実際のdatabase_idを指定したWrangler設定を用意してから実行します。
 
@@ -131,6 +135,8 @@ python3 tools/research_db.py ingest --db /tmp/aqsh-rebuilt.sqlite3 --batch batch
 python3 tools/research_db.py ingest --db /tmp/aqsh-rebuilt.sqlite3 --batch batches/B34-20261013.json
 python3 tools/research_db.py ingest --db /tmp/aqsh-rebuilt.sqlite3 --batch batches/B35-20261013.json
 python3 tools/research_db.py ingest --db /tmp/aqsh-rebuilt.sqlite3 --batch batches/B36-20261013.json
+python3 tools/research_db.py ingest --db /tmp/aqsh-rebuilt.sqlite3 --batch batches/B37-20261013.json
+python3 tools/research_db.py ingest --db /tmp/aqsh-rebuilt.sqlite3 --batch batches/B38-20261013.json
 python3 tools/research_db.py stats --db /tmp/aqsh-rebuilt.sqlite3
 ```
 
@@ -156,7 +162,7 @@ verifyはSQL再取り込みによるデータ一致、外部キー、証拠と�
 
 第22バッチの検証：[結果](reports/batch22_validation.json)、[完了条件](reports/batch22_completion_review.json)、[8出典](reports/batch22_source_verification.json)。C02T05はShiftWizard支援時間の追加照合と包括検証・引き継ぎを予定。
 
-C02の最終結果：[B23包括検証](reports/batch23_validation.json)、[全38ケース](reports/batch23_browser_validation.json)、[サイクル履歴](reports/cycle02_history_preservation.json)。現在は停止、次サイクルの開始なし。
+C02の最終結果：[B23包括検証](reports/batch23_validation.json)、[全38ケース](reports/batch23_browser_validation.json)、[サイクル履歴](reports/cycle02_history_preservation.json)、引き継ぎ（ローカル運用記録）。現在は停止、次サイクルの開始なし。
 
 第24バッチの検証：[結果](reports/batch24_validation.json)、[完了条件](reports/batch24_completion_review.json)、[出典](reports/batch24_source_verification.json)。C03T02は親の指示待ち。T05にも追加調査を含め包括検証と引き継ぎ後に停止。
 
@@ -166,7 +172,7 @@ C02の最終結果：[B23包括検証](reports/batch23_validation.json)、[全38
 
 第27バッチの検証：[結果](reports/batch27_validation.json)、[完了条件](reports/batch27_completion_review.json)、[4出典の確認範囲](reports/batch27_source_verification.json)。C03T05は親の指示待ち。
 
-第28バッチの検証：[結果](reports/batch28_validation.json)、[完了条件](reports/batch28_completion_review.json)、[出典](reports/batch28_source_verification.json)。を保存し5/5で停止。
+第28バッチの検証：[結果](reports/batch28_validation.json)、[完了条件](reports/batch28_completion_review.json)、[出典](reports/batch28_source_verification.json)。C03引き継ぎ（ローカル運用記録）を保存し5/5で停止。
 
 第29バッチの検証：[結果](reports/batch29_validation.json)、[完了条件](reports/batch29_completion_review.json)、[5出典](reports/batch29_source_verification.json)。C04T02は親の指示待ち。
 
@@ -183,3 +189,7 @@ C02の最終結果：[B23包括検証](reports/batch23_validation.json)、[全38
 第35バッチ：[検証](reports/batch35_validation.json)、[完了条件](reports/batch35_completion_review.json)、[出典](reports/batch35_source_verification.json)。C05T03は親の指示待ち。
 
 第36バッチ：[検証](reports/batch36_validation.json)、[完了条件](reports/batch36_completion_review.json)、[出典](reports/batch36_source_verification.json)、[分割](reports/batch36_sql_split.json)。C05T04は親の指示待ち。
+
+第37バッチ：[検証](reports/batch37_validation.json)、[出典](reports/batch37_source_verification.json)、[分割](reports/batch37_sql_split.json)。C05T05親の指示待ち。
+
+第38バッチ：[包括検証](reports/batch38_validation.json)、[全周期39表](reports/batch38_cycle_history.json)、[SQL分割](reports/batch38_sql_split.json)。C05 5/5停止、次サイクル未開始。

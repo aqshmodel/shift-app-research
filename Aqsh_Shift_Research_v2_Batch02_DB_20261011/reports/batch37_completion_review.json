@@ -1,0 +1,18 @@
+{
+  "status": "passed",
+  "tasks_marked_done": 0,
+  "task_updates": {
+    "D01": "TASK-RES01221",
+    "B06": "TASK-RES01215"
+  },
+  "started_tasks": [
+    "TASK-RES01221",
+    "TASK-RES01215"
+  ],
+  "partial_and_context": true,
+  "unfulfilled": {
+    "D01": "利用者/Smart Group指定、Sub-job親適格者継承/変更、Job適格者向けOpen Shift枠数/未充足表示・Basic/Advanced境界を部分確認。医療資格期限/資格別必要人数構成/違反検算/実応募は未確認。",
+    "B06": "共有Job複数表反映と一元Jobs Tab、各表他表データ/草案選択・Users専用表示/休暇同期を部分確認。手動overrideは通知でも阻止なし。共有職員の同時最適化・需要統合/実境界は未確認。"
+  },
+  "no_guessed_price_or_scope": true
+}

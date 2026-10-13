@@ -1,0 +1,15 @@
+{
+  "status": "passed",
+  "tasks_marked_done": 0,
+  "task_updates": {
+    "N05": "TASK-RES01244"
+  },
+  "started_tasks": [
+    "TASK-RES01244"
+  ],
+  "partial_and_context": true,
+  "unfulfilled": {
+    "N05": "公開LLM処理/学習利用、KB個別Deactivate、AI特約/Owner opt-out、委託先地域・Anthropic列挙差、Privacyのprocessor保持/自社問い合わせAIを部分確認。具体送信項目/匿名化/会話ログ保持/全機能停止実測/締結契約/第三者保証は未確認。"
+  },
+  "no_guessed_price_or_scope": true
+}

@@ -1,0 +1,64 @@
+[
+  {
+    "review_id": "Q08T05-TASK-RES01300",
+    "task_id": "TASK-RES01300",
+    "product": "Timefold Employee Shift Scheduling API",
+    "offering_id": "OF-US10",
+    "criterion_id": "P02",
+    "original_task": {
+      "priority": 3,
+      "required_method": "vendor_document",
+      "last_checked_on": "2026-10-12",
+      "task_id": "TASK-RES01300",
+      "offering_id": "OF-US10",
+      "criterion_id": "P02",
+      "task_state": "in_progress",
+      "question": "課金対象・単位：定義の未確認部分・現行条件を確認する。",
+      "evidence_needed": "公式料金・個別見積・契約書",
+      "owner": "未割当",
+      "next_review_on": null,
+      "block_reason": null
+    },
+    "q01_public_acceptance_atoms": [
+      "公開された課金対象と単位",
+      "管理者/休職/兼務/最低数量等の記載範囲"
+    ],
+    "scope": "Timefold Employee Shift Scheduling APIに関する一般規約のResourcesと、Spark/Flow/Horizonの利用資源・利用者枠を区別して課金定義を照合する。",
+    "reason": "一般規約はOrderによる利用モデルを定めるが、ESS固有の課金計数を公開プランのthread/tenant/seat枠から確定できない。",
+    "evidence_observation_ids": [
+      "B62-20261013-OBS0001",
+      "B62-20261013-OBS0002",
+      "B62-20261013-OBS0003"
+    ],
+    "remaining_work": [
+      "対象ESSモデル/地域/OrderのResources定義・計数窓・再計算/兼務/休職の重複処理・単価/最低数量/通貨/税・実請求"
+    ],
+    "primary_queue": "external_confirmation_wait",
+    "public_phase": "bounded_public_search_ended_unknown",
+    "external_state": "waiting_for_formal_document",
+    "resume_condition": "公式改定/正式資料/対象見積の取得又は導入判断に残条件が必要な時。新根拠なしの反復探索はしない。",
+    "after_task_state": "blocked",
+    "factual_support_not_inferred": true,
+    "original_requirements_deleted": false,
+    "acceptance_review": [
+      {
+        "atom": "公開された課金対象と単位",
+        "state": "partial_or_unconfirmed",
+        "observation_ids": [
+          "B62-20261013-OBS0001",
+          "B62-20261013-OBS0002",
+          "B62-20261013-OBS0003"
+        ]
+      },
+      {
+        "atom": "管理者/休職/兼務/最低数量等の記載範囲",
+        "state": "partial_or_unconfirmed",
+        "observation_ids": [
+          "B62-20261013-OBS0001",
+          "B62-20261013-OBS0002",
+          "B62-20261013-OBS0003"
+        ]
+      }
+    ]
+  }
+]

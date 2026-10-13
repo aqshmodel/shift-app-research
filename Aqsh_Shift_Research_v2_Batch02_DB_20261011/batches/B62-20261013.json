@@ -1,0 +1,107 @@
+{
+  "batch_id": "B62-20261013",
+  "prior_batch": "B61-20261013",
+  "as_of_date": "2026-10-13",
+  "resolution_policy_version": 2,
+  "description": "Q08 T05/5 Timefoldの課金Resourcesとプラン利用枠の区別",
+  "method": "限定公式公開調査・ローカル反映。前回の既完/外部待ちを再完了しない。原要件・不明・資料不一致・既存価格119行を保持。Git/CI/本番/課金/登録/問い合わせなし。",
+  "sources": [
+    {
+      "key": "timefold-plans",
+      "url": "https://docs.timefold.ai/timefold-platform/latest/plans",
+      "title": "Pricing plans and capabilities |",
+      "publisher": "Timefold BV",
+      "retrieved_on": "2026-10-13",
+      "version_label": "公開/改定日不明。閲覧2026-10-13 UTC",
+      "method": "public_web_body",
+      "method_note": "公式本文と対象プラン/役割/料金単位を照合。取得原本・hashをQ08バックアップsource-capturesへ保存。フォーム送信/登録/課金/問い合わせ/独立製品試験なし。",
+      "scope_note": "Q01限定公開終了基準。原要件・契約適用/実測の残条件を個別台帳へ保持。"
+    },
+    {
+      "key": "timefold-terms",
+      "url": "https://timefold.ai/terms",
+      "title": "Read Our Terms of Use | Timefold",
+      "publisher": "Timefold BV",
+      "retrieved_on": "2026-10-13",
+      "version_label": "公開/改定日不明。閲覧2026-10-13 UTC",
+      "method": "public_web_body",
+      "method_note": "公式本文と対象プラン/役割/料金単位を照合。取得原本・hashをQ08バックアップsource-capturesへ保存。フォーム送信/登録/課金/問い合わせ/独立製品試験なし。",
+      "scope_note": "Q01限定公開終了基準。原要件・契約適用/実測の残条件を個別台帳へ保持。"
+    },
+    {
+      "key": "timefold-price",
+      "url": "https://timefold.ai/pricing",
+      "title": "Pricing for Scheduling Optimization APIs & Solver | Timefold",
+      "publisher": "Timefold BV",
+      "retrieved_on": "2026-10-13",
+      "version_label": "公開/改定日不明。閲覧2026-10-13 UTC",
+      "method": "public_web_body",
+      "method_note": "公式ページのweb閲覧結果・該当本文を保存。直接HTTP取得の403と、原本HTML未保存を取得台帳で区別。公式本文と対象プラン/役割/料金単位を照合。取得原本・hashをQ08バックアップsource-capturesへ保存。フォーム送信/登録/課金/問い合わせ/独立製品試験なし。",
+      "scope_note": "Q01限定公開終了基準。原要件・契約適用/実測の残条件を個別台帳へ保持。"
+    }
+  ],
+  "findings": [
+    {
+      "product": "US10",
+      "criterion": "P02",
+      "source": "timefold-terms",
+      "state": "known",
+      "support": "limited",
+      "delivery": "unknown",
+      "summary": "一般規約2.2は、利用/契約方式をOrderに記載し、unique planning valuesをResourcesとして課金モデルに関連付ける場合があると説明する。",
+      "locator": "General Terms 2.2 Usage model / Order / Resources",
+      "limitations": "全Employee Shift Scheduling API契約が同一の従量方式とは断定しない。職員ID/登録/稼働/計画期間・再計算の重複計数・測定窓は未確認。",
+      "scope": "公式公開資料の対象製品・役割・契約条件に限定。閲覧2026-10-13 UTC。製品動作・個別契約・日本の制度適合は未検証。"
+    },
+    {
+      "product": "US10",
+      "criterion": "P02",
+      "source": "timefold-plans",
+      "state": "known",
+      "support": "limited",
+      "delivery": "unknown",
+      "summary": "Spark/Flow/Horizonの文書はsolver threads最大1/5/20、1/2/3 tenants、Sparkの1 seat・1 configuration profileを区別する。",
+      "locator": "Infrastructure表 / Collaboration / Configuration",
+      "limitations": "同時処理資源・環境数・プラットフォーム利用者の枠であり、職員数/課金Resources/最低人数/請求単位ではない。最新ページは版固定なし、改定日不明。",
+      "scope": "公式公開資料の対象製品・役割・契約条件に限定。閲覧2026-10-13 UTC。製品動作・個別契約・日本の制度適合は未検証。"
+    },
+    {
+      "product": "US10",
+      "criterion": "P02",
+      "source": "timefold-price",
+      "state": "not_disclosed",
+      "support": "limited",
+      "delivery": "unknown",
+      "summary": "価格/プラン説明はSparkのAPIのみ、FlowのUI/複数利用者、Horizonの高度な分析を示すが、Employee Shift Scheduling固有のResourcesの計数期間・課金単価・最低数量をこの公開範囲から確定できない。",
+      "locator": "Pricing for APIsのSpark/Flow/Horizon / Plans reference / 規約2.2",
+      "limitations": "Solver Community/Plus/EnterpriseのライセンスとホストAPIを分ける。UIのseat数を職員課金人数としない。税は一般規約8.7で別、対象Orderの額/通貨/適用は未確認。",
+      "scope": "公式公開資料の対象製品・役割・契約条件に限定。閲覧2026-10-13 UTC。製品動作・個別契約・日本の制度適合は未検証。"
+    }
+  ],
+  "task_updates": [
+    {
+      "task_id": "TASK-RES01300",
+      "state": "blocked",
+      "priority": 3,
+      "method": "vendor_document",
+      "expected_task": {
+        "priority": 3,
+        "required_method": "vendor_document",
+        "last_checked_on": "2026-10-12",
+        "task_state": "in_progress",
+        "question": "課金対象・単位：定義の未確認部分・現行条件を確認する。",
+        "evidence_needed": "公式料金・個別見積・契約書",
+        "owner": "未割当",
+        "next_review_on": null,
+        "block_reason": null
+      },
+      "changes": {
+        "owner": "外部確認待ち / 担当未定",
+        "block_reason": "一般規約はOrderによる利用モデルを定めるが、ESS固有の課金計数を公開プランのthread/tenant/seat枠から確定できない。 再開：対象ESSモデル/地域/OrderのResources定義・計数窓・再計算/兼務/休職の重複処理・単価/最低数量/通貨/税・実請求",
+        "next_review_on": null
+      },
+      "note": "{\"review_id\":\"Q08T05-TASK-RES01300\",\"task_id\":\"TASK-RES01300\",\"product\":\"Timefold Employee Shift Scheduling API\",\"offering_id\":\"OF-US10\",\"criterion_id\":\"P02\",\"original_task\":{\"priority\":3,\"required_method\":\"vendor_document\",\"last_checked_on\":\"2026-10-12\",\"task_id\":\"TASK-RES01300\",\"offering_id\":\"OF-US10\",\"criterion_id\":\"P02\",\"task_state\":\"in_progress\",\"question\":\"課金対象・単位：定義の未確認部分・現行条件を確認する。\",\"evidence_needed\":\"公式料金・個別見積・契約書\",\"owner\":\"未割当\",\"next_review_on\":null,\"block_reason\":null},\"q01_public_acceptance_atoms\":[\"公開された課金対象と単位\",\"管理者/休職/兼務/最低数量等の記載範囲\"],\"scope\":\"Timefold Employee Shift Scheduling APIに関する一般規約のResourcesと、Spark/Flow/Horizonの利用資源・利用者枠を区別して課金定義を照合する。\",\"reason\":\"一般規約はOrderによる利用モデルを定めるが、ESS固有の課金計数を公開プランのthread/tenant/seat枠から確定できない。\",\"evidence_observation_ids\":[\"B62-20261013-OBS0001\",\"B62-20261013-OBS0002\",\"B62-20261013-OBS0003\"],\"remaining_work\":[\"対象ESSモデル/地域/OrderのResources定義・計数窓・再計算/兼務/休職の重複処理・単価/最低数量/通貨/税・実請求\"],\"primary_queue\":\"external_confirmation_wait\",\"public_phase\":\"bounded_public_search_ended_unknown\",\"external_state\":\"waiting_for_formal_document\",\"resume_condition\":\"公式改定/正式資料/対象見積の取得又は導入判断に残条件が必要な時。新根拠なしの反復探索はしない。\",\"after_task_state\":\"blocked\",\"factual_support_not_inferred\":true,\"original_requirements_deleted\":false}"
+    }
+  ],
+  "prices": []
+}

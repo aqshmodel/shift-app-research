@@ -1,0 +1,395 @@
+[
+  {
+    "review_id": "Q03-TASK-RES00364",
+    "task_id": "TASK-RES00364",
+    "product": "快決！シフト君NEO メディカル",
+    "offering_id": "OF-JP09",
+    "criterion_id": "B07",
+    "original_task": {
+      "priority": 3,
+      "required_method": "unknown",
+      "last_checked_on": "2026-10-12",
+      "task_id": "TASK-RES00364",
+      "offering_id": "OF-JP09",
+      "criterion_id": "B07",
+      "task_state": "in_progress",
+      "question": "プラン・追加機能の境界：定義の未確認部分・現行条件を確認する。",
+      "evidence_needed": "機能仕様・プラン比較・利用規約・デモ",
+      "owner": "未割当",
+      "next_review_on": null,
+      "block_reason": null
+    },
+    "q01_public_acceptance_atoms": [
+      "機能を使えるプラン/モジュールの公開対応",
+      "追加契約/地域/βの留保"
+    ],
+    "scope": "NEOメディカルの公表本体機能と保守・サービス利用権が必要な機能を、資料の年代付きで区別する（現行契約の包含は別確認）。",
+    "reason": "本体製品案内と注7の加入条件/2021年5月の機能一覧を分離して照合。",
+    "evidence_observation_ids": [
+      "B41-20261013-OBS0003",
+      "B41-20261013-OBS0004"
+    ],
+    "remaining_work": [
+      "現行契約への機能包含、加入費用、帳票/制度の版"
+    ],
+    "primary_queue": "completed_public_check",
+    "public_phase": "completed_bounded_document_question",
+    "external_state": "deferred_until_adoption",
+    "resume_condition": "対象の公式仕様/価格改定、条件を指定した正式資料の取得、導入判断に残条件が必要になった時。新根拠がない反復探索はしない。",
+    "after_task_state": "done",
+    "factual_support_not_inferred": true
+  },
+  {
+    "review_id": "Q03-TASK-RES00396",
+    "task_id": "TASK-RES00396",
+    "product": "快決！シフト君NEO メディカル",
+    "offering_id": "OF-JP09",
+    "criterion_id": "P01",
+    "original_task": {
+      "priority": 3,
+      "required_method": "unknown",
+      "last_checked_on": "2026-10-12",
+      "task_id": "TASK-RES00396",
+      "offering_id": "OF-JP09",
+      "criterion_id": "P01",
+      "task_state": "in_progress",
+      "question": "料金方式・公開範囲：定義の未確認部分・現行条件を確認する。",
+      "evidence_needed": "公式料金・個別見積・契約書",
+      "owner": "未割当",
+      "next_review_on": null,
+      "block_reason": null
+    },
+    "q01_public_acceptance_atoms": [
+      "固定/人数/施設/計算/買切り/見積の公開方式",
+      "通貨/税/時点/対象プランの条件"
+    ],
+    "scope": "NEOメディカルの公式販売案内における見積方式と公開価格の範囲を確認する（顧客総額は別確認）。",
+    "reason": "見積窓口の案内を確認。非公表額は0円にしていない。",
+    "evidence_observation_ids": [
+      "B41-20261013-OBS0001"
+    ],
+    "remaining_work": [
+      "本体/保守/初期支援の正式見積、税・個別契約適用"
+    ],
+    "primary_queue": "completed_public_check",
+    "public_phase": "completed_bounded_document_question",
+    "external_state": "deferred_until_adoption",
+    "resume_condition": "対象の公式仕様/価格改定、条件を指定した正式資料の取得、導入判断に残条件が必要になった時。新根拠がない反復探索はしない。",
+    "after_task_state": "done",
+    "factual_support_not_inferred": true
+  },
+  {
+    "review_id": "Q03-TASK-RES00397",
+    "task_id": "TASK-RES00397",
+    "product": "快決！シフト君NEO メディカル",
+    "offering_id": "OF-JP09",
+    "criterion_id": "P02",
+    "original_task": {
+      "priority": 3,
+      "required_method": "unknown",
+      "last_checked_on": "2026-10-12",
+      "task_id": "TASK-RES00397",
+      "offering_id": "OF-JP09",
+      "criterion_id": "P02",
+      "task_state": "in_progress",
+      "question": "課金対象・単位：定義の未確認部分・現行条件を確認する。",
+      "evidence_needed": "公式料金・個別見積・契約書",
+      "owner": "未割当",
+      "next_review_on": null,
+      "block_reason": null
+    },
+    "q01_public_acceptance_atoms": [
+      "公開された課金対象と単位",
+      "管理者/休職/兼務/最低数量等の記載範囲"
+    ],
+    "scope": "NEOの利用人数に応じたライセンスとクライアント数制限の公表範囲を確認する（課金人数詳細/最低条件は別確認）。",
+    "reason": "本文と人数図を確認。図示人数を最低契約や段階価格にしていない。",
+    "evidence_observation_ids": [
+      "B41-20261013-OBS0002"
+    ],
+    "remaining_work": [
+      "人数定義/最低人数/段階価格/同時接続と契約範囲"
+    ],
+    "primary_queue": "completed_public_check",
+    "public_phase": "completed_bounded_document_question",
+    "external_state": "deferred_until_adoption",
+    "resume_condition": "対象の公式仕様/価格改定、条件を指定した正式資料の取得、導入判断に残条件が必要になった時。新根拠がない反復探索はしない。",
+    "after_task_state": "done",
+    "factual_support_not_inferred": true
+  },
+  {
+    "review_id": "Q03-TASK-RES00398",
+    "task_id": "TASK-RES00398",
+    "product": "快決！シフト君NEO メディカル",
+    "offering_id": "OF-JP09",
+    "criterion_id": "P03",
+    "original_task": {
+      "priority": 3,
+      "required_method": "unknown",
+      "last_checked_on": null,
+      "task_id": "TASK-RES00398",
+      "offering_id": "OF-JP09",
+      "criterion_id": "P03",
+      "task_state": "not_started",
+      "question": "請求周期・最低契約：定義の未確認部分・現行条件を確認する。",
+      "evidence_needed": "公式料金・個別見積・契約書",
+      "owner": "未割当",
+      "next_review_on": null,
+      "block_reason": null
+    },
+    "q01_public_acceptance_atoms": [
+      "月/年の請求周期・前払い・最低期間",
+      "最低人数/請求額の公表範囲"
+    ],
+    "scope": "請求周期・最低契約：定義の未確認部分・現行条件を確認する。",
+    "reason": "メディカルの請求周期/最低期間/最低総額は公開資料で未特定。",
+    "evidence_observation_ids": [
+      "B41-20261013-OBS0005"
+    ],
+    "remaining_work": [
+      "利用人数・本体/保守/支援を指定した正式見積/契約"
+    ],
+    "primary_queue": "external_confirmation_wait",
+    "public_phase": "bounded_public_search_ended_unknown",
+    "external_state": "waiting_for_formal_document",
+    "resume_condition": "対象の公式仕様/価格改定、条件を指定した正式資料の取得、導入判断に残条件が必要になった時。新根拠がない反復探索はしない。",
+    "after_task_state": "blocked",
+    "factual_support_not_inferred": true
+  },
+  {
+    "review_id": "Q03-TASK-RES00399",
+    "task_id": "TASK-RES00399",
+    "product": "快決！シフト君NEO メディカル",
+    "offering_id": "OF-JP09",
+    "criterion_id": "P04",
+    "original_task": {
+      "priority": 3,
+      "required_method": "unknown",
+      "last_checked_on": null,
+      "task_id": "TASK-RES00399",
+      "offering_id": "OF-JP09",
+      "criterion_id": "P04",
+      "task_state": "not_started",
+      "question": "導入初期費用：定義の未確認部分・現行条件を確認する。",
+      "evidence_needed": "公式料金・個別見積・契約書",
+      "owner": "未割当",
+      "next_review_on": null,
+      "block_reason": null
+    },
+    "q01_public_acceptance_atoms": [
+      "公表された必須初期費用と任意追加費",
+      "未公表額を0円としない"
+    ],
+    "scope": "導入初期費用：定義の未確認部分・現行条件を確認する。",
+    "reason": "初期設定/移行/研修の必須/任意と金額を公開資料で特定できない。",
+    "evidence_observation_ids": [
+      "B41-20261013-OBS0006"
+    ],
+    "remaining_work": [
+      "作業範囲と必須/任意を区分した正式見積"
+    ],
+    "primary_queue": "external_confirmation_wait",
+    "public_phase": "bounded_public_search_ended_unknown",
+    "external_state": "waiting_for_formal_document",
+    "resume_condition": "対象の公式仕様/価格改定、条件を指定した正式資料の取得、導入判断に残条件が必要になった時。新根拠がない反復探索はしない。",
+    "after_task_state": "blocked",
+    "factual_support_not_inferred": true
+  },
+  {
+    "review_id": "Q03-TASK-RES00533",
+    "task_id": "TASK-RES00533",
+    "product": "シフトラ",
+    "offering_id": "OF-JP12",
+    "criterion_id": "P02",
+    "original_task": {
+      "priority": 3,
+      "required_method": "unknown",
+      "last_checked_on": "2026-10-12",
+      "task_id": "TASK-RES00533",
+      "offering_id": "OF-JP12",
+      "criterion_id": "P02",
+      "task_state": "in_progress",
+      "question": "課金対象・単位：定義の未確認部分・現行条件を確認する。",
+      "evidence_needed": "公式料金・個別見積・契約書",
+      "owner": "未割当",
+      "next_review_on": null,
+      "block_reason": null
+    },
+    "q01_public_acceptance_atoms": [
+      "公開された課金対象と単位",
+      "管理者/休職/兼務/最低数量等の記載範囲"
+    ],
+    "scope": "シフトラの公表人数従量方式を確認する（管理者/兼務等の数え方・最低数は別確認）。",
+    "reason": "特商法のシフトラ欄で1ユーザー250円/月と利用人数従量を照合。",
+    "evidence_observation_ids": [
+      "B41-20261013-OBS0008"
+    ],
+    "remaining_work": [
+      "管理者/休職/兼務/削除の課金定義、月中増減と最低課金人数"
+    ],
+    "primary_queue": "completed_public_check",
+    "public_phase": "completed_bounded_document_question",
+    "external_state": "deferred_until_adoption",
+    "resume_condition": "対象の公式仕様/価格改定、条件を指定した正式資料の取得、導入判断に残条件が必要になった時。新根拠がない反復探索はしない。",
+    "after_task_state": "done",
+    "factual_support_not_inferred": true
+  },
+  {
+    "review_id": "Q03-TASK-RES00534",
+    "task_id": "TASK-RES00534",
+    "product": "シフトラ",
+    "offering_id": "OF-JP12",
+    "criterion_id": "P03",
+    "original_task": {
+      "priority": 3,
+      "required_method": "unknown",
+      "last_checked_on": "2026-10-12",
+      "task_id": "TASK-RES00534",
+      "offering_id": "OF-JP12",
+      "criterion_id": "P03",
+      "task_state": "in_progress",
+      "question": "請求周期・最低契約：定義の未確認部分・現行条件を確認する。",
+      "evidence_needed": "公式料金・個別見積・契約書",
+      "owner": "未割当",
+      "next_review_on": null,
+      "block_reason": null
+    },
+    "q01_public_acceptance_atoms": [
+      "月/年の請求周期・前払い・最低期間",
+      "最低人数/請求額の公表範囲"
+    ],
+    "scope": "シフトラの公表支払方法/時期と月途中解約の月次課金範囲を確認する（毎月更新日/最低条件は別確認）。",
+    "reason": "共通支払欄とキャンセル月/翌月/月中日割の表示を区別して確認。",
+    "evidence_observation_ids": [
+      "B41-20261013-OBS0009"
+    ],
+    "remaining_work": [
+      "シフトラ個別の請求周期/更新日/前払/最低期間・総額"
+    ],
+    "primary_queue": "completed_public_check",
+    "public_phase": "completed_bounded_document_question",
+    "external_state": "deferred_until_adoption",
+    "resume_condition": "対象の公式仕様/価格改定、条件を指定した正式資料の取得、導入判断に残条件が必要になった時。新根拠がない反復探索はしない。",
+    "after_task_state": "done",
+    "factual_support_not_inferred": true
+  },
+  {
+    "review_id": "Q03-TASK-RES00410",
+    "task_id": "TASK-RES00410",
+    "product": "Pitat-Shift",
+    "offering_id": "OF-JP10",
+    "criterion_id": "B07",
+    "original_task": {
+      "priority": 3,
+      "required_method": "unknown",
+      "last_checked_on": null,
+      "task_id": "TASK-RES00410",
+      "offering_id": "OF-JP10",
+      "criterion_id": "B07",
+      "task_state": "not_started",
+      "question": "プラン・追加機能の境界：定義の未確認部分・現行条件を確認する。",
+      "evidence_needed": "機能仕様・プラン比較・利用規約・デモ",
+      "owner": "未割当",
+      "next_review_on": null,
+      "block_reason": null
+    },
+    "q01_public_acceptance_atoms": [
+      "機能を使えるプラン/モジュールの公開対応",
+      "追加契約/地域/βの留保"
+    ],
+    "scope": "Pitat-Shiftの月/年購読と任意Setup/Premium支援の境界を公表料金/規約で確認する（個別支援契約は別確認）。",
+    "reason": "基本購読だけで利用可能、任意支援は別契約、PremiumはSetup内包を照合。",
+    "evidence_observation_ids": [
+      "B41-20261013-OBS0012",
+      "B41-20261013-OBS0013"
+    ],
+    "remaining_work": [
+      "職員数/生成規模の上限、個別の支援作業範囲/追加額、契約適用・実動作"
+    ],
+    "primary_queue": "completed_public_check",
+    "public_phase": "completed_bounded_document_question",
+    "external_state": "deferred_until_adoption",
+    "resume_condition": "対象の公式仕様/価格改定、条件を指定した正式資料の取得、導入判断に残条件が必要になった時。新根拠がない反復探索はしない。",
+    "after_task_state": "done",
+    "factual_support_not_inferred": true
+  },
+  {
+    "review_id": "Q03-B13-20261012-TASK004",
+    "task_id": "B13-20261012-TASK004",
+    "product": "シフトラ",
+    "offering_id": "OF-JP12",
+    "criterion_id": "P07",
+    "original_task": {
+      "priority": 2,
+      "required_method": "vendor_quote",
+      "last_checked_on": "2026-10-12",
+      "task_id": "B13-20261012-TASK004",
+      "offering_id": "OF-JP12",
+      "criterion_id": "P07",
+      "task_state": "in_progress",
+      "question": "250円税込表記と商品代金外の消費税の適用対象を、シフトラの申込画面・請求総額・現行契約で確定する。",
+      "evidence_needed": "vendor_quote",
+      "owner": "未割当",
+      "next_review_on": null,
+      "block_reason": null
+    },
+    "q01_public_acceptance_atoms": [
+      "通貨・税・価格適用範囲について原仕様に明記された範囲",
+      "対象条件・時点・未記載を分け、実契約/実測は別段階"
+    ],
+    "scope": "250円税込表記と商品代金外の消費税の適用対象を、シフトラの申込画面・請求総額・現行契約で確定する。",
+    "reason": "250円税込と商品代金外消費税の適用不一致は未解消。",
+    "evidence_observation_ids": [
+      "B41-20261013-OBS0010"
+    ],
+    "remaining_work": [
+      "シフトラの最終請求総額・税適用を指定した正式回答又は申込表示"
+    ],
+    "primary_queue": "external_confirmation_wait",
+    "public_phase": "bounded_public_search_ended_disputed",
+    "external_state": "waiting_for_formal_document",
+    "resume_condition": "対象の公式仕様/価格改定、条件を指定した正式資料の取得、導入判断に残条件が必要になった時。新根拠がない反復探索はしない。",
+    "after_task_state": "blocked",
+    "factual_support_not_inferred": true
+  },
+  {
+    "review_id": "Q03-B13-20261012-TASK005",
+    "task_id": "B13-20261012-TASK005",
+    "product": "シフトラ",
+    "offering_id": "OF-JP12",
+    "criterion_id": "B07",
+    "original_task": {
+      "priority": 2,
+      "required_method": "vendor_document",
+      "last_checked_on": "2026-10-12",
+      "task_id": "B13-20261012-TASK005",
+      "offering_id": "OF-JP12",
+      "criterion_id": "B07",
+      "task_state": "in_progress",
+      "question": "共有スタッフ希望と枠比較の有効化・権限・料金条件、応援自動割当と両店同時更新の提供範囲を確認する。",
+      "evidence_needed": "vendor_document",
+      "owner": "未割当",
+      "next_review_on": null,
+      "block_reason": null
+    },
+    "q01_public_acceptance_atoms": [
+      "機能を使えるプラン/モジュールの公開対応",
+      "追加契約/地域/βの留保"
+    ],
+    "scope": "共有スタッフ希望と枠比較の有効化・権限・料金条件、応援自動割当と両店同時更新の提供範囲を確認する。",
+    "reason": "標準プランの一般機能表示から共有職員の有効化/権限/料金/同時更新を認定できない。",
+    "evidence_observation_ids": [
+      "B41-20261013-OBS0007",
+      "B41-20261013-OBS0011"
+    ],
+    "remaining_work": [
+      "共有職員の機能名/対象プラン/追加費/権限を明記した専用仕様"
+    ],
+    "primary_queue": "external_confirmation_wait",
+    "public_phase": "bounded_public_search_ended_unknown",
+    "external_state": "waiting_for_formal_document",
+    "resume_condition": "対象の公式仕様/価格改定、条件を指定した正式資料の取得、導入判断に残条件が必要になった時。新根拠がない反復探索はしない。",
+    "after_task_state": "blocked",
+    "factual_support_not_inferred": true
+  }
+]
