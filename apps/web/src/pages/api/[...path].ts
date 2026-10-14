@@ -1,17 +1,15 @@
 import type { APIRoute } from 'astro';
 import {getResearch,compactAssessment} from '../../lib/data';
 import { validateId } from '../../lib/contracts.mjs';
-import { env } from 'cloudflare:workers';
+import {validatePublicRequest, contentParams} from '../../lib/cost-guard.mjs';
 const json=(value:unknown,status=200)=>new Response(JSON.stringify(value),{status,headers:{'Content-Type':'application/json; charset=utf-8','Cache-Control':'no-store','X-Content-Type-Options':'nosniff'}});
 export const GET: APIRoute=async({request,params,locals})=>{
  const {scope,search,product,compare,evidence}=getResearch(locals);
  const path=(params.path??'').replace(/\/$/,'');const url=new URL(request.url);
- const limiter=(env as unknown as {PUBLIC_API_LIMITER?:{limit:(input:{key:string})=>Promise<{success:boolean}>}}).PUBLIC_API_LIMITER;
- const ip=request.headers.get('CF-Connecting-IP');
- if(limiter && ip){const bytes=await crypto.subtle.digest('SHA-256',new TextEncoder().encode('aqsh-shift-api:'+ip));const key=Array.from(new Uint8Array(bytes),b=>b.toString(16).padStart(2,'0')).join('');const result=await limiter.limit({key});if(!result.success){const response=json({error:'取得頻度が高いため、少し時間を置いて再試行してください。'},429);response.headers.set('Retry-After','60');return response;}}
  if(url.search.length>1500)return json({error:'入力が長すぎます。'},400);
- const input=Object.fromEntries(url.searchParams);
+ const input=Object.fromEntries(contentParams(url.searchParams));
  try {
+  const validated=validatePublicRequest(url);if(validated.status)return json({error:'APIが見つかりません。'},validated.status);
   if(path==='scope'){if(Object.keys(input).length) return json({error:'不要な入力です。'},400);return json(await scope());}
   if(path==='search') {const result=await search(input);const current=await scope();return json({...result,as_of_date:current.as_of_date,snapshot_id:current.snapshot_id});}
   if(path.startsWith('products/')){
@@ -28,5 +26,15 @@ export const GET: APIRoute=async({request,params,locals})=>{
   return json({error:'情報を取得できませんでした。時間を置いて再試行してください。'},503);
  }
 };
-export const HEAD:APIRoute=async(context)=>{const response=await GET(context);return new Response(null,{status:response.status,headers:response.headers});};
+export const HEAD:APIRoute=async({request,locals})=>{
+ try {
+  const result=validatePublicRequest(new URL(request.url));
+  const status=result.status??await getResearch(locals).headStatus(result.route!,result.input!);
+  return new Response(null,{status,headers:json(null).headers});
+ }catch(error){
+  const message=error instanceof Error?error.message:'';
+  const status=/入力|検索語|条件|件数|ページ番号|提供単位|比較|異なる製品/.test(message)?400:503;
+  return new Response(null,{status,headers:json(null).headers});
+ }
+};
 export const ALL:APIRoute=()=>new Response(JSON.stringify({error:'GETのみ利用できます。'}),{status:405,headers:{Allow:'GET, HEAD','Content-Type':'application/json'}});

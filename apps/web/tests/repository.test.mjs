@@ -3,6 +3,7 @@ import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
 import {DatabaseSync} from 'node:sqlite';
 import {createResearchRepository} from '../src/lib/repository.ts';
+import {evidenceQuery} from '../src/lib/evidence-query.mjs';
 
 function fixture() {
  const sqlite=new DatabaseSync(':memory:');
@@ -132,5 +133,74 @@ test('sitemap modification dates follow one service change without refreshing un
   assert.deepEqual(await repo.modificationDates(),before);
   const after=await createResearchRepository(db).modificationDates();assert.equal(after[row.offering_id],'2026-10-15');
   for(const id of Object.keys(before))if(id!==row.offering_id)assert.equal(after[id],before[id]);
+ }finally{sqlite.close();}
+});
+
+test('request call and SQL budgets stop before dispatch, including batch SQL and paused reads',async()=>{
+ const {sqlite,db,sql}=fixture();try{
+  const paused=createResearchRepository(db,{paused:true});await assert.rejects(()=>paused.catalog(),/paused/);assert.equal(sql.length,0);
+  const sqlLimited=createResearchRepository(db,{maxQueries:1});await assert.rejects(()=>sqlLimited.catalog(),/budget/);assert.equal(sql.length,0);
+  const limited=createResearchRepository(db,{maxCalls:1});await limited.scope();
+  await assert.rejects(()=>limited.product('OF-JP01'),/budget/);assert.equal(sql.length,1);
+  await assert.rejects(()=>createResearchRepository(db).search({q:'x'.repeat(101)}));
+  await assert.rejects(()=>createResearchRepository(db).evidence({id:'OF-JP01',page:101}));assert.equal(sql.length,1);
+ }finally{sqlite.close();}
+});
+
+test('HEAD reads only scope and indexed existence and preserves missing-resource status',async()=>{
+ const {sqlite,db,sql}=fixture();try{
+  const head=(route,input={})=>createResearchRepository(db).headStatus(route,input);
+  assert.equal(await head('search',{}),200);assert.equal(sql.length,1);
+  assert.equal(await head('products/OF-JP01'),200);
+  sqlite.exec("DELETE FROM web_products WHERE offering_id='OF-JP01'");
+  assert.equal(await head('products/OF-JP01'),404);assert.equal(await head('evidence',{id:'OF-JP01'}),404);
+  assert.equal(await head('compare',{products:'OF-JP01,OF-JP02'}),400);
+  await assert.rejects(()=>head('evidence',{id:'OF-JP02',criterion:'A99'}),/比較項目/);
+  assert(!sql.some(q=>q.includes('detail_json')||q.includes('v_current_observations')||q.includes('summary_json')));
+ }finally{sqlite.close();}
+});
+
+test('fulfilled snapshot cache rereads live pointer and handles activation and rollback without mixed data',async()=>{
+ const {sqlite,db}=fixture();const cache=new Map();try{
+  const first=createResearchRepository(db,{catalogCache:cache});const products=await first.catalog();const original=(await first.scope()).snapshot_id;
+  const warm=createResearchRepository(db,{catalogCache:cache});assert.deepEqual(await warm.catalog(),products);assert.equal(warm.metrics().queries,1);
+  sqlite.exec("INSERT INTO web_snapshots SELECT 'cache-next',as_of_date,research_sha256,content_sha256,json_set(scope_json,'$.snapshot_id','cache-next') FROM web_snapshots WHERE snapshot_id=(SELECT snapshot_id FROM web_live WHERE id=1)");
+  sqlite.exec("INSERT INTO web_products SELECT 'cache-next',offering_id,slug,search_text,json_set(summary_json,'$.snapshot_id','cache-next'),json_set(detail_json,'$.snapshot_id','cache-next') FROM web_products WHERE snapshot_id=(SELECT snapshot_id FROM web_live WHERE id=1)");
+  sqlite.exec("UPDATE web_live SET snapshot_id='cache-next' WHERE id=1");
+  assert((await createResearchRepository(db,{catalogCache:cache}).catalog()).every(p=>p.snapshot_id==='cache-next'));
+  sqlite.prepare('UPDATE web_live SET snapshot_id=? WHERE id=1').run(original);
+  assert((await createResearchRepository(db,{catalogCache:cache}).catalog()).every(p=>p.snapshot_id===original));
+  await assert.rejects(()=>createResearchRepository(db,{catalogCache:cache,paused:true}).catalog(),/paused/);
+ }finally{sqlite.close();}
+});
+
+test('optimized evidence matches eligible view across all 50 offerings, every criterion and paged history',()=>{
+ const {sqlite}=fixture();try{
+  const fields='observation_id,criterion_id,label_ja,value_state,summary_ja,unknown_reason,limitations,applicability_json,verification_stage,evidence_id,locator,paraphrase,canonical_url,title,retrieved_on,current_evidence_role';
+  for(const {offering_id:id} of sqlite.prepare('SELECT DISTINCT offering_id FROM web_products').all()){
+   for(const criterion of ['',...sqlite.prepare("SELECT DISTINCT criterion_id FROM observations WHERE offering_id=? AND record_category='document_observation'").all(id).map(r=>r.criterion_id)]){
+    for(const offset of [0,10,30]){
+     const args=criterion?[id,criterion,10,offset]:[id,10,offset];
+     const old=`SELECT ${fields} FROM v_current_observations WHERE observation_id IN (SELECT DISTINCT observation_id FROM v_current_observations WHERE record_category='document_observation' AND offering_id=? ${criterion?'AND criterion_id=?':''} ORDER BY observation_id DESC LIMIT ? OFFSET ?) ORDER BY observation_id DESC,evidence_id`;
+     assert.deepEqual(sqlite.prepare(evidenceQuery(Boolean(criterion))).all(...args),sqlite.prepare(old).all(...args),id+':'+criterion+':'+offset);
+    }
+   }
+  }
+ }finally{sqlite.close();}
+});
+
+
+test('full HTML history respects pause, SQL budgets and a thousand-record ceiling',async()=>{
+ const {sqlite,db,sql}=fixture();try{
+  await assert.rejects(()=>createResearchRepository(db,{paused:true}).evidence({id:'OF-JP04'},{all:true}),/paused/);
+  await assert.rejects(()=>createResearchRepository(db,{paused:true}).modificationDates(),/paused/);
+  assert.equal(sql.length,0);
+  const limited=createResearchRepository(db,{maxQueries:2});await limited.productBySlug('jp04');
+  await assert.rejects(()=>limited.evidence({id:'OF-JP04'},{all:true}),/budget/);assert.equal(sql.length,1);
+  const oversized={...db,batch:async statements=>{
+   const rows=await db.batch(statements);rows[0].results[0].n=1001;return rows;
+  }};
+  const bounded=createResearchRepository(oversized);await bounded.productBySlug('jp04');
+  await assert.rejects(()=>bounded.evidence({id:'OF-JP04'},{all:true}),/HTML history size exceeds budget/);
  }finally{sqlite.close();}
 });

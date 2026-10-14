@@ -7,11 +7,13 @@ import {getResearch} from '../lib/data';
 import {categoryInfo} from '../lib/catalog';
 import {buildDirectory, readDirectoryFilters} from '../lib/home-directory.mjs';
 const research = getResearch(Astro.locals);
-const catalog = await research.catalog();
-const data = await research.scope();
 let filters; let error = '';
 try { filters = readDirectoryFilters(Astro.url.searchParams); }
 catch { error = '検索条件を確認してください。条件を解除して、もう一度お探しください。'; Astro.response.status = 400; filters = readDirectoryFilters(new URLSearchParams()); }
+// Middleware rejects invalid input before rendering. Keep validation before D1 here too.
+if(error) return new Response(error,{status:400,headers:{'Cache-Control':'no-store'}});
+const catalog = await research.catalog();
+const data = await research.scope();
 const result = buildDirectory(catalog, filters);
 ---
 <Base title="シフト管理・作成サービスを、用途や機能から探せます" description="シフト管理・作成サービス50製品を、医療・介護・店舗などの用途と必要な機能で絞り込めます。ロゴ付きの一覧から、勤務表の自動割当、様式9、料金や利用条件を比較できます。無料・会員登録不要。" structured={{'@type':'CollectionPage',mainEntity:{'@type':'ItemList',numberOfItems:result.total,itemListElement:result.products.map((p:any,i:number)=>({'@type':'ListItem',position:result.start+i+1,name:p.name,url:'https://shift.aqsh.co.jp/products/'+p.slug+'/'}))}}}>

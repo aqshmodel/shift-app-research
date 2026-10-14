@@ -28,7 +28,7 @@ export function validateIds(ids) {
 }
 export function validateEvidence(input) {
   closed(input,['id','criterion','page']); validateId(input.id);
-  if(input.criterion && (typeof input.criterion!=='string' || !/^[A-R]\d{2}$/.test(input.criterion))) throw new Error('比較項目を確認してください。');
+  if(input.criterion && (typeof input.criterion!=='string' || !/^(?:[A-R]0[1-8]|[BGR]09)$/.test(input.criterion))) throw new Error('比較項目を確認してください。');
   return {id:input.id,criterion:input.criterion??'',page:integer(input.page,1,1,100)};
 }
 const object=(properties,required=[])=>({type:'object',properties,required,additionalProperties:false});
@@ -37,6 +37,6 @@ export const toolSchemas={
   search_shift_products:object({q:{type:'string',maxLength:100},category:{type:'string',enum:categories},region:{type:'string',enum:['domestic','overseas']},feature:{type:'string',enum:features},state:{type:'string',enum:states},page:{type:'integer',minimum:1,maximum:100},limit:{type:'integer',minimum:1,maximum:20}}),
   get_shift_product:object({id},['id']),
   compare_shift_products:object({ids:{type:'array',items:id,minItems:2,maxItems:4,uniqueItems:true}},['ids']),
-  get_shift_evidence:object({id,criterion:{type:'string',pattern:'^[A-R][0-9]{2}$'},page:{type:'integer',minimum:1,maximum:100}},['id']),
+  get_shift_evidence:object({id,criterion:{type:'string',pattern:'^(?:[A-R]0[1-8]|[BGR]09)$'},page:{type:'integer',minimum:1,maximum:100}},['id']),
   get_research_scope:object({})
 };

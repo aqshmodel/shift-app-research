@@ -14,6 +14,8 @@ Shiftmationの詳細は「検出 - インデックス未登録」、前回クロ
 
 Google Search Consoleへ更新済みサイトマップを再送信し、「サイトマップを送信しました」を確認しました。送信日2026年10月14日、表示された検出数62件です。この時点の最終読み込み表示は10月12日で、再送信直後の全件再取得・登録完了を意味しません。
 
+Shiftmation、Smartlinx、ShiftWizard、PerfectServe Lightning Bolt、NTTデータ数理システムの5詳細ページについて、個別の登録依頼が「優先クロールキューに追加しました」と受付されたことを確認し、画面を保存しました。受付は検索掲載完了を意味しません。
+
 Google側の登録・再取得には時間がかかり、リクエストやサイトマップ送信は掲載を保証しません。[Google公式の再クロール案内](https://developers.google.com/search/docs/crawling-indexing/ask-google-to-recrawl)を参照してください。全50件が検索に掲載されたとは報告していません。
 
 ## 検証
@@ -30,3 +32,9 @@ Google側の登録・再取得には時間がかかり、リクエストやサ�
 作業直前にCloudflare料金画面の使用コストと予測がともにUSD 0、既存枠内であることを確認しました。既存Workers Paidの基本料変更、プラン変更、外部有料API利用はありません。
 
 [検証概要](service-indexing-verification-20261014.json)、[本番全50HTML](service-indexing-production-html-verification-20261014.json)、[本番API](service-indexing-production-api-verification-20261014.json)、[本番40ケース](service-indexing-production-browser-verification-20261014.json)、[SEO](service-indexing-production-seo-verification-20261014.json)、[サイトマップ送信画面](screenshots/seo-service-sitemap-submitted-20261014.png)を保存しています。GitHubとCIの最終結果は完了記録へ保存します。
+
+## 並行リリースとの統合
+
+午後の最新確認で、別作業の課金防止修正がGitHub main `a9e8f6934df0c7c3557356295e6122b246c8edc8` に入り、本番Workerも13時22分の `40e9c6a5-8379-4e23-a9cc-5d42a7662430` へ変わっていました。この版では詳細の全文履歴と更新日が朝の修正前へ戻っていたため、両方を統合しました。SQL予算・停止設定・入力検証・レート制限・snapshotキャッシュ・出典の対象キー結合は維持します。
+
+統合版は全50サービス・実在比較項目・複数ページで掲載対象viewとの一致を確認し、Node 37ケース、ローカル40ブラウザケース、Astro 67ファイルの診断0とビルドを確認しました。公開APIは10記録を維持し、詳細HTMLは内部取得を1,000記録/サービスで停止する予算を設けています。停止・SQL上限に対して全文履歴とサイトマップ取得も閉じることを検証しています。研究データの変更、公開SQLループ、自動再試行、バックグラウンド実行は追加していません。

@@ -1,5 +1,6 @@
 import { validateSearch, validateIds, validateId, validateEvidence } from './contracts.mjs';
 import { summarizePrice } from './price-summary.mjs';
+import { evidenceQuery, eligibleEvidenceIdsQuery } from './evidence-query.mjs';
 type Row = Record<string, any>;
 interface Statement {
   bind(...values: unknown[]): Statement;
@@ -23,22 +24,35 @@ export const compactAssessment = (a: any) => ({
 });
 
 // Each instance belongs to one request. Promises and D1 I/O never cross requests.
-export function createResearchRepository(database: Database) {
+export function createResearchRepository(database: Database, options: {
+  paused?: boolean; maxCalls?: number; maxQueries?: number;
+  catalogCache?: Map<string, {expires: number; products: Row[]}>;
+} = {}) {
   let snapshotPromise: Promise<Row> | undefined;
   let catalogPromise: Promise<Row[]> | undefined;
   let modificationDatesPromise: Promise<Record<string, string>> | undefined;
   const productPromises = new Map<string, Promise<Row | null>>();
-  const metrics = { calls: 0, queries: 0, duration: 0 };
+  const metrics = { calls: 0, queries: 0, duration: 0, rowsRead: 0, rowsWritten: 0, metaQueries: 0 };
   const snapshotSql = 'SELECT s.snapshot_id,s.as_of_date,s.scope_json FROM web_live l JOIN web_snapshots s ON s.snapshot_id=l.snapshot_id WHERE l.id=1';
   const catalogFields = `p.summary_json,p.search_text,json_extract(p.detail_json,'$.prices') AS prices_json,
-    (SELECT value FROM json_each(p.detail_json,'$.assessments') WHERE json_extract(value,'$.id')='P01' LIMIT 1) AS pricing_json`;
+    json_extract(p.detail_json,'$.assessments') AS assessments_json`;
   function hydrate(row: Row | null): Row {
     if (!row) throw new Error('Published snapshot unavailable');
     return { id: row.snapshot_id, date: row.as_of_date, scope: JSON.parse(row.scope_json) };
   }
   async function read<T>(operation: () => Promise<T>, queries = 1): Promise<T> {
+    if(options.paused) throw new Error('D1 access paused');
+    if(metrics.calls+1>(options.maxCalls??8) || metrics.queries+queries>(options.maxQueries??12))
+      throw new Error('D1 request budget exceeded');
     const start = performance.now(); metrics.calls++; metrics.queries += queries;
-    try { return await operation(); } finally { metrics.duration += performance.now() - start; }
+    try {
+      const result=await operation();
+      // first() returns only a row. all()/batch() may include official D1 meta.
+      for(const r of (Array.isArray(result)?result:[result]) as any[]){
+        if(r?.meta){metrics.metaQueries++;metrics.rowsRead+=Number(r.meta.rows_read)||0;metrics.rowsWritten+=Number(r.meta.rows_written)||0;}
+      }
+      return result;
+    } finally { metrics.duration += performance.now() - start; }
   }
   function snapshot(): Promise<Row> {
     return snapshotPromise ??= read(async () => {
@@ -48,22 +62,34 @@ export function createResearchRepository(database: Database) {
   async function scope() { return (await snapshot()).scope; }
   function catalog(): Promise<Row[]> {
     return catalogPromise ??= (async () => {
+      if(options.catalogCache?.size){
+        const current=await snapshot();
+        const cached=options.catalogCache.get(current.id);
+        if(cached && cached.expires>Date.now())return structuredClone(cached.products);
+      }
       let results: Row[];
       if (!snapshotPromise) {
         const batch = read(() => database.batch([
           database.prepare(snapshotSql),
-          database.prepare(`SELECT ${catalogFields} FROM web_products p JOIN web_live l ON p.snapshot_id=l.snapshot_id WHERE l.id=1 ORDER BY p.slug`),
+          database.prepare(`SELECT ${catalogFields} FROM web_products p JOIN web_live l ON p.snapshot_id=l.snapshot_id WHERE l.id=1 ORDER BY p.slug LIMIT 51`),
         ]), 2);
         snapshotPromise = batch.then(rows => hydrate(rows[0].results[0]));
         const [rows] = await Promise.all([batch, snapshotPromise]);
         results = rows[1].results;
       } else {
         const current = await snapshot();
-        results = (await read(() => database.prepare(`SELECT ${catalogFields} FROM web_products p WHERE p.snapshot_id=? ORDER BY p.slug`).bind(current.id).all())).results;
+        results = (await read(() => database.prepare(`SELECT ${catalogFields} FROM web_products p WHERE p.snapshot_id=? ORDER BY p.slug LIMIT 51`).bind(current.id).all())).results;
       }
-      return results.map(row => ({ ...JSON.parse(row.summary_json), search_text: row.search_text,
-        price_summary: summarizePrice(JSON.parse(row.prices_json || '[]'), JSON.parse(row.pricing_json || 'null')),
+      if(results.length>50)throw new Error('Published catalog size exceeds budget');
+      const products=results.map(row => ({ ...JSON.parse(row.summary_json), search_text: row.search_text,
+        price_summary: summarizePrice(JSON.parse(row.prices_json || '[]'), JSON.parse(row.assessments_json || '[]').find((a: any)=>a.id==='P01')),
       })).sort((a, b) => nameOrder.compare(a.name, b.name));
+      if(options.catalogCache){
+        const current=await snapshot();
+        options.catalogCache.set(current.id,{expires:Date.now()+300000,products:structuredClone(products)});
+        while(options.catalogCache.size>2)options.catalogCache.delete(options.catalogCache.keys().next().value!);
+      }
+      return products;
     })();
   }
   async function search(input: Record<string, unknown> = {}) {
@@ -128,22 +154,22 @@ export function createResearchRepository(database: Database) {
     const exists = productPromises.has(v.id) ? Boolean(await productPromises.get(v.id)) :
       Boolean(await read(() => database.prepare('SELECT offering_id FROM web_products WHERE snapshot_id=? AND offering_id=?').bind(current.id, v.id).first()));
     if (!exists) return null;
-    const condition = 'offering_id=?' + (v.criterion ? ' AND criterion_id=?' : '');
     const args = v.criterion ? [v.id, v.criterion] : [v.id];
     // Full HTML history is an internal rendering option. Public API and native
     // WebMCP requests retain their ten-record pages.
     const all = options.all === true;
-    const countSql = all ? `WITH content_changes AS (${contentChangesSql}) SELECT count(DISTINCT observation_id) AS n,
+    const eligibleIdsSql = eligibleEvidenceIdsQuery(Boolean(v.criterion));
+    const countSql = all ? `WITH content_changes AS (${contentChangesSql}) SELECT count(*) AS n,
       (SELECT max(changed_on) FROM content_changes WHERE offering_id=?) AS modified_on
-      FROM v_current_observations WHERE record_category='document_observation' AND ${condition}` :
-      "SELECT count(DISTINCT observation_id) AS n FROM v_current_observations WHERE record_category='document_observation' AND " + condition;
+      FROM (${eligibleIdsSql})` : `SELECT count(*) AS n FROM (${eligibleIdsSql})`;
     const statements = [
       database.prepare(countSql).bind(...(all ? [v.id, ...args] : args)),
-      database.prepare("SELECT * FROM v_current_observations WHERE observation_id IN (SELECT DISTINCT observation_id FROM v_current_observations WHERE record_category='document_observation' AND " + condition + ' ORDER BY observation_id DESC LIMIT ? OFFSET ?) ORDER BY observation_id DESC,evidence_id').bind(...args, all ? -1 : 10, all ? 0 : (v.page - 1) * 10),
+      database.prepare(evidenceQuery(Boolean(v.criterion))).bind(...args, all ? 1001 : 10, all ? 0 : (v.page - 1) * 10),
     ];
     if (v.criterion) statements.push(database.prepare('SELECT criterion_id FROM criteria WHERE criterion_id=?').bind(v.criterion));
     const [counts, observations, criterion] = await read(() => database.batch(statements), statements.length);
     if (v.criterion && !criterion.results.length) throw new Error('比較項目がありません。');
+    if (all && counts.results[0].n > 1000) throw new Error('HTML history size exceeds budget');
     const records: Record<string, any> = {};
     for (const x of observations.results) {
       records[x.observation_id] ??= { id: x.observation_id, criterion: x.criterion_id, label: x.label_ja,
@@ -158,7 +184,25 @@ export function createResearchRepository(database: Database) {
       ...(all ? { modified_on: counts.results[0].modified_on } : {}),
       as_of_date: current.scope.as_of_date, snapshot_id: current.scope.snapshot_id };
   }
-  return { scope, catalog, search, product, productBySlug, compare, evidence, modificationDates,
+  async function headStatus(route: string, input: Record<string, string>) {
+    // Validate before D1 even when called without HTTP middleware.
+    if(route==='search')validateSearch(input);
+    if(route==='evidence')validateEvidence(input);
+    if(route==='compare')validateIds((input.products??'').split(','));
+    if(route.startsWith('products/'))validateId(route.slice(9));
+    const current=await snapshot();
+    const ids=route.startsWith('products/')?[route.slice(9)]:route==='evidence'?[input.id]:route==='compare'?input.products.split(','):[];
+    if(ids.length){
+      const row=await read(()=>database.prepare(`SELECT count(*) AS n FROM web_products WHERE snapshot_id=? AND offering_id IN (${ids.map(()=>'?').join(',')})`).bind(current.id,...ids).first());
+      if(row?.n!==ids.length)return route==='compare'?400:404;
+      if(route==='evidence' && input.criterion){
+        const criterion=await read(()=>database.prepare('SELECT criterion_id FROM criteria WHERE criterion_id=?').bind(input.criterion).first());
+        if(!criterion)return 400;
+      }
+    }
+    return 200;
+  }
+  return { scope, catalog, search, product, productBySlug, compare, evidence, headStatus, modificationDates,
     timingHeader: () => `db;dur=${metrics.duration.toFixed(1)}, db_calls;desc="${metrics.calls}", db_queries;desc="${metrics.queries}"`,
     metrics: () => ({ ...metrics }) };
 }

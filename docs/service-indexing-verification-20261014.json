@@ -32,5 +32,45 @@
     "detected_urls": 62
   },
   "indexing_outcome": "Full Google indexing not established; requests do not guarantee indexing",
-  "cost": "Existing included allowances checked immediately before deployment; no plan change"
+  "cost": "Existing included allowances checked immediately before deployment; no plan change",
+  "google_individual_requests": [
+    {
+      "slug": "jp01",
+      "before": "検出 - インデックス未登録",
+      "request": "accepted_priority_queue"
+    },
+    {
+      "slug": "us04",
+      "before": "検出 - インデックス未登録",
+      "request": "accepted_priority_queue"
+    },
+    {
+      "slug": "us12",
+      "before": "検出 - インデックス未登録",
+      "request": "accepted_priority_queue"
+    },
+    {
+      "slug": "us16",
+      "before": "検出 - インデックス未登録",
+      "request": "accepted_priority_queue"
+    },
+    {
+      "slug": "jp14",
+      "before": "検出 - インデックス未登録",
+      "request": "accepted_priority_queue"
+    }
+  ],
+  "concurrent_release_detected": {
+    "github_commit": "a9e8f6934df0c7c3557356295e6122b246c8edc8",
+    "production_worker": "40e9c6a5-8379-4e23-a9cc-5d42a7662430",
+    "seo_history_restoration_required": true
+  },
+  "merged_local": {
+    "node_cases_validated": 37,
+    "browser_cases": 40,
+    "astro_files": 67,
+    "diagnostics": 0,
+    "billing_controls_preserved": true,
+    "html_record_ceiling": 1000
+  }
 }
