@@ -1,0 +1,11 @@
+---
+import {displayText} from '../lib/presentation.mjs';
+import {safeUrl} from '../lib/catalog';
+const {record:r}=Astro.props;
+---
+<article class="record" data-observation-id={r.id}>
+ <p class="small">{displayText(r.label)} · {r.evidence_role==='accepted'?'現在の掲載に使用した記録':r.evidence_role==='conflicting'?'資料に不一致':r.evidence_role==='rejected'?'採用除外・訂正対象':'過去・補足'}</p>
+ <p>{displayText(r.summary)}</p>
+ {r.sources.map((s:any)=><p class="small"><a href={safeUrl(s.url)} rel="noopener noreferrer">{s.title} ↗</a> · {s.locator} · 取得 {s.retrieved_on}</p>)}
+ <div class="record-notes">{r.scope?.scope&&<p>{displayText(r.scope.scope)}</p>}{r.limitations&&<p>{displayText(r.limitations)}</p>}</div>
+</article>

@@ -12,7 +12,11 @@ test('all products omit unconfirmed feature rows while retaining documented, pla
     expect(shown.length, product.name).toBe(expected.length);
     expect(html, product.name).not.toMatch(/>\s*根拠\s*</);
     expect(html, product.name).not.toContain('data-state="unknown"');
-    expect(html, product.name).not.toMatch(/<details|<summary/);
+    const featuresStart=html.indexOf('<section id="features"');
+    const pricesStart=html.indexOf('<section id="prices"');
+    expect(featuresStart,product.name).toBeGreaterThan(0);expect(pricesStart,product.name).toBeGreaterThan(featuresStart);
+    // Feature explanations stay open; the complete historical record archive may fold.
+    expect(html.slice(featuresStart,pricesStart), product.name).not.toMatch(/<details|<summary/);
     expect(response.headers()['server-timing']).toContain('db_calls;desc="2"');
   }
   for (const path of ['/', '/products/', '/about/', '/methodology/', '/webmcp/', '/terms/', '/references/form-9/']) {

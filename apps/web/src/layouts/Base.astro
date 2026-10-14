@@ -3,13 +3,13 @@ import '../styles/global.css';
 import { SITE,SITE_NAME,formatResearchDate } from '../lib/catalog';
 import AnalyticsConsent from '../components/AnalyticsConsent.astro';
 import { env } from 'cloudflare:workers';
-const { title,description='シフト管理・作成サービス50製品を、公開資料で確認した機能と利用条件を比較。医療・介護・店舗向けの検索、料金、様式9、管理者MFA、解約データ出力を調査。無料・会員登録不要。',noindex=false,breadcrumbs=[],structured=null }=Astro.props;
+const { title,description='シフト管理・作成サービス50製品を、公開資料で確認した機能と利用条件を比較。医療・介護・店舗向けの検索、料金、様式9、管理者MFA、解約データ出力を調査。無料・会員登録不要。',noindex=false,breadcrumbs=[],structured=null,modified=null }=Astro.props;
 const repository=(Astro.locals as {research?:{scope:()=>Promise<{as_of_date:string}>}}).research;
 const footerDate=repository?formatResearchDate((await repository.scope()).as_of_date):null;
 const canonical=SITE+Astro.url.pathname;
 const publicEnv=env as unknown as { ENVIRONMENT?:string; GA4_MEASUREMENT_ID?:string };
 const measurementId=publicEnv.ENVIRONMENT==='production'?publicEnv.GA4_MEASUREMENT_ID:undefined;
-const page={'@type':'WebPage','@id':canonical+'#webpage',name:title,url:canonical,isPartOf:{'@id':SITE+'/#website'},description,inLanguage:'ja',publisher:{'@id':SITE+'/#publisher'},...(structured?.['@id']?{mainEntity:{'@id':structured['@id']}}:{})};
+const page={'@type':'WebPage','@id':canonical+'#webpage',name:title,url:canonical,isPartOf:{'@id':SITE+'/#website'},description,inLanguage:'ja',publisher:{'@id':SITE+'/#publisher'},...(modified?{dateModified:modified}:{}),...(structured?.['@id']?{mainEntity:{'@id':structured['@id']}}:{})};
 const isPage=structured&&['WebPage','CollectionPage'].includes(structured['@type']);
 const graph=[{'@type':'Organization','@id':SITE+'/#publisher',name:'Aqsh株式会社',url:'https://aqsh.co.jp/',logo:SITE+'/brand/aqsh-logo.png',email:'info@aqsh.co.jp'}, {'@type':'WebSite','@id':SITE+'/#website',name:SITE_NAME,url:SITE+'/',inLanguage:'ja',publisher:{'@id':SITE+'/#publisher'}},isPage?{...page,...structured}:page,...(breadcrumbs.length?[{'@type':'BreadcrumbList','@id':canonical+'#breadcrumbs',itemListElement:breadcrumbs.map((b:any,i:number)=>({'@type':'ListItem',position:i+1,name:b.name,item:SITE+b.url}))}]:[]),...(structured&&!isPage?[structured]:[])];
 ---

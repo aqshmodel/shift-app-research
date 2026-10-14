@@ -1,0 +1,36 @@
+{
+  "status": "passed",
+  "checked_at": "2026-10-14T00:51:24.814200+00:00",
+  "snapshot_id": "B62-20261013-pub2",
+  "source_base_commit": "764fe3580e5a166f8257ead8ed428e7546ebbf11",
+  "pages": 50,
+  "html_records": 2259,
+  "excluded_records_kept_in_research": 15,
+  "sitemap_urls": 62,
+  "local_node_tests": 24,
+  "astro_files": 61,
+  "diagnostics": 0,
+  "production_browser_cases": 40,
+  "production_seo_issues": 0,
+  "data_changed": false,
+  "staging_worker": "a778f0d4-e191-442c-9270-bbec362aaa5e",
+  "production_worker": "e7fce1ad-456c-42c3-a007-3456cd8c4f29",
+  "google_before": {
+    "observed_search_results": [
+      "https://shift.aqsh.co.jp/products/",
+      "https://shift.aqsh.co.jp/products/jp04/"
+    ],
+    "search_results_not_exhaustive": true,
+    "jp01": "discovered_not_indexed",
+    "jp01_google_live_test": "indexable_fetch_success",
+    "aggregate_coverage": "processing"
+  },
+  "google_sitemap": {
+    "submitted_on": "2026-10-14",
+    "receipt": "サイトマップを送信しました",
+    "last_read_on_as_displayed": "2026-10-12",
+    "detected_urls": 62
+  },
+  "indexing_outcome": "Full Google indexing not established; requests do not guarantee indexing",
+  "cost": "Existing included allowances checked immediately before deployment; no plan change"
+}

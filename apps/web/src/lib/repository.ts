@@ -11,6 +11,9 @@ export interface Database {
   batch(statements: Statement[]): Promise<{ results: Row[] }[]>;
 }
 const nameOrder = new Intl.Collator('ja');
+const contentChangesSql = `SELECT offering_id,recorded_on AS changed_on FROM observations WHERE record_category='document_observation'
+  UNION ALL SELECT offering_id,as_of_date AS changed_on FROM assessment_resolutions
+  UNION ALL SELECT t.offering_id,u.recorded_on AS changed_on FROM research_task_updates u JOIN research_tasks t USING(task_id)`;
 export const compactAssessment = (a: any) => ({
   ...a, findings_total: a.findings.length, findings_truncated: a.findings.length > 2,
   findings: a.findings.slice(0, 2).map((f: any) => ({
@@ -23,6 +26,7 @@ export const compactAssessment = (a: any) => ({
 export function createResearchRepository(database: Database) {
   let snapshotPromise: Promise<Row> | undefined;
   let catalogPromise: Promise<Row[]> | undefined;
+  let modificationDatesPromise: Promise<Record<string, string>> | undefined;
   const productPromises = new Map<string, Promise<Row | null>>();
   const metrics = { calls: 0, queries: 0, duration: 0 };
   const snapshotSql = 'SELECT s.snapshot_id,s.as_of_date,s.scope_json FROM web_live l JOIN web_snapshots s ON s.snapshot_id=l.snapshot_id WHERE l.id=1';
@@ -112,7 +116,13 @@ export function createResearchRepository(database: Database) {
       evidence_url: '/api/evidence/?id=' + p!.id, detail_url: 'https://shift.aqsh.co.jp/products/' + p!.slug + '/' })),
       criteria: keys, as_of_date: current.scope.as_of_date, snapshot_id: current.scope.snapshot_id, limitations: current.scope.limitations };
   }
-  async function evidence(input: Record<string, unknown>) {
+  function modificationDates(): Promise<Record<string, string>> {
+    return modificationDatesPromise ??= read(async () => {
+      const { results } = await database.prepare(`SELECT offering_id,max(changed_on) AS modified_on FROM (${contentChangesSql}) GROUP BY offering_id`).all();
+      return Object.fromEntries(results.map(row => [row.offering_id, row.modified_on]));
+    });
+  }
+  async function evidence(input: Record<string, unknown>, options: { all?: boolean } = {}) {
     const v = validateEvidence(input); const current = await snapshot();
     // Reuse the detail page read. Evidence-only requests retrieve only the product ID.
     const exists = productPromises.has(v.id) ? Boolean(await productPromises.get(v.id)) :
@@ -120,9 +130,16 @@ export function createResearchRepository(database: Database) {
     if (!exists) return null;
     const condition = 'offering_id=?' + (v.criterion ? ' AND criterion_id=?' : '');
     const args = v.criterion ? [v.id, v.criterion] : [v.id];
+    // Full HTML history is an internal rendering option. Public API and native
+    // WebMCP requests retain their ten-record pages.
+    const all = options.all === true;
+    const countSql = all ? `WITH content_changes AS (${contentChangesSql}) SELECT count(DISTINCT observation_id) AS n,
+      (SELECT max(changed_on) FROM content_changes WHERE offering_id=?) AS modified_on
+      FROM v_current_observations WHERE record_category='document_observation' AND ${condition}` :
+      "SELECT count(DISTINCT observation_id) AS n FROM v_current_observations WHERE record_category='document_observation' AND " + condition;
     const statements = [
-      database.prepare("SELECT count(DISTINCT observation_id) AS n FROM observations WHERE record_category='document_observation' AND " + condition).bind(...args),
-      database.prepare("SELECT * FROM v_current_observations WHERE observation_id IN (SELECT observation_id FROM observations WHERE record_category='document_observation' AND " + condition + ' ORDER BY observation_id DESC LIMIT ? OFFSET ?) ORDER BY observation_id DESC,evidence_id').bind(...args, 10, (v.page - 1) * 10),
+      database.prepare(countSql).bind(...(all ? [v.id, ...args] : args)),
+      database.prepare("SELECT * FROM v_current_observations WHERE observation_id IN (SELECT DISTINCT observation_id FROM v_current_observations WHERE record_category='document_observation' AND " + condition + ' ORDER BY observation_id DESC LIMIT ? OFFSET ?) ORDER BY observation_id DESC,evidence_id').bind(...args, all ? -1 : 10, all ? 0 : (v.page - 1) * 10),
     ];
     if (v.criterion) statements.push(database.prepare('SELECT criterion_id FROM criteria WHERE criterion_id=?').bind(v.criterion));
     const [counts, observations, criterion] = await read(() => database.batch(statements), statements.length);
@@ -136,11 +153,12 @@ export function createResearchRepository(database: Database) {
       records[x.observation_id].sources.push({ url: x.canonical_url, title: x.title, locator: x.locator, retrieved_on: x.retrieved_on });
     }
     const total = counts.results[0].n;
-    return { id: v.id, criterion: v.criterion, page: v.page, limit: 10, total,
-      has_more: v.page * 10 < total, records: Object.values(records),
+    return { id: v.id, criterion: v.criterion, page: all ? 1 : v.page, limit: all ? total : 10, total,
+      has_more: !all && v.page * 10 < total, records: Object.values(records),
+      ...(all ? { modified_on: counts.results[0].modified_on } : {}),
       as_of_date: current.scope.as_of_date, snapshot_id: current.scope.snapshot_id };
   }
-  return { scope, catalog, search, product, productBySlug, compare, evidence,
+  return { scope, catalog, search, product, productBySlug, compare, evidence, modificationDates,
     timingHeader: () => `db;dur=${metrics.duration.toFixed(1)}, db_calls;desc="${metrics.calls}", db_queries;desc="${metrics.queries}"`,
     metrics: () => ({ ...metrics }) };
 }

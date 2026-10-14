@@ -1,0 +1,326 @@
+{
+  "status": "passed",
+  "unique_cases": 40,
+  "initial_run_stats": {
+    "startTime": "2026-10-14T00:38:04.690Z",
+    "duration": 147029.142,
+    "expected": 38,
+    "skipped": 0,
+    "unexpected": 2,
+    "flaky": 0
+  },
+  "targeted_rerun_stats": {
+    "startTime": "2026-10-14T00:42:23.629Z",
+    "duration": 24541.9,
+    "expected": 5,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "resolved_test_assumptions": [
+    "Staging canonical URL is the production URL.",
+    "Feature explanations remain open; historical records can fold."
+  ],
+  "application_changed_after_first_run": false,
+  "rerun": {
+    "config": {
+      "argv": [
+        "/Users/tsukadatakahiro/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node",
+        "/private/tmp/shift-service-indexing-release/apps/web/node_modules/@playwright/test/cli.js",
+        "test",
+        "tests/browser/indexing.spec.mjs",
+        "tests/browser/readability.spec.mjs"
+      ],
+      "configFile": "/private/tmp/shift-service-indexing-release/apps/web/playwright.config.mjs",
+      "rootDir": "/private/tmp/shift-service-indexing-release/apps/web/tests/browser",
+      "failOnFlakyTests": false,
+      "forbidOnly": false,
+      "fullyParallel": false,
+      "globalSetup": null,
+      "globalTeardown": null,
+      "globalTimeout": 0,
+      "grep": {},
+      "grepInvert": null,
+      "maxFailures": 0,
+      "metadata": {
+        "actualWorkers": 1
+      },
+      "preserveOutput": "always",
+      "projects": [
+        {
+          "outputDir": "/private/tmp/shift-service-indexing-release/apps/web/test-results",
+          "repeatEach": 1,
+          "retries": 0,
+          "metadata": {
+            "actualWorkers": 1
+          },
+          "id": "",
+          "name": "",
+          "testDir": "/private/tmp/shift-service-indexing-release/apps/web/tests/browser",
+          "testIgnore": [],
+          "testMatch": [
+            "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+          ],
+          "timeout": 45000
+        }
+      ],
+      "filteredProjects": [
+        {
+          "grep": {},
+          "grepInvert": null,
+          "outputDir": "/private/tmp/shift-service-indexing-release/apps/web/test-results",
+          "repeatEach": 1,
+          "retries": 0,
+          "metadata": {
+            "actualWorkers": 1
+          },
+          "name": "",
+          "testDir": "/private/tmp/shift-service-indexing-release/apps/web/tests/browser",
+          "snapshotDir": "/private/tmp/shift-service-indexing-release/apps/web/tests/browser",
+          "testIgnore": [],
+          "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+          "timeout": 45000,
+          "use": {
+            "baseURL": "https://aqsh-shift-research-staging.aqsh-reprom.workers.dev",
+            "channel": "chrome",
+            "headless": true,
+            "launchOptions": {
+              "args": [
+                "--enable-features=WebMCPTesting"
+              ]
+            },
+            "viewport": {
+              "width": 1440,
+              "height": 900
+            },
+            "trace": "retain-on-failure"
+          },
+          "dependencies": [],
+          "ignoreSnapshots": false,
+          "__projectId": ""
+        }
+      ],
+      "quiet": false,
+      "reporter": [
+        [
+          "list",
+          null
+        ],
+        [
+          "json",
+          {
+            "outputFile": "test-results/results.json"
+          }
+        ]
+      ],
+      "reportSlowTests": {
+        "max": 5,
+        "threshold": 300000
+      },
+      "shard": null,
+      "tags": [],
+      "updateSnapshots": "default",
+      "updateSourceMethod": "patch",
+      "version": "1.64.0",
+      "workers": 1,
+      "webServer": null
+    },
+    "suites": [
+      {
+        "title": "indexing.spec.mjs",
+        "file": "indexing.spec.mjs",
+        "column": 0,
+        "line": 0,
+        "specs": [
+          {
+            "title": "complete service history is in the initial HTML and opens without JavaScript",
+            "ok": true,
+            "tags": [],
+            "tests": [
+              {
+                "timeout": 45000,
+                "annotations": [],
+                "expectedStatus": "passed",
+                "projectId": "",
+                "projectName": "",
+                "results": [
+                  {
+                    "workerIndex": 0,
+                    "parallelIndex": 0,
+                    "status": "passed",
+                    "duration": 2165,
+                    "errors": [],
+                    "stdout": [],
+                    "stderr": [],
+                    "retry": 0,
+                    "startTime": "2026-10-14T00:42:24.178Z",
+                    "annotations": [],
+                    "attachments": []
+                  }
+                ],
+                "status": "expected"
+              }
+            ],
+            "id": "1db43f31252c86d2b25a-cc1fc0666c4273542056",
+            "file": "indexing.spec.mjs",
+            "line": 4,
+            "column": 1
+          },
+          {
+            "title": "all fifty canonical service URLs have verifiable modification dates in the sitemap",
+            "ok": true,
+            "tags": [],
+            "tests": [
+              {
+                "timeout": 45000,
+                "annotations": [],
+                "expectedStatus": "passed",
+                "projectId": "",
+                "projectName": "",
+                "results": [
+                  {
+                    "workerIndex": 0,
+                    "parallelIndex": 0,
+                    "status": "passed",
+                    "duration": 316,
+                    "errors": [],
+                    "stdout": [],
+                    "stderr": [],
+                    "retry": 0,
+                    "startTime": "2026-10-14T00:42:26.856Z",
+                    "annotations": [],
+                    "attachments": []
+                  }
+                ],
+                "status": "expected"
+              }
+            ],
+            "id": "1db43f31252c86d2b25a-0dcf74ec7674e1999d93",
+            "file": "indexing.spec.mjs",
+            "line": 23,
+            "column": 1
+          }
+        ]
+      },
+      {
+        "title": "readability.spec.mjs",
+        "file": "readability.spec.mjs",
+        "column": 0,
+        "line": 0,
+        "specs": [
+          {
+            "title": "all products omit unconfirmed feature rows while retaining documented, planned and disputed information",
+            "ok": true,
+            "tags": [],
+            "tests": [
+              {
+                "timeout": 45000,
+                "annotations": [],
+                "expectedStatus": "passed",
+                "projectId": "",
+                "projectName": "",
+                "results": [
+                  {
+                    "workerIndex": 0,
+                    "parallelIndex": 0,
+                    "status": "passed",
+                    "duration": 15656,
+                    "errors": [],
+                    "stdout": [],
+                    "stderr": [],
+                    "retry": 0,
+                    "startTime": "2026-10-14T00:42:27.195Z",
+                    "annotations": [],
+                    "attachments": []
+                  }
+                ],
+                "status": "expected"
+              }
+            ],
+            "id": "fe9193199fa124f7f994-3a3c657972a1366192a7",
+            "file": "readability.spec.mjs",
+            "line": 3,
+            "column": 1
+          },
+          {
+            "title": "feature explanations and notes are readable without opening controls or running JavaScript",
+            "ok": true,
+            "tags": [],
+            "tests": [
+              {
+                "timeout": 45000,
+                "annotations": [],
+                "expectedStatus": "passed",
+                "projectId": "",
+                "projectName": "",
+                "results": [
+                  {
+                    "workerIndex": 0,
+                    "parallelIndex": 0,
+                    "status": "passed",
+                    "duration": 3649,
+                    "errors": [],
+                    "stdout": [],
+                    "stderr": [],
+                    "retry": 0,
+                    "startTime": "2026-10-14T00:42:42.861Z",
+                    "annotations": [],
+                    "attachments": []
+                  }
+                ],
+                "status": "expected"
+              }
+            ],
+            "id": "fe9193199fa124f7f994-d5d71767fac94bb81beb",
+            "file": "readability.spec.mjs",
+            "line": 27,
+            "column": 1
+          },
+          {
+            "title": "comparison omits wholly unconfirmed rows and keeps missing information distinct from lack of support",
+            "ok": true,
+            "tags": [],
+            "tests": [
+              {
+                "timeout": 45000,
+                "annotations": [],
+                "expectedStatus": "passed",
+                "projectId": "",
+                "projectName": "",
+                "results": [
+                  {
+                    "workerIndex": 0,
+                    "parallelIndex": 0,
+                    "status": "passed",
+                    "duration": 1416,
+                    "errors": [],
+                    "stdout": [],
+                    "stderr": [],
+                    "retry": 0,
+                    "startTime": "2026-10-14T00:42:46.525Z",
+                    "annotations": [],
+                    "attachments": []
+                  }
+                ],
+                "status": "expected"
+              }
+            ],
+            "id": "fe9193199fa124f7f994-d5655c4c20a81790df93",
+            "file": "readability.spec.mjs",
+            "line": 44,
+            "column": 1
+          }
+        ]
+      }
+    ],
+    "errors": [],
+    "stats": {
+      "startTime": "2026-10-14T00:42:23.629Z",
+      "duration": 24541.9,
+      "expected": 5,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    }
+  }
+}

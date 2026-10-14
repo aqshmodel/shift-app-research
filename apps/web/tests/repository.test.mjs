@@ -104,3 +104,33 @@ test('D1 and missing publication failures reject cleanly without orphaned promis
  await assert.rejects(()=>createResearchRepository(missing).productBySlug('jp04'),/Published snapshot unavailable/);
  await new Promise(resolve=>setImmediate(resolve));
 });
+
+test('HTML history includes every research record while the public API stays paginated',async()=>{
+ const {sqlite,repo}=fixture();try{
+  await repo.productBySlug('jp04');
+  const page=await repo.evidence({id:'OF-JP04'});
+  const next=await repo.evidence({id:'OF-JP04',page:2});
+  const all=await repo.evidence({id:'OF-JP04'},{all:true});
+  const expected=sqlite.prepare("SELECT DISTINCT observation_id FROM v_current_observations WHERE offering_id=? AND record_category='document_observation'").all('OF-JP04').map(r=>r.observation_id).sort();
+  assert.equal(page.records.length,10);assert.equal(next.records.length,10);
+  assert.equal(page.records.some(r=>next.records.some(n=>n.id===r.id)),false);
+  assert.equal(Object.hasOwn(page,'modified_on'),false);
+  assert.deepEqual(all.records.map(r=>r.id).sort(),expected);
+  assert.equal(all.total,expected.length);assert.equal(page.total,expected.length);assert.equal(all.has_more,false);
+  assert.equal(all.records.some(r=>r.id==='B02-O00015'),false);
+  assert.equal(all.records.every(r=>r.sources.length&&r.evidence_role),true);
+  assert.deepEqual(all.records.slice(0,10).map(r=>r.id),page.records.map(r=>r.id));
+  assert.match(all.modified_on,/^\d{4}-\d{2}-\d{2}$/);
+ }finally{sqlite.close();}
+});
+
+test('sitemap modification dates follow one service change without refreshing unrelated services',async()=>{
+ const {sqlite,repo,db}=fixture();try{
+  const before=await repo.modificationDates();assert.equal(Object.keys(before).length,50);
+  const row=sqlite.prepare('SELECT u.update_id,t.offering_id FROM research_task_updates u JOIN research_tasks t USING(task_id) ORDER BY u.update_id LIMIT 1').get();
+  sqlite.prepare('UPDATE research_task_updates SET recorded_on=? WHERE update_id=?').run('2026-10-15',row.update_id);
+  assert.deepEqual(await repo.modificationDates(),before);
+  const after=await createResearchRepository(db).modificationDates();assert.equal(after[row.offering_id],'2026-10-15');
+  for(const id of Object.keys(before))if(id!==row.offering_id)assert.equal(after[id],before[id]);
+ }finally{sqlite.close();}
+});
