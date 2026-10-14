@@ -1,6 +1,6 @@
 {
   "status": "passed",
-  "checked_at": "2026-10-14T00:51:24.814200+00:00",
+  "checked_at": "2026-10-14T08:04:08.022834+00:00",
   "snapshot_id": "B62-20261013-pub2",
   "source_base_commit": "764fe3580e5a166f8257ead8ed428e7546ebbf11",
   "pages": 50,
@@ -13,8 +13,8 @@
   "production_browser_cases": 40,
   "production_seo_issues": 0,
   "data_changed": false,
-  "staging_worker": "a778f0d4-e191-442c-9270-bbec362aaa5e",
-  "production_worker": "e7fce1ad-456c-42c3-a007-3456cd8c4f29",
+  "staging_worker": "449d5b6a-35cc-4ab7-8144-3d93dd4b3fa8",
+  "production_worker": "a979ae02-5e54-43a7-a129-afce2f01fe71",
   "google_before": {
     "observed_search_results": [
       "https://shift.aqsh.co.jp/products/",
@@ -63,7 +63,7 @@
   "concurrent_release_detected": {
     "github_commit": "a9e8f6934df0c7c3557356295e6122b246c8edc8",
     "production_worker": "40e9c6a5-8379-4e23-a9cc-5d42a7662430",
-    "seo_history_restoration_required": true
+    "seo_history_restoration_required": false
   },
   "merged_local": {
     "node_cases_validated": 37,
@@ -72,5 +72,17 @@
     "diagnostics": 0,
     "billing_controls_preserved": true,
     "html_record_ceiling": 1000
+  },
+  "source_integration_commit": "6277631",
+  "merged_deployed": {
+    "production": true,
+    "staging": true,
+    "html_records": 2259,
+    "services": 50,
+    "api_price_and_detail_matches": 50,
+    "staging_browser_cases": 5,
+    "production_browser_cases": 7,
+    "production_seo_pages": 62,
+    "production_seo_issues": 0
   }
 }

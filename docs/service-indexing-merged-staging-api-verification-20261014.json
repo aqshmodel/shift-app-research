@@ -1,0 +1,516 @@
+{
+  "checked_at": "2026-10-14T07:57:29.722539+00:00",
+  "base": "https://aqsh-shift-research-staging.aqsh-reprom.workers.dev",
+  "status": "passed",
+  "snapshot_id": "B62-20261013-pub2",
+  "research_sha256": "56c23d376788093772b1c0d1b65841ce7c9395875708a653dc485521493b47b8",
+  "content_sha256": "b8aeee7725b43da0d795715d28ce35c31b4828feab3964ac6a587d971b774412",
+  "scope_matches": true,
+  "local_projection_content_hash_verified": true,
+  "expected_manifest": "/private/tmp/shift-service-indexing-release/apps/web/data/manifest.json",
+  "expected_publication": "/private/tmp/shift-service-indexing-release/apps/web/data/publication.sql",
+  "price_summaries_matched": 50,
+  "product_details_matched": 50,
+  "details": [
+    {
+      "id": "OF-JP27",
+      "price": {
+        "label": "月額330円 / 人",
+        "note": "Airシフト 利用料 · 税込 · 最低月額990円",
+        "kind": "published"
+      },
+      "price_components": 2,
+      "record_count": 45
+    },
+    {
+      "id": "OF-US11",
+      "price": {
+        "label": "個別見積もり",
+        "note": "",
+        "kind": "quote"
+      },
+      "price_components": 3,
+      "record_count": 26
+    },
+    {
+      "id": "OF-US15",
+      "price": {
+        "label": "非公開",
+        "note": "",
+        "kind": "unpublished"
+      },
+      "price_components": 0,
+      "record_count": 13
+    },
+    {
+      "id": "OF-US09",
+      "price": {
+        "label": "月額USD 119 / アカウント",
+        "note": "Operations Expert 月払（30人まで） · 税区分未確認 · 30人まで",
+        "kind": "published"
+      },
+      "price_components": 4,
+      "record_count": 129
+    },
+    {
+      "id": "OF-US07",
+      "price": {
+        "label": "個別見積もり",
+        "note": "",
+        "kind": "quote"
+      },
+      "price_components": 2,
+      "record_count": 70
+    },
+    {
+      "id": "OF-JP03",
+      "price": {
+        "label": "年額8,400円 / 人",
+        "note": "標準・年間契約 · 税別 · 年契約 · 年額前払い",
+        "kind": "published"
+      },
+      "price_components": 2,
+      "record_count": 73
+    },
+    {
+      "id": "OF-US17",
+      "price": {
+        "label": "月額USD 2.75 / 人",
+        "note": "Essentials 年契約 · 税区分未確認 · 年契約（月額換算）",
+        "kind": "published"
+      },
+      "price_components": 3,
+      "record_count": 28
+    },
+    {
+      "id": "OF-US13",
+      "price": {
+        "label": "非公開",
+        "note": "",
+        "kind": "unpublished"
+      },
+      "price_components": 0,
+      "record_count": 39
+    },
+    {
+      "id": "OF-JP14",
+      "price": {
+        "label": "非公開",
+        "note": "",
+        "kind": "unpublished"
+      },
+      "price_components": 0,
+      "record_count": 70
+    },
+    {
+      "id": "OF-JP04",
+      "price": {
+        "label": "月額5,000円 / 部署 ＋ 500円 / 人",
+        "note": "Standard 基本 · 税区分未確認",
+        "kind": "published"
+      },
+      "price_components": 7,
+      "record_count": 111
+    },
+    {
+      "id": "OF-US08",
+      "price": {
+        "label": "月額USD 5 / 人",
+        "note": "Nursegrid Manager · 税区分未確認",
+        "kind": "published"
+      },
+      "price_components": 3,
+      "record_count": 74
+    },
+    {
+      "id": "OF-JP02",
+      "price": {
+        "label": "個別見積もり",
+        "note": "",
+        "kind": "quote"
+      },
+      "price_components": 0,
+      "record_count": 64
+    },
+    {
+      "id": "OF-JP16",
+      "price": {
+        "label": "個別見積もり",
+        "note": "",
+        "kind": "quote"
+      },
+      "price_components": 0,
+      "record_count": 66
+    },
+    {
+      "id": "OF-US14",
+      "price": {
+        "label": "非公開",
+        "note": "",
+        "kind": "unpublished"
+      },
+      "price_components": 0,
+      "record_count": 25
+    },
+    {
+      "id": "OF-US16",
+      "price": {
+        "label": "個別見積もり",
+        "note": "",
+        "kind": "quote"
+      },
+      "price_components": 0,
+      "record_count": 29
+    },
+    {
+      "id": "OF-JP10",
+      "price": {
+        "label": "月額2,980円 / アカウント",
+        "note": "月額基本 · 税込",
+        "kind": "published"
+      },
+      "price_components": 8,
+      "record_count": 77
+    },
+    {
+      "id": "OF-US20",
+      "price": {
+        "label": "個別見積もり",
+        "note": "",
+        "kind": "quote"
+      },
+      "price_components": 1,
+      "record_count": 77
+    },
+    {
+      "id": "OF-US02",
+      "price": {
+        "label": "非公開",
+        "note": "",
+        "kind": "unpublished"
+      },
+      "price_components": 0,
+      "record_count": 66
+    },
+    {
+      "id": "OF-US18",
+      "price": {
+        "label": "非公開",
+        "note": "",
+        "kind": "unpublished"
+      },
+      "price_components": 0,
+      "record_count": 79
+    },
+    {
+      "id": "OF-JP21",
+      "price": {
+        "label": "初期費用308,000円〜",
+        "note": "参考額 · 月額・保守費は個別見積もり",
+        "kind": "published"
+      },
+      "price_components": 2,
+      "record_count": 26
+    },
+    {
+      "id": "OF-US21",
+      "price": {
+        "label": "月額AUD 8 / 人",
+        "note": "Core 月払い · 税別 · 最低3人",
+        "kind": "published"
+      },
+      "price_components": 8,
+      "record_count": 49
+    },
+    {
+      "id": "OF-US01",
+      "price": {
+        "label": "個別見積もり",
+        "note": "適用料金はお問い合わせください",
+        "kind": "quote"
+      },
+      "price_components": 3,
+      "record_count": 60
+    },
+    {
+      "id": "OF-US05",
+      "price": {
+        "label": "非公開",
+        "note": "",
+        "kind": "unpublished"
+      },
+      "price_components": 0,
+      "record_count": 101
+    },
+    {
+      "id": "OF-JP17",
+      "price": {
+        "label": "月額250円〜 / 人",
+        "note": "SHIFTEE Light 月額下限 · 税別 · 自動作成プランは個別見積もり · 初期費用は別途",
+        "kind": "published"
+      },
+      "price_components": 5,
+      "record_count": 89
+    },
+    {
+      "id": "OF-US12",
+      "price": {
+        "label": "非公開",
+        "note": "",
+        "kind": "unpublished"
+      },
+      "price_components": 0,
+      "record_count": 38
+    },
+    {
+      "id": "OF-JP01",
+      "price": {
+        "label": "個別見積もり",
+        "note": "",
+        "kind": "quote"
+      },
+      "price_components": 0,
+      "record_count": 62
+    },
+    {
+      "id": "OF-US03",
+      "price": {
+        "label": "非公開",
+        "note": "",
+        "kind": "unpublished"
+      },
+      "price_components": 0,
+      "record_count": 68
+    },
+    {
+      "id": "OF-US04",
+      "price": {
+        "label": "非公開",
+        "note": "",
+        "kind": "unpublished"
+      },
+      "price_components": 0,
+      "record_count": 75
+    },
+    {
+      "id": "OF-US22",
+      "price": {
+        "label": "非公開",
+        "note": "",
+        "kind": "unpublished"
+      },
+      "price_components": 0,
+      "record_count": 27
+    },
+    {
+      "id": "OF-US10",
+      "price": {
+        "label": "個別見積もり",
+        "note": "",
+        "kind": "quote"
+      },
+      "price_components": 0,
+      "record_count": 116
+    },
+    {
+      "id": "OF-US06",
+      "price": {
+        "label": "個別見積もり",
+        "note": "",
+        "kind": "quote"
+      },
+      "price_components": 0,
+      "record_count": 69
+    },
+    {
+      "id": "OF-US19",
+      "price": {
+        "label": "個別見積もり",
+        "note": "適用料金はお問い合わせください",
+        "kind": "quote"
+      },
+      "price_components": 3,
+      "record_count": 68
+    },
+    {
+      "id": "OF-JP07",
+      "price": {
+        "label": "非公開",
+        "note": "",
+        "kind": "unpublished"
+      },
+      "price_components": 0,
+      "record_count": 79
+    },
+    {
+      "id": "OF-JP18",
+      "price": {
+        "label": "個別見積もり",
+        "note": "適用料金はお問い合わせください",
+        "kind": "quote"
+      },
+      "price_components": 3,
+      "record_count": 87
+    },
+    {
+      "id": "OF-JP13",
+      "price": {
+        "label": "月額1,000円 / 人",
+        "note": "通常利用 月額 · 税別 · 30人まで · 初期費用300,000円 / チーム",
+        "kind": "published"
+      },
+      "price_components": 3,
+      "record_count": 82
+    },
+    {
+      "id": "OF-JP26",
+      "price": {
+        "label": "非公開",
+        "note": "",
+        "kind": "unpublished"
+      },
+      "price_components": 0,
+      "record_count": 31
+    },
+    {
+      "id": "OF-JP25",
+      "price": {
+        "label": "個別見積もり",
+        "note": "",
+        "kind": "quote"
+      },
+      "price_components": 5,
+      "record_count": 34
+    },
+    {
+      "id": "OF-JP20",
+      "price": {
+        "label": "個別見積もり",
+        "note": "",
+        "kind": "quote"
+      },
+      "price_components": 1,
+      "record_count": 42
+    },
+    {
+      "id": "OF-JP23",
+      "price": {
+        "label": "非公開",
+        "note": "",
+        "kind": "unpublished"
+      },
+      "price_components": 0,
+      "record_count": 35
+    },
+    {
+      "id": "OF-JP12",
+      "price": {
+        "label": "月額250円 / ユーザー",
+        "note": "シフトラ月額・会社特商法表示 · 税区分未確認",
+        "kind": "published"
+      },
+      "price_components": 4,
+      "record_count": 80
+    },
+    {
+      "id": "OF-JP24",
+      "price": {
+        "label": "無料プランあり",
+        "note": "1プロジェクト6人まで · 税込 · 有料プランの条件は詳細へ",
+        "kind": "free"
+      },
+      "price_components": 8,
+      "record_count": 53
+    },
+    {
+      "id": "OF-JP28",
+      "price": {
+        "label": "無料β",
+        "note": "正式提供後の料金は未公開",
+        "kind": "free"
+      },
+      "price_components": 1,
+      "record_count": 34
+    },
+    {
+      "id": "OF-JP08",
+      "price": {
+        "label": "月額500円 / 人",
+        "note": "有料サブスクリプション（年契約・年払い） · 税別 · 年契約（月額換算） · 年額前払い · 最低10人",
+        "kind": "published"
+      },
+      "price_components": 1,
+      "record_count": 95
+    },
+    {
+      "id": "OF-JP22",
+      "price": {
+        "label": "個別見積もり",
+        "note": "",
+        "kind": "quote"
+      },
+      "price_components": 0,
+      "record_count": 40
+    },
+    {
+      "id": "OF-JP11",
+      "price": {
+        "label": "月額5,500円 / アカウント",
+        "note": "個人有料購読・月次自動更新 · 税込 · 100人まで",
+        "kind": "published"
+      },
+      "price_components": 3,
+      "record_count": 69
+    },
+    {
+      "id": "OF-JP05",
+      "price": {
+        "label": "月額12,000円 / 拠点",
+        "note": "Day 月払基本・1～50名 · 税別 · 対象1〜50人",
+        "kind": "published"
+      },
+      "price_components": 13,
+      "record_count": 84
+    },
+    {
+      "id": "OF-JP06",
+      "price": {
+        "label": "月額6,000円 / 拠点",
+        "note": "Time 月払基本・1～20名 · 税別 · 対象1〜20人",
+        "kind": "published"
+      },
+      "price_components": 15,
+      "record_count": 84
+    },
+    {
+      "id": "OF-JP19",
+      "price": {
+        "label": "個別見積もり",
+        "note": "",
+        "kind": "quote"
+      },
+      "price_components": 6,
+      "record_count": 76
+    },
+    {
+      "id": "OF-JP15",
+      "price": {
+        "label": "個別見積もり",
+        "note": "",
+        "kind": "quote"
+      },
+      "price_components": 0,
+      "record_count": 75
+    },
+    {
+      "id": "OF-JP09",
+      "price": {
+        "label": "個別見積もり",
+        "note": "",
+        "kind": "quote"
+      },
+      "price_components": 0,
+      "record_count": 81
+    }
+  ]
+}
