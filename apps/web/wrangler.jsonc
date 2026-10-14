@@ -13,11 +13,21 @@
   },
   "workers_dev": true,
   "observability": {
-    "enabled": false
+    "enabled": true,
+    "head_sampling_rate": 0.01,
+    "logs": {
+      "enabled": true,
+      "head_sampling_rate": 0.01,
+      "invocation_logs": false
+    },
+    "traces": {
+      "enabled": false
+    }
   },
   "vars": {
     "ENVIRONMENT": "production",
-    "GA4_MEASUREMENT_ID": "G-E205Y93JB7"
+    "GA4_MEASUREMENT_ID": "G-E205Y93JB7",
+    "D1_ACCESS_MODE": "normal"
   },
   "ratelimits": [
     {
@@ -41,7 +51,8 @@
       "name": "aqsh-shift-research-staging",
       "workers_dev": true,
       "vars": {
-        "ENVIRONMENT": "staging"
+        "ENVIRONMENT": "staging",
+        "D1_ACCESS_MODE": "normal"
       },
       "ratelimits": [
         {
