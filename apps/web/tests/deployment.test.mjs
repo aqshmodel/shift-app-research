@@ -1,7 +1,7 @@
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
-import {assertDeploymentTarget} from '../scripts/deploy.mjs';
+import {assertDeploymentTarget,assertD1AccessMode} from '../scripts/deploy.mjs';
 
 test('deployment rejects the opposite Worker and a matching Worker with the wrong environment or D1', () => {
   const source = JSON.parse(readFileSync(new URL('../wrangler.jsonc', import.meta.url), 'utf8'));
@@ -12,4 +12,13 @@ test('deployment rejects the opposite Worker and a matching Worker with the wron
   assert.throws(() => assertDeploymentTarget(staging, 'production', source), /Worker name/);
   assert.throws(() => assertDeploymentTarget({...staging, vars: source.vars}, 'staging', source), /environment/);
   assert.throws(() => assertDeploymentTarget({...staging, d1_databases: source.d1_databases}, 'staging', source), /D1 database/);
+  const aliased=structuredClone(source);aliased.env.staging.d1_databases[0].database_id=source.d1_databases[0].database_id;
+  assert.throws(()=>assertDeploymentTarget(aliased,'production',aliased),/separation/);
+  assert.throws(()=>assertDeploymentTarget({...source,ratelimits:[]},'production',source),/rate limiter/);
+  assert.throws(()=>assertDeploymentTarget({...source,vars:{...source.vars,D1_ACCESS_MODE:undefined}},'production',source),/access mode/);
+  assert.doesNotThrow(()=>assertD1AccessMode('paused'));
+  assert.doesNotThrow(()=>assertD1AccessMode('normal'));
+  assert.throws(()=>assertD1AccessMode('pause'),/access mode/);
+  const wrongEnv=structuredClone(source);wrongEnv.env.staging.vars.ENVIRONMENT='production';
+  assert.throws(()=>assertDeploymentTarget({...wrongEnv,...wrongEnv.env.staging},'staging',wrongEnv),/environment/);
 });
